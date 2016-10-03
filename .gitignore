@@ -1,0 +1,11 @@
+*~
+\#*
+.\#*
+tmp
+
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.project
+*.ignore
