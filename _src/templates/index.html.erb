@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+<article>
+<ol>
+<%- circles.each do |circle| -%>
+<li><a href="<%= circle[:pattern] %>.html"><%= circle[:pattern] %></a></li>
+<%- end -%>
+</ol>
+</body>
+</html>
