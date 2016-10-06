@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ond</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#227 _ond
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=almond" target="_blank">almond</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beyond" target="_blank">beyond</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blond" target="_blank">blond</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bond" target="_blank">bond</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=correspond" target="_blank">correspond</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fishpond" target="_blank">fishpond</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fond" target="_blank">fond</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frond" target="_blank">frond</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pond" target="_blank">pond</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=respond" target="_blank">respond</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=second" target="_blank">second</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vagabond" target="_blank">vagabond</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "almond beyond blond, bond correspond fishpond, fond frond pond, respond second vagabond";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

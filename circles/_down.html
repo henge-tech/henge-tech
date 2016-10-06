@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _down</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#75 _down
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breakdown" target="_blank">breakdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clampdown" target="_blank">clampdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crackdown" target="_blank">crackdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=knockdown" target="_blank">knockdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=letdown" target="_blank">letdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lowdown" target="_blank">lowdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=markdown" target="_blank">markdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shakedown" target="_blank">shakedown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=showdown" target="_blank">showdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sundown" target="_blank">sundown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=touchdown" target="_blank">touchdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=turndown" target="_blank">turndown</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "breakdown clampdown crackdown, knockdown letdown lowdown, markdown shakedown showdown, sundown touchdown turndown";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

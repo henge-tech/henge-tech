@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ex_r</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#634 ex_r
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=examiner" target="_blank">examiner</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excavator" target="_blank">excavator</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excelsior" target="_blank">excelsior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exchequer" target="_blank">exchequer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exciter" target="_blank">exciter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=executioner" target="_blank">executioner</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=executor" target="_blank">executor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exhibitor" target="_blank">exhibitor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extensor" target="_blank">extensor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exterior" target="_blank">exterior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exterminator" target="_blank">exterminator</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extinguisher" target="_blank">extinguisher</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extractor" target="_blank">extractor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extracurricular" target="_blank">extracurricular</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extrasolar" target="_blank">extrasolar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extruder" target="_blank">extruder</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "examiner excavator excelsior exchequer, exciter executioner executor exhibitor, extensor exterior exterminator extinguisher, extractor extracurricular extrasolar extruder";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

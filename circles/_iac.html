@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _iac</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#126 _iac
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amnesiac" target="_blank">amnesiac</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aphrodisiac" target="_blank">aphrodisiac</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cardiac" target="_blank">cardiac</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dipsomaniac" target="_blank">dipsomaniac</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=elegiac" target="_blank">elegiac</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypochondriac" target="_blank">hypochondriac</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insomniac" target="_blank">insomniac</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kleptomaniac" target="_blank">kleptomaniac</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=megalomaniac" target="_blank">megalomaniac</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nymphomaniac" target="_blank">nymphomaniac</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pyromaniac" target="_blank">pyromaniac</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zodiac" target="_blank">zodiac</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "amnesiac aphrodisiac cardiac, dipsomaniac elegiac hypochondriac, insomniac kleptomaniac megalomaniac, nymphomaniac pyromaniac zodiac";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

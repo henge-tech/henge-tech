@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _mon</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#190 _mon
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=backgammon" target="_blank">backgammon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cardamon" target="_blank">cardamon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daemon" target="_blank">daemon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daimon" target="_blank">daimon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demon" target="_blank">demon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=etymon" target="_blank">etymon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gammon" target="_blank">gammon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mammon" target="_blank">mammon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=persimmon" target="_blank">persimmon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salmon" target="_blank">salmon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sermon" target="_blank">sermon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=summon" target="_blank">summon</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "backgammon cardamon daemon, daimon demon etymon, gammon mammon persimmon, salmon sermon summon";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

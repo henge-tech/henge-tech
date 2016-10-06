@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: c_onal</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#482 c_onal
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cantonal" target="_blank">cantonal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coeducational" target="_blank">coeducational</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compositional" target="_blank">compositional</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concessional" target="_blank">concessional</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confessional" target="_blank">confessional</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confrontational" target="_blank">confrontational</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=congregational" target="_blank">congregational</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=congressional" target="_blank">congressional</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constitutional" target="_blank">constitutional</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conventional" target="_blank">conventional</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coronal" target="_blank">coronal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=correctional" target="_blank">correctional</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "cantonal coeducational compositional, concessional confessional confrontational, congregational congressional constitutional, conventional coronal correctional";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

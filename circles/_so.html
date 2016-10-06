@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _so</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#304 _so
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=also" target="_blank">also</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=calypso" target="_blank">calypso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=espresso" target="_blank">espresso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fatso" target="_blank">fatso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lasso" target="_blank">lasso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mafioso" target="_blank">mafioso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peso" target="_blank">peso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proviso" target="_blank">proviso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=torso" target="_blank">torso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verso" target="_blank">verso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=virtuoso" target="_blank">virtuoso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whoso" target="_blank">whoso</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "also calypso espresso, fatso lasso mafioso, peso proviso torso, verso virtuoso whoso";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

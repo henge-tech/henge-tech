@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ab</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#1 _ab
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blab" target="_blank">blab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crab" target="_blank">crab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dab" target="_blank">dab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drab" target="_blank">drab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fab" target="_blank">fab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flab" target="_blank">flab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gab" target="_blank">gab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grab" target="_blank">grab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hijab" target="_blank">hijab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jab" target="_blank">jab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nab" target="_blank">nab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scab" target="_blank">scab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slab" target="_blank">slab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squab" target="_blank">squab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stab" target="_blank">stab</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swab" target="_blank">swab</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "blab crab dab drab, fab flab gab grab, hijab jab nab scab, slab squab stab swab";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

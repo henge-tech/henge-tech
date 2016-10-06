@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _arer</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#37 _arer
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bearer" target="_blank">bearer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carer" target="_blank">carer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=declarer" target="_blank">declarer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hearer" target="_blank">hearer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pallbearer" target="_blank">pallbearer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parer" target="_blank">parer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seafarer" target="_blank">seafarer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swearer" target="_blank">swearer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=torchbearer" target="_blank">torchbearer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trainbearer" target="_blank">trainbearer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wayfarer" target="_blank">wayfarer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wearer" target="_blank">wearer</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bearer carer declarer, hearer pallbearer parer, seafarer swearer torchbearer, trainbearer wayfarer wearer";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: adve_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#403 adve_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=advent" target="_blank">advent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adventitious" target="_blank">adventitious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adventurer" target="_blank">adventurer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adventuress" target="_blank">adventuress</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adverb" target="_blank">adverb</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adverbial" target="_blank">adverbial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adversarial" target="_blank">adversarial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adversary" target="_blank">adversary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adverse" target="_blank">adverse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adversely" target="_blank">adversely</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adversity" target="_blank">adversity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=advert" target="_blank">advert</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "advent adventitious adventurer, adventuress adverb adverbial, adversarial adversary adverse, adversely adversity advert";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

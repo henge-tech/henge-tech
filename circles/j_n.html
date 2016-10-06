@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: j_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#724 j_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=japan" target="_blank">japan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=javelin" target="_blank">javelin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jerkin" target="_blank">jerkin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jettison" target="_blank">jettison</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jinn" target="_blank">jinn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=john" target="_blank">john</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=journeyman" target="_blank">journeyman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jubilation" target="_blank">jubilation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=junction" target="_blank">junction</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jurisdiction" target="_blank">jurisdiction</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=justification" target="_blank">justification</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=juxtaposition" target="_blank">juxtaposition</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "japan javelin jerkin, jettison jinn john, journeyman jubilation junction, jurisdiction justification juxtaposition";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

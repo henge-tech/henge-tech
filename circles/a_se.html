@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: a_se</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#384 a_se
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abuse" target="_blank">abuse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accuse" target="_blank">accuse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adipose" target="_blank">adipose</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adverse" target="_blank">adverse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=advise" target="_blank">advise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airbase" target="_blank">airbase</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anise" target="_blank">anise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apocalypse" target="_blank">apocalypse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appease" target="_blank">appease</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=applause" target="_blank">applause</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appraise" target="_blank">appraise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apse" target="_blank">apse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=archdiocese" target="_blank">archdiocese</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arise" target="_blank">arise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arouse" target="_blank">arouse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=averse" target="_blank">averse</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "abuse accuse adipose adverse, advise airbase anise apocalypse, appease applause appraise apse, archdiocese arise arouse averse";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

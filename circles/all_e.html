@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: all_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#408 all_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allege" target="_blank">allege</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allegiance" target="_blank">allegiance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allele" target="_blank">allele</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alleviate" target="_blank">alleviate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alliance" target="_blank">alliance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allocate" target="_blank">allocate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allowable" target="_blank">allowable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allowance" target="_blank">allowance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allspice" target="_blank">allspice</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allude" target="_blank">allude</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allure" target="_blank">allure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allusive" target="_blank">allusive</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "allege allegiance allele, alleviate alliance allocate, allowable allowance allspice, allude allure allusive";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

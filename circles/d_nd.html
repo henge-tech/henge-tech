@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: d_nd</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#557 d_nd
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dachshund" target="_blank">dachshund</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deckhand" target="_blank">deckhand</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defend" target="_blank">defend</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demand" target="_blank">demand</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depend" target="_blank">depend</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descend" target="_blank">descend</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disband" target="_blank">disband</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dividend" target="_blank">dividend</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dixieland" target="_blank">dixieland</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downwind" target="_blank">downwind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dreamland" target="_blank">dreamland</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dumbfound" target="_blank">dumbfound</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "dachshund deckhand defend, demand depend descend, disband dividend dixieland, downwind dreamland dumbfound";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

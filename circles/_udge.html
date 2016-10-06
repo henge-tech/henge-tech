@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _udge</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#341 _udge
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adjudge" target="_blank">adjudge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=begrudge" target="_blank">begrudge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=budge" target="_blank">budge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drudge" target="_blank">drudge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fudge" target="_blank">fudge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grudge" target="_blank">grudge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=judge" target="_blank">judge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nudge" target="_blank">nudge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prejudge" target="_blank">prejudge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sludge" target="_blank">sludge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=smudge" target="_blank">smudge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trudge" target="_blank">trudge</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "adjudge begrudge budge, drudge fudge grudge, judge nudge prejudge, sludge smudge trudge";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: se_er</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#918 se_er
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seafarer" target="_blank">seafarer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sealer" target="_blank">sealer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seducer" target="_blank">seducer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seer" target="_blank">seer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seltzer" target="_blank">seltzer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=semester" target="_blank">semester</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sequencer" target="_blank">sequencer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sequester" target="_blank">sequester</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=setter" target="_blank">setter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=settler" target="_blank">settler</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sever" target="_blank">sever</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sewer" target="_blank">sewer</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "seafarer sealer seducer, seer seltzer semester, sequencer sequester setter, settler sever sewer";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

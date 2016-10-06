@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _lery</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#162 _lery
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=artillery" target="_blank">artillery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=celery" target="_blank">celery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chancellery" target="_blank">chancellery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cutlery" target="_blank">cutlery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distillery" target="_blank">distillery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foolery" target="_blank">foolery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gallery" target="_blank">gallery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jugglery" target="_blank">jugglery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=raillery" target="_blank">raillery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saddlery" target="_blank">saddlery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scullery" target="_blank">scullery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tomfoolery" target="_blank">tomfoolery</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "artillery celery chancellery, cutlery distillery foolery, gallery jugglery raillery, saddlery scullery tomfoolery";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

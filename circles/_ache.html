@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ache</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#3 _ache
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ache" target="_blank">ache</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Apache" target="_blank">Apache</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=attache" target="_blank">attache</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=backache" target="_blank">backache</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bellyache" target="_blank">bellyache</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cache" target="_blank">cache</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=earache" target="_blank">earache</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gouache" target="_blank">gouache</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heartache" target="_blank">heartache</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=huarache" target="_blank">huarache</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mustache" target="_blank">mustache</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=panache" target="_blank">panache</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ache Apache attache, backache bellyache cache, earache gouache heartache, huarache mustache panache";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

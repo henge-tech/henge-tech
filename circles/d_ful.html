@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: d_ful</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#550 d_ful
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deceitful" target="_blank">deceitful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delightful" target="_blank">delightful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=direful" target="_blank">direful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disdainful" target="_blank">disdainful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disgraceful" target="_blank">disgraceful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disrespectful" target="_blank">disrespectful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distasteful" target="_blank">distasteful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distrustful" target="_blank">distrustful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doleful" target="_blank">doleful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doubtful" target="_blank">doubtful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dreadful" target="_blank">dreadful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dutiful" target="_blank">dutiful</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "deceitful delightful direful, disdainful disgraceful disrespectful, distasteful distrustful doleful, doubtful dreadful dutiful";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

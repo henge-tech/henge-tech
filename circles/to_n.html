@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: to_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#960 to_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toboggan" target="_blank">toboggan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tocsin" target="_blank">tocsin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=token" target="_blank">token</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toleration" target="_blank">toleration</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ton" target="_blank">ton</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=topspin" target="_blank">topspin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=torsion" target="_blank">torsion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=totalitarian" target="_blank">totalitarian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toucan" target="_blank">toucan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=touchdown" target="_blank">touchdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toughen" target="_blank">toughen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toxin" target="_blank">toxin</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "toboggan tocsin token, toleration ton topspin, torsion totalitarian toucan, touchdown toughen toxin";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ife</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#136 _ife
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=afterlife" target="_blank">afterlife</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fife" target="_blank">fife</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fishwife" target="_blank">fishwife</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=housewife" target="_blank">housewife</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=knife" target="_blank">knife</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=midwife" target="_blank">midwife</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nightlife" target="_blank">nightlife</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penknife" target="_blank">penknife</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rife" target="_blank">rife</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strife" target="_blank">strife</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wife" target="_blank">wife</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wildlife" target="_blank">wildlife</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "afterlife fife fishwife, housewife knife midwife, nightlife penknife rife, strife wife wildlife";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

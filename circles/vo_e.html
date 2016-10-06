@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: vo_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#984 vo_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vogue" target="_blank">vogue</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=voice" target="_blank">voice</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=voile" target="_blank">voile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=volatile" target="_blank">volatile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vole" target="_blank">vole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=voltage" target="_blank">voltage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=volume" target="_blank">volume</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=volute" target="_blank">volute</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vote" target="_blank">vote</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=votive" target="_blank">votive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vouchsafe" target="_blank">vouchsafe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=voyage" target="_blank">voyage</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "vogue voice voile, volatile vole voltage, volume volute vote, votive vouchsafe voyage";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ad_tion</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#401 ad_tion
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adaptation" target="_blank">adaptation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=addiction" target="_blank">addiction</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adjudication" target="_blank">adjudication</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=administration" target="_blank">administration</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=admiration" target="_blank">admiration</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=admonition" target="_blank">admonition</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adoption" target="_blank">adoption</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adoration" target="_blank">adoration</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adsorption" target="_blank">adsorption</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adulation" target="_blank">adulation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adulteration" target="_blank">adulteration</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adumbration" target="_blank">adumbration</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "adaptation addiction adjudication, administration admiration admonition, adoption adoration adsorption, adulation adulteration adumbration";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

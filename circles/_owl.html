@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _owl</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#239 _owl
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bowl" target="_blank">bowl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cowl" target="_blank">cowl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fishbowl" target="_blank">fishbowl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fowl" target="_blank">fowl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=growl" target="_blank">growl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=howl" target="_blank">howl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jowl" target="_blank">jowl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=owl" target="_blank">owl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prowl" target="_blank">prowl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scowl" target="_blank">scowl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waterfowl" target="_blank">waterfowl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wildfowl" target="_blank">wildfowl</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bowl cowl fishbowl, fowl growl howl, jowl owl prowl, scowl waterfowl wildfowl";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

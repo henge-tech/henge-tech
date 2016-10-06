@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _cast</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#57 _cast
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broadcast" target="_blank">broadcast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downcast" target="_blank">downcast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forecast" target="_blank">forecast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=miscast" target="_blank">miscast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opencast" target="_blank">opencast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outcast" target="_blank">outcast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overcast" target="_blank">overcast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precast" target="_blank">precast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recast" target="_blank">recast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=simulcast" target="_blank">simulcast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=telecast" target="_blank">telecast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=typecast" target="_blank">typecast</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "broadcast downcast forecast, miscast opencast outcast, overcast precast recast, simulcast telecast typecast";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

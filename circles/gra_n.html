@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: gra_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#680 gra_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=graben" target="_blank">graben</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gradation" target="_blank">gradation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=graduation" target="_blank">graduation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grain" target="_blank">grain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grammarian" target="_blank">grammarian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gran" target="_blank">gran</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grandchildren" target="_blank">grandchildren</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grandson" target="_blank">grandson</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gratification" target="_blank">gratification</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gratin" target="_blank">gratin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=graven" target="_blank">graven</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gravitation" target="_blank">gravitation</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "graben gradation graduation, grain grammarian gran, grandchildren grandson gratification, gratin graven gravitation";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

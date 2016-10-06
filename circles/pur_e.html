@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: pur_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#858 pur_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purchase" target="_blank">purchase</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pure" target="_blank">pure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=puree" target="_blank">puree</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purgative" target="_blank">purgative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purge" target="_blank">purge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purine" target="_blank">purine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purple" target="_blank">purple</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purpose" target="_blank">purpose</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purposive" target="_blank">purposive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purse" target="_blank">purse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pursuance" target="_blank">pursuance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pursue" target="_blank">pursue</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "purchase pure puree, purgative purge purine, purple purpose purposive, purse pursuance pursue";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

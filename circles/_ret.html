@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ret</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#270 _ret
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beret" target="_blank">beret</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cabaret" target="_blank">cabaret</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caret" target="_blank">caret</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=claret" target="_blank">claret</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=egret" target="_blank">egret</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ferret" target="_blank">ferret</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fret" target="_blank">fret</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=garret" target="_blank">garret</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interpret" target="_blank">interpret</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=minaret" target="_blank">minaret</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=regret" target="_blank">regret</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=turret" target="_blank">turret</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "beret cabaret caret, claret egret ferret, fret garret interpret, minaret regret turret";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

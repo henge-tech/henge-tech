@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _rum</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#291 _rum
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arum" target="_blank">arum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cerebrum" target="_blank">cerebrum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colostrum" target="_blank">colostrum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conundrum" target="_blank">conundrum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decorum" target="_blank">decorum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=durum" target="_blank">durum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eardrum" target="_blank">eardrum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fulcrum" target="_blank">fulcrum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=humdrum" target="_blank">humdrum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nostrum" target="_blank">nostrum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quorum" target="_blank">quorum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sacrum" target="_blank">sacrum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=serum" target="_blank">serum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spectrum" target="_blank">spectrum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strum" target="_blank">strum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tantrum" target="_blank">tantrum</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "arum cerebrum colostrum conundrum, decorum durum eardrum fulcrum, humdrum nostrum quorum sacrum, serum spectrum strum tantrum";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

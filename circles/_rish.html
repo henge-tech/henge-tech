@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _rish</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#276 _rish
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amateurish" target="_blank">amateurish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bearish" target="_blank">bearish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boorish" target="_blank">boorish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cherish" target="_blank">cherish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feverish" target="_blank">feverish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flourish" target="_blank">flourish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=garish" target="_blank">garish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gibberish" target="_blank">gibberish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nightmarish" target="_blank">nightmarish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nourish" target="_blank">nourish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parish" target="_blank">parish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perish" target="_blank">perish</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "amateurish bearish boorish, cherish feverish flourish, garish gibberish nightmarish, nourish parish perish";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

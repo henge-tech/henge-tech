@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ai_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#405 ai_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aide" target="_blank">aide</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airbase" target="_blank">airbase</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airborne" target="_blank">airborne</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airdrome" target="_blank">airdrome</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airfare" target="_blank">airfare</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airframe" target="_blank">airframe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airline" target="_blank">airline</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airmobile" target="_blank">airmobile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airspace" target="_blank">airspace</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airstrike" target="_blank">airstrike</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airtime" target="_blank">airtime</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aisle" target="_blank">aisle</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "aide airbase airborne, airdrome airfare airframe, airline airmobile airspace, airstrike airtime aisle";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: tr_nt</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#964 tr_nt
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transcendent" target="_blank">transcendent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transient" target="_blank">transient</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=translucent" target="_blank">translucent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transparent" target="_blank">transparent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transplant" target="_blank">transplant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transshipment" target="_blank">transshipment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=treatment" target="_blank">treatment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trenchant" target="_blank">trenchant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trident" target="_blank">trident</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=triumphant" target="_blank">triumphant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=truant" target="_blank">truant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=truculent" target="_blank">truculent</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "transcendent transient translucent, transparent transplant transshipment, treatment trenchant trident, triumphant truant truculent";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _erie</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#102 _erie
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aerie" target="_blank">aerie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brasserie" target="_blank">brasserie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=camaraderie" target="_blank">camaraderie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coterie" target="_blank">coterie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eerie" target="_blank">eerie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=faerie" target="_blank">faerie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gendarmerie" target="_blank">gendarmerie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lingerie" target="_blank">lingerie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=menagerie" target="_blank">menagerie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patisserie" target="_blank">patisserie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reverie" target="_blank">reverie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rotisserie" target="_blank">rotisserie</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "aerie brasserie camaraderie, coterie eerie faerie, gendarmerie lingerie menagerie, patisserie reverie rotisserie";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

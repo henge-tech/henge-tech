@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ir_y</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#722 ir_y
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ironically" target="_blank">ironically</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ironmongery" target="_blank">ironmongery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irrationally" target="_blank">irrationally</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irregularly" target="_blank">irregularly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irreparably" target="_blank">irreparably</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irresistibly" target="_blank">irresistibly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irresponsibly" target="_blank">irresponsibly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irretrievably" target="_blank">irretrievably</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irreversibly" target="_blank">irreversibly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irrevocably" target="_blank">irrevocably</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irritability" target="_blank">irritability</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irritably" target="_blank">irritably</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ironically ironmongery irrationally, irregularly irreparably irresistibly, irresponsibly irretrievably irreversibly, irrevocably irritability irritably";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

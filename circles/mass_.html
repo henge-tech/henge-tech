@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: mass_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#763 mass_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mass" target="_blank">mass</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massacre" target="_blank">massacre</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massage" target="_blank">massage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=masseur" target="_blank">masseur</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=masseuse" target="_blank">masseuse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massif" target="_blank">massif</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massive" target="_blank">massive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massless" target="_blank">massless</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "mass massacre massage masseur, masseuse massif massive massless";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

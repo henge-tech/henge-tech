@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: wi_l</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#994 wi_l
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wildfowl" target="_blank">wildfowl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=willful" target="_blank">willful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=windchill" target="_blank">windchill</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=windfall" target="_blank">windfall</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wishful" target="_blank">wishful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wistful" target="_blank">wistful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=withal" target="_blank">withal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=withdrawal" target="_blank">withdrawal</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "wildfowl willful windchill windfall, wishful wistful withal withdrawal";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

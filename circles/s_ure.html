@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: s_ure</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#913 s_ure
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scripture" target="_blank">scripture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sculpture" target="_blank">sculpture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=secure" target="_blank">secure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seizure" target="_blank">seizure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=signature" target="_blank">signature</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sinecure" target="_blank">sinecure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stature" target="_blank">stature</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stricture" target="_blank">stricture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=substructure" target="_blank">substructure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=superstructure" target="_blank">superstructure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sure" target="_blank">sure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suture" target="_blank">suture</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "scripture sculpture secure, seizure signature sinecure, stature stricture substructure, superstructure sure suture";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

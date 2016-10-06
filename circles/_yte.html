@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _yte</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#366 _yte
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acolyte" target="_blank">acolyte</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=electrolyte" target="_blank">electrolyte</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=erythrocyte" target="_blank">erythrocyte</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leukocyte" target="_blank">leukocyte</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lymphocyte" target="_blank">lymphocyte</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neophyte" target="_blank">neophyte</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proselyte" target="_blank">proselyte</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=troglodyte" target="_blank">troglodyte</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "acolyte electrolyte erythrocyte leukocyte, lymphocyte neophyte proselyte troglodyte";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

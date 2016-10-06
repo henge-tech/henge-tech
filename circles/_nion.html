@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _nion</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#209 _nion
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anion" target="_blank">anion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bunion" target="_blank">bunion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=communion" target="_blank">communion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=companion" target="_blank">companion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dominion" target="_blank">dominion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=minion" target="_blank">minion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonunion" target="_blank">nonunion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=onion" target="_blank">onion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opinion" target="_blank">opinion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinion" target="_blank">pinion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reunion" target="_blank">reunion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=union" target="_blank">union</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "anion bunion communion, companion dominion minion, nonunion onion opinion, pinion reunion union";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: insi_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#719 insi_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insider" target="_blank">insider</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insidious" target="_blank">insidious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insight" target="_blank">insight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insightful" target="_blank">insightful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insignia" target="_blank">insignia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insignificant" target="_blank">insignificant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insincere" target="_blank">insincere</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insinuate" target="_blank">insinuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insinuation" target="_blank">insinuation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insipid" target="_blank">insipid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insist" target="_blank">insist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insistence" target="_blank">insistence</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "insider insidious insight, insightful insignia insignificant, insincere insinuate insinuation, insipid insist insistence";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

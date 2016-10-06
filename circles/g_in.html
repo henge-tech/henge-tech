@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: g_in</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#667 g_in
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gain" target="_blank">gain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gelatin" target="_blank">gelatin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gherkin" target="_blank">gherkin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gin" target="_blank">gin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glycerin" target="_blank">glycerin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=goblin" target="_blank">goblin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grain" target="_blank">grain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gratin" target="_blank">gratin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gremlin" target="_blank">gremlin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=griffin" target="_blank">griffin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grin" target="_blank">grin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=groin" target="_blank">groin</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "gain gelatin gherkin, gin glycerin goblin, grain gratin gremlin, griffin grin groin";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

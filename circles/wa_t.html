@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: wa_t</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#989 wa_t
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waft" target="_blank">waft</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waist" target="_blank">waist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waistcoat" target="_blank">waistcoat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=walkabout" target="_blank">walkabout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wanderlust" target="_blank">wanderlust</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=warrant" target="_blank">warrant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wart" target="_blank">wart</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=washout" target="_blank">washout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=watercraft" target="_blank">watercraft</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waterfront" target="_blank">waterfront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=watertight" target="_blank">watertight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wavelet" target="_blank">wavelet</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "waft waist waistcoat, walkabout wanderlust warrant, wart washout watercraft, waterfront watertight wavelet";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

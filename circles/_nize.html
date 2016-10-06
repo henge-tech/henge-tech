@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _nize</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#212 _nize
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antagonize" target="_blank">antagonize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colonize" target="_blank">colonize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demonize" target="_blank">demonize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=galvanize" target="_blank">galvanize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=harmonize" target="_blank">harmonize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immunize" target="_blank">immunize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=modernize" target="_blank">modernize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=organize" target="_blank">organize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patronize" target="_blank">patronize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revolutionize" target="_blank">revolutionize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrutinize" target="_blank">scrutinize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=synchronize" target="_blank">synchronize</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "antagonize colonize demonize, galvanize harmonize immunize, modernize organize patronize, revolutionize scrutinize synchronize";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

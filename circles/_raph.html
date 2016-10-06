@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _raph</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#255 _raph
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=autograph" target="_blank">autograph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chronograph" target="_blank">chronograph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=digraph" target="_blank">digraph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lithograph" target="_blank">lithograph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=micrograph" target="_blank">micrograph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monograph" target="_blank">monograph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=phonograph" target="_blank">phonograph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=polygraph" target="_blank">polygraph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=radiograph" target="_blank">radiograph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seraph" target="_blank">seraph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spectrograph" target="_blank">spectrograph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=telegraph" target="_blank">telegraph</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "autograph chronograph digraph, lithograph micrograph monograph, phonograph polygraph radiograph, seraph spectrograph telegraph";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

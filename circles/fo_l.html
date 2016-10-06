@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: fo_l</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#660 fo_l
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foal" target="_blank">foal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=focal" target="_blank">focal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foil" target="_blank">foil</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=footfall" target="_blank">footfall</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foothill" target="_blank">foothill</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foresail" target="_blank">foresail</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forestall" target="_blank">forestall</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foretell" target="_blank">foretell</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fossil" target="_blank">fossil</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foul" target="_blank">foul</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fowl" target="_blank">fowl</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foxtail" target="_blank">foxtail</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "foal focal foil, footfall foothill foresail, forestall foretell fossil, foul fowl foxtail";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

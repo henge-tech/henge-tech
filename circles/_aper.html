@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _aper</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#33 _aper
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caper" target="_blank">caper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diaper" target="_blank">diaper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=draper" target="_blank">draper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newspaper" target="_blank">newspaper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paper" target="_blank">paper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reaper" target="_blank">reaper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sandpaper" target="_blank">sandpaper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scraper" target="_blank">scraper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shaper" target="_blank">shaper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=skyscraper" target="_blank">skyscraper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taper" target="_blank">taper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wallpaper" target="_blank">wallpaper</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "caper diaper draper, newspaper paper reaper, sandpaper scraper shaper, skyscraper taper wallpaper";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

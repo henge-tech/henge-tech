@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ado</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#6 _ado
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ado" target="_blank">ado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aficionado" target="_blank">aficionado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amontillado" target="_blank">amontillado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=avocado" target="_blank">avocado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bastinado" target="_blank">bastinado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bravado" target="_blank">bravado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Colorado" target="_blank">Colorado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dado" target="_blank">dado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=desperado" target="_blank">desperado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dorado" target="_blank">dorado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incommunicado" target="_blank">incommunicado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tornado" target="_blank">tornado</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ado aficionado amontillado, avocado bastinado bravado, Colorado dado desperado, dorado incommunicado tornado";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

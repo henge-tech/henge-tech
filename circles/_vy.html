@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _vy</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#362 _vy
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anchovy" target="_blank">anchovy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bevy" target="_blank">bevy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=envy" target="_blank">envy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gravy" target="_blank">gravy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=groovy" target="_blank">groovy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ivy" target="_blank">ivy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=levy" target="_blank">levy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=navy" target="_blank">navy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nervy" target="_blank">nervy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=privy" target="_blank">privy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savvy" target="_blank">savvy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scurvy" target="_blank">scurvy</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "anchovy bevy envy, gravy groovy ivy, levy navy nervy, privy savvy scurvy";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

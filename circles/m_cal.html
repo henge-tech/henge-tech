@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: m_cal</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#747 m_cal
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maniacal" target="_blank">maniacal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metallurgical" target="_blank">metallurgical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metaphorical" target="_blank">metaphorical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metaphysical" target="_blank">metaphysical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meteorological" target="_blank">meteorological</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=methodical" target="_blank">methodical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=methodological" target="_blank">methodological</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metrical" target="_blank">metrical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=microbiological" target="_blank">microbiological</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=microscopical" target="_blank">microscopical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mineralogical" target="_blank">mineralogical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monarchical" target="_blank">monarchical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=morphological" target="_blank">morphological</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mystical" target="_blank">mystical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mythical" target="_blank">mythical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mythological" target="_blank">mythological</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "maniacal metallurgical metaphorical metaphysical, meteorological methodical methodological metrical, microbiological microscopical mineralogical monarchical, morphological mystical mythical mythological";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

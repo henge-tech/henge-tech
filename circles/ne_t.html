@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ne_t</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#784 ne_t
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neat" target="_blank">neat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=needlecraft" target="_blank">needlecraft</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=needlepoint" target="_blank">needlepoint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neglect" target="_blank">neglect</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=negligent" target="_blank">negligent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nest" target="_blank">nest</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neurologist" target="_blank">neurologist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neuroscientist" target="_blank">neuroscientist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newsagent" target="_blank">newsagent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newscast" target="_blank">newscast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newsprint" target="_blank">newsprint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newt" target="_blank">newt</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "neat needlecraft needlepoint, neglect negligent nest, neurologist neuroscientist newsagent, newscast newsprint newt";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

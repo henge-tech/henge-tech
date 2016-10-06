@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: op_y</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#802 op_y
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opacity" target="_blank">opacity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=openly" target="_blank">openly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=operationally" target="_blank">operationally</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=operatively" target="_blank">operatively</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ophthalmology" target="_blank">ophthalmology</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opportunely" target="_blank">opportunely</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opportunity" target="_blank">opportunity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oppressively" target="_blank">oppressively</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=optically" target="_blank">optically</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=optimistically" target="_blank">optimistically</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=optionally" target="_blank">optionally</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=optometry" target="_blank">optometry</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "opacity openly operationally, operatively ophthalmology opportunely, opportunity oppressively optically, optimistically optionally optometry";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

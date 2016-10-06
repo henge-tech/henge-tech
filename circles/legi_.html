@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: legi_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#737 legi_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legibility" target="_blank">legibility</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legible" target="_blank">legible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legion" target="_blank">legion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legionnaire" target="_blank">legionnaire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislate" target="_blank">legislate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislation" target="_blank">legislation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislative" target="_blank">legislative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislator" target="_blank">legislator</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislature" target="_blank">legislature</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legit" target="_blank">legit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legitimacy" target="_blank">legitimacy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legitimate" target="_blank">legitimate</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "legibility legible legion, legionnaire legislate legislation, legislative legislator legislature, legit legitimacy legitimate";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

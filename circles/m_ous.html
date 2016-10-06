@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: m_ous</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#752 m_ous
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magnanimous" target="_blank">magnanimous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=malicious" target="_blank">malicious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marvelous" target="_blank">marvelous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=membranous" target="_blank">membranous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meritorious" target="_blank">meritorious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meticulous" target="_blank">meticulous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=miscellaneous" target="_blank">miscellaneous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mischievous" target="_blank">mischievous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=momentous" target="_blank">momentous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monogamous" target="_blank">monogamous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monotonous" target="_blank">monotonous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monstrous" target="_blank">monstrous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mountainous" target="_blank">mountainous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mucous" target="_blank">mucous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multifarious" target="_blank">multifarious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=murderous" target="_blank">murderous</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "magnanimous malicious marvelous membranous, meritorious meticulous miscellaneous mischievous, momentous monogamous monotonous monstrous, mountainous mucous multifarious murderous";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

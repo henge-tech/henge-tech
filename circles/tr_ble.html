@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: tr_ble</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#963 tr_ble
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=traceable" target="_blank">traceable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tractable" target="_blank">tractable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tradable" target="_blank">tradable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transferable" target="_blank">transferable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=translatable" target="_blank">translatable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transmissible" target="_blank">transmissible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transportable" target="_blank">transportable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=treasonable" target="_blank">treasonable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=treatable" target="_blank">treatable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=treble" target="_blank">treble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tremble" target="_blank">tremble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trouble" target="_blank">trouble</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "traceable tractable tradable, transferable translatable transmissible, transportable treasonable treatable, treble tremble trouble";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

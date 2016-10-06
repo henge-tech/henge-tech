@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _hore</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#124 _hore
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ashore" target="_blank">ashore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chore" target="_blank">chore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foreshore" target="_blank">foreshore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inshore" target="_blank">inshore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=longshore" target="_blank">longshore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nearshore" target="_blank">nearshore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=offshore" target="_blank">offshore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=onshore" target="_blank">onshore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seashore" target="_blank">seashore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=semaphore" target="_blank">semaphore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shore" target="_blank">shore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whore" target="_blank">whore</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ashore chore foreshore, inshore longshore nearshore, offshore onshore seashore, semaphore shore whore";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

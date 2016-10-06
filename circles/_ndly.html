@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ndly</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#198 _ndly
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blandly" target="_blank">blandly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blindly" target="_blank">blindly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fondly" target="_blank">fondly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=friendly" target="_blank">friendly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grandly" target="_blank">grandly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jocundly" target="_blank">jocundly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kindly" target="_blank">kindly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=profoundly" target="_blank">profoundly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=roundly" target="_blank">roundly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=secondly" target="_blank">secondly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=soundly" target="_blank">soundly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spindly" target="_blank">spindly</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "blandly blindly fondly, friendly grandly jocundly, kindly profoundly roundly, secondly soundly spindly";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

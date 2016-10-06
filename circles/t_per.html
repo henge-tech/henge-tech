@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: t_per</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#950 t_per
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamper" target="_blank">tamper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taper" target="_blank">taper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=temper" target="_blank">temper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=timekeeper" target="_blank">timekeeper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tipper" target="_blank">tipper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=topper" target="_blank">topper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=touchpaper" target="_blank">touchpaper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tramper" target="_blank">tramper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trapper" target="_blank">trapper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tripper" target="_blank">tripper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trooper" target="_blank">trooper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trouper" target="_blank">trouper</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "tamper taper temper, timekeeper tipper topper, touchpaper tramper trapper, tripper trooper trouper";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _hery</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#119 _hery
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=butchery" target="_blank">butchery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=debauchery" target="_blank">debauchery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feathery" target="_blank">feathery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fishery" target="_blank">fishery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haberdashery" target="_blank">haberdashery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hatchery" target="_blank">hatchery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leathery" target="_blank">leathery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lechery" target="_blank">lechery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=periphery" target="_blank">periphery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stitchery" target="_blank">stitchery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=treachery" target="_blank">treachery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=witchery" target="_blank">witchery</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "butchery debauchery feathery, fishery haberdashery hatchery, leathery lechery periphery, stitchery treachery witchery";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

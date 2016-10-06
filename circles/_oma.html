@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _oma</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#224 _oma
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aroma" target="_blank">aroma</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carcinoma" target="_blank">carcinoma</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coma" target="_blank">coma</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diploma" target="_blank">diploma</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glaucoma" target="_blank">glaucoma</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lymphoma" target="_blank">lymphoma</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=melanoma" target="_blank">melanoma</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=myeloma" target="_blank">myeloma</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Oklahoma" target="_blank">Oklahoma</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sarcoma" target="_blank">sarcoma</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stoma" target="_blank">stoma</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trachoma" target="_blank">trachoma</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "aroma carcinoma coma, diploma glaucoma lymphoma, melanoma myeloma Oklahoma, sarcoma stoma trachoma";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

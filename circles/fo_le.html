@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: fo_le</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#661 fo_le
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foible" target="_blank">foible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foldable" target="_blank">foldable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=follicle" target="_blank">follicle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fondle" target="_blank">fondle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forcible" target="_blank">forcible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forecastle" target="_blank">forecastle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foreseeable" target="_blank">foreseeable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forfeitable" target="_blank">forfeitable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forgettable" target="_blank">forgettable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forgivable" target="_blank">forgivable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=formidable" target="_blank">formidable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foxhole" target="_blank">foxhole</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "foible foldable follicle, fondle forcible forecastle, foreseeable forfeitable forgettable, forgivable formidable foxhole";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

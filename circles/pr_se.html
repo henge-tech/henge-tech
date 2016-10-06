@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: pr_se</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#847 pr_se
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=praise" target="_blank">praise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precise" target="_blank">precise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=predispose" target="_blank">predispose</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=premise" target="_blank">premise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=presuppose" target="_blank">presuppose</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pretense" target="_blank">pretense</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=primrose" target="_blank">primrose</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=profuse" target="_blank">profuse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prolapse" target="_blank">prolapse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=promise" target="_blank">promise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=propose" target="_blank">propose</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prose" target="_blank">prose</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "praise precise predispose, premise presuppose pretense, primrose profuse prolapse, promise propose prose";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

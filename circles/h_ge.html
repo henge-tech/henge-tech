@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: h_ge</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#685 h_ge
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=harborage" target="_blank">harborage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haulage" target="_blank">haulage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hedge" target="_blank">hedge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hemorrhage" target="_blank">hemorrhage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=henge" target="_blank">henge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=herbage" target="_blank">herbage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heritage" target="_blank">heritage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hermitage" target="_blank">hermitage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hinge" target="_blank">hinge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hodgepodge" target="_blank">hodgepodge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homage" target="_blank">homage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hostage" target="_blank">hostage</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "harborage haulage hedge, hemorrhage henge herbage, heritage hermitage hinge, hodgepodge homage hostage";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

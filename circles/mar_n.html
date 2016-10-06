@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: mar_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#761 mar_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marathon" target="_blank">marathon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=margin" target="_blank">margin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marginalization" target="_blank">marginalization</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Marian" target="_blank">Marian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=markdown" target="_blank">markdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marksman" target="_blank">marksman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marlin" target="_blank">marlin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maroon" target="_blank">maroon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marten" target="_blank">marten</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=martian" target="_blank">martian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=martin" target="_blank">martin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marzipan" target="_blank">marzipan</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "marathon margin marginalization, Marian markdown marksman, marlin maroon marten, martian martin marzipan";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

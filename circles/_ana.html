@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ana</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#25 _ana
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=banana" target="_blank">banana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bandana" target="_blank">bandana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bwana" target="_blank">bwana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cabana" target="_blank">cabana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gymkhana" target="_blank">gymkhana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=iguana" target="_blank">iguana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=liana" target="_blank">liana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manana" target="_blank">manana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marijuana" target="_blank">marijuana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nirvana" target="_blank">nirvana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prana" target="_blank">prana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sultana" target="_blank">sultana</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "banana bandana bwana, cabana gymkhana iguana, liana manana marijuana, nirvana prana sultana";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

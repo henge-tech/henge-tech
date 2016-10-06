@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _lain</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#157 _lain
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chamberlain" target="_blank">chamberlain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chaplain" target="_blank">chaplain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chilblain" target="_blank">chilblain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complain" target="_blank">complain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=explain" target="_blank">explain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lain" target="_blank">lain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overlain" target="_blank">overlain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plain" target="_blank">plain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=porcelain" target="_blank">porcelain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slain" target="_blank">slain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=underlain" target="_blank">underlain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=villain" target="_blank">villain</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "chamberlain chaplain chilblain, complain explain lain, overlain plain porcelain, slain underlain villain";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

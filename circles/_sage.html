@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _sage</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#294 _sage
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corsage" target="_blank">corsage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dosage" target="_blank">dosage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dressage" target="_blank">dressage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=envisage" target="_blank">envisage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massage" target="_blank">massage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=message" target="_blank">message</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=passage" target="_blank">passage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=presage" target="_blank">presage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sage" target="_blank">sage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sausage" target="_blank">sausage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=usage" target="_blank">usage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=visage" target="_blank">visage</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "corsage dosage dressage, envisage massage message, passage presage sage, sausage usage visage";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

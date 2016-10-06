@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: mu_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#776 mu_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muffin" target="_blank">muffin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mullion" target="_blank">mullion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multifunction" target="_blank">multifunction</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multimillion" target="_blank">multimillion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiplication" target="_blank">multiplication</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=munchkin" target="_blank">munchkin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=munition" target="_blank">munition</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muslin" target="_blank">muslin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutagen" target="_blank">mutagen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutation" target="_blank">mutation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutilation" target="_blank">mutilation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutton" target="_blank">mutton</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "muffin mullion multifunction, multimillion multiplication munchkin, munition muslin mutagen, mutation mutilation mutton";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

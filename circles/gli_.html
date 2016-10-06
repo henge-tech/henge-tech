@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: gli_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#677 gli_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glib" target="_blank">glib</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glide" target="_blank">glide</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glider" target="_blank">glider</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glimmer" target="_blank">glimmer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glimpse" target="_blank">glimpse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glint" target="_blank">glint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glissando" target="_blank">glissando</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glisten" target="_blank">glisten</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitch" target="_blank">glitch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitter" target="_blank">glitter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitterati" target="_blank">glitterati</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitz" target="_blank">glitz</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "glib glide glider, glimmer glimpse glint, glissando glisten glitch, glitter glitterati glitz";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

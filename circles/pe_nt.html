@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: pe_nt</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#831 pe_nt
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peasant" target="_blank">peasant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pedant" target="_blank">pedant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pediment" target="_blank">pediment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penchant" target="_blank">penchant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pendant" target="_blank">pendant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pendent" target="_blank">pendent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penitent" target="_blank">penitent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pennant" target="_blank">pennant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pent" target="_blank">pent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=persistent" target="_blank">persistent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pertinent" target="_blank">pertinent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=petulant" target="_blank">petulant</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "peasant pedant pediment, penchant pendant pendent, penitent pennant pent, persistent pertinent petulant";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

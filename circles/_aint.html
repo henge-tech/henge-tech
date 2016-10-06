@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _aint</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#15 _aint
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acquaint" target="_blank">acquaint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complaint" target="_blank">complaint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constraint" target="_blank">constraint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distraint" target="_blank">distraint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=faint" target="_blank">faint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greasepaint" target="_blank">greasepaint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paint" target="_blank">paint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plaint" target="_blank">plaint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quaint" target="_blank">quaint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=restraint" target="_blank">restraint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saint" target="_blank">saint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taint" target="_blank">taint</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "acquaint complaint constraint, distraint faint greasepaint, paint plaint quaint, restraint saint taint";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

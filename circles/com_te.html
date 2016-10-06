@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: com_te</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#519 com_te
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commemorate" target="_blank">commemorate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commensurate" target="_blank">commensurate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commiserate" target="_blank">commiserate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commute" target="_blank">commute</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compassionate" target="_blank">compassionate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compensate" target="_blank">compensate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compete" target="_blank">compete</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complete" target="_blank">complete</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complicate" target="_blank">complicate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=composite" target="_blank">composite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compote" target="_blank">compote</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compute" target="_blank">compute</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "commemorate commensurate commiserate, commute compassionate compensate, compete complete complicate, composite compote compute";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

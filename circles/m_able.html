@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: m_able</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#744 m_able
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maintainable" target="_blank">maintainable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=malleable" target="_blank">malleable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manageable" target="_blank">manageable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maneuverable" target="_blank">maneuverable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marketable" target="_blank">marketable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=measurable" target="_blank">measurable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=memorable" target="_blank">memorable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=miserable" target="_blank">miserable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monosyllable" target="_blank">monosyllable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mountable" target="_blank">mountable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=movable" target="_blank">movable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutable" target="_blank">mutable</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "maintainable malleable manageable, maneuverable marketable measurable, memorable miserable monosyllable, mountable movable mutable";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

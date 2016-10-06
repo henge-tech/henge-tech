@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ctic</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#62 _ctic
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antarctic" target="_blank">antarctic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arctic" target="_blank">arctic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=climactic" target="_blank">climactic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dialectic" target="_blank">dialectic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=didactic" target="_blank">didactic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eclectic" target="_blank">eclectic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hectic" target="_blank">hectic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intergalactic" target="_blank">intergalactic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lactic" target="_blank">lactic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prophylactic" target="_blank">prophylactic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=syntactic" target="_blank">syntactic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tactic" target="_blank">tactic</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "antarctic arctic climactic, dialectic didactic eclectic, hectic intergalactic lactic, prophylactic syntactic tactic";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

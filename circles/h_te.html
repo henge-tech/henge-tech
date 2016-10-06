@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: h_te</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#692 h_te
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hallucinate" target="_blank">hallucinate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haste" target="_blank">haste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hate" target="_blank">hate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=helpmate" target="_blank">helpmate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hermaphrodite" target="_blank">hermaphrodite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hesitate" target="_blank">hesitate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hibernate" target="_blank">hibernate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hirsute" target="_blank">hirsute</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=housemate" target="_blank">housemate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=humiliate" target="_blank">humiliate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydrate" target="_blank">hydrate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypocrite" target="_blank">hypocrite</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "hallucinate haste hate, helpmate hermaphrodite hesitate, hibernate hirsute housemate, humiliate hydrate hypocrite";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

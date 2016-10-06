@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: co_ne</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#509 co_ne
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cobblestone" target="_blank">cobblestone</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collarbone" target="_blank">collarbone</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=columbine" target="_blank">columbine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=combine" target="_blank">combine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commune" target="_blank">commune</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concubine" target="_blank">concubine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=condone" target="_blank">condone</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cone" target="_blank">cone</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confine" target="_blank">confine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contravene" target="_blank">contravene</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convene" target="_blank">convene</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cornerstone" target="_blank">cornerstone</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "cobblestone collarbone columbine, combine commune concubine, condone cone confine, contravene convene cornerstone";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: a_ure</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#387 a_ure
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abjure" target="_blank">abjure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acupressure" target="_blank">acupressure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acupuncture" target="_blank">acupuncture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adjure" target="_blank">adjure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=admixture" target="_blank">admixture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allure" target="_blank">allure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aperture" target="_blank">aperture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apiculture" target="_blank">apiculture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aquaculture" target="_blank">aquaculture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=armature" target="_blank">armature</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assure" target="_blank">assure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=azure" target="_blank">azure</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "abjure acupressure acupuncture, adjure admixture allure, aperture apiculture aquaculture, armature assure azure";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

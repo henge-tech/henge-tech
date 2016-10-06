@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: l_ous</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#731 l_ous
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laborious" target="_blank">laborious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lascivious" target="_blank">lascivious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lecherous" target="_blank">lecherous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=libelous" target="_blank">libelous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=licentious" target="_blank">licentious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=litigious" target="_blank">litigious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loquacious" target="_blank">loquacious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ludicrous" target="_blank">ludicrous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luminous" target="_blank">luminous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luscious" target="_blank">luscious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lustrous" target="_blank">lustrous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luxurious" target="_blank">luxurious</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "laborious lascivious lecherous, libelous licentious litigious, loquacious ludicrous luminous, luscious lustrous luxurious";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

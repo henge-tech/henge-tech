@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: p_ful</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#811 p_ful
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=painful" target="_blank">painful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peaceful" target="_blank">peaceful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pitiful" target="_blank">pitiful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plateful" target="_blank">plateful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=playful" target="_blank">playful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plentiful" target="_blank">plentiful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=powerful" target="_blank">powerful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purposeful" target="_blank">purposeful</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "painful peaceful pitiful plateful, playful plentiful powerful purposeful";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

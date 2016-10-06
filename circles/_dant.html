@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _dant</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#65 _dant
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abundant" target="_blank">abundant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antioxidant" target="_blank">antioxidant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascendant" target="_blank">ascendant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=attendant" target="_blank">attendant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commandant" target="_blank">commandant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concordant" target="_blank">concordant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confidant" target="_blank">confidant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defendant" target="_blank">defendant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descendant" target="_blank">descendant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discordant" target="_blank">discordant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fondant" target="_blank">fondant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mordant" target="_blank">mordant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pedant" target="_blank">pedant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=redundant" target="_blank">redundant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retardant" target="_blank">retardant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verdant" target="_blank">verdant</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "abundant antioxidant ascendant attendant, commandant concordant confidant defendant, descendant discordant fondant mordant, pedant redundant retardant verdant";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

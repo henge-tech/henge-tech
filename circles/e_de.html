@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: e_de</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#612 e_de
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=electrode" target="_blank">electrode</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=elude" target="_blank">elude</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=erode" target="_blank">erode</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=escapade" target="_blank">escapade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=esplanade" target="_blank">esplanade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=etude" target="_blank">etude</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evade" target="_blank">evade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eventide" target="_blank">eventide</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exactitude" target="_blank">exactitude</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclude" target="_blank">exclude</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extrude" target="_blank">extrude</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exude" target="_blank">exude</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "electrode elude erode, escapade esplanade etude, evade eventide exactitude, exclude extrude exude";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

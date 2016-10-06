@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _tz</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#337 _tz
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blitz" target="_blank">blitz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chintz" target="_blank">chintz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ditz" target="_blank">ditz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ersatz" target="_blank">ersatz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fritz" target="_blank">fritz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitz" target="_blank">glitz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hertz" target="_blank">hertz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kibbutz" target="_blank">kibbutz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kibitz" target="_blank">kibitz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=klutz" target="_blank">klutz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=megahertz" target="_blank">megahertz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=putz" target="_blank">putz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quartz" target="_blank">quartz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spitz" target="_blank">spitz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spritz" target="_blank">spritz</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waltz" target="_blank">waltz</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "blitz chintz ditz ersatz, fritz glitz hertz kibbutz, kibitz klutz megahertz putz, quartz spitz spritz waltz";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

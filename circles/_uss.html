@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _uss</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#355 _uss
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blunderbuss" target="_blank">blunderbuss</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buss" target="_blank">buss</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cuss" target="_blank">cuss</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discuss" target="_blank">discuss</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fuss" target="_blank">fuss</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gauss" target="_blank">gauss</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muss" target="_blank">muss</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=puss" target="_blank">puss</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sourpuss" target="_blank">sourpuss</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suss" target="_blank">suss</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=truss" target="_blank">truss</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wuss" target="_blank">wuss</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "blunderbuss buss cuss, discuss fuss gauss, muss puss sourpuss, suss truss wuss";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: a_atic</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#373 a_atic
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=achromatic" target="_blank">achromatic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acrobatic" target="_blank">acrobatic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adiabatic" target="_blank">adiabatic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aerobatic" target="_blank">aerobatic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aquatic" target="_blank">aquatic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aristocratic" target="_blank">aristocratic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aromatic" target="_blank">aromatic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=asthmatic" target="_blank">asthmatic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=asymptomatic" target="_blank">asymptomatic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=autocratic" target="_blank">autocratic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=automatic" target="_blank">automatic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=axiomatic" target="_blank">axiomatic</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "achromatic acrobatic adiabatic, aerobatic aquatic aristocratic, aromatic asthmatic asymptomatic, autocratic automatic axiomatic";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: r_el</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#863 r_el
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rappel" target="_blank">rappel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ratel" target="_blank">ratel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ravel" target="_blank">ravel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rebel" target="_blank">rebel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reel" target="_blank">reel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=refuel" target="_blank">refuel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remodel" target="_blank">remodel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repel" target="_blank">repel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revel" target="_blank">revel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=roundel" target="_blank">roundel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rowel" target="_blank">rowel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=runnel" target="_blank">runnel</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "rappel ratel ravel, rebel reel refuel, remodel repel revel, roundel rowel runnel";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

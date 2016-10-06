@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: c_ium</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#473 c_ium
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cadmium" target="_blank">cadmium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=calcium" target="_blank">calcium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cambium" target="_blank">cambium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cerium" target="_blank">cerium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cesium" target="_blank">cesium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chromium" target="_blank">chromium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colloquium" target="_blank">colloquium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compendium" target="_blank">compendium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=condominium" target="_blank">condominium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consortium" target="_blank">consortium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cranium" target="_blank">cranium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crematorium" target="_blank">crematorium</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "cadmium calcium cambium, cerium cesium chromium, colloquium compendium condominium, consortium cranium crematorium";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

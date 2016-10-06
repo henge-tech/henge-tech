@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _rrow</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#289 _rrow
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barrow" target="_blank">barrow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=borrow" target="_blank">borrow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burrow" target="_blank">burrow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=farrow" target="_blank">farrow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=furrow" target="_blank">furrow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=harrow" target="_blank">harrow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marrow" target="_blank">marrow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=morrow" target="_blank">morrow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=narrow" target="_blank">narrow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sorrow" target="_blank">sorrow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sparrow" target="_blank">sparrow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yarrow" target="_blank">yarrow</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "barrow borrow burrow, farrow furrow harrow, marrow morrow narrow, sorrow sparrow yarrow";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

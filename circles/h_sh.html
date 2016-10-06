@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: h_sh</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#691 h_sh
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hagfish" target="_blank">hagfish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hairbrush" target="_blank">hairbrush</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=harsh" target="_blank">harsh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hash" target="_blank">hash</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hashish" target="_blank">hashish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hawkish" target="_blank">hawkish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hellish" target="_blank">hellish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hoggish" target="_blank">hoggish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hogwash" target="_blank">hogwash</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=horseflesh" target="_blank">horseflesh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=horseradish" target="_blank">horseradish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hush" target="_blank">hush</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "hagfish hairbrush harsh, hash hashish hawkish, hellish hoggish hogwash, horseflesh horseradish hush";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

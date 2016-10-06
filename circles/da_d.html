@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: da_d</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#560 da_d
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dachshund" target="_blank">dachshund</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damned" target="_blank">damned</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dappled" target="_blank">dappled</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=darkened" target="_blank">darkened</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=darned" target="_blank">darned</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dartboard" target="_blank">dartboard</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dashboard" target="_blank">dashboard</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dashed" target="_blank">dashed</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dated" target="_blank">dated</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daybed" target="_blank">daybed</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dazed" target="_blank">dazed</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dazzled" target="_blank">dazzled</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "dachshund damned dappled, darkened darned dartboard, dashboard dashed dated, daybed dazed dazzled";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

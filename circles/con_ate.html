@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: con_ate</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#522 con_ate
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concatenate" target="_blank">concatenate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conciliate" target="_blank">conciliate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=condensate" target="_blank">condensate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confederate" target="_blank">confederate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confiscate" target="_blank">confiscate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conflate" target="_blank">conflate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conglomerate" target="_blank">conglomerate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=congregate" target="_blank">congregate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conjugate" target="_blank">conjugate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consecrate" target="_blank">consecrate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=considerate" target="_blank">considerate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consolidate" target="_blank">consolidate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consulate" target="_blank">consulate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consummate" target="_blank">consummate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contaminate" target="_blank">contaminate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contemplate" target="_blank">contemplate</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "concatenate conciliate condensate confederate, confiscate conflate conglomerate congregate, conjugate consecrate considerate consolidate, consulate consummate contaminate contemplate";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

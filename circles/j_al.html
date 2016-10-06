@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: j_al</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#723 j_al
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jackal" target="_blank">jackal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=janitorial" target="_blank">janitorial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jejunal" target="_blank">jejunal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=journal" target="_blank">journal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jovial" target="_blank">jovial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=judgemental" target="_blank">judgemental</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=judicial" target="_blank">judicial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jugal" target="_blank">jugal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=junctional" target="_blank">junctional</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=juridical" target="_blank">juridical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jurisdictional" target="_blank">jurisdictional</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=juvenal" target="_blank">juvenal</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "jackal janitorial jejunal, journal jovial judgemental, judicial jugal junctional, juridical jurisdictional juvenal";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

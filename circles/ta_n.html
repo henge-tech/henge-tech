@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ta_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#954 ta_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tabulation" target="_blank">tabulation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taciturn" target="_blank">taciturn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tactician" target="_blank">tactician</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tain" target="_blank">tain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=talisman" target="_blank">talisman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=talon" target="_blank">talon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tan" target="_blank">tan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tarn" target="_blank">tarn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tarpaulin" target="_blank">tarpaulin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tavern" target="_blank">tavern</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taxation" target="_blank">taxation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taxman" target="_blank">taxman</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "tabulation taciturn tactician, tain talisman talon, tan tarn tarpaulin, tavern taxation taxman";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

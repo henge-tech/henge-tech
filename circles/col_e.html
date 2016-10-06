@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: col_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#515 col_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cole" target="_blank">cole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collapsible" target="_blank">collapsible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collarbone" target="_blank">collarbone</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collate" target="_blank">collate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collective" target="_blank">collective</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collegiate" target="_blank">collegiate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collide" target="_blank">collide</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collie" target="_blank">collie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collude" target="_blank">collude</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colonize" target="_blank">colonize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colonnade" target="_blank">colonnade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=columbine" target="_blank">columbine</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "cole collapsible collarbone, collate collective collegiate, collide collie collude, colonize colonnade columbine";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

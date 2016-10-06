@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: car_y</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#492 car_y
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caraway" target="_blank">caraway</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carboy" target="_blank">carboy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carcinogenicity" target="_blank">carcinogenicity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cardiology" target="_blank">cardiology</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cardiopulmonary" target="_blank">cardiopulmonary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carefully" target="_blank">carefully</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carelessly" target="_blank">carelessly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carney" target="_blank">carney</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carpentry" target="_blank">carpentry</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carriageway" target="_blank">carriageway</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carroty" target="_blank">carroty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cartography" target="_blank">cartography</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "caraway carboy carcinogenicity, cardiology cardiopulmonary carefully, carelessly carney carpentry, carriageway carroty cartography";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _erse</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#104 _erse
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adverse" target="_blank">adverse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=averse" target="_blank">averse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=converse" target="_blank">converse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disperse" target="_blank">disperse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diverse" target="_blank">diverse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immerse" target="_blank">immerse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inverse" target="_blank">inverse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiverse" target="_blank">multiverse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obverse" target="_blank">obverse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perse" target="_blank">perse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perverse" target="_blank">perverse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=terse" target="_blank">terse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transverse" target="_blank">transverse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=traverse" target="_blank">traverse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=universe" target="_blank">universe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verse" target="_blank">verse</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "adverse averse converse disperse, diverse immerse inverse multiverse, obverse perse perverse terse, transverse traverse universe verse";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: c_nd</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#480 c_nd
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colorblind" target="_blank">colorblind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=command" target="_blank">command</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commend" target="_blank">commend</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compound" target="_blank">compound</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comprehend" target="_blank">comprehend</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=condescend" target="_blank">condescend</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confound" target="_blank">confound</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contend" target="_blank">contend</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contraband" target="_blank">contraband</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=correspond" target="_blank">correspond</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=countermand" target="_blank">countermand</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cropland" target="_blank">cropland</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "colorblind command commend, compound comprehend condescend, confound contend contraband, correspond countermand cropland";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

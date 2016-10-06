@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: d_sion</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#559 d_sion
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=declension" target="_blank">declension</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decompression" target="_blank">decompression</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delusion" target="_blank">delusion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depression" target="_blank">depression</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=derision" target="_blank">derision</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diffusion" target="_blank">diffusion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=digression" target="_blank">digression</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disillusion" target="_blank">disillusion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispersion" target="_blank">dispersion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispossession" target="_blank">dispossession</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissension" target="_blank">dissension</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diversion" target="_blank">diversion</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "declension decompression delusion, depression derision diffusion, digression disillusion dispersion, dispossession dissension diversion";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: as_t</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#419 as_t
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascendant" target="_blank">ascendant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascent" target="_blank">ascent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aspect" target="_blank">aspect</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aspirant" target="_blank">aspirant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assailant" target="_blank">assailant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assault" target="_blank">assault</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assent" target="_blank">assent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assert" target="_blank">assert</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assessment" target="_blank">assessment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=asset" target="_blank">asset</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assignment" target="_blank">assignment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assortment" target="_blank">assortment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astonishment" target="_blank">astonishment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astringent" target="_blank">astringent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astronaut" target="_blank">astronaut</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astrophysicist" target="_blank">astrophysicist</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ascendant ascent aspect aspirant, assailant assault assent assert, assessment asset assignment assortment, astonishment astringent astronaut astrophysicist";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

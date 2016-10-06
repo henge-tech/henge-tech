@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: co_o</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#510 co_o
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cockatoo" target="_blank">cockatoo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coco" target="_blank">coco</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coho" target="_blank">coho</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colorado" target="_blank">colorado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=combo" target="_blank">combo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commando" target="_blank">commando</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compo" target="_blank">compo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concerto" target="_blank">concerto</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=condo" target="_blank">condo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=continuo" target="_blank">continuo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contralto" target="_blank">contralto</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coo" target="_blank">coo</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "cockatoo coco coho, colorado combo commando, compo concerto condo, continuo contralto coo";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: br_h</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#457 br_h
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brackish" target="_blank">brackish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=branch" target="_blank">branch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brash" target="_blank">brash</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breach" target="_blank">breach</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breadth" target="_blank">breadth</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breakthrough" target="_blank">breakthrough</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breath" target="_blank">breath</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breech" target="_blank">breech</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broach" target="_blank">broach</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broadcloth" target="_blank">broadcloth</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brooch" target="_blank">brooch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broth" target="_blank">broth</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brownish" target="_blank">brownish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brunch" target="_blank">brunch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brush" target="_blank">brush</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brutish" target="_blank">brutish</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "brackish branch brash breach, breadth breakthrough breath breech, broach broadcloth brooch broth, brownish brunch brush brutish";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

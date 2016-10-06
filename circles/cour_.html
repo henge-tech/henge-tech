@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: cour_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#538 cour_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courageous" target="_blank">courageous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courier" target="_blank">courier</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=course" target="_blank">course</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coursing" target="_blank">coursing</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courteous" target="_blank">courteous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courtesan" target="_blank">courtesan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courtesy" target="_blank">courtesy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courthouse" target="_blank">courthouse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courtier" target="_blank">courtier</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courtroom" target="_blank">courtroom</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courtship" target="_blank">courtship</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courtyard" target="_blank">courtyard</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "courageous courier course, coursing courteous courtesan, courtesy courthouse courtier, courtroom courtship courtyard";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

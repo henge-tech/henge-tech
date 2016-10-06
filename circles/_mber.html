@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _mber</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#181 _mber
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amber" target="_blank">amber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antechamber" target="_blank">antechamber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beachcomber" target="_blank">beachcomber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=camber" target="_blank">camber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chamber" target="_blank">chamber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clamber" target="_blank">clamber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comber" target="_blank">comber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cucumber" target="_blank">cucumber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cumber" target="_blank">cumber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismember" target="_blank">dismember</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ember" target="_blank">ember</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=encumber" target="_blank">encumber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=limber" target="_blank">limber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lumber" target="_blank">lumber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outnumber" target="_blank">outnumber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plumber" target="_blank">plumber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slumber" target="_blank">slumber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=somber" target="_blank">somber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=timber" target="_blank">timber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=umber" target="_blank">umber</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "amber antechamber beachcomber camber chamber, clamber comber cucumber cumber dismember, ember encumber limber lumber outnumber, plumber slumber somber timber umber";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

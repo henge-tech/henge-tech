@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: co_rate</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#512 co_rate
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collaborate" target="_blank">collaborate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commemorate" target="_blank">commemorate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commensurate" target="_blank">commensurate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commiserate" target="_blank">commiserate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concentrate" target="_blank">concentrate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confederate" target="_blank">confederate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conglomerate" target="_blank">conglomerate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consecrate" target="_blank">consecrate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=considerate" target="_blank">considerate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cooperate" target="_blank">cooperate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corporate" target="_blank">corporate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corroborate" target="_blank">corroborate</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "collaborate commemorate commensurate, commiserate concentrate confederate, conglomerate consecrate considerate, cooperate corporate corroborate";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

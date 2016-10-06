@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: n_a</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#779 n_a
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naira" target="_blank">naira</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naphtha" target="_blank">naphtha</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nausea" target="_blank">nausea</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nebula" target="_blank">nebula</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=necrophilia" target="_blank">necrophilia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neuralgia" target="_blank">neuralgia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neurasthenia" target="_blank">neurasthenia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nirvana" target="_blank">nirvana</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nostalgia" target="_blank">nostalgia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nova" target="_blank">nova</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=novella" target="_blank">novella</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=novena" target="_blank">novena</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "naira naphtha nausea, nebula necrophilia neuralgia, neurasthenia nirvana nostalgia, nova novella novena";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

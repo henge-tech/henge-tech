@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _rit</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#278 _rit
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bowsprit" target="_blank">bowsprit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brit" target="_blank">brit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crit" target="_blank">crit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=culprit" target="_blank">culprit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demerit" target="_blank">demerit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disinherit" target="_blank">disinherit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=esprit" target="_blank">esprit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grit" target="_blank">grit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inherit" target="_blank">inherit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=merit" target="_blank">merit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spirit" target="_blank">spirit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=writ" target="_blank">writ</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bowsprit brit crit, culprit demerit disinherit, esprit grit inherit, merit spirit writ";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

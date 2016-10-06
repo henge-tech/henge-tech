@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _mble</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#182 _mble
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amble" target="_blank">amble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bramble" target="_blank">bramble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bumble" target="_blank">bumble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crumble" target="_blank">crumble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ensemble" target="_blank">ensemble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fumble" target="_blank">fumble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grumble" target="_blank">grumble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=humble" target="_blank">humble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jumble" target="_blank">jumble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mumble" target="_blank">mumble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nimble" target="_blank">nimble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preamble" target="_blank">preamble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ramble" target="_blank">ramble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resemble" target="_blank">resemble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rumble" target="_blank">rumble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stumble" target="_blank">stumble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thimble" target="_blank">thimble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tremble" target="_blank">tremble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tumble" target="_blank">tumble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unscramble" target="_blank">unscramble</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "amble bramble bumble crumble ensemble, fumble grumble humble jumble mumble, nimble preamble ramble resemble rumble, stumble thimble tremble tumble unscramble";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

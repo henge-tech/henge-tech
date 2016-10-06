@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: s_me</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#902 s_me
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scheme" target="_blank">scheme</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sesame" target="_blank">sesame</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shame" target="_blank">shame</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slime" target="_blank">slime</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=springtime" target="_blank">springtime</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spume" target="_blank">spume</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sublime" target="_blank">sublime</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subprime" target="_blank">subprime</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subsume" target="_blank">subsume</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=supreme" target="_blank">supreme</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surname" target="_blank">surname</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=syndrome" target="_blank">syndrome</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "scheme sesame shame, slime springtime spume, sublime subprime subsume, supreme surname syndrome";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

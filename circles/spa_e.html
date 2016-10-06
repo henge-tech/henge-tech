@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: spa_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#925 spa_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=space" target="_blank">space</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spade" target="_blank">spade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spake" target="_blank">spake</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spangle" target="_blank">spangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spare" target="_blank">spare</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sparkle" target="_blank">sparkle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sparse" target="_blank">sparse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spate" target="_blank">spate</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "space spade spake spangle, spare sparkle sparse spate";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

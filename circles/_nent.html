@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _nent</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#201 _nent
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abstinent" target="_blank">abstinent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eminent" target="_blank">eminent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exponent" target="_blank">exponent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immanent" target="_blank">immanent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=imminent" target="_blank">imminent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impertinent" target="_blank">impertinent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incontinent" target="_blank">incontinent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pertinent" target="_blank">pertinent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preeminent" target="_blank">preeminent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prominent" target="_blank">prominent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proponent" target="_blank">proponent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subcontinent" target="_blank">subcontinent</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "abstinent eminent exponent, immanent imminent impertinent, incontinent pertinent preeminent, prominent proponent subcontinent";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

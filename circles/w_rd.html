@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: w_rd</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#987 w_rd
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wallboard" target="_blank">wallboard</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ward" target="_blank">ward</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=warlord" target="_blank">warlord</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=washboard" target="_blank">washboard</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=watchword" target="_blank">watchword</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wayward" target="_blank">wayward</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=weatherboard" target="_blank">weatherboard</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=weird" target="_blank">weird</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=westward" target="_blank">westward</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whiteboard" target="_blank">whiteboard</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=windward" target="_blank">windward</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=word" target="_blank">word</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "wallboard ward warlord, washboard watchword wayward, weatherboard weird westward, whiteboard windward word";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

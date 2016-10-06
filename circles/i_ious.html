@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: i_ious</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#701 i_ious
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ignominious" target="_blank">ignominious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=illustrious" target="_blank">illustrious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=imperious" target="_blank">imperious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impervious" target="_blank">impervious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impious" target="_blank">impious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inauspicious" target="_blank">inauspicious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=industrious" target="_blank">industrious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infectious" target="_blank">infectious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ingenious" target="_blank">ingenious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=injurious" target="_blank">injurious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insidious" target="_blank">insidious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=invidious" target="_blank">invidious</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ignominious illustrious imperious, impervious impious inauspicious, industrious infectious ingenious, injurious insidious invidious";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: g_an</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#666 g_an
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gamelan" target="_blank">gamelan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gargantuan" target="_blank">gargantuan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gentian" target="_blank">gentian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gentleman" target="_blank">gentleman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=german" target="_blank">german</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glean" target="_blank">glean</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grammarian" target="_blank">grammarian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gran" target="_blank">gran</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=groan" target="_blank">groan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guardian" target="_blank">guardian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guardsman" target="_blank">guardsman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gunman" target="_blank">gunman</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "gamelan gargantuan gentian, gentleman german glean, grammarian gran groan, guardian guardsman gunman";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _sel</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#296 _sel
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carousel" target="_blank">carousel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chisel" target="_blank">chisel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=counsel" target="_blank">counsel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damsel" target="_blank">damsel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diesel" target="_blank">diesel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=easel" target="_blank">easel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=morsel" target="_blank">morsel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mussel" target="_blank">mussel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tassel" target="_blank">tassel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tinsel" target="_blank">tinsel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vessel" target="_blank">vessel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=weasel" target="_blank">weasel</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "carousel chisel counsel, damsel diesel easel, morsel mussel tassel, tinsel vessel weasel";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

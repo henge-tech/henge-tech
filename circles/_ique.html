@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ique</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#148 _ique
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antique" target="_blank">antique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=applique" target="_blank">applique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boutique" target="_blank">boutique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clique" target="_blank">clique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=communique" target="_blank">communique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=critique" target="_blank">critique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mystique" target="_blank">mystique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oblique" target="_blank">oblique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=physique" target="_blank">physique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pique" target="_blank">pique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=technique" target="_blank">technique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unique" target="_blank">unique</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "antique applique boutique, clique communique critique, mystique oblique physique, pique technique unique";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

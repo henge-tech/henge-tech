@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: shee_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#922 shee_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheen" target="_blank">sheen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheepdog" target="_blank">sheepdog</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheepherder" target="_blank">sheepherder</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheepish" target="_blank">sheepish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheepskin" target="_blank">sheepskin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheer" target="_blank">sheer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheet" target="_blank">sheet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheeting" target="_blank">sheeting</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "sheen sheepdog sheepherder sheepish, sheepskin sheer sheet sheeting";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

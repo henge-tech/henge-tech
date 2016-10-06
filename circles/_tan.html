@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _tan</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#316 _tan
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capstan" target="_blank">capstan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=charlatan" target="_blank">charlatan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cosmopolitan" target="_blank">cosmopolitan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metropolitan" target="_blank">metropolitan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=orangutan" target="_blank">orangutan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Puritan" target="_blank">Puritan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rattan" target="_blank">rattan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Spartan" target="_blank">Spartan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sultan" target="_blank">sultan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tan" target="_blank">tan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tartan" target="_blank">tartan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=titan" target="_blank">titan</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "capstan charlatan cosmopolitan, metropolitan orangutan Puritan, rattan Spartan sultan, tan tartan titan";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: def_t</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#577 def_t
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defeat" target="_blank">defeat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defect" target="_blank">defect</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defendant" target="_blank">defendant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deferment" target="_blank">deferment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defiant" target="_blank">defiant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deficient" target="_blank">deficient</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deficit" target="_blank">deficit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deflect" target="_blank">deflect</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deforest" target="_blank">deforest</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defrost" target="_blank">defrost</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deft" target="_blank">deft</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defunct" target="_blank">defunct</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "defeat defect defendant, deferment defiant deficient, deficit deflect deforest, defrost deft defunct";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

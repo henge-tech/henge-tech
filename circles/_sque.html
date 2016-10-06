@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _sque</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#306 _sque
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arabesque" target="_blank">arabesque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=basque" target="_blank">basque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bisque" target="_blank">bisque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brusque" target="_blank">brusque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burlesque" target="_blank">burlesque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grotesque" target="_blank">grotesque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=masque" target="_blank">masque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mosque" target="_blank">mosque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=picaresque" target="_blank">picaresque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=picturesque" target="_blank">picturesque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=risque" target="_blank">risque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=statuesque" target="_blank">statuesque</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "arabesque basque bisque, brusque burlesque grotesque, masque mosque picaresque, picturesque risque statuesque";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

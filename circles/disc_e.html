@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: disc_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#603 disc_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discernible" target="_blank">discernible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discharge" target="_blank">discharge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disciple" target="_blank">disciple</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discipline" target="_blank">discipline</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disclosure" target="_blank">disclosure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discontinue" target="_blank">discontinue</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discotheque" target="_blank">discotheque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discourage" target="_blank">discourage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discourse" target="_blank">discourse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discrete" target="_blank">discrete</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discriminate" target="_blank">discriminate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discursive" target="_blank">discursive</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "discernible discharge disciple, discipline disclosure discontinue, discotheque discourage discourse, discrete discriminate discursive";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

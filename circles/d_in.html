@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: d_in</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#551 d_in
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deerskin" target="_blank">deerskin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dentin" target="_blank">dentin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detain" target="_blank">detain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detrain" target="_blank">detrain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=din" target="_blank">din</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dioxin" target="_blank">dioxin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disdain" target="_blank">disdain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distrain" target="_blank">distrain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dobbin" target="_blank">dobbin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doeskin" target="_blank">doeskin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=domain" target="_blank">domain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drain" target="_blank">drain</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "deerskin dentin detain, detrain din dioxin, disdain distrain dobbin, doeskin domain drain";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

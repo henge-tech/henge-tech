@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: un_ty</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#966 un_ty
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unanimity" target="_blank">unanimity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=uncertainty" target="_blank">uncertainty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unconstitutionality" target="_blank">unconstitutionality</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unfamiliarity" target="_blank">unfamiliarity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=uniformity" target="_blank">uniformity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unity" target="_blank">unity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=universality" target="_blank">universality</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=university" target="_blank">university</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unpopularity" target="_blank">unpopularity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unpredictability" target="_blank">unpredictability</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unreality" target="_blank">unreality</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unreliability" target="_blank">unreliability</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "unanimity uncertainty unconstitutionality, unfamiliarity uniformity unity, universality university unpopularity, unpredictability unreality unreliability";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

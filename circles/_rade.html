@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _rade</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#252 _rade
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abrade" target="_blank">abrade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=balustrade" target="_blank">balustrade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=centigrade" target="_blank">centigrade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=charade" target="_blank">charade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comrade" target="_blank">comrade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=degrade" target="_blank">degrade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grade" target="_blank">grade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=masquerade" target="_blank">masquerade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parade" target="_blank">parade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retrograde" target="_blank">retrograde</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tirade" target="_blank">tirade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trade" target="_blank">trade</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "abrade balustrade centigrade, charade comrade degrade, grade masquerade parade, retrograde tirade trade";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

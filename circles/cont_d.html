@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: cont_d</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#531 cont_d
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contained" target="_blank">contained</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contaminated" target="_blank">contaminated</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contd" target="_blank">contd</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contemplated" target="_blank">contemplated</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contend" target="_blank">contend</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contented" target="_blank">contented</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=continued" target="_blank">continued</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contorted" target="_blank">contorted</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contoured" target="_blank">contoured</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contraband" target="_blank">contraband</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contravened" target="_blank">contravened</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contrived" target="_blank">contrived</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "contained contaminated contd, contemplated contend contented, continued contorted contoured, contraband contravened contrived";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

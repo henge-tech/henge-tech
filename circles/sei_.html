@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: sei_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#920 sei_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seigneur" target="_blank">seigneur</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seine" target="_blank">seine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seismic" target="_blank">seismic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seismicity" target="_blank">seismicity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seismogram" target="_blank">seismogram</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seismograph" target="_blank">seismograph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seismological" target="_blank">seismological</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seismology" target="_blank">seismology</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seismometer" target="_blank">seismometer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seitan" target="_blank">seitan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seize" target="_blank">seize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seizure" target="_blank">seizure</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "seigneur seine seismic, seismicity seismogram seismograph, seismological seismology seismometer, seitan seize seizure";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

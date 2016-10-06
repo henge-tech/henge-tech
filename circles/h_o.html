@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: h_o</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#689 h_o
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hairdo" target="_blank">hairdo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=halo" target="_blank">halo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hereto" target="_blank">hereto</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hetero" target="_blank">hetero</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hidalgo" target="_blank">hidalgo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hitherto" target="_blank">hitherto</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hobo" target="_blank">hobo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=honcho" target="_blank">honcho</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hoodoo" target="_blank">hoodoo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hullabaloo" target="_blank">hullabaloo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydro" target="_blank">hydro</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypo" target="_blank">hypo</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "hairdo halo hereto, hetero hidalgo hitherto, hobo honcho hoodoo, hullabaloo hydro hypo";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

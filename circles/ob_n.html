@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ob_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#800 ob_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obfuscation" target="_blank">obfuscation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=objection" target="_blank">objection</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oblation" target="_blank">oblation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obligation" target="_blank">obligation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obliteration" target="_blank">obliteration</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oblivion" target="_blank">oblivion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=observation" target="_blank">observation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obsession" target="_blank">obsession</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obsidian" target="_blank">obsidian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obstetrician" target="_blank">obstetrician</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obstruction" target="_blank">obstruction</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obtain" target="_blank">obtain</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "obfuscation objection oblation, obligation obliteration oblivion, observation obsession obsidian, obstetrician obstruction obtain";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

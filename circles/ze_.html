@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ze_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#1000 ze_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zeal" target="_blank">zeal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zealot" target="_blank">zealot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zealous" target="_blank">zealous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zebra" target="_blank">zebra</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zed" target="_blank">zed</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zeitgeist" target="_blank">zeitgeist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zenith" target="_blank">zenith</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zephyr" target="_blank">zephyr</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zeppelin" target="_blank">zeppelin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zest" target="_blank">zest</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zeta" target="_blank">zeta</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zeugma" target="_blank">zeugma</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "zeal zealot zealous, zebra zed zeitgeist, zenith zephyr zeppelin, zest zeta zeugma";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

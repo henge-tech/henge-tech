@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _hop</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#123 _hop
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=archbishop" target="_blank">archbishop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bakeshop" target="_blank">bakeshop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barbershop" target="_blank">barbershop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bellhop" target="_blank">bellhop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bishop" target="_blank">bishop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chop" target="_blank">chop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cookshop" target="_blank">cookshop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hop" target="_blank">hop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pawnshop" target="_blank">pawnshop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sweatshop" target="_blank">sweatshop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whop" target="_blank">whop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=workshop" target="_blank">workshop</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "archbishop bakeshop barbershop, bellhop bishop chop, cookshop hop pawnshop, sweatshop whop workshop";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

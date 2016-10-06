@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _tar</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#317 _tar
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=altar" target="_blank">altar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=attar" target="_blank">attar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=avatar" target="_blank">avatar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lodestar" target="_blank">lodestar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mortar" target="_blank">mortar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nectar" target="_blank">nectar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plantar" target="_blank">plantar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=polestar" target="_blank">polestar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scimitar" target="_blank">scimitar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sitar" target="_blank">sitar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tar" target="_blank">tar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tartar" target="_blank">tartar</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "altar attar avatar, lodestar mortar nectar, plantar polestar scimitar, sitar tar tartar";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

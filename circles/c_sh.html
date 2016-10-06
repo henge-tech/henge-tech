@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: c_sh</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#485 c_sh
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=calabash" target="_blank">calabash</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cash" target="_blank">cash</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=catfish" target="_blank">catfish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cherish" target="_blank">cherish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=churlish" target="_blank">churlish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clash" target="_blank">clash</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=codfish" target="_blank">codfish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cosh" target="_blank">cosh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crash" target="_blank">crash</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crayfish" target="_blank">crayfish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crush" target="_blank">crush</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cuttlefish" target="_blank">cuttlefish</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "calabash cash catfish, cherish churlish clash, codfish cosh crash, crayfish crush cuttlefish";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

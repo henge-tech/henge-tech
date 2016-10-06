@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _lary</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#159 _lary
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ancillary" target="_blank">ancillary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burglary" target="_blank">burglary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capillary" target="_blank">capillary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constabulary" target="_blank">constabulary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corollary" target="_blank">corollary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=epistolary" target="_blank">epistolary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exemplary" target="_blank">exemplary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=formulary" target="_blank">formulary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maxillary" target="_blank">maxillary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salary" target="_blank">salary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tutelary" target="_blank">tutelary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vocabulary" target="_blank">vocabulary</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ancillary burglary capillary, constabulary corollary epistolary, exemplary formulary maxillary, salary tutelary vocabulary";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

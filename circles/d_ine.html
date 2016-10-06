@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: d_ine</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#552 d_ine
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dateline" target="_blank">dateline</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dauphine" target="_blank">dauphine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deadline" target="_blank">deadline</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decline" target="_blank">decline</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=define" target="_blank">define</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dentine" target="_blank">dentine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=determine" target="_blank">determine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dine" target="_blank">dine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discipline" target="_blank">discipline</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divine" target="_blank">divine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doctrine" target="_blank">doctrine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dopamine" target="_blank">dopamine</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "dateline dauphine deadline, decline define dentine, determine dine discipline, divine doctrine dopamine";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

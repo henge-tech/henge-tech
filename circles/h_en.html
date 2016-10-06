@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: h_en</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#684 h_en
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=handmaiden" target="_blank">handmaiden</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hasten" target="_blank">hasten</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haven" target="_blank">haven</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hearken" target="_blank">hearken</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heathen" target="_blank">heathen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heighten" target="_blank">heighten</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hen" target="_blank">hen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=henchmen" target="_blank">henchmen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=highwaymen" target="_blank">highwaymen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=horsemen" target="_blank">horsemen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydrogen" target="_blank">hydrogen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hymen" target="_blank">hymen</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "handmaiden hasten haven, hearken heathen heighten, hen henchmen highwaymen, horsemen hydrogen hymen";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

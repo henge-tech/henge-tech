@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _osh</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#234 _osh
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bosh" target="_blank">bosh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cosh" target="_blank">cosh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dosh" target="_blank">dosh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gosh" target="_blank">gosh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=josh" target="_blank">josh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mackintosh" target="_blank">mackintosh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mosh" target="_blank">mosh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nosh" target="_blank">nosh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=posh" target="_blank">posh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=splosh" target="_blank">splosh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swoosh" target="_blank">swoosh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whoosh" target="_blank">whoosh</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bosh cosh dosh, gosh josh mackintosh, mosh nosh posh, splosh swoosh whoosh";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

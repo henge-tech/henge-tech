@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _oe</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#218 _oe
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aloe" target="_blank">aloe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=backhoe" target="_blank">backhoe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=canoe" target="_blank">canoe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doe" target="_blank">doe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=floe" target="_blank">floe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foe" target="_blank">foe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hoe" target="_blank">hoe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=horseshoe" target="_blank">horseshoe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mistletoe" target="_blank">mistletoe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oboe" target="_blank">oboe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=roe" target="_blank">roe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shoe" target="_blank">shoe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=throe" target="_blank">throe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tiptoe" target="_blank">tiptoe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toe" target="_blank">toe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=woe" target="_blank">woe</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "aloe backhoe canoe doe, floe foe hoe horseshoe, mistletoe oboe roe shoe, throe tiptoe toe woe";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

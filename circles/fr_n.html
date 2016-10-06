@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: fr_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#663 fr_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fraction" target="_blank">fraction</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freeborn" target="_blank">freeborn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freedman" target="_blank">freedman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freeman" target="_blank">freeman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freshen" target="_blank">freshen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freshman" target="_blank">freshman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=friction" target="_blank">friction</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frighten" target="_blank">frighten</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frogman" target="_blank">frogman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frown" target="_blank">frown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fructification" target="_blank">fructification</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fruition" target="_blank">fruition</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "fraction freeborn freedman, freeman freshen freshman, friction frighten frogman, frown fructification fruition";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: s_nd</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#903 s_nd
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saraband" target="_blank">saraband</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=secondhand" target="_blank">secondhand</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shorthand" target="_blank">shorthand</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=showground" target="_blank">showground</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=southbound" target="_blank">southbound</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=southland" target="_blank">southland</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spellbound" target="_blank">spellbound</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spend" target="_blank">spend</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stipend" target="_blank">stipend</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strand" target="_blank">strand</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surround" target="_blank">surround</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suspend" target="_blank">suspend</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "saraband secondhand shorthand, showground southbound southland, spellbound spend stipend, strand surround suspend";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

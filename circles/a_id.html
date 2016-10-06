@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: a_id</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#376 a_id
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acrid" target="_blank">acrid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aforesaid" target="_blank">aforesaid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aid" target="_blank">aid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amid" target="_blank">amid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amyloid" target="_blank">amyloid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antacid" target="_blank">antacid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apartheid" target="_blank">apartheid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aphid" target="_blank">aphid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arachnid" target="_blank">arachnid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arid" target="_blank">arid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=asteroid" target="_blank">asteroid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=avid" target="_blank">avid</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "acrid aforesaid aid, amid amyloid antacid, apartheid aphid arachnid, arid asteroid avid";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

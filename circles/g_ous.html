@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: g_ous</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#669 g_ous
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gaseous" target="_blank">gaseous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gelatinous" target="_blank">gelatinous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=generous" target="_blank">generous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gibbous" target="_blank">gibbous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glamorous" target="_blank">glamorous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glorious" target="_blank">glorious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glutinous" target="_blank">glutinous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gorgeous" target="_blank">gorgeous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gracious" target="_blank">gracious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gratuitous" target="_blank">gratuitous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gregarious" target="_blank">gregarious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grievous" target="_blank">grievous</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "gaseous gelatinous generous, gibbous glamorous glorious, glutinous gorgeous gracious, gratuitous gregarious grievous";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

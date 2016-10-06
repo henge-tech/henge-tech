@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: c_ue</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#487 c_ue
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=catafalque" target="_blank">catafalque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=catalogue" target="_blank">catalogue</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cinematheque" target="_blank">cinematheque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cirque" target="_blank">cirque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=claque" target="_blank">claque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clique" target="_blank">clique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clue" target="_blank">clue</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colleague" target="_blank">colleague</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=communique" target="_blank">communique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=construe" target="_blank">construe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=critique" target="_blank">critique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cue" target="_blank">cue</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "catafalque catalogue cinematheque, cirque claque clique, clue colleague communique, construe critique cue";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

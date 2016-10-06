@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: p_ence</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#810 p_ence
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patience" target="_blank">patience</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penitence" target="_blank">penitence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=permanence" target="_blank">permanence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=persistence" target="_blank">persistence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pertinence" target="_blank">pertinence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pestilence" target="_blank">pestilence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precedence" target="_blank">precedence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preeminence" target="_blank">preeminence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preference" target="_blank">preference</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prescience" target="_blank">prescience</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=presence" target="_blank">presence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prevalence" target="_blank">prevalence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prominence" target="_blank">prominence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=providence" target="_blank">providence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prudence" target="_blank">prudence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pseudoscience" target="_blank">pseudoscience</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "patience penitence permanence persistence, pertinence pestilence precedence preeminence, preference prescience presence prevalence, prominence providence prudence pseudoscience";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _eum</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#107 _eum
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=athenaeum" target="_blank">athenaeum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coliseum" target="_blank">coliseum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Colosseum" target="_blank">Colosseum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=geum" target="_blank">geum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ileum" target="_blank">ileum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=linoleum" target="_blank">linoleum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lyceum" target="_blank">lyceum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mausoleum" target="_blank">mausoleum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=museum" target="_blank">museum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peritoneum" target="_blank">peritoneum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=petroleum" target="_blank">petroleum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rheum" target="_blank">rheum</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "athenaeum coliseum Colosseum, geum ileum linoleum, lyceum mausoleum museum, peritoneum petroleum rheum";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

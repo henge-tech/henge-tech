@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: dep_t</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#583 dep_t
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depart" target="_blank">depart</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=department" target="_blank">department</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dependent" target="_blank">dependent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depict" target="_blank">depict</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deployment" target="_blank">deployment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deponent" target="_blank">deponent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deport" target="_blank">deport</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deportment" target="_blank">deportment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deposit" target="_blank">deposit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depot" target="_blank">depot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depressant" target="_blank">depressant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dept." target="_blank">dept.</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "depart department dependent, depict deployment deponent, deport deportment deposit, depot depressant dept.";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

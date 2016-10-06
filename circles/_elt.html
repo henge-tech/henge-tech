@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _elt</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#95 _elt
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=belt" target="_blank">belt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=celt" target="_blank">celt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dwelt" target="_blank">dwelt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=felt" target="_blank">felt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heartfelt" target="_blank">heartfelt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kelt" target="_blank">kelt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=knelt" target="_blank">knelt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=melt" target="_blank">melt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pelt" target="_blank">pelt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=smelt" target="_blank">smelt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sunbelt" target="_blank">sunbelt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=welt" target="_blank">welt</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "belt celt dwelt, felt heartfelt kelt, knelt melt pelt, smelt sunbelt welt";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

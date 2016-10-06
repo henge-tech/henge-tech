@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: b_f</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#433 b_f
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bailiff" target="_blank">bailiff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barf" target="_blank">barf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=behalf" target="_blank">behalf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=belief" target="_blank">belief</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=biff" target="_blank">biff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bluff" target="_blank">bluff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bombproof" target="_blank">bombproof</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bookshelf" target="_blank">bookshelf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brief" target="_blank">brief</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brush-off" target="_blank">brush-off</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buff" target="_blank">buff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bulletproof" target="_blank">bulletproof</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bailiff barf behalf, belief biff bluff, bombproof bookshelf brief, brush-off buff bulletproof";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

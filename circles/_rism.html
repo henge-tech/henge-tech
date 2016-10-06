@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _rism</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#277 _rism
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aphorism" target="_blank">aphorism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barbarism" target="_blank">barbarism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=behaviorism" target="_blank">behaviorism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consumerism" target="_blank">consumerism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=futurism" target="_blank">futurism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=militarism" target="_blank">militarism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naturism" target="_blank">naturism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plagiarism" target="_blank">plagiarism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=secularism" target="_blank">secularism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tourism" target="_blank">tourism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=volunteerism" target="_blank">volunteerism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=voyeurism" target="_blank">voyeurism</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "aphorism barbarism behaviorism, consumerism futurism militarism, naturism plagiarism secularism, tourism volunteerism voyeurism";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

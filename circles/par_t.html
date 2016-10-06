@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: par_t</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#828 par_t
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parachutist" target="_blank">parachutist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parakeet" target="_blank">parakeet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paramount" target="_blank">paramount</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parapet" target="_blank">parapet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paraquat" target="_blank">paraquat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parchment" target="_blank">parchment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parent" target="_blank">parent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parfait" target="_blank">parfait</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parliament" target="_blank">parliament</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parquet" target="_blank">parquet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parrot" target="_blank">parrot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=participant" target="_blank">participant</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "parachutist parakeet paramount, parapet paraquat parchment, parent parfait parliament, parquet parrot participant";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

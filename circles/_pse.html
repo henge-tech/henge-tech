@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _pse</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#248 _pse
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apocalypse" target="_blank">apocalypse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apse" target="_blank">apse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collapse" target="_blank">collapse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=copse" target="_blank">copse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corpse" target="_blank">corpse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eclipse" target="_blank">eclipse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=elapse" target="_blank">elapse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ellipse" target="_blank">ellipse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glimpse" target="_blank">glimpse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lapse" target="_blank">lapse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=relapse" target="_blank">relapse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=synapse" target="_blank">synapse</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "apocalypse apse collapse, copse corpse eclipse, elapse ellipse glimpse, lapse relapse synapse";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

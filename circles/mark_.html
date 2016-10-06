@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: mark_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#762 mark_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=markdown" target="_blank">markdown</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marked" target="_blank">marked</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=markedly" target="_blank">markedly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marker" target="_blank">marker</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marketable" target="_blank">marketable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marketeer" target="_blank">marketeer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marketer" target="_blank">marketer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marketplace" target="_blank">marketplace</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marking" target="_blank">marking</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marksman" target="_blank">marksman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marksmanship" target="_blank">marksmanship</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=markup" target="_blank">markup</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "markdown marked markedly, marker marketable marketeer, marketer marketplace marking, marksman marksmanship markup";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

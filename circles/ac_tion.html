@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ac_tion</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#394 ac_tion
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acclamation" target="_blank">acclamation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acclimation" target="_blank">acclimation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acclimatization" target="_blank">acclimatization</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accommodation" target="_blank">accommodation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accreditation" target="_blank">accreditation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accretion" target="_blank">accretion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acculturation" target="_blank">acculturation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accumulation" target="_blank">accumulation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accusation" target="_blank">accusation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acquisition" target="_blank">acquisition</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=actualization" target="_blank">actualization</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=actuation" target="_blank">actuation</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "acclamation acclimation acclimatization, accommodation accreditation accretion, acculturation accumulation accusation, acquisition actualization actuation";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

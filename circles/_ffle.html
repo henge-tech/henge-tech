@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ffle</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#108 _ffle
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baffle" target="_blank">baffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kerfuffle" target="_blank">kerfuffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muffle" target="_blank">muffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piffle" target="_blank">piffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=raffle" target="_blank">raffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reshuffle" target="_blank">reshuffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riffle" target="_blank">riffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ruffle" target="_blank">ruffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scuffle" target="_blank">scuffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shuffle" target="_blank">shuffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snaffle" target="_blank">snaffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sniffle" target="_blank">sniffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snuffle" target="_blank">snuffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=souffle" target="_blank">souffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=truffle" target="_blank">truffle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waffle" target="_blank">waffle</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "baffle kerfuffle muffle piffle, raffle reshuffle riffle ruffle, scuffle shuffle snaffle sniffle, snuffle souffle truffle waffle";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

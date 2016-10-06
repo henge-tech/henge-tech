@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ait</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#19 _ait
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=await" target="_blank">await</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bait" target="_blank">bait</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distrait" target="_blank">distrait</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gait" target="_blank">gait</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Kuwait" target="_blank">Kuwait</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parfait" target="_blank">parfait</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plait" target="_blank">plait</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=portrait" target="_blank">portrait</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strait" target="_blank">strait</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trait" target="_blank">trait</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wait" target="_blank">wait</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whitebait" target="_blank">whitebait</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "await bait distrait, gait Kuwait parfait, plait portrait strait, trait wait whitebait";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

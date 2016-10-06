@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: s_ny</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#905 s_ny
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=satiny" target="_blank">satiny</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrawny" target="_blank">scrawny</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrutiny" target="_blank">scrutiny</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shinny" target="_blank">shinny</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shiny" target="_blank">shiny</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=skinny" target="_blank">skinny</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sonny" target="_blank">sonny</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spiny" target="_blank">spiny</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stony" target="_blank">stony</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sunny" target="_blank">sunny</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=symphony" target="_blank">symphony</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=synchrony" target="_blank">synchrony</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "satiny scrawny scrutiny, shinny shiny skinny, sonny spiny stony, sunny symphony synchrony";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

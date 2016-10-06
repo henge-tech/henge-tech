@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: fel_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#657 fel_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feldspar" target="_blank">feldspar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=felicitation" target="_blank">felicitation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=felicitous" target="_blank">felicitous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=felicity" target="_blank">felicity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feline" target="_blank">feline</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fella" target="_blank">fella</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fellow" target="_blank">fellow</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fellowman" target="_blank">fellowman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fellowship" target="_blank">fellowship</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=felon" target="_blank">felon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=felonious" target="_blank">felonious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=felony" target="_blank">felony</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "feldspar felicitation felicitous, felicity feline fella, fellow fellowman fellowship, felon felonious felony";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

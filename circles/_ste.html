@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ste</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#310 _ste
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aftertaste" target="_blank">aftertaste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=artiste" target="_blank">artiste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baste" target="_blank">baste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caste" target="_blank">caste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chaste" target="_blank">chaste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distaste" target="_blank">distaste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haste" target="_blank">haste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paste" target="_blank">paste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piste" target="_blank">piste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riposte" target="_blank">riposte</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toothpaste" target="_blank">toothpaste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waste" target="_blank">waste</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "aftertaste artiste baste, caste chaste distaste, haste paste piste, riposte toothpaste waste";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

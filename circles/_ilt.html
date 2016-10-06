@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ilt</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#140 _ilt
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gilt" target="_blank">gilt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guilt" target="_blank">guilt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hilt" target="_blank">hilt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jilt" target="_blank">jilt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kilt" target="_blank">kilt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lilt" target="_blank">lilt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=milt" target="_blank">milt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quilt" target="_blank">quilt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=silt" target="_blank">silt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stilt" target="_blank">stilt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tilt" target="_blank">tilt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wilt" target="_blank">wilt</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "gilt guilt hilt, jilt kilt lilt, milt quilt silt, stilt tilt wilt";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: b_ery</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#432 b_ery
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bakery" target="_blank">bakery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=battery" target="_blank">battery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beery" target="_blank">beery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bindery" target="_blank">bindery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blustery" target="_blank">blustery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bravery" target="_blank">bravery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brewery" target="_blank">brewery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bribery" target="_blank">bribery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buffoonery" target="_blank">buffoonery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buggery" target="_blank">buggery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=butchery" target="_blank">butchery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buttery" target="_blank">buttery</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bakery battery beery, bindery blustery bravery, brewery bribery buffoonery, buggery butchery buttery";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

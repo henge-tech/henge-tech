@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _aine</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#14 _aine
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chatelaine" target="_blank">chatelaine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cocaine" target="_blank">cocaine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lidocaine" target="_blank">lidocaine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Maine" target="_blank">Maine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=migraine" target="_blank">migraine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moraine" target="_blank">moraine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=novocaine" target="_blank">novocaine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Paine" target="_blank">Paine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=procaine" target="_blank">procaine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ptomaine" target="_blank">ptomaine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=romaine" target="_blank">romaine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Ukraine" target="_blank">Ukraine</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "chatelaine cocaine lidocaine, Maine migraine moraine, novocaine Paine procaine, ptomaine romaine Ukraine";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

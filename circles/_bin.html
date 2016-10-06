@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _bin</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#52 _bin
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bin" target="_blank">bin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bobbin" target="_blank">bobbin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cabin" target="_blank">cabin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dobbin" target="_blank">dobbin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hemoglobin" target="_blank">hemoglobin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Jacobin" target="_blank">Jacobin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nubbin" target="_blank">nubbin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=robin" target="_blank">robin</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bin bobbin cabin dobbin, hemoglobin Jacobin nubbin robin";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

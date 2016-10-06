@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _fold</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#111 _fold
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=billfold" target="_blank">billfold</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blindfold" target="_blank">blindfold</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=centerfold" target="_blank">centerfold</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=enfold" target="_blank">enfold</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fold" target="_blank">fold</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gatefold" target="_blank">gatefold</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manifold" target="_blank">manifold</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scaffold" target="_blank">scaffold</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheepfold" target="_blank">sheepfold</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thousandfold" target="_blank">thousandfold</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=twofold" target="_blank">twofold</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unfold" target="_blank">unfold</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "billfold blindfold centerfold, enfold fold gatefold, manifold scaffold sheepfold, thousandfold twofold unfold";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

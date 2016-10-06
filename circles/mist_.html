@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: mist_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#768 mist_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mist" target="_blank">mist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mistletoe" target="_blank">mistletoe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mistral" target="_blank">mistral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mistreat" target="_blank">mistreat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mistress" target="_blank">mistress</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mistrial" target="_blank">mistrial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mistrust" target="_blank">mistrust</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misty" target="_blank">misty</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "mist mistletoe mistral mistreat, mistress mistrial mistrust misty";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

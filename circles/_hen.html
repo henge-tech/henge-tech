@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _hen</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#118 _hen
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ashen" target="_blank">ashen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burthen" target="_blank">burthen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=earthen" target="_blank">earthen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freshen" target="_blank">freshen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heathen" target="_blank">heathen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hen" target="_blank">hen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lengthen" target="_blank">lengthen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lichen" target="_blank">lichen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moorhen" target="_blank">moorhen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peahen" target="_blank">peahen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strengthen" target="_blank">strengthen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toughen" target="_blank">toughen</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ashen burthen earthen, freshen heathen hen, lengthen lichen moorhen, peahen strengthen toughen";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

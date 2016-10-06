@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ank</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#30 _ank
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clank" target="_blank">clank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crank" target="_blank">crank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dank" target="_blank">dank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flank" target="_blank">flank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frank" target="_blank">frank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hank" target="_blank">hank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lank" target="_blank">lank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mountebank" target="_blank">mountebank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plank" target="_blank">plank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pointblank" target="_blank">pointblank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prank" target="_blank">prank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riverbank" target="_blank">riverbank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sank" target="_blank">sank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shank" target="_blank">shank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spank" target="_blank">spank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stank" target="_blank">stank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swank" target="_blank">swank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tank" target="_blank">tank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wank" target="_blank">wank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yank" target="_blank">yank</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "clank crank dank flank frank, hank lank mountebank plank pointblank, prank riverbank sank shank spank, stank swank tank wank yank";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

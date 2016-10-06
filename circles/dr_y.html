@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: dr_y</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#611 dr_y
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drapery" target="_blank">drapery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drastically" target="_blank">drastically</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dray" target="_blank">dray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dreadfully" target="_blank">dreadfully</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dreamily" target="_blank">dreamily</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dreary" target="_blank">dreary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dromedary" target="_blank">dromedary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=droopy" target="_blank">droopy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dropsy" target="_blank">dropsy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drowsy" target="_blank">drowsy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drudgery" target="_blank">drudgery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dryly" target="_blank">dryly</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "drapery drastically dray, dreadfully dreamily dreary, dromedary droopy dropsy, drowsy drudgery dryly";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

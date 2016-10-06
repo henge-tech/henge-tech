@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: cr_le</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#540 cr_le
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crackle" target="_blank">crackle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cradle" target="_blank">cradle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=craftspeople" target="_blank">craftspeople</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=credible" target="_blank">credible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=creditable" target="_blank">creditable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Creole" target="_blank">Creole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crinkle" target="_blank">crinkle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cripple" target="_blank">cripple</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crocodile" target="_blank">crocodile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crucible" target="_blank">crucible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crumble" target="_blank">crumble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crumple" target="_blank">crumple</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "crackle cradle craftspeople, credible creditable Creole, crinkle cripple crocodile, crucible crumble crumple";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

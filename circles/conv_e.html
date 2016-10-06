@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: conv_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#535 conv_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convalescence" target="_blank">convalescence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convective" target="_blank">convective</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convene" target="_blank">convene</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convenience" target="_blank">convenience</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=converge" target="_blank">converge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convergence" target="_blank">convergence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=converse" target="_blank">converse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convertible" target="_blank">convertible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conveyance" target="_blank">conveyance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convince" target="_blank">convince</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convulse" target="_blank">convulse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convulsive" target="_blank">convulsive</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "convalescence convective convene, convenience converge convergence, converse convertible conveyance, convince convulse convulsive";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

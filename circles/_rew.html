@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _rew</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#271 _rew
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aircrew" target="_blank">aircrew</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brew" target="_blank">brew</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crew" target="_blank">crew</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drew" target="_blank">drew</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grew" target="_blank">grew</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outgrew" target="_blank">outgrew</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overthrew" target="_blank">overthrew</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=screw" target="_blank">screw</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shrew" target="_blank">shrew</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=threw" target="_blank">threw</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unscrew" target="_blank">unscrew</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=withdrew" target="_blank">withdrew</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "aircrew brew crew, drew grew outgrew, overthrew screw shrew, threw unscrew withdrew";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

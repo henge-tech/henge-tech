@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: cro_d</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#543 cro_d
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=croaked" target="_blank">croaked</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crocheted" target="_blank">crocheted</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crocked" target="_blank">crocked</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crooked" target="_blank">crooked</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crooned" target="_blank">crooned</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cropped" target="_blank">cropped</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crossbreed" target="_blank">crossbreed</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crosswind" target="_blank">crosswind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crouched" target="_blank">crouched</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crowd" target="_blank">crowd</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crowed" target="_blank">crowed</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crowned" target="_blank">crowned</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "croaked crocheted crocked, crooked crooned cropped, crossbreed crosswind crouched, crowd crowed crowned";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _agon</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#11 _agon
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bandwagon" target="_blank">bandwagon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decagon" target="_blank">decagon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dragon" target="_blank">dragon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flagon" target="_blank">flagon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heptagon" target="_blank">heptagon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hexagon" target="_blank">hexagon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonagon" target="_blank">nonagon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=octagon" target="_blank">octagon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paragon" target="_blank">paragon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pentagon" target="_blank">pentagon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snapdragon" target="_blank">snapdragon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tarragon" target="_blank">tarragon</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bandwagon decagon dragon, flagon heptagon hexagon, nonagon octagon paragon, pentagon snapdragon tarragon";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

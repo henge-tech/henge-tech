@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ret_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#888 ret_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retain" target="_blank">retain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retaliation" target="_blank">retaliation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retardation" target="_blank">retardation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retention" target="_blank">retention</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retraction" target="_blank">retraction</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retrain" target="_blank">retrain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retribution" target="_blank">retribution</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retrogression" target="_blank">retrogression</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "retain retaliation retardation retention, retraction retrain retribution retrogression";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ump</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#348 _ump
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bump" target="_blank">bump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chump" target="_blank">chump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clump" target="_blank">clump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dump" target="_blank">dump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frump" target="_blank">frump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grump" target="_blank">grump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hump" target="_blank">hump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lump" target="_blank">lump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plump" target="_blank">plump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pump" target="_blank">pump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rump" target="_blank">rump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slump" target="_blank">slump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stump" target="_blank">stump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sump" target="_blank">sump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thump" target="_blank">thump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trump" target="_blank">trump</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bump chump clump dump, frump grump hump lump, plump pump rump slump, stump sump thump trump";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

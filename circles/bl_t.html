@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: bl_t</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#455 bl_t
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blackcurrant" target="_blank">blackcurrant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blast" target="_blank">blast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blatant" target="_blank">blatant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bleat" target="_blank">bleat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blight" target="_blank">blight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloat" target="_blank">bloat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloodshot" target="_blank">bloodshot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blot" target="_blank">blot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blowout" target="_blank">blowout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blueprint" target="_blank">blueprint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blunt" target="_blank">blunt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blurt" target="_blank">blurt</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "blackcurrant blast blatant, bleat blight bloat, bloodshot blot blowout, blueprint blunt blurt";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

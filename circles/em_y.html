@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: em_y</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#626 em_y
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embassy" target="_blank">embassy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embody" target="_blank">embody</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embroidery" target="_blank">embroidery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embryology" target="_blank">embryology</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emery" target="_blank">emery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eminently" target="_blank">eminently</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emissary" target="_blank">emissary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emotionally" target="_blank">emotionally</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=empathy" target="_blank">empathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emphatically" target="_blank">emphatically</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=empirically" target="_blank">empirically</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=employ" target="_blank">employ</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "embassy embody embroidery, embryology emery eminently, emissary emotionally empathy, emphatically empirically employ";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

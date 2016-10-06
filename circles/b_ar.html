@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: b_ar</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#425 b_ar
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bazar" target="_blank">bazar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bear" target="_blank">bear</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beggar" target="_blank">beggar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=binocular" target="_blank">binocular</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bipolar" target="_blank">bipolar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boar" target="_blank">boar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bolivar" target="_blank">bolivar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boxcar" target="_blank">boxcar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=briar" target="_blank">briar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bugbear" target="_blank">bugbear</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burglar" target="_blank">burglar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bursar" target="_blank">bursar</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bazar bear beggar, binocular bipolar boar, bolivar boxcar briar, bugbear burglar bursar";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

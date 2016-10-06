@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: sav_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#916 sav_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savage" target="_blank">savage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savagely" target="_blank">savagely</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savagery" target="_blank">savagery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savanna" target="_blank">savanna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savant" target="_blank">savant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savate" target="_blank">savate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saver" target="_blank">saver</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savior" target="_blank">savior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savor" target="_blank">savor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savory" target="_blank">savory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savoy" target="_blank">savoy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savvy" target="_blank">savvy</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "savage savagely savagery, savanna savant savate, saver savior savor, savory savoy savvy";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

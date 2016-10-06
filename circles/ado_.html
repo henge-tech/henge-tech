@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ado_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#402 ado_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ado" target="_blank">ado</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adobe" target="_blank">adobe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adolescence" target="_blank">adolescence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adolescent" target="_blank">adolescent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adonis" target="_blank">adonis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adopt" target="_blank">adopt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adoption" target="_blank">adoption</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adoptive" target="_blank">adoptive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adorable" target="_blank">adorable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adore" target="_blank">adore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adorn" target="_blank">adorn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adornment" target="_blank">adornment</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ado adobe adolescence, adolescent adonis adopt, adoption adoptive adorable, adore adorn adornment";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

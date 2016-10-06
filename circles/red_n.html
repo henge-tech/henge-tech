@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: red_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#877 red_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=redden" target="_blank">redden</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=redefinition" target="_blank">redefinition</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=redemption" target="_blank">redemption</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=redirection" target="_blank">redirection</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=redistribution" target="_blank">redistribution</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=redrawn" target="_blank">redrawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=redskin" target="_blank">redskin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reduction" target="_blank">reduction</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "redden redefinition redemption redirection, redistribution redrawn redskin reduction";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

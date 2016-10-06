@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: a_ant</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#371 a_ant
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aberrant" target="_blank">aberrant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abundant" target="_blank">abundant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accountant" target="_blank">accountant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adamant" target="_blank">adamant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adjutant" target="_blank">adjutant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antioxidant" target="_blank">antioxidant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appellant" target="_blank">appellant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=applicant" target="_blank">applicant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arrogant" target="_blank">arrogant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascendant" target="_blank">ascendant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aspirant" target="_blank">aspirant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assailant" target="_blank">assailant</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "aberrant abundant accountant, adamant adjutant antioxidant, appellant applicant arrogant, ascendant aspirant assailant";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

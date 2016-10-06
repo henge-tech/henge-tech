@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _awn</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#44 _awn
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=awn" target="_blank">awn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brawn" target="_blank">brawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dawn" target="_blank">dawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drawn" target="_blank">drawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fawn" target="_blank">fawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lawn" target="_blank">lawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overdrawn" target="_blank">overdrawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pawn" target="_blank">pawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prawn" target="_blank">prawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spawn" target="_blank">spawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=withdrawn" target="_blank">withdrawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yawn" target="_blank">yawn</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "awn brawn dawn, drawn fawn lawn, overdrawn pawn prawn, spawn withdrawn yawn";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

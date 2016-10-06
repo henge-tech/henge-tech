@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ino</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#143 _ino
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=albino" target="_blank">albino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bambino" target="_blank">bambino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cappuccino" target="_blank">cappuccino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chino" target="_blank">chino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=latino" target="_blank">latino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lino" target="_blank">lino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=merino" target="_blank">merino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neutrino" target="_blank">neutrino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=palomino" target="_blank">palomino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rhino" target="_blank">rhino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vino" target="_blank">vino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wino" target="_blank">wino</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "albino bambino cappuccino, chino latino lino, merino neutrino palomino, rhino vino wino";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

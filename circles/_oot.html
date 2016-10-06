@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _oot</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#230 _oot
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=afoot" target="_blank">afoot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beetroot" target="_blank">beetroot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cheroot" target="_blank">cheroot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coot" target="_blank">coot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hoot" target="_blank">hoot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loot" target="_blank">loot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moot" target="_blank">moot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=offshoot" target="_blank">offshoot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overshoot" target="_blank">overshoot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scoot" target="_blank">scoot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=soot" target="_blank">soot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taproot" target="_blank">taproot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tenderfoot" target="_blank">tenderfoot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toot" target="_blank">toot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=underfoot" target="_blank">underfoot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=uproot" target="_blank">uproot</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "afoot beetroot cheroot coot, hoot loot moot offshoot, overshoot scoot soot taproot, tenderfoot toot underfoot uproot";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

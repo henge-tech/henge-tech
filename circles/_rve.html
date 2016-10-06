@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _rve</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#292 _rve
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carve" target="_blank">carve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conserve" target="_blank">conserve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=curve" target="_blank">curve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deserve" target="_blank">deserve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nerve" target="_blank">nerve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=observe" target="_blank">observe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preserve" target="_blank">preserve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recurve" target="_blank">recurve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reserve" target="_blank">reserve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=starve" target="_blank">starve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swerve" target="_blank">swerve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verve" target="_blank">verve</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "carve conserve curve, deserve nerve observe, preserve recurve reserve, starve swerve verve";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

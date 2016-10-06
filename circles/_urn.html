@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _urn</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#352 _urn
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adjourn" target="_blank">adjourn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=auburn" target="_blank">auburn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=churn" target="_blank">churn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downturn" target="_blank">downturn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heartburn" target="_blank">heartburn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mourn" target="_blank">mourn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overturn" target="_blank">overturn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sojourn" target="_blank">sojourn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spurn" target="_blank">spurn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taciturn" target="_blank">taciturn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=upturn" target="_blank">upturn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=urn" target="_blank">urn</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "adjourn auburn churn, downturn heartburn mourn, overturn sojourn spurn, taciturn upturn urn";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

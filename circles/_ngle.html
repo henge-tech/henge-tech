@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ngle</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#204 _ngle
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=angle" target="_blank">angle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bangle" target="_blank">bangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bungle" target="_blank">bungle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dangle" target="_blank">dangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dingle" target="_blank">dingle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=entangle" target="_blank">entangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ingle" target="_blank">ingle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jangle" target="_blank">jangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jingle" target="_blank">jingle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mangle" target="_blank">mangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mingle" target="_blank">mingle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quadrangle" target="_blank">quadrangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shingle" target="_blank">shingle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spangle" target="_blank">spangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strangle" target="_blank">strangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tangle" target="_blank">tangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tingle" target="_blank">tingle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=untangle" target="_blank">untangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wangle" target="_blank">wangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wrangle" target="_blank">wrangle</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "angle bangle bungle dangle dingle, entangle ingle jangle jingle mangle, mingle quadrangle shingle spangle strangle, tangle tingle untangle wangle wrangle";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _uate</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#338 _uate
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accentuate" target="_blank">accentuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=actuate" target="_blank">actuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adequate" target="_blank">adequate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=attenuate" target="_blank">attenuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disambiguate" target="_blank">disambiguate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=effectuate" target="_blank">effectuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=equate" target="_blank">equate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evacuate" target="_blank">evacuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evaluate" target="_blank">evaluate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eventuate" target="_blank">eventuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluctuate" target="_blank">fluctuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insinuate" target="_blank">insinuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perpetuate" target="_blank">perpetuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=punctuate" target="_blank">punctuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=situate" target="_blank">situate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=undergraduate" target="_blank">undergraduate</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "accentuate actuate adequate attenuate, disambiguate effectuate equate evacuate, evaluate eventuate fluctuate insinuate, perpetuate punctuate situate undergraduate";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

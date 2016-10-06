@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: m_se</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#754 m_se
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=madhouse" target="_blank">madhouse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=malaise" target="_blank">malaise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maltose" target="_blank">maltose</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manganese" target="_blank">manganese</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manse" target="_blank">manse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marquise" target="_blank">marquise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=masseuse" target="_blank">masseuse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=menopause" target="_blank">menopause</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misuse" target="_blank">misuse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moose" target="_blank">moose</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=morose" target="_blank">morose</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Morse" target="_blank">Morse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mortise" target="_blank">mortise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mousse" target="_blank">mousse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiverse" target="_blank">multiverse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muse" target="_blank">muse</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "madhouse malaise maltose manganese, manse marquise masseuse menopause, misuse moose morose Morse, mortise mousse multiverse muse";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

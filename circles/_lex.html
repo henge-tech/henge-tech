@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _lex</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#163 _lex
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=circumflex" target="_blank">circumflex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complex" target="_blank">complex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=duplex" target="_blank">duplex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flex" target="_blank">flex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=googolplex" target="_blank">googolplex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ilex" target="_blank">ilex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiplex" target="_blank">multiplex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perplex" target="_blank">perplex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reflex" target="_blank">reflex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=simplex" target="_blank">simplex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=telex" target="_blank">telex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=triplex" target="_blank">triplex</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "circumflex complex duplex, flex googolplex ilex, multiplex perplex reflex, simplex telex triplex";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

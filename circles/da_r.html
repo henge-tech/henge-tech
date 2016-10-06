@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: da_r</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#562 da_r
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dabbler" target="_blank">dabbler</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dagger" target="_blank">dagger</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damper" target="_blank">damper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dander" target="_blank">dander</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=danger" target="_blank">danger</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dangler" target="_blank">dangler</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dapper" target="_blank">dapper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=darter" target="_blank">darter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dasher" target="_blank">dasher</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dauber" target="_blank">dauber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daughter" target="_blank">daughter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dazzler" target="_blank">dazzler</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "dabbler dagger damper, dander danger dangler, dapper darter dasher, dauber daughter dazzler";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

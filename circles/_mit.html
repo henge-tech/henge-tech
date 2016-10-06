@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _mit</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#185 _mit
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=admit" target="_blank">admit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commit" target="_blank">commit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dammit" target="_blank">dammit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delimit" target="_blank">delimit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emit" target="_blank">emit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hermit" target="_blank">hermit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=omit" target="_blank">omit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remit" target="_blank">remit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=submit" target="_blank">submit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=summit" target="_blank">summit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transmit" target="_blank">transmit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vomit" target="_blank">vomit</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "admit commit dammit, delimit emit hermit, omit remit submit, summit transmit vomit";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ex_ry</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#635 ex_ry
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclusionary" target="_blank">exclusionary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excretory" target="_blank">excretory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exculpatory" target="_blank">exculpatory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exemplary" target="_blank">exemplary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expansionary" target="_blank">expansionary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expeditionary" target="_blank">expeditionary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expiratory" target="_blank">expiratory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expiry" target="_blank">expiry</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=explanatory" target="_blank">explanatory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exploratory" target="_blank">exploratory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expository" target="_blank">expository</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extraordinary" target="_blank">extraordinary</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "exclusionary excretory exculpatory, exemplary expansionary expeditionary, expiratory expiry explanatory, exploratory expository extraordinary";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

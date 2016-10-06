@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: a_ial</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#375 a_ial
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=actuarial" target="_blank">actuarial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adverbial" target="_blank">adverbial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adversarial" target="_blank">adversarial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aerial" target="_blank">aerial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alluvial" target="_blank">alluvial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antibacterial" target="_blank">antibacterial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antisocial" target="_blank">antisocial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arterial" target="_blank">arterial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=artificial" target="_blank">artificial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=asocial" target="_blank">asocial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=authorial" target="_blank">authorial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=axial" target="_blank">axial</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "actuarial adverbial adversarial, aerial alluvial antibacterial, antisocial arterial artificial, asocial authorial axial";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

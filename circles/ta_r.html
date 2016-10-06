@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ta_r</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#955 ta_r
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tabor" target="_blank">tabor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tabular" target="_blank">tabular</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tachometer" target="_blank">tachometer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tagger" target="_blank">tagger</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tailor" target="_blank">tailor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=takeover" target="_blank">takeover</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamer" target="_blank">tamer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamper" target="_blank">tamper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tanner" target="_blank">tanner</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taper" target="_blank">taper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tapir" target="_blank">tapir</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tar" target="_blank">tar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tartar" target="_blank">tartar</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taser" target="_blank">taser</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taskmaster" target="_blank">taskmaster</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taster" target="_blank">taster</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "tabor tabular tachometer tagger, tailor takeover tamer tamper, tanner taper tapir tar, tartar taser taskmaster taster";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _aise</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#18 _aise
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appraise" target="_blank">appraise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=braise" target="_blank">braise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chaise" target="_blank">chaise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=liaise" target="_blank">liaise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lyonnaise" target="_blank">lyonnaise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=malaise" target="_blank">malaise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Marseillaise" target="_blank">Marseillaise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mayonnaise" target="_blank">mayonnaise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=polonaise" target="_blank">polonaise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=praise" target="_blank">praise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=raise" target="_blank">raise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=upraise" target="_blank">upraise</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "appraise braise chaise, liaise lyonnaise malaise, Marseillaise mayonnaise polonaise, praise raise upraise";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

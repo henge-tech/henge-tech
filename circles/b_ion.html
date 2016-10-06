@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: b_ion</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#437 b_ion
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bastion" target="_blank">bastion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=battalion" target="_blank">battalion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beatification" target="_blank">beatification</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beautification" target="_blank">beautification</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=benediction" target="_blank">benediction</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=benefaction" target="_blank">benefaction</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bifurcation" target="_blank">bifurcation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=billion" target="_blank">billion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bisection" target="_blank">bisection</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=botheration" target="_blank">botheration</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bullion" target="_blank">bullion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bunion" target="_blank">bunion</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bastion battalion beatification, beautification benediction benefaction, bifurcation billion bisection, botheration bullion bunion";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: au_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#423 au_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=auburn" target="_blank">auburn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=auction" target="_blank">auction</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=audition" target="_blank">audition</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=augmentation" target="_blank">augmentation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=auscultation" target="_blank">auscultation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=authentication" target="_blank">authentication</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=authoritarian" target="_blank">authoritarian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=authorization" target="_blank">authorization</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=autobahn" target="_blank">autobahn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=automation" target="_blank">automation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=automaton" target="_blank">automaton</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=autumn" target="_blank">autumn</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "auburn auction audition, augmentation auscultation authentication, authoritarian authorization autobahn, automation automaton autumn";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

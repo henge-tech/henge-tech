@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ma_al</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#758 ma_al
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=madrigal" target="_blank">madrigal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magisterial" target="_blank">magisterial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mammal" target="_blank">mammal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=managerial" target="_blank">managerial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maniacal" target="_blank">maniacal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marginal" target="_blank">marginal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marital" target="_blank">marital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marshal" target="_blank">marshal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=martial" target="_blank">martial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maternal" target="_blank">maternal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=matrimonial" target="_blank">matrimonial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mayoral" target="_blank">mayoral</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "madrigal magisterial mammal, managerial maniacal marginal, marital marshal martial, maternal matrimonial mayoral";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

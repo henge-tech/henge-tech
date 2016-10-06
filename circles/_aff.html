@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _aff</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#9 _aff
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caff" target="_blank">caff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chaff" target="_blank">chaff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chiffchaff" target="_blank">chiffchaff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distaff" target="_blank">distaff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=faff" target="_blank">faff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flagstaff" target="_blank">flagstaff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gaff" target="_blank">gaff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naff" target="_blank">naff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quaff" target="_blank">quaff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quarterstaff" target="_blank">quarterstaff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riffraff" target="_blank">riffraff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=staff" target="_blank">staff</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "caff chaff chiffchaff, distaff faff flagstaff, gaff naff quaff, quarterstaff riffraff staff";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

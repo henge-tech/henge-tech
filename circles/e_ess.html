@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: e_ess</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#614 e_ess
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eagerness" target="_blank">eagerness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=earnestness" target="_blank">earnestness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=effectiveness" target="_blank">effectiveness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=egress" target="_blank">egress</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=empress" target="_blank">empress</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=enchantress" target="_blank">enchantress</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exactness" target="_blank">exactness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excess" target="_blank">excess</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclusiveness" target="_blank">exclusiveness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=express" target="_blank">express</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expressiveness" target="_blank">expressiveness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eyewitness" target="_blank">eyewitness</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "eagerness earnestness effectiveness, egress empress enchantress, exactness excess exclusiveness, express expressiveness eyewitness";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

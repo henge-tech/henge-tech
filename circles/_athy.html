@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _athy</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#43 _athy
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antipathy" target="_blank">antipathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apathy" target="_blank">apathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breathy" target="_blank">breathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=empathy" target="_blank">empathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=encephalopathy" target="_blank">encephalopathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homeopathy" target="_blank">homeopathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydropathy" target="_blank">hydropathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naturopathy" target="_blank">naturopathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neuropathy" target="_blank">neuropathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=osteopathy" target="_blank">osteopathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sympathy" target="_blank">sympathy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=telepathy" target="_blank">telepathy</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "antipathy apathy breathy, empathy encephalopathy homeopathy, hydropathy naturopathy neuropathy, osteopathy sympathy telepathy";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

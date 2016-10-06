@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: r_der</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#862 r_der
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=raider" target="_blank">raider</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reconsider" target="_blank">reconsider</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recorder" target="_blank">recorder</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rejoinder" target="_blank">rejoinder</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remainder" target="_blank">remainder</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reminder" target="_blank">reminder</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=render" target="_blank">render</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reorder" target="_blank">reorder</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rider" target="_blank">rider</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ringleader" target="_blank">ringleader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rounder" target="_blank">rounder</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rudder" target="_blank">rudder</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "raider reconsider recorder, rejoinder remainder reminder, render reorder rider, ringleader rounder rudder";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

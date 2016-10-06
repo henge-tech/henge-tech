@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: n_ive</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#781 n_ive
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naive" target="_blank">naive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=narrative" target="_blank">narrative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=native" target="_blank">native</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=negative" target="_blank">negative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neoconservative" target="_blank">neoconservative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nominative" target="_blank">nominative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noncompetitive" target="_blank">noncompetitive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noninvasive" target="_blank">noninvasive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonnative" target="_blank">nonnative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=normative" target="_blank">normative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nosedive" target="_blank">nosedive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nutritive" target="_blank">nutritive</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "naive narrative native, negative neoconservative nominative, noncompetitive noninvasive nonnative, normative nosedive nutritive";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

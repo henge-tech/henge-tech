@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _gn</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#116 _gn
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=align" target="_blank">align</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=benign" target="_blank">benign</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=campaign" target="_blank">campaign</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=champaign" target="_blank">champaign</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consign" target="_blank">consign</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deign" target="_blank">deign</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ensign" target="_blank">ensign</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feign" target="_blank">feign</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=malign" target="_blank">malign</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reign" target="_blank">reign</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resign" target="_blank">resign</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sovereign" target="_blank">sovereign</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "align benign campaign, champaign consign deign, ensign feign malign, reign resign sovereign";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

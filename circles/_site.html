@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _site</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#302 _site
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apposite" target="_blank">apposite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=campsite" target="_blank">campsite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=composite" target="_blank">composite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exquisite" target="_blank">exquisite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marcasite" target="_blank">marcasite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=onsite" target="_blank">onsite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opposite" target="_blank">opposite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parasite" target="_blank">parasite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perquisite" target="_blank">perquisite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prerequisite" target="_blank">prerequisite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=requisite" target="_blank">requisite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=site" target="_blank">site</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "apposite campsite composite, exquisite marcasite onsite, opposite parasite perquisite, prerequisite requisite site";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

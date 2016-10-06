@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: no_l</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#787 no_l
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nocturnal" target="_blank">nocturnal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nodal" target="_blank">nodal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noel" target="_blank">noel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nominal" target="_blank">nominal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonessential" target="_blank">nonessential</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nongovernmental" target="_blank">nongovernmental</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonpareil" target="_blank">nonpareil</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonresidential" target="_blank">nonresidential</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonsensical" target="_blank">nonsensical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonverbal" target="_blank">nonverbal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nostril" target="_blank">nostril</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=notional" target="_blank">notional</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "nocturnal nodal noel, nominal nonessential nongovernmental, nonpareil nonresidential nonsensical, nonverbal nostril notional";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

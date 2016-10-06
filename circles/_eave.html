@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _eave</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#80 _eave
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bereave" target="_blank">bereave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cleave" target="_blank">cleave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eave" target="_blank">eave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greave" target="_blank">greave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heave" target="_blank">heave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interleave" target="_blank">interleave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interweave" target="_blank">interweave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leave" target="_blank">leave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reave" target="_blank">reave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheave" target="_blank">sheave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sleave" target="_blank">sleave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=weave" target="_blank">weave</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bereave cleave eave, greave heave interleave, interweave leave reave, sheave sleave weave";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

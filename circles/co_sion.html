@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: co_sion</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#514 co_sion
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cohesion" target="_blank">cohesion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collision" target="_blank">collision</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collusion" target="_blank">collusion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commission" target="_blank">commission</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compassion" target="_blank">compassion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comprehension" target="_blank">comprehension</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compulsion" target="_blank">compulsion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concession" target="_blank">concession</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concision" target="_blank">concision</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concussion" target="_blank">concussion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=condescension" target="_blank">condescension</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confession" target="_blank">confession</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contusion" target="_blank">contusion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conversion" target="_blank">conversion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convulsion" target="_blank">convulsion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corrosion" target="_blank">corrosion</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "cohesion collision collusion commission, compassion comprehension compulsion concession, concision concussion condescension confession, contusion conversion convulsion corrosion";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

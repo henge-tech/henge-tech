@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _reen</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#266 _reen
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=careen" target="_blank">careen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evergreen" target="_blank">evergreen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=offscreen" target="_blank">offscreen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=onscreen" target="_blank">onscreen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preen" target="_blank">preen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=screen" target="_blank">screen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=silkscreen" target="_blank">silkscreen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sunscreen" target="_blank">sunscreen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tureen" target="_blank">tureen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=widescreen" target="_blank">widescreen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=windscreen" target="_blank">windscreen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wintergreen" target="_blank">wintergreen</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "careen evergreen offscreen, onscreen preen screen, silkscreen sunscreen tureen, widescreen windscreen wintergreen";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

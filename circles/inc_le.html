@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: inc_le</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#713 inc_le
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incalculable" target="_blank">incalculable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incapable" target="_blank">incapable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incomparable" target="_blank">incomparable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incompatible" target="_blank">incompatible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incomprehensible" target="_blank">incomprehensible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inconceivable" target="_blank">inconceivable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inconsiderable" target="_blank">inconsiderable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inconsolable" target="_blank">inconsolable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incontrovertible" target="_blank">incontrovertible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incorrigible" target="_blank">incorrigible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incorruptible" target="_blank">incorruptible</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incurable" target="_blank">incurable</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "incalculable incapable incomparable, incompatible incomprehensible inconceivable, inconsiderable inconsolable incontrovertible, incorrigible incorruptible incurable";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

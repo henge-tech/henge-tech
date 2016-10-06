@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _lor</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#174 _lor
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bachelor" target="_blank">bachelor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chancellor" target="_blank">chancellor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=councilor" target="_blank">councilor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=counselor" target="_blank">counselor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discolor" target="_blank">discolor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pallor" target="_blank">pallor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parlor" target="_blank">parlor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squalor" target="_blank">squalor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tailor" target="_blank">tailor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tricolor" target="_blank">tricolor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=valor" target="_blank">valor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=watercolor" target="_blank">watercolor</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bachelor chancellor councilor, counselor discolor pallor, parlor squalor tailor, tricolor valor watercolor";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

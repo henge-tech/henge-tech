@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _racy</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#251 _racy
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accuracy" target="_blank">accuracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aristocracy" target="_blank">aristocracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=autocracy" target="_blank">autocracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bureaucracy" target="_blank">bureaucracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confederacy" target="_blank">confederacy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conspiracy" target="_blank">conspiracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=degeneracy" target="_blank">degeneracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=illiteracy" target="_blank">illiteracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inaccuracy" target="_blank">inaccuracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=literacy" target="_blank">literacy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magistracy" target="_blank">magistracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meritocracy" target="_blank">meritocracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=numeracy" target="_blank">numeracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piracy" target="_blank">piracy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=racy" target="_blank">racy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=theocracy" target="_blank">theocracy</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "accuracy aristocracy autocracy bureaucracy, confederacy conspiracy degeneracy illiteracy, inaccuracy literacy magistracy meritocracy, numeracy piracy racy theocracy";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

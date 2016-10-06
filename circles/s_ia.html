@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: s_ia</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#897 s_ia
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salvia" target="_blank">salvia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sangria" target="_blank">sangria</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Saturnalia" target="_blank">Saturnalia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=schizophrenia" target="_blank">schizophrenia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scoria" target="_blank">scoria</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sepia" target="_blank">sepia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=septicemia" target="_blank">septicemia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sequoia" target="_blank">sequoia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sharia" target="_blank">sharia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stria" target="_blank">stria</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suburbia" target="_blank">suburbia</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=synesthesia" target="_blank">synesthesia</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "salvia sangria Saturnalia, schizophrenia scoria sepia, septicemia sequoia sharia, stria suburbia synesthesia";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

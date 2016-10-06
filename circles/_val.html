@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _val</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#358 _val
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adjectival" target="_blank">adjectival</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=approval" target="_blank">approval</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=archival" target="_blank">archival</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=larval" target="_blank">larval</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=medieval" target="_blank">medieval</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naval" target="_blank">naval</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oval" target="_blank">oval</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=primeval" target="_blank">primeval</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=removal" target="_blank">removal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retrieval" target="_blank">retrieval</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revival" target="_blank">revival</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=upheaval" target="_blank">upheaval</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "adjectival approval archival, larval medieval naval, oval primeval removal, retrieval revival upheaval";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

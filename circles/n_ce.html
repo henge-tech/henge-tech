@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: n_ce</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#780 n_ce
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=negligence" target="_blank">negligence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nescience" target="_blank">nescience</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neuroscience" target="_blank">neuroscience</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=niece" target="_blank">niece</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonce" target="_blank">nonce</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonchalance" target="_blank">nonchalance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noncompliance" target="_blank">noncompliance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonexistence" target="_blank">nonexistence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonviolence" target="_blank">nonviolence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=novice" target="_blank">novice</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nuance" target="_blank">nuance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nuisance" target="_blank">nuisance</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "negligence nescience neuroscience, niece nonce nonchalance, noncompliance nonexistence nonviolence, novice nuance nuisance";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

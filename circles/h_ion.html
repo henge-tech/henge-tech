@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: h_ion</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#686 h_ion
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=habitation" target="_blank">habitation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hallucination" target="_blank">hallucination</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=harmonization" target="_blank">harmonization</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hellion" target="_blank">hellion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hesitation" target="_blank">hesitation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hibernation" target="_blank">hibernation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homogenization" target="_blank">homogenization</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hospitalization" target="_blank">hospitalization</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=humiliation" target="_blank">humiliation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hybridization" target="_blank">hybridization</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydration" target="_blank">hydration</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydrogenation" target="_blank">hydrogenation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hyperinflation" target="_blank">hyperinflation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypertension" target="_blank">hypertension</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hyphenation" target="_blank">hyphenation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypotension" target="_blank">hypotension</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "habitation hallucination harmonization hellion, hesitation hibernation homogenization hospitalization, humiliation hybridization hydration hydrogenation, hyperinflation hypertension hyphenation hypotension";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

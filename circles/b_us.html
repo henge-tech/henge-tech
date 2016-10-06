@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: b_us</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#448 b_us
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bacillus" target="_blank">bacillus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barbarous" target="_blank">barbarous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beauteous" target="_blank">beauteous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bilious" target="_blank">bilious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blasphemous" target="_blank">blasphemous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bodacious" target="_blank">bodacious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bogus" target="_blank">bogus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boisterous" target="_blank">boisterous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bolus" target="_blank">bolus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bronchus" target="_blank">bronchus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bulbous" target="_blank">bulbous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bumptious" target="_blank">bumptious</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bacillus barbarous beauteous, bilious blasphemous bodacious, bogus boisterous bolus, bronchus bulbous bumptious";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: del_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#579 del_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delectable" target="_blank">delectable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delegate" target="_blank">delegate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deliberate" target="_blank">deliberate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deliberative" target="_blank">deliberative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delicate" target="_blank">delicate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delineate" target="_blank">delineate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deliverable" target="_blank">deliverable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deliverance" target="_blank">deliverance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delude" target="_blank">delude</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deluge" target="_blank">deluge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deluxe" target="_blank">deluxe</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delve" target="_blank">delve</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "delectable delegate deliberate, deliberative delicate delineate, deliverable deliverance delude, deluge deluxe delve";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

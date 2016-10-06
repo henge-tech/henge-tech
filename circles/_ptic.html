@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ptic</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#249 _ptic
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antiseptic" target="_blank">antiseptic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apocalyptic" target="_blank">apocalyptic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aseptic" target="_blank">aseptic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cryptic" target="_blank">cryptic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ecliptic" target="_blank">ecliptic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=elliptic" target="_blank">elliptic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=epileptic" target="_blank">epileptic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=optic" target="_blank">optic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peptic" target="_blank">peptic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=septic" target="_blank">septic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=skeptic" target="_blank">skeptic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=synoptic" target="_blank">synoptic</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "antiseptic apocalyptic aseptic, cryptic ecliptic elliptic, epileptic optic peptic, septic skeptic synoptic";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

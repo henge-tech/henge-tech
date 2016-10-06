@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: even_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#630 even_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evenhanded" target="_blank">evenhanded</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evening" target="_blank">evening</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evenly" target="_blank">evenly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evens" target="_blank">evens</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evensong" target="_blank">evensong</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=event" target="_blank">event</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eventful" target="_blank">eventful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eventide" target="_blank">eventide</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eventing" target="_blank">eventing</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eventual" target="_blank">eventual</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eventuality" target="_blank">eventuality</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eventually" target="_blank">eventually</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "evenhanded evening evenly, evens evensong event, eventful eventide eventing, eventual eventuality eventually";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: li_g</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#738 li_g
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=liberating" target="_blank">liberating</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=licensing" target="_blank">licensing</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=licking" target="_blank">licking</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lifesaving" target="_blank">lifesaving</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lightening" target="_blank">lightening</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lightning" target="_blank">lightning</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=liking" target="_blank">liking</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lilting" target="_blank">lilting</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ling" target="_blank">ling</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lingering" target="_blank">lingering</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lining" target="_blank">lining</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=living" target="_blank">living</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "liberating licensing licking, lifesaving lightening lightning, liking lilting ling, lingering lining living";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

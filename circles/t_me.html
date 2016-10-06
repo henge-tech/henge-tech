@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: t_me</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#949 t_me
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tame" target="_blank">tame</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=teatime" target="_blank">teatime</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=theme" target="_blank">theme</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=threesome" target="_blank">threesome</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thyme" target="_blank">thyme</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=time" target="_blank">time</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tiresome" target="_blank">tiresome</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tome" target="_blank">tome</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toothsome" target="_blank">toothsome</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trireme" target="_blank">trireme</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=troublesome" target="_blank">troublesome</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=twosome" target="_blank">twosome</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "tame teatime theme, threesome thyme time, tiresome tome toothsome, trireme troublesome twosome";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

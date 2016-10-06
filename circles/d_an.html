@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: d_an</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#547 d_an
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dalmatian" target="_blank">dalmatian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deadpan" target="_blank">deadpan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dean" target="_blank">dean</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demean" target="_blank">demean</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dietician" target="_blank">dietician</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diocesan" target="_blank">diocesan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disciplinarian" target="_blank">disciplinarian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divan" target="_blank">divan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doberman" target="_blank">doberman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doorman" target="_blank">doorman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=draconian" target="_blank">draconian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=draftsman" target="_blank">draftsman</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "dalmatian deadpan dean, demean dietician diocesan, disciplinarian divan doberman, doorman draconian draftsman";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

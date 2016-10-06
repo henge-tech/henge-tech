@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: sti_r</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#934 sti_r
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sticker" target="_blank">sticker</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stickler" target="_blank">stickler</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stiffener" target="_blank">stiffener</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stimulator" target="_blank">stimulator</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stinger" target="_blank">stinger</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stinker" target="_blank">stinker</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stir" target="_blank">stir</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stirrer" target="_blank">stirrer</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "sticker stickler stiffener stimulator, stinger stinker stir stirrer";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

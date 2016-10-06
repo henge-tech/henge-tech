@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ader</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#5 _ader
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crusader" target="_blank">crusader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doubleheader" target="_blank">doubleheader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fader" target="_blank">fader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grader" target="_blank">grader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homesteader" target="_blank">homesteader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newsreader" target="_blank">newsreader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proofreader" target="_blank">proofreader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ringleader" target="_blank">ringleader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spreader" target="_blank">spreader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trader" target="_blank">trader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=treader" target="_blank">treader</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wader" target="_blank">wader</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "crusader doubleheader fader, grader homesteader newsreader, proofreader ringleader spreader, trader treader wader";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

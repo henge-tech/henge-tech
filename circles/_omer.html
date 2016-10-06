@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _omer</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#225 _omer
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astronomer" target="_blank">astronomer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloomer" target="_blank">bloomer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boomer" target="_blank">boomer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comer" target="_blank">comer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=customer" target="_blank">customer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=elastomer" target="_blank">elastomer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homer" target="_blank">homer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=isomer" target="_blank">isomer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misnomer" target="_blank">misnomer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monomer" target="_blank">monomer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newcomer" target="_blank">newcomer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=roomer" target="_blank">roomer</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "astronomer bloomer boomer, comer customer elastomer, homer isomer misnomer, monomer newcomer roomer";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

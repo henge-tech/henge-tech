@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ha_h</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#693 ha_h
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hagfish" target="_blank">hagfish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hairbreadth" target="_blank">hairbreadth</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hallelujah" target="_blank">hallelujah</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Hanukkah" target="_blank">Hanukkah</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=harrumph" target="_blank">harrumph</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=harsh" target="_blank">harsh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hash" target="_blank">hash</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hashish" target="_blank">hashish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hatch" target="_blank">hatch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hath" target="_blank">hath</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haunch" target="_blank">haunch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hawkish" target="_blank">hawkish</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "hagfish hairbreadth hallelujah, Hanukkah harrumph harsh, hash hashish hatch, hath haunch hawkish";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

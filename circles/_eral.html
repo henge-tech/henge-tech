@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _eral</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#100 _eral
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bilateral" target="_blank">bilateral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collateral" target="_blank">collateral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ephemeral" target="_blank">ephemeral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=equilateral" target="_blank">equilateral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=federal" target="_blank">federal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feral" target="_blank">feral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=funeral" target="_blank">funeral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=general" target="_blank">general</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=humeral" target="_blank">humeral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=illiberal" target="_blank">illiberal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lateral" target="_blank">lateral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multilateral" target="_blank">multilateral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=numeral" target="_blank">numeral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peripheral" target="_blank">peripheral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=puerperal" target="_blank">puerperal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quadrilateral" target="_blank">quadrilateral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=several" target="_blank">several</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unicameral" target="_blank">unicameral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unilateral" target="_blank">unilateral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=visceral" target="_blank">visceral</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bilateral collateral ephemeral equilateral federal, feral funeral general humeral illiberal, lateral multilateral numeral peripheral puerperal, quadrilateral several unicameral unilateral visceral";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

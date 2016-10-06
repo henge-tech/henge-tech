@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: bo_y</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#456 bo_y
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bobby" target="_blank">bobby</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bodily" target="_blank">bodily</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bogey" target="_blank">bogey</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boggy" target="_blank">boggy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boldly" target="_blank">boldly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bonny" target="_blank">bonny</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bony" target="_blank">bony</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=booby" target="_blank">booby</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=booty" target="_blank">booty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boozy" target="_blank">boozy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bossy" target="_blank">bossy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=botany" target="_blank">botany</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bouncy" target="_blank">bouncy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boundary" target="_blank">boundary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bounty" target="_blank">bounty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boxy" target="_blank">boxy</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bobby bodily bogey boggy, boldly bonny bony booby, booty boozy bossy botany, bouncy boundary bounty boxy";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

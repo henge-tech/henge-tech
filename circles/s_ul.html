@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: s_ul</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#912 s_ul
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scornful" target="_blank">scornful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shameful" target="_blank">shameful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sinful" target="_blank">sinful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=skillful" target="_blank">skillful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slothful" target="_blank">slothful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sorrowful" target="_blank">sorrowful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=soulful" target="_blank">soulful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spiteful" target="_blank">spiteful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spoonful" target="_blank">spoonful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stressful" target="_blank">stressful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=successful" target="_blank">successful</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suspenseful" target="_blank">suspenseful</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "scornful shameful sinful, skillful slothful sorrowful, soulful spiteful spoonful, stressful successful suspenseful";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

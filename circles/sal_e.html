@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: sal_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#915 sal_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salable" target="_blank">salable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saleable" target="_blank">saleable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salience" target="_blank">salience</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saline" target="_blank">saline</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salivate" target="_blank">salivate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salmonellae" target="_blank">salmonellae</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Salome" target="_blank">Salome</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saltine" target="_blank">saltine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saltire" target="_blank">saltire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salute" target="_blank">salute</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salvage" target="_blank">salvage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salve" target="_blank">salve</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "salable saleable salience, saline salivate salmonellae, Salome saltine saltire, salute salvage salve";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

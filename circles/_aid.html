@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _aid</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#12 _aid
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aforesaid" target="_blank">aforesaid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barmaid" target="_blank">barmaid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=braid" target="_blank">braid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bridesmaid" target="_blank">bridesmaid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chambermaid" target="_blank">chambermaid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=handmaid" target="_blank">handmaid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inlaid" target="_blank">inlaid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laid" target="_blank">laid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plaid" target="_blank">plaid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=postpaid" target="_blank">postpaid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=raid" target="_blank">raid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=staid" target="_blank">staid</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "aforesaid barmaid braid, bridesmaid chambermaid handmaid, inlaid laid plaid, postpaid raid staid";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

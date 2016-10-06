@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _oke</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#220 _oke
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bespoke" target="_blank">bespoke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloke" target="_blank">bloke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breaststroke" target="_blank">breaststroke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broke" target="_blank">broke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=choke" target="_blank">choke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evoke" target="_blank">evoke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hoke" target="_blank">hoke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=invoke" target="_blank">invoke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=poke" target="_blank">poke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=provoke" target="_blank">provoke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revoke" target="_blank">revoke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stoke" target="_blank">stoke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stroke" target="_blank">stroke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sunstroke" target="_blank">sunstroke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toke" target="_blank">toke</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yoke" target="_blank">yoke</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bespoke bloke breaststroke broke, choke evoke hoke invoke, poke provoke revoke stoke, stroke sunstroke toke yoke";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

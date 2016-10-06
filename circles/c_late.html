@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: c_late</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#476 c_late
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=calculate" target="_blank">calculate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capitulate" target="_blank">capitulate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=circulate" target="_blank">circulate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coagulate" target="_blank">coagulate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collate" target="_blank">collate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conflate" target="_blank">conflate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=congratulate" target="_blank">congratulate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consulate" target="_blank">consulate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contemplate" target="_blank">contemplate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=copperplate" target="_blank">copperplate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=copulate" target="_blank">copulate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=correlate" target="_blank">correlate</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "calculate capitulate circulate, coagulate collate conflate, congratulate consulate contemplate, copperplate copulate correlate";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

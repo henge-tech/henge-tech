@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: y_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#998 y_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yachtsman" target="_blank">yachtsman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Yangon" target="_blank">Yangon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yarn" target="_blank">yarn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yawn" target="_blank">yawn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yearn" target="_blank">yearn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yen" target="_blank">yen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yeoman" target="_blank">yeoman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yin" target="_blank">yin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yon" target="_blank">yon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yuan" target="_blank">yuan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Yucatan" target="_blank">Yucatan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Yukon" target="_blank">Yukon</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "yachtsman Yangon yarn, yawn yearn yen, yeoman yin yon, yuan Yucatan Yukon";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: p_ish</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#814 p_ish
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parish" target="_blank">parish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peckish" target="_blank">peckish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peevish" target="_blank">peevish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perish" target="_blank">perish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piggish" target="_blank">piggish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinkish" target="_blank">pinkish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pish" target="_blank">pish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=polish" target="_blank">polish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=popish" target="_blank">popish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prudish" target="_blank">prudish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=punish" target="_blank">punish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purplish" target="_blank">purplish</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "parish peckish peevish, perish piggish pinkish, pish polish popish, prudish punish purplish";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

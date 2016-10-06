@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: cha_y</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#499 cha_y
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chalky" target="_blank">chalky</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chambray" target="_blank">chambray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chancellery" target="_blank">chancellery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chancery" target="_blank">chancery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chantry" target="_blank">chantry</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chaplaincy" target="_blank">chaplaincy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chappy" target="_blank">chappy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chardonnay" target="_blank">chardonnay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=charity" target="_blank">charity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=charmingly" target="_blank">charmingly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chastity" target="_blank">chastity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chatty" target="_blank">chatty</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "chalky chambray chancellery, chancery chantry chaplaincy, chappy chardonnay charity, charmingly chastity chatty";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _fire</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#109 _fire
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=afire" target="_blank">afire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=backfire" target="_blank">backfire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bonfire" target="_blank">bonfire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ceasefire" target="_blank">ceasefire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crossfire" target="_blank">crossfire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foxfire" target="_blank">foxfire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gunfire" target="_blank">gunfire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hellfire" target="_blank">hellfire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misfire" target="_blank">misfire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spitfire" target="_blank">spitfire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surefire" target="_blank">surefire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wildfire" target="_blank">wildfire</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "afire backfire bonfire, ceasefire crossfire foxfire, gunfire hellfire misfire, spitfire surefire wildfire";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

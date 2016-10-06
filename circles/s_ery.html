@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: s_ery</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#896 s_ery
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saddlery" target="_blank">saddlery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savagery" target="_blank">savagery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scenery" target="_blank">scenery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shrubbery" target="_blank">shrubbery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=silvery" target="_blank">silvery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slavery" target="_blank">slavery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slippery" target="_blank">slippery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snobbery" target="_blank">snobbery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=soldiery" target="_blank">soldiery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sorcery" target="_blank">sorcery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=summery" target="_blank">summery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surgery" target="_blank">surgery</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "saddlery savagery scenery, shrubbery silvery slavery, slippery snobbery soldiery, sorcery summery surgery";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

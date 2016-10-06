@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ux</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#357 _ux
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beaux" target="_blank">beaux</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chateaux" target="_blank">chateaux</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crux" target="_blank">crux</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=faux" target="_blank">faux</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flux" target="_blank">flux</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=influx" target="_blank">influx</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lux" target="_blank">lux</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=redux" target="_blank">redux</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reflux" target="_blank">reflux</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=roux" target="_blank">roux</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tableaux" target="_blank">tableaux</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tux" target="_blank">tux</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "beaux chateaux crux, faux flux influx, lux redux reflux, roux tableaux tux";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

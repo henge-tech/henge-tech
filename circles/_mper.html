@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _mper</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#193 _mper
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bumper" target="_blank">bumper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damper" target="_blank">damper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distemper" target="_blank">distemper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dumper" target="_blank">dumper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hamper" target="_blank">hamper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jumper" target="_blank">jumper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pamper" target="_blank">pamper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plumper" target="_blank">plumper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=romper" target="_blank">romper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scamper" target="_blank">scamper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=simper" target="_blank">simper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stumper" target="_blank">stumper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamper" target="_blank">tamper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=temper" target="_blank">temper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tramper" target="_blank">tramper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whimper" target="_blank">whimper</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bumper damper distemper dumper, hamper jumper pamper plumper, romper scamper simper stumper, tamper temper tramper whimper";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

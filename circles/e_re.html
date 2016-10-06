@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: e_re</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#621 e_re
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=earthenware" target="_blank">earthenware</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embrasure" target="_blank">embrasure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emigre" target="_blank">emigre</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=enclosure" target="_blank">enclosure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=encore" target="_blank">encore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=endure" target="_blank">endure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ensure" target="_blank">ensure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=entire" target="_blank">entire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=epicure" target="_blank">epicure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=erasure" target="_blank">erasure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=esquire" target="_blank">esquire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=euchre" target="_blank">euchre</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evermore" target="_blank">evermore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expenditure" target="_blank">expenditure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expire" target="_blank">expire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eyesore" target="_blank">eyesore</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "earthenware embrasure emigre enclosure, encore endure ensure entire, epicure erasure esquire euchre, evermore expenditure expire eyesore";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

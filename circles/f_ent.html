@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: f_ent</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#644 f_ent
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ferment" target="_blank">ferment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fervent" target="_blank">fervent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=figment" target="_blank">figment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=filament" target="_blank">filament</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=firmament" target="_blank">firmament</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fitment" target="_blank">fitment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluent" target="_blank">fluent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluorescent" target="_blank">fluorescent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foment" target="_blank">foment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fragment" target="_blank">fragment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fraudulent" target="_blank">fraudulent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fulfillment" target="_blank">fulfillment</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ferment fervent figment, filament firmament fitment, fluent fluorescent foment, fragment fraudulent fulfillment";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

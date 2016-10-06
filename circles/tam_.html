@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: tam_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#956 tam_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=TAM" target="_blank">TAM</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamale" target="_blank">tamale</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamarind" target="_blank">tamarind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamarisk" target="_blank">tamarisk</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tambour" target="_blank">tambour</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tambourine" target="_blank">tambourine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tame" target="_blank">tame</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamer" target="_blank">tamer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamoxifen" target="_blank">tamoxifen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamp" target="_blank">tamp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamper" target="_blank">tamper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tampon" target="_blank">tampon</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "TAM tamale tamarind, tamarisk tambour tambourine, tame tamer tamoxifen, tamp tamper tampon";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

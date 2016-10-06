@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _nant</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#195 _nant
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complainant" target="_blank">complainant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consonant" target="_blank">consonant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=covenant" target="_blank">covenant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=determinant" target="_blank">determinant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissonant" target="_blank">dissonant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dominant" target="_blank">dominant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indignant" target="_blank">indignant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lieutenant" target="_blank">lieutenant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=malignant" target="_blank">malignant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pennant" target="_blank">pennant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=poignant" target="_blank">poignant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=predominant" target="_blank">predominant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pregnant" target="_blank">pregnant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recombinant" target="_blank">recombinant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remnant" target="_blank">remnant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repugnant" target="_blank">repugnant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resonant" target="_blank">resonant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ruminant" target="_blank">ruminant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stagnant" target="_blank">stagnant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tenant" target="_blank">tenant</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "complainant consonant covenant determinant dissonant, dominant indignant lieutenant malignant pennant, poignant predominant pregnant recombinant remnant, repugnant resonant ruminant stagnant tenant";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

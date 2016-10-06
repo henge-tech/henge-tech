@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: em_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#625 em_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emanate" target="_blank">emanate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emancipate" target="_blank">emancipate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embezzle" target="_blank">embezzle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embrace" target="_blank">embrace</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embrasure" target="_blank">embrasure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emerge" target="_blank">emerge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emergence" target="_blank">emergence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emigrate" target="_blank">emigrate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emigre" target="_blank">emigre</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eminence" target="_blank">eminence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emirate" target="_blank">emirate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emote" target="_blank">emote</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emotive" target="_blank">emotive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=empathize" target="_blank">empathize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emphasize" target="_blank">emphasize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emulate" target="_blank">emulate</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "emanate emancipate embezzle embrace, embrasure emerge emergence emigrate, emigre eminence emirate emote, emotive empathize emphasize emulate";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: g_ter</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#671 g_ter
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gangster" target="_blank">gangster</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=garter" target="_blank">garter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=getter" target="_blank">getter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitter" target="_blank">glitter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=goiter" target="_blank">goiter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grandmaster" target="_blank">grandmaster</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grater" target="_blank">grater</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greater" target="_blank">greater</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greeter" target="_blank">greeter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=groundwater" target="_blank">groundwater</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gunfighter" target="_blank">gunfighter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gutter" target="_blank">gutter</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "gangster garter getter, glitter goiter grandmaster, grater greater greeter, groundwater gunfighter gutter";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

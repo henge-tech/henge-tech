@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _duct</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#76 _duct
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abduct" target="_blank">abduct</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adduct" target="_blank">adduct</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aqueduct" target="_blank">aqueduct</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conduct" target="_blank">conduct</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deduct" target="_blank">deduct</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=duct" target="_blank">duct</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=induct" target="_blank">induct</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misconduct" target="_blank">misconduct</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oviduct" target="_blank">oviduct</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=product" target="_blank">product</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subduct" target="_blank">subduct</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=viaduct" target="_blank">viaduct</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "abduct adduct aqueduct, conduct deduct duct, induct misconduct oviduct, product subduct viaduct";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

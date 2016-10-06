@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: r_ous</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#867 r_ous
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rapacious" target="_blank">rapacious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rapturous" target="_blank">rapturous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=raucous" target="_blank">raucous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ravenous" target="_blank">ravenous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rebellious" target="_blank">rebellious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rendezvous" target="_blank">rendezvous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repetitious" target="_blank">repetitious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ridiculous" target="_blank">ridiculous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=righteous" target="_blank">righteous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rigorous" target="_blank">rigorous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riotous" target="_blank">riotous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ruinous" target="_blank">ruinous</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "rapacious rapturous raucous, ravenous rebellious rendezvous, repetitious ridiculous righteous, rigorous riotous ruinous";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

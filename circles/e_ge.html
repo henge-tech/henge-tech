@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: e_ge</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#615 e_ge
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emerge" target="_blank">emerge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=encourage" target="_blank">encourage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=engage" target="_blank">engage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=enlarge" target="_blank">enlarge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=enrage" target="_blank">enrage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=entourage" target="_blank">entourage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=envisage" target="_blank">envisage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=equipage" target="_blank">equipage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=espionage" target="_blank">espionage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=estrange" target="_blank">estrange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exchange" target="_blank">exchange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expunge" target="_blank">expunge</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "emerge encourage engage, enlarge enrage entourage, envisage equipage espionage, estrange exchange expunge";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ggle</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#114 _ggle
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boggle" target="_blank">boggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gaggle" target="_blank">gaggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=giggle" target="_blank">giggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=goggle" target="_blank">goggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haggle" target="_blank">haggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jiggle" target="_blank">jiggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=juggle" target="_blank">juggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muggle" target="_blank">muggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=smuggle" target="_blank">smuggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snuggle" target="_blank">snuggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squiggle" target="_blank">squiggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=straggle" target="_blank">straggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=struggle" target="_blank">struggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toggle" target="_blank">toggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wiggle" target="_blank">wiggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wriggle" target="_blank">wriggle</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "boggle gaggle giggle goggle, haggle jiggle juggle muggle, smuggle snuggle squiggle straggle, struggle toggle wiggle wriggle";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

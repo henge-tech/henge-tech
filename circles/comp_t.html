@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: comp_t</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#521 comp_t
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compartment" target="_blank">compartment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compatriot" target="_blank">compatriot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=competent" target="_blank">competent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complacent" target="_blank">complacent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complainant" target="_blank">complainant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complaint" target="_blank">complaint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complement" target="_blank">complement</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compliant" target="_blank">compliant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complicit" target="_blank">complicit</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compliment" target="_blank">compliment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comport" target="_blank">comport</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compost" target="_blank">compost</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "compartment compatriot competent, complacent complainant complaint, complement compliant complicit, compliment comport compost";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

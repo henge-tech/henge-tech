@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: acc_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#395 acc_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accede" target="_blank">accede</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accentuate" target="_blank">accentuate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accessorize" target="_blank">accessorize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accolade" target="_blank">accolade</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accommodate" target="_blank">accommodate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accomplice" target="_blank">accomplice</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accordance" target="_blank">accordance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accountable" target="_blank">accountable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accrue" target="_blank">accrue</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accumulate" target="_blank">accumulate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accurate" target="_blank">accurate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accuse" target="_blank">accuse</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "accede accentuate accessorize, accolade accommodate accomplice, accordance accountable accrue, accumulate accurate accuse";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

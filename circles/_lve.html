@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _lve</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#177 _lve
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=absolve" target="_blank">absolve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bivalve" target="_blank">bivalve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=calve" target="_blank">calve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delve" target="_blank">delve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=devolve" target="_blank">devolve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissolve" target="_blank">dissolve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evolve" target="_blank">evolve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=halve" target="_blank">halve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=helve" target="_blank">helve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=involve" target="_blank">involve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resolve" target="_blank">resolve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revolve" target="_blank">revolve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salve" target="_blank">salve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shelve" target="_blank">shelve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=solve" target="_blank">solve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=valve" target="_blank">valve</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "absolve bivalve calve delve, devolve dissolve evolve halve, helve involve resolve revolve, salve shelve solve valve";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

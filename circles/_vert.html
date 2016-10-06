@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _vert</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#360 _vert
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=advert" target="_blank">advert</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=avert" target="_blank">avert</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=covert" target="_blank">covert</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=culvert" target="_blank">culvert</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divert" target="_blank">divert</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extrovert" target="_blank">extrovert</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=introvert" target="_blank">introvert</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=invert" target="_blank">invert</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overt" target="_blank">overt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pervert" target="_blank">pervert</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revert" target="_blank">revert</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subvert" target="_blank">subvert</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "advert avert covert, culvert divert extrovert, introvert invert overt, pervert revert subvert";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

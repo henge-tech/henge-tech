@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: p_re</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#821 p_re
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=padre" target="_blank">padre</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pare" target="_blank">pare</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pasture" target="_blank">pasture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=persevere" target="_blank">persevere</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinafore" target="_blank">pinafore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pore" target="_blank">pore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=portraiture" target="_blank">portraiture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=posture" target="_blank">posture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=premature" target="_blank">premature</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=premiere" target="_blank">premiere</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prepare" target="_blank">prepare</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pressure" target="_blank">pressure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=procedure" target="_blank">procedure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=procure" target="_blank">procure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=puncture" target="_blank">puncture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pyre" target="_blank">pyre</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "padre pare pasture persevere, pinafore pore portraiture posture, premature premiere prepare pressure, procedure procure puncture pyre";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

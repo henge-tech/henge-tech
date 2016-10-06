@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: n_nt</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#782 n_nt
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nascent" target="_blank">nascent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=needlepoint" target="_blank">needlepoint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=negligent" target="_blank">negligent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newsagent" target="_blank">newsagent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newsprint" target="_blank">newsprint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonchalant" target="_blank">nonchalant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonexistent" target="_blank">nonexistent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonpayment" target="_blank">nonpayment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonresident" target="_blank">nonresident</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nourishment" target="_blank">nourishment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nutrient" target="_blank">nutrient</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nutriment" target="_blank">nutriment</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "nascent needlepoint negligent, newsagent newsprint nonchalant, nonexistent nonpayment nonresident, nourishment nutrient nutriment";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

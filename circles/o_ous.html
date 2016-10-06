@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: o_ous</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#795 o_ous
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oblivious" target="_blank">oblivious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obnoxious" target="_blank">obnoxious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obsequious" target="_blank">obsequious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obstreperous" target="_blank">obstreperous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obvious" target="_blank">obvious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=odious" target="_blank">odious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=odoriferous" target="_blank">odoriferous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=odorous" target="_blank">odorous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=officious" target="_blank">officious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ominous" target="_blank">ominous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=omnivorous" target="_blank">omnivorous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=onerous" target="_blank">onerous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=osseous" target="_blank">osseous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ostentatious" target="_blank">ostentatious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outrageous" target="_blank">outrageous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overzealous" target="_blank">overzealous</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "oblivious obnoxious obsequious obstreperous, obvious odious odoriferous odorous, officious ominous omnivorous onerous, osseous ostentatious outrageous overzealous";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

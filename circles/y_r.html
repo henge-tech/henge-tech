@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: y_r</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#999 y_r
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yammer" target="_blank">yammer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yawner" target="_blank">yawner</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=year" target="_blank">year</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yellowhammer" target="_blank">yellowhammer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yer" target="_blank">yer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yester" target="_blank">yester</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yesteryear" target="_blank">yesteryear</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yodeler" target="_blank">yodeler</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yonder" target="_blank">yonder</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=younger" target="_blank">younger</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=youngster" target="_blank">youngster</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yr" target="_blank">yr</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "yammer yawner year, yellowhammer yer yester, yesteryear yodeler yonder, younger youngster yr";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

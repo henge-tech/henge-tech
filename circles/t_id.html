@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: t_id</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#947 t_id
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tabloid" target="_blank">tabloid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tepid" target="_blank">tepid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thyroid" target="_blank">thyroid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=timid" target="_blank">timid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=torpid" target="_blank">torpid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=torrid" target="_blank">torrid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trapezoid" target="_blank">trapezoid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tricuspid" target="_blank">tricuspid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tumid" target="_blank">tumid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=turbid" target="_blank">turbid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=turgid" target="_blank">turgid</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=typhoid" target="_blank">typhoid</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "tabloid tepid thyroid, timid torpid torrid, trapezoid tricuspid tumid, turbid turgid typhoid";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

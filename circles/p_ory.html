@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: p_ory</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#819 p_ory
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=participatory" target="_blank">participatory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peremptory" target="_blank">peremptory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perfunctory" target="_blank">perfunctory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pillory" target="_blank">pillory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=predatory" target="_blank">predatory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prefatory" target="_blank">prefatory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prehistory" target="_blank">prehistory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preparatory" target="_blank">preparatory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=priory" target="_blank">priory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=promissory" target="_blank">promissory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=promontory" target="_blank">promontory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purgatory" target="_blank">purgatory</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "participatory peremptory perfunctory, pillory predatory prefatory, prehistory preparatory priory, promissory promontory purgatory";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

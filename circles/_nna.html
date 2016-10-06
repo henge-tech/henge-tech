@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _nna</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#213 _nna
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bandanna" target="_blank">bandanna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=belladonna" target="_blank">belladonna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=canna" target="_blank">canna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Gehenna" target="_blank">Gehenna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=henna" target="_blank">henna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hosanna" target="_blank">hosanna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manna" target="_blank">manna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Penna" target="_blank">Penna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Pollyanna" target="_blank">Pollyanna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savanna" target="_blank">savanna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=senna" target="_blank">senna</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sienna" target="_blank">sienna</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bandanna belladonna canna, Gehenna henna hosanna, manna Penna Pollyanna, savanna senna sienna";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

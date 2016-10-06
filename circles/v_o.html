@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: v_o</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#974 v_o
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verso" target="_blank">verso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vertigo" target="_blank">vertigo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=veto" target="_blank">veto</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vibrato" target="_blank">vibrato</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vino" target="_blank">vino</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=violoncello" target="_blank">violoncello</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=virago" target="_blank">virago</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vireo" target="_blank">vireo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=virtuoso" target="_blank">virtuoso</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=VO." target="_blank">VO.</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=volcano" target="_blank">volcano</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=voodoo" target="_blank">voodoo</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "verso vertigo veto, vibrato vino violoncello, virago vireo virtuoso, VO. volcano voodoo";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

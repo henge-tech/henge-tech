@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: suf_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#943 suf_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffer" target="_blank">suffer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sufferance" target="_blank">sufferance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sufferer" target="_blank">sufferer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffice" target="_blank">suffice</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sufficient" target="_blank">sufficient</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffix" target="_blank">suffix</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffocate" target="_blank">suffocate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffocated" target="_blank">suffocated</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffragan" target="_blank">suffragan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffrage" target="_blank">suffrage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffragette" target="_blank">suffragette</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffuse" target="_blank">suffuse</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "suffer sufferance sufferer, suffice sufficient suffix, suffocate suffocated suffragan, suffrage suffragette suffuse";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

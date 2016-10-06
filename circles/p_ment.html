@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: p_ment</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#818 p_ment
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parchment" target="_blank">parchment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parliament" target="_blank">parliament</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pavement" target="_blank">pavement</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pediment" target="_blank">pediment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pigment" target="_blank">pigment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=placement" target="_blank">placement</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=postponement" target="_blank">postponement</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=predicament" target="_blank">predicament</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=procurement" target="_blank">procurement</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pronouncement" target="_blank">pronouncement</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=punishment" target="_blank">punishment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=puzzlement" target="_blank">puzzlement</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "parchment parliament pavement, pediment pigment placement, postponement predicament procurement, pronouncement punishment puzzlement";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

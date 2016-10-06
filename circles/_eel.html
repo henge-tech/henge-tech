@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _eel</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#85 _eel
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cartwheel" target="_blank">cartwheel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=creel" target="_blank">creel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eel" target="_blank">eel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flywheel" target="_blank">flywheel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genteel" target="_blank">genteel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heel" target="_blank">heel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=keel" target="_blank">keel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kneel" target="_blank">kneel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peel" target="_blank">peel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinwheel" target="_blank">pinwheel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reel" target="_blank">reel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steel" target="_blank">steel</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "cartwheel creel eel, flywheel genteel heel, keel kneel peel, pinwheel reel steel";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

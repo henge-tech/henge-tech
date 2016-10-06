@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _pine</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#244 _pine
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alpine" target="_blank">alpine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=atropine" target="_blank">atropine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lupine" target="_blank">lupine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opine" target="_blank">opine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pine" target="_blank">pine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=porcupine" target="_blank">porcupine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rapine" target="_blank">rapine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reserpine" target="_blank">reserpine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spine" target="_blank">spine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subalpine" target="_blank">subalpine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=supine" target="_blank">supine</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vulpine" target="_blank">vulpine</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "alpine atropine lupine, opine pine porcupine, rapine reserpine spine, subalpine supine vulpine";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

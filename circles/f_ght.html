@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: f_ght</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#645 f_ght
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=firelight" target="_blank">firelight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flashlight" target="_blank">flashlight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flight" target="_blank">flight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=floodlight" target="_blank">floodlight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flyweight" target="_blank">flyweight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foresight" target="_blank">foresight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forethought" target="_blank">forethought</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forthright" target="_blank">forthright</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fortnight" target="_blank">fortnight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fraught" target="_blank">fraught</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freight" target="_blank">freight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fright" target="_blank">fright</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "firelight flashlight flight, floodlight flyweight foresight, forethought forthright fortnight, fraught freight fright";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

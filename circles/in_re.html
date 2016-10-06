@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: in_re</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#710 in_re
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indenture" target="_blank">indenture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=injure" target="_blank">injure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inquire" target="_blank">inquire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insecure" target="_blank">insecure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inshore" target="_blank">inshore</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insincere" target="_blank">insincere</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inspire" target="_blank">inspire</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insure" target="_blank">insure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interfere" target="_blank">interfere</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intermixture" target="_blank">intermixture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inure" target="_blank">inure</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=investiture" target="_blank">investiture</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "indenture injure inquire, insecure inshore insincere, inspire insure interfere, intermixture inure investiture";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

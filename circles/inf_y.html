@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: inf_y</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#717 inf_y
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infamy" target="_blank">infamy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infancy" target="_blank">infancy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infantry" target="_blank">infantry</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inferiority" target="_blank">inferiority</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infertility" target="_blank">infertility</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infidelity" target="_blank">infidelity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infinitely" target="_blank">infinitely</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infirmary" target="_blank">infirmary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infirmity" target="_blank">infirmity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inflammatory" target="_blank">inflammatory</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inflationary" target="_blank">inflationary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=informally" target="_blank">informally</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "infamy infancy infantry, inferiority infertility infidelity, infinitely infirmary infirmity, inflammatory inflationary informally";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

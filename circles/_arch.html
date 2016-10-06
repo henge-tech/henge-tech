@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _arch</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#36 _arch
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arch" target="_blank">arch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cornstarch" target="_blank">cornstarch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frogmarch" target="_blank">frogmarch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=larch" target="_blank">larch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=matriarch" target="_blank">matriarch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monarch" target="_blank">monarch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oligarch" target="_blank">oligarch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parch" target="_blank">parch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patriarch" target="_blank">patriarch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=research" target="_blank">research</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=search" target="_blank">search</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=starch" target="_blank">starch</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "arch cornstarch frogmarch, larch matriarch monarch, oligarch parch patriarch, research search starch";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

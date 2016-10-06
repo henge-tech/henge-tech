@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: hard_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#695 hard_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardback" target="_blank">hardback</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardball" target="_blank">hardball</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardboard" target="_blank">hardboard</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardbound" target="_blank">hardbound</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardened" target="_blank">hardened</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardiness" target="_blank">hardiness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardly" target="_blank">hardly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardness" target="_blank">hardness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardship" target="_blank">hardship</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardwired" target="_blank">hardwired</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardwood" target="_blank">hardwood</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardy" target="_blank">hardy</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "hardback hardball hardboard, hardbound hardened hardiness, hardly hardness hardship, hardwired hardwood hardy";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

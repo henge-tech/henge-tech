@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ba</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#46 _ba
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abba" target="_blank">abba</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amoeba" target="_blank">amoeba</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baba" target="_blank">baba</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indaba" target="_blank">indaba</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jojoba" target="_blank">jojoba</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mamba" target="_blank">mamba</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marimba" target="_blank">marimba</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rumba" target="_blank">rumba</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=samba" target="_blank">samba</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scuba" target="_blank">scuba</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Sheba" target="_blank">Sheba</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tuba" target="_blank">tuba</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "abba amoeba baba, indaba jojoba mamba, marimba rumba samba, scuba Sheba tuba";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

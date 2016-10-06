@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _esis</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#105 _esis
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antithesis" target="_blank">antithesis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exegesis" target="_blank">exegesis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genesis" target="_blank">genesis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypothesis" target="_blank">hypothesis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mimesis" target="_blank">mimesis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nemesis" target="_blank">nemesis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parenthesis" target="_blank">parenthesis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pathogenesis" target="_blank">pathogenesis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=photosynthesis" target="_blank">photosynthesis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prosthesis" target="_blank">prosthesis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=synthesis" target="_blank">synthesis</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thesis" target="_blank">thesis</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "antithesis exegesis genesis, hypothesis mimesis nemesis, parenthesis pathogenesis photosynthesis, prosthesis synthesis thesis";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _nty</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#216 _nty
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aplenty" target="_blank">aplenty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bounty" target="_blank">bounty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=certainty" target="_blank">certainty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=county" target="_blank">county</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dainty" target="_blank">dainty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guaranty" target="_blank">guaranty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jaunty" target="_blank">jaunty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=minty" target="_blank">minty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=panty" target="_blank">panty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plenty" target="_blank">plenty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pointy" target="_blank">pointy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scanty" target="_blank">scanty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shanty" target="_blank">shanty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sovereignty" target="_blank">sovereignty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=uncertainty" target="_blank">uncertainty</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=warranty" target="_blank">warranty</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "aplenty bounty certainty county, dainty guaranty jaunty minty, panty plenty pointy scanty, shanty sovereignty uncertainty warranty";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

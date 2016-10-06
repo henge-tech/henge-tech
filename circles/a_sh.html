@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: a_sh</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#385 a_sh
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abolish" target="_blank">abolish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accomplish" target="_blank">accomplish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=admonish" target="_blank">admonish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=afresh" target="_blank">afresh</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airbrush" target="_blank">airbrush</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amateurish" target="_blank">amateurish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ambush" target="_blank">ambush</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=angelfish" target="_blank">angelfish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anguish" target="_blank">anguish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ash" target="_blank">ash</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astonish" target="_blank">astonish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=awash" target="_blank">awash</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "abolish accomplish admonish, afresh airbrush amateurish, ambush angelfish anguish, ash astonish awash";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

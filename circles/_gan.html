@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _gan</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#113 _gan
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brogan" target="_blank">brogan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cardigan" target="_blank">cardigan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hogan" target="_blank">hogan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hooligan" target="_blank">hooligan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=organ" target="_blank">organ</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pagan" target="_blank">pagan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ptarmigan" target="_blank">ptarmigan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shenanigan" target="_blank">shenanigan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slogan" target="_blank">slogan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffragan" target="_blank">suffragan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toboggan" target="_blank">toboggan</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vegan" target="_blank">vegan</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "brogan cardigan hogan, hooligan organ pagan, ptarmigan shenanigan slogan, suffragan toboggan vegan";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

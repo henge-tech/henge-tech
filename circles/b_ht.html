@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: b_ht</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#434 b_ht
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baht" target="_blank">baht</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bantamweight" target="_blank">bantamweight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=besought" target="_blank">besought</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bethought" target="_blank">bethought</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bight" target="_blank">bight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=birthright" target="_blank">birthright</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blight" target="_blank">blight</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=borscht" target="_blank">borscht</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bought" target="_blank">bought</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bright" target="_blank">bright</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brought" target="_blank">brought</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bullfight" target="_blank">bullfight</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "baht bantamweight besought, bethought bight birthright, blight borscht bought, bright brought bullfight";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

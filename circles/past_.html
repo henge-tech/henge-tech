@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: past_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#829 past_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pasta" target="_blank">pasta</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paste" target="_blank">paste</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pasteurize" target="_blank">pasteurize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastiche" target="_blank">pastiche</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastime" target="_blank">pastime</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastor" target="_blank">pastor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastoral" target="_blank">pastoral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastorale" target="_blank">pastorale</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastrami" target="_blank">pastrami</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastry" target="_blank">pastry</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pasture" target="_blank">pasture</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pasty" target="_blank">pasty</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "pasta paste pasteurize, pastiche pastime pastor, pastoral pastorale pastrami, pastry pasture pasty";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

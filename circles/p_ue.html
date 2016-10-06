@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: p_ue</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#823 p_ue
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pedagogue" target="_blank">pedagogue</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=physique" target="_blank">physique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=picaresque" target="_blank">picaresque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=picturesque" target="_blank">picturesque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pique" target="_blank">pique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plague" target="_blank">plague</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plaque" target="_blank">plaque</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Prague" target="_blank">Prague</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pratique" target="_blank">pratique</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prologue" target="_blank">prologue</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prorogue" target="_blank">prorogue</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pursue" target="_blank">pursue</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "pedagogue physique picaresque, picturesque pique plague, plaque Prague pratique, prologue prorogue pursue";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

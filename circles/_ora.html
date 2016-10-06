@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ora</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#231 _ora
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=agora" target="_blank">agora</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amphora" target="_blank">amphora</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Angora" target="_blank">Angora</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aurora" target="_blank">aurora</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corpora" target="_blank">corpora</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diaspora" target="_blank">diaspora</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fedora" target="_blank">fedora</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flora" target="_blank">flora</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fora" target="_blank">fora</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hora" target="_blank">hora</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maquiladora" target="_blank">maquiladora</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plethora" target="_blank">plethora</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "agora amphora Angora, aurora corpora diaspora, fedora flora fora, hora maquiladora plethora";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ront</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#284 _ront
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=affront" target="_blank">affront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=battlefront" target="_blank">battlefront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beachfront" target="_blank">beachfront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breakfront" target="_blank">breakfront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confront" target="_blank">confront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forefront" target="_blank">forefront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riverfront" target="_blank">riverfront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seafront" target="_blank">seafront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shopfront" target="_blank">shopfront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=storefront" target="_blank">storefront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=upfront" target="_blank">upfront</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waterfront" target="_blank">waterfront</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "affront battlefront beachfront, breakfront confront forefront, riverfront seafront shopfront, storefront upfront waterfront";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

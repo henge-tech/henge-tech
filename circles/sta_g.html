@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: sta_g</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#931 sta_g
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stabbing" target="_blank">stabbing</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=staffing" target="_blank">staffing</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stag" target="_blank">stag</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=staggering" target="_blank">staggering</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=staging" target="_blank">staging</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stalking" target="_blank">stalking</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=standing" target="_blank">standing</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stargazing" target="_blank">stargazing</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=staring" target="_blank">staring</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=starling" target="_blank">starling</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=startling" target="_blank">startling</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=starving" target="_blank">starving</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "stabbing staffing stag, staggering staging stalking, standing stargazing staring, starling startling starving";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

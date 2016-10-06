@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: da_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#561 da_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daemon" target="_blank">daemon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daimon" target="_blank">daimon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dalmatian" target="_blank">dalmatian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damn" target="_blank">damn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damnation" target="_blank">damnation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dampen" target="_blank">dampen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damson" target="_blank">damson</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dandelion" target="_blank">dandelion</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=darken" target="_blank">darken</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=darn" target="_blank">darn</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dauphin" target="_blank">dauphin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dawn" target="_blank">dawn</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "daemon daimon dalmatian, damn damnation dampen, damson dandelion darken, darn dauphin dawn";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

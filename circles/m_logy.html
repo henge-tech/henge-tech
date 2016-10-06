@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: m_logy</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#751 m_logy
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meteorology" target="_blank">meteorology</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metrology" target="_blank">metrology</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=microbiology" target="_blank">microbiology</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mineralogy" target="_blank">mineralogy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=morphology" target="_blank">morphology</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=musicology" target="_blank">musicology</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mycology" target="_blank">mycology</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mythology" target="_blank">mythology</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "meteorology metrology microbiology mineralogy, morphology musicology mycology mythology";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

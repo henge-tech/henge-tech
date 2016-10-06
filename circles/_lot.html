@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _lot</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#175 _lot
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allot" target="_blank">allot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ballot" target="_blank">ballot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blot" target="_blank">blot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clot" target="_blank">clot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=harlot" target="_blank">harlot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lot" target="_blank">lot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ocelot" target="_blank">ocelot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plot" target="_blank">plot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=polyglot" target="_blank">polyglot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shallot" target="_blank">shallot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slot" target="_blank">slot</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zealot" target="_blank">zealot</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "allot ballot blot, clot harlot lot, ocelot plot polyglot, shallot slot zealot";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

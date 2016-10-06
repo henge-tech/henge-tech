@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _shy</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#299 _shy
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ashy" target="_blank">ashy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bushy" target="_blank">bushy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cushy" target="_blank">cushy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishy" target="_blank">dishy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fishy" target="_blank">fishy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flashy" target="_blank">flashy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fleshy" target="_blank">fleshy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marshy" target="_blank">marshy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mushy" target="_blank">mushy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pushy" target="_blank">pushy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shy" target="_blank">shy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slushy" target="_blank">slushy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=splashy" target="_blank">splashy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squishy" target="_blank">squishy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trashy" target="_blank">trashy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tushy" target="_blank">tushy</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ashy bushy cushy dishy, fishy flashy fleshy marshy, mushy pushy shy slushy, splashy squishy trashy tushy";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

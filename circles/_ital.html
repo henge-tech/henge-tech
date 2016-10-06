@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ital</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#151 _ital
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capital" target="_blank">capital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coital" target="_blank">coital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=congenital" target="_blank">congenital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extramarital" target="_blank">extramarital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genital" target="_blank">genital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marital" target="_blank">marital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=orbital" target="_blank">orbital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=premarital" target="_blank">premarital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recital" target="_blank">recital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=requital" target="_blank">requital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=urogenital" target="_blank">urogenital</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vital" target="_blank">vital</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "capital coital congenital, extramarital genital marital, orbital premarital recital, requital urogenital vital";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

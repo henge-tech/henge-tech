@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: q_l</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#859 q_l
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quadrennial" target="_blank">quadrennial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quadrilateral" target="_blank">quadrilateral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quadrupedal" target="_blank">quadrupedal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quail" target="_blank">quail</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quarrel" target="_blank">quarrel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quarterfinal" target="_blank">quarterfinal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quell" target="_blank">quell</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quetzal" target="_blank">quetzal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quill" target="_blank">quill</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quinquennial" target="_blank">quinquennial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quintessential" target="_blank">quintessential</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quizzical" target="_blank">quizzical</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "quadrennial quadrilateral quadrupedal, quail quarrel quarterfinal, quell quetzal quill, quinquennial quintessential quizzical";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

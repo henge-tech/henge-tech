@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: f_lly</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#648 f_lly
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=factually" target="_blank">factually</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=faithfully" target="_blank">faithfully</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fatally" target="_blank">fatally</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fearfully" target="_blank">fearfully</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=filly" target="_blank">filly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fiscally" target="_blank">fiscally</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=folly" target="_blank">folly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=formally" target="_blank">formally</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foully" target="_blank">foully</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frantically" target="_blank">frantically</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frightfully" target="_blank">frightfully</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frilly" target="_blank">frilly</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "factually faithfully fatally, fearfully filly fiscally, folly formally foully, frantically frightfully frilly";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

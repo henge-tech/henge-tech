@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ray</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#258 _ray
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=array" target="_blank">array</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ashtray" target="_blank">ashtray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astray" target="_blank">astray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=betray" target="_blank">betray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bray" target="_blank">bray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chambray" target="_blank">chambray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defray" target="_blank">defray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disarray" target="_blank">disarray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dray" target="_blank">dray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foray" target="_blank">foray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fray" target="_blank">fray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hooray" target="_blank">hooray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hurray" target="_blank">hurray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moray" target="_blank">moray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=portray" target="_blank">portray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pray" target="_blank">pray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ray" target="_blank">ray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stingray" target="_blank">stingray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stray" target="_blank">stray</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tray" target="_blank">tray</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "array ashtray astray betray bray, chambray defray disarray dray foray, fray hooray hurray moray portray, pray ray stingray stray tray";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _cope</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#61 _cope
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cope" target="_blank">cope</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=endoscope" target="_blank">endoscope</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gyroscope" target="_blank">gyroscope</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=horoscope" target="_blank">horoscope</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kaleidoscope" target="_blank">kaleidoscope</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=microscope" target="_blank">microscope</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oscilloscope" target="_blank">oscilloscope</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=periscope" target="_blank">periscope</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scope" target="_blank">scope</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stethoscope" target="_blank">stethoscope</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=syncope" target="_blank">syncope</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=telescope" target="_blank">telescope</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "cope endoscope gyroscope, horoscope kaleidoscope microscope, oscilloscope periscope scope, stethoscope syncope telescope";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

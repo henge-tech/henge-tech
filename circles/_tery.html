@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _tery</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#320 _tery
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adultery" target="_blank">adultery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=artery" target="_blank">artery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blustery" target="_blank">blustery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buttery" target="_blank">buttery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cemetery" target="_blank">cemetery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dysentery" target="_blank">dysentery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eatery" target="_blank">eatery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flattery" target="_blank">flattery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jittery" target="_blank">jittery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lottery" target="_blank">lottery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mastery" target="_blank">mastery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monastery" target="_blank">monastery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pottery" target="_blank">pottery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=presbytery" target="_blank">presbytery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=upholstery" target="_blank">upholstery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=watery" target="_blank">watery</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "adultery artery blustery buttery, cemetery dysentery eatery flattery, jittery lottery mastery monastery, pottery presbytery upholstery watery";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

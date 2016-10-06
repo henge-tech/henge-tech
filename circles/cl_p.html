@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: cl_p</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#501 cl_p
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clamp" target="_blank">clamp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clap" target="_blank">clap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=claptrap" target="_blank">claptrap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clasp" target="_blank">clasp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clip" target="_blank">clip</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clop" target="_blank">clop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=closeup" target="_blank">closeup</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clump" target="_blank">clump</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "clamp clap claptrap clasp, clip clop closeup clump";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

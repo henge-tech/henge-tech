@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: p_ious</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#813 p_ious
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parsimonious" target="_blank">parsimonious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pernicious" target="_blank">pernicious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pertinacious" target="_blank">pertinacious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pious" target="_blank">pious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precarious" target="_blank">precarious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precious" target="_blank">precious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precocious" target="_blank">precocious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prestigious" target="_blank">prestigious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pretentious" target="_blank">pretentious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prodigious" target="_blank">prodigious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=propitious" target="_blank">propitious</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pugnacious" target="_blank">pugnacious</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "parsimonious pernicious pertinacious, pious precarious precious, precocious prestigious pretentious, prodigious propitious pugnacious";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

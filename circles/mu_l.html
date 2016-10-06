@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: mu_l</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#774 mu_l
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mull" target="_blank">mull</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multicultural" target="_blank">multicultural</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multilateral" target="_blank">multilateral</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multilingual" target="_blank">multilingual</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multinational" target="_blank">multinational</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiracial" target="_blank">multiracial</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=municipal" target="_blank">municipal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mural" target="_blank">mural</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=musical" target="_blank">musical</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mussel" target="_blank">mussel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutational" target="_blank">mutational</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutual" target="_blank">mutual</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "mull multicultural multilateral, multilingual multinational multiracial, municipal mural musical, mussel mutational mutual";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

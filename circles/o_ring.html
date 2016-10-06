@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: o_ring</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#797 o_ring
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=offering" target="_blank">offering</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=offshoring" target="_blank">offshoring</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=offspring" target="_blank">offspring</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ordering" target="_blank">ordering</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=orienteering" target="_blank">orienteering</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outpouring" target="_blank">outpouring</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overbearing" target="_blank">overbearing</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overpowering" target="_blank">overpowering</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "offering offshoring offspring ordering, orienteering outpouring overbearing overpowering";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

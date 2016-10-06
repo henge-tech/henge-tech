@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: cha_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#498 cha_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chagrin" target="_blank">chagrin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chairman" target="_blank">chairman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chairperson" target="_blank">chairperson</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chamberlain" target="_blank">chamberlain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chameleon" target="_blank">chameleon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=champaign" target="_blank">champaign</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chanson" target="_blank">chanson</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chaperon" target="_blank">chaperon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chaplain" target="_blank">chaplain</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chapman" target="_blank">chapman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=characterization" target="_blank">characterization</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=charlatan" target="_blank">charlatan</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "chagrin chairman chairperson, chamberlain chameleon champaign, chanson chaperon chaplain, chapman characterization charlatan";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

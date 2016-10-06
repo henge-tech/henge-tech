@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ti_r</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#959 ti_r
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ticker" target="_blank">ticker</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tidewater" target="_blank">tidewater</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tier" target="_blank">tier</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tiller" target="_blank">tiller</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=timber" target="_blank">timber</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=timekeeper" target="_blank">timekeeper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tinder" target="_blank">tinder</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tinker" target="_blank">tinker</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tipper" target="_blank">tipper</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tipster" target="_blank">tipster</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=titter" target="_blank">titter</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=titular" target="_blank">titular</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ticker tidewater tier, tiller timber timekeeper, tinder tinker tipper, tipster titter titular";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

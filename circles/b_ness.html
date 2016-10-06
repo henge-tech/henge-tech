@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: b_ness</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#441 b_ness
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=badness" target="_blank">badness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baldness" target="_blank">baldness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baroness" target="_blank">baroness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baseness" target="_blank">baseness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bitterness" target="_blank">bitterness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blandness" target="_blank">blandness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bleakness" target="_blank">bleakness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blindness" target="_blank">blindness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bluntness" target="_blank">bluntness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boldness" target="_blank">boldness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breathlessness" target="_blank">breathlessness</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brightness" target="_blank">brightness</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "badness baldness baroness, baseness bitterness blandness, bleakness blindness bluntness, boldness breathlessness brightness";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

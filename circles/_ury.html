@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ury</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#353 _ury
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=augury" target="_blank">augury</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bury" target="_blank">bury</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=floury" target="_blank">floury</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fury" target="_blank">fury</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=injury" target="_blank">injury</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jury" target="_blank">jury</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luxury" target="_blank">luxury</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mercury" target="_blank">mercury</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penury" target="_blank">penury</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perjury" target="_blank">perjury</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=treasury" target="_blank">treasury</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=usury" target="_blank">usury</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "augury bury floury, fury injury jury, luxury mercury penury, perjury treasury usury";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

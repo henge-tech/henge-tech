@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: c_tic</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#486 c_tic
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capitalistic" target="_blank">capitalistic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=catalytic" target="_blank">catalytic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cathartic" target="_blank">cathartic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caustic" target="_blank">caustic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=characteristic" target="_blank">characteristic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chiropractic" target="_blank">chiropractic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chromatic" target="_blank">chromatic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=climactic" target="_blank">climactic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=climatic" target="_blank">climatic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cosmetic" target="_blank">cosmetic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=critic" target="_blank">critic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cryptic" target="_blank">cryptic</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "capitalistic catalytic cathartic, caustic characteristic chiropractic, chromatic climactic climatic, cosmetic critic cryptic";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

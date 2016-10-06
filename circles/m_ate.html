@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: m_ate</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#746 m_ate
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magistrate" target="_blank">magistrate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magnate" target="_blank">magnate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mandate" target="_blank">mandate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mediate" target="_blank">mediate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=medicate" target="_blank">medicate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meditate" target="_blank">meditate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=migrate" target="_blank">migrate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mitigate" target="_blank">mitigate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moderate" target="_blank">moderate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=modulate" target="_blank">modulate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutate" target="_blank">mutate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutilate" target="_blank">mutilate</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "magistrate magnate mandate, mediate medicate meditate, migrate mitigate moderate, modulate mutate mutilate";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

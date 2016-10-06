@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: w_m</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#986 w_m
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wampum" target="_blank">wampum</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=washroom" target="_blank">washroom</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waveform" target="_blank">waveform</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wham" target="_blank">wham</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whim" target="_blank">whim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whom" target="_blank">whom</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wigwam" target="_blank">wigwam</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=windstorm" target="_blank">windstorm</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wolfram" target="_blank">wolfram</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=workroom" target="_blank">workroom</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=worm" target="_blank">worm</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wpm" target="_blank">wpm</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "wampum washroom waveform, wham whim whom, wigwam windstorm wolfram, workroom worm wpm";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

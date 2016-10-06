@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ma_te</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#760 ma_te
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=machete" target="_blank">machete</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magistrate" target="_blank">magistrate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magnate" target="_blank">magnate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magnetite" target="_blank">magnetite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maisonette" target="_blank">maisonette</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=malachite" target="_blank">malachite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mandate" target="_blank">mandate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manipulate" target="_blank">manipulate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marcasite" target="_blank">marcasite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marguerite" target="_blank">marguerite</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marinate" target="_blank">marinate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=matte" target="_blank">matte</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "machete magistrate magnate, magnetite maisonette malachite, mandate manipulate marcasite, marguerite marinate matte";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

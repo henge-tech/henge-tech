@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: st_p</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#930 st_p
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stamp" target="_blank">stamp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=standup" target="_blank">standup</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=startup" target="_blank">startup</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=statesmanship" target="_blank">statesmanship</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steamship" target="_blank">steamship</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steep" target="_blank">steep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stewardship" target="_blank">stewardship</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stirrup" target="_blank">stirrup</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stomp" target="_blank">stomp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stoop" target="_blank">stoop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stopgap" target="_blank">stopgap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stoup" target="_blank">stoup</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strep" target="_blank">strep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strip" target="_blank">strip</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strop" target="_blank">strop</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stump" target="_blank">stump</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "stamp standup startup statesmanship, steamship steep stewardship stirrup, stomp stoop stopgap stoup, strep strip strop stump";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _play</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#245 _play
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airplay" target="_blank">airplay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downplay" target="_blank">downplay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foreplay" target="_blank">foreplay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=horseplay" target="_blank">horseplay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interplay" target="_blank">interplay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outplay" target="_blank">outplay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overplay" target="_blank">overplay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=screenplay" target="_blank">screenplay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=splay" target="_blank">splay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swordplay" target="_blank">swordplay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=teleplay" target="_blank">teleplay</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wordplay" target="_blank">wordplay</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "airplay downplay foreplay, horseplay interplay outplay, overplay screenplay splay, swordplay teleplay wordplay";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

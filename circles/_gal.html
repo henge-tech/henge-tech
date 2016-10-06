@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _gal</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#112 _gal
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=algal" target="_blank">algal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antifungal" target="_blank">antifungal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=centrifugal" target="_blank">centrifugal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conjugal" target="_blank">conjugal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frugal" target="_blank">frugal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fungal" target="_blank">fungal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gal" target="_blank">gal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=illegal" target="_blank">illegal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=madrigal" target="_blank">madrigal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paralegal" target="_blank">paralegal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prodigal" target="_blank">prodigal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=regal" target="_blank">regal</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "algal antifungal centrifugal, conjugal frugal fungal, gal illegal madrigal, paralegal prodigal regal";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

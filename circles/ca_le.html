@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ca_le</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#489 ca_le
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cable" target="_blank">cable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cackle" target="_blank">cackle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cajole" target="_blank">cajole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=camisole" target="_blank">camisole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=camomile" target="_blank">camomile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=campanile" target="_blank">campanile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cantabile" target="_blank">cantabile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=canticle" target="_blank">canticle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capable" target="_blank">capable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carbuncle" target="_blank">carbuncle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=casserole" target="_blank">casserole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cattle" target="_blank">cattle</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "cable cackle cajole, camisole camomile campanile, cantabile canticle capable, carbuncle casserole cattle";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

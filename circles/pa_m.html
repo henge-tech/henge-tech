@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: pa_m</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#826 pa_m
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pacifism" target="_blank">pacifism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paganism" target="_blank">paganism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pandemonium" target="_blank">pandemonium</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pantheism" target="_blank">pantheism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paradigm" target="_blank">paradigm</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parallelism" target="_blank">parallelism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parallelogram" target="_blank">parallelogram</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parasitism" target="_blank">parasitism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paroxysm" target="_blank">paroxysm</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=passim" target="_blank">passim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paternalism" target="_blank">paternalism</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patriotism" target="_blank">patriotism</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "pacifism paganism pandemonium, pantheism paradigm parallelism, parallelogram parasitism paroxysm, passim paternalism patriotism";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

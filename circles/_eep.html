@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _eep</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#86 _eep
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=asleep" target="_blank">asleep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bleep" target="_blank">bleep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cheep" target="_blank">cheep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=creep" target="_blank">creep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peep" target="_blank">peep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seep" target="_blank">seep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheep" target="_blank">sheep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steep" target="_blank">steep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sweep" target="_blank">sweep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=upkeep" target="_blank">upkeep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=veep" target="_blank">veep</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=weep" target="_blank">weep</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "asleep bleep cheep, creep peep seep, sheep steep sweep, upkeep veep weep";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: c_la</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#475 c_la
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=campanula" target="_blank">campanula</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=candela" target="_blank">candela</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cannula" target="_blank">cannula</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=canola" target="_blank">canola</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chinchilla" target="_blank">chinchilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chlorella" target="_blank">chlorella</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=citronella" target="_blank">citronella</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cola" target="_blank">cola</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=copula" target="_blank">copula</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corolla" target="_blank">corolla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cupola" target="_blank">cupola</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=curricula" target="_blank">curricula</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "campanula candela cannula, canola chinchilla chlorella, citronella cola copula, corolla cupola curricula";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

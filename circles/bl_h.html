@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: bl_h</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#454 bl_h
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blackish" target="_blank">blackish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blacksmith" target="_blank">blacksmith</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blah" target="_blank">blah</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blanch" target="_blank">blanch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bleach" target="_blank">bleach</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blemish" target="_blank">blemish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloodbath" target="_blank">bloodbath</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blotch" target="_blank">blotch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blowfish" target="_blank">blowfish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blowtorch" target="_blank">blowtorch</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bluish" target="_blank">bluish</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blush" target="_blank">blush</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "blackish blacksmith blah, blanch bleach blemish, bloodbath blotch blowfish, blowtorch bluish blush";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

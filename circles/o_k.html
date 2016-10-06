@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: o_k</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#793 o_k
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oak" target="_blank">oak</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obelisk" target="_blank">obelisk</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oink" target="_blank">oink</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=openwork" target="_blank">openwork</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outback" target="_blank">outback</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outbreak" target="_blank">outbreak</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outflank" target="_blank">outflank</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outlook" target="_blank">outlook</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outwork" target="_blank">outwork</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overlook" target="_blank">overlook</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overstock" target="_blank">overstock</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overwork" target="_blank">overwork</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "oak obelisk oink, openwork outback outbreak, outflank outlook outwork, overlook overstock overwork";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

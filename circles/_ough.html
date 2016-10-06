@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ough</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#236 _ough
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=borough" target="_blank">borough</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bough" target="_blank">bough</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dough" target="_blank">dough</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=furlough" target="_blank">furlough</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lough" target="_blank">lough</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rough" target="_blank">rough</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slough" target="_blank">slough</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sourdough" target="_blank">sourdough</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thorough" target="_blank">thorough</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=though" target="_blank">though</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=through" target="_blank">through</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trough" target="_blank">trough</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "borough bough dough, furlough lough rough, slough sourdough thorough, though through trough";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

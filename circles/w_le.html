@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: w_le</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#985 w_le
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waddle" target="_blank">waddle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=warble" target="_blank">warble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=watchable" target="_blank">watchable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waterhole" target="_blank">waterhole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wattle" target="_blank">wattle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whittle" target="_blank">whittle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wholesale" target="_blank">wholesale</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wiggle" target="_blank">wiggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wile" target="_blank">wile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=winkle" target="_blank">winkle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wobble" target="_blank">wobble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=worthwhile" target="_blank">worthwhile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wrangle" target="_blank">wrangle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wrestle" target="_blank">wrestle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wriggle" target="_blank">wriggle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wrinkle" target="_blank">wrinkle</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "waddle warble watchable waterhole, wattle whittle wholesale wiggle, wile winkle wobble worthwhile, wrangle wrestle wriggle wrinkle";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

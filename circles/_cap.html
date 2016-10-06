@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _cap</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#55 _cap
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foolscap" target="_blank">foolscap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=handicap" target="_blank">handicap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hubcap" target="_blank">hubcap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=icecap" target="_blank">icecap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kneecap" target="_blank">kneecap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=madcap" target="_blank">madcap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nightcap" target="_blank">nightcap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recap" target="_blank">recap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=redcap" target="_blank">redcap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=skullcap" target="_blank">skullcap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=skycap" target="_blank">skycap</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whitecap" target="_blank">whitecap</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "foolscap handicap hubcap, icecap kneecap madcap, nightcap recap redcap, skullcap skycap whitecap";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

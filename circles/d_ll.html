@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: d_ll</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#554 d_ll
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dell" target="_blank">dell</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dill" target="_blank">dill</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distill" target="_blank">distill</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doll" target="_blank">doll</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downfall" target="_blank">downfall</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downhill" target="_blank">downhill</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drill" target="_blank">drill</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=droll" target="_blank">droll</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=duckbill" target="_blank">duckbill</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dull" target="_blank">dull</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dumbbell" target="_blank">dumbbell</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dwell" target="_blank">dwell</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "dell dill distill, doll downfall downhill, drill droll duckbill, dull dumbbell dwell";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

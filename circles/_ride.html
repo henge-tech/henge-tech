@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ride</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#272 _ride
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astride" target="_blank">astride</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bestride" target="_blank">bestride</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bride" target="_blank">bride</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chloride" target="_blank">chloride</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deride" target="_blank">deride</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluoride" target="_blank">fluoride</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hayride" target="_blank">hayride</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydride" target="_blank">hydride</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=joyride" target="_blank">joyride</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nitride" target="_blank">nitride</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=override" target="_blank">override</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stride" target="_blank">stride</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "astride bestride bride, chloride deride fluoride, hayride hydride joyride, nitride override stride";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ci_n</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#500 ci_n
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cinnamon" target="_blank">cinnamon</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=circadian" target="_blank">circadian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=circulation" target="_blank">circulation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=circumcision" target="_blank">circumcision</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=circumnavigation" target="_blank">circumnavigation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=circumvention" target="_blank">circumvention</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cistern" target="_blank">cistern</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=citation" target="_blank">citation</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=citizen" target="_blank">citizen</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=citron" target="_blank">citron</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=civilian" target="_blank">civilian</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=civilization" target="_blank">civilization</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "cinnamon circadian circulation, circumcision circumnavigation circumvention, cistern citation citizen, citron civilian civilization";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

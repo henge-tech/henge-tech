@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _illa</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#138 _illa
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chinchilla" target="_blank">chinchilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flotilla" target="_blank">flotilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gorilla" target="_blank">gorilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guerilla" target="_blank">guerilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mantilla" target="_blank">mantilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maxilla" target="_blank">maxilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quesadilla" target="_blank">quesadilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sarsaparilla" target="_blank">sarsaparilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scintilla" target="_blank">scintilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tortilla" target="_blank">tortilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vanilla" target="_blank">vanilla</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=villa" target="_blank">villa</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "chinchilla flotilla gorilla, guerilla mantilla maxilla, quesadilla sarsaparilla scintilla, tortilla vanilla villa";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

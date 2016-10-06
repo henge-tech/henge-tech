@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _cus</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#64 _cus
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abacus" target="_blank">abacus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caucus" target="_blank">caucus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=circus" target="_blank">circus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crocus" target="_blank">crocus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discus" target="_blank">discus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=focus" target="_blank">focus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hibiscus" target="_blank">hibiscus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=locus" target="_blank">locus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meniscus" target="_blank">meniscus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mucus" target="_blank">mucus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=umbilicus" target="_blank">umbilicus</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=viscus" target="_blank">viscus</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "abacus caucus circus, crocus discus focus, hibiscus locus meniscus, mucus umbilicus viscus";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

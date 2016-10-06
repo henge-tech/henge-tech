@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _stly</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#312 _stly
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bristly" target="_blank">bristly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=costly" target="_blank">costly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=earnestly" target="_blank">earnestly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ghastly" target="_blank">ghastly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ghostly" target="_blank">ghostly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=honestly" target="_blank">honestly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=justly" target="_blank">justly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=modestly" target="_blank">modestly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=priestly" target="_blank">priestly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=robustly" target="_blank">robustly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unjustly" target="_blank">unjustly</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vastly" target="_blank">vastly</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bristly costly earnestly, ghastly ghostly honestly, justly modestly priestly, robustly unjustly vastly";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

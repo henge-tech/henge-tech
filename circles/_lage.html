@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _lage</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#156 _lage
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assemblage" target="_blank">assemblage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=camouflage" target="_blank">camouflage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cartilage" target="_blank">cartilage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collage" target="_blank">collage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fuselage" target="_blank">fuselage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haulage" target="_blank">haulage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pillage" target="_blank">pillage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=silage" target="_blank">silage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spillage" target="_blank">spillage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spoilage" target="_blank">spoilage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tillage" target="_blank">tillage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tutelage" target="_blank">tutelage</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "assemblage camouflage cartilage, collage fuselage haulage, pillage silage spillage, spoilage tillage tutelage";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

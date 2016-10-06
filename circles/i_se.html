@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: i_se</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#703 i_se
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immense" target="_blank">immense</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immerse" target="_blank">immerse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impasse" target="_blank">impasse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impose" target="_blank">impose</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=imprecise" target="_blank">imprecise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=improvise" target="_blank">improvise</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incense" target="_blank">incense</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infuse" target="_blank">infuse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intense" target="_blank">intense</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intercourse" target="_blank">intercourse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interpose" target="_blank">interpose</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inverse" target="_blank">inverse</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "immense immerse impasse, impose imprecise improvise, incense infuse intense, intercourse interpose inverse";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

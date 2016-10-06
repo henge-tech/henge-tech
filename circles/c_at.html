@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: c_at</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#464 c_at
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carat" target="_blank">carat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caveat" target="_blank">caveat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chat" target="_blank">chat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cheat" target="_blank">cheat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chitchat" target="_blank">chitchat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cleat" target="_blank">cleat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commissariat" target="_blank">commissariat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compleat" target="_blank">compleat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=copycat" target="_blank">copycat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cravat" target="_blank">cravat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Croat" target="_blank">Croat</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cutthroat" target="_blank">cutthroat</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "carat caveat chat, cheat chitchat cleat, commissariat compleat copycat, cravat Croat cutthroat";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

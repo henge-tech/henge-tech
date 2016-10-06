@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _era</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#99 _era
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caldera" target="_blank">caldera</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chimaera" target="_blank">chimaera</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cholera" target="_blank">cholera</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ephemera" target="_blank">ephemera</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=era" target="_blank">era</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genera" target="_blank">genera</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opera" target="_blank">opera</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Riviera" target="_blank">Riviera</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sclera" target="_blank">sclera</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subgenera" target="_blank">subgenera</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tempera" target="_blank">tempera</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=viscera" target="_blank">viscera</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "caldera chimaera cholera, ephemera era genera, opera Riviera sclera, subgenera tempera viscera";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

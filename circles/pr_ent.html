@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: pr_ent</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#844 pr_ent
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precedent" target="_blank">precedent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=predicament" target="_blank">predicament</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preeminent" target="_blank">preeminent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prescient" target="_blank">prescient</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prevalent" target="_blank">prevalent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=procurement" target="_blank">procurement</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proficient" target="_blank">proficient</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prominent" target="_blank">prominent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pronouncement" target="_blank">pronouncement</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proponent" target="_blank">proponent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=provident" target="_blank">provident</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prudent" target="_blank">prudent</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "precedent predicament preeminent, prescient prevalent procurement, proficient prominent pronouncement, proponent provident prudent";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

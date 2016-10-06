@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: ad_ive</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#400 ad_ive
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adaptive" target="_blank">adaptive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=addictive" target="_blank">addictive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=additive" target="_blank">additive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adhesive" target="_blank">adhesive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adjective" target="_blank">adjective</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adjunctive" target="_blank">adjunctive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=administrative" target="_blank">administrative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adoptive" target="_blank">adoptive</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "adaptive addictive additive adhesive, adjective adjunctive administrative adoptive";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

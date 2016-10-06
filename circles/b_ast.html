@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: b_ast</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#426 b_ast
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ballast" target="_blank">ballast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beast" target="_blank">beast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blast" target="_blank">blast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boast" target="_blank">boast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bombast" target="_blank">bombast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breakfast" target="_blank">breakfast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breast" target="_blank">breast</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broadcast" target="_blank">broadcast</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ballast beast blast boast, bombast breakfast breast broadcast";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

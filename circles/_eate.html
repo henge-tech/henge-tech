@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _eate</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#78 _eate
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aureate" target="_blank">aureate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baccalaureate" target="_blank">baccalaureate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chalybeate" target="_blank">chalybeate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=create" target="_blank">create</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delineate" target="_blank">delineate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ideate" target="_blank">ideate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laureate" target="_blank">laureate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nauseate" target="_blank">nauseate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=permeate" target="_blank">permeate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=procreate" target="_blank">procreate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recreate" target="_blank">recreate</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=roseate" target="_blank">roseate</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "aureate baccalaureate chalybeate, create delineate ideate, laureate nauseate permeate, procreate recreate roseate";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

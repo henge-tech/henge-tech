@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: a_x</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#388 a_x
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=affix" target="_blank">affix</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=annex" target="_blank">annex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anthrax" target="_blank">anthrax</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apex" target="_blank">apex</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appendix" target="_blank">appendix</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=approx" target="_blank">approx</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aux" target="_blank">aux</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ax" target="_blank">ax</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "affix annex anthrax apex, appendix approx aux ax";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

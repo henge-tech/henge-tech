@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: rem_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#881 rem_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remake" target="_blank">remake</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remarkable" target="_blank">remarkable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remarriage" target="_blank">remarriage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remediable" target="_blank">remediable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remembrance" target="_blank">remembrance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reminisce" target="_blank">reminisce</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reminiscence" target="_blank">reminiscence</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remittance" target="_blank">remittance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remonstrance" target="_blank">remonstrance</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remorse" target="_blank">remorse</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remortgage" target="_blank">remortgage</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remunerative" target="_blank">remunerative</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "remake remarkable remarriage, remediable remembrance reminisce, reminiscence remittance remonstrance, remorse remortgage remunerative";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

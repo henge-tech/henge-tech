@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: s_out</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#906 s_out
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scout" target="_blank">scout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sellout" target="_blank">sellout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shakeout" target="_blank">shakeout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shootout" target="_blank">shootout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shutout" target="_blank">shutout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snout" target="_blank">snout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spout" target="_blank">spout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sprout" target="_blank">sprout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stakeout" target="_blank">stakeout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=standout" target="_blank">standout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stout" target="_blank">stout</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strikeout" target="_blank">strikeout</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "scout sellout shakeout, shootout shutout snout, spout sprout stakeout, standout stout strikeout";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

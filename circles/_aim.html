@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _aim</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#13 _aim
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acclaim" target="_blank">acclaim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aim" target="_blank">aim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=claim" target="_blank">claim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=counterclaim" target="_blank">counterclaim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=declaim" target="_blank">declaim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disclaim" target="_blank">disclaim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Ephraim" target="_blank">Ephraim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclaim" target="_blank">exclaim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maim" target="_blank">maim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proclaim" target="_blank">proclaim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quitclaim" target="_blank">quitclaim</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reclaim" target="_blank">reclaim</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "acclaim aim claim, counterclaim declaim disclaim, Ephraim exclaim maim, proclaim quitclaim reclaim";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: bin_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#453 bin_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bin" target="_blank">bin</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=binary" target="_blank">binary</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bind" target="_blank">bind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=binder" target="_blank">binder</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bindery" target="_blank">bindery</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=binding" target="_blank">binding</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bindweed" target="_blank">bindweed</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=binge" target="_blank">binge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bingo" target="_blank">bingo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=binman" target="_blank">binman</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=binocular" target="_blank">binocular</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=binomial" target="_blank">binomial</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bin binary bind, binder bindery binding, bindweed binge bingo, binman binocular binomial";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

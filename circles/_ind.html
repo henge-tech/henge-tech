@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ind</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#141 _ind
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=behind" target="_blank">behind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bind" target="_blank">bind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colorblind" target="_blank">colorblind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downwind" target="_blank">downwind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grind" target="_blank">grind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=headwind" target="_blank">headwind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hind" target="_blank">hind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=humankind" target="_blank">humankind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mankind" target="_blank">mankind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mastermind" target="_blank">mastermind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purblind" target="_blank">purblind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rescind" target="_blank">rescind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rind" target="_blank">rind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamarind" target="_blank">tamarind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unbind" target="_blank">unbind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unkind" target="_blank">unkind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unwind" target="_blank">unwind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=upwind" target="_blank">upwind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whirlwind" target="_blank">whirlwind</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=woodwind" target="_blank">woodwind</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "behind bind colorblind downwind grind, headwind hind humankind mankind mastermind, purblind rescind rind tamarind unbind, unkind unwind upwind whirlwind woodwind";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

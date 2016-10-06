@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _olt</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#223 _olt
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bolt" target="_blank">bolt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colt" target="_blank">colt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dolt" target="_blank">dolt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jolt" target="_blank">jolt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=molt" target="_blank">molt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revolt" target="_blank">revolt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thunderbolt" target="_blank">thunderbolt</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=volt" target="_blank">volt</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "bolt colt dolt jolt, molt revolt thunderbolt volt";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

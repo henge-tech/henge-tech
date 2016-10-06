@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _mo</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#189 _mo
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ammo" target="_blank">ammo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chemo" target="_blank">chemo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dynamo" target="_blank">dynamo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=generalissimo" target="_blank">generalissimo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gizmo" target="_blank">gizmo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=limo" target="_blank">limo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=machismo" target="_blank">machismo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=majordomo" target="_blank">majordomo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=promo" target="_blank">promo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=schmo" target="_blank">schmo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=supremo" target="_blank">supremo</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ultimo" target="_blank">ultimo</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ammo chemo dynamo, generalissimo gizmo limo, machismo majordomo promo, schmo supremo ultimo";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

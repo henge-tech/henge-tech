@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _mark</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#179 _mark
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=benchmark" target="_blank">benchmark</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=birthmark" target="_blank">birthmark</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bookmark" target="_blank">bookmark</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=earmark" target="_blank">earmark</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hallmark" target="_blank">hallmark</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=landmark" target="_blank">landmark</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mark" target="_blank">mark</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=postmark" target="_blank">postmark</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remark" target="_blank">remark</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=telemark" target="_blank">telemark</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trademark" target="_blank">trademark</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=watermark" target="_blank">watermark</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "benchmark birthmark bookmark, earmark hallmark landmark, mark postmark remark, telemark trademark watermark";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

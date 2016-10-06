@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _itor</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#154 _itor
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=auditor" target="_blank">auditor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capacitor" target="_blank">capacitor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=competitor" target="_blank">competitor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compositor" target="_blank">compositor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=creditor" target="_blank">creditor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depositor" target="_blank">depositor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=editor" target="_blank">editor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exhibitor" target="_blank">exhibitor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inhibitor" target="_blank">inhibitor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inquisitor" target="_blank">inquisitor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=janitor" target="_blank">janitor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monitor" target="_blank">monitor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=progenitor" target="_blank">progenitor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=solicitor" target="_blank">solicitor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suitor" target="_blank">suitor</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=traitor" target="_blank">traitor</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "auditor capacitor competitor compositor, creditor depositor editor exhibitor, inhibitor inquisitor janitor monitor, progenitor solicitor suitor traitor";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

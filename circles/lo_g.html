@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: lo_g</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#739 lo_g
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loading" target="_blank">loading</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loathing" target="_blank">loathing</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lobbying" target="_blank">lobbying</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lodging" target="_blank">lodging</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=log" target="_blank">log</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=logging" target="_blank">logging</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loitering" target="_blank">loitering</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=longing" target="_blank">longing</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=longstanding" target="_blank">longstanding</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=looting" target="_blank">looting</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=losing" target="_blank">losing</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lowering" target="_blank">lowering</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "loading loathing lobbying, lodging log logging, loitering longing longstanding, looting losing lowering";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

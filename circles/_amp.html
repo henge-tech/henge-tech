@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _amp</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#24 _amp
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=champ" target="_blank">champ</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clamp" target="_blank">clamp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cramp" target="_blank">cramp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damp" target="_blank">damp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decamp" target="_blank">decamp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lamp" target="_blank">lamp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ramp" target="_blank">ramp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revamp" target="_blank">revamp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scamp" target="_blank">scamp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swamp" target="_blank">swamp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tramp" target="_blank">tramp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vamp" target="_blank">vamp</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "champ clamp cramp, damp decamp lamp, ramp revamp scamp, swamp tramp vamp";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

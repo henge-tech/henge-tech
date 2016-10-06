@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: pr_le</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#845 pr_le
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=practicable" target="_blank">practicable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prattle" target="_blank">prattle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preamble" target="_blank">preamble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preferable" target="_blank">preferable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=presentable" target="_blank">presentable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preventable" target="_blank">preventable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=principle" target="_blank">principle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probable" target="_blank">probable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=profile" target="_blank">profile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=profitable" target="_blank">profitable</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=projectile" target="_blank">projectile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=provable" target="_blank">provable</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "practicable prattle preamble, preferable presentable preventable, principle probable profile, profitable projectile provable";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

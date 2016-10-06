@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: mu_r</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#777 mu_r
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Muenster" target="_blank">Muenster</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muffler" target="_blank">muffler</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mugger" target="_blank">mugger</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multicellular" target="_blank">multicellular</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiplexer" target="_blank">multiplexer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiplier" target="_blank">multiplier</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=murder" target="_blank">murder</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=murmur" target="_blank">murmur</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muscular" target="_blank">muscular</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=musketeer" target="_blank">musketeer</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muster" target="_blank">muster</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutter" target="_blank">mutter</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "Muenster muffler mugger, multicellular multiplexer multiplier, murder murmur muscular, musketeer muster mutter";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

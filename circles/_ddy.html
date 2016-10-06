@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ddy</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#69 _ddy
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=biddy" target="_blank">biddy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buddy" target="_blank">buddy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cruddy" target="_blank">cruddy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eddy" target="_blank">eddy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=giddy" target="_blank">giddy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muddy" target="_blank">muddy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noddy" target="_blank">noddy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paddy" target="_blank">paddy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ruddy" target="_blank">ruddy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shoddy" target="_blank">shoddy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=teddy" target="_blank">teddy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toddy" target="_blank">toddy</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "biddy buddy cruddy, eddy giddy muddy, noddy paddy ruddy, shoddy teddy toddy";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

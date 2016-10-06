@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _mity</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#186 _mity
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amity" target="_blank">amity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anonymity" target="_blank">anonymity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=calamity" target="_blank">calamity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comity" target="_blank">comity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conformity" target="_blank">conformity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deformity" target="_blank">deformity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=enmity" target="_blank">enmity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=enormity" target="_blank">enormity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=equanimity" target="_blank">equanimity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extremity" target="_blank">extremity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infirmity" target="_blank">infirmity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magnanimity" target="_blank">magnanimity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proximity" target="_blank">proximity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sublimity" target="_blank">sublimity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unanimity" target="_blank">unanimity</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=uniformity" target="_blank">uniformity</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "amity anonymity calamity comity, conformity deformity enmity enormity, equanimity extremity infirmity magnanimity, proximity sublimity unanimity uniformity";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

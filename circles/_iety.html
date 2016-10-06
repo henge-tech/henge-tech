@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _iety</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#135 _iety
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anxiety" target="_blank">anxiety</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contrariety" target="_blank">contrariety</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gaiety" target="_blank">gaiety</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impiety" target="_blank">impiety</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impropriety" target="_blank">impropriety</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moiety" target="_blank">moiety</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=notoriety" target="_blank">notoriety</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piety" target="_blank">piety</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=propriety" target="_blank">propriety</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=satiety" target="_blank">satiety</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sobriety" target="_blank">sobriety</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=variety" target="_blank">variety</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "anxiety contrariety gaiety, impiety impropriety moiety, notoriety piety propriety, satiety sobriety variety";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

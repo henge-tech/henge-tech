@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _af</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#8 _af
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cloverleaf" target="_blank">cloverleaf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deaf" target="_blank">deaf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decaf" target="_blank">decaf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flyleaf" target="_blank">flyleaf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interleaf" target="_blank">interleaf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leaf" target="_blank">leaf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loaf" target="_blank">loaf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meatloaf" target="_blank">meatloaf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oaf" target="_blank">oaf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overleaf" target="_blank">overleaf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pilaf" target="_blank">pilaf</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheaf" target="_blank">sheaf</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "cloverleaf deaf decaf, flyleaf interleaf leaf, loaf meatloaf oaf, overleaf pilaf sheaf";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _air</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#16 _air
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=affair" target="_blank">affair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corsair" target="_blank">corsair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=debonair" target="_blank">debonair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=despair" target="_blank">despair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disrepair" target="_blank">disrepair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fair" target="_blank">fair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flair" target="_blank">flair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=horsehair" target="_blank">horsehair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impair" target="_blank">impair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lair" target="_blank">lair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=longhair" target="_blank">longhair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=midair" target="_blank">midair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mohair" target="_blank">mohair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pushchair" target="_blank">pushchair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repair" target="_blank">repair</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stair" target="_blank">stair</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "affair corsair debonair despair, disrepair fair flair horsehair, impair lair longhair midair, mohair pushchair repair stair";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

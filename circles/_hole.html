@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _hole</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#122 _hole
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=borehole" target="_blank">borehole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foxhole" target="_blank">foxhole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loophole" target="_blank">loophole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peephole" target="_blank">peephole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pigeonhole" target="_blank">pigeonhole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinhole" target="_blank">pinhole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=porthole" target="_blank">porthole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pothole" target="_blank">pothole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sinkhole" target="_blank">sinkhole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waterhole" target="_blank">waterhole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whole" target="_blank">whole</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wormhole" target="_blank">wormhole</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "borehole foxhole loophole, peephole pigeonhole pinhole, porthole pothole sinkhole, waterhole whole wormhole";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

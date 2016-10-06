@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _thic</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#322 _thic
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ethic" target="_blank">ethic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gothic" target="_blank">gothic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homeopathic" target="_blank">homeopathic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=megalithic" target="_blank">megalithic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monolithic" target="_blank">monolithic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mythic" target="_blank">mythic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neolithic" target="_blank">neolithic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=osteopathic" target="_blank">osteopathic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paleolithic" target="_blank">paleolithic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=psychopathic" target="_blank">psychopathic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sociopathic" target="_blank">sociopathic</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=telepathic" target="_blank">telepathic</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "ethic gothic homeopathic, megalithic monolithic mythic, neolithic osteopathic paleolithic, psychopathic sociopathic telepathic";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

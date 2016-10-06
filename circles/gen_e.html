@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: gen_e</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#673 gen_e
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gendarme" target="_blank">gendarme</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gene" target="_blank">gene</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=generalize" target="_blank">generalize</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=generative" target="_blank">generative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genie" target="_blank">genie</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genocide" target="_blank">genocide</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genome" target="_blank">genome</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genotype" target="_blank">genotype</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genre" target="_blank">genre</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gentile" target="_blank">gentile</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gentle" target="_blank">gentle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genuine" target="_blank">genuine</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "gendarme gene generalize, generative genie genocide, genome genotype genre, gentile gentle genuine";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

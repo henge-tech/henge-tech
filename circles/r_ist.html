@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: r_ist</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#866 r_ist
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=radiologist" target="_blank">radiologist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rapist" target="_blank">rapist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rationalist" target="_blank">rationalist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=realist" target="_blank">realist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=receptionist" target="_blank">receptionist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recidivist" target="_blank">recidivist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reductionist" target="_blank">reductionist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reformist" target="_blank">reformist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reservist" target="_blank">reservist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revisionist" target="_blank">revisionist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rightist" target="_blank">rightist</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=royalist" target="_blank">royalist</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "radiologist rapist rationalist, realist receptionist recidivist, reductionist reformist reservist, revisionist rightist royalist";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

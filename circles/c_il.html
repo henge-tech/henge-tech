@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: c_il</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#470 c_il
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=civil" target="_blank">civil</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cocktail" target="_blank">cocktail</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=codicil" target="_blank">codicil</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coil" target="_blank">coil</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contrail" target="_blank">contrail</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cottontail" target="_blank">cottontail</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=council" target="_blank">council</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=curtail" target="_blank">curtail</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "civil cocktail codicil coil, contrail cottontail council curtail";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

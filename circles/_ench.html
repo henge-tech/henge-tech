@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ench</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#97 _ench
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clench" target="_blank">clench</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drench" target="_blank">drench</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=entrench" target="_blank">entrench</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frontbench" target="_blank">frontbench</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quench" target="_blank">quench</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retrench" target="_blank">retrench</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stench" target="_blank">stench</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tench" target="_blank">tench</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trench" target="_blank">trench</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wench" target="_blank">wench</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=workbench" target="_blank">workbench</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wrench" target="_blank">wrench</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "clench drench entrench, frontbench quench retrench, stench tench trench, wench workbench wrench";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

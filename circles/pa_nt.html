@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: pa_nt</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#827 pa_nt
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pageant" target="_blank">pageant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paint" target="_blank">paint</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pant" target="_blank">pant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paramount" target="_blank">paramount</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parchment" target="_blank">parchment</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parent" target="_blank">parent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parliament" target="_blank">parliament</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=participant" target="_blank">participant</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patent" target="_blank">patent</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patient" target="_blank">patient</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pavement" target="_blank">pavement</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=payment" target="_blank">payment</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "pageant paint pant, paramount parchment parent, parliament participant patent, patient pavement payment";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

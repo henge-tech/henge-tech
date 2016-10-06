@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ior</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#145 _ior
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anterior" target="_blank">anterior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excelsior" target="_blank">excelsior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exterior" target="_blank">exterior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inferior" target="_blank">inferior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interior" target="_blank">interior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=junior" target="_blank">junior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=posterior" target="_blank">posterior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prior" target="_blank">prior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savior" target="_blank">savior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=senior" target="_blank">senior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=superior" target="_blank">superior</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ulterior" target="_blank">ulterior</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "anterior excelsior exterior, inferior interior junior, posterior prior savior, senior superior ulterior";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

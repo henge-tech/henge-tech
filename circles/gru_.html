@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: gru_</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#681 gru_
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grub" target="_blank">grub</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grubby" target="_blank">grubby</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grudge" target="_blank">grudge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gruel" target="_blank">gruel</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grueling" target="_blank">grueling</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gruesome" target="_blank">gruesome</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gruff" target="_blank">gruff</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grumble" target="_blank">grumble</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grump" target="_blank">grump</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grumpy" target="_blank">grumpy</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grunge" target="_blank">grunge</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grunt" target="_blank">grunt</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "grub grubby grudge, gruel grueling gruesome, gruff grumble grump, grumpy grunge grunt";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

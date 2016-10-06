@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _rp</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#288 _rp
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burp" target="_blank">burp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carp" target="_blank">carp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chirp" target="_blank">chirp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corp" target="_blank">corp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gorp" target="_blank">gorp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=harp" target="_blank">harp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scarp" target="_blank">scarp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sharp" target="_blank">sharp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slurp" target="_blank">slurp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tarp" target="_blank">tarp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=usurp" target="_blank">usurp</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=warp" target="_blank">warp</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "burp carp chirp, corp gorp harp, scarp sharp slurp, tarp usurp warp";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

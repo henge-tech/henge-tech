@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _lous</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#176 _lous
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anomalous" target="_blank">anomalous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=callous" target="_blank">callous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=credulous" target="_blank">credulous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fabulous" target="_blank">fabulous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frivolous" target="_blank">frivolous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incredulous" target="_blank">incredulous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jealous" target="_blank">jealous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=libelous" target="_blank">libelous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meticulous" target="_blank">meticulous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=miraculous" target="_blank">miraculous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nebulous" target="_blank">nebulous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overzealous" target="_blank">overzealous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pendulous" target="_blank">pendulous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perilous" target="_blank">perilous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=populous" target="_blank">populous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrupulous" target="_blank">scrupulous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scurrilous" target="_blank">scurrilous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tuberculous" target="_blank">tuberculous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unscrupulous" target="_blank">unscrupulous</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zealous" target="_blank">zealous</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "anomalous callous credulous fabulous frivolous, incredulous jealous libelous meticulous miraculous, nebulous overzealous pendulous perilous populous, scrupulous scurrilous tuberculous unscrupulous zealous";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _ange</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#28 _ange
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arrange" target="_blank">arrange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blancmange" target="_blank">blancmange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=derange" target="_blank">derange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=estrange" target="_blank">estrange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exchange" target="_blank">exchange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flange" target="_blank">flange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grange" target="_blank">grange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interchange" target="_blank">interchange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mange" target="_blank">mange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=melange" target="_blank">melange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rearrange" target="_blank">rearrange</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shortchange" target="_blank">shortchange</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "arrange blancmange derange, estrange exchange flange, grange interchange mange, melange rearrange shortchange";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

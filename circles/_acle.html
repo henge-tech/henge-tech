@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _acle</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#4 _acle
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barnacle" target="_blank">barnacle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=debacle" target="_blank">debacle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manacle" target="_blank">manacle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=miracle" target="_blank">miracle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obstacle" target="_blank">obstacle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oracle" target="_blank">oracle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pentacle" target="_blank">pentacle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinnacle" target="_blank">pinnacle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=receptacle" target="_blank">receptacle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tabernacle" target="_blank">tabernacle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tentacle" target="_blank">tentacle</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=treacle" target="_blank">treacle</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "barnacle debacle manacle, miracle obstacle oracle, pentacle pinnacle receptacle, tabernacle tentacle treacle";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

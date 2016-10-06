@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: _eet</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#87 _eet
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beet" target="_blank">beet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broadsheet" target="_blank">broadsheet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discreet" target="_blank">discreet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fleet" target="_blank">fleet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forefeet" target="_blank">forefeet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greet" target="_blank">greet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indiscreet" target="_blank">indiscreet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meet" target="_blank">meet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parakeet" target="_blank">parakeet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=skeet" target="_blank">skeet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sleet" target="_blank">sleet</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=worksheet" target="_blank">worksheet</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "beet broadsheet discreet, fleet forefeet greet, indiscreet meet parakeet, skeet sleet worksheet";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

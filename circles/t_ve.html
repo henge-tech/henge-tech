@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: t_ve</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#953 t_ve
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=talkative" target="_blank">talkative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tentative" target="_blank">tentative</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thieve" target="_blank">thieve</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thrive" target="_blank">thrive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transitive" target="_blank">transitive</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trave" target="_blank">trave</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trove" target="_blank">trove</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=truelove" target="_blank">truelove</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "talkative tentative thieve thrive, transitive trave trove truelove";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>

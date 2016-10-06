@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>henge: in_nal</title>
+</head>
+<body>
+<header>
+<h1 style="margin:0"><img src="/imgs/logo.png" alt="henge"></h1>
+</header>
+
+#708 in_nal
+
+<article>
+<ul>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infernal" target="_blank">infernal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=informational" target="_blank">informational</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inguinal" target="_blank">inguinal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inspirational" target="_blank">inspirational</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=institutional" target="_blank">institutional</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=instructional" target="_blank">instructional</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intentional" target="_blank">intentional</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interdenominational" target="_blank">interdenominational</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=internal" target="_blank">internal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interpersonal" target="_blank">interpersonal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intestinal" target="_blank">intestinal</a></li>
+<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=invitational" target="_blank">invitational</a></li>
+</ul>
+
+<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+
+<a href="">Random</a> | <a href="">Next</a>
+
+<p>settings</p>
+<form>
+<label><input type="radio" name="search" checked> Image</label>
+<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
+<select>
+<option>ja</option>
+</select>
+</form>
+
+
+</article>
+<script type="text/javascript">
+function speak() {
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = 'en-US';
+  speech.voiceURI = 'native';
+  speech.volume = 1;
+  speech.rate = 1;
+  speech.pitch = 1;
+  speech.text = "infernal informational inguinal, inspirational institutional instructional, intentional interdenominational internal, interpersonal intestinal invitational";
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>
