@@ -9,3 +9,8 @@ ehthumbs.db
 Desktop.ini
 .project
 *.ignore
+
+node_modules
+coverage
+.env
+npm-debug.log
