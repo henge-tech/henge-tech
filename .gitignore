@@ -9,3 +9,6 @@ ehthumbs.db
 Desktop.ini
 .project
 *.ignore
+
+node_modules
+.env
