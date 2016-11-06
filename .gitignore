@@ -10,5 +10,6 @@ Desktop.ini
 .project
 *.ignore
 
-node_modules
 .env
+node_modules
+npm-debug.log
