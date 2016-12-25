@@ -2,11 +2,13 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: './src/main.jsx',
+  entry: {
+    CircleApp: './src/CircleApp.jsx',
+  },
 
   output: {
     path: path.join(__dirname, 'docs'),
-    filename: 'bundle.js'
+    filename: '[name].bundle.js'
   },
 
   devServer: {
