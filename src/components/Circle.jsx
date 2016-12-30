@@ -18,7 +18,7 @@ export default class Circle extends React.Component {
       container: {position: 'relative', height: '200px'},
       speakButton: {
         position: 'absolute',
-        left: center.x + 'px',
+        left: center.x - 15 + 'px',
         top: center.y + 'px',
       },
       partialSpeakButtons: []
