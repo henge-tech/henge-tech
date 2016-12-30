@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dis_le</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#598 dis_le
+<h2>#598 dis_le</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disagreeable" target="_blank">disagreeable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disassemble" target="_blank">disassemble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discernible" target="_blank">discernible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disciple" target="_blank">disciple</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discoverable" target="_blank">discoverable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disentangle" target="_blank">disentangle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishonorable" target="_blank">dishonorable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismantle" target="_blank">dismantle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispensable" target="_blank">dispensable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disposable" target="_blank">disposable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disreputable" target="_blank">disreputable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distinguishable" target="_blank">distinguishable</a></li>
+<ul id="words">
+<li>disagreeable</li>
+<li>disassemble</li>
+<li>discernible</li>
+<li>disciple</li>
+<li>discoverable</li>
+<li>disentangle</li>
+<li>dishonorable</li>
+<li>dismantle</li>
+<li>dispensable</li>
+<li>disposable</li>
+<li>disreputable</li>
+<li>distinguishable</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="598" data-circle-pattern="dis_le">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "disagreeable disassemble discernible, disciple discoverable disentangle, dishonorable dismantle dispensable, disposable disreputable distinguishable";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

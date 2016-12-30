@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: c_ide</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#469 c_ide
+<h2>#469 c_ide</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carbide" target="_blank">carbide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chide" target="_blank">chide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chloride" target="_blank">chloride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Christmastide" target="_blank">Christmastide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coincide" target="_blank">coincide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collide" target="_blank">collide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confide" target="_blank">confide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=countryside" target="_blank">countryside</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=countrywide" target="_blank">countrywide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cowhide" target="_blank">cowhide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=curbside" target="_blank">curbside</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cyanide" target="_blank">cyanide</a></li>
+<ul id="words">
+<li>carbide</li>
+<li>chide</li>
+<li>chloride</li>
+<li>Christmastide</li>
+<li>coincide</li>
+<li>collide</li>
+<li>confide</li>
+<li>countryside</li>
+<li>countrywide</li>
+<li>cowhide</li>
+<li>curbside</li>
+<li>cyanide</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="469" data-circle-pattern="c_ide">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "carbide chide chloride, Christmastide coincide collide, confide countryside countrywide, cowhide curbside cyanide";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

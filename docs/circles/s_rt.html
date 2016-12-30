@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: s_rt</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#909 s_rt
+<h2>#909 s_rt</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seaport" target="_blank">seaport</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snort" target="_blank">snort</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sort" target="_blank">sort</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spaceport" target="_blank">spaceport</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spoilsport" target="_blank">spoilsport</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sport" target="_blank">sport</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spurt" target="_blank">spurt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squirt" target="_blank">squirt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stalwart" target="_blank">stalwart</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subvert" target="_blank">subvert</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sweatshirt" target="_blank">sweatshirt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sweetheart" target="_blank">sweetheart</a></li>
+<ul id="words">
+<li>seaport</li>
+<li>snort</li>
+<li>sort</li>
+<li>spaceport</li>
+<li>spoilsport</li>
+<li>sport</li>
+<li>spurt</li>
+<li>squirt</li>
+<li>stalwart</li>
+<li>subvert</li>
+<li>sweatshirt</li>
+<li>sweetheart</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="909" data-circle-pattern="s_rt">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "seaport snort sort, spaceport spoilsport sport, spurt squirt stalwart, subvert sweatshirt sweetheart";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

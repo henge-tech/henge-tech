@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: su_ive</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#938 su_ive
+<h2>#938 su_ive</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subjective" target="_blank">subjective</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subjunctive" target="_blank">subjunctive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=submissive" target="_blank">submissive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=substantive" target="_blank">substantive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subtractive" target="_blank">subtractive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subversive" target="_blank">subversive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=successive" target="_blank">successive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suggestive" target="_blank">suggestive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=summative" target="_blank">summative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=superlative" target="_blank">superlative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=supportive" target="_blank">supportive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suppressive" target="_blank">suppressive</a></li>
+<ul id="words">
+<li>subjective</li>
+<li>subjunctive</li>
+<li>submissive</li>
+<li>substantive</li>
+<li>subtractive</li>
+<li>subversive</li>
+<li>successive</li>
+<li>suggestive</li>
+<li>summative</li>
+<li>superlative</li>
+<li>supportive</li>
+<li>suppressive</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="938" data-circle-pattern="su_ive">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "subjective subjunctive submissive, substantive subtractive subversive, successive suggestive summative, superlative supportive suppressive";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

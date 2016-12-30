@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: h_ity</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#687 h_ity
+<h2>#687 h_ity</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heredity" target="_blank">heredity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heterogeneity" target="_blank">heterogeneity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heterosexuality" target="_blank">heterosexuality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hilarity" target="_blank">hilarity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homogeneity" target="_blank">homogeneity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homosexuality" target="_blank">homosexuality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hospitality" target="_blank">hospitality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hostility" target="_blank">hostility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=humanity" target="_blank">humanity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=humidity" target="_blank">humidity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=humility" target="_blank">humility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hyperactivity" target="_blank">hyperactivity</a></li>
+<ul id="words">
+<li>heredity</li>
+<li>heterogeneity</li>
+<li>heterosexuality</li>
+<li>hilarity</li>
+<li>homogeneity</li>
+<li>homosexuality</li>
+<li>hospitality</li>
+<li>hostility</li>
+<li>humanity</li>
+<li>humidity</li>
+<li>humility</li>
+<li>hyperactivity</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="687" data-circle-pattern="h_ity">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "heredity heterogeneity heterosexuality, hilarity homogeneity homosexuality, hospitality hostility humanity, humidity humility hyperactivity";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

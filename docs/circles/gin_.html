@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: gin_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#675 gin_
+<h2>#675 gin_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gin" target="_blank">gin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ginger" target="_blank">ginger</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gingerbread" target="_blank">gingerbread</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gingerly" target="_blank">gingerly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gingersnap" target="_blank">gingersnap</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gingery" target="_blank">gingery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gingham" target="_blank">gingham</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gingiva" target="_blank">gingiva</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gingivitis" target="_blank">gingivitis</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ginkgo" target="_blank">ginkgo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ginormous" target="_blank">ginormous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ginseng" target="_blank">ginseng</a></li>
+<ul id="words">
+<li>gin</li>
+<li>ginger</li>
+<li>gingerbread</li>
+<li>gingerly</li>
+<li>gingersnap</li>
+<li>gingery</li>
+<li>gingham</li>
+<li>gingiva</li>
+<li>gingivitis</li>
+<li>ginkgo</li>
+<li>ginormous</li>
+<li>ginseng</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="675" data-circle-pattern="gin_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "gin ginger gingerbread, gingerly gingersnap gingery, gingham gingiva gingivitis, ginkgo ginormous ginseng";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

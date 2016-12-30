@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ach</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#2 _ach
+<h2>#2 _ach</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bleach" target="_blank">bleach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breach" target="_blank">breach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broach" target="_blank">broach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coach" target="_blank">coach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cockroach" target="_blank">cockroach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detach" target="_blank">detach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=encroach" target="_blank">encroach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impeach" target="_blank">impeach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leach" target="_blank">leach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loach" target="_blank">loach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mach" target="_blank">mach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outreach" target="_blank">outreach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overreach" target="_blank">overreach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=poach" target="_blank">poach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preach" target="_blank">preach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reach" target="_blank">reach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reproach" target="_blank">reproach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=roach" target="_blank">roach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spinach" target="_blank">spinach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stagecoach" target="_blank">stagecoach</a></li>
+<ul id="words">
+<li>bleach</li>
+<li>breach</li>
+<li>broach</li>
+<li>coach</li>
+<li>cockroach</li>
+<li>detach</li>
+<li>encroach</li>
+<li>impeach</li>
+<li>leach</li>
+<li>loach</li>
+<li>mach</li>
+<li>outreach</li>
+<li>overreach</li>
+<li>poach</li>
+<li>preach</li>
+<li>reach</li>
+<li>reproach</li>
+<li>roach</li>
+<li>spinach</li>
+<li>stagecoach</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="2" data-circle-pattern="_ach">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bleach breach broach coach cockroach, detach encroach impeach leach loach, mach outreach overreach poach preach, reach reproach roach spinach stagecoach";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

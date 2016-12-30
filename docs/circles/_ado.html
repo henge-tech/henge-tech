@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ado</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#6 _ado
+<h2>#6 _ado</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ado" target="_blank">ado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aficionado" target="_blank">aficionado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amontillado" target="_blank">amontillado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=avocado" target="_blank">avocado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bastinado" target="_blank">bastinado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bravado" target="_blank">bravado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Colorado" target="_blank">Colorado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dado" target="_blank">dado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=desperado" target="_blank">desperado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dorado" target="_blank">dorado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incommunicado" target="_blank">incommunicado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tornado" target="_blank">tornado</a></li>
+<ul id="words">
+<li>ado</li>
+<li>aficionado</li>
+<li>amontillado</li>
+<li>avocado</li>
+<li>bastinado</li>
+<li>bravado</li>
+<li>Colorado</li>
+<li>dado</li>
+<li>desperado</li>
+<li>dorado</li>
+<li>incommunicado</li>
+<li>tornado</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="6" data-circle-pattern="_ado">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ado aficionado amontillado, avocado bastinado bravado, Colorado dado desperado, dorado incommunicado tornado";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_el</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#431 b_el
+<h2>#431 b_el</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=babel" target="_blank">babel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bagel" target="_blank">bagel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barbel" target="_blank">barbel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barrel" target="_blank">barrel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bel" target="_blank">bel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=betel" target="_blank">betel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bethel" target="_blank">bethel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bevel" target="_blank">bevel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bezel" target="_blank">bezel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bowel" target="_blank">bowel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brothel" target="_blank">brothel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bushel" target="_blank">bushel</a></li>
+<ul id="words">
+<li>babel</li>
+<li>bagel</li>
+<li>barbel</li>
+<li>barrel</li>
+<li>bel</li>
+<li>betel</li>
+<li>bethel</li>
+<li>bevel</li>
+<li>bezel</li>
+<li>bowel</li>
+<li>brothel</li>
+<li>bushel</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="431" data-circle-pattern="b_el">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "babel bagel barbel, barrel bel betel, bethel bevel bezel, bowel brothel bushel";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

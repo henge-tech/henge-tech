@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: met_l</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#764 met_l
+<h2>#764 met_l</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metal" target="_blank">metal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metallurgical" target="_blank">metallurgical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metaphorical" target="_blank">metaphorical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metaphysical" target="_blank">metaphysical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metatarsal" target="_blank">metatarsal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meteorological" target="_blank">meteorological</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=methanol" target="_blank">methanol</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=methodical" target="_blank">methodical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=methodological" target="_blank">methodological</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=methyl" target="_blank">methyl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metical" target="_blank">metical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metrical" target="_blank">metrical</a></li>
+<ul id="words">
+<li>metal</li>
+<li>metallurgical</li>
+<li>metaphorical</li>
+<li>metaphysical</li>
+<li>metatarsal</li>
+<li>meteorological</li>
+<li>methanol</li>
+<li>methodical</li>
+<li>methodological</li>
+<li>methyl</li>
+<li>metical</li>
+<li>metrical</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="764" data-circle-pattern="met_l">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "metal metallurgical metaphorical, metaphysical metatarsal meteorological, methanol methodical methodological, methyl metical metrical";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

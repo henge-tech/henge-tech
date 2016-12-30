@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ang</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#27 _ang
+<h2>#27 _ang</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bang" target="_blank">bang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clang" target="_blank">clang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dang" target="_blank">dang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fang" target="_blank">fang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gang" target="_blank">gang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hang" target="_blank">hang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mustang" target="_blank">mustang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overhang" target="_blank">overhang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pang" target="_blank">pang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rang" target="_blank">rang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sang" target="_blank">sang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shebang" target="_blank">shebang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sprang" target="_blank">sprang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Tang" target="_blank">Tang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=twang" target="_blank">twang</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yang" target="_blank">yang</a></li>
+<ul id="words">
+<li>bang</li>
+<li>clang</li>
+<li>dang</li>
+<li>fang</li>
+<li>gang</li>
+<li>hang</li>
+<li>mustang</li>
+<li>overhang</li>
+<li>pang</li>
+<li>rang</li>
+<li>sang</li>
+<li>shebang</li>
+<li>sprang</li>
+<li>Tang</li>
+<li>twang</li>
+<li>yang</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="27" data-circle-pattern="_ang">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bang clang dang fang, gang hang mustang overhang, pang rang sang shebang, sprang Tang twang yang";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

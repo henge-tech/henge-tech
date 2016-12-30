@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _era</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#99 _era
+<h2>#99 _era</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caldera" target="_blank">caldera</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chimaera" target="_blank">chimaera</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cholera" target="_blank">cholera</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ephemera" target="_blank">ephemera</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=era" target="_blank">era</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genera" target="_blank">genera</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opera" target="_blank">opera</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Riviera" target="_blank">Riviera</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sclera" target="_blank">sclera</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subgenera" target="_blank">subgenera</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tempera" target="_blank">tempera</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=viscera" target="_blank">viscera</a></li>
+<ul id="words">
+<li>caldera</li>
+<li>chimaera</li>
+<li>cholera</li>
+<li>ephemera</li>
+<li>era</li>
+<li>genera</li>
+<li>opera</li>
+<li>Riviera</li>
+<li>sclera</li>
+<li>subgenera</li>
+<li>tempera</li>
+<li>viscera</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="99" data-circle-pattern="_era">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "caldera chimaera cholera, ephemera era genera, opera Riviera sclera, subgenera tempera viscera";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

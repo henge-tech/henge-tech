@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: p_ge</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#812 p_ge
+<h2>#812 p_ge</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parentage" target="_blank">parentage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parsonage" target="_blank">parsonage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=partridge" target="_blank">partridge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=passage" target="_blank">passage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patronage" target="_blank">patronage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peerage" target="_blank">peerage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=personage" target="_blank">personage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pilgrimage" target="_blank">pilgrimage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pillage" target="_blank">pillage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pledge" target="_blank">pledge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plumage" target="_blank">plumage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plunge" target="_blank">plunge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=porridge" target="_blank">porridge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=portage" target="_blank">portage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=postage" target="_blank">postage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=presage" target="_blank">presage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prestige" target="_blank">prestige</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=privilege" target="_blank">privilege</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=protege" target="_blank">protege</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purge" target="_blank">purge</a></li>
+<ul id="words">
+<li>parentage</li>
+<li>parsonage</li>
+<li>partridge</li>
+<li>passage</li>
+<li>patronage</li>
+<li>peerage</li>
+<li>personage</li>
+<li>pilgrimage</li>
+<li>pillage</li>
+<li>pledge</li>
+<li>plumage</li>
+<li>plunge</li>
+<li>porridge</li>
+<li>portage</li>
+<li>postage</li>
+<li>presage</li>
+<li>prestige</li>
+<li>privilege</li>
+<li>protege</li>
+<li>purge</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="812" data-circle-pattern="p_ge">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "parentage parsonage partridge passage patronage, peerage personage pilgrimage pillage pledge, plumage plunge porridge portage postage, presage prestige privilege protege purge";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

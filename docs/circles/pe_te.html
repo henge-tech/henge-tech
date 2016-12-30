@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: pe_te</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#832 pe_te
+<h2>#832 pe_te</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penetrate" target="_blank">penetrate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penultimate" target="_blank">penultimate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=percolate" target="_blank">percolate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perforate" target="_blank">perforate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=permanganate" target="_blank">permanganate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=permeate" target="_blank">permeate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=permute" target="_blank">permute</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perpetrate" target="_blank">perpetrate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perpetuate" target="_blank">perpetuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=persecute" target="_blank">persecute</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=petite" target="_blank">petite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peyote" target="_blank">peyote</a></li>
+<ul id="words">
+<li>penetrate</li>
+<li>penultimate</li>
+<li>percolate</li>
+<li>perforate</li>
+<li>permanganate</li>
+<li>permeate</li>
+<li>permute</li>
+<li>perpetrate</li>
+<li>perpetuate</li>
+<li>persecute</li>
+<li>petite</li>
+<li>peyote</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="832" data-circle-pattern="pe_te">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "penetrate penultimate percolate, perforate permanganate permeate, permute perpetrate perpetuate, persecute petite peyote";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

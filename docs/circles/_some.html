@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _some</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#305 _some
+<h2>#305 _some</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=awesome" target="_blank">awesome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bothersome" target="_blank">bothersome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burdensome" target="_blank">burdensome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chromosome" target="_blank">chromosome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cumbersome" target="_blank">cumbersome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fearsome" target="_blank">fearsome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foursome" target="_blank">foursome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gruesome" target="_blank">gruesome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irksome" target="_blank">irksome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loathsome" target="_blank">loathsome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lonesome" target="_blank">lonesome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quarrelsome" target="_blank">quarrelsome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ribosome" target="_blank">ribosome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=threesome" target="_blank">threesome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tiresome" target="_blank">tiresome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=troublesome" target="_blank">troublesome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wearisome" target="_blank">wearisome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wholesome" target="_blank">wholesome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=winsome" target="_blank">winsome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=worrisome" target="_blank">worrisome</a></li>
+<ul id="words">
+<li>awesome</li>
+<li>bothersome</li>
+<li>burdensome</li>
+<li>chromosome</li>
+<li>cumbersome</li>
+<li>fearsome</li>
+<li>foursome</li>
+<li>gruesome</li>
+<li>irksome</li>
+<li>loathsome</li>
+<li>lonesome</li>
+<li>quarrelsome</li>
+<li>ribosome</li>
+<li>threesome</li>
+<li>tiresome</li>
+<li>troublesome</li>
+<li>wearisome</li>
+<li>wholesome</li>
+<li>winsome</li>
+<li>worrisome</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="305" data-circle-pattern="_some">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "awesome bothersome burdensome chromosome cumbersome, fearsome foursome gruesome irksome loathsome, lonesome quarrelsome ribosome threesome tiresome, troublesome wearisome wholesome winsome worrisome";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

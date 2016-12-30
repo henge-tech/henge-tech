@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _alk</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#20 _alk
+<h2>#20 _alk</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=backtalk" target="_blank">backtalk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=balk" target="_blank">balk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beanstalk" target="_blank">beanstalk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boardwalk" target="_blank">boardwalk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cakewalk" target="_blank">cakewalk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=catwalk" target="_blank">catwalk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chalk" target="_blank">chalk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crosstalk" target="_blank">crosstalk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crosswalk" target="_blank">crosswalk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moonwalk" target="_blank">moonwalk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sidewalk" target="_blank">sidewalk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stalk" target="_blank">stalk</a></li>
+<ul id="words">
+<li>backtalk</li>
+<li>balk</li>
+<li>beanstalk</li>
+<li>boardwalk</li>
+<li>cakewalk</li>
+<li>catwalk</li>
+<li>chalk</li>
+<li>crosstalk</li>
+<li>crosswalk</li>
+<li>moonwalk</li>
+<li>sidewalk</li>
+<li>stalk</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="20" data-circle-pattern="_alk">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "backtalk balk beanstalk, boardwalk cakewalk catwalk, chalk crosstalk crosswalk, moonwalk sidewalk stalk";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

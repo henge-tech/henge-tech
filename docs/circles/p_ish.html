@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: p_ish</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#814 p_ish
+<h2>#814 p_ish</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parish" target="_blank">parish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peckish" target="_blank">peckish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peevish" target="_blank">peevish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perish" target="_blank">perish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piggish" target="_blank">piggish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinkish" target="_blank">pinkish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pish" target="_blank">pish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=polish" target="_blank">polish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=popish" target="_blank">popish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prudish" target="_blank">prudish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=punish" target="_blank">punish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purplish" target="_blank">purplish</a></li>
+<ul id="words">
+<li>parish</li>
+<li>peckish</li>
+<li>peevish</li>
+<li>perish</li>
+<li>piggish</li>
+<li>pinkish</li>
+<li>pish</li>
+<li>polish</li>
+<li>popish</li>
+<li>prudish</li>
+<li>punish</li>
+<li>purplish</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="814" data-circle-pattern="p_ish">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "parish peckish peevish, perish piggish pinkish, pish polish popish, prudish punish purplish";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: y_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#998 y_n
+<h2>#998 y_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yachtsman" target="_blank">yachtsman</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Yangon" target="_blank">Yangon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yarn" target="_blank">yarn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yawn" target="_blank">yawn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yearn" target="_blank">yearn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yen" target="_blank">yen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yeoman" target="_blank">yeoman</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yin" target="_blank">yin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yon" target="_blank">yon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yuan" target="_blank">yuan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Yucatan" target="_blank">Yucatan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Yukon" target="_blank">Yukon</a></li>
+<ul id="words">
+<li>yachtsman</li>
+<li>Yangon</li>
+<li>yarn</li>
+<li>yawn</li>
+<li>yearn</li>
+<li>yen</li>
+<li>yeoman</li>
+<li>yin</li>
+<li>yon</li>
+<li>yuan</li>
+<li>Yucatan</li>
+<li>Yukon</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="998" data-circle-pattern="y_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "yachtsman Yangon yarn, yawn yearn yen, yeoman yin yon, yuan Yucatan Yukon";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _sic</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#300 _sic
+<h2>#300 _sic</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amnesic" target="_blank">amnesic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=analgesic" target="_blank">analgesic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extrinsic" target="_blank">extrinsic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forensic" target="_blank">forensic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=geodesic" target="_blank">geodesic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intrinsic" target="_blank">intrinsic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=physic" target="_blank">physic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sic" target="_blank">sic</a></li>
+<ul id="words">
+<li>amnesic</li>
+<li>analgesic</li>
+<li>extrinsic</li>
+<li>forensic</li>
+<li>geodesic</li>
+<li>intrinsic</li>
+<li>physic</li>
+<li>sic</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="300" data-circle-pattern="_sic">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "amnesic analgesic extrinsic forensic, geodesic intrinsic physic sic";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

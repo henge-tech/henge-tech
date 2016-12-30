@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: im_ly</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#704 im_ly
+<h2>#704 im_ly</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immaculately" target="_blank">immaculately</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immeasurably" target="_blank">immeasurably</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immediately" target="_blank">immediately</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immensely" target="_blank">immensely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impartially" target="_blank">impartially</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impatiently" target="_blank">impatiently</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impeccably" target="_blank">impeccably</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=imperceptibly" target="_blank">imperceptibly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=implicitly" target="_blank">implicitly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=imply" target="_blank">imply</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impressively" target="_blank">impressively</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=improperly" target="_blank">improperly</a></li>
+<ul id="words">
+<li>immaculately</li>
+<li>immeasurably</li>
+<li>immediately</li>
+<li>immensely</li>
+<li>impartially</li>
+<li>impatiently</li>
+<li>impeccably</li>
+<li>imperceptibly</li>
+<li>implicitly</li>
+<li>imply</li>
+<li>impressively</li>
+<li>improperly</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="704" data-circle-pattern="im_ly">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "immaculately immeasurably immediately, immensely impartially impatiently, impeccably imperceptibly implicitly, imply impressively improperly";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

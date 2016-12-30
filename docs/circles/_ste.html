@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ste</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#310 _ste
+<h2>#310 _ste</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aftertaste" target="_blank">aftertaste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=artiste" target="_blank">artiste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baste" target="_blank">baste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caste" target="_blank">caste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chaste" target="_blank">chaste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distaste" target="_blank">distaste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haste" target="_blank">haste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paste" target="_blank">paste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piste" target="_blank">piste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riposte" target="_blank">riposte</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toothpaste" target="_blank">toothpaste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waste" target="_blank">waste</a></li>
+<ul id="words">
+<li>aftertaste</li>
+<li>artiste</li>
+<li>baste</li>
+<li>caste</li>
+<li>chaste</li>
+<li>distaste</li>
+<li>haste</li>
+<li>paste</li>
+<li>piste</li>
+<li>riposte</li>
+<li>toothpaste</li>
+<li>waste</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="310" data-circle-pattern="_ste">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "aftertaste artiste baste, caste chaste distaste, haste paste piste, riposte toothpaste waste";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

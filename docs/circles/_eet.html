@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _eet</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#87 _eet
+<h2>#87 _eet</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beet" target="_blank">beet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broadsheet" target="_blank">broadsheet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discreet" target="_blank">discreet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fleet" target="_blank">fleet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forefeet" target="_blank">forefeet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greet" target="_blank">greet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indiscreet" target="_blank">indiscreet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meet" target="_blank">meet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parakeet" target="_blank">parakeet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=skeet" target="_blank">skeet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sleet" target="_blank">sleet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=worksheet" target="_blank">worksheet</a></li>
+<ul id="words">
+<li>beet</li>
+<li>broadsheet</li>
+<li>discreet</li>
+<li>fleet</li>
+<li>forefeet</li>
+<li>greet</li>
+<li>indiscreet</li>
+<li>meet</li>
+<li>parakeet</li>
+<li>skeet</li>
+<li>sleet</li>
+<li>worksheet</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="87" data-circle-pattern="_eet">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "beet broadsheet discreet, fleet forefeet greet, indiscreet meet parakeet, skeet sleet worksheet";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

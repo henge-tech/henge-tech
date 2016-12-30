@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: m_ss</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#755 m_ss
+<h2>#755 m_ss</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=madness" target="_blank">madness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manliness" target="_blank">manliness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marquess" target="_blank">marquess</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mass" target="_blank">mass</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massless" target="_blank">massless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=matchless" target="_blank">matchless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meaningless" target="_blank">meaningless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meanness" target="_blank">meanness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meekness" target="_blank">meekness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=merciless" target="_blank">merciless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mess" target="_blank">mess</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mindfulness" target="_blank">mindfulness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mindless" target="_blank">mindless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mistress" target="_blank">mistress</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=morass" target="_blank">morass</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moss" target="_blank">moss</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=motherless" target="_blank">motherless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=motionless" target="_blank">motionless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muchness" target="_blank">muchness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muss" target="_blank">muss</a></li>
+<ul id="words">
+<li>madness</li>
+<li>manliness</li>
+<li>marquess</li>
+<li>mass</li>
+<li>massless</li>
+<li>matchless</li>
+<li>meaningless</li>
+<li>meanness</li>
+<li>meekness</li>
+<li>merciless</li>
+<li>mess</li>
+<li>mindfulness</li>
+<li>mindless</li>
+<li>mistress</li>
+<li>morass</li>
+<li>moss</li>
+<li>motherless</li>
+<li>motionless</li>
+<li>muchness</li>
+<li>muss</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="755" data-circle-pattern="m_ss">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "madness manliness marquess mass massless, matchless meaningless meanness meekness merciless, mess mindfulness mindless mistress morass, moss motherless motionless muchness muss";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

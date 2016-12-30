@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: o_ous</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#795 o_ous
+<h2>#795 o_ous</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oblivious" target="_blank">oblivious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obnoxious" target="_blank">obnoxious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obsequious" target="_blank">obsequious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obstreperous" target="_blank">obstreperous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obvious" target="_blank">obvious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=odious" target="_blank">odious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=odoriferous" target="_blank">odoriferous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=odorous" target="_blank">odorous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=officious" target="_blank">officious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ominous" target="_blank">ominous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=omnivorous" target="_blank">omnivorous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=onerous" target="_blank">onerous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=osseous" target="_blank">osseous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ostentatious" target="_blank">ostentatious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outrageous" target="_blank">outrageous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overzealous" target="_blank">overzealous</a></li>
+<ul id="words">
+<li>oblivious</li>
+<li>obnoxious</li>
+<li>obsequious</li>
+<li>obstreperous</li>
+<li>obvious</li>
+<li>odious</li>
+<li>odoriferous</li>
+<li>odorous</li>
+<li>officious</li>
+<li>ominous</li>
+<li>omnivorous</li>
+<li>onerous</li>
+<li>osseous</li>
+<li>ostentatious</li>
+<li>outrageous</li>
+<li>overzealous</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="795" data-circle-pattern="o_ous">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "oblivious obnoxious obsequious obstreperous, obvious odious odoriferous odorous, officious ominous omnivorous onerous, osseous ostentatious outrageous overzealous";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

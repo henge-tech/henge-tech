@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: m_ous</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#752 m_ous
+<h2>#752 m_ous</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magnanimous" target="_blank">magnanimous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=malicious" target="_blank">malicious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marvelous" target="_blank">marvelous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=membranous" target="_blank">membranous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meritorious" target="_blank">meritorious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meticulous" target="_blank">meticulous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=miscellaneous" target="_blank">miscellaneous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mischievous" target="_blank">mischievous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=momentous" target="_blank">momentous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monogamous" target="_blank">monogamous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monotonous" target="_blank">monotonous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monstrous" target="_blank">monstrous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mountainous" target="_blank">mountainous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mucous" target="_blank">mucous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multifarious" target="_blank">multifarious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=murderous" target="_blank">murderous</a></li>
+<ul id="words">
+<li>magnanimous</li>
+<li>malicious</li>
+<li>marvelous</li>
+<li>membranous</li>
+<li>meritorious</li>
+<li>meticulous</li>
+<li>miscellaneous</li>
+<li>mischievous</li>
+<li>momentous</li>
+<li>monogamous</li>
+<li>monotonous</li>
+<li>monstrous</li>
+<li>mountainous</li>
+<li>mucous</li>
+<li>multifarious</li>
+<li>murderous</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="752" data-circle-pattern="m_ous">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "magnanimous malicious marvelous membranous, meritorious meticulous miscellaneous mischievous, momentous monogamous monotonous monstrous, mountainous mucous multifarious murderous";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

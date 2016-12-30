@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: prob_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#857 prob_
+<h2>#857 prob_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probability" target="_blank">probability</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probable" target="_blank">probable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probate" target="_blank">probate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probation" target="_blank">probation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probationary" target="_blank">probationary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probative" target="_blank">probative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probe" target="_blank">probe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probing" target="_blank">probing</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probity" target="_blank">probity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=problem" target="_blank">problem</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=problematic" target="_blank">problematic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proboscis" target="_blank">proboscis</a></li>
+<ul id="words">
+<li>probability</li>
+<li>probable</li>
+<li>probate</li>
+<li>probation</li>
+<li>probationary</li>
+<li>probative</li>
+<li>probe</li>
+<li>probing</li>
+<li>probity</li>
+<li>problem</li>
+<li>problematic</li>
+<li>proboscis</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="857" data-circle-pattern="prob_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "probability probable probate, probation probationary probative, probe probing probity, problem problematic proboscis";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

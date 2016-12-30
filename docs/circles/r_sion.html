@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: r_sion</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#868 r_sion
+<h2>#868 r_sion</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=readmission" target="_blank">readmission</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recession" target="_blank">recession</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=regression" target="_blank">regression</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remission" target="_blank">remission</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repercussion" target="_blank">repercussion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repossession" target="_blank">repossession</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repression" target="_blank">repression</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repulsion" target="_blank">repulsion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rescission" target="_blank">rescission</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reversion" target="_blank">reversion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revision" target="_blank">revision</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revulsion" target="_blank">revulsion</a></li>
+<ul id="words">
+<li>readmission</li>
+<li>recession</li>
+<li>regression</li>
+<li>remission</li>
+<li>repercussion</li>
+<li>repossession</li>
+<li>repression</li>
+<li>repulsion</li>
+<li>rescission</li>
+<li>reversion</li>
+<li>revision</li>
+<li>revulsion</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="868" data-circle-pattern="r_sion">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "readmission recession regression, remission repercussion repossession, repression repulsion rescission, reversion revision revulsion";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

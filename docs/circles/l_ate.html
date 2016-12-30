@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: l_ate</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#728 l_ate
+<h2>#728 l_ate</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lactate" target="_blank">lactate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laureate" target="_blank">laureate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legate" target="_blank">legate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislate" target="_blank">legislate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legitimate" target="_blank">legitimate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=levitate" target="_blank">levitate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=liberate" target="_blank">liberate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=licentiate" target="_blank">licentiate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=liquidate" target="_blank">liquidate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=literate" target="_blank">literate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=litigate" target="_blank">litigate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lubricate" target="_blank">lubricate</a></li>
+<ul id="words">
+<li>lactate</li>
+<li>laureate</li>
+<li>legate</li>
+<li>legislate</li>
+<li>legitimate</li>
+<li>levitate</li>
+<li>liberate</li>
+<li>licentiate</li>
+<li>liquidate</li>
+<li>literate</li>
+<li>litigate</li>
+<li>lubricate</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="728" data-circle-pattern="l_ate">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "lactate laureate legate, legislate legitimate levitate, liberate licentiate liquidate, literate litigate lubricate";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

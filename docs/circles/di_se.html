@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: di_se</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#593 di_se
+<h2>#593 di_se</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diagnose" target="_blank">diagnose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diffuse" target="_blank">diffuse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diocese" target="_blank">diocese</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disburse" target="_blank">disburse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disclose" target="_blank">disclose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discourse" target="_blank">discourse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disease" target="_blank">disease</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disguise" target="_blank">disguise</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispense" target="_blank">dispense</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disperse" target="_blank">disperse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispose" target="_blank">dispose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diverse" target="_blank">diverse</a></li>
+<ul id="words">
+<li>diagnose</li>
+<li>diffuse</li>
+<li>diocese</li>
+<li>disburse</li>
+<li>disclose</li>
+<li>discourse</li>
+<li>disease</li>
+<li>disguise</li>
+<li>dispense</li>
+<li>disperse</li>
+<li>dispose</li>
+<li>diverse</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="593" data-circle-pattern="di_se">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "diagnose diffuse diocese, disburse disclose discourse, disease disguise dispense, disperse dispose diverse";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

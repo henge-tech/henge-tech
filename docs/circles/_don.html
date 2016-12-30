@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _don</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#73 _don
+<h2>#73 _don</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abandon" target="_blank">abandon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cordon" target="_blank">cordon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cotyledon" target="_blank">cotyledon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=don" target="_blank">don</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mastodon" target="_blank">mastodon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Myrmidon" target="_blank">Myrmidon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=radon" target="_blank">radon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tendon" target="_blank">tendon</a></li>
+<ul id="words">
+<li>abandon</li>
+<li>cordon</li>
+<li>cotyledon</li>
+<li>don</li>
+<li>mastodon</li>
+<li>Myrmidon</li>
+<li>radon</li>
+<li>tendon</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="73" data-circle-pattern="_don">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "abandon cordon cotyledon don, mastodon Myrmidon radon tendon";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

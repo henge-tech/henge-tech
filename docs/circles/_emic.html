@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _emic</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#96 _emic
+<h2>#96 _emic</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=academic" target="_blank">academic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anemic" target="_blank">anemic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=endemic" target="_blank">endemic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=epidemic" target="_blank">epidemic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=epistemic" target="_blank">epistemic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leukemic" target="_blank">leukemic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=morphemic" target="_blank">morphemic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pandemic" target="_blank">pandemic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=phonemic" target="_blank">phonemic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=polemic" target="_blank">polemic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=systemic" target="_blank">systemic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=totemic" target="_blank">totemic</a></li>
+<ul id="words">
+<li>academic</li>
+<li>anemic</li>
+<li>endemic</li>
+<li>epidemic</li>
+<li>epistemic</li>
+<li>leukemic</li>
+<li>morphemic</li>
+<li>pandemic</li>
+<li>phonemic</li>
+<li>polemic</li>
+<li>systemic</li>
+<li>totemic</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="96" data-circle-pattern="_emic">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "academic anemic endemic, epidemic epistemic leukemic, morphemic pandemic phonemic, polemic systemic totemic";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: t_ent</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#946 t_ent
+<h2>#946 t_ent</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tangent" target="_blank">tangent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=temperament" target="_blank">temperament</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tenement" target="_blank">tenement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=testament" target="_blank">testament</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=torment" target="_blank">torment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=torrent" target="_blank">torrent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transcendent" target="_blank">transcendent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transient" target="_blank">transient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=translucent" target="_blank">translucent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=treatment" target="_blank">treatment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trident" target="_blank">trident</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=turbulent" target="_blank">turbulent</a></li>
+<ul id="words">
+<li>tangent</li>
+<li>temperament</li>
+<li>tenement</li>
+<li>testament</li>
+<li>torment</li>
+<li>torrent</li>
+<li>transcendent</li>
+<li>transient</li>
+<li>translucent</li>
+<li>treatment</li>
+<li>trident</li>
+<li>turbulent</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="946" data-circle-pattern="t_ent">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "tangent temperament tenement, testament torment torrent, transcendent transient translucent, treatment trident turbulent";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dau_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#565 dau_
+<h2>#565 dau_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daub" target="_blank">daub</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dauber" target="_blank">dauber</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daughter" target="_blank">daughter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daughterly" target="_blank">daughterly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daunt" target="_blank">daunt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dauntless" target="_blank">dauntless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dauphin" target="_blank">dauphin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dauphine" target="_blank">dauphine</a></li>
+<ul id="words">
+<li>daub</li>
+<li>dauber</li>
+<li>daughter</li>
+<li>daughterly</li>
+<li>daunt</li>
+<li>dauntless</li>
+<li>dauphin</li>
+<li>dauphine</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="565" data-circle-pattern="dau_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "daub dauber daughter daughterly, daunt dauntless dauphin dauphine";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

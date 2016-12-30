@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _set</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#297 _set
+<h2>#297 _set</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=asset" target="_blank">asset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=basset" target="_blank">basset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beset" target="_blank">beset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=closet" target="_blank">closet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gusset" target="_blank">gusset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inset" target="_blank">inset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marmoset" target="_blank">marmoset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=offset" target="_blank">offset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=onset" target="_blank">onset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outset" target="_blank">outset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=posset" target="_blank">posset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=russet" target="_blank">russet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=somerset" target="_blank">somerset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subset" target="_blank">subset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=typeset" target="_blank">typeset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=upset" target="_blank">upset</a></li>
+<ul id="words">
+<li>asset</li>
+<li>basset</li>
+<li>beset</li>
+<li>closet</li>
+<li>gusset</li>
+<li>inset</li>
+<li>marmoset</li>
+<li>offset</li>
+<li>onset</li>
+<li>outset</li>
+<li>posset</li>
+<li>russet</li>
+<li>somerset</li>
+<li>subset</li>
+<li>typeset</li>
+<li>upset</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="297" data-circle-pattern="_set">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "asset basset beset closet, gusset inset marmoset offset, onset outset posset russet, somerset subset typeset upset";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

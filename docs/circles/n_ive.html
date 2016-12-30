@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: n_ive</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#781 n_ive
+<h2>#781 n_ive</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naive" target="_blank">naive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=narrative" target="_blank">narrative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=native" target="_blank">native</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=negative" target="_blank">negative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neoconservative" target="_blank">neoconservative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nominative" target="_blank">nominative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noncompetitive" target="_blank">noncompetitive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noninvasive" target="_blank">noninvasive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonnative" target="_blank">nonnative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=normative" target="_blank">normative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nosedive" target="_blank">nosedive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nutritive" target="_blank">nutritive</a></li>
+<ul id="words">
+<li>naive</li>
+<li>narrative</li>
+<li>native</li>
+<li>negative</li>
+<li>neoconservative</li>
+<li>nominative</li>
+<li>noncompetitive</li>
+<li>noninvasive</li>
+<li>nonnative</li>
+<li>normative</li>
+<li>nosedive</li>
+<li>nutritive</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="781" data-circle-pattern="n_ive">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "naive narrative native, negative neoconservative nominative, noncompetitive noninvasive nonnative, normative nosedive nutritive";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

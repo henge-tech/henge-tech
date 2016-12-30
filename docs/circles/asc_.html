@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: asc_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#421 asc_
+<h2>#421 asc_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascend" target="_blank">ascend</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascendancy" target="_blank">ascendancy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascendant" target="_blank">ascendant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascension" target="_blank">ascension</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascent" target="_blank">ascent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascertain" target="_blank">ascertain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascetic" target="_blank">ascetic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=asceticism" target="_blank">asceticism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascot" target="_blank">ascot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascribable" target="_blank">ascribable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascribe" target="_blank">ascribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascription" target="_blank">ascription</a></li>
+<ul id="words">
+<li>ascend</li>
+<li>ascendancy</li>
+<li>ascendant</li>
+<li>ascension</li>
+<li>ascent</li>
+<li>ascertain</li>
+<li>ascetic</li>
+<li>asceticism</li>
+<li>ascot</li>
+<li>ascribable</li>
+<li>ascribe</li>
+<li>ascription</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="421" data-circle-pattern="asc_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ascend ascendancy ascendant, ascension ascent ascertain, ascetic asceticism ascot, ascribable ascribe ascription";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: t_se</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#951 t_se
+<h2>#951 t_se</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=teahouse" target="_blank">teahouse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tease" target="_blank">tease</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tense" target="_blank">tense</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=terse" target="_blank">terse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=titmouse" target="_blank">titmouse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tortoise" target="_blank">tortoise</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transpose" target="_blank">transpose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transverse" target="_blank">transverse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=traverse" target="_blank">traverse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=treatise" target="_blank">treatise</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tsetse" target="_blank">tsetse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=turquoise" target="_blank">turquoise</a></li>
+<ul id="words">
+<li>teahouse</li>
+<li>tease</li>
+<li>tense</li>
+<li>terse</li>
+<li>titmouse</li>
+<li>tortoise</li>
+<li>transpose</li>
+<li>transverse</li>
+<li>traverse</li>
+<li>treatise</li>
+<li>tsetse</li>
+<li>turquoise</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="951" data-circle-pattern="t_se">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "teahouse tease tense, terse titmouse tortoise, transpose transverse traverse, treatise tsetse turquoise";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

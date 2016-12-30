@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ife</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#136 _ife
+<h2>#136 _ife</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=afterlife" target="_blank">afterlife</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fife" target="_blank">fife</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fishwife" target="_blank">fishwife</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=housewife" target="_blank">housewife</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=knife" target="_blank">knife</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=midwife" target="_blank">midwife</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nightlife" target="_blank">nightlife</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penknife" target="_blank">penknife</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rife" target="_blank">rife</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strife" target="_blank">strife</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wife" target="_blank">wife</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wildlife" target="_blank">wildlife</a></li>
+<ul id="words">
+<li>afterlife</li>
+<li>fife</li>
+<li>fishwife</li>
+<li>housewife</li>
+<li>knife</li>
+<li>midwife</li>
+<li>nightlife</li>
+<li>penknife</li>
+<li>rife</li>
+<li>strife</li>
+<li>wife</li>
+<li>wildlife</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="136" data-circle-pattern="_ife">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "afterlife fife fishwife, housewife knife midwife, nightlife penknife rife, strife wife wildlife";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

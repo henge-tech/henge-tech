@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: p_ment</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#818 p_ment
+<h2>#818 p_ment</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parchment" target="_blank">parchment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parliament" target="_blank">parliament</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pavement" target="_blank">pavement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pediment" target="_blank">pediment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pigment" target="_blank">pigment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=placement" target="_blank">placement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=postponement" target="_blank">postponement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=predicament" target="_blank">predicament</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=procurement" target="_blank">procurement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pronouncement" target="_blank">pronouncement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=punishment" target="_blank">punishment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=puzzlement" target="_blank">puzzlement</a></li>
+<ul id="words">
+<li>parchment</li>
+<li>parliament</li>
+<li>pavement</li>
+<li>pediment</li>
+<li>pigment</li>
+<li>placement</li>
+<li>postponement</li>
+<li>predicament</li>
+<li>procurement</li>
+<li>pronouncement</li>
+<li>punishment</li>
+<li>puzzlement</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="818" data-circle-pattern="p_ment">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "parchment parliament pavement, pediment pigment placement, postponement predicament procurement, pronouncement punishment puzzlement";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

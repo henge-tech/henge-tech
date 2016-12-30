@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: s_ery</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#896 s_ery
+<h2>#896 s_ery</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saddlery" target="_blank">saddlery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savagery" target="_blank">savagery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scenery" target="_blank">scenery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shrubbery" target="_blank">shrubbery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=silvery" target="_blank">silvery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slavery" target="_blank">slavery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slippery" target="_blank">slippery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snobbery" target="_blank">snobbery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=soldiery" target="_blank">soldiery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sorcery" target="_blank">sorcery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=summery" target="_blank">summery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surgery" target="_blank">surgery</a></li>
+<ul id="words">
+<li>saddlery</li>
+<li>savagery</li>
+<li>scenery</li>
+<li>shrubbery</li>
+<li>silvery</li>
+<li>slavery</li>
+<li>slippery</li>
+<li>snobbery</li>
+<li>soldiery</li>
+<li>sorcery</li>
+<li>summery</li>
+<li>surgery</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="896" data-circle-pattern="s_ery">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "saddlery savagery scenery, shrubbery silvery slavery, slippery snobbery soldiery, sorcery summery surgery";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

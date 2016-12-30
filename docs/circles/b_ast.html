@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_ast</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#426 b_ast
+<h2>#426 b_ast</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ballast" target="_blank">ballast</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beast" target="_blank">beast</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blast" target="_blank">blast</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boast" target="_blank">boast</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bombast" target="_blank">bombast</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breakfast" target="_blank">breakfast</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breast" target="_blank">breast</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broadcast" target="_blank">broadcast</a></li>
+<ul id="words">
+<li>ballast</li>
+<li>beast</li>
+<li>blast</li>
+<li>boast</li>
+<li>bombast</li>
+<li>breakfast</li>
+<li>breast</li>
+<li>broadcast</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="426" data-circle-pattern="b_ast">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ballast beast blast boast, bombast breakfast breast broadcast";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

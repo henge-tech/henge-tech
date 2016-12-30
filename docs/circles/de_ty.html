@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: de_ty</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#572 de_ty
+<h2>#572 de_ty</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=debility" target="_blank">debility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=declivity" target="_blank">declivity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deformity" target="_blank">deformity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deity" target="_blank">deity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=density" target="_blank">density</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depravity" target="_blank">depravity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deputy" target="_blank">deputy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dexterity" target="_blank">dexterity</a></li>
+<ul id="words">
+<li>debility</li>
+<li>declivity</li>
+<li>deformity</li>
+<li>deity</li>
+<li>density</li>
+<li>depravity</li>
+<li>deputy</li>
+<li>dexterity</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="572" data-circle-pattern="de_ty">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "debility declivity deformity deity, density depravity deputy dexterity";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

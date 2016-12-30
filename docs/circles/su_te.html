@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: su_te</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#940 su_te
+<h2>#940 su_te</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subjugate" target="_blank">subjugate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sublimate" target="_blank">sublimate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subordinate" target="_blank">subordinate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=substantiate" target="_blank">substantiate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=substitute" target="_blank">substitute</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffocate" target="_blank">suffocate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffragette" target="_blank">suffragette</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suite" target="_blank">suite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sulfate" target="_blank">sulfate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sultanate" target="_blank">sultanate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suppurate" target="_blank">suppurate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surrogate" target="_blank">surrogate</a></li>
+<ul id="words">
+<li>subjugate</li>
+<li>sublimate</li>
+<li>subordinate</li>
+<li>substantiate</li>
+<li>substitute</li>
+<li>suffocate</li>
+<li>suffragette</li>
+<li>suite</li>
+<li>sulfate</li>
+<li>sultanate</li>
+<li>suppurate</li>
+<li>surrogate</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="940" data-circle-pattern="su_te">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "subjugate sublimate subordinate, substantiate substitute suffocate, suffragette suite sulfate, sultanate suppurate surrogate";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

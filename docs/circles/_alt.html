@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _alt</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#21 _alt
+<h2>#21 _alt</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alt." target="_blank">alt.</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=asphalt" target="_blank">asphalt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=basalt" target="_blank">basalt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cobalt" target="_blank">cobalt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dealt" target="_blank">dealt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exalt" target="_blank">exalt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gestalt" target="_blank">gestalt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=halt" target="_blank">halt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=malt" target="_blank">malt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salt" target="_blank">salt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shalt" target="_blank">shalt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=smalt" target="_blank">smalt</a></li>
+<ul id="words">
+<li>alt.</li>
+<li>asphalt</li>
+<li>basalt</li>
+<li>cobalt</li>
+<li>dealt</li>
+<li>exalt</li>
+<li>gestalt</li>
+<li>halt</li>
+<li>malt</li>
+<li>salt</li>
+<li>shalt</li>
+<li>smalt</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="21" data-circle-pattern="_alt">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "alt. asphalt basalt, cobalt dealt exalt, gestalt halt malt, salt shalt smalt";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

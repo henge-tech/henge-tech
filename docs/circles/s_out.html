@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: s_out</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#906 s_out
+<h2>#906 s_out</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scout" target="_blank">scout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sellout" target="_blank">sellout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shakeout" target="_blank">shakeout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shootout" target="_blank">shootout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shutout" target="_blank">shutout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snout" target="_blank">snout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spout" target="_blank">spout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sprout" target="_blank">sprout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stakeout" target="_blank">stakeout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=standout" target="_blank">standout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stout" target="_blank">stout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strikeout" target="_blank">strikeout</a></li>
+<ul id="words">
+<li>scout</li>
+<li>sellout</li>
+<li>shakeout</li>
+<li>shootout</li>
+<li>shutout</li>
+<li>snout</li>
+<li>spout</li>
+<li>sprout</li>
+<li>stakeout</li>
+<li>standout</li>
+<li>stout</li>
+<li>strikeout</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="906" data-circle-pattern="s_out">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "scout sellout shakeout, shootout shutout snout, spout sprout stakeout, standout stout strikeout";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

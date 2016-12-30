@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: v_m</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#973 v_m
+<h2>#973 v_m</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vacuum" target="_blank">vacuum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vanadium" target="_blank">vanadium</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vandalism" target="_blank">vandalism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vegetarianism" target="_blank">vegetarianism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vellum" target="_blank">vellum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=venom" target="_blank">venom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ventriloquism" target="_blank">ventriloquism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verbatim" target="_blank">verbatim</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=victim" target="_blank">victim</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vim" target="_blank">vim</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=voluntarism" target="_blank">voluntarism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=voyeurism" target="_blank">voyeurism</a></li>
+<ul id="words">
+<li>vacuum</li>
+<li>vanadium</li>
+<li>vandalism</li>
+<li>vegetarianism</li>
+<li>vellum</li>
+<li>venom</li>
+<li>ventriloquism</li>
+<li>verbatim</li>
+<li>victim</li>
+<li>vim</li>
+<li>voluntarism</li>
+<li>voyeurism</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="973" data-circle-pattern="v_m">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "vacuum vanadium vandalism, vegetarianism vellum venom, ventriloquism verbatim victim, vim voluntarism voyeurism";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

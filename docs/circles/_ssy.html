@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ssy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#308 _ssy
+<h2>#308 _ssy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bossy" target="_blank">bossy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brassy" target="_blank">brassy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=classy" target="_blank">classy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dressy" target="_blank">dressy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embassy" target="_blank">embassy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flossy" target="_blank">flossy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fussy" target="_blank">fussy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gassy" target="_blank">gassy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glassy" target="_blank">glassy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glossy" target="_blank">glossy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grassy" target="_blank">grassy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gussy" target="_blank">gussy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hussy" target="_blank">hussy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=messy" target="_blank">messy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=missy" target="_blank">missy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mossy" target="_blank">mossy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prissy" target="_blank">prissy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pussy" target="_blank">pussy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sassy" target="_blank">sassy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sissy" target="_blank">sissy</a></li>
+<ul id="words">
+<li>bossy</li>
+<li>brassy</li>
+<li>classy</li>
+<li>dressy</li>
+<li>embassy</li>
+<li>flossy</li>
+<li>fussy</li>
+<li>gassy</li>
+<li>glassy</li>
+<li>glossy</li>
+<li>grassy</li>
+<li>gussy</li>
+<li>hussy</li>
+<li>messy</li>
+<li>missy</li>
+<li>mossy</li>
+<li>prissy</li>
+<li>pussy</li>
+<li>sassy</li>
+<li>sissy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="308" data-circle-pattern="_ssy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bossy brassy classy dressy embassy, flossy fussy gassy glassy glossy, grassy gussy hussy messy missy, mossy prissy pussy sassy sissy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

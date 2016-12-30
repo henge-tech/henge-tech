@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ag_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#404 ag_e
+<h2>#404 ag_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=agape" target="_blank">agape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=agate" target="_blank">agate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=agave" target="_blank">agave</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=agglomerate" target="_blank">agglomerate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=agglutinative" target="_blank">agglutinative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aggrandize" target="_blank">aggrandize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aggravate" target="_blank">aggravate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aggregate" target="_blank">aggregate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=agile" target="_blank">agile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=agitate" target="_blank">agitate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=agreeable" target="_blank">agreeable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ague" target="_blank">ague</a></li>
+<ul id="words">
+<li>agape</li>
+<li>agate</li>
+<li>agave</li>
+<li>agglomerate</li>
+<li>agglutinative</li>
+<li>aggrandize</li>
+<li>aggravate</li>
+<li>aggregate</li>
+<li>agile</li>
+<li>agitate</li>
+<li>agreeable</li>
+<li>ague</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="404" data-circle-pattern="ag_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "agape agate agave, agglomerate agglutinative aggrandize, aggravate aggregate agile, agitate agreeable ague";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

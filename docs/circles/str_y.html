@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: str_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#937 str_y
+<h2>#937 str_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=straightaway" target="_blank">straightaway</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=straightway" target="_blank">straightway</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strathspey" target="_blank">strathspey</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stray" target="_blank">stray</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=streaky" target="_blank">streaky</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strenuously" target="_blank">strenuously</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stretchy" target="_blank">stretchy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strictly" target="_blank">strictly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strikingly" target="_blank">strikingly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stringency" target="_blank">stringency</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stringy" target="_blank">stringy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=structurally" target="_blank">structurally</a></li>
+<ul id="words">
+<li>straightaway</li>
+<li>straightway</li>
+<li>strathspey</li>
+<li>stray</li>
+<li>streaky</li>
+<li>strenuously</li>
+<li>stretchy</li>
+<li>strictly</li>
+<li>strikingly</li>
+<li>stringency</li>
+<li>stringy</li>
+<li>structurally</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="937" data-circle-pattern="str_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "straightaway straightway strathspey, stray streaky strenuously, stretchy strictly strikingly, stringency stringy structurally";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

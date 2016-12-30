@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ap_te</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#414 ap_te
+<h2>#414 ap_te</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Aphrodite" target="_blank">Aphrodite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apostate" target="_blank">apostate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appellate" target="_blank">appellate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appetite" target="_blank">appetite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apposite" target="_blank">apposite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appreciate" target="_blank">appreciate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appropriate" target="_blank">appropriate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=approximate" target="_blank">approximate</a></li>
+<ul id="words">
+<li>Aphrodite</li>
+<li>apostate</li>
+<li>appellate</li>
+<li>appetite</li>
+<li>apposite</li>
+<li>appreciate</li>
+<li>appropriate</li>
+<li>approximate</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="414" data-circle-pattern="ap_te">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "Aphrodite apostate appellate appetite, apposite appreciate appropriate approximate";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

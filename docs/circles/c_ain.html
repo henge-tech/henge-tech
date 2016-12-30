@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: c_ain</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#463 c_ain
+<h2>#463 c_ain</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Cain" target="_blank">Cain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=captain" target="_blank">captain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=certain" target="_blank">certain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chamberlain" target="_blank">chamberlain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chaplain" target="_blank">chaplain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chieftain" target="_blank">chieftain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chilblain" target="_blank">chilblain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complain" target="_blank">complain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constrain" target="_blank">constrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contain" target="_blank">contain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coxswain" target="_blank">coxswain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=curtain" target="_blank">curtain</a></li>
+<ul id="words">
+<li>Cain</li>
+<li>captain</li>
+<li>certain</li>
+<li>chamberlain</li>
+<li>chaplain</li>
+<li>chieftain</li>
+<li>chilblain</li>
+<li>complain</li>
+<li>constrain</li>
+<li>contain</li>
+<li>coxswain</li>
+<li>curtain</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="463" data-circle-pattern="c_ain">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "Cain captain certain, chamberlain chaplain chieftain, chilblain complain constrain, contain coxswain curtain";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

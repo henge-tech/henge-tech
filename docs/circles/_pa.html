@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _pa</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#240 _pa
+<h2>#240 _pa</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cuppa" target="_blank">cuppa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dopa" target="_blank">dopa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Europa" target="_blank">Europa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grandpa" target="_blank">grandpa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grappa" target="_blank">grappa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kappa" target="_blank">kappa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pa" target="_blank">pa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=papa" target="_blank">papa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=poppa" target="_blank">poppa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pupa" target="_blank">pupa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spa" target="_blank">spa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stupa" target="_blank">stupa</a></li>
+<ul id="words">
+<li>cuppa</li>
+<li>dopa</li>
+<li>Europa</li>
+<li>grandpa</li>
+<li>grappa</li>
+<li>kappa</li>
+<li>pa</li>
+<li>papa</li>
+<li>poppa</li>
+<li>pupa</li>
+<li>spa</li>
+<li>stupa</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="240" data-circle-pattern="_pa">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "cuppa dopa Europa, grandpa grappa kappa, pa papa poppa, pupa spa stupa";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

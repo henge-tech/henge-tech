@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: re_se</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#875 re_se
+<h2>#875 re_se</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recluse" target="_blank">recluse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recompense" target="_blank">recompense</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recourse" target="_blank">recourse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rehearse" target="_blank">rehearse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reimburse" target="_blank">reimburse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=relapse" target="_blank">relapse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remorse" target="_blank">remorse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rephrase" target="_blank">rephrase</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repose" target="_blank">repose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reprise" target="_blank">reprise</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repulse" target="_blank">repulse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revise" target="_blank">revise</a></li>
+<ul id="words">
+<li>recluse</li>
+<li>recompense</li>
+<li>recourse</li>
+<li>rehearse</li>
+<li>reimburse</li>
+<li>relapse</li>
+<li>remorse</li>
+<li>rephrase</li>
+<li>repose</li>
+<li>reprise</li>
+<li>repulse</li>
+<li>revise</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="875" data-circle-pattern="re_se">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "recluse recompense recourse, rehearse reimburse relapse, remorse rephrase repose, reprise repulse revise";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dis_ve</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#602 dis_ve
+<h2>#602 dis_ve</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disapprove" target="_blank">disapprove</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discriminative" target="_blank">discriminative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discursive" target="_blank">discursive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disincentive" target="_blank">disincentive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disjunctive" target="_blank">disjunctive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismissive" target="_blank">dismissive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disprove" target="_blank">disprove</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disruptive" target="_blank">disruptive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissociative" target="_blank">dissociative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissolve" target="_blank">dissolve</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distinctive" target="_blank">distinctive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distributive" target="_blank">distributive</a></li>
+<ul id="words">
+<li>disapprove</li>
+<li>discriminative</li>
+<li>discursive</li>
+<li>disincentive</li>
+<li>disjunctive</li>
+<li>dismissive</li>
+<li>disprove</li>
+<li>disruptive</li>
+<li>dissociative</li>
+<li>dissolve</li>
+<li>distinctive</li>
+<li>distributive</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="602" data-circle-pattern="dis_ve">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "disapprove discriminative discursive, disincentive disjunctive dismissive, disprove disruptive dissociative, dissolve distinctive distributive";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

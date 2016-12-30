@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: mu_r</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#777 mu_r
+<h2>#777 mu_r</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Muenster" target="_blank">Muenster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muffler" target="_blank">muffler</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mugger" target="_blank">mugger</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multicellular" target="_blank">multicellular</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiplexer" target="_blank">multiplexer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiplier" target="_blank">multiplier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=murder" target="_blank">murder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=murmur" target="_blank">murmur</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muscular" target="_blank">muscular</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=musketeer" target="_blank">musketeer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muster" target="_blank">muster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutter" target="_blank">mutter</a></li>
+<ul id="words">
+<li>Muenster</li>
+<li>muffler</li>
+<li>mugger</li>
+<li>multicellular</li>
+<li>multiplexer</li>
+<li>multiplier</li>
+<li>murder</li>
+<li>murmur</li>
+<li>muscular</li>
+<li>musketeer</li>
+<li>muster</li>
+<li>mutter</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="777" data-circle-pattern="mu_r">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "Muenster muffler mugger, multicellular multiplexer multiplier, murder murmur muscular, musketeer muster mutter";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

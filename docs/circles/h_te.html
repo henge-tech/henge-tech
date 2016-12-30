@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: h_te</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#692 h_te
+<h2>#692 h_te</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hallucinate" target="_blank">hallucinate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haste" target="_blank">haste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hate" target="_blank">hate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=helpmate" target="_blank">helpmate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hermaphrodite" target="_blank">hermaphrodite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hesitate" target="_blank">hesitate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hibernate" target="_blank">hibernate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hirsute" target="_blank">hirsute</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=housemate" target="_blank">housemate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=humiliate" target="_blank">humiliate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydrate" target="_blank">hydrate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypocrite" target="_blank">hypocrite</a></li>
+<ul id="words">
+<li>hallucinate</li>
+<li>haste</li>
+<li>hate</li>
+<li>helpmate</li>
+<li>hermaphrodite</li>
+<li>hesitate</li>
+<li>hibernate</li>
+<li>hirsute</li>
+<li>housemate</li>
+<li>humiliate</li>
+<li>hydrate</li>
+<li>hypocrite</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="692" data-circle-pattern="h_te">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "hallucinate haste hate, helpmate hermaphrodite hesitate, hibernate hirsute housemate, humiliate hydrate hypocrite";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

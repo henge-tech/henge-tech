@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: d_in</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#551 d_in
+<h2>#551 d_in</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deerskin" target="_blank">deerskin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dentin" target="_blank">dentin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detain" target="_blank">detain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detrain" target="_blank">detrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=din" target="_blank">din</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dioxin" target="_blank">dioxin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disdain" target="_blank">disdain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distrain" target="_blank">distrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dobbin" target="_blank">dobbin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doeskin" target="_blank">doeskin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=domain" target="_blank">domain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drain" target="_blank">drain</a></li>
+<ul id="words">
+<li>deerskin</li>
+<li>dentin</li>
+<li>detain</li>
+<li>detrain</li>
+<li>din</li>
+<li>dioxin</li>
+<li>disdain</li>
+<li>distrain</li>
+<li>dobbin</li>
+<li>doeskin</li>
+<li>domain</li>
+<li>drain</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="551" data-circle-pattern="d_in">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "deerskin dentin detain, detrain din dioxin, disdain distrain dobbin, doeskin domain drain";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

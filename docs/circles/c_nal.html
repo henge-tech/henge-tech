@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: c_nal</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#478 c_nal
+<h2>#478 c_nal</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=canal" target="_blank">canal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cantonal" target="_blank">cantonal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cardinal" target="_blank">cardinal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carnal" target="_blank">carnal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cerebrospinal" target="_blank">cerebrospinal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coeducational" target="_blank">coeducational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=communal" target="_blank">communal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compositional" target="_blank">compositional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=computational" target="_blank">computational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concessional" target="_blank">concessional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confessional" target="_blank">confessional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confrontational" target="_blank">confrontational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=congregational" target="_blank">congregational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=congressional" target="_blank">congressional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constitutional" target="_blank">constitutional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constructional" target="_blank">constructional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conventional" target="_blank">conventional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conversational" target="_blank">conversational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coronal" target="_blank">coronal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=correctional" target="_blank">correctional</a></li>
+<ul id="words">
+<li>canal</li>
+<li>cantonal</li>
+<li>cardinal</li>
+<li>carnal</li>
+<li>cerebrospinal</li>
+<li>coeducational</li>
+<li>communal</li>
+<li>compositional</li>
+<li>computational</li>
+<li>concessional</li>
+<li>confessional</li>
+<li>confrontational</li>
+<li>congregational</li>
+<li>congressional</li>
+<li>constitutional</li>
+<li>constructional</li>
+<li>conventional</li>
+<li>conversational</li>
+<li>coronal</li>
+<li>correctional</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="478" data-circle-pattern="c_nal">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "canal cantonal cardinal carnal cerebrospinal, coeducational communal compositional computational concessional, confessional confrontational congregational congressional constitutional, constructional conventional conversational coronal correctional";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: pr_ry</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#846 pr_ry
+<h2>#846 pr_ry</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precautionary" target="_blank">precautionary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=predatory" target="_blank">predatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prefatory" target="_blank">prefatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prehistory" target="_blank">prehistory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preliminary" target="_blank">preliminary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preparatory" target="_blank">preparatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=presbytery" target="_blank">presbytery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=priory" target="_blank">priory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probationary" target="_blank">probationary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=promissory" target="_blank">promissory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=promontory" target="_blank">promontory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proprietary" target="_blank">proprietary</a></li>
+<ul id="words">
+<li>precautionary</li>
+<li>predatory</li>
+<li>prefatory</li>
+<li>prehistory</li>
+<li>preliminary</li>
+<li>preparatory</li>
+<li>presbytery</li>
+<li>priory</li>
+<li>probationary</li>
+<li>promissory</li>
+<li>promontory</li>
+<li>proprietary</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="846" data-circle-pattern="pr_ry">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "precautionary predatory prefatory, prehistory preliminary preparatory, presbytery priory probationary, promissory promontory proprietary";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

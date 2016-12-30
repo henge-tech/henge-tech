@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _val</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#358 _val
+<h2>#358 _val</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adjectival" target="_blank">adjectival</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=approval" target="_blank">approval</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=archival" target="_blank">archival</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=larval" target="_blank">larval</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=medieval" target="_blank">medieval</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naval" target="_blank">naval</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oval" target="_blank">oval</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=primeval" target="_blank">primeval</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=removal" target="_blank">removal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retrieval" target="_blank">retrieval</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revival" target="_blank">revival</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=upheaval" target="_blank">upheaval</a></li>
+<ul id="words">
+<li>adjectival</li>
+<li>approval</li>
+<li>archival</li>
+<li>larval</li>
+<li>medieval</li>
+<li>naval</li>
+<li>oval</li>
+<li>primeval</li>
+<li>removal</li>
+<li>retrieval</li>
+<li>revival</li>
+<li>upheaval</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="358" data-circle-pattern="_val">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "adjectival approval archival, larval medieval naval, oval primeval removal, retrieval revival upheaval";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

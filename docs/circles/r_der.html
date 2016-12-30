@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: r_der</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#862 r_der
+<h2>#862 r_der</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=raider" target="_blank">raider</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reconsider" target="_blank">reconsider</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recorder" target="_blank">recorder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rejoinder" target="_blank">rejoinder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remainder" target="_blank">remainder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reminder" target="_blank">reminder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=render" target="_blank">render</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reorder" target="_blank">reorder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rider" target="_blank">rider</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ringleader" target="_blank">ringleader</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rounder" target="_blank">rounder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rudder" target="_blank">rudder</a></li>
+<ul id="words">
+<li>raider</li>
+<li>reconsider</li>
+<li>recorder</li>
+<li>rejoinder</li>
+<li>remainder</li>
+<li>reminder</li>
+<li>render</li>
+<li>reorder</li>
+<li>rider</li>
+<li>ringleader</li>
+<li>rounder</li>
+<li>rudder</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="862" data-circle-pattern="r_der">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "raider reconsider recorder, rejoinder remainder reminder, render reorder rider, ringleader rounder rudder";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

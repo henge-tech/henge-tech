@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: gu_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#682 gu_t
+<h2>#682 gu_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guest" target="_blank">guest</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guillemot" target="_blank">guillemot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guilt" target="_blank">guilt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guitarist" target="_blank">guitarist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gullet" target="_blank">gullet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gunboat" target="_blank">gunboat</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gunfight" target="_blank">gunfight</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gunpoint" target="_blank">gunpoint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gunshot" target="_blank">gunshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gusset" target="_blank">gusset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gust" target="_blank">gust</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gut" target="_blank">gut</a></li>
+<ul id="words">
+<li>guest</li>
+<li>guillemot</li>
+<li>guilt</li>
+<li>guitarist</li>
+<li>gullet</li>
+<li>gunboat</li>
+<li>gunfight</li>
+<li>gunpoint</li>
+<li>gunshot</li>
+<li>gusset</li>
+<li>gust</li>
+<li>gut</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="682" data-circle-pattern="gu_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "guest guillemot guilt, guitarist gullet gunboat, gunfight gunpoint gunshot, gusset gust gut";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

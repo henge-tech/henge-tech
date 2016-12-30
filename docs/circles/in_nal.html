@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: in_nal</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#708 in_nal
+<h2>#708 in_nal</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infernal" target="_blank">infernal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=informational" target="_blank">informational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inguinal" target="_blank">inguinal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inspirational" target="_blank">inspirational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=institutional" target="_blank">institutional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=instructional" target="_blank">instructional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intentional" target="_blank">intentional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interdenominational" target="_blank">interdenominational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=internal" target="_blank">internal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interpersonal" target="_blank">interpersonal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intestinal" target="_blank">intestinal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=invitational" target="_blank">invitational</a></li>
+<ul id="words">
+<li>infernal</li>
+<li>informational</li>
+<li>inguinal</li>
+<li>inspirational</li>
+<li>institutional</li>
+<li>instructional</li>
+<li>intentional</li>
+<li>interdenominational</li>
+<li>internal</li>
+<li>interpersonal</li>
+<li>intestinal</li>
+<li>invitational</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="708" data-circle-pattern="in_nal">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "infernal informational inguinal, inspirational institutional instructional, intentional interdenominational internal, interpersonal intestinal invitational";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

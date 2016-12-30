@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _mist</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#184 _mist
+<h2>#184 _mist</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=agronomist" target="_blank">agronomist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alarmist" target="_blank">alarmist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alchemist" target="_blank">alchemist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chemist" target="_blank">chemist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conformist" target="_blank">conformist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=economist" target="_blank">economist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extremist" target="_blank">extremist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonconformist" target="_blank">nonconformist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=optimist" target="_blank">optimist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pessimist" target="_blank">pessimist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=psalmist" target="_blank">psalmist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reformist" target="_blank">reformist</a></li>
+<ul id="words">
+<li>agronomist</li>
+<li>alarmist</li>
+<li>alchemist</li>
+<li>chemist</li>
+<li>conformist</li>
+<li>economist</li>
+<li>extremist</li>
+<li>nonconformist</li>
+<li>optimist</li>
+<li>pessimist</li>
+<li>psalmist</li>
+<li>reformist</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="184" data-circle-pattern="_mist">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "agronomist alarmist alchemist, chemist conformist economist, extremist nonconformist optimist, pessimist psalmist reformist";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

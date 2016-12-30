@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ma_al</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#758 ma_al
+<h2>#758 ma_al</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=madrigal" target="_blank">madrigal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magisterial" target="_blank">magisterial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mammal" target="_blank">mammal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=managerial" target="_blank">managerial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maniacal" target="_blank">maniacal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marginal" target="_blank">marginal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marital" target="_blank">marital</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marshal" target="_blank">marshal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=martial" target="_blank">martial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maternal" target="_blank">maternal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=matrimonial" target="_blank">matrimonial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mayoral" target="_blank">mayoral</a></li>
+<ul id="words">
+<li>madrigal</li>
+<li>magisterial</li>
+<li>mammal</li>
+<li>managerial</li>
+<li>maniacal</li>
+<li>marginal</li>
+<li>marital</li>
+<li>marshal</li>
+<li>martial</li>
+<li>maternal</li>
+<li>matrimonial</li>
+<li>mayoral</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="758" data-circle-pattern="ma_al">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "madrigal magisterial mammal, managerial maniacal marginal, marital marshal martial, maternal matrimonial mayoral";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dep_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#582 dep_n
+<h2>#582 dep_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depersonalization" target="_blank">depersonalization</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depiction" target="_blank">depiction</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depletion" target="_blank">depletion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depopulation" target="_blank">depopulation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deportation" target="_blank">deportation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deposition" target="_blank">deposition</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deprecation" target="_blank">deprecation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depreciation" target="_blank">depreciation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depredation" target="_blank">depredation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depression" target="_blank">depression</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deprivation" target="_blank">deprivation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deputation" target="_blank">deputation</a></li>
+<ul id="words">
+<li>depersonalization</li>
+<li>depiction</li>
+<li>depletion</li>
+<li>depopulation</li>
+<li>deportation</li>
+<li>deposition</li>
+<li>deprecation</li>
+<li>depreciation</li>
+<li>depredation</li>
+<li>depression</li>
+<li>deprivation</li>
+<li>deputation</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="582" data-circle-pattern="dep_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "depersonalization depiction depletion, depopulation deportation deposition, deprecation depreciation depredation, depression deprivation deputation";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

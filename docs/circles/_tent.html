@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _tent</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#318 _tent
+<h2>#318 _tent</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=competent" target="_blank">competent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consistent" target="_blank">consistent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discontent" target="_blank">discontent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impotent" target="_blank">impotent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inadvertent" target="_blank">inadvertent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incompetent" target="_blank">incompetent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insistent" target="_blank">insistent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intent" target="_blank">intent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intermittent" target="_blank">intermittent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=latent" target="_blank">latent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=malcontent" target="_blank">malcontent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=omnipotent" target="_blank">omnipotent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penitent" target="_blank">penitent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=portent" target="_blank">portent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=potent" target="_blank">potent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stent" target="_blank">stent</a></li>
+<ul id="words">
+<li>competent</li>
+<li>consistent</li>
+<li>discontent</li>
+<li>impotent</li>
+<li>inadvertent</li>
+<li>incompetent</li>
+<li>insistent</li>
+<li>intent</li>
+<li>intermittent</li>
+<li>latent</li>
+<li>malcontent</li>
+<li>omnipotent</li>
+<li>penitent</li>
+<li>portent</li>
+<li>potent</li>
+<li>stent</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="318" data-circle-pattern="_tent">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "competent consistent discontent impotent, inadvertent incompetent insistent intent, intermittent latent malcontent omnipotent, penitent portent potent stent";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

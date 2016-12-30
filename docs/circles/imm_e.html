@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: imm_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#705 imm_e
+<h2>#705 imm_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immaculate" target="_blank">immaculate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immature" target="_blank">immature</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immeasurable" target="_blank">immeasurable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immediate" target="_blank">immediate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immense" target="_blank">immense</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immerse" target="_blank">immerse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immigrate" target="_blank">immigrate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immobile" target="_blank">immobile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immovable" target="_blank">immovable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immune" target="_blank">immune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immunize" target="_blank">immunize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immutable" target="_blank">immutable</a></li>
+<ul id="words">
+<li>immaculate</li>
+<li>immature</li>
+<li>immeasurable</li>
+<li>immediate</li>
+<li>immense</li>
+<li>immerse</li>
+<li>immigrate</li>
+<li>immobile</li>
+<li>immovable</li>
+<li>immune</li>
+<li>immunize</li>
+<li>immutable</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="705" data-circle-pattern="imm_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "immaculate immature immeasurable, immediate immense immerse, immigrate immobile immovable, immune immunize immutable";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

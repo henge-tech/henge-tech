@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: d_ay</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#548 d_ay
+<h2>#548 d_ay</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daresay" target="_blank">daresay</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decay" target="_blank">decay</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defray" target="_blank">defray</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delay" target="_blank">delay</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disarray" target="_blank">disarray</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismay" target="_blank">dismay</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=display" target="_blank">display</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Doomsday" target="_blank">Doomsday</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doorway" target="_blank">doorway</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downplay" target="_blank">downplay</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dray" target="_blank">dray</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=driveway" target="_blank">driveway</a></li>
+<ul id="words">
+<li>daresay</li>
+<li>decay</li>
+<li>defray</li>
+<li>delay</li>
+<li>disarray</li>
+<li>dismay</li>
+<li>display</li>
+<li>Doomsday</li>
+<li>doorway</li>
+<li>downplay</li>
+<li>dray</li>
+<li>driveway</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="548" data-circle-pattern="d_ay">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "daresay decay defray, delay disarray dismay, display Doomsday doorway, downplay dray driveway";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _oil</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#219 _oil
+<h2>#219 _oil</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airfoil" target="_blank">airfoil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boil" target="_blank">boil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broil" target="_blank">broil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foil" target="_blank">foil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recoil" target="_blank">recoil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spoil" target="_blank">spoil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subsoil" target="_blank">subsoil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tinfoil" target="_blank">tinfoil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toil" target="_blank">toil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=topsoil" target="_blank">topsoil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trefoil" target="_blank">trefoil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=turmoil" target="_blank">turmoil</a></li>
+<ul id="words">
+<li>airfoil</li>
+<li>boil</li>
+<li>broil</li>
+<li>foil</li>
+<li>recoil</li>
+<li>spoil</li>
+<li>subsoil</li>
+<li>tinfoil</li>
+<li>toil</li>
+<li>topsoil</li>
+<li>trefoil</li>
+<li>turmoil</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="219" data-circle-pattern="_oil">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "airfoil boil broil, foil recoil spoil, subsoil tinfoil toil, topsoil trefoil turmoil";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: wel_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#992 wel_
+<h2>#992 wel_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=weld" target="_blank">weld</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=welder" target="_blank">welder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=welfare" target="_blank">welfare</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=welkin" target="_blank">welkin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wellhead" target="_blank">wellhead</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wellington" target="_blank">wellington</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wellness" target="_blank">wellness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=welly" target="_blank">welly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=welsh" target="_blank">welsh</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=welt" target="_blank">welt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=welter" target="_blank">welter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=welterweight" target="_blank">welterweight</a></li>
+<ul id="words">
+<li>weld</li>
+<li>welder</li>
+<li>welfare</li>
+<li>welkin</li>
+<li>wellhead</li>
+<li>wellington</li>
+<li>wellness</li>
+<li>welly</li>
+<li>welsh</li>
+<li>welt</li>
+<li>welter</li>
+<li>welterweight</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="992" data-circle-pattern="wel_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "weld welder welfare, welkin wellhead wellington, wellness welly welsh, welt welter welterweight";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

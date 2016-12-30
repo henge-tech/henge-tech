@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: bri_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#459 bri_e
+<h2>#459 bri_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bribe" target="_blank">bribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bride" target="_blank">bride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bridle" target="_blank">bridle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brie" target="_blank">brie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brigade" target="_blank">brigade</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brilliance" target="_blank">brilliance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brimstone" target="_blank">brimstone</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brindle" target="_blank">brindle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brine" target="_blank">brine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brioche" target="_blank">brioche</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bristle" target="_blank">bristle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brittle" target="_blank">brittle</a></li>
+<ul id="words">
+<li>bribe</li>
+<li>bride</li>
+<li>bridle</li>
+<li>brie</li>
+<li>brigade</li>
+<li>brilliance</li>
+<li>brimstone</li>
+<li>brindle</li>
+<li>brine</li>
+<li>brioche</li>
+<li>bristle</li>
+<li>brittle</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="459" data-circle-pattern="bri_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bribe bride bridle, brie brigade brilliance, brimstone brindle brine, brioche bristle brittle";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

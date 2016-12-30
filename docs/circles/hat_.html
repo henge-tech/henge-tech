@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: hat_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#696 hat_
+<h2>#696 hat_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hat" target="_blank">hat</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hatch" target="_blank">hatch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hatchback" target="_blank">hatchback</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hatchery" target="_blank">hatchery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hatchet" target="_blank">hatchet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hate" target="_blank">hate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hateful" target="_blank">hateful</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hatemonger" target="_blank">hatemonger</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hater" target="_blank">hater</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hath" target="_blank">hath</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hatred" target="_blank">hatred</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hatter" target="_blank">hatter</a></li>
+<ul id="words">
+<li>hat</li>
+<li>hatch</li>
+<li>hatchback</li>
+<li>hatchery</li>
+<li>hatchet</li>
+<li>hate</li>
+<li>hateful</li>
+<li>hatemonger</li>
+<li>hater</li>
+<li>hath</li>
+<li>hatred</li>
+<li>hatter</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="696" data-circle-pattern="hat_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "hat hatch hatchback, hatchery hatchet hate, hateful hatemonger hater, hath hatred hatter";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

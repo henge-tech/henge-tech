@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: appa_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#416 appa_
+<h2>#416 appa_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Appalachian" target="_blank">Appalachian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appall" target="_blank">appall</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appalled" target="_blank">appalled</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appalling" target="_blank">appalling</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appallingly" target="_blank">appallingly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Appaloosa" target="_blank">Appaloosa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apparatchik" target="_blank">apparatchik</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apparatus" target="_blank">apparatus</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apparel" target="_blank">apparel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apparent" target="_blank">apparent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apparently" target="_blank">apparently</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apparition" target="_blank">apparition</a></li>
+<ul id="words">
+<li>Appalachian</li>
+<li>appall</li>
+<li>appalled</li>
+<li>appalling</li>
+<li>appallingly</li>
+<li>Appaloosa</li>
+<li>apparatchik</li>
+<li>apparatus</li>
+<li>apparel</li>
+<li>apparent</li>
+<li>apparently</li>
+<li>apparition</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="416" data-circle-pattern="appa_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "Appalachian appall appalled, appalling appallingly Appaloosa, apparatchik apparatus apparel, apparent apparently apparition";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

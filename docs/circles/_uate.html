@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _uate</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#338 _uate
+<h2>#338 _uate</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accentuate" target="_blank">accentuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=actuate" target="_blank">actuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adequate" target="_blank">adequate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=attenuate" target="_blank">attenuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disambiguate" target="_blank">disambiguate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=effectuate" target="_blank">effectuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=equate" target="_blank">equate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evacuate" target="_blank">evacuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evaluate" target="_blank">evaluate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eventuate" target="_blank">eventuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluctuate" target="_blank">fluctuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insinuate" target="_blank">insinuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perpetuate" target="_blank">perpetuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=punctuate" target="_blank">punctuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=situate" target="_blank">situate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=undergraduate" target="_blank">undergraduate</a></li>
+<ul id="words">
+<li>accentuate</li>
+<li>actuate</li>
+<li>adequate</li>
+<li>attenuate</li>
+<li>disambiguate</li>
+<li>effectuate</li>
+<li>equate</li>
+<li>evacuate</li>
+<li>evaluate</li>
+<li>eventuate</li>
+<li>fluctuate</li>
+<li>insinuate</li>
+<li>perpetuate</li>
+<li>punctuate</li>
+<li>situate</li>
+<li>undergraduate</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="338" data-circle-pattern="_uate">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "accentuate actuate adequate attenuate, disambiguate effectuate equate evacuate, evaluate eventuate fluctuate insinuate, perpetuate punctuate situate undergraduate";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

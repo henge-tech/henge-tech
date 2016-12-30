@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: l_ter</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#732 l_ter
+<h2>#732 l_ter</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lackluster" target="_blank">lackluster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=later" target="_blank">later</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=latter" target="_blank">latter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laughter" target="_blank">laughter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lifter" target="_blank">lifter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lighter" target="_blank">lighter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=liter" target="_blank">liter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=litter" target="_blank">litter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lobster" target="_blank">lobster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loiter" target="_blank">loiter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=looter" target="_blank">looter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luster" target="_blank">luster</a></li>
+<ul id="words">
+<li>lackluster</li>
+<li>later</li>
+<li>latter</li>
+<li>laughter</li>
+<li>lifter</li>
+<li>lighter</li>
+<li>liter</li>
+<li>litter</li>
+<li>lobster</li>
+<li>loiter</li>
+<li>looter</li>
+<li>luster</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="732" data-circle-pattern="l_ter">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "lackluster later latter, laughter lifter lighter, liter litter lobster, loiter looter luster";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

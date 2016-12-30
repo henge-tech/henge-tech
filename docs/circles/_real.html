@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _real</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#264 _real
+<h2>#264 _real</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arboreal" target="_blank">arboreal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boreal" target="_blank">boreal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cereal" target="_blank">cereal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corporeal" target="_blank">corporeal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=empyreal" target="_blank">empyreal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ethereal" target="_blank">ethereal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=funereal" target="_blank">funereal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incorporeal" target="_blank">incorporeal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sidereal" target="_blank">sidereal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surreal" target="_blank">surreal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unreal" target="_blank">unreal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=venereal" target="_blank">venereal</a></li>
+<ul id="words">
+<li>arboreal</li>
+<li>boreal</li>
+<li>cereal</li>
+<li>corporeal</li>
+<li>empyreal</li>
+<li>ethereal</li>
+<li>funereal</li>
+<li>incorporeal</li>
+<li>sidereal</li>
+<li>surreal</li>
+<li>unreal</li>
+<li>venereal</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="264" data-circle-pattern="_real">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "arboreal boreal cereal, corporeal empyreal ethereal, funereal incorporeal sidereal, surreal unreal venereal";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

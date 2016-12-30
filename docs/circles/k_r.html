@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: k_r</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#727 k_r
+<h2>#727 k_r</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Kaiser" target="_blank">Kaiser</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=keeper" target="_blank">keeper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=keister" target="_blank">keister</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kicker" target="_blank">kicker</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kidder" target="_blank">kidder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=killer" target="_blank">killer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kilter" target="_blank">kilter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kingfisher" target="_blank">kingfisher</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kipper" target="_blank">kipper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kisser" target="_blank">kisser</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=knacker" target="_blank">knacker</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kosher" target="_blank">kosher</a></li>
+<ul id="words">
+<li>Kaiser</li>
+<li>keeper</li>
+<li>keister</li>
+<li>kicker</li>
+<li>kidder</li>
+<li>killer</li>
+<li>kilter</li>
+<li>kingfisher</li>
+<li>kipper</li>
+<li>kisser</li>
+<li>knacker</li>
+<li>kosher</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="727" data-circle-pattern="k_r">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "Kaiser keeper keister, kicker kidder killer, kilter kingfisher kipper, kisser knacker kosher";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

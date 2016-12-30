@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _tomy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#330 _tomy
+<h2>#330 _tomy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anatomy" target="_blank">anatomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appendectomy" target="_blank">appendectomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colostomy" target="_blank">colostomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dichotomy" target="_blank">dichotomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hysterectomy" target="_blank">hysterectomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laparotomy" target="_blank">laparotomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lobotomy" target="_blank">lobotomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mastectomy" target="_blank">mastectomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=phlebotomy" target="_blank">phlebotomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tonsillectomy" target="_blank">tonsillectomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tracheotomy" target="_blank">tracheotomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vasectomy" target="_blank">vasectomy</a></li>
+<ul id="words">
+<li>anatomy</li>
+<li>appendectomy</li>
+<li>colostomy</li>
+<li>dichotomy</li>
+<li>hysterectomy</li>
+<li>laparotomy</li>
+<li>lobotomy</li>
+<li>mastectomy</li>
+<li>phlebotomy</li>
+<li>tonsillectomy</li>
+<li>tracheotomy</li>
+<li>vasectomy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="330" data-circle-pattern="_tomy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "anatomy appendectomy colostomy, dichotomy hysterectomy laparotomy, lobotomy mastectomy phlebotomy, tonsillectomy tracheotomy vasectomy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

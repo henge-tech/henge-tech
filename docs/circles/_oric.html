@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _oric</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#233 _oric
+<h2>#233 _oric</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allegoric" target="_blank">allegoric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boric" target="_blank">boric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caloric" target="_blank">caloric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=euphoric" target="_blank">euphoric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=folkloric" target="_blank">folkloric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydrochloric" target="_blank">hydrochloric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydrofluoric" target="_blank">hydrofluoric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meteoric" target="_blank">meteoric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=phosphoric" target="_blank">phosphoric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prehistoric" target="_blank">prehistoric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rhetoric" target="_blank">rhetoric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sophomoric" target="_blank">sophomoric</a></li>
+<ul id="words">
+<li>allegoric</li>
+<li>boric</li>
+<li>caloric</li>
+<li>euphoric</li>
+<li>folkloric</li>
+<li>hydrochloric</li>
+<li>hydrofluoric</li>
+<li>meteoric</li>
+<li>phosphoric</li>
+<li>prehistoric</li>
+<li>rhetoric</li>
+<li>sophomoric</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="233" data-circle-pattern="_oric">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "allegoric boric caloric, euphoric folkloric hydrochloric, hydrofluoric meteoric phosphoric, prehistoric rhetoric sophomoric";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _uch</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#339 _uch
+<h2>#339 _uch</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=couch" target="_blank">couch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crouch" target="_blank">crouch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=debauch" target="_blank">debauch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=debouch" target="_blank">debouch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eunuch" target="_blank">eunuch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grouch" target="_blank">grouch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inasmuch" target="_blank">inasmuch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insomuch" target="_blank">insomuch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pouch" target="_blank">pouch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retouch" target="_blank">retouch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slouch" target="_blank">slouch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vouch" target="_blank">vouch</a></li>
+<ul id="words">
+<li>couch</li>
+<li>crouch</li>
+<li>debauch</li>
+<li>debouch</li>
+<li>eunuch</li>
+<li>grouch</li>
+<li>inasmuch</li>
+<li>insomuch</li>
+<li>pouch</li>
+<li>retouch</li>
+<li>slouch</li>
+<li>vouch</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="339" data-circle-pattern="_uch">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "couch crouch debauch, debouch eunuch grouch, inasmuch insomuch pouch, retouch slouch vouch";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

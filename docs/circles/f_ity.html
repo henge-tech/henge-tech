@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: f_ity</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#647 f_ity
+<h2>#647 f_ity</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=facility" target="_blank">facility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=falsity" target="_blank">falsity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=familiarity" target="_blank">familiarity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fatality" target="_blank">fatality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feasibility" target="_blank">feasibility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fecundity" target="_blank">fecundity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=felicity" target="_blank">felicity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ferocity" target="_blank">ferocity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fertility" target="_blank">fertility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=festivity" target="_blank">festivity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fidelity" target="_blank">fidelity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flammability" target="_blank">flammability</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flexibility" target="_blank">flexibility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluidity" target="_blank">fluidity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=formality" target="_blank">formality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fragility" target="_blank">fragility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fraternity" target="_blank">fraternity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frivolity" target="_blank">frivolity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frugality" target="_blank">frugality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=futility" target="_blank">futility</a></li>
+<ul id="words">
+<li>facility</li>
+<li>falsity</li>
+<li>familiarity</li>
+<li>fatality</li>
+<li>feasibility</li>
+<li>fecundity</li>
+<li>felicity</li>
+<li>ferocity</li>
+<li>fertility</li>
+<li>festivity</li>
+<li>fidelity</li>
+<li>flammability</li>
+<li>flexibility</li>
+<li>fluidity</li>
+<li>formality</li>
+<li>fragility</li>
+<li>fraternity</li>
+<li>frivolity</li>
+<li>frugality</li>
+<li>futility</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="647" data-circle-pattern="f_ity">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "facility falsity familiarity fatality feasibility, fecundity felicity ferocity fertility festivity, fidelity flammability flexibility fluidity formality, fragility fraternity frivolity frugality futility";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: gr_er</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#679 gr_er
+<h2>#679 gr_er</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grabber" target="_blank">grabber</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grader" target="_blank">grader</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grater" target="_blank">grater</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=graver" target="_blank">graver</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greater" target="_blank">greater</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greeter" target="_blank">greeter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grenadier" target="_blank">grenadier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grinder" target="_blank">grinder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grocer" target="_blank">grocer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grouper" target="_blank">grouper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grower" target="_blank">grower</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=growler" target="_blank">growler</a></li>
+<ul id="words">
+<li>grabber</li>
+<li>grader</li>
+<li>grater</li>
+<li>graver</li>
+<li>greater</li>
+<li>greeter</li>
+<li>grenadier</li>
+<li>grinder</li>
+<li>grocer</li>
+<li>grouper</li>
+<li>grower</li>
+<li>growler</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="679" data-circle-pattern="gr_er">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "grabber grader grater, graver greater greeter, grenadier grinder grocer, grouper grower growler";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

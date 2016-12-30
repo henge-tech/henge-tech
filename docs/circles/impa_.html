@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: impa_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#706 impa_
+<h2>#706 impa_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impacted" target="_blank">impacted</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impair" target="_blank">impair</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impala" target="_blank">impala</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impale" target="_blank">impale</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impart" target="_blank">impart</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impartial" target="_blank">impartial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impasse" target="_blank">impasse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impassioned" target="_blank">impassioned</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impassive" target="_blank">impassive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impatience" target="_blank">impatience</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impatiens" target="_blank">impatiens</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impatient" target="_blank">impatient</a></li>
+<ul id="words">
+<li>impacted</li>
+<li>impair</li>
+<li>impala</li>
+<li>impale</li>
+<li>impart</li>
+<li>impartial</li>
+<li>impasse</li>
+<li>impassioned</li>
+<li>impassive</li>
+<li>impatience</li>
+<li>impatiens</li>
+<li>impatient</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="706" data-circle-pattern="impa_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "impacted impair impala, impale impart impartial, impasse impassioned impassive, impatience impatiens impatient";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

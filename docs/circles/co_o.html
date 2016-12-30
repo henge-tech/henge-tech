@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: co_o</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#510 co_o
+<h2>#510 co_o</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cockatoo" target="_blank">cockatoo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coco" target="_blank">coco</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coho" target="_blank">coho</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colorado" target="_blank">colorado</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=combo" target="_blank">combo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commando" target="_blank">commando</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compo" target="_blank">compo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concerto" target="_blank">concerto</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=condo" target="_blank">condo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=continuo" target="_blank">continuo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contralto" target="_blank">contralto</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coo" target="_blank">coo</a></li>
+<ul id="words">
+<li>cockatoo</li>
+<li>coco</li>
+<li>coho</li>
+<li>colorado</li>
+<li>combo</li>
+<li>commando</li>
+<li>compo</li>
+<li>concerto</li>
+<li>condo</li>
+<li>continuo</li>
+<li>contralto</li>
+<li>coo</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="510" data-circle-pattern="co_o">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "cockatoo coco coho, colorado combo commando, compo concerto condo, continuo contralto coo";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

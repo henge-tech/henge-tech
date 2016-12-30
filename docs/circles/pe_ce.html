@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: pe_ce</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#830 pe_ce
+<h2>#830 pe_ce</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peace" target="_blank">peace</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penance" target="_blank">penance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pence" target="_blank">pence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penitence" target="_blank">penitence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perchance" target="_blank">perchance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perforce" target="_blank">perforce</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=performance" target="_blank">performance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=permanence" target="_blank">permanence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perseverance" target="_blank">perseverance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=persistence" target="_blank">persistence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pertinence" target="_blank">pertinence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pestilence" target="_blank">pestilence</a></li>
+<ul id="words">
+<li>peace</li>
+<li>penance</li>
+<li>pence</li>
+<li>penitence</li>
+<li>perchance</li>
+<li>perforce</li>
+<li>performance</li>
+<li>permanence</li>
+<li>perseverance</li>
+<li>persistence</li>
+<li>pertinence</li>
+<li>pestilence</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="830" data-circle-pattern="pe_ce">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "peace penance pence, penitence perchance perforce, performance permanence perseverance, persistence pertinence pestilence";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

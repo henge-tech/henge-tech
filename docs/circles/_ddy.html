@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ddy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#69 _ddy
+<h2>#69 _ddy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=biddy" target="_blank">biddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buddy" target="_blank">buddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cruddy" target="_blank">cruddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eddy" target="_blank">eddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=giddy" target="_blank">giddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muddy" target="_blank">muddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noddy" target="_blank">noddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paddy" target="_blank">paddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ruddy" target="_blank">ruddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shoddy" target="_blank">shoddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=teddy" target="_blank">teddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toddy" target="_blank">toddy</a></li>
+<ul id="words">
+<li>biddy</li>
+<li>buddy</li>
+<li>cruddy</li>
+<li>eddy</li>
+<li>giddy</li>
+<li>muddy</li>
+<li>noddy</li>
+<li>paddy</li>
+<li>ruddy</li>
+<li>shoddy</li>
+<li>teddy</li>
+<li>toddy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="69" data-circle-pattern="_ddy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "biddy buddy cruddy, eddy giddy muddy, noddy paddy ruddy, shoddy teddy toddy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

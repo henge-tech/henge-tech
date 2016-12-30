@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _aze</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#45 _aze
+<h2>#45 _aze</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ablaze" target="_blank">ablaze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blaze" target="_blank">blaze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=craze" target="_blank">craze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daze" target="_blank">daze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=faze" target="_blank">faze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gaze" target="_blank">gaze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glaze" target="_blank">glaze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=graze" target="_blank">graze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haze" target="_blank">haze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laze" target="_blank">laze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=raze" target="_blank">raze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sleaze" target="_blank">sleaze</a></li>
+<ul id="words">
+<li>ablaze</li>
+<li>blaze</li>
+<li>craze</li>
+<li>daze</li>
+<li>faze</li>
+<li>gaze</li>
+<li>glaze</li>
+<li>graze</li>
+<li>haze</li>
+<li>laze</li>
+<li>raze</li>
+<li>sleaze</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="45" data-circle-pattern="_aze">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ablaze blaze craze, daze faze gaze, glaze graze haze, laze raze sleaze";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

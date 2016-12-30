@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: le_r</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#736 le_r
+<h2>#736 le_r</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leaguer" target="_blank">leaguer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leather" target="_blank">leather</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ledger" target="_blank">ledger</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leer" target="_blank">leer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leftover" target="_blank">leftover</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislator" target="_blank">legislator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lemur" target="_blank">lemur</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lender" target="_blank">lender</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leper" target="_blank">leper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lessor" target="_blank">lessor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leveler" target="_blank">leveler</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lever" target="_blank">lever</a></li>
+<ul id="words">
+<li>leaguer</li>
+<li>leather</li>
+<li>ledger</li>
+<li>leer</li>
+<li>leftover</li>
+<li>legislator</li>
+<li>lemur</li>
+<li>lender</li>
+<li>leper</li>
+<li>lessor</li>
+<li>leveler</li>
+<li>lever</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="736" data-circle-pattern="le_r">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "leaguer leather ledger, leer leftover legislator, lemur lender leper, lessor leveler lever";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

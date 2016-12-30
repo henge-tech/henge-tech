@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _tin</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#328 _tin
+<h2>#328 _tin</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=biotin" target="_blank">biotin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bulletin" target="_blank">bulletin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chitin" target="_blank">chitin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chromatin" target="_blank">chromatin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cretin" target="_blank">cretin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dentin" target="_blank">dentin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gelatin" target="_blank">gelatin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gratin" target="_blank">gratin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=martin" target="_blank">martin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=matin" target="_blank">matin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=satin" target="_blank">satin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tin" target="_blank">tin</a></li>
+<ul id="words">
+<li>biotin</li>
+<li>bulletin</li>
+<li>chitin</li>
+<li>chromatin</li>
+<li>cretin</li>
+<li>dentin</li>
+<li>gelatin</li>
+<li>gratin</li>
+<li>martin</li>
+<li>matin</li>
+<li>satin</li>
+<li>tin</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="328" data-circle-pattern="_tin">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "biotin bulletin chitin, chromatin cretin dentin, gelatin gratin martin, matin satin tin";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

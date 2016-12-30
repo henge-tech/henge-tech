@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: t_ve</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#953 t_ve
+<h2>#953 t_ve</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=talkative" target="_blank">talkative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tentative" target="_blank">tentative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thieve" target="_blank">thieve</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thrive" target="_blank">thrive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transitive" target="_blank">transitive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trave" target="_blank">trave</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trove" target="_blank">trove</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=truelove" target="_blank">truelove</a></li>
+<ul id="words">
+<li>talkative</li>
+<li>tentative</li>
+<li>thieve</li>
+<li>thrive</li>
+<li>transitive</li>
+<li>trave</li>
+<li>trove</li>
+<li>truelove</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="953" data-circle-pattern="t_ve">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "talkative tentative thieve thrive, transitive trave trove truelove";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

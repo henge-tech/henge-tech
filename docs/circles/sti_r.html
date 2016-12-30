@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: sti_r</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#934 sti_r
+<h2>#934 sti_r</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sticker" target="_blank">sticker</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stickler" target="_blank">stickler</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stiffener" target="_blank">stiffener</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stimulator" target="_blank">stimulator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stinger" target="_blank">stinger</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stinker" target="_blank">stinker</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stir" target="_blank">stir</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stirrer" target="_blank">stirrer</a></li>
+<ul id="words">
+<li>sticker</li>
+<li>stickler</li>
+<li>stiffener</li>
+<li>stimulator</li>
+<li>stinger</li>
+<li>stinker</li>
+<li>stir</li>
+<li>stirrer</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="934" data-circle-pattern="sti_r">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "sticker stickler stiffener stimulator, stinger stinker stir stirrer";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: su_nt</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#939 su_nt
+<h2>#939 su_nt</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subcontinent" target="_blank">subcontinent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subsequent" target="_blank">subsequent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subservient" target="_blank">subservient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=succulent" target="_blank">succulent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sufficient" target="_blank">sufficient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=superintendent" target="_blank">superintendent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=supplant" target="_blank">supplant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=supplement" target="_blank">supplement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=supplicant" target="_blank">supplicant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suppressant" target="_blank">suppressant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surfactant" target="_blank">surfactant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surmount" target="_blank">surmount</a></li>
+<ul id="words">
+<li>subcontinent</li>
+<li>subsequent</li>
+<li>subservient</li>
+<li>succulent</li>
+<li>sufficient</li>
+<li>superintendent</li>
+<li>supplant</li>
+<li>supplement</li>
+<li>supplicant</li>
+<li>suppressant</li>
+<li>surfactant</li>
+<li>surmount</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="939" data-circle-pattern="su_nt">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "subcontinent subsequent subservient, succulent sufficient superintendent, supplant supplement supplicant, suppressant surfactant surmount";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _iny</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#144 _iny
+<h2>#144 _iny</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brainy" target="_blank">brainy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=briny" target="_blank">briny</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=destiny" target="_blank">destiny</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grainy" target="_blank">grainy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hominy" target="_blank">hominy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ignominy" target="_blank">ignominy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutiny" target="_blank">mutiny</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrutiny" target="_blank">scrutiny</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shiny" target="_blank">shiny</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spiny" target="_blank">spiny</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=villainy" target="_blank">villainy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whiny" target="_blank">whiny</a></li>
+<ul id="words">
+<li>brainy</li>
+<li>briny</li>
+<li>destiny</li>
+<li>grainy</li>
+<li>hominy</li>
+<li>ignominy</li>
+<li>mutiny</li>
+<li>scrutiny</li>
+<li>shiny</li>
+<li>spiny</li>
+<li>villainy</li>
+<li>whiny</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="144" data-circle-pattern="_iny">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "brainy briny destiny, grainy hominy ignominy, mutiny scrutiny shiny, spiny villainy whiny";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

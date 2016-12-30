@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _oor</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#229 _oor
+<h2>#229 _oor</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=backdoor" target="_blank">backdoor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boor" target="_blank">boor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=door" target="_blank">door</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=floor" target="_blank">floor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indoor" target="_blank">indoor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moor" target="_blank">moor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outdoor" target="_blank">outdoor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=poor" target="_blank">poor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seafloor" target="_blank">seafloor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spoor" target="_blank">spoor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trapdoor" target="_blank">trapdoor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=underfloor" target="_blank">underfloor</a></li>
+<ul id="words">
+<li>backdoor</li>
+<li>boor</li>
+<li>door</li>
+<li>floor</li>
+<li>indoor</li>
+<li>moor</li>
+<li>outdoor</li>
+<li>poor</li>
+<li>seafloor</li>
+<li>spoor</li>
+<li>trapdoor</li>
+<li>underfloor</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="229" data-circle-pattern="_oor">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "backdoor boor door, floor indoor moor, outdoor poor seafloor, spoor trapdoor underfloor";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

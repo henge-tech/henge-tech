@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: loa_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#741 loa_
+<h2>#741 loa_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loach" target="_blank">loach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loaded" target="_blank">loaded</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loading" target="_blank">loading</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loaf" target="_blank">loaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loafer" target="_blank">loafer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loam" target="_blank">loam</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loan" target="_blank">loan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loaner" target="_blank">loaner</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loanword" target="_blank">loanword</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loath" target="_blank">loath</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loathe" target="_blank">loathe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loathsome" target="_blank">loathsome</a></li>
+<ul id="words">
+<li>loach</li>
+<li>loaded</li>
+<li>loading</li>
+<li>loaf</li>
+<li>loafer</li>
+<li>loam</li>
+<li>loan</li>
+<li>loaner</li>
+<li>loanword</li>
+<li>loath</li>
+<li>loathe</li>
+<li>loathsome</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="741" data-circle-pattern="loa_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "loach loaded loading, loaf loafer loam, loan loaner loanword, loath loathe loathsome";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

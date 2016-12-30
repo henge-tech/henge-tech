@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_ial</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#435 b_ial
+<h2>#435 b_ial</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bacterial" target="_blank">bacterial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baronial" target="_blank">baronial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beneficial" target="_blank">beneficial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bestial" target="_blank">bestial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bicentennial" target="_blank">bicentennial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=biennial" target="_blank">biennial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bilabial" target="_blank">bilabial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=binomial" target="_blank">binomial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=biracial" target="_blank">biracial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brachial" target="_blank">brachial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bronchial" target="_blank">bronchial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burial" target="_blank">burial</a></li>
+<ul id="words">
+<li>bacterial</li>
+<li>baronial</li>
+<li>beneficial</li>
+<li>bestial</li>
+<li>bicentennial</li>
+<li>biennial</li>
+<li>bilabial</li>
+<li>binomial</li>
+<li>biracial</li>
+<li>brachial</li>
+<li>bronchial</li>
+<li>burial</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="435" data-circle-pattern="b_ial">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bacterial baronial beneficial, bestial bicentennial biennial, bilabial binomial biracial, brachial bronchial burial";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

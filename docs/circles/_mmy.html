@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _mmy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#187 _mmy
+<h2>#187 _mmy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clammy" target="_blank">clammy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crummy" target="_blank">crummy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dummy" target="_blank">dummy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gummy" target="_blank">gummy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hammy" target="_blank">hammy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jammy" target="_blank">jammy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jimmy" target="_blank">jimmy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mammy" target="_blank">mammy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mommy" target="_blank">mommy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mummy" target="_blank">mummy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rummy" target="_blank">rummy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scummy" target="_blank">scummy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shimmy" target="_blank">shimmy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tummy" target="_blank">tummy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whammy" target="_blank">whammy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yummy" target="_blank">yummy</a></li>
+<ul id="words">
+<li>clammy</li>
+<li>crummy</li>
+<li>dummy</li>
+<li>gummy</li>
+<li>hammy</li>
+<li>jammy</li>
+<li>jimmy</li>
+<li>mammy</li>
+<li>mommy</li>
+<li>mummy</li>
+<li>rummy</li>
+<li>scummy</li>
+<li>shimmy</li>
+<li>tummy</li>
+<li>whammy</li>
+<li>yummy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="187" data-circle-pattern="_mmy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "clammy crummy dummy gummy, hammy jammy jimmy mammy, mommy mummy rummy scummy, shimmy tummy whammy yummy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

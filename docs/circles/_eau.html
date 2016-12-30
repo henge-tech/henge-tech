@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _eau</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#79 _eau
+<h2>#79 _eau</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bandeau" target="_blank">bandeau</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bateau" target="_blank">bateau</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beau" target="_blank">beau</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bureau" target="_blank">bureau</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chapeau" target="_blank">chapeau</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chateau" target="_blank">chateau</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gateau" target="_blank">gateau</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plateau" target="_blank">plateau</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=portmanteau" target="_blank">portmanteau</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rondeau" target="_blank">rondeau</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tableau" target="_blank">tableau</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trousseau" target="_blank">trousseau</a></li>
+<ul id="words">
+<li>bandeau</li>
+<li>bateau</li>
+<li>beau</li>
+<li>bureau</li>
+<li>chapeau</li>
+<li>chateau</li>
+<li>gateau</li>
+<li>plateau</li>
+<li>portmanteau</li>
+<li>rondeau</li>
+<li>tableau</li>
+<li>trousseau</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="79" data-circle-pattern="_eau">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bandeau bateau beau, bureau chapeau chateau, gateau plateau portmanteau, rondeau tableau trousseau";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: as_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#419 as_t
+<h2>#419 as_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascendant" target="_blank">ascendant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascent" target="_blank">ascent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aspect" target="_blank">aspect</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aspirant" target="_blank">aspirant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assailant" target="_blank">assailant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assault" target="_blank">assault</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assent" target="_blank">assent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assert" target="_blank">assert</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assessment" target="_blank">assessment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=asset" target="_blank">asset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assignment" target="_blank">assignment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assortment" target="_blank">assortment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astonishment" target="_blank">astonishment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astringent" target="_blank">astringent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astronaut" target="_blank">astronaut</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astrophysicist" target="_blank">astrophysicist</a></li>
+<ul id="words">
+<li>ascendant</li>
+<li>ascent</li>
+<li>aspect</li>
+<li>aspirant</li>
+<li>assailant</li>
+<li>assault</li>
+<li>assent</li>
+<li>assert</li>
+<li>assessment</li>
+<li>asset</li>
+<li>assignment</li>
+<li>assortment</li>
+<li>astonishment</li>
+<li>astringent</li>
+<li>astronaut</li>
+<li>astrophysicist</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="419" data-circle-pattern="as_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ascendant ascent aspect aspirant, assailant assault assent assert, assessment asset assignment assortment, astonishment astringent astronaut astrophysicist";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

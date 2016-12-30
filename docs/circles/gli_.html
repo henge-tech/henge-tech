@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: gli_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#677 gli_
+<h2>#677 gli_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glib" target="_blank">glib</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glide" target="_blank">glide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glider" target="_blank">glider</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glimmer" target="_blank">glimmer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glimpse" target="_blank">glimpse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glint" target="_blank">glint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glissando" target="_blank">glissando</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glisten" target="_blank">glisten</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitch" target="_blank">glitch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitter" target="_blank">glitter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitterati" target="_blank">glitterati</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitz" target="_blank">glitz</a></li>
+<ul id="words">
+<li>glib</li>
+<li>glide</li>
+<li>glider</li>
+<li>glimmer</li>
+<li>glimpse</li>
+<li>glint</li>
+<li>glissando</li>
+<li>glisten</li>
+<li>glitch</li>
+<li>glitter</li>
+<li>glitterati</li>
+<li>glitz</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="677" data-circle-pattern="gli_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "glib glide glider, glimmer glimpse glint, glissando glisten glitch, glitter glitterati glitz";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

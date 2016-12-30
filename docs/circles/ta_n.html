@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ta_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#954 ta_n
+<h2>#954 ta_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tabulation" target="_blank">tabulation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taciturn" target="_blank">taciturn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tactician" target="_blank">tactician</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tain" target="_blank">tain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=talisman" target="_blank">talisman</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=talon" target="_blank">talon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tan" target="_blank">tan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tarn" target="_blank">tarn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tarpaulin" target="_blank">tarpaulin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tavern" target="_blank">tavern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taxation" target="_blank">taxation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taxman" target="_blank">taxman</a></li>
+<ul id="words">
+<li>tabulation</li>
+<li>taciturn</li>
+<li>tactician</li>
+<li>tain</li>
+<li>talisman</li>
+<li>talon</li>
+<li>tan</li>
+<li>tarn</li>
+<li>tarpaulin</li>
+<li>tavern</li>
+<li>taxation</li>
+<li>taxman</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="954" data-circle-pattern="ta_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "tabulation taciturn tactician, tain talisman talon, tan tarn tarpaulin, tavern taxation taxman";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

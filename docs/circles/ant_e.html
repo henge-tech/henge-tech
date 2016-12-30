@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ant_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#412 ant_e
+<h2>#412 ant_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antagonize" target="_blank">antagonize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ante" target="_blank">ante</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antedate" target="_blank">antedate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antelope" target="_blank">antelope</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antennae" target="_blank">antennae</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anthracite" target="_blank">anthracite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anticipate" target="_blank">anticipate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anticline" target="_blank">anticline</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antidote" target="_blank">antidote</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antifreeze" target="_blank">antifreeze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antihistamine" target="_blank">antihistamine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antique" target="_blank">antique</a></li>
+<ul id="words">
+<li>antagonize</li>
+<li>ante</li>
+<li>antedate</li>
+<li>antelope</li>
+<li>antennae</li>
+<li>anthracite</li>
+<li>anticipate</li>
+<li>anticline</li>
+<li>antidote</li>
+<li>antifreeze</li>
+<li>antihistamine</li>
+<li>antique</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="412" data-circle-pattern="ant_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "antagonize ante antedate, antelope antennae anthracite, anticipate anticline antidote, antifreeze antihistamine antique";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

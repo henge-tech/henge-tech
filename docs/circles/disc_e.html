@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: disc_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#603 disc_e
+<h2>#603 disc_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discernible" target="_blank">discernible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discharge" target="_blank">discharge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disciple" target="_blank">disciple</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discipline" target="_blank">discipline</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disclosure" target="_blank">disclosure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discontinue" target="_blank">discontinue</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discotheque" target="_blank">discotheque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discourage" target="_blank">discourage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discourse" target="_blank">discourse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discrete" target="_blank">discrete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discriminate" target="_blank">discriminate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discursive" target="_blank">discursive</a></li>
+<ul id="words">
+<li>discernible</li>
+<li>discharge</li>
+<li>disciple</li>
+<li>discipline</li>
+<li>disclosure</li>
+<li>discontinue</li>
+<li>discotheque</li>
+<li>discourage</li>
+<li>discourse</li>
+<li>discrete</li>
+<li>discriminate</li>
+<li>discursive</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="603" data-circle-pattern="disc_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "discernible discharge disciple, discipline disclosure discontinue, discotheque discourage discourse, discrete discriminate discursive";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

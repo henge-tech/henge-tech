@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: uns_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#968 uns_e
+<h2>#968 uns_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unscramble" target="_blank">unscramble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unserviceable" target="_blank">unserviceable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unsettle" target="_blank">unsettle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unshakable" target="_blank">unshakable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unsheathe" target="_blank">unsheathe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unsociable" target="_blank">unsociable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unsportsmanlike" target="_blank">unsportsmanlike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unstable" target="_blank">unstable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unsubscribe" target="_blank">unsubscribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unsuitable" target="_blank">unsuitable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unsure" target="_blank">unsure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unsustainable" target="_blank">unsustainable</a></li>
+<ul id="words">
+<li>unscramble</li>
+<li>unserviceable</li>
+<li>unsettle</li>
+<li>unshakable</li>
+<li>unsheathe</li>
+<li>unsociable</li>
+<li>unsportsmanlike</li>
+<li>unstable</li>
+<li>unsubscribe</li>
+<li>unsuitable</li>
+<li>unsure</li>
+<li>unsustainable</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="968" data-circle-pattern="uns_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "unscramble unserviceable unsettle, unshakable unsheathe unsociable, unsportsmanlike unstable unsubscribe, unsuitable unsure unsustainable";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

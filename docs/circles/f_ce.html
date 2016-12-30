@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: f_ce</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#643 f_ce
+<h2>#643 f_ce</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=farce" target="_blank">farce</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fiance" target="_blank">fiance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fierce" target="_blank">fierce</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fireplace" target="_blank">fireplace</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flatulence" target="_blank">flatulence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fleece" target="_blank">fleece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluorescence" target="_blank">fluorescence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forbearance" target="_blank">forbearance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fragrance" target="_blank">fragrance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frontispiece" target="_blank">frontispiece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=furnace" target="_blank">furnace</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=furtherance" target="_blank">furtherance</a></li>
+<ul id="words">
+<li>farce</li>
+<li>fiance</li>
+<li>fierce</li>
+<li>fireplace</li>
+<li>flatulence</li>
+<li>fleece</li>
+<li>fluorescence</li>
+<li>forbearance</li>
+<li>fragrance</li>
+<li>frontispiece</li>
+<li>furnace</li>
+<li>furtherance</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="643" data-circle-pattern="f_ce">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "farce fiance fierce, fireplace flatulence fleece, fluorescence forbearance fragrance, frontispiece furnace furtherance";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

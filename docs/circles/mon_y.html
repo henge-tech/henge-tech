@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: mon_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#773 mon_y
+<h2>#773 mon_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monarchy" target="_blank">monarchy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monastery" target="_blank">monastery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monetary" target="_blank">monetary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monitory" target="_blank">monitory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monkey" target="_blank">monkey</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monogamy" target="_blank">monogamy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monopoly" target="_blank">monopoly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monotony" target="_blank">monotony</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monstrosity" target="_blank">monstrosity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monstrously" target="_blank">monstrously</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monthly" target="_blank">monthly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monumentally" target="_blank">monumentally</a></li>
+<ul id="words">
+<li>monarchy</li>
+<li>monastery</li>
+<li>monetary</li>
+<li>monitory</li>
+<li>monkey</li>
+<li>monogamy</li>
+<li>monopoly</li>
+<li>monotony</li>
+<li>monstrosity</li>
+<li>monstrously</li>
+<li>monthly</li>
+<li>monumentally</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="773" data-circle-pattern="mon_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "monarchy monastery monetary, monitory monkey monogamy, monopoly monotony monstrosity, monstrously monthly monumentally";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

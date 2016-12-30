@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _cket</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#59 _cket
+<h2>#59 _cket</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bracket" target="_blank">bracket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bucket" target="_blank">bucket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cricket" target="_blank">cricket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=docket" target="_blank">docket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=locket" target="_blank">locket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=packet" target="_blank">packet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=picket" target="_blank">picket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pickpocket" target="_blank">pickpocket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=placket" target="_blank">placket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=racket" target="_blank">racket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=skyrocket" target="_blank">skyrocket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=socket" target="_blank">socket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sprocket" target="_blank">sprocket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=straitjacket" target="_blank">straitjacket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thicket" target="_blank">thicket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wicket" target="_blank">wicket</a></li>
+<ul id="words">
+<li>bracket</li>
+<li>bucket</li>
+<li>cricket</li>
+<li>docket</li>
+<li>locket</li>
+<li>packet</li>
+<li>picket</li>
+<li>pickpocket</li>
+<li>placket</li>
+<li>racket</li>
+<li>skyrocket</li>
+<li>socket</li>
+<li>sprocket</li>
+<li>straitjacket</li>
+<li>thicket</li>
+<li>wicket</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="59" data-circle-pattern="_cket">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bracket bucket cricket docket, locket packet picket pickpocket, placket racket skyrocket socket, sprocket straitjacket thicket wicket";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

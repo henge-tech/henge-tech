@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dep_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#583 dep_t
+<h2>#583 dep_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depart" target="_blank">depart</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=department" target="_blank">department</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dependent" target="_blank">dependent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depict" target="_blank">depict</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deployment" target="_blank">deployment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deponent" target="_blank">deponent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deport" target="_blank">deport</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deportment" target="_blank">deportment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deposit" target="_blank">deposit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depot" target="_blank">depot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depressant" target="_blank">depressant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dept." target="_blank">dept.</a></li>
+<ul id="words">
+<li>depart</li>
+<li>department</li>
+<li>dependent</li>
+<li>depict</li>
+<li>deployment</li>
+<li>deponent</li>
+<li>deport</li>
+<li>deportment</li>
+<li>deposit</li>
+<li>depot</li>
+<li>depressant</li>
+<li>dept.</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="583" data-circle-pattern="dep_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "depart department dependent, depict deployment deponent, deport deportment deposit, depot depressant dept.";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

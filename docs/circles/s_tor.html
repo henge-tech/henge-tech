@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: s_tor</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#910 s_tor
+<h2>#910 s_tor</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sculptor" target="_blank">sculptor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sector" target="_blank">sector</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=semiconductor" target="_blank">semiconductor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=senator" target="_blank">senator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=separator" target="_blank">separator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=solicitor" target="_blank">solicitor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spectator" target="_blank">spectator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=speculator" target="_blank">speculator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stimulator" target="_blank">stimulator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subcontractor" target="_blank">subcontractor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suitor" target="_blank">suitor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=superconductor" target="_blank">superconductor</a></li>
+<ul id="words">
+<li>sculptor</li>
+<li>sector</li>
+<li>semiconductor</li>
+<li>senator</li>
+<li>separator</li>
+<li>solicitor</li>
+<li>spectator</li>
+<li>speculator</li>
+<li>stimulator</li>
+<li>subcontractor</li>
+<li>suitor</li>
+<li>superconductor</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="910" data-circle-pattern="s_tor">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "sculptor sector semiconductor, senator separator solicitor, spectator speculator stimulator, subcontractor suitor superconductor";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

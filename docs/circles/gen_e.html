@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: gen_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#673 gen_e
+<h2>#673 gen_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gendarme" target="_blank">gendarme</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gene" target="_blank">gene</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=generalize" target="_blank">generalize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=generative" target="_blank">generative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genie" target="_blank">genie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genocide" target="_blank">genocide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genome" target="_blank">genome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genotype" target="_blank">genotype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genre" target="_blank">genre</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gentile" target="_blank">gentile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gentle" target="_blank">gentle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genuine" target="_blank">genuine</a></li>
+<ul id="words">
+<li>gendarme</li>
+<li>gene</li>
+<li>generalize</li>
+<li>generative</li>
+<li>genie</li>
+<li>genocide</li>
+<li>genome</li>
+<li>genotype</li>
+<li>genre</li>
+<li>gentile</li>
+<li>gentle</li>
+<li>genuine</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="673" data-circle-pattern="gen_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "gendarme gene generalize, generative genie genocide, genome genotype genre, gentile gentle genuine";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

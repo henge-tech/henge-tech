@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _itch</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#152 _itch
+<h2>#152 _itch</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ditch" target="_blank">ditch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eldritch" target="_blank">eldritch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fitch" target="_blank">fitch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitch" target="_blank">glitch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hitch" target="_blank">hitch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=itch" target="_blank">itch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pitch" target="_blank">pitch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snitch" target="_blank">snitch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stitch" target="_blank">stitch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=titch" target="_blank">titch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=twitch" target="_blank">twitch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=witch" target="_blank">witch</a></li>
+<ul id="words">
+<li>ditch</li>
+<li>eldritch</li>
+<li>fitch</li>
+<li>glitch</li>
+<li>hitch</li>
+<li>itch</li>
+<li>pitch</li>
+<li>snitch</li>
+<li>stitch</li>
+<li>titch</li>
+<li>twitch</li>
+<li>witch</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="152" data-circle-pattern="_itch">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ditch eldritch fitch, glitch hitch itch, pitch snitch stitch, titch twitch witch";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

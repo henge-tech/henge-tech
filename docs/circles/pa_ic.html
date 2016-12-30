@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: pa_ic</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#824 pa_ic
+<h2>#824 pa_ic</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pacific" target="_blank">pacific</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paleolithic" target="_blank">paleolithic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pancreatic" target="_blank">pancreatic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pandemic" target="_blank">pandemic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=panoramic" target="_blank">panoramic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parabolic" target="_blank">parabolic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paradigmatic" target="_blank">paradigmatic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paralytic" target="_blank">paralytic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paramedic" target="_blank">paramedic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paraplegic" target="_blank">paraplegic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parasitic" target="_blank">parasitic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paternalistic" target="_blank">paternalistic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pathetic" target="_blank">pathetic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pathogenic" target="_blank">pathogenic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pathologic" target="_blank">pathologic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patriotic" target="_blank">patriotic</a></li>
+<ul id="words">
+<li>pacific</li>
+<li>paleolithic</li>
+<li>pancreatic</li>
+<li>pandemic</li>
+<li>panoramic</li>
+<li>parabolic</li>
+<li>paradigmatic</li>
+<li>paralytic</li>
+<li>paramedic</li>
+<li>paraplegic</li>
+<li>parasitic</li>
+<li>paternalistic</li>
+<li>pathetic</li>
+<li>pathogenic</li>
+<li>pathologic</li>
+<li>patriotic</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="824" data-circle-pattern="pa_ic">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "pacific paleolithic pancreatic pandemic, panoramic parabolic paradigmatic paralytic, paramedic paraplegic parasitic paternalistic, pathetic pathogenic pathologic patriotic";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

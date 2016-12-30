@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: sti_ng</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#933 sti_ng
+<h2>#933 sti_ng</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stiffening" target="_blank">stiffening</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stifling" target="_blank">stifling</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stimulating" target="_blank">stimulating</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sting" target="_blank">sting</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stinging" target="_blank">stinging</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stinking" target="_blank">stinking</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stirring" target="_blank">stirring</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stitching" target="_blank">stitching</a></li>
+<ul id="words">
+<li>stiffening</li>
+<li>stifling</li>
+<li>stimulating</li>
+<li>sting</li>
+<li>stinging</li>
+<li>stinking</li>
+<li>stirring</li>
+<li>stitching</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="933" data-circle-pattern="sti_ng">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "stiffening stifling stimulating sting, stinging stinking stirring stitching";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

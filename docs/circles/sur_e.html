@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: sur_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#945 sur_e
+<h2>#945 sur_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surcease" target="_blank">surcease</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surcharge" target="_blank">surcharge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surcingle" target="_blank">surcingle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surefire" target="_blank">surefire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surface" target="_blank">surface</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surge" target="_blank">surge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surmise" target="_blank">surmise</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surmountable" target="_blank">surmountable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surname" target="_blank">surname</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surplice" target="_blank">surplice</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surrogate" target="_blank">surrogate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surveillance" target="_blank">surveillance</a></li>
+<ul id="words">
+<li>surcease</li>
+<li>surcharge</li>
+<li>surcingle</li>
+<li>surefire</li>
+<li>surface</li>
+<li>surge</li>
+<li>surmise</li>
+<li>surmountable</li>
+<li>surname</li>
+<li>surplice</li>
+<li>surrogate</li>
+<li>surveillance</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="945" data-circle-pattern="sur_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "surcease surcharge surcingle, surefire surface surge, surmise surmountable surname, surplice surrogate surveillance";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

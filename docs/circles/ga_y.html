@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ga_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#672 ga_y
+<h2>#672 ga_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gabby" target="_blank">gabby</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gadfly" target="_blank">gadfly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gadgetry" target="_blank">gadgetry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gaiety" target="_blank">gaiety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gaily" target="_blank">gaily</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gainfully" target="_blank">gainfully</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gallantly" target="_blank">gallantly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gallantry" target="_blank">gallantry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=galley" target="_blank">galley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gamy" target="_blank">gamy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gangway" target="_blank">gangway</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gantry" target="_blank">gantry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gastroenterology" target="_blank">gastroenterology</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gastronomy" target="_blank">gastronomy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gaudy" target="_blank">gaudy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gay" target="_blank">gay</a></li>
+<ul id="words">
+<li>gabby</li>
+<li>gadfly</li>
+<li>gadgetry</li>
+<li>gaiety</li>
+<li>gaily</li>
+<li>gainfully</li>
+<li>gallantly</li>
+<li>gallantry</li>
+<li>galley</li>
+<li>gamy</li>
+<li>gangway</li>
+<li>gantry</li>
+<li>gastroenterology</li>
+<li>gastronomy</li>
+<li>gaudy</li>
+<li>gay</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="672" data-circle-pattern="ga_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "gabby gadfly gadgetry gaiety, gaily gainfully gallantly gallantry, galley gamy gangway gantry, gastroenterology gastronomy gaudy gay";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

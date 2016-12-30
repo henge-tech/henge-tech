@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ai_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#405 ai_e
+<h2>#405 ai_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aide" target="_blank">aide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airbase" target="_blank">airbase</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airborne" target="_blank">airborne</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airdrome" target="_blank">airdrome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airfare" target="_blank">airfare</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airframe" target="_blank">airframe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airline" target="_blank">airline</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airmobile" target="_blank">airmobile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airspace" target="_blank">airspace</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airstrike" target="_blank">airstrike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airtime" target="_blank">airtime</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aisle" target="_blank">aisle</a></li>
+<ul id="words">
+<li>aide</li>
+<li>airbase</li>
+<li>airborne</li>
+<li>airdrome</li>
+<li>airfare</li>
+<li>airframe</li>
+<li>airline</li>
+<li>airmobile</li>
+<li>airspace</li>
+<li>airstrike</li>
+<li>airtime</li>
+<li>aisle</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="405" data-circle-pattern="ai_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "aide airbase airborne, airdrome airfare airframe, airline airmobile airspace, airstrike airtime aisle";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

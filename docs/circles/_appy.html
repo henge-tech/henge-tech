@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _appy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#34 _appy
+<h2>#34 _appy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chappy" target="_blank">chappy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crappy" target="_blank">crappy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=happy" target="_blank">happy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nappy" target="_blank">nappy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pappy" target="_blank">pappy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sappy" target="_blank">sappy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrappy" target="_blank">scrappy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slaphappy" target="_blank">slaphappy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snappy" target="_blank">snappy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unhappy" target="_blank">unhappy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yappy" target="_blank">yappy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zappy" target="_blank">zappy</a></li>
+<ul id="words">
+<li>chappy</li>
+<li>crappy</li>
+<li>happy</li>
+<li>nappy</li>
+<li>pappy</li>
+<li>sappy</li>
+<li>scrappy</li>
+<li>slaphappy</li>
+<li>snappy</li>
+<li>unhappy</li>
+<li>yappy</li>
+<li>zappy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="34" data-circle-pattern="_appy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "chappy crappy happy, nappy pappy sappy, scrappy slaphappy snappy, unhappy yappy zappy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

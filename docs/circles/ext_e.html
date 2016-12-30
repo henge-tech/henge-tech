@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ext_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#640 ext_e
+<h2>#640 ext_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extensive" target="_blank">extensive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exterminate" target="_blank">exterminate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extirpate" target="_blank">extirpate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extortionate" target="_blank">extortionate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extractable" target="_blank">extractable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extractive" target="_blank">extractive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extradite" target="_blank">extradite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extraordinaire" target="_blank">extraordinaire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extrapolate" target="_blank">extrapolate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extravagance" target="_blank">extravagance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extricate" target="_blank">extricate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extrude" target="_blank">extrude</a></li>
+<ul id="words">
+<li>extensive</li>
+<li>exterminate</li>
+<li>extirpate</li>
+<li>extortionate</li>
+<li>extractable</li>
+<li>extractive</li>
+<li>extradite</li>
+<li>extraordinaire</li>
+<li>extrapolate</li>
+<li>extravagance</li>
+<li>extricate</li>
+<li>extrude</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="640" data-circle-pattern="ext_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "extensive exterminate extirpate, extortionate extractable extractive, extradite extraordinaire extrapolate, extravagance extricate extrude";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: de_se</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#570 de_se
+<h2>#570 de_se</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decease" target="_blank">decease</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decompose" target="_blank">decompose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decrease" target="_blank">decrease</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defense" target="_blank">defense</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defuse" target="_blank">defuse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demise" target="_blank">demise</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demitasse" target="_blank">demitasse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dense" target="_blank">dense</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depose" target="_blank">depose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=despise" target="_blank">despise</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=devise" target="_blank">devise</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dextrose" target="_blank">dextrose</a></li>
+<ul id="words">
+<li>decease</li>
+<li>decompose</li>
+<li>decrease</li>
+<li>defense</li>
+<li>defuse</li>
+<li>demise</li>
+<li>demitasse</li>
+<li>dense</li>
+<li>depose</li>
+<li>despise</li>
+<li>devise</li>
+<li>dextrose</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="570" data-circle-pattern="de_se">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "decease decompose decrease, defense defuse demise, demitasse dense depose, despise devise dextrose";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

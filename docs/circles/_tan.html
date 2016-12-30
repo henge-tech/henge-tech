@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _tan</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#316 _tan
+<h2>#316 _tan</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capstan" target="_blank">capstan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=charlatan" target="_blank">charlatan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cosmopolitan" target="_blank">cosmopolitan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metropolitan" target="_blank">metropolitan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=orangutan" target="_blank">orangutan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Puritan" target="_blank">Puritan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rattan" target="_blank">rattan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Spartan" target="_blank">Spartan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sultan" target="_blank">sultan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tan" target="_blank">tan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tartan" target="_blank">tartan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=titan" target="_blank">titan</a></li>
+<ul id="words">
+<li>capstan</li>
+<li>charlatan</li>
+<li>cosmopolitan</li>
+<li>metropolitan</li>
+<li>orangutan</li>
+<li>Puritan</li>
+<li>rattan</li>
+<li>Spartan</li>
+<li>sultan</li>
+<li>tan</li>
+<li>tartan</li>
+<li>titan</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="316" data-circle-pattern="_tan">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "capstan charlatan cosmopolitan, metropolitan orangutan Puritan, rattan Spartan sultan, tan tartan titan";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

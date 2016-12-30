@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _nna</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#213 _nna
+<h2>#213 _nna</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bandanna" target="_blank">bandanna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=belladonna" target="_blank">belladonna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=canna" target="_blank">canna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Gehenna" target="_blank">Gehenna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=henna" target="_blank">henna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hosanna" target="_blank">hosanna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manna" target="_blank">manna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Penna" target="_blank">Penna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Pollyanna" target="_blank">Pollyanna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savanna" target="_blank">savanna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=senna" target="_blank">senna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sienna" target="_blank">sienna</a></li>
+<ul id="words">
+<li>bandanna</li>
+<li>belladonna</li>
+<li>canna</li>
+<li>Gehenna</li>
+<li>henna</li>
+<li>hosanna</li>
+<li>manna</li>
+<li>Penna</li>
+<li>Pollyanna</li>
+<li>savanna</li>
+<li>senna</li>
+<li>sienna</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="213" data-circle-pattern="_nna">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bandanna belladonna canna, Gehenna henna hosanna, manna Penna Pollyanna, savanna senna sienna";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

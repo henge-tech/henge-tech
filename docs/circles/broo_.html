@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: broo_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#461 broo_
+<h2>#461 broo_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brooch" target="_blank">brooch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brood" target="_blank">brood</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brooder" target="_blank">brooder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brooding" target="_blank">brooding</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brook" target="_blank">brook</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Brooklyn" target="_blank">Brooklyn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broom" target="_blank">broom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broomstick" target="_blank">broomstick</a></li>
+<ul id="words">
+<li>brooch</li>
+<li>brood</li>
+<li>brooder</li>
+<li>brooding</li>
+<li>brook</li>
+<li>Brooklyn</li>
+<li>broom</li>
+<li>broomstick</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="461" data-circle-pattern="broo_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "brooch brood brooder brooding, brook Brooklyn broom broomstick";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

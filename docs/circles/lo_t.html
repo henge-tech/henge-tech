@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: lo_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#740 lo_t
+<h2>#740 lo_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lobbyist" target="_blank">lobbyist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=locket" target="_blank">locket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lockout" target="_blank">lockout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=locust" target="_blank">locust</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lodgment" target="_blank">lodgment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loft" target="_blank">loft</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=longboat" target="_blank">longboat</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lookout" target="_blank">lookout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loot" target="_blank">loot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lot" target="_blank">lot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lout" target="_blank">lout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loyalist" target="_blank">loyalist</a></li>
+<ul id="words">
+<li>lobbyist</li>
+<li>locket</li>
+<li>lockout</li>
+<li>locust</li>
+<li>lodgment</li>
+<li>loft</li>
+<li>longboat</li>
+<li>lookout</li>
+<li>loot</li>
+<li>lot</li>
+<li>lout</li>
+<li>loyalist</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="740" data-circle-pattern="lo_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "lobbyist locket lockout, locust lodgment loft, longboat lookout loot, lot lout loyalist";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

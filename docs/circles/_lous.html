@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _lous</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#176 _lous
+<h2>#176 _lous</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anomalous" target="_blank">anomalous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=callous" target="_blank">callous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=credulous" target="_blank">credulous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fabulous" target="_blank">fabulous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frivolous" target="_blank">frivolous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incredulous" target="_blank">incredulous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jealous" target="_blank">jealous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=libelous" target="_blank">libelous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meticulous" target="_blank">meticulous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=miraculous" target="_blank">miraculous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nebulous" target="_blank">nebulous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overzealous" target="_blank">overzealous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pendulous" target="_blank">pendulous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perilous" target="_blank">perilous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=populous" target="_blank">populous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrupulous" target="_blank">scrupulous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scurrilous" target="_blank">scurrilous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tuberculous" target="_blank">tuberculous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unscrupulous" target="_blank">unscrupulous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zealous" target="_blank">zealous</a></li>
+<ul id="words">
+<li>anomalous</li>
+<li>callous</li>
+<li>credulous</li>
+<li>fabulous</li>
+<li>frivolous</li>
+<li>incredulous</li>
+<li>jealous</li>
+<li>libelous</li>
+<li>meticulous</li>
+<li>miraculous</li>
+<li>nebulous</li>
+<li>overzealous</li>
+<li>pendulous</li>
+<li>perilous</li>
+<li>populous</li>
+<li>scrupulous</li>
+<li>scurrilous</li>
+<li>tuberculous</li>
+<li>unscrupulous</li>
+<li>zealous</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="176" data-circle-pattern="_lous">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "anomalous callous credulous fabulous frivolous, incredulous jealous libelous meticulous miraculous, nebulous overzealous pendulous perilous populous, scrupulous scurrilous tuberculous unscrupulous zealous";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

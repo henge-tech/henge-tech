@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _type</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#336 _type
+<h2>#336 _type</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=archetype" target="_blank">archetype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=biotype" target="_blank">biotype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daguerreotype" target="_blank">daguerreotype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ecotype" target="_blank">ecotype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genotype" target="_blank">genotype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=logotype" target="_blank">logotype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monotype" target="_blank">monotype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=phenotype" target="_blank">phenotype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prototype" target="_blank">prototype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stereotype" target="_blank">stereotype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=teletype" target="_blank">teletype</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tintype" target="_blank">tintype</a></li>
+<ul id="words">
+<li>archetype</li>
+<li>biotype</li>
+<li>daguerreotype</li>
+<li>ecotype</li>
+<li>genotype</li>
+<li>logotype</li>
+<li>monotype</li>
+<li>phenotype</li>
+<li>prototype</li>
+<li>stereotype</li>
+<li>teletype</li>
+<li>tintype</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="336" data-circle-pattern="_type">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "archetype biotype daguerreotype, ecotype genotype logotype, monotype phenotype prototype, stereotype teletype tintype";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

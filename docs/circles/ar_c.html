@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ar_c</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#417 ar_c
+<h2>#417 ar_c</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=archaic" target="_blank">archaic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=archbishopric" target="_blank">archbishopric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arctic" target="_blank">arctic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aristocratic" target="_blank">aristocratic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arithmetic" target="_blank">arithmetic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aromatic" target="_blank">aromatic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arsenic" target="_blank">arsenic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arthritic" target="_blank">arthritic</a></li>
+<ul id="words">
+<li>archaic</li>
+<li>archbishopric</li>
+<li>arctic</li>
+<li>aristocratic</li>
+<li>arithmetic</li>
+<li>aromatic</li>
+<li>arsenic</li>
+<li>arthritic</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="417" data-circle-pattern="ar_c">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "archaic archbishopric arctic aristocratic, arithmetic aromatic arsenic arthritic";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

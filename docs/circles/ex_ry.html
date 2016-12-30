@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ex_ry</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#635 ex_ry
+<h2>#635 ex_ry</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclusionary" target="_blank">exclusionary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excretory" target="_blank">excretory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exculpatory" target="_blank">exculpatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exemplary" target="_blank">exemplary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expansionary" target="_blank">expansionary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expeditionary" target="_blank">expeditionary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expiratory" target="_blank">expiratory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expiry" target="_blank">expiry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=explanatory" target="_blank">explanatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exploratory" target="_blank">exploratory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expository" target="_blank">expository</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extraordinary" target="_blank">extraordinary</a></li>
+<ul id="words">
+<li>exclusionary</li>
+<li>excretory</li>
+<li>exculpatory</li>
+<li>exemplary</li>
+<li>expansionary</li>
+<li>expeditionary</li>
+<li>expiratory</li>
+<li>expiry</li>
+<li>explanatory</li>
+<li>exploratory</li>
+<li>expository</li>
+<li>extraordinary</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="635" data-circle-pattern="ex_ry">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "exclusionary excretory exculpatory, exemplary expansionary expeditionary, expiratory expiry explanatory, exploratory expository extraordinary";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

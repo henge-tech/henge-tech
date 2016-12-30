@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: wan_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#990 wan_
+<h2>#990 wan_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wan" target="_blank">wan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wand" target="_blank">wand</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wander" target="_blank">wander</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wanderer" target="_blank">wanderer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wandering" target="_blank">wandering</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wanderlust" target="_blank">wanderlust</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wane" target="_blank">wane</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wangle" target="_blank">wangle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wank" target="_blank">wank</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wanker" target="_blank">wanker</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wanton" target="_blank">wanton</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wantonly" target="_blank">wantonly</a></li>
+<ul id="words">
+<li>wan</li>
+<li>wand</li>
+<li>wander</li>
+<li>wanderer</li>
+<li>wandering</li>
+<li>wanderlust</li>
+<li>wane</li>
+<li>wangle</li>
+<li>wank</li>
+<li>wanker</li>
+<li>wanton</li>
+<li>wantonly</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="990" data-circle-pattern="wan_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "wan wand wander, wanderer wandering wanderlust, wane wangle wank, wanker wanton wantonly";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

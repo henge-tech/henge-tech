@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _tum</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#334 _tum
+<h2>#334 _tum</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arboretum" target="_blank">arboretum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=datum" target="_blank">datum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dictum" target="_blank">dictum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=factotum" target="_blank">factotum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=momentum" target="_blank">momentum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=postpartum" target="_blank">postpartum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quantum" target="_blank">quantum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rectum" target="_blank">rectum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sanctum" target="_blank">sanctum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrotum" target="_blank">scrotum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=septum" target="_blank">septum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sputum" target="_blank">sputum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stratum" target="_blank">stratum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=substratum" target="_blank">substratum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tum" target="_blank">tum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ultimatum" target="_blank">ultimatum</a></li>
+<ul id="words">
+<li>arboretum</li>
+<li>datum</li>
+<li>dictum</li>
+<li>factotum</li>
+<li>momentum</li>
+<li>postpartum</li>
+<li>quantum</li>
+<li>rectum</li>
+<li>sanctum</li>
+<li>scrotum</li>
+<li>septum</li>
+<li>sputum</li>
+<li>stratum</li>
+<li>substratum</li>
+<li>tum</li>
+<li>ultimatum</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="334" data-circle-pattern="_tum">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "arboretum datum dictum factotum, momentum postpartum quantum rectum, sanctum scrotum septum sputum, stratum substratum tum ultimatum";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

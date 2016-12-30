@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: mu_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#778 mu_y
+<h2>#778 mu_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mucky" target="_blank">mucky</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muddy" target="_blank">muddy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muggy" target="_blank">muggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mulberry" target="_blank">mulberry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multidisciplinary" target="_blank">multidisciplinary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multifamily" target="_blank">multifamily</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiparty" target="_blank">multiparty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiplicity" target="_blank">multiplicity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiply" target="_blank">multiply</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mummy" target="_blank">mummy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=municipality" target="_blank">municipality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=murky" target="_blank">murky</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mushy" target="_blank">mushy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=musicality" target="_blank">musicality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=musicology" target="_blank">musicology</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=musky" target="_blank">musky</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=musty" target="_blank">musty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutiny" target="_blank">mutiny</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutuality" target="_blank">mutuality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutually" target="_blank">mutually</a></li>
+<ul id="words">
+<li>mucky</li>
+<li>muddy</li>
+<li>muggy</li>
+<li>mulberry</li>
+<li>multidisciplinary</li>
+<li>multifamily</li>
+<li>multiparty</li>
+<li>multiplicity</li>
+<li>multiply</li>
+<li>mummy</li>
+<li>municipality</li>
+<li>murky</li>
+<li>mushy</li>
+<li>musicality</li>
+<li>musicology</li>
+<li>musky</li>
+<li>musty</li>
+<li>mutiny</li>
+<li>mutuality</li>
+<li>mutually</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="778" data-circle-pattern="mu_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "mucky muddy muggy mulberry multidisciplinary, multifamily multiparty multiplicity multiply mummy, municipality murky mushy musicality musicology, musky musty mutiny mutuality mutually";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

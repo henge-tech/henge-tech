@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: c_ip</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#471 c_ip
+<h2>#471 c_ip</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cadetship" target="_blank">cadetship</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=catnip" target="_blank">catnip</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=censorship" target="_blank">censorship</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chairmanship" target="_blank">chairmanship</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=championship" target="_blank">championship</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chancellorship" target="_blank">chancellorship</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=citizenship" target="_blank">citizenship</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clip" target="_blank">clip</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=companionship" target="_blank">companionship</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comradeship" target="_blank">comradeship</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courtship" target="_blank">courtship</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=craftsmanship" target="_blank">craftsmanship</a></li>
+<ul id="words">
+<li>cadetship</li>
+<li>catnip</li>
+<li>censorship</li>
+<li>chairmanship</li>
+<li>championship</li>
+<li>chancellorship</li>
+<li>citizenship</li>
+<li>clip</li>
+<li>companionship</li>
+<li>comradeship</li>
+<li>courtship</li>
+<li>craftsmanship</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="471" data-circle-pattern="c_ip">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "cadetship catnip censorship, chairmanship championship chancellorship, citizenship clip companionship, comradeship courtship craftsmanship";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

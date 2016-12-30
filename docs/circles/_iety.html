@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _iety</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#135 _iety
+<h2>#135 _iety</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anxiety" target="_blank">anxiety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contrariety" target="_blank">contrariety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gaiety" target="_blank">gaiety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impiety" target="_blank">impiety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impropriety" target="_blank">impropriety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moiety" target="_blank">moiety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=notoriety" target="_blank">notoriety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piety" target="_blank">piety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=propriety" target="_blank">propriety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=satiety" target="_blank">satiety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sobriety" target="_blank">sobriety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=variety" target="_blank">variety</a></li>
+<ul id="words">
+<li>anxiety</li>
+<li>contrariety</li>
+<li>gaiety</li>
+<li>impiety</li>
+<li>impropriety</li>
+<li>moiety</li>
+<li>notoriety</li>
+<li>piety</li>
+<li>propriety</li>
+<li>satiety</li>
+<li>sobriety</li>
+<li>variety</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="135" data-circle-pattern="_iety">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "anxiety contrariety gaiety, impiety impropriety moiety, notoriety piety propriety, satiety sobriety variety";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

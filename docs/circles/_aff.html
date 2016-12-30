@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _aff</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#9 _aff
+<h2>#9 _aff</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caff" target="_blank">caff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chaff" target="_blank">chaff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chiffchaff" target="_blank">chiffchaff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distaff" target="_blank">distaff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=faff" target="_blank">faff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flagstaff" target="_blank">flagstaff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gaff" target="_blank">gaff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naff" target="_blank">naff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quaff" target="_blank">quaff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quarterstaff" target="_blank">quarterstaff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riffraff" target="_blank">riffraff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=staff" target="_blank">staff</a></li>
+<ul id="words">
+<li>caff</li>
+<li>chaff</li>
+<li>chiffchaff</li>
+<li>distaff</li>
+<li>faff</li>
+<li>flagstaff</li>
+<li>gaff</li>
+<li>naff</li>
+<li>quaff</li>
+<li>quarterstaff</li>
+<li>riffraff</li>
+<li>staff</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="9" data-circle-pattern="_aff">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "caff chaff chiffchaff, distaff faff flagstaff, gaff naff quaff, quarterstaff riffraff staff";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

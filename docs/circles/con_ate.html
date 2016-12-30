@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: con_ate</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#522 con_ate
+<h2>#522 con_ate</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concatenate" target="_blank">concatenate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conciliate" target="_blank">conciliate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=condensate" target="_blank">condensate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confederate" target="_blank">confederate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confiscate" target="_blank">confiscate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conflate" target="_blank">conflate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conglomerate" target="_blank">conglomerate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=congregate" target="_blank">congregate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conjugate" target="_blank">conjugate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consecrate" target="_blank">consecrate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=considerate" target="_blank">considerate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consolidate" target="_blank">consolidate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consulate" target="_blank">consulate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consummate" target="_blank">consummate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contaminate" target="_blank">contaminate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contemplate" target="_blank">contemplate</a></li>
+<ul id="words">
+<li>concatenate</li>
+<li>conciliate</li>
+<li>condensate</li>
+<li>confederate</li>
+<li>confiscate</li>
+<li>conflate</li>
+<li>conglomerate</li>
+<li>congregate</li>
+<li>conjugate</li>
+<li>consecrate</li>
+<li>considerate</li>
+<li>consolidate</li>
+<li>consulate</li>
+<li>consummate</li>
+<li>contaminate</li>
+<li>contemplate</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="522" data-circle-pattern="con_ate">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "concatenate conciliate condensate confederate, confiscate conflate conglomerate congregate, conjugate consecrate considerate consolidate, consulate consummate contaminate contemplate";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

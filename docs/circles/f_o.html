@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: f_o</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#649 f_o
+<h2>#649 f_o</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=falsetto" target="_blank">falsetto</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fandango" target="_blank">fandango</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=farrago" target="_blank">farrago</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fatso" target="_blank">fatso</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fiasco" target="_blank">fiasco</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=filo" target="_blank">filo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flamenco" target="_blank">flamenco</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flamingo" target="_blank">flamingo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=folio" target="_blank">folio</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forgo" target="_blank">forgo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fresco" target="_blank">fresco</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fro" target="_blank">fro</a></li>
+<ul id="words">
+<li>falsetto</li>
+<li>fandango</li>
+<li>farrago</li>
+<li>fatso</li>
+<li>fiasco</li>
+<li>filo</li>
+<li>flamenco</li>
+<li>flamingo</li>
+<li>folio</li>
+<li>forgo</li>
+<li>fresco</li>
+<li>fro</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="649" data-circle-pattern="f_o">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "falsetto fandango farrago, fatso fiasco filo, flamenco flamingo folio, forgo fresco fro";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

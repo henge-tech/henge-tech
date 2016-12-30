@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ex_ive</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#632 ex_ive
+<h2>#632 ex_ive</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excessive" target="_blank">excessive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclusive" target="_blank">exclusive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=executive" target="_blank">executive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exhaustive" target="_blank">exhaustive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expansive" target="_blank">expansive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expensive" target="_blank">expensive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expletive" target="_blank">expletive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exploitative" target="_blank">exploitative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=explosive" target="_blank">explosive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expressive" target="_blank">expressive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extensive" target="_blank">extensive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extractive" target="_blank">extractive</a></li>
+<ul id="words">
+<li>excessive</li>
+<li>exclusive</li>
+<li>executive</li>
+<li>exhaustive</li>
+<li>expansive</li>
+<li>expensive</li>
+<li>expletive</li>
+<li>exploitative</li>
+<li>explosive</li>
+<li>expressive</li>
+<li>extensive</li>
+<li>extractive</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="632" data-circle-pattern="ex_ive">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "excessive exclusive executive, exhaustive expansive expensive, expletive exploitative explosive, expressive extensive extractive";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_om</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#442 b_om
+<h2>#442 b_om</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=backroom" target="_blank">backroom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ballroom" target="_blank">ballroom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=besom" target="_blank">besom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloom" target="_blank">bloom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blossom" target="_blank">blossom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boardroom" target="_blank">boardroom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boom" target="_blank">boom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boredom" target="_blank">boredom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bosom" target="_blank">bosom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bridegroom" target="_blank">bridegroom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broom" target="_blank">broom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buxom" target="_blank">buxom</a></li>
+<ul id="words">
+<li>backroom</li>
+<li>ballroom</li>
+<li>besom</li>
+<li>bloom</li>
+<li>blossom</li>
+<li>boardroom</li>
+<li>boom</li>
+<li>boredom</li>
+<li>bosom</li>
+<li>bridegroom</li>
+<li>broom</li>
+<li>buxom</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="442" data-circle-pattern="b_om">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "backroom ballroom besom, bloom blossom boardroom, boom boredom bosom, bridegroom broom buxom";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

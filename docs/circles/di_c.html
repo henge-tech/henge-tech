@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: di_c</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#589 di_c
+<h2>#589 di_c</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diabetic" target="_blank">diabetic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diabolic" target="_blank">diabolic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diagnostic" target="_blank">diagnostic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dialectic" target="_blank">dialectic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diaphragmatic" target="_blank">diaphragmatic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diastolic" target="_blank">diastolic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diatonic" target="_blank">diatonic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=didactic" target="_blank">didactic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dielectric" target="_blank">dielectric</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dietetic" target="_blank">dietetic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diplomatic" target="_blank">diplomatic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diuretic" target="_blank">diuretic</a></li>
+<ul id="words">
+<li>diabetic</li>
+<li>diabolic</li>
+<li>diagnostic</li>
+<li>dialectic</li>
+<li>diaphragmatic</li>
+<li>diastolic</li>
+<li>diatonic</li>
+<li>didactic</li>
+<li>dielectric</li>
+<li>dietetic</li>
+<li>diplomatic</li>
+<li>diuretic</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="589" data-circle-pattern="di_c">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "diabetic diabolic diagnostic, dialectic diaphragmatic diastolic, diatonic didactic dielectric, dietetic diplomatic diuretic";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

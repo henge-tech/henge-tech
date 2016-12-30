@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ior</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#145 _ior
+<h2>#145 _ior</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anterior" target="_blank">anterior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excelsior" target="_blank">excelsior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exterior" target="_blank">exterior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inferior" target="_blank">inferior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interior" target="_blank">interior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=junior" target="_blank">junior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=posterior" target="_blank">posterior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prior" target="_blank">prior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savior" target="_blank">savior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=senior" target="_blank">senior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=superior" target="_blank">superior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ulterior" target="_blank">ulterior</a></li>
+<ul id="words">
+<li>anterior</li>
+<li>excelsior</li>
+<li>exterior</li>
+<li>inferior</li>
+<li>interior</li>
+<li>junior</li>
+<li>posterior</li>
+<li>prior</li>
+<li>savior</li>
+<li>senior</li>
+<li>superior</li>
+<li>ulterior</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="145" data-circle-pattern="_ior">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "anterior excelsior exterior, inferior interior junior, posterior prior savior, senior superior ulterior";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

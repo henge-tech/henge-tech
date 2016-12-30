@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _mous</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#192 _mous
+<h2>#192 _mous</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=autonomous" target="_blank">autonomous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blasphemous" target="_blank">blasphemous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=endogamous" target="_blank">endogamous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eponymous" target="_blank">eponymous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infamous" target="_blank">infamous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magnanimous" target="_blank">magnanimous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monogamous" target="_blank">monogamous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=polygamous" target="_blank">polygamous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=posthumous" target="_blank">posthumous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=synonymous" target="_blank">synonymous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unanimous" target="_blank">unanimous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=venomous" target="_blank">venomous</a></li>
+<ul id="words">
+<li>autonomous</li>
+<li>blasphemous</li>
+<li>endogamous</li>
+<li>eponymous</li>
+<li>infamous</li>
+<li>magnanimous</li>
+<li>monogamous</li>
+<li>polygamous</li>
+<li>posthumous</li>
+<li>synonymous</li>
+<li>unanimous</li>
+<li>venomous</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="192" data-circle-pattern="_mous">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "autonomous blasphemous endogamous, eponymous infamous magnanimous, monogamous polygamous posthumous, synonymous unanimous venomous";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

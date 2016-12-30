@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: to_r</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#961 to_r
+<h2>#961 to_r</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toastmaster" target="_blank">toastmaster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toddler" target="_blank">toddler</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toner" target="_blank">toner</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=topper" target="_blank">topper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tor" target="_blank">tor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toreador" target="_blank">toreador</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tormentor" target="_blank">tormentor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=torpor" target="_blank">torpor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=torturer" target="_blank">torturer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tosser" target="_blank">tosser</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=totter" target="_blank">totter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tower" target="_blank">tower</a></li>
+<ul id="words">
+<li>toastmaster</li>
+<li>toddler</li>
+<li>toner</li>
+<li>topper</li>
+<li>tor</li>
+<li>toreador</li>
+<li>tormentor</li>
+<li>torpor</li>
+<li>torturer</li>
+<li>tosser</li>
+<li>totter</li>
+<li>tower</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="961" data-circle-pattern="to_r">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "toastmaster toddler toner, topper tor toreador, tormentor torpor torturer, tosser totter tower";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

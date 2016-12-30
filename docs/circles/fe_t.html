@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: fe_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#655 fe_t
+<h2>#655 fe_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feast" target="_blank">feast</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feat" target="_blank">feat</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=featherweight" target="_blank">featherweight</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=federalist" target="_blank">federalist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feet" target="_blank">feet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feint" target="_blank">feint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feminist" target="_blank">feminist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ferment" target="_blank">ferment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ferret" target="_blank">ferret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fervent" target="_blank">fervent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fest" target="_blank">fest</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fetishist" target="_blank">fetishist</a></li>
+<ul id="words">
+<li>feast</li>
+<li>feat</li>
+<li>featherweight</li>
+<li>federalist</li>
+<li>feet</li>
+<li>feint</li>
+<li>feminist</li>
+<li>ferment</li>
+<li>ferret</li>
+<li>fervent</li>
+<li>fest</li>
+<li>fetishist</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="655" data-circle-pattern="fe_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "feast feat featherweight, federalist feet feint, feminist ferment ferret, fervent fest fetishist";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

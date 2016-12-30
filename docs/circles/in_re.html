@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: in_re</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#710 in_re
+<h2>#710 in_re</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indenture" target="_blank">indenture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=injure" target="_blank">injure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inquire" target="_blank">inquire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insecure" target="_blank">insecure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inshore" target="_blank">inshore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insincere" target="_blank">insincere</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inspire" target="_blank">inspire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insure" target="_blank">insure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interfere" target="_blank">interfere</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intermixture" target="_blank">intermixture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inure" target="_blank">inure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=investiture" target="_blank">investiture</a></li>
+<ul id="words">
+<li>indenture</li>
+<li>injure</li>
+<li>inquire</li>
+<li>insecure</li>
+<li>inshore</li>
+<li>insincere</li>
+<li>inspire</li>
+<li>insure</li>
+<li>interfere</li>
+<li>intermixture</li>
+<li>inure</li>
+<li>investiture</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="710" data-circle-pattern="in_re">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "indenture injure inquire, insecure inshore insincere, inspire insure interfere, intermixture inure investiture";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

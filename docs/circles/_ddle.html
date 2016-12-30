@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ddle</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#68 _ddle
+<h2>#68 _ddle</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coddle" target="_blank">coddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cuddle" target="_blank">cuddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diddle" target="_blank">diddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fiddle" target="_blank">fiddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=griddle" target="_blank">griddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=huddle" target="_blank">huddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meddle" target="_blank">meddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=middle" target="_blank">middle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muddle" target="_blank">muddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paddle" target="_blank">paddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peddle" target="_blank">peddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piddle" target="_blank">piddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=puddle" target="_blank">puddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riddle" target="_blank">riddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saddle" target="_blank">saddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=straddle" target="_blank">straddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toddle" target="_blank">toddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=twaddle" target="_blank">twaddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=twiddle" target="_blank">twiddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waddle" target="_blank">waddle</a></li>
+<ul id="words">
+<li>coddle</li>
+<li>cuddle</li>
+<li>diddle</li>
+<li>fiddle</li>
+<li>griddle</li>
+<li>huddle</li>
+<li>meddle</li>
+<li>middle</li>
+<li>muddle</li>
+<li>paddle</li>
+<li>peddle</li>
+<li>piddle</li>
+<li>puddle</li>
+<li>riddle</li>
+<li>saddle</li>
+<li>straddle</li>
+<li>toddle</li>
+<li>twaddle</li>
+<li>twiddle</li>
+<li>waddle</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="68" data-circle-pattern="_ddle">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "coddle cuddle diddle fiddle griddle, huddle meddle middle muddle paddle, peddle piddle puddle riddle saddle, straddle toddle twaddle twiddle waddle";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

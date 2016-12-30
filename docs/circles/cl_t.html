@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: cl_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#502 cl_t
+<h2>#502 cl_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=claimant" target="_blank">claimant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clairvoyant" target="_blank">clairvoyant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=claret" target="_blank">claret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clarinet" target="_blank">clarinet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clearcut" target="_blank">clearcut</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cleat" target="_blank">cleat</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cleft" target="_blank">cleft</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clement" target="_blank">clement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=client" target="_blank">client</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=closeout" target="_blank">closeout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clot" target="_blank">clot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clout" target="_blank">clout</a></li>
+<ul id="words">
+<li>claimant</li>
+<li>clairvoyant</li>
+<li>claret</li>
+<li>clarinet</li>
+<li>clearcut</li>
+<li>cleat</li>
+<li>cleft</li>
+<li>clement</li>
+<li>client</li>
+<li>closeout</li>
+<li>clot</li>
+<li>clout</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="502" data-circle-pattern="cl_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "claimant clairvoyant claret, clarinet clearcut cleat, cleft clement client, closeout clot clout";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

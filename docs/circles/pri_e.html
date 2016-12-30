@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: pri_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#853 pri_e
+<h2>#853 pri_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prickle" target="_blank">prickle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=primate" target="_blank">primate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prime" target="_blank">prime</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=primitive" target="_blank">primitive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=primrose" target="_blank">primrose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=principle" target="_blank">principle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prioritize" target="_blank">prioritize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pristine" target="_blank">pristine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=private" target="_blank">private</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=privatize" target="_blank">privatize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=privilege" target="_blank">privilege</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prize" target="_blank">prize</a></li>
+<ul id="words">
+<li>prickle</li>
+<li>primate</li>
+<li>prime</li>
+<li>primitive</li>
+<li>primrose</li>
+<li>principle</li>
+<li>prioritize</li>
+<li>pristine</li>
+<li>private</li>
+<li>privatize</li>
+<li>privilege</li>
+<li>prize</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="853" data-circle-pattern="pri_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "prickle primate prime, primitive primrose principle, prioritize pristine private, privatize privilege prize";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

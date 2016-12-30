@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_us</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#448 b_us
+<h2>#448 b_us</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bacillus" target="_blank">bacillus</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barbarous" target="_blank">barbarous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beauteous" target="_blank">beauteous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bilious" target="_blank">bilious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blasphemous" target="_blank">blasphemous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bodacious" target="_blank">bodacious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bogus" target="_blank">bogus</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boisterous" target="_blank">boisterous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bolus" target="_blank">bolus</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bronchus" target="_blank">bronchus</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bulbous" target="_blank">bulbous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bumptious" target="_blank">bumptious</a></li>
+<ul id="words">
+<li>bacillus</li>
+<li>barbarous</li>
+<li>beauteous</li>
+<li>bilious</li>
+<li>blasphemous</li>
+<li>bodacious</li>
+<li>bogus</li>
+<li>boisterous</li>
+<li>bolus</li>
+<li>bronchus</li>
+<li>bulbous</li>
+<li>bumptious</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="448" data-circle-pattern="b_us">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bacillus barbarous beauteous, bilious blasphemous bodacious, bogus boisterous bolus, bronchus bulbous bumptious";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

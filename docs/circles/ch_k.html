@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ch_k</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#497 ch_k
+<h2>#497 ch_k</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chalk" target="_blank">chalk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chapbook" target="_blank">chapbook</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=checkbook" target="_blank">checkbook</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cheek" target="_blank">cheek</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chick" target="_blank">chick</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chink" target="_blank">chink</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chinook" target="_blank">chinook</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chipmunk" target="_blank">chipmunk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chock" target="_blank">chock</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chook" target="_blank">chook</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chuck" target="_blank">chuck</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chunk" target="_blank">chunk</a></li>
+<ul id="words">
+<li>chalk</li>
+<li>chapbook</li>
+<li>checkbook</li>
+<li>cheek</li>
+<li>chick</li>
+<li>chink</li>
+<li>chinook</li>
+<li>chipmunk</li>
+<li>chock</li>
+<li>chook</li>
+<li>chuck</li>
+<li>chunk</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="497" data-circle-pattern="ch_k">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "chalk chapbook checkbook, cheek chick chink, chinook chipmunk chock, chook chuck chunk";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

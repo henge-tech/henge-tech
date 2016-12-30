@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: mark_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#762 mark_
+<h2>#762 mark_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=markdown" target="_blank">markdown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marked" target="_blank">marked</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=markedly" target="_blank">markedly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marker" target="_blank">marker</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marketable" target="_blank">marketable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marketeer" target="_blank">marketeer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marketer" target="_blank">marketer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marketplace" target="_blank">marketplace</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marking" target="_blank">marking</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marksman" target="_blank">marksman</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marksmanship" target="_blank">marksmanship</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=markup" target="_blank">markup</a></li>
+<ul id="words">
+<li>markdown</li>
+<li>marked</li>
+<li>markedly</li>
+<li>marker</li>
+<li>marketable</li>
+<li>marketeer</li>
+<li>marketer</li>
+<li>marketplace</li>
+<li>marking</li>
+<li>marksman</li>
+<li>marksmanship</li>
+<li>markup</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="762" data-circle-pattern="mark_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "markdown marked markedly, marker marketable marketeer, marketer marketplace marking, marksman marksmanship markup";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: for_d</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#662 for_d
+<h2>#662 for_d</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forbid" target="_blank">forbid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forced" target="_blank">forced</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ford" target="_blank">ford</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foreclosed" target="_blank">foreclosed</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foreground" target="_blank">foreground</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forehand" target="_blank">forehand</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forehead" target="_blank">forehead</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foreshadowed" target="_blank">foreshadowed</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forested" target="_blank">forested</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foreword" target="_blank">foreword</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forked" target="_blank">forked</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forward" target="_blank">forward</a></li>
+<ul id="words">
+<li>forbid</li>
+<li>forced</li>
+<li>ford</li>
+<li>foreclosed</li>
+<li>foreground</li>
+<li>forehand</li>
+<li>forehead</li>
+<li>foreshadowed</li>
+<li>forested</li>
+<li>foreword</li>
+<li>forked</li>
+<li>forward</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="662" data-circle-pattern="for_d">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "forbid forced ford, foreclosed foreground forehand, forehead foreshadowed forested, foreword forked forward";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _lee</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#161 _lee
+<h2>#161 _lee</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coulee" target="_blank">coulee</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=enrollee" target="_blank">enrollee</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flee" target="_blank">flee</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Galilee" target="_blank">Galilee</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glee" target="_blank">glee</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jubilee" target="_blank">jubilee</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lee" target="_blank">lee</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=melee" target="_blank">melee</a></li>
+<ul id="words">
+<li>coulee</li>
+<li>enrollee</li>
+<li>flee</li>
+<li>Galilee</li>
+<li>glee</li>
+<li>jubilee</li>
+<li>lee</li>
+<li>melee</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="161" data-circle-pattern="_lee">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "coulee enrollee flee Galilee, glee jubilee lee melee";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

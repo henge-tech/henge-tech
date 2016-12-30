@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: a_ure</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#387 a_ure
+<h2>#387 a_ure</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abjure" target="_blank">abjure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acupressure" target="_blank">acupressure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acupuncture" target="_blank">acupuncture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adjure" target="_blank">adjure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=admixture" target="_blank">admixture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allure" target="_blank">allure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aperture" target="_blank">aperture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apiculture" target="_blank">apiculture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aquaculture" target="_blank">aquaculture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=armature" target="_blank">armature</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assure" target="_blank">assure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=azure" target="_blank">azure</a></li>
+<ul id="words">
+<li>abjure</li>
+<li>acupressure</li>
+<li>acupuncture</li>
+<li>adjure</li>
+<li>admixture</li>
+<li>allure</li>
+<li>aperture</li>
+<li>apiculture</li>
+<li>aquaculture</li>
+<li>armature</li>
+<li>assure</li>
+<li>azure</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="387" data-circle-pattern="a_ure">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "abjure acupressure acupuncture, adjure admixture allure, aperture apiculture aquaculture, armature assure azure";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

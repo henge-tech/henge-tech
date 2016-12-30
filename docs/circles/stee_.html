@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: stee_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#932 stee_
+<h2>#932 stee_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steed" target="_blank">steed</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steel" target="_blank">steel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steelworker" target="_blank">steelworker</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steely" target="_blank">steely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steep" target="_blank">steep</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steeple" target="_blank">steeple</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steeplechase" target="_blank">steeplechase</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steeply" target="_blank">steeply</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steer" target="_blank">steer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steerage" target="_blank">steerage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steerer" target="_blank">steerer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steering" target="_blank">steering</a></li>
+<ul id="words">
+<li>steed</li>
+<li>steel</li>
+<li>steelworker</li>
+<li>steely</li>
+<li>steep</li>
+<li>steeple</li>
+<li>steeplechase</li>
+<li>steeply</li>
+<li>steer</li>
+<li>steerage</li>
+<li>steerer</li>
+<li>steering</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="932" data-circle-pattern="stee_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "steed steel steelworker, steely steep steeple, steeplechase steeply steer, steerage steerer steering";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

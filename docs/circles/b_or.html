@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_or</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#443 b_or
+<h2>#443 b_or</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bachelor" target="_blank">bachelor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=backdoor" target="_blank">backdoor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=behavior" target="_blank">behavior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=belabor" target="_blank">belabor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=benefactor" target="_blank">benefactor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bettor" target="_blank">bettor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bisector" target="_blank">bisector</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boor" target="_blank">boor</a></li>
+<ul id="words">
+<li>bachelor</li>
+<li>backdoor</li>
+<li>behavior</li>
+<li>belabor</li>
+<li>benefactor</li>
+<li>bettor</li>
+<li>bisector</li>
+<li>boor</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="443" data-circle-pattern="b_or">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bachelor backdoor behavior belabor, benefactor bettor bisector boor";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

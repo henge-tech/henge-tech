@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: div_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#608 div_e
+<h2>#608 div_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dive" target="_blank">dive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diverge" target="_blank">diverge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divergence" target="_blank">divergence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diverse" target="_blank">diverse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divestiture" target="_blank">divestiture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divide" target="_blank">divide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divine" target="_blank">divine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divisible" target="_blank">divisible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divisive" target="_blank">divisive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divorce" target="_blank">divorce</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divorcee" target="_blank">divorcee</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divulge" target="_blank">divulge</a></li>
+<ul id="words">
+<li>dive</li>
+<li>diverge</li>
+<li>divergence</li>
+<li>diverse</li>
+<li>divestiture</li>
+<li>divide</li>
+<li>divine</li>
+<li>divisible</li>
+<li>divisive</li>
+<li>divorce</li>
+<li>divorcee</li>
+<li>divulge</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="608" data-circle-pattern="div_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "dive diverge divergence, diverse divestiture divide, divine divisible divisive, divorce divorcee divulge";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

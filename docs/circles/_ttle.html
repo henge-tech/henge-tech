@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ttle</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#332 _ttle
+<h2>#332 _ttle</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=battle" target="_blank">battle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=belittle" target="_blank">belittle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bottle" target="_blank">bottle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brittle" target="_blank">brittle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cattle" target="_blank">cattle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kettle" target="_blank">kettle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=little" target="_blank">little</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mettle" target="_blank">mettle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nettle" target="_blank">nettle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prattle" target="_blank">prattle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rattle" target="_blank">rattle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scuttle" target="_blank">scuttle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=settle" target="_blank">settle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shuttle" target="_blank">shuttle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spittle" target="_blank">spittle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tattle" target="_blank">tattle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=throttle" target="_blank">throttle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tittle" target="_blank">tittle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wattle" target="_blank">wattle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whittle" target="_blank">whittle</a></li>
+<ul id="words">
+<li>battle</li>
+<li>belittle</li>
+<li>bottle</li>
+<li>brittle</li>
+<li>cattle</li>
+<li>kettle</li>
+<li>little</li>
+<li>mettle</li>
+<li>nettle</li>
+<li>prattle</li>
+<li>rattle</li>
+<li>scuttle</li>
+<li>settle</li>
+<li>shuttle</li>
+<li>spittle</li>
+<li>tattle</li>
+<li>throttle</li>
+<li>tittle</li>
+<li>wattle</li>
+<li>whittle</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="332" data-circle-pattern="_ttle">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "battle belittle bottle brittle cattle, kettle little mettle nettle prattle, rattle scuttle settle shuttle spittle, tattle throttle tittle wattle whittle";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

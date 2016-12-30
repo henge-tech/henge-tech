@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: no_ion</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#786 no_ion
+<h2>#786 no_ion</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nomination" target="_blank">nomination</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noncooperation" target="_blank">noncooperation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonfiction" target="_blank">nonfiction</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonprescription" target="_blank">nonprescription</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonproliferation" target="_blank">nonproliferation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonunion" target="_blank">nonunion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=normalization" target="_blank">normalization</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=notation" target="_blank">notation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=notification" target="_blank">notification</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=notion" target="_blank">notion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=novation" target="_blank">novation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=novelization" target="_blank">novelization</a></li>
+<ul id="words">
+<li>nomination</li>
+<li>noncooperation</li>
+<li>nonfiction</li>
+<li>nonprescription</li>
+<li>nonproliferation</li>
+<li>nonunion</li>
+<li>normalization</li>
+<li>notation</li>
+<li>notification</li>
+<li>notion</li>
+<li>novation</li>
+<li>novelization</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="786" data-circle-pattern="no_ion">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "nomination noncooperation nonfiction, nonprescription nonproliferation nonunion, normalization notation notification, notion novation novelization";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

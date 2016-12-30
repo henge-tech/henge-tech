@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _nion</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#209 _nion
+<h2>#209 _nion</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anion" target="_blank">anion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bunion" target="_blank">bunion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=communion" target="_blank">communion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=companion" target="_blank">companion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dominion" target="_blank">dominion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=minion" target="_blank">minion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonunion" target="_blank">nonunion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=onion" target="_blank">onion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opinion" target="_blank">opinion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinion" target="_blank">pinion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reunion" target="_blank">reunion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=union" target="_blank">union</a></li>
+<ul id="words">
+<li>anion</li>
+<li>bunion</li>
+<li>communion</li>
+<li>companion</li>
+<li>dominion</li>
+<li>minion</li>
+<li>nonunion</li>
+<li>onion</li>
+<li>opinion</li>
+<li>pinion</li>
+<li>reunion</li>
+<li>union</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="209" data-circle-pattern="_nion">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "anion bunion communion, companion dominion minion, nonunion onion opinion, pinion reunion union";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

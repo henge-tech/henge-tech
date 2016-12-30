@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: pi_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#838 pi_t
+<h2>#838 pi_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pianist" target="_blank">pianist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=picket" target="_blank">picket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pickpocket" target="_blank">pickpocket</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piglet" target="_blank">piglet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pigment" target="_blank">pigment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinpoint" target="_blank">pinpoint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pint" target="_blank">pint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pipit" target="_blank">pipit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piquant" target="_blank">piquant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piquet" target="_blank">piquet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pit" target="_blank">pit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pivot" target="_blank">pivot</a></li>
+<ul id="words">
+<li>pianist</li>
+<li>picket</li>
+<li>pickpocket</li>
+<li>piglet</li>
+<li>pigment</li>
+<li>pinpoint</li>
+<li>pint</li>
+<li>pipit</li>
+<li>piquant</li>
+<li>piquet</li>
+<li>pit</li>
+<li>pivot</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="838" data-circle-pattern="pi_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "pianist picket pickpocket, piglet pigment pinpoint, pint pipit piquant, piquet pit pivot";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

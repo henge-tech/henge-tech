@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: f_id</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#646 f_id
+<h2>#646 f_id</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=factoid" target="_blank">factoid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fetid" target="_blank">fetid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fibroid" target="_blank">fibroid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flaccid" target="_blank">flaccid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=florid" target="_blank">florid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluid" target="_blank">fluid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forbid" target="_blank">forbid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frigid" target="_blank">frigid</a></li>
+<ul id="words">
+<li>factoid</li>
+<li>fetid</li>
+<li>fibroid</li>
+<li>flaccid</li>
+<li>florid</li>
+<li>fluid</li>
+<li>forbid</li>
+<li>frigid</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="646" data-circle-pattern="f_id">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "factoid fetid fibroid flaccid, florid fluid forbid frigid";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

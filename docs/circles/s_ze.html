@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: s_ze</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#914 s_ze
+<h2>#914 s_ze</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sanitize" target="_blank">sanitize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrutinize" target="_blank">scrutinize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seize" target="_blank">seize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sensitize" target="_blank">sensitize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=serialize" target="_blank">serialize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sleaze" target="_blank">sleaze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sneeze" target="_blank">sneeze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snooze" target="_blank">snooze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=socialize" target="_blank">socialize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=specialize" target="_blank">specialize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squeeze" target="_blank">squeeze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stabilize" target="_blank">stabilize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=standardize" target="_blank">standardize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sterilize" target="_blank">sterilize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subsidize" target="_blank">subsidize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=summarize" target="_blank">summarize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=symbolize" target="_blank">symbolize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sympathize" target="_blank">sympathize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=synchronize" target="_blank">synchronize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=synthesize" target="_blank">synthesize</a></li>
+<ul id="words">
+<li>sanitize</li>
+<li>scrutinize</li>
+<li>seize</li>
+<li>sensitize</li>
+<li>serialize</li>
+<li>sleaze</li>
+<li>sneeze</li>
+<li>snooze</li>
+<li>socialize</li>
+<li>specialize</li>
+<li>squeeze</li>
+<li>stabilize</li>
+<li>standardize</li>
+<li>sterilize</li>
+<li>subsidize</li>
+<li>summarize</li>
+<li>symbolize</li>
+<li>sympathize</li>
+<li>synchronize</li>
+<li>synthesize</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="914" data-circle-pattern="s_ze">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "sanitize scrutinize seize sensitize serialize, sleaze sneeze snooze socialize specialize, squeeze stabilize standardize sterilize subsidize, summarize symbolize sympathize synchronize synthesize";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

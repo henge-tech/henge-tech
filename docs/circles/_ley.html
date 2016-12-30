@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ley</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#164 _ley
+<h2>#164 _ley</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alley" target="_blank">alley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bailey" target="_blank">bailey</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barley" target="_blank">barley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coley" target="_blank">coley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=galley" target="_blank">galley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=holey" target="_blank">holey</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ley" target="_blank">ley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=medley" target="_blank">medley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=motley" target="_blank">motley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paisley" target="_blank">paisley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parley" target="_blank">parley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parsley" target="_blank">parsley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pulley" target="_blank">pulley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trolley" target="_blank">trolley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=valley" target="_blank">valley</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=volley" target="_blank">volley</a></li>
+<ul id="words">
+<li>alley</li>
+<li>bailey</li>
+<li>barley</li>
+<li>coley</li>
+<li>galley</li>
+<li>holey</li>
+<li>ley</li>
+<li>medley</li>
+<li>motley</li>
+<li>paisley</li>
+<li>parley</li>
+<li>parsley</li>
+<li>pulley</li>
+<li>trolley</li>
+<li>valley</li>
+<li>volley</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="164" data-circle-pattern="_ley">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "alley bailey barley coley, galley holey ley medley, motley paisley parley parsley, pulley trolley valley volley";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

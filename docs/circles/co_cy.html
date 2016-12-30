@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: co_cy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#506 co_cy
+<h2>#506 co_cy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coherency" target="_blank">coherency</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=competency" target="_blank">competency</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complacency" target="_blank">complacency</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confederacy" target="_blank">confederacy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conservancy" target="_blank">conservancy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consistency" target="_blank">consistency</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conspiracy" target="_blank">conspiracy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constancy" target="_blank">constancy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constituency" target="_blank">constituency</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consultancy" target="_blank">consultancy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contingency" target="_blank">contingency</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=counterinsurgency" target="_blank">counterinsurgency</a></li>
+<ul id="words">
+<li>coherency</li>
+<li>competency</li>
+<li>complacency</li>
+<li>confederacy</li>
+<li>conservancy</li>
+<li>consistency</li>
+<li>conspiracy</li>
+<li>constancy</li>
+<li>constituency</li>
+<li>consultancy</li>
+<li>contingency</li>
+<li>counterinsurgency</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="506" data-circle-pattern="co_cy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "coherency competency complacency, confederacy conservancy consistency, conspiracy constancy constituency, consultancy contingency counterinsurgency";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

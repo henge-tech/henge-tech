@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: di_ry</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#592 di_ry
+<h2>#592 di_ry</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diary" target="_blank">diary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dietary" target="_blank">dietary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dignitary" target="_blank">dignitary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dilatory" target="_blank">dilatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=directory" target="_blank">directory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disciplinary" target="_blank">disciplinary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discovery" target="_blank">discovery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discretionary" target="_blank">discretionary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discriminatory" target="_blank">discriminatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispensary" target="_blank">dispensary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distillery" target="_blank">distillery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diversionary" target="_blank">diversionary</a></li>
+<ul id="words">
+<li>diary</li>
+<li>dietary</li>
+<li>dignitary</li>
+<li>dilatory</li>
+<li>directory</li>
+<li>disciplinary</li>
+<li>discovery</li>
+<li>discretionary</li>
+<li>discriminatory</li>
+<li>dispensary</li>
+<li>distillery</li>
+<li>diversionary</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="592" data-circle-pattern="di_ry">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "diary dietary dignitary, dilatory directory disciplinary, discovery discretionary discriminatory, dispensary distillery diversionary";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

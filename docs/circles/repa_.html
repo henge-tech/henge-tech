@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: repa_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#883 repa_
+<h2>#883 repa_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repackage" target="_blank">repackage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repaid" target="_blank">repaid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repair" target="_blank">repair</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repairer" target="_blank">repairer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reparation" target="_blank">reparation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repartee" target="_blank">repartee</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repast" target="_blank">repast</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repatriate" target="_blank">repatriate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repatriation" target="_blank">repatriation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repay" target="_blank">repay</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repayable" target="_blank">repayable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repayment" target="_blank">repayment</a></li>
+<ul id="words">
+<li>repackage</li>
+<li>repaid</li>
+<li>repair</li>
+<li>repairer</li>
+<li>reparation</li>
+<li>repartee</li>
+<li>repast</li>
+<li>repatriate</li>
+<li>repatriation</li>
+<li>repay</li>
+<li>repayable</li>
+<li>repayment</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="883" data-circle-pattern="repa_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "repackage repaid repair, repairer reparation repartee, repast repatriate repatriation, repay repayable repayment";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

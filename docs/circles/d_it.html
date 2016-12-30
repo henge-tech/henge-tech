@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: d_it</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#553 d_it
+<h2>#553 d_it</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dammit" target="_blank">dammit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=davit" target="_blank">davit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=debit" target="_blank">debit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deceit" target="_blank">deceit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decrepit" target="_blank">decrepit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deficit" target="_blank">deficit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delimit" target="_blank">delimit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demerit" target="_blank">demerit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deposit" target="_blank">deposit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=digit" target="_blank">digit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dimwit" target="_blank">dimwit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discredit" target="_blank">discredit</a></li>
+<ul id="words">
+<li>dammit</li>
+<li>davit</li>
+<li>debit</li>
+<li>deceit</li>
+<li>decrepit</li>
+<li>deficit</li>
+<li>delimit</li>
+<li>demerit</li>
+<li>deposit</li>
+<li>digit</li>
+<li>dimwit</li>
+<li>discredit</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="553" data-circle-pattern="d_it">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "dammit davit debit, deceit decrepit deficit, delimit demerit deposit, digit dimwit discredit";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

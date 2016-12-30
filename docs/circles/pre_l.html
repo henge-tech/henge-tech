@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: pre_l</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#850 pre_l
+<h2>#850 pre_l</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preferential" target="_blank">preferential</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prejudicial" target="_blank">prejudicial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=premarital" target="_blank">premarital</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=premenstrual" target="_blank">premenstrual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prenatal" target="_blank">prenatal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prenuptial" target="_blank">prenuptial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prepositional" target="_blank">prepositional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prequel" target="_blank">prequel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=presidential" target="_blank">presidential</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pretrial" target="_blank">pretrial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pretzel" target="_blank">pretzel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prevail" target="_blank">prevail</a></li>
+<ul id="words">
+<li>preferential</li>
+<li>prejudicial</li>
+<li>premarital</li>
+<li>premenstrual</li>
+<li>prenatal</li>
+<li>prenuptial</li>
+<li>prepositional</li>
+<li>prequel</li>
+<li>presidential</li>
+<li>pretrial</li>
+<li>pretzel</li>
+<li>prevail</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="850" data-circle-pattern="pre_l">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "preferential prejudicial premarital, premenstrual prenatal prenuptial, prepositional prequel presidential, pretrial pretzel prevail";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _aper</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#33 _aper
+<h2>#33 _aper</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caper" target="_blank">caper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diaper" target="_blank">diaper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=draper" target="_blank">draper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newspaper" target="_blank">newspaper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paper" target="_blank">paper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reaper" target="_blank">reaper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sandpaper" target="_blank">sandpaper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scraper" target="_blank">scraper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shaper" target="_blank">shaper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=skyscraper" target="_blank">skyscraper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taper" target="_blank">taper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wallpaper" target="_blank">wallpaper</a></li>
+<ul id="words">
+<li>caper</li>
+<li>diaper</li>
+<li>draper</li>
+<li>newspaper</li>
+<li>paper</li>
+<li>reaper</li>
+<li>sandpaper</li>
+<li>scraper</li>
+<li>shaper</li>
+<li>skyscraper</li>
+<li>taper</li>
+<li>wallpaper</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="33" data-circle-pattern="_aper">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "caper diaper draper, newspaper paper reaper, sandpaper scraper shaper, skyscraper taper wallpaper";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

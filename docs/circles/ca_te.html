@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ca_te</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#490 ca_te
+<h2>#490 ca_te</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=calcite" target="_blank">calcite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=calculate" target="_blank">calculate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=calibrate" target="_blank">calibrate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caliphate" target="_blank">caliphate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=campsite" target="_blank">campsite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=candidate" target="_blank">candidate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capitulate" target="_blank">capitulate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=captivate" target="_blank">captivate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carbohydrate" target="_blank">carbohydrate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carbonate" target="_blank">carbonate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cassette" target="_blank">cassette</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caste" target="_blank">caste</a></li>
+<ul id="words">
+<li>calcite</li>
+<li>calculate</li>
+<li>calibrate</li>
+<li>caliphate</li>
+<li>campsite</li>
+<li>candidate</li>
+<li>capitulate</li>
+<li>captivate</li>
+<li>carbohydrate</li>
+<li>carbonate</li>
+<li>cassette</li>
+<li>caste</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="490" data-circle-pattern="ca_te">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "calcite calculate calibrate, caliphate campsite candidate, capitulate captivate carbohydrate, carbonate cassette caste";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

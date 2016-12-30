@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: m_um</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#756 m_um
+<h2>#756 m_um</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magnum" target="_blank">magnum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mausoleum" target="_blank">mausoleum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maximum" target="_blank">maximum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=medium" target="_blank">medium</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=memorandum" target="_blank">memorandum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=millennium" target="_blank">millennium</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=modicum" target="_blank">modicum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=molybdenum" target="_blank">molybdenum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=momentum" target="_blank">momentum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moratorium" target="_blank">moratorium</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mum" target="_blank">mum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=museum" target="_blank">museum</a></li>
+<ul id="words">
+<li>magnum</li>
+<li>mausoleum</li>
+<li>maximum</li>
+<li>medium</li>
+<li>memorandum</li>
+<li>millennium</li>
+<li>modicum</li>
+<li>molybdenum</li>
+<li>momentum</li>
+<li>moratorium</li>
+<li>mum</li>
+<li>museum</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="756" data-circle-pattern="m_um">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "magnum mausoleum maximum, medium memorandum millennium, modicum molybdenum momentum, moratorium mum museum";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

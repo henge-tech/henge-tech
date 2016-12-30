@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: o_ive</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#792 o_ive
+<h2>#792 o_ive</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=objective" target="_blank">objective</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obsessive" target="_blank">obsessive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obstructive" target="_blank">obstructive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obtrusive" target="_blank">obtrusive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=offensive" target="_blank">offensive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=olive" target="_blank">olive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=operative" target="_blank">operative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oppressive" target="_blank">oppressive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outlive" target="_blank">outlive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overactive" target="_blank">overactive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overdrive" target="_blank">overdrive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overprotective" target="_blank">overprotective</a></li>
+<ul id="words">
+<li>objective</li>
+<li>obsessive</li>
+<li>obstructive</li>
+<li>obtrusive</li>
+<li>offensive</li>
+<li>olive</li>
+<li>operative</li>
+<li>oppressive</li>
+<li>outlive</li>
+<li>overactive</li>
+<li>overdrive</li>
+<li>overprotective</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="792" data-circle-pattern="o_ive">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "objective obsessive obstructive, obtrusive offensive olive, operative oppressive outlive, overactive overdrive overprotective";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

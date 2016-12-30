@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ne_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#784 ne_t
+<h2>#784 ne_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neat" target="_blank">neat</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=needlecraft" target="_blank">needlecraft</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=needlepoint" target="_blank">needlepoint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neglect" target="_blank">neglect</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=negligent" target="_blank">negligent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nest" target="_blank">nest</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neurologist" target="_blank">neurologist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neuroscientist" target="_blank">neuroscientist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newsagent" target="_blank">newsagent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newscast" target="_blank">newscast</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newsprint" target="_blank">newsprint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=newt" target="_blank">newt</a></li>
+<ul id="words">
+<li>neat</li>
+<li>needlecraft</li>
+<li>needlepoint</li>
+<li>neglect</li>
+<li>negligent</li>
+<li>nest</li>
+<li>neurologist</li>
+<li>neuroscientist</li>
+<li>newsagent</li>
+<li>newscast</li>
+<li>newsprint</li>
+<li>newt</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="784" data-circle-pattern="ne_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "neat needlecraft needlepoint, neglect negligent nest, neurologist neuroscientist newsagent, newscast newsprint newt";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

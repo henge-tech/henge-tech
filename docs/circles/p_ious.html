@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: p_ious</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#813 p_ious
+<h2>#813 p_ious</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parsimonious" target="_blank">parsimonious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pernicious" target="_blank">pernicious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pertinacious" target="_blank">pertinacious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pious" target="_blank">pious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precarious" target="_blank">precarious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precious" target="_blank">precious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precocious" target="_blank">precocious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prestigious" target="_blank">prestigious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pretentious" target="_blank">pretentious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prodigious" target="_blank">prodigious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=propitious" target="_blank">propitious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pugnacious" target="_blank">pugnacious</a></li>
+<ul id="words">
+<li>parsimonious</li>
+<li>pernicious</li>
+<li>pertinacious</li>
+<li>pious</li>
+<li>precarious</li>
+<li>precious</li>
+<li>precocious</li>
+<li>prestigious</li>
+<li>pretentious</li>
+<li>prodigious</li>
+<li>propitious</li>
+<li>pugnacious</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="813" data-circle-pattern="p_ious">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "parsimonious pernicious pertinacious, pious precarious precious, precocious prestigious pretentious, prodigious propitious pugnacious";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

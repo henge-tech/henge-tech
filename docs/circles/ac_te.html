@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ac_te</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#393 ac_te
+<h2>#393 ac_te</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accelerate" target="_blank">accelerate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accentuate" target="_blank">accentuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acclimate" target="_blank">acclimate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accommodate" target="_blank">accommodate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accumulate" target="_blank">accumulate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accurate" target="_blank">accurate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acetate" target="_blank">acetate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acolyte" target="_blank">acolyte</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aconite" target="_blank">aconite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=activate" target="_blank">activate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=actuate" target="_blank">actuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acute" target="_blank">acute</a></li>
+<ul id="words">
+<li>accelerate</li>
+<li>accentuate</li>
+<li>acclimate</li>
+<li>accommodate</li>
+<li>accumulate</li>
+<li>accurate</li>
+<li>acetate</li>
+<li>acolyte</li>
+<li>aconite</li>
+<li>activate</li>
+<li>actuate</li>
+<li>acute</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="393" data-circle-pattern="ac_te">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "accelerate accentuate acclimate, accommodate accumulate accurate, acetate acolyte aconite, activate actuate acute";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

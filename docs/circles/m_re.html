@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: m_re</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#753 m_re
+<h2>#753 m_re</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=macabre" target="_blank">macabre</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manure" target="_blank">manure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mare" target="_blank">mare</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massacre" target="_blank">massacre</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mediocre" target="_blank">mediocre</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mire" target="_blank">mire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misadventure" target="_blank">misadventure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misfire" target="_blank">misfire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moire" target="_blank">moire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monoculture" target="_blank">monoculture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multimillionaire" target="_blank">multimillionaire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=musculature" target="_blank">musculature</a></li>
+<ul id="words">
+<li>macabre</li>
+<li>manure</li>
+<li>mare</li>
+<li>massacre</li>
+<li>mediocre</li>
+<li>mire</li>
+<li>misadventure</li>
+<li>misfire</li>
+<li>moire</li>
+<li>monoculture</li>
+<li>multimillionaire</li>
+<li>musculature</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="753" data-circle-pattern="m_re">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "macabre manure mare, massacre mediocre mire, misadventure misfire moire, monoculture multimillionaire musculature";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

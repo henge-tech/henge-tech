@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ndy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#199 _ndy
+<h2>#199 _ndy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bandy" target="_blank">bandy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bendy" target="_blank">bendy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brandy" target="_blank">brandy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burgundy" target="_blank">burgundy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dandy" target="_blank">dandy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=handy" target="_blank">handy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=organdy" target="_blank">organdy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=randy" target="_blank">randy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sandy" target="_blank">sandy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shandy" target="_blank">shandy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trendy" target="_blank">trendy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=windy" target="_blank">windy</a></li>
+<ul id="words">
+<li>bandy</li>
+<li>bendy</li>
+<li>brandy</li>
+<li>burgundy</li>
+<li>dandy</li>
+<li>handy</li>
+<li>organdy</li>
+<li>randy</li>
+<li>sandy</li>
+<li>shandy</li>
+<li>trendy</li>
+<li>windy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="199" data-circle-pattern="_ndy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bandy bendy brandy, burgundy dandy handy, organdy randy sandy, shandy trendy windy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

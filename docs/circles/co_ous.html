@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: co_ous</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#511 co_ous
+<h2>#511 co_ous</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coniferous" target="_blank">coniferous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conscientious" target="_blank">conscientious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conspicuous" target="_blank">conspicuous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contagious" target="_blank">contagious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contemporaneous" target="_blank">contemporaneous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contemptuous" target="_blank">contemptuous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contentious" target="_blank">contentious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contiguous" target="_blank">contiguous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=copious" target="_blank">copious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courageous" target="_blank">courageous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=courteous" target="_blank">courteous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=covetous" target="_blank">covetous</a></li>
+<ul id="words">
+<li>coniferous</li>
+<li>conscientious</li>
+<li>conspicuous</li>
+<li>contagious</li>
+<li>contemporaneous</li>
+<li>contemptuous</li>
+<li>contentious</li>
+<li>contiguous</li>
+<li>copious</li>
+<li>courageous</li>
+<li>courteous</li>
+<li>covetous</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="511" data-circle-pattern="co_ous">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "coniferous conscientious conspicuous, contagious contemporaneous contemptuous, contentious contiguous copious, courageous courteous covetous";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

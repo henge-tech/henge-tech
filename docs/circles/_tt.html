@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _tt</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#331 _tt
+<h2>#331 _tt</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Babbitt" target="_blank">Babbitt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boycott" target="_blank">boycott</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=butt" target="_blank">butt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Crockett" target="_blank">Crockett</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=headbutt" target="_blank">headbutt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magawatt" target="_blank">magawatt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mitt" target="_blank">mitt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutt" target="_blank">mutt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=putt" target="_blank">putt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scuttlebutt" target="_blank">scuttlebutt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sett" target="_blank">sett</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=watt" target="_blank">watt</a></li>
+<ul id="words">
+<li>Babbitt</li>
+<li>boycott</li>
+<li>butt</li>
+<li>Crockett</li>
+<li>headbutt</li>
+<li>magawatt</li>
+<li>mitt</li>
+<li>mutt</li>
+<li>putt</li>
+<li>scuttlebutt</li>
+<li>sett</li>
+<li>watt</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="331" data-circle-pattern="_tt">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "Babbitt boycott butt, Crockett headbutt magawatt, mitt mutt putt, scuttlebutt sett watt";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

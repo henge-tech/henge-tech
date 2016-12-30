@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _uff</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#343 _uff
+<h2>#343 _uff</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bluff" target="_blank">bluff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buff" target="_blank">buff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cuff" target="_blank">cuff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dandruff" target="_blank">dandruff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=duff" target="_blank">duff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluff" target="_blank">fluff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foodstuff" target="_blank">foodstuff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gruff" target="_blank">gruff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guff" target="_blank">guff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=handcuff" target="_blank">handcuff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=huff" target="_blank">huff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luff" target="_blank">luff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muff" target="_blank">muff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=puff" target="_blank">puff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rebuff" target="_blank">rebuff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ruff" target="_blank">ruff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scruff" target="_blank">scruff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scuff" target="_blank">scuff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snuff" target="_blank">snuff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=woodruff" target="_blank">woodruff</a></li>
+<ul id="words">
+<li>bluff</li>
+<li>buff</li>
+<li>cuff</li>
+<li>dandruff</li>
+<li>duff</li>
+<li>fluff</li>
+<li>foodstuff</li>
+<li>gruff</li>
+<li>guff</li>
+<li>handcuff</li>
+<li>huff</li>
+<li>luff</li>
+<li>muff</li>
+<li>puff</li>
+<li>rebuff</li>
+<li>ruff</li>
+<li>scruff</li>
+<li>scuff</li>
+<li>snuff</li>
+<li>woodruff</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="343" data-circle-pattern="_uff">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bluff buff cuff dandruff duff, fluff foodstuff gruff guff handcuff, huff luff muff puff rebuff, ruff scruff scuff snuff woodruff";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

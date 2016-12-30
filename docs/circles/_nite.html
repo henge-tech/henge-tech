@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _nite</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#211 _nite
+<h2>#211 _nite</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aconite" target="_blank">aconite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ammonite" target="_blank">ammonite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=definite" target="_blank">definite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=finite" target="_blank">finite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=granite" target="_blank">granite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ignite" target="_blank">ignite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indefinite" target="_blank">indefinite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infinite" target="_blank">infinite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lignite" target="_blank">lignite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nite" target="_blank">nite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reunite" target="_blank">reunite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unite" target="_blank">unite</a></li>
+<ul id="words">
+<li>aconite</li>
+<li>ammonite</li>
+<li>definite</li>
+<li>finite</li>
+<li>granite</li>
+<li>ignite</li>
+<li>indefinite</li>
+<li>infinite</li>
+<li>lignite</li>
+<li>nite</li>
+<li>reunite</li>
+<li>unite</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="211" data-circle-pattern="_nite">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "aconite ammonite definite, finite granite ignite, indefinite infinite lignite, nite reunite unite";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

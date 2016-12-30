@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: con_m</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#525 con_m
+<h2>#525 con_m</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=condom" target="_blank">condom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=condominium" target="_blank">condominium</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confirm" target="_blank">confirm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conform" target="_blank">conform</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Confucianism" target="_blank">Confucianism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conservatism" target="_blank">conservatism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consortium" target="_blank">consortium</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constitutionalism" target="_blank">constitutionalism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constructivism" target="_blank">constructivism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consumerism" target="_blank">consumerism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=continuum" target="_blank">continuum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conundrum" target="_blank">conundrum</a></li>
+<ul id="words">
+<li>condom</li>
+<li>condominium</li>
+<li>confirm</li>
+<li>conform</li>
+<li>Confucianism</li>
+<li>conservatism</li>
+<li>consortium</li>
+<li>constitutionalism</li>
+<li>constructivism</li>
+<li>consumerism</li>
+<li>continuum</li>
+<li>conundrum</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="525" data-circle-pattern="con_m">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "condom condominium confirm, conform Confucianism conservatism, consortium constitutionalism constructivism, consumerism continuum conundrum";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _horn</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#125 _horn
+<h2>#125 _horn</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bighorn" target="_blank">bighorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blackthorn" target="_blank">blackthorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bullhorn" target="_blank">bullhorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flugelhorn" target="_blank">flugelhorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foghorn" target="_blank">foghorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greenhorn" target="_blank">greenhorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hawthorn" target="_blank">hawthorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=horn" target="_blank">horn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leghorn" target="_blank">leghorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=longhorn" target="_blank">longhorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shoehorn" target="_blank">shoehorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thorn" target="_blank">thorn</a></li>
+<ul id="words">
+<li>bighorn</li>
+<li>blackthorn</li>
+<li>bullhorn</li>
+<li>flugelhorn</li>
+<li>foghorn</li>
+<li>greenhorn</li>
+<li>hawthorn</li>
+<li>horn</li>
+<li>leghorn</li>
+<li>longhorn</li>
+<li>shoehorn</li>
+<li>thorn</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="125" data-circle-pattern="_horn">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bighorn blackthorn bullhorn, flugelhorn foghorn greenhorn, hawthorn horn leghorn, longhorn shoehorn thorn";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

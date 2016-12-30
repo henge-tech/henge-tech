@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: mis_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#767 mis_t
+<h2>#767 mis_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misconduct" target="_blank">misconduct</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=miscreant" target="_blank">miscreant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misfit" target="_blank">misfit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misinterpret" target="_blank">misinterpret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mismanagement" target="_blank">mismanagement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misogynist" target="_blank">misogynist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misprint" target="_blank">misprint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misrepresent" target="_blank">misrepresent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misstatement" target="_blank">misstatement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mist" target="_blank">mist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mistreatment" target="_blank">mistreatment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mistrust" target="_blank">mistrust</a></li>
+<ul id="words">
+<li>misconduct</li>
+<li>miscreant</li>
+<li>misfit</li>
+<li>misinterpret</li>
+<li>mismanagement</li>
+<li>misogynist</li>
+<li>misprint</li>
+<li>misrepresent</li>
+<li>misstatement</li>
+<li>mist</li>
+<li>mistreatment</li>
+<li>mistrust</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="767" data-circle-pattern="mis_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "misconduct miscreant misfit, misinterpret mismanagement misogynist, misprint misrepresent misstatement, mist mistreatment mistrust";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: hy_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#698 hy_n
+<h2>#698 hy_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hybridization" target="_blank">hybridization</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydration" target="_blank">hydration</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydrocarbon" target="_blank">hydrocarbon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydrogen" target="_blank">hydrogen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydrogenation" target="_blank">hydrogenation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hymen" target="_blank">hymen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hymn" target="_blank">hymn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hyperinflation" target="_blank">hyperinflation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypertension" target="_blank">hypertension</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hyphen" target="_blank">hyphen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hyphenation" target="_blank">hyphenation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypotension" target="_blank">hypotension</a></li>
+<ul id="words">
+<li>hybridization</li>
+<li>hydration</li>
+<li>hydrocarbon</li>
+<li>hydrogen</li>
+<li>hydrogenation</li>
+<li>hymen</li>
+<li>hymn</li>
+<li>hyperinflation</li>
+<li>hypertension</li>
+<li>hyphen</li>
+<li>hyphenation</li>
+<li>hypotension</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="698" data-circle-pattern="hy_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "hybridization hydration hydrocarbon, hydrogen hydrogenation hymen, hymn hyperinflation hypertension, hyphen hyphenation hypotension";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

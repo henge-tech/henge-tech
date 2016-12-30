@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _anic</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#29 _anic
+<h2>#29 _anic</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=galvanic" target="_blank">galvanic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=germanic" target="_blank">germanic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inorganic" target="_blank">inorganic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manic" target="_blank">manic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mechanic" target="_blank">mechanic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=messianic" target="_blank">messianic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oceanic" target="_blank">oceanic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=organic" target="_blank">organic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=satanic" target="_blank">satanic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=titanic" target="_blank">titanic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tympanic" target="_blank">tympanic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=volcanic" target="_blank">volcanic</a></li>
+<ul id="words">
+<li>galvanic</li>
+<li>germanic</li>
+<li>inorganic</li>
+<li>manic</li>
+<li>mechanic</li>
+<li>messianic</li>
+<li>oceanic</li>
+<li>organic</li>
+<li>satanic</li>
+<li>titanic</li>
+<li>tympanic</li>
+<li>volcanic</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="29" data-circle-pattern="_anic">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "galvanic germanic inorganic, manic mechanic messianic, oceanic organic satanic, titanic tympanic volcanic";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

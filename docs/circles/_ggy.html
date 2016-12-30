@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ggy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#115 _ggy
+<h2>#115 _ggy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baggy" target="_blank">baggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boggy" target="_blank">boggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buggy" target="_blank">buggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=craggy" target="_blank">craggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doggy" target="_blank">doggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foggy" target="_blank">foggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=groggy" target="_blank">groggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leggy" target="_blank">leggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moggy" target="_blank">moggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muggy" target="_blank">muggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piggy" target="_blank">piggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saggy" target="_blank">saggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scraggy" target="_blank">scraggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shaggy" target="_blank">shaggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=soggy" target="_blank">soggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=twiggy" target="_blank">twiggy</a></li>
+<ul id="words">
+<li>baggy</li>
+<li>boggy</li>
+<li>buggy</li>
+<li>craggy</li>
+<li>doggy</li>
+<li>foggy</li>
+<li>groggy</li>
+<li>leggy</li>
+<li>moggy</li>
+<li>muggy</li>
+<li>piggy</li>
+<li>saggy</li>
+<li>scraggy</li>
+<li>shaggy</li>
+<li>soggy</li>
+<li>twiggy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="115" data-circle-pattern="_ggy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "baggy boggy buggy craggy, doggy foggy groggy leggy, moggy muggy piggy saggy, scraggy shaggy soggy twiggy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: d_ally</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#546 d_ally
+<h2>#546 d_ally</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dally" target="_blank">dally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detrimentally" target="_blank">detrimentally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=developmentally" target="_blank">developmentally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diagonally" target="_blank">diagonally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diametrically" target="_blank">diametrically</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=differentially" target="_blank">differentially</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diplomatically" target="_blank">diplomatically</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismally" target="_blank">dismally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=domestically" target="_blank">domestically</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dramatically" target="_blank">dramatically</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drastically" target="_blank">drastically</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dynamically" target="_blank">dynamically</a></li>
+<ul id="words">
+<li>dally</li>
+<li>detrimentally</li>
+<li>developmentally</li>
+<li>diagonally</li>
+<li>diametrically</li>
+<li>differentially</li>
+<li>diplomatically</li>
+<li>dismally</li>
+<li>domestically</li>
+<li>dramatically</li>
+<li>drastically</li>
+<li>dynamically</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="546" data-circle-pattern="d_ally">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "dally detrimentally developmentally, diagonally diametrically differentially, diplomatically dismally domestically, dramatically drastically dynamically";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

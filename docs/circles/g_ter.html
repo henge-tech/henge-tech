@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: g_ter</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#671 g_ter
+<h2>#671 g_ter</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gangster" target="_blank">gangster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=garter" target="_blank">garter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=getter" target="_blank">getter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitter" target="_blank">glitter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=goiter" target="_blank">goiter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grandmaster" target="_blank">grandmaster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grater" target="_blank">grater</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greater" target="_blank">greater</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greeter" target="_blank">greeter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=groundwater" target="_blank">groundwater</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gunfighter" target="_blank">gunfighter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gutter" target="_blank">gutter</a></li>
+<ul id="words">
+<li>gangster</li>
+<li>garter</li>
+<li>getter</li>
+<li>glitter</li>
+<li>goiter</li>
+<li>grandmaster</li>
+<li>grater</li>
+<li>greater</li>
+<li>greeter</li>
+<li>groundwater</li>
+<li>gunfighter</li>
+<li>gutter</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="671" data-circle-pattern="g_ter">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "gangster garter getter, glitter goiter grandmaster, grater greater greeter, groundwater gunfighter gutter";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

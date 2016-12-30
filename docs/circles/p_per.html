@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: p_per</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#820 p_per
+<h2>#820 p_per</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pamper" target="_blank">pamper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paper" target="_blank">paper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paratrooper" target="_blank">paratrooper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pauper" target="_blank">pauper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peacekeeper" target="_blank">peacekeeper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pepper" target="_blank">pepper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piper" target="_blank">piper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plumper" target="_blank">plumper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=popper" target="_blank">popper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proper" target="_blank">proper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prosper" target="_blank">prosper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pumper" target="_blank">pumper</a></li>
+<ul id="words">
+<li>pamper</li>
+<li>paper</li>
+<li>paratrooper</li>
+<li>pauper</li>
+<li>peacekeeper</li>
+<li>pepper</li>
+<li>piper</li>
+<li>plumper</li>
+<li>popper</li>
+<li>proper</li>
+<li>prosper</li>
+<li>pumper</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="820" data-circle-pattern="p_per">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "pamper paper paratrooper, pauper peacekeeper pepper, piper plumper popper, proper prosper pumper";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

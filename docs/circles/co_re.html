@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: co_re</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#513 co_re
+<h2>#513 co_re</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coiffure" target="_blank">coiffure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commodore" target="_blank">commodore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compare" target="_blank">compare</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compere" target="_blank">compere</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=composure" target="_blank">composure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concessionaire" target="_blank">concessionaire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conjecture" target="_blank">conjecture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conjure" target="_blank">conjure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conservatoire" target="_blank">conservatoire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conspire" target="_blank">conspire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=countermeasure" target="_blank">countermeasure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=couture" target="_blank">couture</a></li>
+<ul id="words">
+<li>coiffure</li>
+<li>commodore</li>
+<li>compare</li>
+<li>compere</li>
+<li>composure</li>
+<li>concessionaire</li>
+<li>conjecture</li>
+<li>conjure</li>
+<li>conservatoire</li>
+<li>conspire</li>
+<li>countermeasure</li>
+<li>couture</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="513" data-circle-pattern="co_re">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "coiffure commodore compare, compere composure concessionaire, conjecture conjure conservatoire, conspire countermeasure couture";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

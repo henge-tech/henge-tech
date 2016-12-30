@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: la_ly</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#733 la_ly
+<h2>#733 la_ly</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laboriously" target="_blank">laboriously</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lamely" target="_blank">lamely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=largely" target="_blank">largely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lastly" target="_blank">lastly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lately" target="_blank">lately</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laterally" target="_blank">laterally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=latterly" target="_blank">latterly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laughably" target="_blank">laughably</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laughingly" target="_blank">laughingly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lavishly" target="_blank">lavishly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lawfully" target="_blank">lawfully</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lazily" target="_blank">lazily</a></li>
+<ul id="words">
+<li>laboriously</li>
+<li>lamely</li>
+<li>largely</li>
+<li>lastly</li>
+<li>lately</li>
+<li>laterally</li>
+<li>latterly</li>
+<li>laughably</li>
+<li>laughingly</li>
+<li>lavishly</li>
+<li>lawfully</li>
+<li>lazily</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="733" data-circle-pattern="la_ly">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "laboriously lamely largely, lastly lately laterally, latterly laughably laughingly, lavishly lawfully lazily";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

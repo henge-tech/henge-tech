@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: r_ge</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#864 r_ge
+<h2>#864 r_ge</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rage" target="_blank">rage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rampage" target="_blank">rampage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ravage" target="_blank">ravage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=refuge" target="_blank">refuge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remarriage" target="_blank">remarriage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remortgage" target="_blank">remortgage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=renege" target="_blank">renege</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reportage" target="_blank">reportage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revenge" target="_blank">revenge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ridge" target="_blank">ridge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rouge" target="_blank">rouge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rummage" target="_blank">rummage</a></li>
+<ul id="words">
+<li>rage</li>
+<li>rampage</li>
+<li>ravage</li>
+<li>refuge</li>
+<li>remarriage</li>
+<li>remortgage</li>
+<li>renege</li>
+<li>reportage</li>
+<li>revenge</li>
+<li>ridge</li>
+<li>rouge</li>
+<li>rummage</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="864" data-circle-pattern="r_ge">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "rage rampage ravage, refuge remarriage remortgage, renege reportage revenge, ridge rouge rummage";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

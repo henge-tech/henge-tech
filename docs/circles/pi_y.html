@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: pi_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#839 pi_y
+<h2>#839 pi_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=picky" target="_blank">picky</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piety" target="_blank">piety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piggy" target="_blank">piggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pigsty" target="_blank">pigsty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piney" target="_blank">piney</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinky" target="_blank">pinky</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinny" target="_blank">pinny</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piracy" target="_blank">piracy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pithy" target="_blank">pithy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pitifully" target="_blank">pitifully</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pituitary" target="_blank">pituitary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pity" target="_blank">pity</a></li>
+<ul id="words">
+<li>picky</li>
+<li>piety</li>
+<li>piggy</li>
+<li>pigsty</li>
+<li>piney</li>
+<li>pinky</li>
+<li>pinny</li>
+<li>piracy</li>
+<li>pithy</li>
+<li>pitifully</li>
+<li>pituitary</li>
+<li>pity</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="839" data-circle-pattern="pi_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "picky piety piggy, pigsty piney pinky, pinny piracy pithy, pitifully pituitary pity";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

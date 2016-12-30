@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: e_sion</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#623 e_sion
+<h2>#623 e_sion</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=effusion" target="_blank">effusion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emission" target="_blank">emission</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emulsion" target="_blank">emulsion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=envision" target="_blank">envision</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=erosion" target="_blank">erosion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evasion" target="_blank">evasion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excision" target="_blank">excision</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclusion" target="_blank">exclusion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excursion" target="_blank">excursion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expansion" target="_blank">expansion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expulsion" target="_blank">expulsion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extrusion" target="_blank">extrusion</a></li>
+<ul id="words">
+<li>effusion</li>
+<li>emission</li>
+<li>emulsion</li>
+<li>envision</li>
+<li>erosion</li>
+<li>evasion</li>
+<li>excision</li>
+<li>exclusion</li>
+<li>excursion</li>
+<li>expansion</li>
+<li>expulsion</li>
+<li>extrusion</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="623" data-circle-pattern="e_sion">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "effusion emission emulsion, envision erosion evasion, excision exclusion excursion, expansion expulsion extrusion";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

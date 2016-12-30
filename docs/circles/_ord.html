@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ord</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#232 _ord
+<h2>#232 _ord</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accord" target="_blank">accord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=afford" target="_blank">afford</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=afterword" target="_blank">afterword</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=byword" target="_blank">byword</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chord" target="_blank">chord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clavichord" target="_blank">clavichord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concord" target="_blank">concord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cord" target="_blank">cord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discord" target="_blank">discord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fjord" target="_blank">fjord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ford" target="_blank">ford</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foreword" target="_blank">foreword</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=landlord" target="_blank">landlord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loanword" target="_blank">loanword</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lord" target="_blank">lord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=milord" target="_blank">milord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overlord" target="_blank">overlord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reword" target="_blank">reword</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=warlord" target="_blank">warlord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=watchword" target="_blank">watchword</a></li>
+<ul id="words">
+<li>accord</li>
+<li>afford</li>
+<li>afterword</li>
+<li>byword</li>
+<li>chord</li>
+<li>clavichord</li>
+<li>concord</li>
+<li>cord</li>
+<li>discord</li>
+<li>fjord</li>
+<li>ford</li>
+<li>foreword</li>
+<li>landlord</li>
+<li>loanword</li>
+<li>lord</li>
+<li>milord</li>
+<li>overlord</li>
+<li>reword</li>
+<li>warlord</li>
+<li>watchword</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="232" data-circle-pattern="_ord">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "accord afford afterword byword chord, clavichord concord cord discord fjord, ford foreword landlord loanword lord, milord overlord reword warlord watchword";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

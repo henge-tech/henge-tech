@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: subs_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#941 subs_e
+<h2>#941 subs_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subscribe" target="_blank">subscribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subservience" target="_blank">subservience</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subside" target="_blank">subside</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subsidence" target="_blank">subsidence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subsidize" target="_blank">subsidize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subsistence" target="_blank">subsistence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=substance" target="_blank">substance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=substantiate" target="_blank">substantiate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=substantive" target="_blank">substantive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=substitute" target="_blank">substitute</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=substructure" target="_blank">substructure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subsume" target="_blank">subsume</a></li>
+<ul id="words">
+<li>subscribe</li>
+<li>subservience</li>
+<li>subside</li>
+<li>subsidence</li>
+<li>subsidize</li>
+<li>subsistence</li>
+<li>substance</li>
+<li>substantiate</li>
+<li>substantive</li>
+<li>substitute</li>
+<li>substructure</li>
+<li>subsume</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="941" data-circle-pattern="subs_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "subscribe subservience subside, subsidence subsidize subsistence, substance substantiate substantive, substitute substructure subsume";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

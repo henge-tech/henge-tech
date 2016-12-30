@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: k_l</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#726 k_l
+<h2>#726 k_l</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=keel" target="_blank">keel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=keelhaul" target="_blank">keelhaul</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kennel" target="_blank">kennel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kernel" target="_blank">kernel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kestrel" target="_blank">kestrel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kickball" target="_blank">kickball</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kneel" target="_blank">kneel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=knell" target="_blank">knell</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=knoll" target="_blank">knoll</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kohl" target="_blank">kohl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kraal" target="_blank">kraal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=krill" target="_blank">krill</a></li>
+<ul id="words">
+<li>keel</li>
+<li>keelhaul</li>
+<li>kennel</li>
+<li>kernel</li>
+<li>kestrel</li>
+<li>kickball</li>
+<li>kneel</li>
+<li>knell</li>
+<li>knoll</li>
+<li>kohl</li>
+<li>kraal</li>
+<li>krill</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="726" data-circle-pattern="k_l">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "keel keelhaul kennel, kernel kestrel kickball, kneel knell knoll, kohl kraal krill";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

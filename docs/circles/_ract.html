@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ract</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#250 _ract
+<h2>#250 _ract</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cataract" target="_blank">cataract</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contract" target="_blank">contract</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=counteract" target="_blank">counteract</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detract" target="_blank">detract</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distract" target="_blank">distract</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extract" target="_blank">extract</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interact" target="_blank">interact</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=refract" target="_blank">refract</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retract" target="_blank">retract</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subcontract" target="_blank">subcontract</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subtract" target="_blank">subtract</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tract" target="_blank">tract</a></li>
+<ul id="words">
+<li>cataract</li>
+<li>contract</li>
+<li>counteract</li>
+<li>detract</li>
+<li>distract</li>
+<li>extract</li>
+<li>interact</li>
+<li>refract</li>
+<li>retract</li>
+<li>subcontract</li>
+<li>subtract</li>
+<li>tract</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="250" data-circle-pattern="_ract">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "cataract contract counteract, detract distract extract, interact refract retract, subcontract subtract tract";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

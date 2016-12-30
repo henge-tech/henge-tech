@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _olly</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#222 _olly
+<h2>#222 _olly</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brolly" target="_blank">brolly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dolly" target="_blank">dolly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=folly" target="_blank">folly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=holly" target="_blank">holly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jolly" target="_blank">jolly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lolly" target="_blank">lolly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wholly" target="_blank">wholly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=woolly" target="_blank">woolly</a></li>
+<ul id="words">
+<li>brolly</li>
+<li>dolly</li>
+<li>folly</li>
+<li>holly</li>
+<li>jolly</li>
+<li>lolly</li>
+<li>wholly</li>
+<li>woolly</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="222" data-circle-pattern="_olly">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "brolly dolly folly holly, jolly lolly wholly woolly";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

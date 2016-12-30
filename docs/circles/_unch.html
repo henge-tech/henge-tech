@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _unch</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#350 _unch
+<h2>#350 _unch</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brunch" target="_blank">brunch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bunch" target="_blank">bunch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=counterpunch" target="_blank">counterpunch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crunch" target="_blank">crunch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haunch" target="_blank">haunch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hunch" target="_blank">hunch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=launch" target="_blank">launch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=munch" target="_blank">munch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paunch" target="_blank">paunch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=punch" target="_blank">punch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrunch" target="_blank">scrunch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=staunch" target="_blank">staunch</a></li>
+<ul id="words">
+<li>brunch</li>
+<li>bunch</li>
+<li>counterpunch</li>
+<li>crunch</li>
+<li>haunch</li>
+<li>hunch</li>
+<li>launch</li>
+<li>munch</li>
+<li>paunch</li>
+<li>punch</li>
+<li>scrunch</li>
+<li>staunch</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="350" data-circle-pattern="_unch">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "brunch bunch counterpunch, crunch haunch hunch, launch munch paunch, punch scrunch staunch";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

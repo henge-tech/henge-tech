@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: desc_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#585 desc_
+<h2>#585 desc_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descale" target="_blank">descale</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descant" target="_blank">descant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descend" target="_blank">descend</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descendant" target="_blank">descendant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descender" target="_blank">descender</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descent" target="_blank">descent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descrambler" target="_blank">descrambler</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=describable" target="_blank">describable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=description" target="_blank">description</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descriptive" target="_blank">descriptive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descriptor" target="_blank">descriptor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descry" target="_blank">descry</a></li>
+<ul id="words">
+<li>descale</li>
+<li>descant</li>
+<li>descend</li>
+<li>descendant</li>
+<li>descender</li>
+<li>descent</li>
+<li>descrambler</li>
+<li>describable</li>
+<li>description</li>
+<li>descriptive</li>
+<li>descriptor</li>
+<li>descry</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="585" data-circle-pattern="desc_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "descale descant descend, descendant descender descent, descrambler describable description, descriptive descriptor descry";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

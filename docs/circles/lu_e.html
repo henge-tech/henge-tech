@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: lu_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#742 lu_e
+<h2>#742 lu_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lube" target="_blank">lube</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lubricate" target="_blank">lubricate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lucerne" target="_blank">lucerne</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lucrative" target="_blank">lucrative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lucre" target="_blank">lucre</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luge" target="_blank">luge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luggage" target="_blank">luggage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luminance" target="_blank">luminance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lunge" target="_blank">lunge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lupine" target="_blank">lupine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lure" target="_blank">lure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luxe" target="_blank">luxe</a></li>
+<ul id="words">
+<li>lube</li>
+<li>lubricate</li>
+<li>lucerne</li>
+<li>lucrative</li>
+<li>lucre</li>
+<li>luge</li>
+<li>luggage</li>
+<li>luminance</li>
+<li>lunge</li>
+<li>lupine</li>
+<li>lure</li>
+<li>luxe</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="742" data-circle-pattern="lu_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "lube lubricate lucerne, lucrative lucre luge, luggage luminance lunge, lupine lure luxe";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

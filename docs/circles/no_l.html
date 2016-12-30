@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: no_l</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#787 no_l
+<h2>#787 no_l</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nocturnal" target="_blank">nocturnal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nodal" target="_blank">nodal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noel" target="_blank">noel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nominal" target="_blank">nominal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonessential" target="_blank">nonessential</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nongovernmental" target="_blank">nongovernmental</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonpareil" target="_blank">nonpareil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonresidential" target="_blank">nonresidential</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonsensical" target="_blank">nonsensical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonverbal" target="_blank">nonverbal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nostril" target="_blank">nostril</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=notional" target="_blank">notional</a></li>
+<ul id="words">
+<li>nocturnal</li>
+<li>nodal</li>
+<li>noel</li>
+<li>nominal</li>
+<li>nonessential</li>
+<li>nongovernmental</li>
+<li>nonpareil</li>
+<li>nonresidential</li>
+<li>nonsensical</li>
+<li>nonverbal</li>
+<li>nostril</li>
+<li>notional</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="787" data-circle-pattern="no_l">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "nocturnal nodal noel, nominal nonessential nongovernmental, nonpareil nonresidential nonsensical, nonverbal nostril notional";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

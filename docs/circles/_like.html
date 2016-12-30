@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _like</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#166 _like
+<h2>#166 _like</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alike" target="_blank">alike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=childlike" target="_blank">childlike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dislike" target="_blank">dislike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dreamlike" target="_blank">dreamlike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=godlike" target="_blank">godlike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ladylike" target="_blank">ladylike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lifelike" target="_blank">lifelike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lookalike" target="_blank">lookalike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manlike" target="_blank">manlike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unlike" target="_blank">unlike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=warlike" target="_blank">warlike</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=workmanlike" target="_blank">workmanlike</a></li>
+<ul id="words">
+<li>alike</li>
+<li>childlike</li>
+<li>dislike</li>
+<li>dreamlike</li>
+<li>godlike</li>
+<li>ladylike</li>
+<li>lifelike</li>
+<li>lookalike</li>
+<li>manlike</li>
+<li>unlike</li>
+<li>warlike</li>
+<li>workmanlike</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="166" data-circle-pattern="_like">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "alike childlike dislike, dreamlike godlike ladylike, lifelike lookalike manlike, unlike warlike workmanlike";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: a_x</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#388 a_x
+<h2>#388 a_x</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=affix" target="_blank">affix</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=annex" target="_blank">annex</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anthrax" target="_blank">anthrax</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apex" target="_blank">apex</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appendix" target="_blank">appendix</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=approx" target="_blank">approx</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aux" target="_blank">aux</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ax" target="_blank">ax</a></li>
+<ul id="words">
+<li>affix</li>
+<li>annex</li>
+<li>anthrax</li>
+<li>apex</li>
+<li>appendix</li>
+<li>approx</li>
+<li>aux</li>
+<li>ax</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="388" data-circle-pattern="a_x">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "affix annex anthrax apex, appendix approx aux ax";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

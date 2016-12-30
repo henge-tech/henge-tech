@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ine_ble</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#716 ine_ble
+<h2>#716 ine_ble</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inedible" target="_blank">inedible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ineffable" target="_blank">ineffable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ineligible" target="_blank">ineligible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inequitable" target="_blank">inequitable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inestimable" target="_blank">inestimable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inevitable" target="_blank">inevitable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inexcusable" target="_blank">inexcusable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inexhaustible" target="_blank">inexhaustible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inexorable" target="_blank">inexorable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inexplicable" target="_blank">inexplicable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inexpressible" target="_blank">inexpressible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inextricable" target="_blank">inextricable</a></li>
+<ul id="words">
+<li>inedible</li>
+<li>ineffable</li>
+<li>ineligible</li>
+<li>inequitable</li>
+<li>inestimable</li>
+<li>inevitable</li>
+<li>inexcusable</li>
+<li>inexhaustible</li>
+<li>inexorable</li>
+<li>inexplicable</li>
+<li>inexpressible</li>
+<li>inextricable</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="716" data-circle-pattern="ine_ble">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "inedible ineffable ineligible, inequitable inestimable inevitable, inexcusable inexhaustible inexorable, inexplicable inexpressible inextricable";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

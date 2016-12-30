@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _rown</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#287 _rown
+<h2>#287 _rown</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brown" target="_blank">brown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crown" target="_blank">crown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drown" target="_blank">drown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frown" target="_blank">frown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grown" target="_blank">grown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homegrown" target="_blank">homegrown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ingrown" target="_blank">ingrown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nutbrown" target="_blank">nutbrown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outgrown" target="_blank">outgrown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overgrown" target="_blank">overgrown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overthrown" target="_blank">overthrown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thrown" target="_blank">thrown</a></li>
+<ul id="words">
+<li>brown</li>
+<li>crown</li>
+<li>drown</li>
+<li>frown</li>
+<li>grown</li>
+<li>homegrown</li>
+<li>ingrown</li>
+<li>nutbrown</li>
+<li>outgrown</li>
+<li>overgrown</li>
+<li>overthrown</li>
+<li>thrown</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="287" data-circle-pattern="_rown">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "brown crown drown, frown grown homegrown, ingrown nutbrown outgrown, overgrown overthrown thrown";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

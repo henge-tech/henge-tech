@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _wear</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#363 _wear
+<h2>#363 _wear</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=footwear" target="_blank">footwear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forswear" target="_blank">forswear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=knitwear" target="_blank">knitwear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neckwear" target="_blank">neckwear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nightwear" target="_blank">nightwear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outerwear" target="_blank">outerwear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outwear" target="_blank">outwear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sportswear" target="_blank">sportswear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swear" target="_blank">swear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swimwear" target="_blank">swimwear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=underwear" target="_blank">underwear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wear" target="_blank">wear</a></li>
+<ul id="words">
+<li>footwear</li>
+<li>forswear</li>
+<li>knitwear</li>
+<li>neckwear</li>
+<li>nightwear</li>
+<li>outerwear</li>
+<li>outwear</li>
+<li>sportswear</li>
+<li>swear</li>
+<li>swimwear</li>
+<li>underwear</li>
+<li>wear</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="363" data-circle-pattern="_wear">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "footwear forswear knitwear, neckwear nightwear outerwear, outwear sportswear swear, swimwear underwear wear";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

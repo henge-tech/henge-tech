@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: q_l</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#859 q_l
+<h2>#859 q_l</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quadrennial" target="_blank">quadrennial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quadrilateral" target="_blank">quadrilateral</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quadrupedal" target="_blank">quadrupedal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quail" target="_blank">quail</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quarrel" target="_blank">quarrel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quarterfinal" target="_blank">quarterfinal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quell" target="_blank">quell</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quetzal" target="_blank">quetzal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quill" target="_blank">quill</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quinquennial" target="_blank">quinquennial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quintessential" target="_blank">quintessential</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quizzical" target="_blank">quizzical</a></li>
+<ul id="words">
+<li>quadrennial</li>
+<li>quadrilateral</li>
+<li>quadrupedal</li>
+<li>quail</li>
+<li>quarrel</li>
+<li>quarterfinal</li>
+<li>quell</li>
+<li>quetzal</li>
+<li>quill</li>
+<li>quinquennial</li>
+<li>quintessential</li>
+<li>quizzical</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="859" data-circle-pattern="q_l">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "quadrennial quadrilateral quadrupedal, quail quarrel quarterfinal, quell quetzal quill, quinquennial quintessential quizzical";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

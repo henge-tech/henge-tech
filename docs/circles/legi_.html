@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: legi_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#737 legi_
+<h2>#737 legi_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legibility" target="_blank">legibility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legible" target="_blank">legible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legion" target="_blank">legion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legionnaire" target="_blank">legionnaire</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislate" target="_blank">legislate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislation" target="_blank">legislation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislative" target="_blank">legislative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislator" target="_blank">legislator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislature" target="_blank">legislature</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legit" target="_blank">legit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legitimacy" target="_blank">legitimacy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legitimate" target="_blank">legitimate</a></li>
+<ul id="words">
+<li>legibility</li>
+<li>legible</li>
+<li>legion</li>
+<li>legionnaire</li>
+<li>legislate</li>
+<li>legislation</li>
+<li>legislative</li>
+<li>legislator</li>
+<li>legislature</li>
+<li>legit</li>
+<li>legitimacy</li>
+<li>legitimate</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="737" data-circle-pattern="legi_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "legibility legible legion, legionnaire legislate legislation, legislative legislator legislature, legit legitimacy legitimate";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

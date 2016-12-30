@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _rent</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#269 _rent
+<h2>#269 _rent</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abhorrent" target="_blank">abhorrent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adherent" target="_blank">adherent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=afferent" target="_blank">afferent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apparent" target="_blank">apparent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=belligerent" target="_blank">belligerent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coherent" target="_blank">coherent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concurrent" target="_blank">concurrent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deterrent" target="_blank">deterrent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incoherent" target="_blank">incoherent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indifferent" target="_blank">indifferent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inherent" target="_blank">inherent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irreverent" target="_blank">irreverent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reverent" target="_blank">reverent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=torrent" target="_blank">torrent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=undercurrent" target="_blank">undercurrent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vicegerent" target="_blank">vicegerent</a></li>
+<ul id="words">
+<li>abhorrent</li>
+<li>adherent</li>
+<li>afferent</li>
+<li>apparent</li>
+<li>belligerent</li>
+<li>coherent</li>
+<li>concurrent</li>
+<li>deterrent</li>
+<li>incoherent</li>
+<li>indifferent</li>
+<li>inherent</li>
+<li>irreverent</li>
+<li>reverent</li>
+<li>torrent</li>
+<li>undercurrent</li>
+<li>vicegerent</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="269" data-circle-pattern="_rent">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "abhorrent adherent afferent apparent, belligerent coherent concurrent deterrent, incoherent indifferent inherent irreverent, reverent torrent undercurrent vicegerent";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

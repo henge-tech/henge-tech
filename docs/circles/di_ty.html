@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: di_ty</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#594 di_ty
+<h2>#594 di_ty</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=digestibility" target="_blank">digestibility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dignity" target="_blank">dignity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disability" target="_blank">disability</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discontinuity" target="_blank">discontinuity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishonesty" target="_blank">dishonesty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disloyalty" target="_blank">disloyalty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disparity" target="_blank">disparity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissimilarity" target="_blank">dissimilarity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disunity" target="_blank">disunity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ditty" target="_blank">ditty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diversity" target="_blank">diversity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=divinity" target="_blank">divinity</a></li>
+<ul id="words">
+<li>digestibility</li>
+<li>dignity</li>
+<li>disability</li>
+<li>discontinuity</li>
+<li>dishonesty</li>
+<li>disloyalty</li>
+<li>disparity</li>
+<li>dissimilarity</li>
+<li>disunity</li>
+<li>ditty</li>
+<li>diversity</li>
+<li>divinity</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="594" data-circle-pattern="di_ty">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "digestibility dignity disability, discontinuity dishonesty disloyalty, disparity dissimilarity disunity, ditty diversity divinity";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

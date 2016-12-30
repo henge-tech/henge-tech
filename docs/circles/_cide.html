@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _cide</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#58 _cide
+<h2>#58 _cide</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coincide" target="_blank">coincide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fratricide" target="_blank">fratricide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fungicide" target="_blank">fungicide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=genocide" target="_blank">genocide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=herbicide" target="_blank">herbicide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homicide" target="_blank">homicide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infanticide" target="_blank">infanticide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insecticide" target="_blank">insecticide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=matricide" target="_blank">matricide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patricide" target="_blank">patricide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pesticide" target="_blank">pesticide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suicide" target="_blank">suicide</a></li>
+<ul id="words">
+<li>coincide</li>
+<li>fratricide</li>
+<li>fungicide</li>
+<li>genocide</li>
+<li>herbicide</li>
+<li>homicide</li>
+<li>infanticide</li>
+<li>insecticide</li>
+<li>matricide</li>
+<li>patricide</li>
+<li>pesticide</li>
+<li>suicide</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="58" data-circle-pattern="_cide">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "coincide fratricide fungicide, genocide herbicide homicide, infanticide insecticide matricide, patricide pesticide suicide";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

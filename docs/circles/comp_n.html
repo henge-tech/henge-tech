@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: comp_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#520 comp_n
+<h2>#520 comp_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=companion" target="_blank">companion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comparison" target="_blank">comparison</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compassion" target="_blank">compassion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compensation" target="_blank">compensation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compilation" target="_blank">compilation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=completion" target="_blank">completion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complexion" target="_blank">complexion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complication" target="_blank">complication</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=composition" target="_blank">composition</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comprehension" target="_blank">comprehension</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compulsion" target="_blank">compulsion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compunction" target="_blank">compunction</a></li>
+<ul id="words">
+<li>companion</li>
+<li>comparison</li>
+<li>compassion</li>
+<li>compensation</li>
+<li>compilation</li>
+<li>completion</li>
+<li>complexion</li>
+<li>complication</li>
+<li>composition</li>
+<li>comprehension</li>
+<li>compulsion</li>
+<li>compunction</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="520" data-circle-pattern="comp_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "companion comparison compassion, compensation compilation completion, complexion complication composition, comprehension compulsion compunction";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

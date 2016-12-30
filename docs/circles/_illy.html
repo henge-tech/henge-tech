@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _illy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#139 _illy
+<h2>#139 _illy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=billy" target="_blank">billy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chilly" target="_blank">chilly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=civilly" target="_blank">civilly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dilly" target="_blank">dilly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=filly" target="_blank">filly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frilly" target="_blank">frilly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hillbilly" target="_blank">hillbilly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hilly" target="_blank">hilly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rockabilly" target="_blank">rockabilly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shrilly" target="_blank">shrilly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=silly" target="_blank">silly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=willy" target="_blank">willy</a></li>
+<ul id="words">
+<li>billy</li>
+<li>chilly</li>
+<li>civilly</li>
+<li>dilly</li>
+<li>filly</li>
+<li>frilly</li>
+<li>hillbilly</li>
+<li>hilly</li>
+<li>rockabilly</li>
+<li>shrilly</li>
+<li>silly</li>
+<li>willy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="139" data-circle-pattern="_illy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "billy chilly civilly, dilly filly frilly, hillbilly hilly rockabilly, shrilly silly willy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: v_o</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#974 v_o
+<h2>#974 v_o</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verso" target="_blank">verso</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vertigo" target="_blank">vertigo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=veto" target="_blank">veto</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vibrato" target="_blank">vibrato</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vino" target="_blank">vino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=violoncello" target="_blank">violoncello</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=virago" target="_blank">virago</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vireo" target="_blank">vireo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=virtuoso" target="_blank">virtuoso</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=VO." target="_blank">VO.</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=volcano" target="_blank">volcano</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=voodoo" target="_blank">voodoo</a></li>
+<ul id="words">
+<li>verso</li>
+<li>vertigo</li>
+<li>veto</li>
+<li>vibrato</li>
+<li>vino</li>
+<li>violoncello</li>
+<li>virago</li>
+<li>vireo</li>
+<li>virtuoso</li>
+<li>VO.</li>
+<li>volcano</li>
+<li>voodoo</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="974" data-circle-pattern="v_o">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "verso vertigo veto, vibrato vino violoncello, virago vireo virtuoso, VO. volcano voodoo";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

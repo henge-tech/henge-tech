@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: r_ist</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#866 r_ist
+<h2>#866 r_ist</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=radiologist" target="_blank">radiologist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rapist" target="_blank">rapist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rationalist" target="_blank">rationalist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=realist" target="_blank">realist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=receptionist" target="_blank">receptionist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recidivist" target="_blank">recidivist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reductionist" target="_blank">reductionist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reformist" target="_blank">reformist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reservist" target="_blank">reservist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revisionist" target="_blank">revisionist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rightist" target="_blank">rightist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=royalist" target="_blank">royalist</a></li>
+<ul id="words">
+<li>radiologist</li>
+<li>rapist</li>
+<li>rationalist</li>
+<li>realist</li>
+<li>receptionist</li>
+<li>recidivist</li>
+<li>reductionist</li>
+<li>reformist</li>
+<li>reservist</li>
+<li>revisionist</li>
+<li>rightist</li>
+<li>royalist</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="866" data-circle-pattern="r_ist">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "radiologist rapist rationalist, realist receptionist recidivist, reductionist reformist reservist, revisionist rightist royalist";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

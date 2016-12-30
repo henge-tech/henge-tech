@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _site</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#302 _site
+<h2>#302 _site</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apposite" target="_blank">apposite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=campsite" target="_blank">campsite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=composite" target="_blank">composite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exquisite" target="_blank">exquisite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marcasite" target="_blank">marcasite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=onsite" target="_blank">onsite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opposite" target="_blank">opposite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parasite" target="_blank">parasite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perquisite" target="_blank">perquisite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prerequisite" target="_blank">prerequisite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=requisite" target="_blank">requisite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=site" target="_blank">site</a></li>
+<ul id="words">
+<li>apposite</li>
+<li>campsite</li>
+<li>composite</li>
+<li>exquisite</li>
+<li>marcasite</li>
+<li>onsite</li>
+<li>opposite</li>
+<li>parasite</li>
+<li>perquisite</li>
+<li>prerequisite</li>
+<li>requisite</li>
+<li>site</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="302" data-circle-pattern="_site">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "apposite campsite composite, exquisite marcasite onsite, opposite parasite perquisite, prerequisite requisite site";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

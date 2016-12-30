@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: a_ter</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#386 a_ter
+<h2>#386 a_ter</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accelerometer" target="_blank">accelerometer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=administer" target="_blank">administer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adopter" target="_blank">adopter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alabaster" target="_blank">alabaster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alter" target="_blank">alter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=altimeter" target="_blank">altimeter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ammeter" target="_blank">ammeter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amphitheater" target="_blank">amphitheater</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=anemometer" target="_blank">anemometer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antimatter" target="_blank">antimatter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arbiter" target="_blank">arbiter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aster" target="_blank">aster</a></li>
+<ul id="words">
+<li>accelerometer</li>
+<li>administer</li>
+<li>adopter</li>
+<li>alabaster</li>
+<li>alter</li>
+<li>altimeter</li>
+<li>ammeter</li>
+<li>amphitheater</li>
+<li>anemometer</li>
+<li>antimatter</li>
+<li>arbiter</li>
+<li>aster</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="386" data-circle-pattern="a_ter">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "accelerometer administer adopter, alabaster alter altimeter, ammeter amphitheater anemometer, antimatter arbiter aster";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ury</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#353 _ury
+<h2>#353 _ury</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=augury" target="_blank">augury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bury" target="_blank">bury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=floury" target="_blank">floury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fury" target="_blank">fury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=injury" target="_blank">injury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jury" target="_blank">jury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luxury" target="_blank">luxury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mercury" target="_blank">mercury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penury" target="_blank">penury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perjury" target="_blank">perjury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=treasury" target="_blank">treasury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=usury" target="_blank">usury</a></li>
+<ul id="words">
+<li>augury</li>
+<li>bury</li>
+<li>floury</li>
+<li>fury</li>
+<li>injury</li>
+<li>jury</li>
+<li>luxury</li>
+<li>mercury</li>
+<li>penury</li>
+<li>perjury</li>
+<li>treasury</li>
+<li>usury</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="353" data-circle-pattern="_ury">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "augury bury floury, fury injury jury, luxury mercury penury, perjury treasury usury";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>
