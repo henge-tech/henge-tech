@@ -47,7 +47,13 @@ export default class Circle extends React.Component {
         fontSize = 12;
       }
       wordList[i] = (
-        <Word key={'word-' + i} word={word} x={x} y={y} fontSize={fontSize} />
+        <Word
+          key={'word-' + i}
+          word={word}
+          x={x}
+          y={y}
+          fontSize={fontSize}
+          />
       );
     }
 
@@ -58,7 +64,6 @@ export default class Circle extends React.Component {
             style={styles.speakButton}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
-
         <Button
             onClick={() => this.props.onSpeakButtonClick(this.props.words, 0)}
             style={styles.partialSpeakButtons[0]}
@@ -96,5 +101,6 @@ Circle.propTypes = {
     index: PropTypes.number.isRequired,
     word: PropTypes.string.isRequired
   })).isRequired,
+  pattern: PropTypes.string.isRequired,
   onSpeakButtonClick: PropTypes.func.isRequired
 };

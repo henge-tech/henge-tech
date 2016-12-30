@@ -6,7 +6,8 @@ const mapStateToProps = (state) => {
   return {
     width: state.window.width,
     height: state.window.height,
-    words: state.circle.words
+    words: state.circle.words,
+    pattern: state.circle.pattern
   }
 }
 

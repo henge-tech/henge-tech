@@ -22,11 +22,25 @@ let initialState = {
 let wordList = document.getElementById('words').childNodes;
 let word = '';
 let idx = 0;
+let circleApp = document.getElementById('CircleApp');
+let pattern = circleApp.getAttribute('data-circle-pattern');
+initialState.circle.pattern = pattern;
 
+let patterns = pattern.split(/_/, 2);
+let patternsRex = new RegExp('^(' + patterns[0] + ')(.*)(' + patterns[1] + ')$', 'i');
+let match, wobj;
 for (let i = 0; i < wordList.length; i++) {
   word = wordList[i].textContent;
   if (word != "\n") {
-    initialState.circle.words.push({ word: word, index: idx });
+    wobj = { word: word, index: idx, prefix: '', core: '', suffix: '' };
+    if ((match = patternsRex.exec(word)) !== null) {
+      wobj.prefix = match[1];
+      wobj.core = match[2]
+      wobj.suffix = match[3];
+    } else {
+      wordCore = word;
+    }
+    initialState.circle.words.push(wobj);
     idx += 1;
   }
 }
@@ -37,7 +51,7 @@ render(
     <Provider store={store}>
       <CircleContainer />
     </Provider>,
-    document.getElementById('CircleApp')
+    circleApp
 );
 
 window.addEventListener('resize', () => {

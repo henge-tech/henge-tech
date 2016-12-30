@@ -17,6 +17,7 @@ export default class Word extends React.Component {
 
     let styles = {
       word: {
+        color: '#ccc',
         listStyleType: 'none',
         position: 'absolute',
         top: this.props.y + 'px',
@@ -24,8 +25,8 @@ export default class Word extends React.Component {
         fontSize: this.props.fontSize + 'px',
       }
     };
-
-    let word = this.props.word.word; // .replace(/ab$/, '');
+    let word = this.props.word;
+    let astyle = {color: '#ccc'};
 
     return (
       <Measure
@@ -33,8 +34,8 @@ export default class Word extends React.Component {
           this.setState({dimensions})
         }}
       >
-        <li style={styles.word}>
-          {word}
+        <li className="word" style={styles.word}>
+          {word.prefix}<span style={{color: '#000'}}>{word.core}</span>{word.suffix}
         </li>
       </Measure>
     );
