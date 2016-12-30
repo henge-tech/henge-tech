@@ -5,8 +5,8 @@ require 'erb'
 
 class Generator
   PROJECT_ROOT = File.expand_path('../..', __FILE__)
-  CIRCLES_DIR = 'data/circles'
-  HTML_DIR = 'circles'
+  CIRCLES_DIR = File.expand_path(ARGV[0])
+  HTML_DIR = 'docs/circles'
 
   def execute
     Dir.chdir(PROJECT_ROOT)

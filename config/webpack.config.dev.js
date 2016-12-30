@@ -7,12 +7,8 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, 'docs'),
+    path: path.join(__dirname, '../docs'),
     filename: '[name].bundle.js'
-  },
-
-  devServer: {
-    contentBase: 'docs',
   },
 
   module: {
@@ -26,5 +22,9 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+
+  devServer: {
+    contentBase: 'docs',
+  },
 }

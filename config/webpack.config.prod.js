@@ -2,11 +2,15 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: './src/main.jsx',
-  output: {
-    path: path.join(__dirname, 'docs'),
-    filename: 'bundle.js'
+  entry: {
+    CircleApp: './src/CircleApp.jsx',
   },
+
+  output: {
+    path: path.join(__dirname, '../docs'),
+    filename: '[name].bundle.js'
+  },
+
   module: {
     loaders: [
       {
