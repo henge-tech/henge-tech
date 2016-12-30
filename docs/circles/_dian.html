@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _dian</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#70 _dian
+<h2>#70 _dian</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=circadian" target="_blank">circadian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comedian" target="_blank">comedian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=custodian" target="_blank">custodian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guardian" target="_blank">guardian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=median" target="_blank">median</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meridian" target="_blank">meridian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obsidian" target="_blank">obsidian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ophidian" target="_blank">ophidian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quotidian" target="_blank">quotidian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=radian" target="_blank">radian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tragedian" target="_blank">tragedian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=viridian" target="_blank">viridian</a></li>
+<ul id="words">
+<li>circadian</li>
+<li>comedian</li>
+<li>custodian</li>
+<li>guardian</li>
+<li>median</li>
+<li>meridian</li>
+<li>obsidian</li>
+<li>ophidian</li>
+<li>quotidian</li>
+<li>radian</li>
+<li>tragedian</li>
+<li>viridian</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="70" data-circle-pattern="_dian">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "circadian comedian custodian, guardian median meridian, obsidian ophidian quotidian, radian tragedian viridian";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

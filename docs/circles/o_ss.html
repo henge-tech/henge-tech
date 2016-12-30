@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: o_ss</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#799 o_ss
+<h2>#799 o_ss</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obsequiousness" target="_blank">obsequiousness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obsess" target="_blank">obsess</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oddness" target="_blank">oddness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=odorless" target="_blank">odorless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=officiousness" target="_blank">officiousness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ogress" target="_blank">ogress</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oneness" target="_blank">oneness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oppress" target="_blank">oppress</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=orderliness" target="_blank">orderliness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outclass" target="_blank">outclass</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outguess" target="_blank">outguess</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overpass" target="_blank">overpass</a></li>
+<ul id="words">
+<li>obsequiousness</li>
+<li>obsess</li>
+<li>oddness</li>
+<li>odorless</li>
+<li>officiousness</li>
+<li>ogress</li>
+<li>oneness</li>
+<li>oppress</li>
+<li>orderliness</li>
+<li>outclass</li>
+<li>outguess</li>
+<li>overpass</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="799" data-circle-pattern="o_ss">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "obsequiousness obsess oddness, odorless officiousness ogress, oneness oppress orderliness, outclass outguess overpass";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

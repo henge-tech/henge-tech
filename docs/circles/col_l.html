@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: col_l</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#516 col_l
+<h2>#516 col_l</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collateral" target="_blank">collateral</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collegial" target="_blank">collegial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colloidal" target="_blank">colloidal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colloquial" target="_blank">colloquial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colonel" target="_blank">colonel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colonial" target="_blank">colonial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colorful" target="_blank">colorful</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colossal" target="_blank">colossal</a></li>
+<ul id="words">
+<li>collateral</li>
+<li>collegial</li>
+<li>colloidal</li>
+<li>colloquial</li>
+<li>colonel</li>
+<li>colonial</li>
+<li>colorful</li>
+<li>colossal</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="516" data-circle-pattern="col_l">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "collateral collegial colloidal colloquial, colonel colonial colorful colossal";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

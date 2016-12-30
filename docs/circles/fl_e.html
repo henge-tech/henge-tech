@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: fl_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#658 fl_e
+<h2>#658 fl_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flagstone" target="_blank">flagstone</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flake" target="_blank">flake</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flammable" target="_blank">flammable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flange" target="_blank">flange</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flare" target="_blank">flare</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flatmate" target="_blank">flatmate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flatulence" target="_blank">flatulence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flatware" target="_blank">flatware</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flee" target="_blank">flee</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fleece" target="_blank">fleece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=floe" target="_blank">floe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluctuate" target="_blank">fluctuate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flue" target="_blank">flue</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluke" target="_blank">fluke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flume" target="_blank">flume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluorescence" target="_blank">fluorescence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluoride" target="_blank">fluoride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluorine" target="_blank">fluorine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluorite" target="_blank">fluorite</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluoroscope" target="_blank">fluoroscope</a></li>
+<ul id="words">
+<li>flagstone</li>
+<li>flake</li>
+<li>flammable</li>
+<li>flange</li>
+<li>flare</li>
+<li>flatmate</li>
+<li>flatulence</li>
+<li>flatware</li>
+<li>flee</li>
+<li>fleece</li>
+<li>floe</li>
+<li>fluctuate</li>
+<li>flue</li>
+<li>fluke</li>
+<li>flume</li>
+<li>fluorescence</li>
+<li>fluoride</li>
+<li>fluorine</li>
+<li>fluorite</li>
+<li>fluoroscope</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="658" data-circle-pattern="fl_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "flagstone flake flammable flange flare, flatmate flatulence flatware flee fleece, floe fluctuate flue fluke flume, fluorescence fluoride fluorine fluorite fluoroscope";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

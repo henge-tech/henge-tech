@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: mo_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#771 mo_n
+<h2>#771 mo_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moan" target="_blank">moan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moderation" target="_blank">moderation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=modulation" target="_blank">modulation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moisten" target="_blank">moisten</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=molestation" target="_blank">molestation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=molten" target="_blank">molten</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=morn" target="_blank">morn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moron" target="_blank">moron</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mortician" target="_blank">mortician</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mortification" target="_blank">mortification</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mourn" target="_blank">mourn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mouton" target="_blank">mouton</a></li>
+<ul id="words">
+<li>moan</li>
+<li>moderation</li>
+<li>modulation</li>
+<li>moisten</li>
+<li>molestation</li>
+<li>molten</li>
+<li>morn</li>
+<li>moron</li>
+<li>mortician</li>
+<li>mortification</li>
+<li>mourn</li>
+<li>mouton</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="771" data-circle-pattern="mo_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "moan moderation modulation, moisten molestation molten, morn moron mortician, mortification mourn mouton";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

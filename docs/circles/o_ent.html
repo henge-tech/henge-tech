@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: o_ent</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#791 o_ent
+<h2>#791 o_ent</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obedient" target="_blank">obedient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obsolescent" target="_blank">obsolescent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=occident" target="_blank">occident</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ointment" target="_blank">ointment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=omnipotent" target="_blank">omnipotent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=omnipresent" target="_blank">omnipresent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=omniscient" target="_blank">omniscient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opalescent" target="_blank">opalescent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opponent" target="_blank">opponent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opulent" target="_blank">opulent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=orient" target="_blank">orient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ornament" target="_blank">ornament</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outpatient" target="_blank">outpatient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overconfident" target="_blank">overconfident</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overpayment" target="_blank">overpayment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overstatement" target="_blank">overstatement</a></li>
+<ul id="words">
+<li>obedient</li>
+<li>obsolescent</li>
+<li>occident</li>
+<li>ointment</li>
+<li>omnipotent</li>
+<li>omnipresent</li>
+<li>omniscient</li>
+<li>opalescent</li>
+<li>opponent</li>
+<li>opulent</li>
+<li>orient</li>
+<li>ornament</li>
+<li>outpatient</li>
+<li>overconfident</li>
+<li>overpayment</li>
+<li>overstatement</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="791" data-circle-pattern="o_ent">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "obedient obsolescent occident ointment, omnipotent omnipresent omniscient opalescent, opponent opulent orient ornament, outpatient overconfident overpayment overstatement";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

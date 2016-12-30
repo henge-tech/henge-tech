@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dip_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#597 dip_
+<h2>#597 dip_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dip" target="_blank">dip</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diphtheria" target="_blank">diphtheria</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diploid" target="_blank">diploid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diploma" target="_blank">diploma</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diplomacy" target="_blank">diplomacy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diplomat" target="_blank">diplomat</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diplomatic" target="_blank">diplomatic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diplomatically" target="_blank">diplomatically</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dipole" target="_blank">dipole</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dipper" target="_blank">dipper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dippy" target="_blank">dippy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dipstick" target="_blank">dipstick</a></li>
+<ul id="words">
+<li>dip</li>
+<li>diphtheria</li>
+<li>diploid</li>
+<li>diploma</li>
+<li>diplomacy</li>
+<li>diplomat</li>
+<li>diplomatic</li>
+<li>diplomatically</li>
+<li>dipole</li>
+<li>dipper</li>
+<li>dippy</li>
+<li>dipstick</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="597" data-circle-pattern="dip_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "dip diphtheria diploid, diploma diplomacy diplomat, diplomatic diplomatically dipole, dipper dippy dipstick";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: de_tor</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#571 de_tor
+<h2>#571 de_tor</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=debtor" target="_blank">debtor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decorator" target="_blank">decorator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defector" target="_blank">defector</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deflector" target="_blank">deflector</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=denominator" target="_blank">denominator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depositor" target="_blank">depositor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descriptor" target="_blank">descriptor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=designator" target="_blank">designator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=destructor" target="_blank">destructor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detector" target="_blank">detector</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detonator" target="_blank">detonator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detractor" target="_blank">detractor</a></li>
+<ul id="words">
+<li>debtor</li>
+<li>decorator</li>
+<li>defector</li>
+<li>deflector</li>
+<li>denominator</li>
+<li>depositor</li>
+<li>descriptor</li>
+<li>designator</li>
+<li>destructor</li>
+<li>detector</li>
+<li>detonator</li>
+<li>detractor</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="571" data-circle-pattern="de_tor">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "debtor decorator defector, deflector denominator depositor, descriptor designator destructor, detector detonator detractor";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

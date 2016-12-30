@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ique</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#148 _ique
+<h2>#148 _ique</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antique" target="_blank">antique</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=applique" target="_blank">applique</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boutique" target="_blank">boutique</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clique" target="_blank">clique</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=communique" target="_blank">communique</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=critique" target="_blank">critique</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mystique" target="_blank">mystique</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oblique" target="_blank">oblique</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=physique" target="_blank">physique</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pique" target="_blank">pique</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=technique" target="_blank">technique</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unique" target="_blank">unique</a></li>
+<ul id="words">
+<li>antique</li>
+<li>applique</li>
+<li>boutique</li>
+<li>clique</li>
+<li>communique</li>
+<li>critique</li>
+<li>mystique</li>
+<li>oblique</li>
+<li>physique</li>
+<li>pique</li>
+<li>technique</li>
+<li>unique</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="148" data-circle-pattern="_ique">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "antique applique boutique, clique communique critique, mystique oblique physique, pique technique unique";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

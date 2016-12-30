@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ret</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#270 _ret
+<h2>#270 _ret</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beret" target="_blank">beret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cabaret" target="_blank">cabaret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caret" target="_blank">caret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=claret" target="_blank">claret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=egret" target="_blank">egret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ferret" target="_blank">ferret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fret" target="_blank">fret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=garret" target="_blank">garret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interpret" target="_blank">interpret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=minaret" target="_blank">minaret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=regret" target="_blank">regret</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=turret" target="_blank">turret</a></li>
+<ul id="words">
+<li>beret</li>
+<li>cabaret</li>
+<li>caret</li>
+<li>claret</li>
+<li>egret</li>
+<li>ferret</li>
+<li>fret</li>
+<li>garret</li>
+<li>interpret</li>
+<li>minaret</li>
+<li>regret</li>
+<li>turret</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="270" data-circle-pattern="_ret">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "beret cabaret caret, claret egret ferret, fret garret interpret, minaret regret turret";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

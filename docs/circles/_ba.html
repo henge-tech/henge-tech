@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ba</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#46 _ba
+<h2>#46 _ba</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abba" target="_blank">abba</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amoeba" target="_blank">amoeba</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baba" target="_blank">baba</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indaba" target="_blank">indaba</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jojoba" target="_blank">jojoba</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mamba" target="_blank">mamba</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marimba" target="_blank">marimba</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rumba" target="_blank">rumba</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=samba" target="_blank">samba</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scuba" target="_blank">scuba</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Sheba" target="_blank">Sheba</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tuba" target="_blank">tuba</a></li>
+<ul id="words">
+<li>abba</li>
+<li>amoeba</li>
+<li>baba</li>
+<li>indaba</li>
+<li>jojoba</li>
+<li>mamba</li>
+<li>marimba</li>
+<li>rumba</li>
+<li>samba</li>
+<li>scuba</li>
+<li>Sheba</li>
+<li>tuba</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="46" data-circle-pattern="_ba">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "abba amoeba baba, indaba jojoba mamba, marimba rumba samba, scuba Sheba tuba";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

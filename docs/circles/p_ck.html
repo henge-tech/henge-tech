@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: p_ck</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#808 p_ck
+<h2>#808 p_ck</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paddock" target="_blank">paddock</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=padlock" target="_blank">padlock</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paycheck" target="_blank">paycheck</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peacock" target="_blank">peacock</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peck" target="_blank">peck</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=piggyback" target="_blank">piggyback</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pluck" target="_blank">pluck</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pock" target="_blank">pock</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pollack" target="_blank">pollack</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=potluck" target="_blank">potluck</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prick" target="_blank">prick</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=puck" target="_blank">puck</a></li>
+<ul id="words">
+<li>paddock</li>
+<li>padlock</li>
+<li>paycheck</li>
+<li>peacock</li>
+<li>peck</li>
+<li>piggyback</li>
+<li>pluck</li>
+<li>pock</li>
+<li>pollack</li>
+<li>potluck</li>
+<li>prick</li>
+<li>puck</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="808" data-circle-pattern="p_ck">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "paddock padlock paycheck, peacock peck piggyback, pluck pock pollack, potluck prick puck";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

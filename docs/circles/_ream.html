@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ream</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#265 _ream
+<h2>#265 _ream</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=airstream" target="_blank">airstream</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bream" target="_blank">bream</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buttercream" target="_blank">buttercream</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daydream" target="_blank">daydream</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downstream" target="_blank">downstream</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mainstream" target="_blank">mainstream</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=midstream" target="_blank">midstream</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=millstream" target="_blank">millstream</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ream" target="_blank">ream</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scream" target="_blank">scream</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slipstream" target="_blank">slipstream</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=upstream" target="_blank">upstream</a></li>
+<ul id="words">
+<li>airstream</li>
+<li>bream</li>
+<li>buttercream</li>
+<li>daydream</li>
+<li>downstream</li>
+<li>mainstream</li>
+<li>midstream</li>
+<li>millstream</li>
+<li>ream</li>
+<li>scream</li>
+<li>slipstream</li>
+<li>upstream</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="265" data-circle-pattern="_ream">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "airstream bream buttercream, daydream downstream mainstream, midstream millstream ream, scream slipstream upstream";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

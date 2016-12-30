@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: f_ble</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#642 f_ble
+<h2>#642 f_ble</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fable" target="_blank">fable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fallible" target="_blank">fallible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feasible" target="_blank">feasible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feeble" target="_blank">feeble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flexible" target="_blank">flexible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forcible" target="_blank">forcible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foreseeable" target="_blank">foreseeable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=formidable" target="_blank">formidable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=friable" target="_blank">friable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fumble" target="_blank">fumble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fungible" target="_blank">fungible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fusible" target="_blank">fusible</a></li>
+<ul id="words">
+<li>fable</li>
+<li>fallible</li>
+<li>feasible</li>
+<li>feeble</li>
+<li>flexible</li>
+<li>forcible</li>
+<li>foreseeable</li>
+<li>formidable</li>
+<li>friable</li>
+<li>fumble</li>
+<li>fungible</li>
+<li>fusible</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="642" data-circle-pattern="f_ble">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "fable fallible feasible, feeble flexible forcible, foreseeable formidable friable, fumble fungible fusible";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

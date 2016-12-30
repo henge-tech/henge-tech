@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: w_le</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#985 w_le
+<h2>#985 w_le</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waddle" target="_blank">waddle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=warble" target="_blank">warble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=watchable" target="_blank">watchable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waterhole" target="_blank">waterhole</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wattle" target="_blank">wattle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whittle" target="_blank">whittle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wholesale" target="_blank">wholesale</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wiggle" target="_blank">wiggle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wile" target="_blank">wile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=winkle" target="_blank">winkle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wobble" target="_blank">wobble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=worthwhile" target="_blank">worthwhile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wrangle" target="_blank">wrangle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wrestle" target="_blank">wrestle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wriggle" target="_blank">wriggle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wrinkle" target="_blank">wrinkle</a></li>
+<ul id="words">
+<li>waddle</li>
+<li>warble</li>
+<li>watchable</li>
+<li>waterhole</li>
+<li>wattle</li>
+<li>whittle</li>
+<li>wholesale</li>
+<li>wiggle</li>
+<li>wile</li>
+<li>winkle</li>
+<li>wobble</li>
+<li>worthwhile</li>
+<li>wrangle</li>
+<li>wrestle</li>
+<li>wriggle</li>
+<li>wrinkle</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="985" data-circle-pattern="w_le">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "waddle warble watchable waterhole, wattle whittle wholesale wiggle, wile winkle wobble worthwhile, wrangle wrestle wriggle wrinkle";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

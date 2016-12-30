@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _rch</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#261 _rch
+<h2>#261 _rch</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arch" target="_blank">arch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=besmirch" target="_blank">besmirch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=birch" target="_blank">birch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=larch" target="_blank">larch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lurch" target="_blank">lurch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=march" target="_blank">march</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=matriarch" target="_blank">matriarch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monarch" target="_blank">monarch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oligarch" target="_blank">oligarch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parch" target="_blank">parch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patriarch" target="_blank">patriarch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perch" target="_blank">perch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=porch" target="_blank">porch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scorch" target="_blank">scorch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=starch" target="_blank">starch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=torch" target="_blank">torch</a></li>
+<ul id="words">
+<li>arch</li>
+<li>besmirch</li>
+<li>birch</li>
+<li>larch</li>
+<li>lurch</li>
+<li>march</li>
+<li>matriarch</li>
+<li>monarch</li>
+<li>oligarch</li>
+<li>parch</li>
+<li>patriarch</li>
+<li>perch</li>
+<li>porch</li>
+<li>scorch</li>
+<li>starch</li>
+<li>torch</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="261" data-circle-pattern="_rch">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "arch besmirch birch larch, lurch march matriarch monarch, oligarch parch patriarch perch, porch scorch starch torch";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _lm</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#171 _lm
+<h2>#171 _lm</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=balm" target="_blank">balm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=calm" target="_blank">calm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=elm" target="_blank">elm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embalm" target="_blank">embalm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=helm" target="_blank">helm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lm" target="_blank">lm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=napalm" target="_blank">napalm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overwhelm" target="_blank">overwhelm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=palm" target="_blank">palm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=psalm" target="_blank">psalm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=realm" target="_blank">realm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=telefilm" target="_blank">telefilm</a></li>
+<ul id="words">
+<li>balm</li>
+<li>calm</li>
+<li>elm</li>
+<li>embalm</li>
+<li>helm</li>
+<li>lm</li>
+<li>napalm</li>
+<li>overwhelm</li>
+<li>palm</li>
+<li>psalm</li>
+<li>realm</li>
+<li>telefilm</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="171" data-circle-pattern="_lm">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "balm calm elm, embalm helm lm, napalm overwhelm palm, psalm realm telefilm";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

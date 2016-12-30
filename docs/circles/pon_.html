@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: pon_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#843 pon_
+<h2>#843 pon_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ponce" target="_blank">ponce</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pond" target="_blank">pond</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ponder" target="_blank">ponder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ponderosa" target="_blank">ponderosa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ponderous" target="_blank">ponderous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pone" target="_blank">pone</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pong" target="_blank">pong</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=poniard" target="_blank">poniard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pontiff" target="_blank">pontiff</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pontifical" target="_blank">pontifical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pontoon" target="_blank">pontoon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pony" target="_blank">pony</a></li>
+<ul id="words">
+<li>ponce</li>
+<li>pond</li>
+<li>ponder</li>
+<li>ponderosa</li>
+<li>ponderous</li>
+<li>pone</li>
+<li>pong</li>
+<li>poniard</li>
+<li>pontiff</li>
+<li>pontifical</li>
+<li>pontoon</li>
+<li>pony</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="843" data-circle-pattern="pon_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ponce pond ponder, ponderosa ponderous pone, pong poniard pontiff, pontifical pontoon pony";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

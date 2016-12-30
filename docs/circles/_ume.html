@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ume</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#346 _ume
+<h2>#346 _ume</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assume" target="_blank">assume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consume" target="_blank">consume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=costume" target="_blank">costume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exhume" target="_blank">exhume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flume" target="_blank">flume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fume" target="_blank">fume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legume" target="_blank">legume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perfume" target="_blank">perfume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plume" target="_blank">plume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=presume" target="_blank">presume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resume" target="_blank">resume</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subsume" target="_blank">subsume</a></li>
+<ul id="words">
+<li>assume</li>
+<li>consume</li>
+<li>costume</li>
+<li>exhume</li>
+<li>flume</li>
+<li>fume</li>
+<li>legume</li>
+<li>perfume</li>
+<li>plume</li>
+<li>presume</li>
+<li>resume</li>
+<li>subsume</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="346" data-circle-pattern="_ume">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "assume consume costume, exhume flume fume, legume perfume plume, presume resume subsume";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

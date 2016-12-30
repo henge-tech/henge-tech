@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: exc_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#637 exc_y
+<h2>#637 exc_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exceedingly" target="_blank">exceedingly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excellency" target="_blank">excellency</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excellently" target="_blank">excellently</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exceptionally" target="_blank">exceptionally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excessively" target="_blank">excessively</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excitability" target="_blank">excitability</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclusionary" target="_blank">exclusionary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclusively" target="_blank">exclusively</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclusivity" target="_blank">exclusivity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excretory" target="_blank">excretory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excruciatingly" target="_blank">excruciatingly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exculpatory" target="_blank">exculpatory</a></li>
+<ul id="words">
+<li>exceedingly</li>
+<li>excellency</li>
+<li>excellently</li>
+<li>exceptionally</li>
+<li>excessively</li>
+<li>excitability</li>
+<li>exclusionary</li>
+<li>exclusively</li>
+<li>exclusivity</li>
+<li>excretory</li>
+<li>excruciatingly</li>
+<li>exculpatory</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="637" data-circle-pattern="exc_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "exceedingly excellency excellently, exceptionally excessively excitability, exclusionary exclusively exclusivity, excretory excruciatingly exculpatory";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

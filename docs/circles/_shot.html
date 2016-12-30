@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _shot</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#298 _shot
+<h2>#298 _shot</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloodshot" target="_blank">bloodshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buckshot" target="_blank">buckshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=earshot" target="_blank">earshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gunshot" target="_blank">gunshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hotshot" target="_blank">hotshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mailshot" target="_blank">mailshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mugshot" target="_blank">mugshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overshot" target="_blank">overshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=potshot" target="_blank">potshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scattershot" target="_blank">scattershot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slingshot" target="_blank">slingshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=upshot" target="_blank">upshot</a></li>
+<ul id="words">
+<li>bloodshot</li>
+<li>buckshot</li>
+<li>earshot</li>
+<li>gunshot</li>
+<li>hotshot</li>
+<li>mailshot</li>
+<li>mugshot</li>
+<li>overshot</li>
+<li>potshot</li>
+<li>scattershot</li>
+<li>slingshot</li>
+<li>upshot</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="298" data-circle-pattern="_shot">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bloodshot buckshot earshot, gunshot hotshot mailshot, mugshot overshot potshot, scattershot slingshot upshot";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

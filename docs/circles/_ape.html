@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ape</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#32 _ape
+<h2>#32 _ape</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=agape" target="_blank">agape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ape" target="_blank">ape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cape" target="_blank">cape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crape" target="_blank">crape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drape" target="_blank">drape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gape" target="_blank">gape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nape" target="_blank">nape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reshape" target="_blank">reshape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scape" target="_blank">scape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrape" target="_blank">scrape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seascape" target="_blank">seascape</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shipshape" target="_blank">shipshape</a></li>
+<ul id="words">
+<li>agape</li>
+<li>ape</li>
+<li>cape</li>
+<li>crape</li>
+<li>drape</li>
+<li>gape</li>
+<li>nape</li>
+<li>reshape</li>
+<li>scape</li>
+<li>scrape</li>
+<li>seascape</li>
+<li>shipshape</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="32" data-circle-pattern="_ape">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "agape ape cape, crape drape gape, nape reshape scape, scrape seascape shipshape";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

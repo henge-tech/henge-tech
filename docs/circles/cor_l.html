@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: cor_l</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#537 cor_l
+<h2>#537 cor_l</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coral" target="_blank">coral</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cordial" target="_blank">cordial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cornball" target="_blank">cornball</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corneal" target="_blank">corneal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cornel" target="_blank">cornel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cornmeal" target="_blank">cornmeal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coronal" target="_blank">coronal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corporal" target="_blank">corporal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corporeal" target="_blank">corporeal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corral" target="_blank">corral</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=correctional" target="_blank">correctional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cortical" target="_blank">cortical</a></li>
+<ul id="words">
+<li>coral</li>
+<li>cordial</li>
+<li>cornball</li>
+<li>corneal</li>
+<li>cornel</li>
+<li>cornmeal</li>
+<li>coronal</li>
+<li>corporal</li>
+<li>corporeal</li>
+<li>corral</li>
+<li>correctional</li>
+<li>cortical</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="537" data-circle-pattern="cor_l">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "coral cordial cornball, corneal cornel cornmeal, coronal corporal corporeal, corral correctional cortical";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

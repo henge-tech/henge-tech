@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ella</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#94 _ella
+<h2>#94 _ella</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chlorella" target="_blank">chlorella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=citronella" target="_blank">citronella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fella" target="_blank">fella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flagella" target="_blank">flagella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mozzarella" target="_blank">mozzarella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=novella" target="_blank">novella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paella" target="_blank">paella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patella" target="_blank">patella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rubella" target="_blank">rubella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salmonella" target="_blank">salmonella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tarantella" target="_blank">tarantella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=umbrella" target="_blank">umbrella</a></li>
+<ul id="words">
+<li>chlorella</li>
+<li>citronella</li>
+<li>fella</li>
+<li>flagella</li>
+<li>mozzarella</li>
+<li>novella</li>
+<li>paella</li>
+<li>patella</li>
+<li>rubella</li>
+<li>salmonella</li>
+<li>tarantella</li>
+<li>umbrella</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="94" data-circle-pattern="_ella">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "chlorella citronella fella, flagella mozzarella novella, paella patella rubella, salmonella tarantella umbrella";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

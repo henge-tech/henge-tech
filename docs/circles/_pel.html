@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _pel</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#242 _pel
+<h2>#242 _pel</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carpel" target="_blank">carpel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chapel" target="_blank">chapel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compel" target="_blank">compel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispel" target="_blank">dispel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expel" target="_blank">expel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gospel" target="_blank">gospel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impel" target="_blank">impel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lapel" target="_blank">lapel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=propel" target="_blank">propel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rappel" target="_blank">rappel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repel" target="_blank">repel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scalpel" target="_blank">scalpel</a></li>
+<ul id="words">
+<li>carpel</li>
+<li>chapel</li>
+<li>compel</li>
+<li>dispel</li>
+<li>expel</li>
+<li>gospel</li>
+<li>impel</li>
+<li>lapel</li>
+<li>propel</li>
+<li>rappel</li>
+<li>repel</li>
+<li>scalpel</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="242" data-circle-pattern="_pel">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "carpel chapel compel, dispel expel gospel, impel lapel propel, rappel repel scalpel";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

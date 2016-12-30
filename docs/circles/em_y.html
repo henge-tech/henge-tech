@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: em_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#626 em_y
+<h2>#626 em_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embassy" target="_blank">embassy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embody" target="_blank">embody</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embroidery" target="_blank">embroidery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=embryology" target="_blank">embryology</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emery" target="_blank">emery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eminently" target="_blank">eminently</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emissary" target="_blank">emissary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emotionally" target="_blank">emotionally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=empathy" target="_blank">empathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emphatically" target="_blank">emphatically</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=empirically" target="_blank">empirically</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=employ" target="_blank">employ</a></li>
+<ul id="words">
+<li>embassy</li>
+<li>embody</li>
+<li>embroidery</li>
+<li>embryology</li>
+<li>emery</li>
+<li>eminently</li>
+<li>emissary</li>
+<li>emotionally</li>
+<li>empathy</li>
+<li>emphatically</li>
+<li>empirically</li>
+<li>employ</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="626" data-circle-pattern="em_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "embassy embody embroidery, embryology emery eminently, emissary emotionally empathy, emphatically empirically employ";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

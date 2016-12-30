@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dish_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#605 dish_
+<h2>#605 dish_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dish" target="_blank">dish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishabille" target="_blank">dishabille</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disharmony" target="_blank">disharmony</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disheartened" target="_blank">disheartened</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disheveled" target="_blank">disheveled</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishonest" target="_blank">dishonest</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishonor" target="_blank">dishonor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishpan" target="_blank">dishpan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishware" target="_blank">dishware</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishwasher" target="_blank">dishwasher</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishwater" target="_blank">dishwater</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishy" target="_blank">dishy</a></li>
+<ul id="words">
+<li>dish</li>
+<li>dishabille</li>
+<li>disharmony</li>
+<li>disheartened</li>
+<li>disheveled</li>
+<li>dishonest</li>
+<li>dishonor</li>
+<li>dishpan</li>
+<li>dishware</li>
+<li>dishwasher</li>
+<li>dishwater</li>
+<li>dishy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="605" data-circle-pattern="dish_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "dish dishabille disharmony, disheartened disheveled dishonest, dishonor dishpan dishware, dishwasher dishwater dishy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

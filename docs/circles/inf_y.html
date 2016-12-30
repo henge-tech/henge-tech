@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: inf_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#717 inf_y
+<h2>#717 inf_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infamy" target="_blank">infamy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infancy" target="_blank">infancy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infantry" target="_blank">infantry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inferiority" target="_blank">inferiority</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infertility" target="_blank">infertility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infidelity" target="_blank">infidelity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infinitely" target="_blank">infinitely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infirmary" target="_blank">infirmary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infirmity" target="_blank">infirmity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inflammatory" target="_blank">inflammatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inflationary" target="_blank">inflationary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=informally" target="_blank">informally</a></li>
+<ul id="words">
+<li>infamy</li>
+<li>infancy</li>
+<li>infantry</li>
+<li>inferiority</li>
+<li>infertility</li>
+<li>infidelity</li>
+<li>infinitely</li>
+<li>infirmary</li>
+<li>infirmity</li>
+<li>inflammatory</li>
+<li>inflationary</li>
+<li>informally</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="717" data-circle-pattern="inf_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "infamy infancy infantry, inferiority infertility infidelity, infinitely infirmary infirmity, inflammatory inflationary informally";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

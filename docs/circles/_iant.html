@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _iant</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#127 _iant
+<h2>#127 _iant</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brilliant" target="_blank">brilliant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compliant" target="_blank">compliant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defiant" target="_blank">defiant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deviant" target="_blank">deviant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=invariant" target="_blank">invariant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=luxuriant" target="_blank">luxuriant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pliant" target="_blank">pliant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=radiant" target="_blank">radiant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reliant" target="_blank">reliant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=supergiant" target="_blank">supergiant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=valiant" target="_blank">valiant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=variant" target="_blank">variant</a></li>
+<ul id="words">
+<li>brilliant</li>
+<li>compliant</li>
+<li>defiant</li>
+<li>deviant</li>
+<li>invariant</li>
+<li>luxuriant</li>
+<li>pliant</li>
+<li>radiant</li>
+<li>reliant</li>
+<li>supergiant</li>
+<li>valiant</li>
+<li>variant</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="127" data-circle-pattern="_iant">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "brilliant compliant defiant, deviant invariant luxuriant, pliant radiant reliant, supergiant valiant variant";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

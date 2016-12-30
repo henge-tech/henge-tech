@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ino</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#143 _ino
+<h2>#143 _ino</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=albino" target="_blank">albino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bambino" target="_blank">bambino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cappuccino" target="_blank">cappuccino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chino" target="_blank">chino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=latino" target="_blank">latino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lino" target="_blank">lino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=merino" target="_blank">merino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neutrino" target="_blank">neutrino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=palomino" target="_blank">palomino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rhino" target="_blank">rhino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vino" target="_blank">vino</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wino" target="_blank">wino</a></li>
+<ul id="words">
+<li>albino</li>
+<li>bambino</li>
+<li>cappuccino</li>
+<li>chino</li>
+<li>latino</li>
+<li>lino</li>
+<li>merino</li>
+<li>neutrino</li>
+<li>palomino</li>
+<li>rhino</li>
+<li>vino</li>
+<li>wino</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="143" data-circle-pattern="_ino">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "albino bambino cappuccino, chino latino lino, merino neutrino palomino, rhino vino wino";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

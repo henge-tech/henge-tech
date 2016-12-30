@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _hine</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#121 _hine
+<h2>#121 _hine</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chine" target="_blank">chine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dauphine" target="_blank">dauphine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=labyrinthine" target="_blank">labyrinthine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=machine" target="_blank">machine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monkeyshine" target="_blank">monkeyshine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moonshine" target="_blank">moonshine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=morphine" target="_blank">morphine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outshine" target="_blank">outshine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shine" target="_blank">shine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shoeshine" target="_blank">shoeshine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thine" target="_blank">thine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whine" target="_blank">whine</a></li>
+<ul id="words">
+<li>chine</li>
+<li>dauphine</li>
+<li>labyrinthine</li>
+<li>machine</li>
+<li>monkeyshine</li>
+<li>moonshine</li>
+<li>morphine</li>
+<li>outshine</li>
+<li>shine</li>
+<li>shoeshine</li>
+<li>thine</li>
+<li>whine</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="121" data-circle-pattern="_hine">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "chine dauphine labyrinthine, machine monkeyshine moonshine, morphine outshine shine, shoeshine thine whine";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

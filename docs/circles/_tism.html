@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _tism</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#329 _tism
+<h2>#329 _tism</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=absolutism" target="_blank">absolutism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astigmatism" target="_blank">astigmatism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=autism" target="_blank">autism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baptism" target="_blank">baptism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corporatism" target="_blank">corporatism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=despotism" target="_blank">despotism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dogmatism" target="_blank">dogmatism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=egotism" target="_blank">egotism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=favoritism" target="_blank">favoritism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypnotism" target="_blank">hypnotism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leftism" target="_blank">leftism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magnetism" target="_blank">magnetism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nepotism" target="_blank">nepotism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parasitism" target="_blank">parasitism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patriotism" target="_blank">patriotism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pragmatism" target="_blank">pragmatism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rheumatism" target="_blank">rheumatism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=separatism" target="_blank">separatism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=statism" target="_blank">statism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=syncretism" target="_blank">syncretism</a></li>
+<ul id="words">
+<li>absolutism</li>
+<li>astigmatism</li>
+<li>autism</li>
+<li>baptism</li>
+<li>corporatism</li>
+<li>despotism</li>
+<li>dogmatism</li>
+<li>egotism</li>
+<li>favoritism</li>
+<li>hypnotism</li>
+<li>leftism</li>
+<li>magnetism</li>
+<li>nepotism</li>
+<li>parasitism</li>
+<li>patriotism</li>
+<li>pragmatism</li>
+<li>rheumatism</li>
+<li>separatism</li>
+<li>statism</li>
+<li>syncretism</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="329" data-circle-pattern="_tism">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "absolutism astigmatism autism baptism corporatism, despotism dogmatism egotism favoritism hypnotism, leftism magnetism nepotism parasitism patriotism, pragmatism rheumatism separatism statism syncretism";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

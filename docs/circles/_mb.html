@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _mb</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#180 _mb
+<h2>#180 _mb</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aplomb" target="_blank">aplomb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=catacomb" target="_blank">catacomb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comb" target="_blank">comb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coulomb" target="_blank">coulomb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crumb" target="_blank">crumb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dumb" target="_blank">dumb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=honeycomb" target="_blank">honeycomb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jamb" target="_blank">jamb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lamb" target="_blank">lamb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=limb" target="_blank">limb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=numb" target="_blank">numb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plumb" target="_blank">plumb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=succumb" target="_blank">succumb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thumb" target="_blank">thumb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tomb" target="_blank">tomb</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=womb" target="_blank">womb</a></li>
+<ul id="words">
+<li>aplomb</li>
+<li>catacomb</li>
+<li>comb</li>
+<li>coulomb</li>
+<li>crumb</li>
+<li>dumb</li>
+<li>honeycomb</li>
+<li>jamb</li>
+<li>lamb</li>
+<li>limb</li>
+<li>numb</li>
+<li>plumb</li>
+<li>succumb</li>
+<li>thumb</li>
+<li>tomb</li>
+<li>womb</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="180" data-circle-pattern="_mb">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "aplomb catacomb comb coulomb, crumb dumb honeycomb jamb, lamb limb numb plumb, succumb thumb tomb womb";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

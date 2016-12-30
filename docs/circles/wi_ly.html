@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: wi_ly</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#995 wi_ly
+<h2>#995 wi_ly</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wickedly" target="_blank">wickedly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=widely" target="_blank">widely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wifely" target="_blank">wifely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wiggly" target="_blank">wiggly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wildly" target="_blank">wildly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=willfully" target="_blank">willfully</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=willingly" target="_blank">willingly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=willy" target="_blank">willy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wily" target="_blank">wily</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wisely" target="_blank">wisely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wistfully" target="_blank">wistfully</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wittily" target="_blank">wittily</a></li>
+<ul id="words">
+<li>wickedly</li>
+<li>widely</li>
+<li>wifely</li>
+<li>wiggly</li>
+<li>wildly</li>
+<li>willfully</li>
+<li>willingly</li>
+<li>willy</li>
+<li>wily</li>
+<li>wisely</li>
+<li>wistfully</li>
+<li>wittily</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="995" data-circle-pattern="wi_ly">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "wickedly widely wifely, wiggly wildly willfully, willingly willy wily, wisely wistfully wittily";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

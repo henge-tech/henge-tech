@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: m_el</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#749 m_el
+<h2>#749 m_el</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mackerel" target="_blank">mackerel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mandrel" target="_blank">mandrel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mantel" target="_blank">mantel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marvel" target="_blank">marvel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=materiel" target="_blank">materiel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=minstrel" target="_blank">minstrel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mongrel" target="_blank">mongrel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=morsel" target="_blank">morsel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=motel" target="_blank">motel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mouthfeel" target="_blank">mouthfeel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multichannel" target="_blank">multichannel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mussel" target="_blank">mussel</a></li>
+<ul id="words">
+<li>mackerel</li>
+<li>mandrel</li>
+<li>mantel</li>
+<li>marvel</li>
+<li>materiel</li>
+<li>minstrel</li>
+<li>mongrel</li>
+<li>morsel</li>
+<li>motel</li>
+<li>mouthfeel</li>
+<li>multichannel</li>
+<li>mussel</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="749" data-circle-pattern="m_el">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "mackerel mandrel mantel, marvel materiel minstrel, mongrel morsel motel, mouthfeel multichannel mussel";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

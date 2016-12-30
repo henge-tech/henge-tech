@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _sa</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#293 _sa
+<h2>#293 _sa</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abscissa" target="_blank">abscissa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appaloosa" target="_blank">appaloosa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=balsa" target="_blank">balsa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bursa" target="_blank">bursa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kielbasa" target="_blank">kielbasa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=medusa" target="_blank">medusa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mesa" target="_blank">mesa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mimosa" target="_blank">mimosa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paisa" target="_blank">paisa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ponderosa" target="_blank">ponderosa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salsa" target="_blank">salsa</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=visa" target="_blank">visa</a></li>
+<ul id="words">
+<li>abscissa</li>
+<li>appaloosa</li>
+<li>balsa</li>
+<li>bursa</li>
+<li>kielbasa</li>
+<li>medusa</li>
+<li>mesa</li>
+<li>mimosa</li>
+<li>paisa</li>
+<li>ponderosa</li>
+<li>salsa</li>
+<li>visa</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="293" data-circle-pattern="_sa">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "abscissa appaloosa balsa, bursa kielbasa medusa, mesa mimosa paisa, ponderosa salsa visa";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

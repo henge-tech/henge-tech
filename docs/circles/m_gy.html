@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: m_gy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#750 m_gy
+<h2>#750 m_gy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mangy" target="_blank">mangy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metallurgy" target="_blank">metallurgy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meteorology" target="_blank">meteorology</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=methodology" target="_blank">methodology</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=metrology" target="_blank">metrology</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=microbiology" target="_blank">microbiology</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mineralogy" target="_blank">mineralogy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moggy" target="_blank">moggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=morphology" target="_blank">morphology</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muggy" target="_blank">muggy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mycology" target="_blank">mycology</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mythology" target="_blank">mythology</a></li>
+<ul id="words">
+<li>mangy</li>
+<li>metallurgy</li>
+<li>meteorology</li>
+<li>methodology</li>
+<li>metrology</li>
+<li>microbiology</li>
+<li>mineralogy</li>
+<li>moggy</li>
+<li>morphology</li>
+<li>muggy</li>
+<li>mycology</li>
+<li>mythology</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="750" data-circle-pattern="m_gy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "mangy metallurgy meteorology, methodology metrology microbiology, mineralogy moggy morphology, muggy mycology mythology";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

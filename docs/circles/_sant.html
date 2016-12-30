@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _sant</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#295 _sant
+<h2>#295 _sant</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antidepressant" target="_blank">antidepressant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complaisant" target="_blank">complaisant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conversant" target="_blank">conversant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=croissant" target="_blank">croissant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depressant" target="_blank">depressant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incessant" target="_blank">incessant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peasant" target="_blank">peasant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pheasant" target="_blank">pheasant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pleasant" target="_blank">pleasant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recusant" target="_blank">recusant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suppressant" target="_blank">suppressant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unpleasant" target="_blank">unpleasant</a></li>
+<ul id="words">
+<li>antidepressant</li>
+<li>complaisant</li>
+<li>conversant</li>
+<li>croissant</li>
+<li>depressant</li>
+<li>incessant</li>
+<li>peasant</li>
+<li>pheasant</li>
+<li>pleasant</li>
+<li>recusant</li>
+<li>suppressant</li>
+<li>unpleasant</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="295" data-circle-pattern="_sant">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "antidepressant complaisant conversant, croissant depressant incessant, peasant pheasant pleasant, recusant suppressant unpleasant";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

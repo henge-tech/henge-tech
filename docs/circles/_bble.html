@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _bble</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#49 _bble
+<h2>#49 _bble</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=babble" target="_blank">babble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bobble" target="_blank">bobble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bubble" target="_blank">bubble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cobble" target="_blank">cobble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dabble" target="_blank">dabble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dribble" target="_blank">dribble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gabble" target="_blank">gabble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gobble" target="_blank">gobble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hobble" target="_blank">hobble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kibble" target="_blank">kibble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nibble" target="_blank">nibble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pebble" target="_blank">pebble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quibble" target="_blank">quibble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rabble" target="_blank">rabble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rubble" target="_blank">rubble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scrabble" target="_blank">scrabble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scribble" target="_blank">scribble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squabble" target="_blank">squabble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stubble" target="_blank">stubble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wobble" target="_blank">wobble</a></li>
+<ul id="words">
+<li>babble</li>
+<li>bobble</li>
+<li>bubble</li>
+<li>cobble</li>
+<li>dabble</li>
+<li>dribble</li>
+<li>gabble</li>
+<li>gobble</li>
+<li>hobble</li>
+<li>kibble</li>
+<li>nibble</li>
+<li>pebble</li>
+<li>quibble</li>
+<li>rabble</li>
+<li>rubble</li>
+<li>scrabble</li>
+<li>scribble</li>
+<li>squabble</li>
+<li>stubble</li>
+<li>wobble</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="49" data-circle-pattern="_bble">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "babble bobble bubble cobble dabble, dribble gabble gobble hobble kibble, nibble pebble quibble rabble rubble, scrabble scribble squabble stubble wobble";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

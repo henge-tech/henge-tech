@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ica</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#130 _ica
+<h2>#130 _ica</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=angelica" target="_blank">angelica</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=basilica" target="_blank">basilica</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brassica" target="_blank">brassica</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=erotica" target="_blank">erotica</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exotica" target="_blank">exotica</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=japonica" target="_blank">japonica</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=majolica" target="_blank">majolica</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mica" target="_blank">mica</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pica" target="_blank">pica</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sciatica" target="_blank">sciatica</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=silica" target="_blank">silica</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=veronica" target="_blank">veronica</a></li>
+<ul id="words">
+<li>angelica</li>
+<li>basilica</li>
+<li>brassica</li>
+<li>erotica</li>
+<li>exotica</li>
+<li>japonica</li>
+<li>majolica</li>
+<li>mica</li>
+<li>pica</li>
+<li>sciatica</li>
+<li>silica</li>
+<li>veronica</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="130" data-circle-pattern="_ica">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "angelica basilica brassica, erotica exotica japonica, majolica mica pica, sciatica silica veronica";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

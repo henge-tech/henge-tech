@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _oke</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#220 _oke
+<h2>#220 _oke</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bespoke" target="_blank">bespoke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloke" target="_blank">bloke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breaststroke" target="_blank">breaststroke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broke" target="_blank">broke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=choke" target="_blank">choke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=evoke" target="_blank">evoke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hoke" target="_blank">hoke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=invoke" target="_blank">invoke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=poke" target="_blank">poke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=provoke" target="_blank">provoke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revoke" target="_blank">revoke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stoke" target="_blank">stoke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stroke" target="_blank">stroke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sunstroke" target="_blank">sunstroke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toke" target="_blank">toke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yoke" target="_blank">yoke</a></li>
+<ul id="words">
+<li>bespoke</li>
+<li>bloke</li>
+<li>breaststroke</li>
+<li>broke</li>
+<li>choke</li>
+<li>evoke</li>
+<li>hoke</li>
+<li>invoke</li>
+<li>poke</li>
+<li>provoke</li>
+<li>revoke</li>
+<li>stoke</li>
+<li>stroke</li>
+<li>sunstroke</li>
+<li>toke</li>
+<li>yoke</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="220" data-circle-pattern="_oke">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bespoke bloke breaststroke broke, choke evoke hoke invoke, poke provoke revoke stoke, stroke sunstroke toke yoke";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

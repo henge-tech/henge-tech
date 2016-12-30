@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: e_se</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#622 e_se
+<h2>#622 e_se</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eclipse" target="_blank">eclipse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=elapse" target="_blank">elapse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ellipse" target="_blank">ellipse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=encase" target="_blank">encase</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=enclose" target="_blank">enclose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=endorse" target="_blank">endorse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=espouse" target="_blank">espouse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excise" target="_blank">excise</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expanse" target="_blank">expanse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expense" target="_blank">expense</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expertise" target="_blank">expertise</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expose" target="_blank">expose</a></li>
+<ul id="words">
+<li>eclipse</li>
+<li>elapse</li>
+<li>ellipse</li>
+<li>encase</li>
+<li>enclose</li>
+<li>endorse</li>
+<li>espouse</li>
+<li>excise</li>
+<li>expanse</li>
+<li>expense</li>
+<li>expertise</li>
+<li>expose</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="622" data-circle-pattern="e_se">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "eclipse elapse ellipse, encase enclose endorse, espouse excise expanse, expense expertise expose";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

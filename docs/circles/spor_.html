@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: spor_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#927 spor_
+<h2>#927 spor_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sporadic" target="_blank">sporadic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sporadically" target="_blank">sporadically</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sporangia" target="_blank">sporangia</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spore" target="_blank">spore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sporran" target="_blank">sporran</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sport" target="_blank">sport</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sporting" target="_blank">sporting</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sportive" target="_blank">sportive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sportscaster" target="_blank">sportscaster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sportswear" target="_blank">sportswear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sportswriter" target="_blank">sportswriter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sporty" target="_blank">sporty</a></li>
+<ul id="words">
+<li>sporadic</li>
+<li>sporadically</li>
+<li>sporangia</li>
+<li>spore</li>
+<li>sporran</li>
+<li>sport</li>
+<li>sporting</li>
+<li>sportive</li>
+<li>sportscaster</li>
+<li>sportswear</li>
+<li>sportswriter</li>
+<li>sporty</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="927" data-circle-pattern="spor_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "sporadic sporadically sporangia, spore sporran sport, sporting sportive sportscaster, sportswear sportswriter sporty";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

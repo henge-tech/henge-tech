@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: mu_l</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#774 mu_l
+<h2>#774 mu_l</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mull" target="_blank">mull</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multicultural" target="_blank">multicultural</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multilateral" target="_blank">multilateral</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multilingual" target="_blank">multilingual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multinational" target="_blank">multinational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiracial" target="_blank">multiracial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=municipal" target="_blank">municipal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mural" target="_blank">mural</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=musical" target="_blank">musical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mussel" target="_blank">mussel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutational" target="_blank">mutational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutual" target="_blank">mutual</a></li>
+<ul id="words">
+<li>mull</li>
+<li>multicultural</li>
+<li>multilateral</li>
+<li>multilingual</li>
+<li>multinational</li>
+<li>multiracial</li>
+<li>municipal</li>
+<li>mural</li>
+<li>musical</li>
+<li>mussel</li>
+<li>mutational</li>
+<li>mutual</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="774" data-circle-pattern="mu_l">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "mull multicultural multilateral, multilingual multinational multiracial, municipal mural musical, mussel mutational mutual";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

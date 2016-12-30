@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _nage</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#194 _nage
+<h2>#194 _nage</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=badinage" target="_blank">badinage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carnage" target="_blank">carnage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coinage" target="_blank">coinage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drainage" target="_blank">drainage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=espionage" target="_blank">espionage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=menage" target="_blank">menage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=orphanage" target="_blank">orphanage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parsonage" target="_blank">parsonage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patronage" target="_blank">patronage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=personage" target="_blank">personage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=signage" target="_blank">signage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tonnage" target="_blank">tonnage</a></li>
+<ul id="words">
+<li>badinage</li>
+<li>carnage</li>
+<li>coinage</li>
+<li>drainage</li>
+<li>espionage</li>
+<li>menage</li>
+<li>orphanage</li>
+<li>parsonage</li>
+<li>patronage</li>
+<li>personage</li>
+<li>signage</li>
+<li>tonnage</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="194" data-circle-pattern="_nage">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "badinage carnage coinage, drainage espionage menage, orphanage parsonage patronage, personage signage tonnage";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

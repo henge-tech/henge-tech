@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: bro_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#460 bro_e
+<h2>#460 bro_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broadside" target="_blank">broadside</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brocade" target="_blank">brocade</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brochure" target="_blank">brochure</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brogue" target="_blank">brogue</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broke" target="_blank">broke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brokerage" target="_blank">brokerage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bromide" target="_blank">bromide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bromine" target="_blank">bromine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bronze" target="_blank">bronze</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brownie" target="_blank">brownie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brownstone" target="_blank">brownstone</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=browse" target="_blank">browse</a></li>
+<ul id="words">
+<li>broadside</li>
+<li>brocade</li>
+<li>brochure</li>
+<li>brogue</li>
+<li>broke</li>
+<li>brokerage</li>
+<li>bromide</li>
+<li>bromine</li>
+<li>bronze</li>
+<li>brownie</li>
+<li>brownstone</li>
+<li>browse</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="460" data-circle-pattern="bro_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "broadside brocade brochure, brogue broke brokerage, bromide bromine bronze, brownie brownstone browse";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

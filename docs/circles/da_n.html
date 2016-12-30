@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: da_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#561 da_n
+<h2>#561 da_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daemon" target="_blank">daemon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daimon" target="_blank">daimon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dalmatian" target="_blank">dalmatian</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damn" target="_blank">damn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damnation" target="_blank">damnation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dampen" target="_blank">dampen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damson" target="_blank">damson</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dandelion" target="_blank">dandelion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=darken" target="_blank">darken</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=darn" target="_blank">darn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dauphin" target="_blank">dauphin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dawn" target="_blank">dawn</a></li>
+<ul id="words">
+<li>daemon</li>
+<li>daimon</li>
+<li>dalmatian</li>
+<li>damn</li>
+<li>damnation</li>
+<li>dampen</li>
+<li>damson</li>
+<li>dandelion</li>
+<li>darken</li>
+<li>darn</li>
+<li>dauphin</li>
+<li>dawn</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="561" data-circle-pattern="da_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "daemon daimon dalmatian, damn damnation dampen, damson dandelion darken, darn dauphin dawn";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

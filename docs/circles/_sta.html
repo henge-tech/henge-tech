@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _sta</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#309 _sta
+<h2>#309 _sta</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barista" target="_blank">barista</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=canasta" target="_blank">canasta</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=celesta" target="_blank">celesta</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fashionista" target="_blank">fashionista</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fiesta" target="_blank">fiesta</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gangsta" target="_blank">gangsta</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=siesta" target="_blank">siesta</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vista" target="_blank">vista</a></li>
+<ul id="words">
+<li>barista</li>
+<li>canasta</li>
+<li>celesta</li>
+<li>fashionista</li>
+<li>fiesta</li>
+<li>gangsta</li>
+<li>siesta</li>
+<li>vista</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="309" data-circle-pattern="_sta">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "barista canasta celesta fashionista, fiesta gangsta siesta vista";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

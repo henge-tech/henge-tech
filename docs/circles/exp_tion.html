@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: exp_tion</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#639 exp_tion
+<h2>#639 exp_tion</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expectation" target="_blank">expectation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expedition" target="_blank">expedition</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=experimentation" target="_blank">experimentation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expiation" target="_blank">expiation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expiration" target="_blank">expiration</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=explanation" target="_blank">explanation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=explication" target="_blank">explication</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exploitation" target="_blank">exploitation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exploration" target="_blank">exploration</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exportation" target="_blank">exportation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exposition" target="_blank">exposition</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expropriation" target="_blank">expropriation</a></li>
+<ul id="words">
+<li>expectation</li>
+<li>expedition</li>
+<li>experimentation</li>
+<li>expiation</li>
+<li>expiration</li>
+<li>explanation</li>
+<li>explication</li>
+<li>exploitation</li>
+<li>exploration</li>
+<li>exportation</li>
+<li>exposition</li>
+<li>expropriation</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="639" data-circle-pattern="exp_tion">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "expectation expedition experimentation, expiation expiration explanation, explication exploitation exploration, exportation exposition expropriation";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

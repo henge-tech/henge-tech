@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ex_nt</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#633 ex_nt
+<h2>#633 ex_nt</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excrement" target="_blank">excrement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exigent" target="_blank">exigent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=existent" target="_blank">existent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exorbitant" target="_blank">exorbitant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expectant" target="_blank">expectant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expedient" target="_blank">expedient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exponent" target="_blank">exponent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extant" target="_blank">extant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extent" target="_blank">extent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extravagant" target="_blank">extravagant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exuberant" target="_blank">exuberant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exultant" target="_blank">exultant</a></li>
+<ul id="words">
+<li>excrement</li>
+<li>exigent</li>
+<li>existent</li>
+<li>exorbitant</li>
+<li>expectant</li>
+<li>expedient</li>
+<li>exponent</li>
+<li>extant</li>
+<li>extent</li>
+<li>extravagant</li>
+<li>exuberant</li>
+<li>exultant</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="633" data-circle-pattern="ex_nt">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "excrement exigent existent, exorbitant expectant expedient, exponent extant extent, extravagant exuberant exultant";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

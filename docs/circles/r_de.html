@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: r_de</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#861 r_de
+<h2>#861 r_de</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rawhide" target="_blank">rawhide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recede" target="_blank">recede</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rectitude" target="_blank">rectitude</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=renegade" target="_blank">renegade</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reside" target="_blank">reside</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retrograde" target="_blank">retrograde</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ringside" target="_blank">ringside</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riptide" target="_blank">riptide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riverside" target="_blank">riverside</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=roadside" target="_blank">roadside</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rode" target="_blank">rode</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rude" target="_blank">rude</a></li>
+<ul id="words">
+<li>rawhide</li>
+<li>recede</li>
+<li>rectitude</li>
+<li>renegade</li>
+<li>reside</li>
+<li>retrograde</li>
+<li>ringside</li>
+<li>riptide</li>
+<li>riverside</li>
+<li>roadside</li>
+<li>rode</li>
+<li>rude</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="861" data-circle-pattern="r_de">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "rawhide recede rectitude, renegade reside retrograde, ringside riptide riverside, roadside rode rude";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

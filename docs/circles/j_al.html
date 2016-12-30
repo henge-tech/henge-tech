@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: j_al</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#723 j_al
+<h2>#723 j_al</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jackal" target="_blank">jackal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=janitorial" target="_blank">janitorial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jejunal" target="_blank">jejunal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=journal" target="_blank">journal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jovial" target="_blank">jovial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=judgemental" target="_blank">judgemental</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=judicial" target="_blank">judicial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jugal" target="_blank">jugal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=junctional" target="_blank">junctional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=juridical" target="_blank">juridical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jurisdictional" target="_blank">jurisdictional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=juvenal" target="_blank">juvenal</a></li>
+<ul id="words">
+<li>jackal</li>
+<li>janitorial</li>
+<li>jejunal</li>
+<li>journal</li>
+<li>jovial</li>
+<li>judgemental</li>
+<li>judicial</li>
+<li>jugal</li>
+<li>junctional</li>
+<li>juridical</li>
+<li>jurisdictional</li>
+<li>juvenal</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="723" data-circle-pattern="j_al">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "jackal janitorial jejunal, journal jovial judgemental, judicial jugal junctional, juridical jurisdictional juvenal";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

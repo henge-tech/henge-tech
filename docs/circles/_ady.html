@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ady</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#7 _ady
+<h2>#7 _ady</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beady" target="_blank">beady</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=charlady" target="_blank">charlady</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=heady" target="_blank">heady</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lady" target="_blank">lady</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=landlady" target="_blank">landlady</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=malady" target="_blank">malady</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=milady" target="_blank">milady</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ready" target="_blank">ready</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shady" target="_blank">shady</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=steady" target="_blank">steady</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toady" target="_blank">toady</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unsteady" target="_blank">unsteady</a></li>
+<ul id="words">
+<li>beady</li>
+<li>charlady</li>
+<li>heady</li>
+<li>lady</li>
+<li>landlady</li>
+<li>malady</li>
+<li>milady</li>
+<li>ready</li>
+<li>shady</li>
+<li>steady</li>
+<li>toady</li>
+<li>unsteady</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="7" data-circle-pattern="_ady">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "beady charlady heady, lady landlady malady, milady ready shady, steady toady unsteady";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

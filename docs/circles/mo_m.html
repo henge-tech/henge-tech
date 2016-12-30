@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: mo_m</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#770 mo_m
+<h2>#770 mo_m</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=modem" target="_blank">modem</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=modernism" target="_blank">modernism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=modicum" target="_blank">modicum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=molybdenum" target="_blank">molybdenum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=momentum" target="_blank">momentum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monasticism" target="_blank">monasticism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monetarism" target="_blank">monetarism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monism" target="_blank">monism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monogram" target="_blank">monogram</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monotheism" target="_blank">monotheism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moonbeam" target="_blank">moonbeam</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moratorium" target="_blank">moratorium</a></li>
+<ul id="words">
+<li>modem</li>
+<li>modernism</li>
+<li>modicum</li>
+<li>molybdenum</li>
+<li>momentum</li>
+<li>monasticism</li>
+<li>monetarism</li>
+<li>monism</li>
+<li>monogram</li>
+<li>monotheism</li>
+<li>moonbeam</li>
+<li>moratorium</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="770" data-circle-pattern="mo_m">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "modem modernism modicum, molybdenum momentum monasticism, monetarism monism monogram, monotheism moonbeam moratorium";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

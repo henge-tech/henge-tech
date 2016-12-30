@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: gn_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#678 gn_
+<h2>#678 gn_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnarl" target="_blank">gnarl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnarled" target="_blank">gnarled</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnarly" target="_blank">gnarly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnash" target="_blank">gnash</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnat" target="_blank">gnat</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnaw" target="_blank">gnaw</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnocchi" target="_blank">gnocchi</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnome" target="_blank">gnome</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnomic" target="_blank">gnomic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnomon" target="_blank">gnomon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnosticism" target="_blank">gnosticism</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gnu" target="_blank">gnu</a></li>
+<ul id="words">
+<li>gnarl</li>
+<li>gnarled</li>
+<li>gnarly</li>
+<li>gnash</li>
+<li>gnat</li>
+<li>gnaw</li>
+<li>gnocchi</li>
+<li>gnome</li>
+<li>gnomic</li>
+<li>gnomon</li>
+<li>gnosticism</li>
+<li>gnu</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="678" data-circle-pattern="gn_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "gnarl gnarled gnarly, gnash gnat gnaw, gnocchi gnome gnomic, gnomon gnosticism gnu";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

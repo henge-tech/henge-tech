@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: n_ss</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#783 n_ss
+<h2>#783 n_ss</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nameless" target="_blank">nameless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=narrowness" target="_blank">narrowness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nastiness" target="_blank">nastiness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naturalness" target="_blank">naturalness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nearness" target="_blank">nearness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neatness" target="_blank">neatness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neediness" target="_blank">neediness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=needless" target="_blank">needless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nerveless" target="_blank">nerveless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nervousness" target="_blank">nervousness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nevertheless" target="_blank">nevertheless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=niceness" target="_blank">niceness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonetheless" target="_blank">nonetheless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nothingness" target="_blank">nothingness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=numberless" target="_blank">numberless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=numbness" target="_blank">numbness</a></li>
+<ul id="words">
+<li>nameless</li>
+<li>narrowness</li>
+<li>nastiness</li>
+<li>naturalness</li>
+<li>nearness</li>
+<li>neatness</li>
+<li>neediness</li>
+<li>needless</li>
+<li>nerveless</li>
+<li>nervousness</li>
+<li>nevertheless</li>
+<li>niceness</li>
+<li>nonetheless</li>
+<li>nothingness</li>
+<li>numberless</li>
+<li>numbness</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="783" data-circle-pattern="n_ss">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "nameless narrowness nastiness naturalness, nearness neatness neediness needless, nerveless nervousness nevertheless niceness, nonetheless nothingness numberless numbness";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: repu_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#885 repu_
+<h2>#885 repu_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=republic" target="_blank">republic</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=republish" target="_blank">republish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repudiate" target="_blank">repudiate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repugnance" target="_blank">repugnance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repugnant" target="_blank">repugnant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repulse" target="_blank">repulse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repulsion" target="_blank">repulsion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repulsive" target="_blank">repulsive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reputable" target="_blank">reputable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reputation" target="_blank">reputation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repute" target="_blank">repute</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reputedly" target="_blank">reputedly</a></li>
+<ul id="words">
+<li>republic</li>
+<li>republish</li>
+<li>repudiate</li>
+<li>repugnance</li>
+<li>repugnant</li>
+<li>repulse</li>
+<li>repulsion</li>
+<li>repulsive</li>
+<li>reputable</li>
+<li>reputation</li>
+<li>repute</li>
+<li>reputedly</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="885" data-circle-pattern="repu_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "republic republish repudiate, repugnance repugnant repulse, repulsion repulsive reputable, reputation repute reputedly";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

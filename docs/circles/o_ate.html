@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: o_ate</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#790 o_ate
+<h2>#790 o_ate</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obdurate" target="_blank">obdurate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obfuscate" target="_blank">obfuscate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oblate" target="_blank">oblate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obligate" target="_blank">obligate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obliterate" target="_blank">obliterate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obstinate" target="_blank">obstinate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obviate" target="_blank">obviate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=officiate" target="_blank">officiate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opiate" target="_blank">opiate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=orchestrate" target="_blank">orchestrate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ordinate" target="_blank">ordinate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=originate" target="_blank">originate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ornate" target="_blank">ornate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oscillate" target="_blank">oscillate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overestimate" target="_blank">overestimate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overstate" target="_blank">overstate</a></li>
+<ul id="words">
+<li>obdurate</li>
+<li>obfuscate</li>
+<li>oblate</li>
+<li>obligate</li>
+<li>obliterate</li>
+<li>obstinate</li>
+<li>obviate</li>
+<li>officiate</li>
+<li>opiate</li>
+<li>orchestrate</li>
+<li>ordinate</li>
+<li>originate</li>
+<li>ornate</li>
+<li>oscillate</li>
+<li>overestimate</li>
+<li>overstate</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="790" data-circle-pattern="o_ate">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "obdurate obfuscate oblate obligate, obliterate obstinate obviate officiate, opiate orchestrate ordinate originate, ornate oscillate overestimate overstate";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _alty</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#22 _alty
+<h2>#22 _alty</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=admiralty" target="_blank">admiralty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=casualty" target="_blank">casualty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disloyalty" target="_blank">disloyalty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fealty" target="_blank">fealty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loyalty" target="_blank">loyalty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mayoralty" target="_blank">mayoralty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penalty" target="_blank">penalty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=realty" target="_blank">realty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=royalty" target="_blank">royalty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salty" target="_blank">salty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=severalty" target="_blank">severalty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=specialty" target="_blank">specialty</a></li>
+<ul id="words">
+<li>admiralty</li>
+<li>casualty</li>
+<li>disloyalty</li>
+<li>fealty</li>
+<li>loyalty</li>
+<li>mayoralty</li>
+<li>penalty</li>
+<li>realty</li>
+<li>royalty</li>
+<li>salty</li>
+<li>severalty</li>
+<li>specialty</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="22" data-circle-pattern="_alty">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "admiralty casualty disloyalty, fealty loyalty mayoralty, penalty realty royalty, salty severalty specialty";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

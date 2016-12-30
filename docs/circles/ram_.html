@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ram_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#870 ram_
+<h2>#870 ram_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ram" target="_blank">ram</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ramble" target="_blank">ramble</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rambling" target="_blank">rambling</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rambunctious" target="_blank">rambunctious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rambutan" target="_blank">rambutan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ramie" target="_blank">ramie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ramification" target="_blank">ramification</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ramify" target="_blank">ramify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ramjet" target="_blank">ramjet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rammer" target="_blank">rammer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ramp" target="_blank">ramp</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rampage" target="_blank">rampage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rampant" target="_blank">rampant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rampart" target="_blank">rampart</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ramrod" target="_blank">ramrod</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ramshackle" target="_blank">ramshackle</a></li>
+<ul id="words">
+<li>ram</li>
+<li>ramble</li>
+<li>rambling</li>
+<li>rambunctious</li>
+<li>rambutan</li>
+<li>ramie</li>
+<li>ramification</li>
+<li>ramify</li>
+<li>ramjet</li>
+<li>rammer</li>
+<li>ramp</li>
+<li>rampage</li>
+<li>rampant</li>
+<li>rampart</li>
+<li>ramrod</li>
+<li>ramshackle</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="870" data-circle-pattern="ram_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ram ramble rambling rambunctious, rambutan ramie ramification ramify, ramjet rammer ramp rampage, rampant rampart ramrod ramshackle";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

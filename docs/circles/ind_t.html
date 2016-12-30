@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ind_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#715 ind_t
+<h2>#715 ind_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indecent" target="_blank">indecent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indict" target="_blank">indict</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indifferent" target="_blank">indifferent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indigent" target="_blank">indigent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indignant" target="_blank">indignant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indiscreet" target="_blank">indiscreet</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indistinct" target="_blank">indistinct</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indolent" target="_blank">indolent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inducement" target="_blank">inducement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=induct" target="_blank">induct</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indulgent" target="_blank">indulgent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=industrialist" target="_blank">industrialist</a></li>
+<ul id="words">
+<li>indecent</li>
+<li>indict</li>
+<li>indifferent</li>
+<li>indigent</li>
+<li>indignant</li>
+<li>indiscreet</li>
+<li>indistinct</li>
+<li>indolent</li>
+<li>inducement</li>
+<li>induct</li>
+<li>indulgent</li>
+<li>industrialist</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="715" data-circle-pattern="ind_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "indecent indict indifferent, indigent indignant indiscreet, indistinct indolent inducement, induct indulgent industrialist";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

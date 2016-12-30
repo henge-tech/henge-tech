@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: cl_p</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#501 cl_p
+<h2>#501 cl_p</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clamp" target="_blank">clamp</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clap" target="_blank">clap</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=claptrap" target="_blank">claptrap</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clasp" target="_blank">clasp</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clip" target="_blank">clip</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clop" target="_blank">clop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=closeup" target="_blank">closeup</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clump" target="_blank">clump</a></li>
+<ul id="words">
+<li>clamp</li>
+<li>clap</li>
+<li>claptrap</li>
+<li>clasp</li>
+<li>clip</li>
+<li>clop</li>
+<li>closeup</li>
+<li>clump</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="501" data-circle-pattern="cl_p">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "clamp clap claptrap clasp, clip clop closeup clump";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ab_ion</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#389 ab_ion
+<h2>#389 ab_ion</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abbreviation" target="_blank">abbreviation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abdication" target="_blank">abdication</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abduction" target="_blank">abduction</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aberration" target="_blank">aberration</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abjuration" target="_blank">abjuration</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ablation" target="_blank">ablation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ablution" target="_blank">ablution</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abolition" target="_blank">abolition</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abomination" target="_blank">abomination</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abortion" target="_blank">abortion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abrasion" target="_blank">abrasion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abrogation" target="_blank">abrogation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=absolution" target="_blank">absolution</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=absorption" target="_blank">absorption</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abstention" target="_blank">abstention</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abstraction" target="_blank">abstraction</a></li>
+<ul id="words">
+<li>abbreviation</li>
+<li>abdication</li>
+<li>abduction</li>
+<li>aberration</li>
+<li>abjuration</li>
+<li>ablation</li>
+<li>ablution</li>
+<li>abolition</li>
+<li>abomination</li>
+<li>abortion</li>
+<li>abrasion</li>
+<li>abrogation</li>
+<li>absolution</li>
+<li>absorption</li>
+<li>abstention</li>
+<li>abstraction</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="389" data-circle-pattern="ab_ion">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "abbreviation abdication abduction aberration, abjuration ablation ablution abolition, abomination abortion abrasion abrogation, absolution absorption abstention abstraction";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

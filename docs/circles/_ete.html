@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ete</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#106 _ete
+<h2>#106 _ete</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=athlete" target="_blank">athlete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compete" target="_blank">compete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concrete" target="_blank">concrete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deplete" target="_blank">deplete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discrete" target="_blank">discrete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=effete" target="_blank">effete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excrete" target="_blank">excrete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fete" target="_blank">fete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gamete" target="_blank">gamete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=machete" target="_blank">machete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mete" target="_blank">mete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naivete" target="_blank">naivete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=obsolete" target="_blank">obsolete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=replete" target="_blank">replete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=secrete" target="_blank">secrete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=triathlete" target="_blank">triathlete</a></li>
+<ul id="words">
+<li>athlete</li>
+<li>compete</li>
+<li>concrete</li>
+<li>deplete</li>
+<li>discrete</li>
+<li>effete</li>
+<li>excrete</li>
+<li>fete</li>
+<li>gamete</li>
+<li>machete</li>
+<li>mete</li>
+<li>naivete</li>
+<li>obsolete</li>
+<li>replete</li>
+<li>secrete</li>
+<li>triathlete</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="106" data-circle-pattern="_ete">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "athlete compete concrete deplete, discrete effete excrete fete, gamete machete mete naivete, obsolete replete secrete triathlete";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

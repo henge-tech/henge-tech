@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _eak</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#77 _eak
+<h2>#77 _eak</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beak" target="_blank">beak</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bleak" target="_blank">bleak</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=creak" target="_blank">creak</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daybreak" target="_blank">daybreak</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freak" target="_blank">freak</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outbreak" target="_blank">outbreak</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sneak" target="_blank">sneak</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squeak" target="_blank">squeak</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=streak" target="_blank">streak</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=teak" target="_blank">teak</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tweak" target="_blank">tweak</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wreak" target="_blank">wreak</a></li>
+<ul id="words">
+<li>beak</li>
+<li>bleak</li>
+<li>creak</li>
+<li>daybreak</li>
+<li>freak</li>
+<li>outbreak</li>
+<li>sneak</li>
+<li>squeak</li>
+<li>streak</li>
+<li>teak</li>
+<li>tweak</li>
+<li>wreak</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="77" data-circle-pattern="_eak">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "beak bleak creak, daybreak freak outbreak, sneak squeak streak, teak tweak wreak";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

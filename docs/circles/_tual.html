@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _tual</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#333 _tual
+<h2>#333 _tual</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contextual" target="_blank">contextual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contractual" target="_blank">contractual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conventual" target="_blank">conventual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=effectual" target="_blank">effectual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eventual" target="_blank">eventual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=factual" target="_blank">factual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=habitual" target="_blank">habitual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mutual" target="_blank">mutual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perceptual" target="_blank">perceptual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perpetual" target="_blank">perpetual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=punctual" target="_blank">punctual</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ritual" target="_blank">ritual</a></li>
+<ul id="words">
+<li>contextual</li>
+<li>contractual</li>
+<li>conventual</li>
+<li>effectual</li>
+<li>eventual</li>
+<li>factual</li>
+<li>habitual</li>
+<li>mutual</li>
+<li>perceptual</li>
+<li>perpetual</li>
+<li>punctual</li>
+<li>ritual</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="333" data-circle-pattern="_tual">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "contextual contractual conventual, effectual eventual factual, habitual mutual perceptual, perpetual punctual ritual";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

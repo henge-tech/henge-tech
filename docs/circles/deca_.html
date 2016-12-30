@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: deca_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#575 deca_
+<h2>#575 deca_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decade" target="_blank">decade</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decadence" target="_blank">decadence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decadent" target="_blank">decadent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decaffeinated" target="_blank">decaffeinated</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decal" target="_blank">decal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decalogue" target="_blank">decalogue</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decamp" target="_blank">decamp</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decant" target="_blank">decant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decanter" target="_blank">decanter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decapitate" target="_blank">decapitate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decathlon" target="_blank">decathlon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decay" target="_blank">decay</a></li>
+<ul id="words">
+<li>decade</li>
+<li>decadence</li>
+<li>decadent</li>
+<li>decaffeinated</li>
+<li>decal</li>
+<li>decalogue</li>
+<li>decamp</li>
+<li>decant</li>
+<li>decanter</li>
+<li>decapitate</li>
+<li>decathlon</li>
+<li>decay</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="575" data-circle-pattern="deca_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "decade decadence decadent, decaffeinated decal decalogue, decamp decant decanter, decapitate decathlon decay";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

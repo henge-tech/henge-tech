@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _aid</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#12 _aid
+<h2>#12 _aid</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aforesaid" target="_blank">aforesaid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barmaid" target="_blank">barmaid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=braid" target="_blank">braid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bridesmaid" target="_blank">bridesmaid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chambermaid" target="_blank">chambermaid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=handmaid" target="_blank">handmaid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inlaid" target="_blank">inlaid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laid" target="_blank">laid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plaid" target="_blank">plaid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=postpaid" target="_blank">postpaid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=raid" target="_blank">raid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=staid" target="_blank">staid</a></li>
+<ul id="words">
+<li>aforesaid</li>
+<li>barmaid</li>
+<li>braid</li>
+<li>bridesmaid</li>
+<li>chambermaid</li>
+<li>handmaid</li>
+<li>inlaid</li>
+<li>laid</li>
+<li>plaid</li>
+<li>postpaid</li>
+<li>raid</li>
+<li>staid</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="12" data-circle-pattern="_aid">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "aforesaid barmaid braid, bridesmaid chambermaid handmaid, inlaid laid plaid, postpaid raid staid";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

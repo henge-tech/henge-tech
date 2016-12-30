@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: tam_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#956 tam_
+<h2>#956 tam_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=TAM" target="_blank">TAM</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamale" target="_blank">tamale</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamarind" target="_blank">tamarind</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamarisk" target="_blank">tamarisk</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tambour" target="_blank">tambour</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tambourine" target="_blank">tambourine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tame" target="_blank">tame</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamer" target="_blank">tamer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamoxifen" target="_blank">tamoxifen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamp" target="_blank">tamp</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tamper" target="_blank">tamper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tampon" target="_blank">tampon</a></li>
+<ul id="words">
+<li>TAM</li>
+<li>tamale</li>
+<li>tamarind</li>
+<li>tamarisk</li>
+<li>tambour</li>
+<li>tambourine</li>
+<li>tame</li>
+<li>tamer</li>
+<li>tamoxifen</li>
+<li>tamp</li>
+<li>tamper</li>
+<li>tampon</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="956" data-circle-pattern="tam_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "TAM tamale tamarind, tamarisk tambour tambourine, tame tamer tamoxifen, tamp tamper tampon";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

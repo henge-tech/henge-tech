@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: fu_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#665 fu_y
+<h2>#665 fu_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=functionality" target="_blank">functionality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=functionally" target="_blank">functionally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=functionary" target="_blank">functionary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fundamentally" target="_blank">fundamentally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=funerary" target="_blank">funerary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=furiously" target="_blank">furiously</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=furry" target="_blank">furry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fury" target="_blank">fury</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fussy" target="_blank">fussy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=futility" target="_blank">futility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=futurity" target="_blank">futurity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fuzzy" target="_blank">fuzzy</a></li>
+<ul id="words">
+<li>functionality</li>
+<li>functionally</li>
+<li>functionary</li>
+<li>fundamentally</li>
+<li>funerary</li>
+<li>furiously</li>
+<li>furry</li>
+<li>fury</li>
+<li>fussy</li>
+<li>futility</li>
+<li>futurity</li>
+<li>fuzzy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="665" data-circle-pattern="fu_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "functionality functionally functionary, fundamentally funerary furiously, furry fury fussy, futility futurity fuzzy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: fr_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#663 fr_n
+<h2>#663 fr_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fraction" target="_blank">fraction</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freeborn" target="_blank">freeborn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freedman" target="_blank">freedman</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freeman" target="_blank">freeman</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freshen" target="_blank">freshen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freshman" target="_blank">freshman</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=friction" target="_blank">friction</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frighten" target="_blank">frighten</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frogman" target="_blank">frogman</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frown" target="_blank">frown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fructification" target="_blank">fructification</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fruition" target="_blank">fruition</a></li>
+<ul id="words">
+<li>fraction</li>
+<li>freeborn</li>
+<li>freedman</li>
+<li>freeman</li>
+<li>freshen</li>
+<li>freshman</li>
+<li>friction</li>
+<li>frighten</li>
+<li>frogman</li>
+<li>frown</li>
+<li>fructification</li>
+<li>fruition</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="663" data-circle-pattern="fr_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "fraction freeborn freedman, freeman freshen freshman, friction frighten frogman, frown fructification fruition";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

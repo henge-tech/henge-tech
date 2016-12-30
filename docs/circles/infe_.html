@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: infe_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#718 infe_
+<h2>#718 infe_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infect" target="_blank">infect</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infectious" target="_blank">infectious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infer" target="_blank">infer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inference" target="_blank">inference</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inferential" target="_blank">inferential</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inferior" target="_blank">inferior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inferiority" target="_blank">inferiority</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infernal" target="_blank">infernal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inferno" target="_blank">inferno</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infertile" target="_blank">infertile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infest" target="_blank">infest</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infestation" target="_blank">infestation</a></li>
+<ul id="words">
+<li>infect</li>
+<li>infectious</li>
+<li>infer</li>
+<li>inference</li>
+<li>inferential</li>
+<li>inferior</li>
+<li>inferiority</li>
+<li>infernal</li>
+<li>inferno</li>
+<li>infertile</li>
+<li>infest</li>
+<li>infestation</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="718" data-circle-pattern="infe_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "infect infectious infer, inference inferential inferior, inferiority infernal inferno, infertile infest infestation";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

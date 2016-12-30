@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _nor</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#214 _nor
+<h2>#214 _nor</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assignor" target="_blank">assignor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consignor" target="_blank">consignor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=convenor" target="_blank">convenor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demeanor" target="_blank">demeanor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishonor" target="_blank">dishonor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=donor" target="_blank">donor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=governor" target="_blank">governor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=honor" target="_blank">honor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kronor" target="_blank">kronor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manor" target="_blank">manor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=minor" target="_blank">minor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misdemeanor" target="_blank">misdemeanor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=monsignor" target="_blank">monsignor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=senor" target="_blank">senor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=signor" target="_blank">signor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tenor" target="_blank">tenor</a></li>
+<ul id="words">
+<li>assignor</li>
+<li>consignor</li>
+<li>convenor</li>
+<li>demeanor</li>
+<li>dishonor</li>
+<li>donor</li>
+<li>governor</li>
+<li>honor</li>
+<li>kronor</li>
+<li>manor</li>
+<li>minor</li>
+<li>misdemeanor</li>
+<li>monsignor</li>
+<li>senor</li>
+<li>signor</li>
+<li>tenor</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="214" data-circle-pattern="_nor">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "assignor consignor convenor demeanor, dishonor donor governor honor, kronor manor minor misdemeanor, monsignor senor signor tenor";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

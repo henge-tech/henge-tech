@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: d_sion</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#559 d_sion
+<h2>#559 d_sion</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=declension" target="_blank">declension</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decompression" target="_blank">decompression</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delusion" target="_blank">delusion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depression" target="_blank">depression</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=derision" target="_blank">derision</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diffusion" target="_blank">diffusion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=digression" target="_blank">digression</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disillusion" target="_blank">disillusion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispersion" target="_blank">dispersion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispossession" target="_blank">dispossession</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissension" target="_blank">dissension</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diversion" target="_blank">diversion</a></li>
+<ul id="words">
+<li>declension</li>
+<li>decompression</li>
+<li>delusion</li>
+<li>depression</li>
+<li>derision</li>
+<li>diffusion</li>
+<li>digression</li>
+<li>disillusion</li>
+<li>dispersion</li>
+<li>dispossession</li>
+<li>dissension</li>
+<li>diversion</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="559" data-circle-pattern="d_sion">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "declension decompression delusion, depression derision diffusion, digression disillusion dispersion, dispossession dissension diversion";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

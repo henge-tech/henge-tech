@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: past_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#829 past_
+<h2>#829 past_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pasta" target="_blank">pasta</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paste" target="_blank">paste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pasteurize" target="_blank">pasteurize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastiche" target="_blank">pastiche</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastime" target="_blank">pastime</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastor" target="_blank">pastor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastoral" target="_blank">pastoral</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastorale" target="_blank">pastorale</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastrami" target="_blank">pastrami</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pastry" target="_blank">pastry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pasture" target="_blank">pasture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pasty" target="_blank">pasty</a></li>
+<ul id="words">
+<li>pasta</li>
+<li>paste</li>
+<li>pasteurize</li>
+<li>pastiche</li>
+<li>pastime</li>
+<li>pastor</li>
+<li>pastoral</li>
+<li>pastorale</li>
+<li>pastrami</li>
+<li>pastry</li>
+<li>pasture</li>
+<li>pasty</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="829" data-circle-pattern="past_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "pasta paste pasteurize, pastiche pastime pastor, pastoral pastorale pastrami, pastry pasture pasty";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

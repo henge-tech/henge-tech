@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: bl_h</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#454 bl_h
+<h2>#454 bl_h</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blackish" target="_blank">blackish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blacksmith" target="_blank">blacksmith</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blah" target="_blank">blah</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blanch" target="_blank">blanch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bleach" target="_blank">bleach</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blemish" target="_blank">blemish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloodbath" target="_blank">bloodbath</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blotch" target="_blank">blotch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blowfish" target="_blank">blowfish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blowtorch" target="_blank">blowtorch</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bluish" target="_blank">bluish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blush" target="_blank">blush</a></li>
+<ul id="words">
+<li>blackish</li>
+<li>blacksmith</li>
+<li>blah</li>
+<li>blanch</li>
+<li>bleach</li>
+<li>blemish</li>
+<li>bloodbath</li>
+<li>blotch</li>
+<li>blowfish</li>
+<li>blowtorch</li>
+<li>bluish</li>
+<li>blush</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="454" data-circle-pattern="bl_h">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "blackish blacksmith blah, blanch bleach blemish, bloodbath blotch blowfish, blowtorch bluish blush";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

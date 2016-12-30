@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: exc_on</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#636 exc_on
+<h2>#636 exc_on</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excavation" target="_blank">excavation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exception" target="_blank">exception</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excision" target="_blank">excision</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excitation" target="_blank">excitation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exciton" target="_blank">exciton</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclamation" target="_blank">exclamation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exclusion" target="_blank">exclusion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excommunication" target="_blank">excommunication</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excoriation" target="_blank">excoriation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excretion" target="_blank">excretion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=exculpation" target="_blank">exculpation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=excursion" target="_blank">excursion</a></li>
+<ul id="words">
+<li>excavation</li>
+<li>exception</li>
+<li>excision</li>
+<li>excitation</li>
+<li>exciton</li>
+<li>exclamation</li>
+<li>exclusion</li>
+<li>excommunication</li>
+<li>excoriation</li>
+<li>excretion</li>
+<li>exculpation</li>
+<li>excursion</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="636" data-circle-pattern="exc_on">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "excavation exception excision, excitation exciton exclamation, exclusion excommunication excoriation, excretion exculpation excursion";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

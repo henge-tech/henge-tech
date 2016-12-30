@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: re_ry</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#874 re_ry
+<h2>#874 re_ry</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reactionary" target="_blank">reactionary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rectory" target="_blank">rectory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reentry" target="_blank">reentry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=refectory" target="_blank">refectory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=refinery" target="_blank">refinery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reformatory" target="_blank">reformatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=refractory" target="_blank">refractory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=registry" target="_blank">registry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=regulatory" target="_blank">regulatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reliquary" target="_blank">reliquary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repository" target="_blank">repository</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=respiratory" target="_blank">respiratory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retaliatory" target="_blank">retaliatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revelatory" target="_blank">revelatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revelry" target="_blank">revelry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revolutionary" target="_blank">revolutionary</a></li>
+<ul id="words">
+<li>reactionary</li>
+<li>rectory</li>
+<li>reentry</li>
+<li>refectory</li>
+<li>refinery</li>
+<li>reformatory</li>
+<li>refractory</li>
+<li>registry</li>
+<li>regulatory</li>
+<li>reliquary</li>
+<li>repository</li>
+<li>respiratory</li>
+<li>retaliatory</li>
+<li>revelatory</li>
+<li>revelry</li>
+<li>revolutionary</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="874" data-circle-pattern="re_ry">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "reactionary rectory reentry refectory, refinery reformatory refractory registry, regulatory reliquary repository respiratory, retaliatory revelatory revelry revolutionary";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

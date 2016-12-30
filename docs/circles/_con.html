@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _con</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#60 _con
+<h2>#60 _con</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=archdeacon" target="_blank">archdeacon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=con" target="_blank">con</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deacon" target="_blank">deacon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=econ" target="_blank">econ</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=falcon" target="_blank">falcon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=garcon" target="_blank">garcon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=helicon" target="_blank">helicon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=icon" target="_blank">icon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lexicon" target="_blank">lexicon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=recon" target="_blank">recon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=silicon" target="_blank">silicon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zircon" target="_blank">zircon</a></li>
+<ul id="words">
+<li>archdeacon</li>
+<li>con</li>
+<li>deacon</li>
+<li>econ</li>
+<li>falcon</li>
+<li>garcon</li>
+<li>helicon</li>
+<li>icon</li>
+<li>lexicon</li>
+<li>recon</li>
+<li>silicon</li>
+<li>zircon</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="60" data-circle-pattern="_con">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "archdeacon con deacon, econ falcon garcon, helicon icon lexicon, recon silicon zircon";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

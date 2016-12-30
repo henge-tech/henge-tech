@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: s_nder</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#904 s_nder
+<h2>#904 s_nder</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=salamander" target="_blank">salamander</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sander" target="_blank">sander</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seconder" target="_blank">seconder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sidewinder" target="_blank">sidewinder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slander" target="_blank">slander</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slender" target="_blank">slender</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spellbinder" target="_blank">spellbinder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spender" target="_blank">spender</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squander" target="_blank">squander</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stem-winder" target="_blank">stem-winder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sunder" target="_blank">sunder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surrender" target="_blank">surrender</a></li>
+<ul id="words">
+<li>salamander</li>
+<li>sander</li>
+<li>seconder</li>
+<li>sidewinder</li>
+<li>slander</li>
+<li>slender</li>
+<li>spellbinder</li>
+<li>spender</li>
+<li>squander</li>
+<li>stem-winder</li>
+<li>sunder</li>
+<li>surrender</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="904" data-circle-pattern="s_nder">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "salamander sander seconder, sidewinder slander slender, spellbinder spender squander, stem-winder sunder surrender";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

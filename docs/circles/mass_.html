@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: mass_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#763 mass_
+<h2>#763 mass_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mass" target="_blank">mass</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massacre" target="_blank">massacre</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massage" target="_blank">massage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=masseur" target="_blank">masseur</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=masseuse" target="_blank">masseuse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massif" target="_blank">massif</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massive" target="_blank">massive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massless" target="_blank">massless</a></li>
+<ul id="words">
+<li>mass</li>
+<li>massacre</li>
+<li>massage</li>
+<li>masseur</li>
+<li>masseuse</li>
+<li>massif</li>
+<li>massive</li>
+<li>massless</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="763" data-circle-pattern="mass_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "mass massacre massage masseur, masseuse massif massive massless";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

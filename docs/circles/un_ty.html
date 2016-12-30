@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: un_ty</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#966 un_ty
+<h2>#966 un_ty</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unanimity" target="_blank">unanimity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=uncertainty" target="_blank">uncertainty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unconstitutionality" target="_blank">unconstitutionality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unfamiliarity" target="_blank">unfamiliarity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=uniformity" target="_blank">uniformity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unity" target="_blank">unity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=universality" target="_blank">universality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=university" target="_blank">university</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unpopularity" target="_blank">unpopularity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unpredictability" target="_blank">unpredictability</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unreality" target="_blank">unreality</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unreliability" target="_blank">unreliability</a></li>
+<ul id="words">
+<li>unanimity</li>
+<li>uncertainty</li>
+<li>unconstitutionality</li>
+<li>unfamiliarity</li>
+<li>uniformity</li>
+<li>unity</li>
+<li>universality</li>
+<li>university</li>
+<li>unpopularity</li>
+<li>unpredictability</li>
+<li>unreality</li>
+<li>unreliability</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="966" data-circle-pattern="un_ty">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "unanimity uncertainty unconstitutionality, unfamiliarity uniformity unity, universality university unpopularity, unpredictability unreality unreliability";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ve_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#980 ve_y
+<h2>#980 ve_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vehemently" target="_blank">vehemently</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=velvety" target="_blank">velvety</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=veracity" target="_blank">veracity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verbally" target="_blank">verbally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verbosity" target="_blank">verbosity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verify" target="_blank">verify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verily" target="_blank">verily</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=verity" target="_blank">verity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=versatility" target="_blank">versatility</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vertically" target="_blank">vertically</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vestry" target="_blank">vestry</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=veterinary" target="_blank">veterinary</a></li>
+<ul id="words">
+<li>vehemently</li>
+<li>velvety</li>
+<li>veracity</li>
+<li>verbally</li>
+<li>verbosity</li>
+<li>verify</li>
+<li>verily</li>
+<li>verity</li>
+<li>versatility</li>
+<li>vertically</li>
+<li>vestry</li>
+<li>veterinary</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="980" data-circle-pattern="ve_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "vehemently velvety veracity, verbally verbosity verify, verily verity versatility, vertically vestry veterinary";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

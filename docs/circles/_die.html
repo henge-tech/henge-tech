@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _die</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#71 _die
+<h2>#71 _die</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baddie" target="_blank">baddie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=birdie" target="_blank">birdie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=caddie" target="_blank">caddie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cardie" target="_blank">cardie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foodie" target="_blank">foodie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=goodie" target="_blank">goodie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hoodie" target="_blank">hoodie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indie" target="_blank">indie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=kiddie" target="_blank">kiddie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laddie" target="_blank">laddie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oldie" target="_blank">oldie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=roadie" target="_blank">roadie</a></li>
+<ul id="words">
+<li>baddie</li>
+<li>birdie</li>
+<li>caddie</li>
+<li>cardie</li>
+<li>foodie</li>
+<li>goodie</li>
+<li>hoodie</li>
+<li>indie</li>
+<li>kiddie</li>
+<li>laddie</li>
+<li>oldie</li>
+<li>roadie</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="71" data-circle-pattern="_die">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "baddie birdie caddie, cardie foodie goodie, hoodie indie kiddie, laddie oldie roadie";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

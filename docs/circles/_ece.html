@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ece</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#81 _ece
+<h2>#81 _ece</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apiece" target="_blank">apiece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=centerpiece" target="_blank">centerpiece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=earpiece" target="_blank">earpiece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eyepiece" target="_blank">eyepiece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fleece" target="_blank">fleece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frontispiece" target="_blank">frontispiece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=headpiece" target="_blank">headpiece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mantelpiece" target="_blank">mantelpiece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=niece" target="_blank">niece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=showpiece" target="_blank">showpiece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=timepiece" target="_blank">timepiece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=workpiece" target="_blank">workpiece</a></li>
+<ul id="words">
+<li>apiece</li>
+<li>centerpiece</li>
+<li>earpiece</li>
+<li>eyepiece</li>
+<li>fleece</li>
+<li>frontispiece</li>
+<li>headpiece</li>
+<li>mantelpiece</li>
+<li>niece</li>
+<li>showpiece</li>
+<li>timepiece</li>
+<li>workpiece</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="81" data-circle-pattern="_ece">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "apiece centerpiece earpiece, eyepiece fleece frontispiece, headpiece mantelpiece niece, showpiece timepiece workpiece";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

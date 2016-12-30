@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: w_rd</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#987 w_rd
+<h2>#987 w_rd</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wallboard" target="_blank">wallboard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ward" target="_blank">ward</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=warlord" target="_blank">warlord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=washboard" target="_blank">washboard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=watchword" target="_blank">watchword</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wayward" target="_blank">wayward</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=weatherboard" target="_blank">weatherboard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=weird" target="_blank">weird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=westward" target="_blank">westward</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whiteboard" target="_blank">whiteboard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=windward" target="_blank">windward</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=word" target="_blank">word</a></li>
+<ul id="words">
+<li>wallboard</li>
+<li>ward</li>
+<li>warlord</li>
+<li>washboard</li>
+<li>watchword</li>
+<li>wayward</li>
+<li>weatherboard</li>
+<li>weird</li>
+<li>westward</li>
+<li>whiteboard</li>
+<li>windward</li>
+<li>word</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="987" data-circle-pattern="w_rd">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "wallboard ward warlord, washboard watchword wayward, weatherboard weird westward, whiteboard windward word";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

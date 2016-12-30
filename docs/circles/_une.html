@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _une</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#351 _une
+<h2>#351 _une</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=autoimmune" target="_blank">autoimmune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commune" target="_blank">commune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dune" target="_blank">dune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immune" target="_blank">immune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=importune" target="_blank">importune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inopportune" target="_blank">inopportune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=misfortune" target="_blank">misfortune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=opportune" target="_blank">opportune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=picayune" target="_blank">picayune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prune" target="_blank">prune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rune" target="_blank">rune</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tribune" target="_blank">tribune</a></li>
+<ul id="words">
+<li>autoimmune</li>
+<li>commune</li>
+<li>dune</li>
+<li>immune</li>
+<li>importune</li>
+<li>inopportune</li>
+<li>misfortune</li>
+<li>opportune</li>
+<li>picayune</li>
+<li>prune</li>
+<li>rune</li>
+<li>tribune</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="351" data-circle-pattern="_une">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "autoimmune commune dune, immune importune inopportune, misfortune opportune picayune, prune rune tribune";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _rely</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#268 _rely
+<h2>#268 _rely</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=austerely" target="_blank">austerely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barely" target="_blank">barely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bizarrely" target="_blank">bizarrely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demurely" target="_blank">demurely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leisurely" target="_blank">leisurely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=merely" target="_blank">merely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prematurely" target="_blank">prematurely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purely" target="_blank">purely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rarely" target="_blank">rarely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rely" target="_blank">rely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=securely" target="_blank">securely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=severely" target="_blank">severely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sincerely" target="_blank">sincerely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sorely" target="_blank">sorely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squarely" target="_blank">squarely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=surely" target="_blank">surely</a></li>
+<ul id="words">
+<li>austerely</li>
+<li>barely</li>
+<li>bizarrely</li>
+<li>demurely</li>
+<li>leisurely</li>
+<li>merely</li>
+<li>prematurely</li>
+<li>purely</li>
+<li>rarely</li>
+<li>rely</li>
+<li>securely</li>
+<li>severely</li>
+<li>sincerely</li>
+<li>sorely</li>
+<li>squarely</li>
+<li>surely</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="268" data-circle-pattern="_rely">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "austerely barely bizarrely demurely, leisurely merely prematurely purely, rarely rely securely severely, sincerely sorely squarely surely";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

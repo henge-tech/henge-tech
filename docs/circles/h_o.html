@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: h_o</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#689 h_o
+<h2>#689 h_o</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hairdo" target="_blank">hairdo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=halo" target="_blank">halo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hereto" target="_blank">hereto</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hetero" target="_blank">hetero</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hidalgo" target="_blank">hidalgo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hitherto" target="_blank">hitherto</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hobo" target="_blank">hobo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=honcho" target="_blank">honcho</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hoodoo" target="_blank">hoodoo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hullabaloo" target="_blank">hullabaloo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydro" target="_blank">hydro</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypo" target="_blank">hypo</a></li>
+<ul id="words">
+<li>hairdo</li>
+<li>halo</li>
+<li>hereto</li>
+<li>hetero</li>
+<li>hidalgo</li>
+<li>hitherto</li>
+<li>hobo</li>
+<li>honcho</li>
+<li>hoodoo</li>
+<li>hullabaloo</li>
+<li>hydro</li>
+<li>hypo</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="689" data-circle-pattern="h_o">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "hairdo halo hereto, hetero hidalgo hitherto, hobo honcho hoodoo, hullabaloo hydro hypo";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

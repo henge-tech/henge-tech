@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: d_age</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#545 d_age
+<h2>#545 d_age</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=damage" target="_blank">damage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decolletage" target="_blank">decolletage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decoupage" target="_blank">decoupage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disadvantage" target="_blank">disadvantage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discourage" target="_blank">discourage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disengage" target="_blank">disengage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disparage" target="_blank">disparage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dosage" target="_blank">dosage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dotage" target="_blank">dotage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downstage" target="_blank">downstage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drainage" target="_blank">drainage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dressage" target="_blank">dressage</a></li>
+<ul id="words">
+<li>damage</li>
+<li>decolletage</li>
+<li>decoupage</li>
+<li>disadvantage</li>
+<li>discourage</li>
+<li>disengage</li>
+<li>disparage</li>
+<li>dosage</li>
+<li>dotage</li>
+<li>downstage</li>
+<li>drainage</li>
+<li>dressage</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="545" data-circle-pattern="d_age">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "damage decolletage decoupage, disadvantage discourage disengage, disparage dosage dotage, downstage drainage dressage";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

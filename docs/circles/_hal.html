@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _hal</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#117 _hal
+<h2>#117 _hal</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apocryphal" target="_blank">apocryphal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=betrothal" target="_blank">betrothal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lethal" target="_blank">lethal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marshal" target="_blank">marshal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=matriarchal" target="_blank">matriarchal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=narwhal" target="_blank">narwhal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Neanderthal" target="_blank">Neanderthal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paschal" target="_blank">paschal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patriarchal" target="_blank">patriarchal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=triumphal" target="_blank">triumphal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wherewithal" target="_blank">wherewithal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=withal" target="_blank">withal</a></li>
+<ul id="words">
+<li>apocryphal</li>
+<li>betrothal</li>
+<li>lethal</li>
+<li>marshal</li>
+<li>matriarchal</li>
+<li>narwhal</li>
+<li>Neanderthal</li>
+<li>paschal</li>
+<li>patriarchal</li>
+<li>triumphal</li>
+<li>wherewithal</li>
+<li>withal</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="117" data-circle-pattern="_hal">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "apocryphal betrothal lethal, marshal matriarchal narwhal, Neanderthal paschal patriarchal, triumphal wherewithal withal";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

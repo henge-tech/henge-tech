@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: c_il</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#470 c_il
+<h2>#470 c_il</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=civil" target="_blank">civil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cocktail" target="_blank">cocktail</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=codicil" target="_blank">codicil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coil" target="_blank">coil</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contrail" target="_blank">contrail</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cottontail" target="_blank">cottontail</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=council" target="_blank">council</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=curtail" target="_blank">curtail</a></li>
+<ul id="words">
+<li>civil</li>
+<li>cocktail</li>
+<li>codicil</li>
+<li>coil</li>
+<li>contrail</li>
+<li>cottontail</li>
+<li>council</li>
+<li>curtail</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="470" data-circle-pattern="c_il">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "civil cocktail codicil coil, contrail cottontail council curtail";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

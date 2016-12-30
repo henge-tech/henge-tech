@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _oop</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#228 _oop
+<h2>#228 _oop</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coop" target="_blank">coop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=droop" target="_blank">droop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=goop" target="_blank">goop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hoop" target="_blank">hoop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=poop" target="_blank">poop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scoop" target="_blank">scoop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sloop" target="_blank">sloop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snoop" target="_blank">snoop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stoop" target="_blank">stoop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swoop" target="_blank">swoop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=troop" target="_blank">troop</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whoop" target="_blank">whoop</a></li>
+<ul id="words">
+<li>coop</li>
+<li>droop</li>
+<li>goop</li>
+<li>hoop</li>
+<li>poop</li>
+<li>scoop</li>
+<li>sloop</li>
+<li>snoop</li>
+<li>stoop</li>
+<li>swoop</li>
+<li>troop</li>
+<li>whoop</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="228" data-circle-pattern="_oop">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "coop droop goop, hoop poop scoop, sloop snoop stoop, swoop troop whoop";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

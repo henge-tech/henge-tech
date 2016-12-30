@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: c_onal</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#482 c_onal
+<h2>#482 c_onal</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cantonal" target="_blank">cantonal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coeducational" target="_blank">coeducational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compositional" target="_blank">compositional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=concessional" target="_blank">concessional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confessional" target="_blank">confessional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confrontational" target="_blank">confrontational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=congregational" target="_blank">congregational</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=congressional" target="_blank">congressional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constitutional" target="_blank">constitutional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conventional" target="_blank">conventional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coronal" target="_blank">coronal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=correctional" target="_blank">correctional</a></li>
+<ul id="words">
+<li>cantonal</li>
+<li>coeducational</li>
+<li>compositional</li>
+<li>concessional</li>
+<li>confessional</li>
+<li>confrontational</li>
+<li>congregational</li>
+<li>congressional</li>
+<li>constitutional</li>
+<li>conventional</li>
+<li>coronal</li>
+<li>correctional</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="482" data-circle-pattern="c_onal">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "cantonal coeducational compositional, concessional confessional confrontational, congregational congressional constitutional, conventional coronal correctional";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

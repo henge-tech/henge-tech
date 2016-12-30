@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: res_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#886 res_n
+<h2>#886 res_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rescission" target="_blank">rescission</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resection" target="_blank">resection</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reservation" target="_blank">reservation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resign" target="_blank">resign</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resignation" target="_blank">resignation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resin" target="_blank">resin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resolution" target="_blank">resolution</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=respiration" target="_blank">respiration</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=restitution" target="_blank">restitution</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=restoration" target="_blank">restoration</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=restrain" target="_blank">restrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=restriction" target="_blank">restriction</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resubmission" target="_blank">resubmission</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resumption" target="_blank">resumption</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resurrection" target="_blank">resurrection</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resuscitation" target="_blank">resuscitation</a></li>
+<ul id="words">
+<li>rescission</li>
+<li>resection</li>
+<li>reservation</li>
+<li>resign</li>
+<li>resignation</li>
+<li>resin</li>
+<li>resolution</li>
+<li>respiration</li>
+<li>restitution</li>
+<li>restoration</li>
+<li>restrain</li>
+<li>restriction</li>
+<li>resubmission</li>
+<li>resumption</li>
+<li>resurrection</li>
+<li>resuscitation</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="886" data-circle-pattern="res_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "rescission resection reservation resign, resignation resin resolution respiration, restitution restoration restrain restriction, resubmission resumption resurrection resuscitation";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

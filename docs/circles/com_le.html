@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: com_le</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#517 com_le
+<h2>#517 com_le</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=combustible" target="_blank">combustible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comestible" target="_blank">comestible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comfortable" target="_blank">comfortable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commendable" target="_blank">commendable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commingle" target="_blank">commingle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=communicable" target="_blank">communicable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=companionable" target="_blank">companionable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comparable" target="_blank">comparable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compatible" target="_blank">compatible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compile" target="_blank">compile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=comprehensible" target="_blank">comprehensible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compressible" target="_blank">compressible</a></li>
+<ul id="words">
+<li>combustible</li>
+<li>comestible</li>
+<li>comfortable</li>
+<li>commendable</li>
+<li>commingle</li>
+<li>communicable</li>
+<li>companionable</li>
+<li>comparable</li>
+<li>compatible</li>
+<li>compile</li>
+<li>comprehensible</li>
+<li>compressible</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="517" data-circle-pattern="com_le">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "combustible comestible comfortable, commendable commingle communicable, companionable comparable compatible, compile comprehensible compressible";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

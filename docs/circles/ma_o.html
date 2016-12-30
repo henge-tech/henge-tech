@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ma_o</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#759 ma_o
+<h2>#759 ma_o</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=machismo" target="_blank">machismo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=macho" target="_blank">macho</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=macro" target="_blank">macro</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=maestro" target="_blank">maestro</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Mafioso" target="_blank">Mafioso</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=magneto" target="_blank">magneto</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=majordomo" target="_blank">majordomo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mambo" target="_blank">mambo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mango" target="_blank">mango</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manifesto" target="_blank">manifesto</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=matzo" target="_blank">matzo</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mayo" target="_blank">mayo</a></li>
+<ul id="words">
+<li>machismo</li>
+<li>macho</li>
+<li>macro</li>
+<li>maestro</li>
+<li>Mafioso</li>
+<li>magneto</li>
+<li>majordomo</li>
+<li>mambo</li>
+<li>mango</li>
+<li>manifesto</li>
+<li>matzo</li>
+<li>mayo</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="759" data-circle-pattern="ma_o">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "machismo macho macro, maestro Mafioso magneto, majordomo mambo mango, manifesto matzo mayo";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _dor</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#74 _dor
+<h2>#74 _dor</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ambassador" target="_blank">ambassador</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ardor" target="_blank">ardor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=candor" target="_blank">candor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chador" target="_blank">chador</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=condor" target="_blank">condor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conquistador" target="_blank">conquistador</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=corridor" target="_blank">corridor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=matador" target="_blank">matador</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=odor" target="_blank">odor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=picador" target="_blank">picador</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=splendor" target="_blank">splendor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toreador" target="_blank">toreador</a></li>
+<ul id="words">
+<li>ambassador</li>
+<li>ardor</li>
+<li>candor</li>
+<li>chador</li>
+<li>condor</li>
+<li>conquistador</li>
+<li>corridor</li>
+<li>matador</li>
+<li>odor</li>
+<li>picador</li>
+<li>splendor</li>
+<li>toreador</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="74" data-circle-pattern="_dor">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ambassador ardor candor, chador condor conquistador, corridor matador odor, picador splendor toreador";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: n_ce</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#780 n_ce
+<h2>#780 n_ce</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=negligence" target="_blank">negligence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nescience" target="_blank">nescience</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neuroscience" target="_blank">neuroscience</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=niece" target="_blank">niece</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonce" target="_blank">nonce</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonchalance" target="_blank">nonchalance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noncompliance" target="_blank">noncompliance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonexistence" target="_blank">nonexistence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nonviolence" target="_blank">nonviolence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=novice" target="_blank">novice</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nuance" target="_blank">nuance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nuisance" target="_blank">nuisance</a></li>
+<ul id="words">
+<li>negligence</li>
+<li>nescience</li>
+<li>neuroscience</li>
+<li>niece</li>
+<li>nonce</li>
+<li>nonchalance</li>
+<li>noncompliance</li>
+<li>nonexistence</li>
+<li>nonviolence</li>
+<li>novice</li>
+<li>nuance</li>
+<li>nuisance</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="780" data-circle-pattern="n_ce">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "negligence nescience neuroscience, niece nonce nonchalance, noncompliance nonexistence nonviolence, novice nuance nuisance";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: cont_d</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#531 cont_d
+<h2>#531 cont_d</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contained" target="_blank">contained</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contaminated" target="_blank">contaminated</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contd" target="_blank">contd</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contemplated" target="_blank">contemplated</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contend" target="_blank">contend</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contented" target="_blank">contented</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=continued" target="_blank">continued</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contorted" target="_blank">contorted</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contoured" target="_blank">contoured</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contraband" target="_blank">contraband</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contravened" target="_blank">contravened</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contrived" target="_blank">contrived</a></li>
+<ul id="words">
+<li>contained</li>
+<li>contaminated</li>
+<li>contd</li>
+<li>contemplated</li>
+<li>contend</li>
+<li>contented</li>
+<li>continued</li>
+<li>contorted</li>
+<li>contoured</li>
+<li>contraband</li>
+<li>contravened</li>
+<li>contrived</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="531" data-circle-pattern="cont_d">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "contained contaminated contd, contemplated contend contented, continued contorted contoured, contraband contravened contrived";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

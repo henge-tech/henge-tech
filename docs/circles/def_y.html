@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: def_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#578 def_y
+<h2>#578 def_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defamatory" target="_blank">defamatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defensively" target="_blank">defensively</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deferentially" target="_blank">deferentially</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defiantly" target="_blank">defiantly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deficiency" target="_blank">deficiency</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=definitely" target="_blank">definitely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=definitively" target="_blank">definitively</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deflationary" target="_blank">deflationary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deformity" target="_blank">deformity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defray" target="_blank">defray</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deftly" target="_blank">deftly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defy" target="_blank">defy</a></li>
+<ul id="words">
+<li>defamatory</li>
+<li>defensively</li>
+<li>deferentially</li>
+<li>defiantly</li>
+<li>deficiency</li>
+<li>definitely</li>
+<li>definitively</li>
+<li>deflationary</li>
+<li>deformity</li>
+<li>defray</li>
+<li>deftly</li>
+<li>defy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="578" data-circle-pattern="def_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "defamatory defensively deferentially, defiantly deficiency definitely, definitively deflationary deformity, defray deftly defy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

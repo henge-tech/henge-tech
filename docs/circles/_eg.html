@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _eg</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#90 _eg
+<h2>#90 _eg</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beg" target="_blank">beg</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blackleg" target="_blank">blackleg</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blitzkrieg" target="_blank">blitzkrieg</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bootleg" target="_blank">bootleg</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dogleg" target="_blank">dogleg</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foreleg" target="_blank">foreleg</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=keg" target="_blank">keg</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leg" target="_blank">leg</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=muskeg" target="_blank">muskeg</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nutmeg" target="_blank">nutmeg</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peg" target="_blank">peg</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=veg" target="_blank">veg</a></li>
+<ul id="words">
+<li>beg</li>
+<li>blackleg</li>
+<li>blitzkrieg</li>
+<li>bootleg</li>
+<li>dogleg</li>
+<li>foreleg</li>
+<li>keg</li>
+<li>leg</li>
+<li>muskeg</li>
+<li>nutmeg</li>
+<li>peg</li>
+<li>veg</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="90" data-circle-pattern="_eg">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "beg blackleg blitzkrieg, bootleg dogleg foreleg, keg leg muskeg, nutmeg peg veg";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

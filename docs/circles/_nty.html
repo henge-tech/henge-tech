@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _nty</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#216 _nty
+<h2>#216 _nty</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aplenty" target="_blank">aplenty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bounty" target="_blank">bounty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=certainty" target="_blank">certainty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=county" target="_blank">county</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dainty" target="_blank">dainty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=guaranty" target="_blank">guaranty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jaunty" target="_blank">jaunty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=minty" target="_blank">minty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=panty" target="_blank">panty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plenty" target="_blank">plenty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pointy" target="_blank">pointy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scanty" target="_blank">scanty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shanty" target="_blank">shanty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sovereignty" target="_blank">sovereignty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=uncertainty" target="_blank">uncertainty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=warranty" target="_blank">warranty</a></li>
+<ul id="words">
+<li>aplenty</li>
+<li>bounty</li>
+<li>certainty</li>
+<li>county</li>
+<li>dainty</li>
+<li>guaranty</li>
+<li>jaunty</li>
+<li>minty</li>
+<li>panty</li>
+<li>plenty</li>
+<li>pointy</li>
+<li>scanty</li>
+<li>shanty</li>
+<li>sovereignty</li>
+<li>uncertainty</li>
+<li>warranty</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="216" data-circle-pattern="_nty">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "aplenty bounty certainty county, dainty guaranty jaunty minty, panty plenty pointy scanty, shanty sovereignty uncertainty warranty";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

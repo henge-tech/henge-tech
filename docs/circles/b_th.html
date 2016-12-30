@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_th</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#447 b_th
+<h2>#447 b_th</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=behemoth" target="_blank">behemoth</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beneath" target="_blank">beneath</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bequeath" target="_blank">bequeath</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=berth" target="_blank">berth</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=birdbath" target="_blank">birdbath</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bismuth" target="_blank">bismuth</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blacksmith" target="_blank">blacksmith</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloodbath" target="_blank">bloodbath</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=booth" target="_blank">booth</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breadth" target="_blank">breadth</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broadcloth" target="_blank">broadcloth</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broth" target="_blank">broth</a></li>
+<ul id="words">
+<li>behemoth</li>
+<li>beneath</li>
+<li>bequeath</li>
+<li>berth</li>
+<li>birdbath</li>
+<li>bismuth</li>
+<li>blacksmith</li>
+<li>bloodbath</li>
+<li>booth</li>
+<li>breadth</li>
+<li>broadcloth</li>
+<li>broth</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="447" data-circle-pattern="b_th">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "behemoth beneath bequeath, berth birdbath bismuth, blacksmith bloodbath booth, breadth broadcloth broth";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

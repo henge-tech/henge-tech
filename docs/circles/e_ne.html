@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: e_ne</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#619 e_ne
+<h2>#619 e_ne</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=elephantine" target="_blank">elephantine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=endocrine" target="_blank">endocrine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=enshrine" target="_blank">enshrine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=enthrone" target="_blank">enthrone</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=entwine" target="_blank">entwine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ephedrine" target="_blank">ephedrine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=epicene" target="_blank">epicene</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=epinephrine" target="_blank">epinephrine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=equine" target="_blank">equine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ermine" target="_blank">ermine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ethylene" target="_blank">ethylene</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=examine" target="_blank">examine</a></li>
+<ul id="words">
+<li>elephantine</li>
+<li>endocrine</li>
+<li>enshrine</li>
+<li>enthrone</li>
+<li>entwine</li>
+<li>ephedrine</li>
+<li>epicene</li>
+<li>epinephrine</li>
+<li>equine</li>
+<li>ermine</li>
+<li>ethylene</li>
+<li>examine</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="619" data-circle-pattern="e_ne">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "elephantine endocrine enshrine, enthrone entwine ephedrine, epicene epinephrine equine, ermine ethylene examine";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

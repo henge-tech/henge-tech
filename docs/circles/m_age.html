@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: m_age</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#745 m_age
+<h2>#745 m_age</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=macrophage" target="_blank">macrophage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=manage" target="_blank">manage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=massage" target="_blank">massage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=menage" target="_blank">menage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mileage" target="_blank">mileage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mirage" target="_blank">mirage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=miscarriage" target="_blank">miscarriage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=montage" target="_blank">montage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moorage" target="_blank">moorage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mortgage" target="_blank">mortgage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mucilage" target="_blank">mucilage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multistage" target="_blank">multistage</a></li>
+<ul id="words">
+<li>macrophage</li>
+<li>manage</li>
+<li>massage</li>
+<li>menage</li>
+<li>mileage</li>
+<li>mirage</li>
+<li>miscarriage</li>
+<li>montage</li>
+<li>moorage</li>
+<li>mortgage</li>
+<li>mucilage</li>
+<li>multistage</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="745" data-circle-pattern="m_age">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "macrophage manage massage, menage mileage mirage, miscarriage montage moorage, mortgage mucilage multistage";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

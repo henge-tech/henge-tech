@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: spa_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#925 spa_e
+<h2>#925 spa_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=space" target="_blank">space</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spade" target="_blank">spade</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spake" target="_blank">spake</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spangle" target="_blank">spangle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spare" target="_blank">spare</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sparkle" target="_blank">sparkle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sparse" target="_blank">sparse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spate" target="_blank">spate</a></li>
+<ul id="words">
+<li>space</li>
+<li>spade</li>
+<li>spake</li>
+<li>spangle</li>
+<li>spare</li>
+<li>sparkle</li>
+<li>sparse</li>
+<li>spate</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="925" data-circle-pattern="spa_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "space spade spake spangle, spare sparkle sparse spate";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

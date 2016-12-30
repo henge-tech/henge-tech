@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: gl_r</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#676 gl_r
+<h2>#676 gl_r</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glacier" target="_blank">glacier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gladiator" target="_blank">gladiator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glair" target="_blank">glair</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glamour" target="_blank">glamour</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glandular" target="_blank">glandular</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glazier" target="_blank">glazier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glider" target="_blank">glider</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glimmer" target="_blank">glimmer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitter" target="_blank">glitter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=globular" target="_blank">globular</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glover" target="_blank">glover</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glower" target="_blank">glower</a></li>
+<ul id="words">
+<li>glacier</li>
+<li>gladiator</li>
+<li>glair</li>
+<li>glamour</li>
+<li>glandular</li>
+<li>glazier</li>
+<li>glider</li>
+<li>glimmer</li>
+<li>glitter</li>
+<li>globular</li>
+<li>glover</li>
+<li>glower</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="676" data-circle-pattern="gl_r">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "glacier gladiator glair, glamour glandular glazier, glider glimmer glitter, globular glover glower";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

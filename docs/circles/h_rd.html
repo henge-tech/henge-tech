@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: h_rd</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#690 h_rd
+<h2>#690 h_rd</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haggard" target="_blank">haggard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=halyard" target="_blank">halyard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=haphazard" target="_blank">haphazard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hardboard" target="_blank">hardboard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=harpsichord" target="_blank">harpsichord</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hazard" target="_blank">hazard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=headboard" target="_blank">headboard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=henceforward" target="_blank">henceforward</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=herd" target="_blank">herd</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hoard" target="_blank">hoard</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homeward" target="_blank">homeward</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hummingbird" target="_blank">hummingbird</a></li>
+<ul id="words">
+<li>haggard</li>
+<li>halyard</li>
+<li>haphazard</li>
+<li>hardboard</li>
+<li>harpsichord</li>
+<li>hazard</li>
+<li>headboard</li>
+<li>henceforward</li>
+<li>herd</li>
+<li>hoard</li>
+<li>homeward</li>
+<li>hummingbird</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="690" data-circle-pattern="h_rd">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "haggard halyard haphazard, hardboard harpsichord hazard, headboard henceforward herd, hoard homeward hummingbird";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

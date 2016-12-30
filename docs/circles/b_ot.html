@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_ot</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#444 b_ot
+<h2>#444 b_ot</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ballot" target="_blank">ballot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=barefoot" target="_blank">barefoot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beetroot" target="_blank">beetroot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=begot" target="_blank">begot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bergamot" target="_blank">bergamot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bigot" target="_blank">bigot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=birdshot" target="_blank">birdshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloodshot" target="_blank">bloodshot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blot" target="_blank">blot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boot" target="_blank">boot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bowknot" target="_blank">bowknot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buckshot" target="_blank">buckshot</a></li>
+<ul id="words">
+<li>ballot</li>
+<li>barefoot</li>
+<li>beetroot</li>
+<li>begot</li>
+<li>bergamot</li>
+<li>bigot</li>
+<li>birdshot</li>
+<li>bloodshot</li>
+<li>blot</li>
+<li>boot</li>
+<li>bowknot</li>
+<li>buckshot</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="444" data-circle-pattern="b_ot">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ballot barefoot beetroot, begot bergamot bigot, birdshot bloodshot blot, boot bowknot buckshot";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

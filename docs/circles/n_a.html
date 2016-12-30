@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: n_a</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#779 n_a
+<h2>#779 n_a</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naira" target="_blank">naira</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naphtha" target="_blank">naphtha</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nausea" target="_blank">nausea</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nebula" target="_blank">nebula</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=necrophilia" target="_blank">necrophilia</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neuralgia" target="_blank">neuralgia</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neurasthenia" target="_blank">neurasthenia</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nirvana" target="_blank">nirvana</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nostalgia" target="_blank">nostalgia</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nova" target="_blank">nova</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=novella" target="_blank">novella</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=novena" target="_blank">novena</a></li>
+<ul id="words">
+<li>naira</li>
+<li>naphtha</li>
+<li>nausea</li>
+<li>nebula</li>
+<li>necrophilia</li>
+<li>neuralgia</li>
+<li>neurasthenia</li>
+<li>nirvana</li>
+<li>nostalgia</li>
+<li>nova</li>
+<li>novella</li>
+<li>novena</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="779" data-circle-pattern="n_a">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "naira naphtha nausea, nebula necrophilia neuralgia, neurasthenia nirvana nostalgia, nova novella novena";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

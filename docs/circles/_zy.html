@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _zy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#369 _zy
+<h2>#369 _zy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boozy" target="_blank">boozy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breezy" target="_blank">breezy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cozy" target="_blank">cozy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crazy" target="_blank">crazy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dizzy" target="_blank">dizzy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fizzy" target="_blank">fizzy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frenzy" target="_blank">frenzy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frizzy" target="_blank">frizzy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fuzzy" target="_blank">fuzzy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glitzy" target="_blank">glitzy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hazy" target="_blank">hazy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jazzy" target="_blank">jazzy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lazy" target="_blank">lazy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sleazy" target="_blank">sleazy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snazzy" target="_blank">snazzy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=woozy" target="_blank">woozy</a></li>
+<ul id="words">
+<li>boozy</li>
+<li>breezy</li>
+<li>cozy</li>
+<li>crazy</li>
+<li>dizzy</li>
+<li>fizzy</li>
+<li>frenzy</li>
+<li>frizzy</li>
+<li>fuzzy</li>
+<li>glitzy</li>
+<li>hazy</li>
+<li>jazzy</li>
+<li>lazy</li>
+<li>sleazy</li>
+<li>snazzy</li>
+<li>woozy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="369" data-circle-pattern="_zy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "boozy breezy cozy crazy, dizzy fizzy frenzy frizzy, fuzzy glitzy hazy jazzy, lazy sleazy snazzy woozy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: w_m</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#986 w_m
+<h2>#986 w_m</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wampum" target="_blank">wampum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=washroom" target="_blank">washroom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waveform" target="_blank">waveform</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wham" target="_blank">wham</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whim" target="_blank">whim</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whom" target="_blank">whom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wigwam" target="_blank">wigwam</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=windstorm" target="_blank">windstorm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wolfram" target="_blank">wolfram</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=workroom" target="_blank">workroom</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=worm" target="_blank">worm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wpm" target="_blank">wpm</a></li>
+<ul id="words">
+<li>wampum</li>
+<li>washroom</li>
+<li>waveform</li>
+<li>wham</li>
+<li>whim</li>
+<li>whom</li>
+<li>wigwam</li>
+<li>windstorm</li>
+<li>wolfram</li>
+<li>workroom</li>
+<li>worm</li>
+<li>wpm</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="986" data-circle-pattern="w_m">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "wampum washroom waveform, wham whim whom, wigwam windstorm wolfram, workroom worm wpm";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

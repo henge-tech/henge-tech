@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: d_en</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#549 d_en
+<h2>#549 d_en</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dampen" target="_blank">dampen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deaden" target="_blank">deaden</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deepen" target="_blank">deepen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delicatessen" target="_blank">delicatessen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=den" target="_blank">den</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=denizen" target="_blank">denizen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dolmen" target="_blank">dolmen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downtrodden" target="_blank">downtrodden</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doyen" target="_blank">doyen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dozen" target="_blank">dozen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=driven" target="_blank">driven</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drunken" target="_blank">drunken</a></li>
+<ul id="words">
+<li>dampen</li>
+<li>deaden</li>
+<li>deepen</li>
+<li>delicatessen</li>
+<li>den</li>
+<li>denizen</li>
+<li>dolmen</li>
+<li>downtrodden</li>
+<li>doyen</li>
+<li>dozen</li>
+<li>driven</li>
+<li>drunken</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="549" data-circle-pattern="d_en">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "dampen deaden deepen, delicatessen den denizen, dolmen downtrodden doyen, dozen driven drunken";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

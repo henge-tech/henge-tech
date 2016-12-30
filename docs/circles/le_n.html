@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: le_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#735 le_n
+<h2>#735 le_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leaden" target="_blank">leaden</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lean" target="_blank">lean</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leaven" target="_blank">leaven</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lectern" target="_blank">lectern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legalization" target="_blank">legalization</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legation" target="_blank">legation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legerdemain" target="_blank">legerdemain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leghorn" target="_blank">leghorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legion" target="_blank">legion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=legislation" target="_blank">legislation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lengthen" target="_blank">lengthen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leprechaun" target="_blank">leprechaun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leptin" target="_blank">leptin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lepton" target="_blank">lepton</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lesion" target="_blank">lesion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lessen" target="_blank">lessen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=letdown" target="_blank">letdown</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leviathan" target="_blank">leviathan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=levitation" target="_blank">levitation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lexicon" target="_blank">lexicon</a></li>
+<ul id="words">
+<li>leaden</li>
+<li>lean</li>
+<li>leaven</li>
+<li>lectern</li>
+<li>legalization</li>
+<li>legation</li>
+<li>legerdemain</li>
+<li>leghorn</li>
+<li>legion</li>
+<li>legislation</li>
+<li>lengthen</li>
+<li>leprechaun</li>
+<li>leptin</li>
+<li>lepton</li>
+<li>lesion</li>
+<li>lessen</li>
+<li>letdown</li>
+<li>leviathan</li>
+<li>levitation</li>
+<li>lexicon</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="735" data-circle-pattern="le_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "leaden lean leaven lectern legalization, legation legerdemain leghorn legion legislation, lengthen leprechaun leptin lepton lesion, lessen letdown leviathan levitation lexicon";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

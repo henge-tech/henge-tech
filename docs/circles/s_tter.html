@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: s_tter</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#911 s_tter
+<h2>#911 s_tter</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scatter" target="_blank">scatter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=setter" target="_blank">setter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shatter" target="_blank">shatter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shutter" target="_blank">shutter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sitter" target="_blank">sitter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spatter" target="_blank">spatter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=splatter" target="_blank">splatter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=splutter" target="_blank">splutter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spotter" target="_blank">spotter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sputter" target="_blank">sputter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squatter" target="_blank">squatter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stutter" target="_blank">stutter</a></li>
+<ul id="words">
+<li>scatter</li>
+<li>setter</li>
+<li>shatter</li>
+<li>shutter</li>
+<li>sitter</li>
+<li>spatter</li>
+<li>splatter</li>
+<li>splutter</li>
+<li>spotter</li>
+<li>sputter</li>
+<li>squatter</li>
+<li>stutter</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="911" data-circle-pattern="s_tter">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "scatter setter shatter, shutter sitter spatter, splatter splutter spotter, sputter squatter stutter";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

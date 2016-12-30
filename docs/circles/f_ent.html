@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: f_ent</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#644 f_ent
+<h2>#644 f_ent</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ferment" target="_blank">ferment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fervent" target="_blank">fervent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=figment" target="_blank">figment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=filament" target="_blank">filament</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=firmament" target="_blank">firmament</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fitment" target="_blank">fitment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluent" target="_blank">fluent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluorescent" target="_blank">fluorescent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foment" target="_blank">foment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fragment" target="_blank">fragment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fraudulent" target="_blank">fraudulent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fulfillment" target="_blank">fulfillment</a></li>
+<ul id="words">
+<li>ferment</li>
+<li>fervent</li>
+<li>figment</li>
+<li>filament</li>
+<li>firmament</li>
+<li>fitment</li>
+<li>fluent</li>
+<li>fluorescent</li>
+<li>foment</li>
+<li>fragment</li>
+<li>fraudulent</li>
+<li>fulfillment</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="644" data-circle-pattern="f_ent">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ferment fervent figment, filament firmament fitment, fluent fluorescent foment, fragment fraudulent fulfillment";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

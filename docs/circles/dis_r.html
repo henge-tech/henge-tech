@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dis_r</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#600 dis_r
+<h2>#600 dis_r</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disappear" target="_blank">disappear</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disclaimer" target="_blank">disclaimer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discolor" target="_blank">discolor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dishonor" target="_blank">dishonor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismember" target="_blank">dismember</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disorder" target="_blank">disorder</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispatcher" target="_blank">dispatcher</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispenser" target="_blank">dispenser</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disposer" target="_blank">disposer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disrepair" target="_blank">disrepair</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissector" target="_blank">dissector</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissenter" target="_blank">dissenter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissimilar" target="_blank">dissimilar</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distemper" target="_blank">distemper</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distiller" target="_blank">distiller</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distributor" target="_blank">distributor</a></li>
+<ul id="words">
+<li>disappear</li>
+<li>disclaimer</li>
+<li>discolor</li>
+<li>dishonor</li>
+<li>dismember</li>
+<li>disorder</li>
+<li>dispatcher</li>
+<li>dispenser</li>
+<li>disposer</li>
+<li>disrepair</li>
+<li>dissector</li>
+<li>dissenter</li>
+<li>dissimilar</li>
+<li>distemper</li>
+<li>distiller</li>
+<li>distributor</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="600" data-circle-pattern="dis_r">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "disappear disclaimer discolor dishonor, dismember disorder dispatcher dispenser, disposer disrepair dissector dissenter, dissimilar distemper distiller distributor";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

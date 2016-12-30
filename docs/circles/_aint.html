@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _aint</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#15 _aint
+<h2>#15 _aint</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acquaint" target="_blank">acquaint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=complaint" target="_blank">complaint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constraint" target="_blank">constraint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distraint" target="_blank">distraint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=faint" target="_blank">faint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=greasepaint" target="_blank">greasepaint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paint" target="_blank">paint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plaint" target="_blank">plaint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quaint" target="_blank">quaint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=restraint" target="_blank">restraint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saint" target="_blank">saint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taint" target="_blank">taint</a></li>
+<ul id="words">
+<li>acquaint</li>
+<li>complaint</li>
+<li>constraint</li>
+<li>distraint</li>
+<li>faint</li>
+<li>greasepaint</li>
+<li>paint</li>
+<li>plaint</li>
+<li>quaint</li>
+<li>restraint</li>
+<li>saint</li>
+<li>taint</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="15" data-circle-pattern="_aint">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "acquaint complaint constraint, distraint faint greasepaint, paint plaint quaint, restraint saint taint";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

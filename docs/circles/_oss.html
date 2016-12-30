@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _oss</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#235 _oss
+<h2>#235 _oss</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=across" target="_blank">across</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=albatross" target="_blank">albatross</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=autocross" target="_blank">autocross</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crisscross" target="_blank">crisscross</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cross" target="_blank">cross</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=doss" target="_blank">doss</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dross" target="_blank">dross</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emboss" target="_blank">emboss</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=floss" target="_blank">floss</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gloss" target="_blank">gloss</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gross" target="_blank">gross</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=joss" target="_blank">joss</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loss" target="_blank">loss</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=moss" target="_blank">moss</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=poss" target="_blank">poss</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=toss" target="_blank">toss</a></li>
+<ul id="words">
+<li>across</li>
+<li>albatross</li>
+<li>autocross</li>
+<li>crisscross</li>
+<li>cross</li>
+<li>doss</li>
+<li>dross</li>
+<li>emboss</li>
+<li>floss</li>
+<li>gloss</li>
+<li>gross</li>
+<li>joss</li>
+<li>loss</li>
+<li>moss</li>
+<li>poss</li>
+<li>toss</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="235" data-circle-pattern="_oss">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "across albatross autocross crisscross, cross doss dross emboss, floss gloss gross joss, loss moss poss toss";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

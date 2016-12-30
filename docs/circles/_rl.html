@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _rl</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#280 _rl
+<h2>#280 _rl</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burl" target="_blank">burl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=curl" target="_blank">curl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=earl" target="_blank">earl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=furl" target="_blank">furl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hurl" target="_blank">hurl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=marl" target="_blank">marl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purl" target="_blank">purl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snarl" target="_blank">snarl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swirl" target="_blank">swirl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=twirl" target="_blank">twirl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whirl" target="_blank">whirl</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whorl" target="_blank">whorl</a></li>
+<ul id="words">
+<li>burl</li>
+<li>curl</li>
+<li>earl</li>
+<li>furl</li>
+<li>hurl</li>
+<li>marl</li>
+<li>purl</li>
+<li>snarl</li>
+<li>swirl</li>
+<li>twirl</li>
+<li>whirl</li>
+<li>whorl</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="280" data-circle-pattern="_rl">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "burl curl earl, furl hurl marl, purl snarl swirl, twirl whirl whorl";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

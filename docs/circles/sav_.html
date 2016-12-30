@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: sav_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#916 sav_
+<h2>#916 sav_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savage" target="_blank">savage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savagely" target="_blank">savagely</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savagery" target="_blank">savagery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savanna" target="_blank">savanna</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savant" target="_blank">savant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savate" target="_blank">savate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saver" target="_blank">saver</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savior" target="_blank">savior</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savor" target="_blank">savor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savory" target="_blank">savory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savoy" target="_blank">savoy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=savvy" target="_blank">savvy</a></li>
+<ul id="words">
+<li>savage</li>
+<li>savagely</li>
+<li>savagery</li>
+<li>savanna</li>
+<li>savant</li>
+<li>savate</li>
+<li>saver</li>
+<li>savior</li>
+<li>savor</li>
+<li>savory</li>
+<li>savoy</li>
+<li>savvy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="916" data-circle-pattern="sav_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "savage savagely savagery, savanna savant savate, saver savior savor, savory savoy savvy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

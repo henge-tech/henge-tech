@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_nd</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#440 b_nd
+<h2>#440 b_nd</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bandstand" target="_blank">bandstand</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beforehand" target="_blank">beforehand</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=befriend" target="_blank">befriend</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bend" target="_blank">bend</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bind" target="_blank">bind</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bland" target="_blank">bland</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloodhound" target="_blank">bloodhound</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bond" target="_blank">bond</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=borderland" target="_blank">borderland</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bound" target="_blank">bound</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brand" target="_blank">brand</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brigand" target="_blank">brigand</a></li>
+<ul id="words">
+<li>bandstand</li>
+<li>beforehand</li>
+<li>befriend</li>
+<li>bend</li>
+<li>bind</li>
+<li>bland</li>
+<li>bloodhound</li>
+<li>bond</li>
+<li>borderland</li>
+<li>bound</li>
+<li>brand</li>
+<li>brigand</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="440" data-circle-pattern="b_nd">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bandstand beforehand befriend, bend bind bland, bloodhound bond borderland, bound brand brigand";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

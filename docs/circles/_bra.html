@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _bra</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#53 _bra
+<h2>#53 _bra</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abracadabra" target="_blank">abracadabra</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=algebra" target="_blank">algebra</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Alhambra" target="_blank">Alhambra</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bra" target="_blank">bra</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=candelabra" target="_blank">candelabra</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cerebra" target="_blank">cerebra</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cobra" target="_blank">cobra</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Libra" target="_blank">Libra</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penumbra" target="_blank">penumbra</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=umbra" target="_blank">umbra</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vertebra" target="_blank">vertebra</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=zebra" target="_blank">zebra</a></li>
+<ul id="words">
+<li>abracadabra</li>
+<li>algebra</li>
+<li>Alhambra</li>
+<li>bra</li>
+<li>candelabra</li>
+<li>cerebra</li>
+<li>cobra</li>
+<li>Libra</li>
+<li>penumbra</li>
+<li>umbra</li>
+<li>vertebra</li>
+<li>zebra</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="53" data-circle-pattern="_bra">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "abracadabra algebra Alhambra, bra candelabra cerebra, cobra Libra penumbra, umbra vertebra zebra";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

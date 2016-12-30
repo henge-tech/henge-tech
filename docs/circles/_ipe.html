@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ipe</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#146 _ipe
+<h2>#146 _ipe</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bagpipe" target="_blank">bagpipe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gripe" target="_blank">gripe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hornpipe" target="_blank">hornpipe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pinstripe" target="_blank">pinstripe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ripe" target="_blank">ripe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snipe" target="_blank">snipe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stripe" target="_blank">stripe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swipe" target="_blank">swipe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tailpipe" target="_blank">tailpipe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tripe" target="_blank">tripe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unripe" target="_blank">unripe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=windpipe" target="_blank">windpipe</a></li>
+<ul id="words">
+<li>bagpipe</li>
+<li>gripe</li>
+<li>hornpipe</li>
+<li>pinstripe</li>
+<li>ripe</li>
+<li>snipe</li>
+<li>stripe</li>
+<li>swipe</li>
+<li>tailpipe</li>
+<li>tripe</li>
+<li>unripe</li>
+<li>windpipe</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="146" data-circle-pattern="_ipe">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bagpipe gripe hornpipe, pinstripe ripe snipe, stripe swipe tailpipe, tripe unripe windpipe";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

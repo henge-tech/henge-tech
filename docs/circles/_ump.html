@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ump</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#348 _ump
+<h2>#348 _ump</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bump" target="_blank">bump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chump" target="_blank">chump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clump" target="_blank">clump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dump" target="_blank">dump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frump" target="_blank">frump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grump" target="_blank">grump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hump" target="_blank">hump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lump" target="_blank">lump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plump" target="_blank">plump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pump" target="_blank">pump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rump" target="_blank">rump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slump" target="_blank">slump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stump" target="_blank">stump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sump" target="_blank">sump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thump" target="_blank">thump</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trump" target="_blank">trump</a></li>
+<ul id="words">
+<li>bump</li>
+<li>chump</li>
+<li>clump</li>
+<li>dump</li>
+<li>frump</li>
+<li>grump</li>
+<li>hump</li>
+<li>lump</li>
+<li>plump</li>
+<li>pump</li>
+<li>rump</li>
+<li>slump</li>
+<li>stump</li>
+<li>sump</li>
+<li>thump</li>
+<li>trump</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="348" data-circle-pattern="_ump">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bump chump clump dump, frump grump hump lump, plump pump rump slump, stump sump thump trump";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dese_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#586 dese_
+<h2>#586 dese_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=desecrate" target="_blank">desecrate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=desecration" target="_blank">desecration</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=desegregation" target="_blank">desegregation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deselect" target="_blank">deselect</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=desensitize" target="_blank">desensitize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deserted" target="_blank">deserted</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deserter" target="_blank">deserter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=desertification" target="_blank">desertification</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=desertion" target="_blank">desertion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deserve" target="_blank">deserve</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deserved" target="_blank">deserved</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deserving" target="_blank">deserving</a></li>
+<ul id="words">
+<li>desecrate</li>
+<li>desecration</li>
+<li>desegregation</li>
+<li>deselect</li>
+<li>desensitize</li>
+<li>deserted</li>
+<li>deserter</li>
+<li>desertification</li>
+<li>desertion</li>
+<li>deserve</li>
+<li>deserved</li>
+<li>deserving</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="586" data-circle-pattern="dese_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "desecrate desecration desegregation, deselect desensitize deserted, deserter desertification desertion, deserve deserved deserving";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

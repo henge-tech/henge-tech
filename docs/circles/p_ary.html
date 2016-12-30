@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: p_ary</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#806 p_ary
+<h2>#806 p_ary</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=paramilitary" target="_blank">paramilitary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parliamentary" target="_blank">parliamentary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pecuniary" target="_blank">pecuniary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=penitentiary" target="_blank">penitentiary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pituitary" target="_blank">pituitary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plenary" target="_blank">plenary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plenipotentiary" target="_blank">plenipotentiary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=precautionary" target="_blank">precautionary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=preliminary" target="_blank">preliminary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=probationary" target="_blank">probationary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proprietary" target="_blank">proprietary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pulmonary" target="_blank">pulmonary</a></li>
+<ul id="words">
+<li>paramilitary</li>
+<li>parliamentary</li>
+<li>pecuniary</li>
+<li>penitentiary</li>
+<li>pituitary</li>
+<li>plenary</li>
+<li>plenipotentiary</li>
+<li>precautionary</li>
+<li>preliminary</li>
+<li>probationary</li>
+<li>proprietary</li>
+<li>pulmonary</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="806" data-circle-pattern="p_ary">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "paramilitary parliamentary pecuniary, penitentiary pituitary plenary, plenipotentiary precautionary preliminary, probationary proprietary pulmonary";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _the</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#321 _the
+<h2>#321 _the</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=absinthe" target="_blank">absinthe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bathe" target="_blank">bathe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blithe" target="_blank">blithe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breathe" target="_blank">breathe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clothe" target="_blank">clothe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lathe" target="_blank">lathe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lethe" target="_blank">lethe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lithe" target="_blank">lithe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loathe" target="_blank">loathe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scythe" target="_blank">scythe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheathe" target="_blank">sheathe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=soothe" target="_blank">soothe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swathe" target="_blank">swathe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tithe" target="_blank">tithe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unsheathe" target="_blank">unsheathe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=writhe" target="_blank">writhe</a></li>
+<ul id="words">
+<li>absinthe</li>
+<li>bathe</li>
+<li>blithe</li>
+<li>breathe</li>
+<li>clothe</li>
+<li>lathe</li>
+<li>lethe</li>
+<li>lithe</li>
+<li>loathe</li>
+<li>scythe</li>
+<li>sheathe</li>
+<li>soothe</li>
+<li>swathe</li>
+<li>tithe</li>
+<li>unsheathe</li>
+<li>writhe</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="321" data-circle-pattern="_the">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "absinthe bathe blithe breathe, clothe lathe lethe lithe, loathe scythe sheathe soothe, swathe tithe unsheathe writhe";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

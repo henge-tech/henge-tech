@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _erie</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#102 _erie
+<h2>#102 _erie</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aerie" target="_blank">aerie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brasserie" target="_blank">brasserie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=camaraderie" target="_blank">camaraderie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coterie" target="_blank">coterie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eerie" target="_blank">eerie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=faerie" target="_blank">faerie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gendarmerie" target="_blank">gendarmerie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lingerie" target="_blank">lingerie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=menagerie" target="_blank">menagerie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=patisserie" target="_blank">patisserie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reverie" target="_blank">reverie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rotisserie" target="_blank">rotisserie</a></li>
+<ul id="words">
+<li>aerie</li>
+<li>brasserie</li>
+<li>camaraderie</li>
+<li>coterie</li>
+<li>eerie</li>
+<li>faerie</li>
+<li>gendarmerie</li>
+<li>lingerie</li>
+<li>menagerie</li>
+<li>patisserie</li>
+<li>reverie</li>
+<li>rotisserie</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="102" data-circle-pattern="_erie">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "aerie brasserie camaraderie, coterie eerie faerie, gendarmerie lingerie menagerie, patisserie reverie rotisserie";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

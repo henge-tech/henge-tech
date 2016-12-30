@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _rew</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#271 _rew
+<h2>#271 _rew</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aircrew" target="_blank">aircrew</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brew" target="_blank">brew</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crew" target="_blank">crew</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drew" target="_blank">drew</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grew" target="_blank">grew</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outgrew" target="_blank">outgrew</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overthrew" target="_blank">overthrew</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=screw" target="_blank">screw</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shrew" target="_blank">shrew</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=threw" target="_blank">threw</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unscrew" target="_blank">unscrew</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=withdrew" target="_blank">withdrew</a></li>
+<ul id="words">
+<li>aircrew</li>
+<li>brew</li>
+<li>crew</li>
+<li>drew</li>
+<li>grew</li>
+<li>outgrew</li>
+<li>overthrew</li>
+<li>screw</li>
+<li>shrew</li>
+<li>threw</li>
+<li>unscrew</li>
+<li>withdrew</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="271" data-circle-pattern="_rew">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "aircrew brew crew, drew grew outgrew, overthrew screw shrew, threw unscrew withdrew";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

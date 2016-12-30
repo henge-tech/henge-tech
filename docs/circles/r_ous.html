@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: r_ous</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#867 r_ous
+<h2>#867 r_ous</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rapacious" target="_blank">rapacious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rapturous" target="_blank">rapturous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=raucous" target="_blank">raucous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ravenous" target="_blank">ravenous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rebellious" target="_blank">rebellious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rendezvous" target="_blank">rendezvous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repetitious" target="_blank">repetitious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ridiculous" target="_blank">ridiculous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=righteous" target="_blank">righteous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rigorous" target="_blank">rigorous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=riotous" target="_blank">riotous</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ruinous" target="_blank">ruinous</a></li>
+<ul id="words">
+<li>rapacious</li>
+<li>rapturous</li>
+<li>raucous</li>
+<li>ravenous</li>
+<li>rebellious</li>
+<li>rendezvous</li>
+<li>repetitious</li>
+<li>ridiculous</li>
+<li>righteous</li>
+<li>rigorous</li>
+<li>riotous</li>
+<li>ruinous</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="867" data-circle-pattern="r_ous">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "rapacious rapturous raucous, ravenous rebellious rendezvous, repetitious ridiculous righteous, rigorous riotous ruinous";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

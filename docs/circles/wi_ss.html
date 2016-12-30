@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: wi_ss</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#996 wi_ss
+<h2>#996 wi_ss</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wickedness" target="_blank">wickedness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wilderness" target="_blank">wilderness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wildness" target="_blank">wildness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=willfulness" target="_blank">willfulness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=willingness" target="_blank">willingness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=windlass" target="_blank">windlass</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=windowless" target="_blank">windowless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wingless" target="_blank">wingless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wireless" target="_blank">wireless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wistfulness" target="_blank">wistfulness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=witless" target="_blank">witless</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=witness" target="_blank">witness</a></li>
+<ul id="words">
+<li>wickedness</li>
+<li>wilderness</li>
+<li>wildness</li>
+<li>willfulness</li>
+<li>willingness</li>
+<li>windlass</li>
+<li>windowless</li>
+<li>wingless</li>
+<li>wireless</li>
+<li>wistfulness</li>
+<li>witless</li>
+<li>witness</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="996" data-circle-pattern="wi_ss">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "wickedness wilderness wildness, willfulness willingness windlass, windowless wingless wireless, wistfulness witless witness";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _af</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#8 _af
+<h2>#8 _af</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cloverleaf" target="_blank">cloverleaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deaf" target="_blank">deaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decaf" target="_blank">decaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flyleaf" target="_blank">flyleaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interleaf" target="_blank">interleaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leaf" target="_blank">leaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=loaf" target="_blank">loaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=meatloaf" target="_blank">meatloaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oaf" target="_blank">oaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overleaf" target="_blank">overleaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pilaf" target="_blank">pilaf</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sheaf" target="_blank">sheaf</a></li>
+<ul id="words">
+<li>cloverleaf</li>
+<li>deaf</li>
+<li>decaf</li>
+<li>flyleaf</li>
+<li>interleaf</li>
+<li>leaf</li>
+<li>loaf</li>
+<li>meatloaf</li>
+<li>oaf</li>
+<li>overleaf</li>
+<li>pilaf</li>
+<li>sheaf</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="8" data-circle-pattern="_af">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "cloverleaf deaf decaf, flyleaf interleaf leaf, loaf meatloaf oaf, overleaf pilaf sheaf";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

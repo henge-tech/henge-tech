@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: col_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#515 col_e
+<h2>#515 col_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cole" target="_blank">cole</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collapsible" target="_blank">collapsible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collarbone" target="_blank">collarbone</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collate" target="_blank">collate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collective" target="_blank">collective</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collegiate" target="_blank">collegiate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collide" target="_blank">collide</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collie" target="_blank">collie</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collude" target="_blank">collude</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colonize" target="_blank">colonize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colonnade" target="_blank">colonnade</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=columbine" target="_blank">columbine</a></li>
+<ul id="words">
+<li>cole</li>
+<li>collapsible</li>
+<li>collarbone</li>
+<li>collate</li>
+<li>collective</li>
+<li>collegiate</li>
+<li>collide</li>
+<li>collie</li>
+<li>collude</li>
+<li>colonize</li>
+<li>colonnade</li>
+<li>columbine</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="515" data-circle-pattern="col_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "cole collapsible collarbone, collate collective collegiate, collide collie collude, colonize colonnade columbine";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_lly</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#439 b_lly
+<h2>#439 b_lly</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bally" target="_blank">bally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=behaviorally" target="_blank">behaviorally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=belly" target="_blank">belly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beneficially" target="_blank">beneficially</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=biannually" target="_blank">biannually</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=biennially" target="_blank">biennially</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bilaterally" target="_blank">bilaterally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=billy" target="_blank">billy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blissfully" target="_blank">blissfully</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brolly" target="_blank">brolly</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brutally" target="_blank">brutally</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bully" target="_blank">bully</a></li>
+<ul id="words">
+<li>bally</li>
+<li>behaviorally</li>
+<li>belly</li>
+<li>beneficially</li>
+<li>biannually</li>
+<li>biennially</li>
+<li>bilaterally</li>
+<li>billy</li>
+<li>blissfully</li>
+<li>brolly</li>
+<li>brutally</li>
+<li>bully</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="439" data-circle-pattern="b_lly">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bally behaviorally belly, beneficially biannually biennially, bilaterally billy blissfully, brolly brutally bully";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

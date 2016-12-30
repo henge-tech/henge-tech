@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: f_ght</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#645 f_ght
+<h2>#645 f_ght</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=firelight" target="_blank">firelight</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flashlight" target="_blank">flashlight</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flight" target="_blank">flight</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=floodlight" target="_blank">floodlight</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flyweight" target="_blank">flyweight</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foresight" target="_blank">foresight</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forethought" target="_blank">forethought</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forthright" target="_blank">forthright</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fortnight" target="_blank">fortnight</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fraught" target="_blank">fraught</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freight" target="_blank">freight</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fright" target="_blank">fright</a></li>
+<ul id="words">
+<li>firelight</li>
+<li>flashlight</li>
+<li>flight</li>
+<li>floodlight</li>
+<li>flyweight</li>
+<li>foresight</li>
+<li>forethought</li>
+<li>forthright</li>
+<li>fortnight</li>
+<li>fraught</li>
+<li>freight</li>
+<li>fright</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="645" data-circle-pattern="f_ght">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "firelight flashlight flight, floodlight flyweight foresight, forethought forthright fortnight, fraught freight fright";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

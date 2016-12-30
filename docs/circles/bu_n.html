@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: bu_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#462 bu_n
+<h2>#462 bu_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buckskin" target="_blank">buckskin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buffoon" target="_blank">buffoon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bulletin" target="_blank">bulletin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bullhorn" target="_blank">bullhorn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bullion" target="_blank">bullion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bullpen" target="_blank">bullpen</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bumpkin" target="_blank">bumpkin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bun" target="_blank">bun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bunion" target="_blank">bunion</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burden" target="_blank">burden</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burn" target="_blank">burn</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burton" target="_blank">burton</a></li>
+<ul id="words">
+<li>buckskin</li>
+<li>buffoon</li>
+<li>bulletin</li>
+<li>bullhorn</li>
+<li>bullion</li>
+<li>bullpen</li>
+<li>bumpkin</li>
+<li>bun</li>
+<li>bunion</li>
+<li>burden</li>
+<li>burn</li>
+<li>burton</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="462" data-circle-pattern="bu_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "buckskin buffoon bulletin, bullhorn bullion bullpen, bumpkin bun bunion, burden burn burton";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dis_te</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#601 dis_te
+<h2>#601 dis_te</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disconsolate" target="_blank">disconsolate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discrete" target="_blank">discrete</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=discriminate" target="_blank">discriminate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disintegrate" target="_blank">disintegrate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disparate" target="_blank">disparate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispassionate" target="_blank">dispassionate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disproportionate" target="_blank">disproportionate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispute" target="_blank">dispute</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disrepute" target="_blank">disrepute</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disseminate" target="_blank">disseminate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissipate" target="_blank">dissipate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissociate" target="_blank">dissociate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dissolute" target="_blank">dissolute</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distaste" target="_blank">distaste</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distillate" target="_blank">distillate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=distribute" target="_blank">distribute</a></li>
+<ul id="words">
+<li>disconsolate</li>
+<li>discrete</li>
+<li>discriminate</li>
+<li>disintegrate</li>
+<li>disparate</li>
+<li>dispassionate</li>
+<li>disproportionate</li>
+<li>dispute</li>
+<li>disrepute</li>
+<li>disseminate</li>
+<li>dissipate</li>
+<li>dissociate</li>
+<li>dissolute</li>
+<li>distaste</li>
+<li>distillate</li>
+<li>distribute</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="601" data-circle-pattern="dis_te">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "disconsolate discrete discriminate disintegrate, disparate dispassionate disproportionate dispute, disrepute disseminate dissipate dissociate, dissolute distaste distillate distribute";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

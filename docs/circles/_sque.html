@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _sque</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#306 _sque
+<h2>#306 _sque</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arabesque" target="_blank">arabesque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=basque" target="_blank">basque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bisque" target="_blank">bisque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brusque" target="_blank">brusque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=burlesque" target="_blank">burlesque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grotesque" target="_blank">grotesque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=masque" target="_blank">masque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mosque" target="_blank">mosque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=picaresque" target="_blank">picaresque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=picturesque" target="_blank">picturesque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=risque" target="_blank">risque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=statuesque" target="_blank">statuesque</a></li>
+<ul id="words">
+<li>arabesque</li>
+<li>basque</li>
+<li>bisque</li>
+<li>brusque</li>
+<li>burlesque</li>
+<li>grotesque</li>
+<li>masque</li>
+<li>mosque</li>
+<li>picaresque</li>
+<li>picturesque</li>
+<li>risque</li>
+<li>statuesque</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="306" data-circle-pattern="_sque">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "arabesque basque bisque, brusque burlesque grotesque, masque mosque picaresque, picturesque risque statuesque";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

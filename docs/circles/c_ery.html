@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: c_ery</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#466 c_ery
+<h2>#466 c_ery</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cannery" target="_blank">cannery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=carvery" target="_blank">carvery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cattery" target="_blank">cattery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=celery" target="_blank">celery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cemetery" target="_blank">cemetery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chancellery" target="_blank">chancellery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chancery" target="_blank">chancery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cheery" target="_blank">cheery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chicanery" target="_blank">chicanery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colliery" target="_blank">colliery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confectionery" target="_blank">confectionery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cookery" target="_blank">cookery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coppery" target="_blank">coppery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=creamery" target="_blank">creamery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crockery" target="_blank">crockery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cutlery" target="_blank">cutlery</a></li>
+<ul id="words">
+<li>cannery</li>
+<li>carvery</li>
+<li>cattery</li>
+<li>celery</li>
+<li>cemetery</li>
+<li>chancellery</li>
+<li>chancery</li>
+<li>cheery</li>
+<li>chicanery</li>
+<li>colliery</li>
+<li>confectionery</li>
+<li>cookery</li>
+<li>coppery</li>
+<li>creamery</li>
+<li>crockery</li>
+<li>cutlery</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="466" data-circle-pattern="c_ery">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "cannery carvery cattery celery, cemetery chancellery chancery cheery, chicanery colliery confectionery cookery, coppery creamery crockery cutlery";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

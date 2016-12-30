@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ux</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#357 _ux
+<h2>#357 _ux</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beaux" target="_blank">beaux</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chateaux" target="_blank">chateaux</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crux" target="_blank">crux</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=faux" target="_blank">faux</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flux" target="_blank">flux</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=influx" target="_blank">influx</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lux" target="_blank">lux</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=redux" target="_blank">redux</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reflux" target="_blank">reflux</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=roux" target="_blank">roux</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tableaux" target="_blank">tableaux</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tux" target="_blank">tux</a></li>
+<ul id="words">
+<li>beaux</li>
+<li>chateaux</li>
+<li>crux</li>
+<li>faux</li>
+<li>flux</li>
+<li>influx</li>
+<li>lux</li>
+<li>redux</li>
+<li>reflux</li>
+<li>roux</li>
+<li>tableaux</li>
+<li>tux</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="357" data-circle-pattern="_ux">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "beaux chateaux crux, faux flux influx, lux redux reflux, roux tableaux tux";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

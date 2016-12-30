@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: t_ut</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#952 t_ut
+<h2>#952 t_ut</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=takeout" target="_blank">takeout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=taut" target="_blank">taut</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thereabout" target="_blank">thereabout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=throughout" target="_blank">throughout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=throughput" target="_blank">throughput</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=timeout" target="_blank">timeout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tout" target="_blank">tout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trout" target="_blank">trout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tryout" target="_blank">tryout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=turnabout" target="_blank">turnabout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=turnout" target="_blank">turnout</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tut" target="_blank">tut</a></li>
+<ul id="words">
+<li>takeout</li>
+<li>taut</li>
+<li>thereabout</li>
+<li>throughout</li>
+<li>throughput</li>
+<li>timeout</li>
+<li>tout</li>
+<li>trout</li>
+<li>tryout</li>
+<li>turnabout</li>
+<li>turnout</li>
+<li>tut</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="952" data-circle-pattern="t_ut">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "takeout taut thereabout, throughout throughput timeout, tout trout tryout, turnabout turnout tut";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

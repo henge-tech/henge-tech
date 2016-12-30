@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _hore</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#124 _hore
+<h2>#124 _hore</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ashore" target="_blank">ashore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chore" target="_blank">chore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foreshore" target="_blank">foreshore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inshore" target="_blank">inshore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=longshore" target="_blank">longshore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nearshore" target="_blank">nearshore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=offshore" target="_blank">offshore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=onshore" target="_blank">onshore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seashore" target="_blank">seashore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=semaphore" target="_blank">semaphore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shore" target="_blank">shore</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=whore" target="_blank">whore</a></li>
+<ul id="words">
+<li>ashore</li>
+<li>chore</li>
+<li>foreshore</li>
+<li>inshore</li>
+<li>longshore</li>
+<li>nearshore</li>
+<li>offshore</li>
+<li>onshore</li>
+<li>seashore</li>
+<li>semaphore</li>
+<li>shore</li>
+<li>whore</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="124" data-circle-pattern="_hore">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ashore chore foreshore, inshore longshore nearshore, offshore onshore seashore, semaphore shore whore";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

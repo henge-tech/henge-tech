@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: vic_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#981 vic_
+<h2>#981 vic_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vicar" target="_blank">vicar</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vicarage" target="_blank">vicarage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vicarious" target="_blank">vicarious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vice" target="_blank">vice</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vicegerent" target="_blank">vicegerent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=viceroy" target="_blank">viceroy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vicinity" target="_blank">vicinity</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vicious" target="_blank">vicious</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vicissitude" target="_blank">vicissitude</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=victimize" target="_blank">victimize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=victor" target="_blank">victor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=victual" target="_blank">victual</a></li>
+<ul id="words">
+<li>vicar</li>
+<li>vicarage</li>
+<li>vicarious</li>
+<li>vice</li>
+<li>vicegerent</li>
+<li>viceroy</li>
+<li>vicinity</li>
+<li>vicious</li>
+<li>vicissitude</li>
+<li>victimize</li>
+<li>victor</li>
+<li>victual</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="981" data-circle-pattern="vic_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "vicar vicarage vicarious, vice vicegerent viceroy, vicinity vicious vicissitude, victimize victor victual";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

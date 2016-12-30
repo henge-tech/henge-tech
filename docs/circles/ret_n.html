@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ret_n</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#888 ret_n
+<h2>#888 ret_n</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retain" target="_blank">retain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retaliation" target="_blank">retaliation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retardation" target="_blank">retardation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retention" target="_blank">retention</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retraction" target="_blank">retraction</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retrain" target="_blank">retrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retribution" target="_blank">retribution</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retrogression" target="_blank">retrogression</a></li>
+<ul id="words">
+<li>retain</li>
+<li>retaliation</li>
+<li>retardation</li>
+<li>retention</li>
+<li>retraction</li>
+<li>retrain</li>
+<li>retribution</li>
+<li>retrogression</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="888" data-circle-pattern="ret_n">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "retain retaliation retardation retention, retraction retrain retribution retrogression";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

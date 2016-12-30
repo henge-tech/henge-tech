@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _icle</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#131 _icle
+<h2>#131 _icle</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antiparticle" target="_blank">antiparticle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=article" target="_blank">article</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=canticle" target="_blank">canticle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chronicle" target="_blank">chronicle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clavicle" target="_blank">clavicle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cubicle" target="_blank">cubicle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cuticle" target="_blank">cuticle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=follicle" target="_blank">follicle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=icicle" target="_blank">icicle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=testicle" target="_blank">testicle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vehicle" target="_blank">vehicle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ventricle" target="_blank">ventricle</a></li>
+<ul id="words">
+<li>antiparticle</li>
+<li>article</li>
+<li>canticle</li>
+<li>chronicle</li>
+<li>clavicle</li>
+<li>cubicle</li>
+<li>cuticle</li>
+<li>follicle</li>
+<li>icicle</li>
+<li>testicle</li>
+<li>vehicle</li>
+<li>ventricle</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="131" data-circle-pattern="_icle">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "antiparticle article canticle, chronicle clavicle cubicle, cuticle follicle icicle, testicle vehicle ventricle";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

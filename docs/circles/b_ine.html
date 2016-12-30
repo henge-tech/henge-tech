@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_ine</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#436 b_ine
+<h2>#436 b_ine</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=baseline" target="_blank">baseline</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beeline" target="_blank">beeline</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=benedictine" target="_blank">benedictine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=benzine" target="_blank">benzine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloodline" target="_blank">bloodline</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=borderline" target="_blank">borderline</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bovine" target="_blank">bovine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bowline" target="_blank">bowline</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brigantine" target="_blank">brigantine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brine" target="_blank">brine</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=byline" target="_blank">byline</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=byzantine" target="_blank">byzantine</a></li>
+<ul id="words">
+<li>baseline</li>
+<li>beeline</li>
+<li>benedictine</li>
+<li>benzine</li>
+<li>bloodline</li>
+<li>borderline</li>
+<li>bovine</li>
+<li>bowline</li>
+<li>brigantine</li>
+<li>brine</li>
+<li>byline</li>
+<li>byzantine</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="436" data-circle-pattern="b_ine">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "baseline beeline benedictine, benzine bloodline borderline, bovine bowline brigantine, brine byline byzantine";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

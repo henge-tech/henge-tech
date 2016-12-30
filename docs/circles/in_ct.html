@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: in_ct</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#707 in_ct
+<h2>#707 in_ct</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indict" target="_blank">indict</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=induct" target="_blank">induct</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infarct" target="_blank">infarct</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infect" target="_blank">infect</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inflict" target="_blank">inflict</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inspect" target="_blank">inspect</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=instinct" target="_blank">instinct</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=instruct" target="_blank">instruct</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intact" target="_blank">intact</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interdict" target="_blank">interdict</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interject" target="_blank">interject</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intersect" target="_blank">intersect</a></li>
+<ul id="words">
+<li>indict</li>
+<li>induct</li>
+<li>infarct</li>
+<li>infect</li>
+<li>inflict</li>
+<li>inspect</li>
+<li>instinct</li>
+<li>instruct</li>
+<li>intact</li>
+<li>interdict</li>
+<li>interject</li>
+<li>intersect</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="707" data-circle-pattern="in_ct">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "indict induct infarct, infect inflict inspect, instinct instruct intact, interdict interject intersect";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

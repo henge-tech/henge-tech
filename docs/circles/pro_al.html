@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: pro_al</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#854 pro_al
+<h2>#854 pro_al</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=problematical" target="_blank">problematical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=procedural" target="_blank">procedural</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prodigal" target="_blank">prodigal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proportional" target="_blank">proportional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proposal" target="_blank">proposal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=propositional" target="_blank">propositional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prototypical" target="_blank">prototypical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proverbial" target="_blank">proverbial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=providential" target="_blank">providential</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=provincial" target="_blank">provincial</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=provisional" target="_blank">provisional</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=proximal" target="_blank">proximal</a></li>
+<ul id="words">
+<li>problematical</li>
+<li>procedural</li>
+<li>prodigal</li>
+<li>proportional</li>
+<li>proposal</li>
+<li>propositional</li>
+<li>prototypical</li>
+<li>proverbial</li>
+<li>providential</li>
+<li>provincial</li>
+<li>provisional</li>
+<li>proximal</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="854" data-circle-pattern="pro_al">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "problematical procedural prodigal, proportional proposal propositional, prototypical proverbial providential, provincial provisional proximal";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _log</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#172 _log
+<h2>#172 _log</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=analog" target="_blank">analog</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=backlog" target="_blank">backlog</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blog" target="_blank">blog</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=catalog" target="_blank">catalog</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clog" target="_blank">clog</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dialog" target="_blank">dialog</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flog" target="_blank">flog</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homolog" target="_blank">homolog</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=log" target="_blank">log</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=slog" target="_blank">slog</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=travelog" target="_blank">travelog</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=unclog" target="_blank">unclog</a></li>
+<ul id="words">
+<li>analog</li>
+<li>backlog</li>
+<li>blog</li>
+<li>catalog</li>
+<li>clog</li>
+<li>dialog</li>
+<li>flog</li>
+<li>homolog</li>
+<li>log</li>
+<li>slog</li>
+<li>travelog</li>
+<li>unclog</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="172" data-circle-pattern="_log">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "analog backlog blog, catalog clog dialog, flog homolog log, slog travelog unclog";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _arm</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#40 _arm
+<h2>#40 _arm</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=charm" target="_blank">charm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disarm" target="_blank">disarm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=farm" target="_blank">farm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=firearm" target="_blank">firearm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forearm" target="_blank">forearm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=harm" target="_blank">harm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lukewarm" target="_blank">lukewarm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overarm" target="_blank">overarm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sidearm" target="_blank">sidearm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swarm" target="_blank">swarm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=underarm" target="_blank">underarm</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=yardarm" target="_blank">yardarm</a></li>
+<ul id="words">
+<li>charm</li>
+<li>disarm</li>
+<li>farm</li>
+<li>firearm</li>
+<li>forearm</li>
+<li>harm</li>
+<li>lukewarm</li>
+<li>overarm</li>
+<li>sidearm</li>
+<li>swarm</li>
+<li>underarm</li>
+<li>yardarm</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="40" data-circle-pattern="_arm">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "charm disarm farm, firearm forearm harm, lukewarm overarm sidearm, swarm underarm yardarm";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

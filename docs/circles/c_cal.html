@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: c_cal</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#465 c_cal
+<h2>#465 c_cal</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=canonical" target="_blank">canonical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=categorical" target="_blank">categorical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cervical" target="_blank">cervical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chronological" target="_blank">chronological</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clerical" target="_blank">clerical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=clinical" target="_blank">clinical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confocal" target="_blank">confocal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conical" target="_blank">conical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cortical" target="_blank">cortical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cyclical" target="_blank">cyclical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cylindrical" target="_blank">cylindrical</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cynical" target="_blank">cynical</a></li>
+<ul id="words">
+<li>canonical</li>
+<li>categorical</li>
+<li>cervical</li>
+<li>chronological</li>
+<li>clerical</li>
+<li>clinical</li>
+<li>confocal</li>
+<li>conical</li>
+<li>cortical</li>
+<li>cyclical</li>
+<li>cylindrical</li>
+<li>cynical</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="465" data-circle-pattern="c_cal">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "canonical categorical cervical, chronological clerical clinical, confocal conical cortical, cyclical cylindrical cynical";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

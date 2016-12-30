@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: gus_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#683 gus_
+<h2>#683 gus_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gush" target="_blank">gush</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gusher" target="_blank">gusher</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gushing" target="_blank">gushing</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gusset" target="_blank">gusset</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gust" target="_blank">gust</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gustatory" target="_blank">gustatory</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gusto" target="_blank">gusto</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gusty" target="_blank">gusty</a></li>
+<ul id="words">
+<li>gush</li>
+<li>gusher</li>
+<li>gushing</li>
+<li>gusset</li>
+<li>gust</li>
+<li>gustatory</li>
+<li>gusto</li>
+<li>gusty</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="683" data-circle-pattern="gus_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "gush gusher gushing gusset, gust gustatory gusto gusty";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

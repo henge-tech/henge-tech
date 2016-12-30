@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ibe</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#129 _ibe
+<h2>#129 _ibe</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ascribe" target="_blank">ascribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bribe" target="_blank">bribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=describe" target="_blank">describe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=diatribe" target="_blank">diatribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=imbibe" target="_blank">imbibe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inscribe" target="_blank">inscribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=jibe" target="_blank">jibe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prescribe" target="_blank">prescribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scribe" target="_blank">scribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subscribe" target="_blank">subscribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transcribe" target="_blank">transcribe</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vibe" target="_blank">vibe</a></li>
+<ul id="words">
+<li>ascribe</li>
+<li>bribe</li>
+<li>describe</li>
+<li>diatribe</li>
+<li>imbibe</li>
+<li>inscribe</li>
+<li>jibe</li>
+<li>prescribe</li>
+<li>scribe</li>
+<li>subscribe</li>
+<li>transcribe</li>
+<li>vibe</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="129" data-circle-pattern="_ibe">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ascribe bribe describe, diatribe imbibe inscribe, jibe prescribe scribe, subscribe transcribe vibe";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

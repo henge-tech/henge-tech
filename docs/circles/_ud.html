@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ud</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#340 _ud
+<h2>#340 _ud</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aloud" target="_blank">aloud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=applaud" target="_blank">applaud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bud" target="_blank">bud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crud" target="_blank">crud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cud" target="_blank">cud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defraud" target="_blank">defraud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dud" target="_blank">dud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feud" target="_blank">feud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fraud" target="_blank">fraud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laud" target="_blank">laud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pseud" target="_blank">pseud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scud" target="_blank">scud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shroud" target="_blank">shroud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spud" target="_blank">spud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stud" target="_blank">stud</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=thud" target="_blank">thud</a></li>
+<ul id="words">
+<li>aloud</li>
+<li>applaud</li>
+<li>bud</li>
+<li>crud</li>
+<li>cud</li>
+<li>defraud</li>
+<li>dud</li>
+<li>feud</li>
+<li>fraud</li>
+<li>laud</li>
+<li>pseud</li>
+<li>scud</li>
+<li>shroud</li>
+<li>spud</li>
+<li>stud</li>
+<li>thud</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="340" data-circle-pattern="_ud">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "aloud applaud bud crud, cud defraud dud feud, fraud laud pseud scud, shroud spud stud thud";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

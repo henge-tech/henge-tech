@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ird</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#149 _ird
+<h2>#149 _ird</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blackbird" target="_blank">blackbird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bluebird" target="_blank">bluebird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cowbird" target="_blank">cowbird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gird" target="_blank">gird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hummingbird" target="_blank">hummingbird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ladybird" target="_blank">ladybird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=laird" target="_blank">laird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mockingbird" target="_blank">mockingbird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=seabird" target="_blank">seabird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snowbird" target="_blank">snowbird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=songbird" target="_blank">songbird</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=weird" target="_blank">weird</a></li>
+<ul id="words">
+<li>blackbird</li>
+<li>bluebird</li>
+<li>cowbird</li>
+<li>gird</li>
+<li>hummingbird</li>
+<li>ladybird</li>
+<li>laird</li>
+<li>mockingbird</li>
+<li>seabird</li>
+<li>snowbird</li>
+<li>songbird</li>
+<li>weird</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="149" data-circle-pattern="_ird">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "blackbird bluebird cowbird, gird hummingbird ladybird, laird mockingbird seabird, snowbird songbird weird";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

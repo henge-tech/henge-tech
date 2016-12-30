@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _band</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#47 _band
+<h2>#47 _band</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=armband" target="_blank">armband</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=band" target="_blank">band</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=broadband" target="_blank">broadband</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contraband" target="_blank">contraband</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disband" target="_blank">disband</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=headband" target="_blank">headband</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=husband" target="_blank">husband</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neckband" target="_blank">neckband</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noseband" target="_blank">noseband</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=saraband" target="_blank">saraband</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=waistband" target="_blank">waistband</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wristband" target="_blank">wristband</a></li>
+<ul id="words">
+<li>armband</li>
+<li>band</li>
+<li>broadband</li>
+<li>contraband</li>
+<li>disband</li>
+<li>headband</li>
+<li>husband</li>
+<li>neckband</li>
+<li>noseband</li>
+<li>saraband</li>
+<li>waistband</li>
+<li>wristband</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="47" data-circle-pattern="_band">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "armband band broadband, contraband disband headband, husband neckband noseband, saraband waistband wristband";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

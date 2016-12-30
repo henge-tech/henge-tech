@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _athy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#43 _athy
+<h2>#43 _athy</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=antipathy" target="_blank">antipathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apathy" target="_blank">apathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breathy" target="_blank">breathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=empathy" target="_blank">empathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=encephalopathy" target="_blank">encephalopathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homeopathy" target="_blank">homeopathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydropathy" target="_blank">hydropathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=naturopathy" target="_blank">naturopathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=neuropathy" target="_blank">neuropathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=osteopathy" target="_blank">osteopathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sympathy" target="_blank">sympathy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=telepathy" target="_blank">telepathy</a></li>
+<ul id="words">
+<li>antipathy</li>
+<li>apathy</li>
+<li>breathy</li>
+<li>empathy</li>
+<li>encephalopathy</li>
+<li>homeopathy</li>
+<li>hydropathy</li>
+<li>naturopathy</li>
+<li>neuropathy</li>
+<li>osteopathy</li>
+<li>sympathy</li>
+<li>telepathy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="43" data-circle-pattern="_athy">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "antipathy apathy breathy, empathy encephalopathy homeopathy, hydropathy naturopathy neuropathy, osteopathy sympathy telepathy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

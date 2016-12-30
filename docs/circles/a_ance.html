@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: a_ance</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#370 a_ance
+<h2>#370 a_ance</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abeyance" target="_blank">abeyance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abundance" target="_blank">abundance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acceptance" target="_blank">acceptance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=accordance" target="_blank">accordance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=acquaintance" target="_blank">acquaintance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=admittance" target="_blank">admittance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allegiance" target="_blank">allegiance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=alliance" target="_blank">alliance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allowance" target="_blank">allowance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ambiance" target="_blank">ambiance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ambulance" target="_blank">ambulance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=annoyance" target="_blank">annoyance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appearance" target="_blank">appearance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appliance" target="_blank">appliance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=arrogance" target="_blank">arrogance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=askance" target="_blank">askance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assistance" target="_blank">assistance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assurance" target="_blank">assurance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=attendance" target="_blank">attendance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=avoidance" target="_blank">avoidance</a></li>
+<ul id="words">
+<li>abeyance</li>
+<li>abundance</li>
+<li>acceptance</li>
+<li>accordance</li>
+<li>acquaintance</li>
+<li>admittance</li>
+<li>allegiance</li>
+<li>alliance</li>
+<li>allowance</li>
+<li>ambiance</li>
+<li>ambulance</li>
+<li>annoyance</li>
+<li>appearance</li>
+<li>appliance</li>
+<li>arrogance</li>
+<li>askance</li>
+<li>assistance</li>
+<li>assurance</li>
+<li>attendance</li>
+<li>avoidance</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="370" data-circle-pattern="a_ance">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "abeyance abundance acceptance accordance acquaintance, admittance allegiance alliance allowance ambiance, ambulance annoyance appearance appliance arrogance, askance assistance assurance attendance avoidance";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

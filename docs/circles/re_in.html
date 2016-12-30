@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: re_in</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#873 re_in
+<h2>#873 re_in</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=refrain" target="_blank">refrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=regain" target="_blank">regain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rein" target="_blank">rein</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rejoin" target="_blank">rejoin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remain" target="_blank">remain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resin" target="_blank">resin</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=restrain" target="_blank">restrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retain" target="_blank">retain</a></li>
+<ul id="words">
+<li>refrain</li>
+<li>regain</li>
+<li>rein</li>
+<li>rejoin</li>
+<li>remain</li>
+<li>resin</li>
+<li>restrain</li>
+<li>retain</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="873" data-circle-pattern="re_in">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "refrain regain rein rejoin, remain resin restrain retain";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

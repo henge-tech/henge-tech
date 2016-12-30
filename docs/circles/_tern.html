@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _tern</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#319 _tern
+<h2>#319 _tern</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astern" target="_blank">astern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bittern" target="_blank">bittern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cistern" target="_blank">cistern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cittern" target="_blank">cittern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=extern" target="_blank">extern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intern" target="_blank">intern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lantern" target="_blank">lantern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lectern" target="_blank">lectern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pattern" target="_blank">pattern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stern" target="_blank">stern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subaltern" target="_blank">subaltern</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tern" target="_blank">tern</a></li>
+<ul id="words">
+<li>astern</li>
+<li>bittern</li>
+<li>cistern</li>
+<li>cittern</li>
+<li>extern</li>
+<li>intern</li>
+<li>lantern</li>
+<li>lectern</li>
+<li>pattern</li>
+<li>stern</li>
+<li>subaltern</li>
+<li>tern</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="319" data-circle-pattern="_tern">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "astern bittern cistern, cittern extern intern, lantern lectern pattern, stern subaltern tern";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

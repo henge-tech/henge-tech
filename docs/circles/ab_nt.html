@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ab_nt</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#390 ab_nt
+<h2>#390 ab_nt</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abandonment" target="_blank">abandonment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abasement" target="_blank">abasement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abatement" target="_blank">abatement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=aberrant" target="_blank">aberrant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abhorrent" target="_blank">abhorrent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abolishment" target="_blank">abolishment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abridgment" target="_blank">abridgment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=absent" target="_blank">absent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=absorbent" target="_blank">absorbent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abstinent" target="_blank">abstinent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abundant" target="_blank">abundant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=abutment" target="_blank">abutment</a></li>
+<ul id="words">
+<li>abandonment</li>
+<li>abasement</li>
+<li>abatement</li>
+<li>aberrant</li>
+<li>abhorrent</li>
+<li>abolishment</li>
+<li>abridgment</li>
+<li>absent</li>
+<li>absorbent</li>
+<li>abstinent</li>
+<li>abundant</li>
+<li>abutment</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="390" data-circle-pattern="ab_nt">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "abandonment abasement abatement, aberrant abhorrent abolishment, abridgment absent absorbent, abstinent abundant abutment";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

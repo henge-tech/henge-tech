@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _rish</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#276 _rish
+<h2>#276 _rish</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=amateurish" target="_blank">amateurish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bearish" target="_blank">bearish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=boorish" target="_blank">boorish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cherish" target="_blank">cherish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=feverish" target="_blank">feverish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flourish" target="_blank">flourish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=garish" target="_blank">garish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gibberish" target="_blank">gibberish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nightmarish" target="_blank">nightmarish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nourish" target="_blank">nourish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=parish" target="_blank">parish</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=perish" target="_blank">perish</a></li>
+<ul id="words">
+<li>amateurish</li>
+<li>bearish</li>
+<li>boorish</li>
+<li>cherish</li>
+<li>feverish</li>
+<li>flourish</li>
+<li>garish</li>
+<li>gibberish</li>
+<li>nightmarish</li>
+<li>nourish</li>
+<li>parish</li>
+<li>perish</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="276" data-circle-pattern="_rish">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "amateurish bearish boorish, cherish feverish flourish, garish gibberish nightmarish, nourish parish perish";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

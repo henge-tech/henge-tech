@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: s_ow</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#907 s_ow
+<h2>#907 s_ow</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sallow" target="_blank">sallow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scarecrow" target="_blank">scarecrow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scow" target="_blank">scow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shallow" target="_blank">shallow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sideshow" target="_blank">sideshow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=snowplow" target="_blank">snowplow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=somehow" target="_blank">somehow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sorrow" target="_blank">sorrow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sow" target="_blank">sow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sparrow" target="_blank">sparrow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stow" target="_blank">stow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swallow" target="_blank">swallow</a></li>
+<ul id="words">
+<li>sallow</li>
+<li>scarecrow</li>
+<li>scow</li>
+<li>shallow</li>
+<li>sideshow</li>
+<li>snowplow</li>
+<li>somehow</li>
+<li>sorrow</li>
+<li>sow</li>
+<li>sparrow</li>
+<li>stow</li>
+<li>swallow</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="907" data-circle-pattern="s_ow">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "sallow scarecrow scow, shallow sideshow snowplow, somehow sorrow sow, sparrow stow swallow";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

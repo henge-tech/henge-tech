@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: v_or</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#975 v_or
+<h2>#975 v_or</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=valor" target="_blank">valor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vapor" target="_blank">vapor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vasomotor" target="_blank">vasomotor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vector" target="_blank">vector</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vendor" target="_blank">vendor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ventilator" target="_blank">ventilator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vibrator" target="_blank">vibrator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=victor" target="_blank">victor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vigor" target="_blank">vigor</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vindicator" target="_blank">vindicator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=violator" target="_blank">violator</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=visor" target="_blank">visor</a></li>
+<ul id="words">
+<li>valor</li>
+<li>vapor</li>
+<li>vasomotor</li>
+<li>vector</li>
+<li>vendor</li>
+<li>ventilator</li>
+<li>vibrator</li>
+<li>victor</li>
+<li>vigor</li>
+<li>vindicator</li>
+<li>violator</li>
+<li>visor</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="975" data-circle-pattern="v_or">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "valor vapor vasomotor, vector vendor ventilator, vibrator victor vigor, vindicator violator visor";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

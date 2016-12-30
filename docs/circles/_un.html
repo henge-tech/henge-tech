@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _un</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#349 _un
+<h2>#349 _un</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bun" target="_blank">bun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dun" target="_blank">dun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=faun" target="_blank">faun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=homespun" target="_blank">homespun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=leprechaun" target="_blank">leprechaun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=noun" target="_blank">noun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nun" target="_blank">nun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=outrun" target="_blank">outrun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=overrun" target="_blank">overrun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pronoun" target="_blank">pronoun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pun" target="_blank">pun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rerun" target="_blank">rerun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shun" target="_blank">shun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spun" target="_blank">spun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stun" target="_blank">stun</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tun" target="_blank">tun</a></li>
+<ul id="words">
+<li>bun</li>
+<li>dun</li>
+<li>faun</li>
+<li>homespun</li>
+<li>leprechaun</li>
+<li>noun</li>
+<li>nun</li>
+<li>outrun</li>
+<li>overrun</li>
+<li>pronoun</li>
+<li>pun</li>
+<li>rerun</li>
+<li>shun</li>
+<li>spun</li>
+<li>stun</li>
+<li>tun</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="349" data-circle-pattern="_un">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bun dun faun homespun, leprechaun noun nun outrun, overrun pronoun pun rerun, shun spun stun tun";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

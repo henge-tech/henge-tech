@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _tify</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#326 _tify
+<h2>#326 _tify</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=certify" target="_blank">certify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demystify" target="_blank">demystify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fortify" target="_blank">fortify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gratify" target="_blank">gratify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=identify" target="_blank">identify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=justify" target="_blank">justify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mystify" target="_blank">mystify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quantify" target="_blank">quantify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ratify" target="_blank">ratify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rectify" target="_blank">rectify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sanctify" target="_blank">sanctify</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=testify" target="_blank">testify</a></li>
+<ul id="words">
+<li>certify</li>
+<li>demystify</li>
+<li>fortify</li>
+<li>gratify</li>
+<li>identify</li>
+<li>justify</li>
+<li>mystify</li>
+<li>quantify</li>
+<li>ratify</li>
+<li>rectify</li>
+<li>sanctify</li>
+<li>testify</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="326" data-circle-pattern="_tify">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "certify demystify fortify, gratify identify justify, mystify quantify ratify, rectify sanctify testify";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

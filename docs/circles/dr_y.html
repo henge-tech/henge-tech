@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dr_y</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#611 dr_y
+<h2>#611 dr_y</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drapery" target="_blank">drapery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drastically" target="_blank">drastically</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dray" target="_blank">dray</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dreadfully" target="_blank">dreadfully</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dreamily" target="_blank">dreamily</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dreary" target="_blank">dreary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dromedary" target="_blank">dromedary</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=droopy" target="_blank">droopy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dropsy" target="_blank">dropsy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drowsy" target="_blank">drowsy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drudgery" target="_blank">drudgery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dryly" target="_blank">dryly</a></li>
+<ul id="words">
+<li>drapery</li>
+<li>drastically</li>
+<li>dray</li>
+<li>dreadfully</li>
+<li>dreamily</li>
+<li>dreary</li>
+<li>dromedary</li>
+<li>droopy</li>
+<li>dropsy</li>
+<li>drowsy</li>
+<li>drudgery</li>
+<li>dryly</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="611" data-circle-pattern="dr_y">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "drapery drastically dray, dreadfully dreamily dreary, dromedary droopy dropsy, drowsy drudgery dryly";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

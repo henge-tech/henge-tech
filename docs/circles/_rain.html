@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _rain</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#253 _rain
+<h2>#253 _rain</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=birdbrain" target="_blank">birdbrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constrain" target="_blank">constrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detrain" target="_blank">detrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drain" target="_blank">drain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grain" target="_blank">grain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ingrain" target="_blank">ingrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=midbrain" target="_blank">midbrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=quatrain" target="_blank">quatrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rain" target="_blank">rain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=refrain" target="_blank">refrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=restrain" target="_blank">restrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=retrain" target="_blank">retrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sprain" target="_blank">sprain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strain" target="_blank">strain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=terrain" target="_blank">terrain</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=train" target="_blank">train</a></li>
+<ul id="words">
+<li>birdbrain</li>
+<li>constrain</li>
+<li>detrain</li>
+<li>drain</li>
+<li>grain</li>
+<li>ingrain</li>
+<li>midbrain</li>
+<li>quatrain</li>
+<li>rain</li>
+<li>refrain</li>
+<li>restrain</li>
+<li>retrain</li>
+<li>sprain</li>
+<li>strain</li>
+<li>terrain</li>
+<li>train</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="253" data-circle-pattern="_rain">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "birdbrain constrain detrain drain, grain ingrain midbrain quatrain, rain refrain restrain retrain, sprain strain terrain train";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

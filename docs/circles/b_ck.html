@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_ck</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#430 b_ck
+<h2>#430 b_ck</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=backtrack" target="_blank">backtrack</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bailiwick" target="_blank">bailiwick</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bannock" target="_blank">bannock</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bareback" target="_blank">bareback</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beck" target="_blank">beck</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bedrock" target="_blank">bedrock</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bloodstock" target="_blank">bloodstock</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bock" target="_blank">bock</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=breakneck" target="_blank">breakneck</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buck" target="_blank">buck</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bullock" target="_blank">bullock</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buttock" target="_blank">buttock</a></li>
+<ul id="words">
+<li>backtrack</li>
+<li>bailiwick</li>
+<li>bannock</li>
+<li>bareback</li>
+<li>beck</li>
+<li>bedrock</li>
+<li>bloodstock</li>
+<li>bock</li>
+<li>breakneck</li>
+<li>buck</li>
+<li>bullock</li>
+<li>buttock</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="430" data-circle-pattern="b_ck">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "backtrack bailiwick bannock, bareback beck bedrock, bloodstock bock breakneck, buck bullock buttock";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

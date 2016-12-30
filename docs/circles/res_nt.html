@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: res_nt</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#887 res_nt
+<h2>#887 res_nt</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resent" target="_blank">resent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resentment" target="_blank">resentment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resettlement" target="_blank">resettlement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resident" target="_blank">resident</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resilient" target="_blank">resilient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resistant" target="_blank">resistant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resonant" target="_blank">resonant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=respondent" target="_blank">respondent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=restatement" target="_blank">restatement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=restaurant" target="_blank">restaurant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=restraint" target="_blank">restraint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resultant" target="_blank">resultant</a></li>
+<ul id="words">
+<li>resent</li>
+<li>resentment</li>
+<li>resettlement</li>
+<li>resident</li>
+<li>resilient</li>
+<li>resistant</li>
+<li>resonant</li>
+<li>respondent</li>
+<li>restatement</li>
+<li>restaurant</li>
+<li>restraint</li>
+<li>resultant</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="887" data-circle-pattern="res_nt">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "resent resentment resettlement, resident resilient resistant, resonant respondent restatement, restaurant restraint resultant";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

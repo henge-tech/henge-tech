@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: suf_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#943 suf_
+<h2>#943 suf_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffer" target="_blank">suffer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sufferance" target="_blank">sufferance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sufferer" target="_blank">sufferer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffice" target="_blank">suffice</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sufficient" target="_blank">sufficient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffix" target="_blank">suffix</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffocate" target="_blank">suffocate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffocated" target="_blank">suffocated</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffragan" target="_blank">suffragan</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffrage" target="_blank">suffrage</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffragette" target="_blank">suffragette</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suffuse" target="_blank">suffuse</a></li>
+<ul id="words">
+<li>suffer</li>
+<li>sufferance</li>
+<li>sufferer</li>
+<li>suffice</li>
+<li>sufficient</li>
+<li>suffix</li>
+<li>suffocate</li>
+<li>suffocated</li>
+<li>suffragan</li>
+<li>suffrage</li>
+<li>suffragette</li>
+<li>suffuse</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="943" data-circle-pattern="suf_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "suffer sufferance sufferer, suffice sufficient suffix, suffocate suffocated suffragan, suffrage suffragette suffuse";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

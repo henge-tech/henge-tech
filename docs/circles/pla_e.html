@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: pla_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#840 pla_e
+<h2>#840 pla_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=placate" target="_blank">placate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plagiarize" target="_blank">plagiarize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plague" target="_blank">plague</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plaice" target="_blank">plaice</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plaintive" target="_blank">plaintive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plane" target="_blank">plane</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plaque" target="_blank">plaque</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=plausible" target="_blank">plausible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=playable" target="_blank">playable</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=playhouse" target="_blank">playhouse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=playmate" target="_blank">playmate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=playtime" target="_blank">playtime</a></li>
+<ul id="words">
+<li>placate</li>
+<li>plagiarize</li>
+<li>plague</li>
+<li>plaice</li>
+<li>plaintive</li>
+<li>plane</li>
+<li>plaque</li>
+<li>plausible</li>
+<li>playable</li>
+<li>playhouse</li>
+<li>playmate</li>
+<li>playtime</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="840" data-circle-pattern="pla_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "placate plagiarize plague, plaice plaintive plane, plaque plausible playable, playhouse playmate playtime";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

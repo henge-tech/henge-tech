@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: c_ize</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#474 c_ize
+<h2>#474 c_ize</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cannibalize" target="_blank">cannibalize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capitalize" target="_blank">capitalize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capsize" target="_blank">capsize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=categorize" target="_blank">categorize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=centralize" target="_blank">centralize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=characterize" target="_blank">characterize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=colonize" target="_blank">colonize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=commercialize" target="_blank">commercialize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conceptualize" target="_blank">conceptualize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=criminalize" target="_blank">criminalize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=criticize" target="_blank">criticize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crystallize" target="_blank">crystallize</a></li>
+<ul id="words">
+<li>cannibalize</li>
+<li>capitalize</li>
+<li>capsize</li>
+<li>categorize</li>
+<li>centralize</li>
+<li>characterize</li>
+<li>colonize</li>
+<li>commercialize</li>
+<li>conceptualize</li>
+<li>criminalize</li>
+<li>criticize</li>
+<li>crystallize</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="474" data-circle-pattern="c_ize">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "cannibalize capitalize capsize, categorize centralize characterize, colonize commercialize conceptualize, criminalize criticize crystallize";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

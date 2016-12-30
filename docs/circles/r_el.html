@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: r_el</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#863 r_el
+<h2>#863 r_el</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rappel" target="_blank">rappel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ratel" target="_blank">ratel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ravel" target="_blank">ravel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rebel" target="_blank">rebel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reel" target="_blank">reel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=refuel" target="_blank">refuel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=remodel" target="_blank">remodel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repel" target="_blank">repel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=revel" target="_blank">revel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=roundel" target="_blank">roundel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rowel" target="_blank">rowel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=runnel" target="_blank">runnel</a></li>
+<ul id="words">
+<li>rappel</li>
+<li>ratel</li>
+<li>ravel</li>
+<li>rebel</li>
+<li>reel</li>
+<li>refuel</li>
+<li>remodel</li>
+<li>repel</li>
+<li>revel</li>
+<li>roundel</li>
+<li>rowel</li>
+<li>runnel</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="863" data-circle-pattern="r_el">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "rappel ratel ravel, rebel reel refuel, remodel repel revel, roundel rowel runnel";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

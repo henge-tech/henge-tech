@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _pose</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#246 _pose
+<h2>#246 _pose</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adipose" target="_blank">adipose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=compose" target="_blank">compose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decompose" target="_blank">decompose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depose" target="_blank">depose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dispose" target="_blank">dispose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=expose" target="_blank">expose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=impose" target="_blank">impose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=interpose" target="_blank">interpose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=juxtapose" target="_blank">juxtapose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oppose" target="_blank">oppose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=predispose" target="_blank">predispose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=presuppose" target="_blank">presuppose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=purpose" target="_blank">purpose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repose" target="_blank">repose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=suppose" target="_blank">suppose</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transpose" target="_blank">transpose</a></li>
+<ul id="words">
+<li>adipose</li>
+<li>compose</li>
+<li>decompose</li>
+<li>depose</li>
+<li>dispose</li>
+<li>expose</li>
+<li>impose</li>
+<li>interpose</li>
+<li>juxtapose</li>
+<li>oppose</li>
+<li>predispose</li>
+<li>presuppose</li>
+<li>purpose</li>
+<li>repose</li>
+<li>suppose</li>
+<li>transpose</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="246" data-circle-pattern="_pose">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "adipose compose decompose depose, dispose expose impose interpose, juxtapose oppose predispose presuppose, purpose repose suppose transpose";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

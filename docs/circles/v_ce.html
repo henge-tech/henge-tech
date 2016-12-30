@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: v_ce</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#972 v_ce
+<h2>#972 v_ce</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=valance" target="_blank">valance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=valence" target="_blank">valence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=variance" target="_blank">variance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vehemence" target="_blank">vehemence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vengeance" target="_blank">vengeance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Venice" target="_blank">Venice</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vice" target="_blank">vice</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vigilance" target="_blank">vigilance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=violence" target="_blank">violence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=virulence" target="_blank">virulence</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=vivace" target="_blank">vivace</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=voice" target="_blank">voice</a></li>
+<ul id="words">
+<li>valance</li>
+<li>valence</li>
+<li>variance</li>
+<li>vehemence</li>
+<li>vengeance</li>
+<li>Venice</li>
+<li>vice</li>
+<li>vigilance</li>
+<li>violence</li>
+<li>virulence</li>
+<li>vivace</li>
+<li>voice</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="972" data-circle-pattern="v_ce">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "valance valence variance, vehemence vengeance Venice, vice vigilance violence, virulence vivace voice";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

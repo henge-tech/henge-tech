@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _eum</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#107 _eum
+<h2>#107 _eum</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=athenaeum" target="_blank">athenaeum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=coliseum" target="_blank">coliseum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=Colosseum" target="_blank">Colosseum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=geum" target="_blank">geum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ileum" target="_blank">ileum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=linoleum" target="_blank">linoleum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=lyceum" target="_blank">lyceum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mausoleum" target="_blank">mausoleum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=museum" target="_blank">museum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=peritoneum" target="_blank">peritoneum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=petroleum" target="_blank">petroleum</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=rheum" target="_blank">rheum</a></li>
+<ul id="words">
+<li>athenaeum</li>
+<li>coliseum</li>
+<li>Colosseum</li>
+<li>geum</li>
+<li>ileum</li>
+<li>linoleum</li>
+<li>lyceum</li>
+<li>mausoleum</li>
+<li>museum</li>
+<li>peritoneum</li>
+<li>petroleum</li>
+<li>rheum</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="107" data-circle-pattern="_eum">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "athenaeum coliseum Colosseum, geum ileum linoleum, lyceum mausoleum museum, peritoneum petroleum rheum";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _rit</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#278 _rit
+<h2>#278 _rit</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bowsprit" target="_blank">bowsprit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brit" target="_blank">brit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=crit" target="_blank">crit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=culprit" target="_blank">culprit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=demerit" target="_blank">demerit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disinherit" target="_blank">disinherit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=esprit" target="_blank">esprit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grit" target="_blank">grit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inherit" target="_blank">inherit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=merit" target="_blank">merit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spirit" target="_blank">spirit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=writ" target="_blank">writ</a></li>
+<ul id="words">
+<li>bowsprit</li>
+<li>brit</li>
+<li>crit</li>
+<li>culprit</li>
+<li>demerit</li>
+<li>disinherit</li>
+<li>esprit</li>
+<li>grit</li>
+<li>inherit</li>
+<li>merit</li>
+<li>spirit</li>
+<li>writ</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="278" data-circle-pattern="_rit">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bowsprit brit crit, culprit demerit disinherit, esprit grit inherit, merit spirit writ";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

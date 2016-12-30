@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: i_ant</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#699 i_ant
+<h2>#699 i_ant</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ignorant" target="_blank">ignorant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=immigrant" target="_blank">immigrant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=implant" target="_blank">implant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=incessant" target="_blank">incessant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=indignant" target="_blank">indignant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inelegant" target="_blank">inelegant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infant" target="_blank">infant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=informant" target="_blank">informant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=inhabitant" target="_blank">inhabitant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=insignificant" target="_blank">insignificant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=instant" target="_blank">instant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=intolerant" target="_blank">intolerant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=invariant" target="_blank">invariant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irrelevant" target="_blank">irrelevant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=irritant" target="_blank">irritant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=itinerant" target="_blank">itinerant</a></li>
+<ul id="words">
+<li>ignorant</li>
+<li>immigrant</li>
+<li>implant</li>
+<li>incessant</li>
+<li>indignant</li>
+<li>inelegant</li>
+<li>infant</li>
+<li>informant</li>
+<li>inhabitant</li>
+<li>insignificant</li>
+<li>instant</li>
+<li>intolerant</li>
+<li>invariant</li>
+<li>irrelevant</li>
+<li>irritant</li>
+<li>itinerant</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="699" data-circle-pattern="i_ant">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "ignorant immigrant implant incessant, indignant inelegant infant informant, inhabitant insignificant instant intolerant, invariant irrelevant irritant itinerant";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

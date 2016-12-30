@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dai_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#564 dai_
+<h2>#564 dai_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daily" target="_blank">daily</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daimon" target="_blank">daimon</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dainties" target="_blank">dainties</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daintily" target="_blank">daintily</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daintiness" target="_blank">daintiness</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dainty" target="_blank">dainty</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daiquiri" target="_blank">daiquiri</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dairy" target="_blank">dairy</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dairymaid" target="_blank">dairymaid</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dairyman" target="_blank">dairyman</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dais" target="_blank">dais</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=daisy" target="_blank">daisy</a></li>
+<ul id="words">
+<li>daily</li>
+<li>daimon</li>
+<li>dainties</li>
+<li>daintily</li>
+<li>daintiness</li>
+<li>dainty</li>
+<li>daiquiri</li>
+<li>dairy</li>
+<li>dairymaid</li>
+<li>dairyman</li>
+<li>dais</li>
+<li>daisy</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="564" data-circle-pattern="dai_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "daily daimon dainties, daintily daintiness dainty, daiquiri dairy dairymaid, dairyman dais daisy";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _uent</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#342 _uent
+<h2>#342 _uent</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=affluent" target="_blank">affluent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confluent" target="_blank">confluent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=congruent" target="_blank">congruent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=consequent" target="_blank">consequent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=constituent" target="_blank">constituent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=delinquent" target="_blank">delinquent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=effluent" target="_blank">effluent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=eloquent" target="_blank">eloquent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluent" target="_blank">fluent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frequent" target="_blank">frequent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infrequent" target="_blank">infrequent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=subsequent" target="_blank">subsequent</a></li>
+<ul id="words">
+<li>affluent</li>
+<li>confluent</li>
+<li>congruent</li>
+<li>consequent</li>
+<li>constituent</li>
+<li>delinquent</li>
+<li>effluent</li>
+<li>eloquent</li>
+<li>fluent</li>
+<li>frequent</li>
+<li>infrequent</li>
+<li>subsequent</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="342" data-circle-pattern="_uent">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "affluent confluent congruent, consequent constituent delinquent, effluent eloquent fluent, frequent infrequent subsequent";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

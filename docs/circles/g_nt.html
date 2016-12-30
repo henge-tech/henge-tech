@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: g_nt</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#668 g_nt
+<h2>#668 g_nt</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gallant" target="_blank">gallant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gallivant" target="_blank">gallivant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=garment" target="_blank">garment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gaunt" target="_blank">gaunt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gent" target="_blank">gent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=glint" target="_blank">glint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=government" target="_blank">government</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gradient" target="_blank">gradient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grandparent" target="_blank">grandparent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grant" target="_blank">grant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grunt" target="_blank">grunt</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gunpoint" target="_blank">gunpoint</a></li>
+<ul id="words">
+<li>gallant</li>
+<li>gallivant</li>
+<li>garment</li>
+<li>gaunt</li>
+<li>gent</li>
+<li>glint</li>
+<li>government</li>
+<li>gradient</li>
+<li>grandparent</li>
+<li>grant</li>
+<li>grunt</li>
+<li>gunpoint</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="668" data-circle-pattern="g_nt">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "gallant gallivant garment, gaunt gent glint, government gradient grandparent, grant grunt gunpoint";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: ap_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#413 ap_t
+<h2>#413 ap_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apart" target="_blank">apart</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apartment" target="_blank">apartment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apiarist" target="_blank">apiarist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apologist" target="_blank">apologist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apparent" target="_blank">apparent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appeasement" target="_blank">appeasement</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appellant" target="_blank">appellant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=applicant" target="_blank">applicant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=appoint" target="_blank">appoint</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apportionment" target="_blank">apportionment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apricot" target="_blank">apricot</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=apt" target="_blank">apt</a></li>
+<ul id="words">
+<li>apart</li>
+<li>apartment</li>
+<li>apiarist</li>
+<li>apologist</li>
+<li>apparent</li>
+<li>appeasement</li>
+<li>appellant</li>
+<li>applicant</li>
+<li>appoint</li>
+<li>apportionment</li>
+<li>apricot</li>
+<li>apt</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="413" data-circle-pattern="ap_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "apart apartment apiarist, apologist apparent appeasement, appellant applicant appoint, apportionment apricot apt";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: conf_on</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#529 conf_on
+<h2>#529 conf_on</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confabulation" target="_blank">confabulation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confection" target="_blank">confection</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confederation" target="_blank">confederation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confession" target="_blank">confession</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=configuration" target="_blank">configuration</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confirmation" target="_blank">confirmation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confiscation" target="_blank">confiscation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conflagration" target="_blank">conflagration</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conflation" target="_blank">conflation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=conformation" target="_blank">conformation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confrontation" target="_blank">confrontation</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=confutation" target="_blank">confutation</a></li>
+<ul id="words">
+<li>confabulation</li>
+<li>confection</li>
+<li>confederation</li>
+<li>confession</li>
+<li>configuration</li>
+<li>confirmation</li>
+<li>confiscation</li>
+<li>conflagration</li>
+<li>conflation</li>
+<li>conformation</li>
+<li>confrontation</li>
+<li>confutation</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="529" data-circle-pattern="conf_on">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "confabulation confection confederation, confession configuration confirmation, confiscation conflagration conflation, conformation confrontation confutation";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

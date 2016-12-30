@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: b_ery</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#432 b_ery
+<h2>#432 b_ery</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bakery" target="_blank">bakery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=battery" target="_blank">battery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=beery" target="_blank">beery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bindery" target="_blank">bindery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=blustery" target="_blank">blustery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bravery" target="_blank">bravery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=brewery" target="_blank">brewery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bribery" target="_blank">bribery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buffoonery" target="_blank">buffoonery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buggery" target="_blank">buggery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=butchery" target="_blank">butchery</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=buttery" target="_blank">buttery</a></li>
+<ul id="words">
+<li>bakery</li>
+<li>battery</li>
+<li>beery</li>
+<li>bindery</li>
+<li>blustery</li>
+<li>bravery</li>
+<li>brewery</li>
+<li>bribery</li>
+<li>buffoonery</li>
+<li>buggery</li>
+<li>butchery</li>
+<li>buttery</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="432" data-circle-pattern="b_ery">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "bakery battery beery, bindery blustery bravery, brewery bribery buffoonery, buggery butchery buttery";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

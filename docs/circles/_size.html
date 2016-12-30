@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _size</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#303 _size
+<h2>#303 _size</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=assize" target="_blank">assize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=capsize" target="_blank">capsize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=downsize" target="_blank">downsize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=emphasize" target="_blank">emphasize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fantasize" target="_blank">fantasize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hypothesize" target="_blank">hypothesize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=midsize" target="_blank">midsize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=oversize" target="_blank">oversize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=resize" target="_blank">resize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=size" target="_blank">size</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=supersize" target="_blank">supersize</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=synthesize" target="_blank">synthesize</a></li>
+<ul id="words">
+<li>assize</li>
+<li>capsize</li>
+<li>downsize</li>
+<li>emphasize</li>
+<li>fantasize</li>
+<li>hypothesize</li>
+<li>midsize</li>
+<li>oversize</li>
+<li>resize</li>
+<li>size</li>
+<li>supersize</li>
+<li>synthesize</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="303" data-circle-pattern="_size">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "assize capsize downsize, emphasize fantasize hypothesize, midsize oversize resize, size supersize synthesize";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

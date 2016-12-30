@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _llow</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#170 _llow
+<h2>#170 _llow</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=allow" target="_blank">allow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bellow" target="_blank">bellow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=billow" target="_blank">billow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=callow" target="_blank">callow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=disallow" target="_blank">disallow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fallow" target="_blank">fallow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fellow" target="_blank">fellow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=follow" target="_blank">follow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hallow" target="_blank">hallow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hollow" target="_blank">hollow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mallow" target="_blank">mallow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mellow" target="_blank">mellow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=pillow" target="_blank">pillow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sallow" target="_blank">sallow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=schoolfellow" target="_blank">schoolfellow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shallow" target="_blank">shallow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swallow" target="_blank">swallow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tallow" target="_blank">tallow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=wallow" target="_blank">wallow</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=willow" target="_blank">willow</a></li>
+<ul id="words">
+<li>allow</li>
+<li>bellow</li>
+<li>billow</li>
+<li>callow</li>
+<li>disallow</li>
+<li>fallow</li>
+<li>fellow</li>
+<li>follow</li>
+<li>hallow</li>
+<li>hollow</li>
+<li>mallow</li>
+<li>mellow</li>
+<li>pillow</li>
+<li>sallow</li>
+<li>schoolfellow</li>
+<li>shallow</li>
+<li>swallow</li>
+<li>tallow</li>
+<li>wallow</li>
+<li>willow</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="170" data-circle-pattern="_llow">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "allow bellow billow callow disallow, fallow fellow follow hallow hollow, mallow mellow pillow sallow schoolfellow, shallow swallow tallow wallow willow";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

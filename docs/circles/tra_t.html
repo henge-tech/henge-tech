@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: tra_t</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#965 tra_t
+<h2>#965 tra_t</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tracksuit" target="_blank">tracksuit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tract" target="_blank">tract</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=traditionalist" target="_blank">traditionalist</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trait" target="_blank">trait</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transact" target="_blank">transact</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transcendent" target="_blank">transcendent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transcript" target="_blank">transcript</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transect" target="_blank">transect</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transept" target="_blank">transept</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transient" target="_blank">transient</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transit" target="_blank">transit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=translucent" target="_blank">translucent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transmit" target="_blank">transmit</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transparent" target="_blank">transparent</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transplant" target="_blank">transplant</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=transshipment" target="_blank">transshipment</a></li>
+<ul id="words">
+<li>tracksuit</li>
+<li>tract</li>
+<li>traditionalist</li>
+<li>trait</li>
+<li>transact</li>
+<li>transcendent</li>
+<li>transcript</li>
+<li>transect</li>
+<li>transept</li>
+<li>transient</li>
+<li>transit</li>
+<li>translucent</li>
+<li>transmit</li>
+<li>transparent</li>
+<li>transplant</li>
+<li>transshipment</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="965" data-circle-pattern="tra_t">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "tracksuit tract traditionalist trait, transact transcendent transcript transect, transept transient transit translucent, transmit transparent transplant transshipment";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

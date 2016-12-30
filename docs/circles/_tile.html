@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _tile</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#327 _tile
+<h2>#327 _tile</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=contractile" target="_blank">contractile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=ductile" target="_blank">ductile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=erectile" target="_blank">erectile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fertile" target="_blank">fertile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=futile" target="_blank">futile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=gentile" target="_blank">gentile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hostile" target="_blank">hostile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infantile" target="_blank">infantile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=infertile" target="_blank">infertile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=mercantile" target="_blank">mercantile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=motile" target="_blank">motile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=percentile" target="_blank">percentile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=projectile" target="_blank">projectile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reptile" target="_blank">reptile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stile" target="_blank">stile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=tactile" target="_blank">tactile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=textile" target="_blank">textile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=turnstile" target="_blank">turnstile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=versatile" target="_blank">versatile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=volatile" target="_blank">volatile</a></li>
+<ul id="words">
+<li>contractile</li>
+<li>ductile</li>
+<li>erectile</li>
+<li>fertile</li>
+<li>futile</li>
+<li>gentile</li>
+<li>hostile</li>
+<li>infantile</li>
+<li>infertile</li>
+<li>mercantile</li>
+<li>motile</li>
+<li>percentile</li>
+<li>projectile</li>
+<li>reptile</li>
+<li>stile</li>
+<li>tactile</li>
+<li>textile</li>
+<li>turnstile</li>
+<li>versatile</li>
+<li>volatile</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="327" data-circle-pattern="_tile">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "contractile ductile erectile fertile futile, gentile hostile infantile infertile mercantile, motile percentile projectile reptile stile, tactile textile turnstile versatile volatile";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

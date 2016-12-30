@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _ride</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#272 _ride
+<h2>#272 _ride</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=astride" target="_blank">astride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bestride" target="_blank">bestride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=bride" target="_blank">bride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chloride" target="_blank">chloride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deride" target="_blank">deride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fluoride" target="_blank">fluoride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hayride" target="_blank">hayride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hydride" target="_blank">hydride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=joyride" target="_blank">joyride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nitride" target="_blank">nitride</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=override" target="_blank">override</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=stride" target="_blank">stride</a></li>
+<ul id="words">
+<li>astride</li>
+<li>bestride</li>
+<li>bride</li>
+<li>chloride</li>
+<li>deride</li>
+<li>fluoride</li>
+<li>hayride</li>
+<li>hydride</li>
+<li>joyride</li>
+<li>nitride</li>
+<li>override</li>
+<li>stride</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="272" data-circle-pattern="_ride">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "astride bestride bride, chloride deride fluoride, hayride hydride joyride, nitride override stride";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

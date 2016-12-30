@@ -3,65 +3,44 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: de_ive</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#567 de_ive
+<h2>#567 de_ive</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deceive" target="_blank">deceive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deceptive" target="_blank">deceptive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decisive" target="_blank">decisive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=declarative" target="_blank">declarative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=decorative" target="_blank">decorative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deductive" target="_blank">deductive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defective" target="_blank">defective</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=defensive" target="_blank">defensive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=definitive" target="_blank">definitive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=degenerative" target="_blank">degenerative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deliberative" target="_blank">deliberative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=depressive" target="_blank">depressive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=deprive" target="_blank">deprive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=derisive" target="_blank">derisive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=derivative" target="_blank">derivative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=derive" target="_blank">derive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=descriptive" target="_blank">descriptive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=destructive" target="_blank">destructive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=detective" target="_blank">detective</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=determinative" target="_blank">determinative</a></li>
+<ul id="words">
+<li>deceive</li>
+<li>deceptive</li>
+<li>decisive</li>
+<li>declarative</li>
+<li>decorative</li>
+<li>deductive</li>
+<li>defective</li>
+<li>defensive</li>
+<li>definitive</li>
+<li>degenerative</li>
+<li>deliberative</li>
+<li>depressive</li>
+<li>deprive</li>
+<li>derisive</li>
+<li>derivative</li>
+<li>derive</li>
+<li>descriptive</li>
+<li>destructive</li>
+<li>detective</li>
+<li>determinative</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="567" data-circle-pattern="de_ive">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "deceive deceptive decisive declarative decorative, deductive defective defensive definitive degenerative, deliberative depressive deprive derisive derivative, derive descriptive destructive detective determinative";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

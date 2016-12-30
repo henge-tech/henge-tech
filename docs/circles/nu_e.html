@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: nu_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#789 nu_e
+<h2>#789 nu_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nuance" target="_blank">nuance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nubile" target="_blank">nubile</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nude" target="_blank">nude</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nudge" target="_blank">nudge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nuisance" target="_blank">nuisance</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nuke" target="_blank">nuke</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=numerate" target="_blank">numerate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nurse" target="_blank">nurse</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nurture" target="_blank">nurture</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nutcase" target="_blank">nutcase</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nutritive" target="_blank">nutritive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nuzzle" target="_blank">nuzzle</a></li>
+<ul id="words">
+<li>nuance</li>
+<li>nubile</li>
+<li>nude</li>
+<li>nudge</li>
+<li>nuisance</li>
+<li>nuke</li>
+<li>numerate</li>
+<li>nurse</li>
+<li>nurture</li>
+<li>nutcase</li>
+<li>nutritive</li>
+<li>nuzzle</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="789" data-circle-pattern="nu_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "nuance nubile nude, nudge nuisance nuke, numerate nurse nurture, nutcase nutritive nuzzle";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: dism_</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#606 dism_
+<h2>#606 dism_</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismal" target="_blank">dismal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismantle" target="_blank">dismantle</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismay" target="_blank">dismay</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismember" target="_blank">dismember</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismemberment" target="_blank">dismemberment</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismiss" target="_blank">dismiss</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismissal" target="_blank">dismissal</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=dismount" target="_blank">dismount</a></li>
+<ul id="words">
+<li>dismal</li>
+<li>dismantle</li>
+<li>dismay</li>
+<li>dismember</li>
+<li>dismemberment</li>
+<li>dismiss</li>
+<li>dismissal</li>
+<li>dismount</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="606" data-circle-pattern="dism_">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "dismal dismantle dismay dismember, dismemberment dismiss dismissal dismount";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

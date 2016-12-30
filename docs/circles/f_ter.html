@@ -3,61 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: f_ter</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#651 f_ter
+<h2>#651 f_ter</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=falter" target="_blank">falter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fester" target="_blank">fester</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fetter" target="_blank">fetter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=filibuster" target="_blank">filibuster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fitter" target="_blank">fitter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flatter" target="_blank">flatter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=floater" target="_blank">floater</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flutter" target="_blank">flutter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=footer" target="_blank">footer</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forecaster" target="_blank">forecaster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=forester" target="_blank">forester</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=foster" target="_blank">foster</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=frankfurter" target="_blank">frankfurter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freighter" target="_blank">freighter</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=freshwater" target="_blank">freshwater</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fritter" target="_blank">fritter</a></li>
+<ul id="words">
+<li>falter</li>
+<li>fester</li>
+<li>fetter</li>
+<li>filibuster</li>
+<li>fitter</li>
+<li>flatter</li>
+<li>floater</li>
+<li>flutter</li>
+<li>footer</li>
+<li>forecaster</li>
+<li>forester</li>
+<li>foster</li>
+<li>frankfurter</li>
+<li>freighter</li>
+<li>freshwater</li>
+<li>fritter</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="651" data-circle-pattern="f_ter">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "falter fester fetter filibuster, fitter flatter floater flutter, footer forecaster forester foster, frankfurter freighter freshwater fritter";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

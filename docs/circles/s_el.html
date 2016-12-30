@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: s_el</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#895 s_el
+<h2>#895 s_el</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=satchel" target="_blank">satchel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scalpel" target="_blank">scalpel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=scoundrel" target="_blank">scoundrel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sentinel" target="_blank">sentinel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sequel" target="_blank">sequel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shekel" target="_blank">shekel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shrapnel" target="_blank">shrapnel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=shrivel" target="_blank">shrivel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=spiel" target="_blank">spiel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=squirrel" target="_blank">squirrel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=strudel" target="_blank">strudel</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=swivel" target="_blank">swivel</a></li>
+<ul id="words">
+<li>satchel</li>
+<li>scalpel</li>
+<li>scoundrel</li>
+<li>sentinel</li>
+<li>sequel</li>
+<li>shekel</li>
+<li>shrapnel</li>
+<li>shrivel</li>
+<li>spiel</li>
+<li>squirrel</li>
+<li>strudel</li>
+<li>swivel</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="895" data-circle-pattern="s_el">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "satchel scalpel scoundrel, sentinel sequel shekel, shrapnel shrivel spiel, squirrel strudel swivel";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

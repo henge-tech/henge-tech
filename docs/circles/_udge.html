@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _udge</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#341 _udge
+<h2>#341 _udge</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=adjudge" target="_blank">adjudge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=begrudge" target="_blank">begrudge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=budge" target="_blank">budge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=drudge" target="_blank">drudge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fudge" target="_blank">fudge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=grudge" target="_blank">grudge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=judge" target="_blank">judge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=nudge" target="_blank">nudge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=prejudge" target="_blank">prejudge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sludge" target="_blank">sludge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=smudge" target="_blank">smudge</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=trudge" target="_blank">trudge</a></li>
+<ul id="words">
+<li>adjudge</li>
+<li>begrudge</li>
+<li>budge</li>
+<li>drudge</li>
+<li>fudge</li>
+<li>grudge</li>
+<li>judge</li>
+<li>nudge</li>
+<li>prejudge</li>
+<li>sludge</li>
+<li>smudge</li>
+<li>trudge</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="341" data-circle-pattern="_udge">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "adjudge begrudge budge, drudge fudge grudge, judge nudge prejudge, sludge smudge trudge";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

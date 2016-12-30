@@ -3,57 +3,36 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: _lier</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#165 _lier
+<h2>#165 _lier</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=atelier" target="_blank">atelier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=cavalier" target="_blank">cavalier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chandelier" target="_blank">chandelier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=chevalier" target="_blank">chevalier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=collier" target="_blank">collier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=espalier" target="_blank">espalier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=flier" target="_blank">flier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=fusilier" target="_blank">fusilier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=hotelier" target="_blank">hotelier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=multiplier" target="_blank">multiplier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=sommelier" target="_blank">sommelier</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=supplier" target="_blank">supplier</a></li>
+<ul id="words">
+<li>atelier</li>
+<li>cavalier</li>
+<li>chandelier</li>
+<li>chevalier</li>
+<li>collier</li>
+<li>espalier</li>
+<li>flier</li>
+<li>fusilier</li>
+<li>hotelier</li>
+<li>multiplier</li>
+<li>sommelier</li>
+<li>supplier</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="165" data-circle-pattern="_lier">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "atelier cavalier chandelier, chevalier collier espalier, flier fusilier hotelier, multiplier sommelier supplier";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>

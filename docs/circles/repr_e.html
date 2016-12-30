@@ -3,53 +3,32 @@
 <head>
 <meta charset="utf-8">
 <title>Henge: repr_e</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="staticBody">
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-#884 repr_e
+<h2>#884 repr_e</h2>
 
-<article>
-<ul>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reprehensible" target="_blank">reprehensible</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=representative" target="_blank">representative</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=repressive" target="_blank">repressive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reprieve" target="_blank">reprieve</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reprise" target="_blank">reprise</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reprobate" target="_blank">reprobate</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reproductive" target="_blank">reproductive</a></li>
-<li><a href="https://www.google.com/search?safe=off&tbm=isch&q=reprove" target="_blank">reprove</a></li>
+<ul id="words">
+<li>reprehensible</li>
+<li>representative</li>
+<li>repressive</li>
+<li>reprieve</li>
+<li>reprise</li>
+<li>reprobate</li>
+<li>reproductive</li>
+<li>reprove</li>
 </ul>
+</div>
 
-<a href="javascript:speak()">Listen</a> | <a href="">Story</a> |
+<div id="CircleApp" data-circle-id="884" data-circle-pattern="repr_e">...</div>
 
-<a href="">Random</a> | <a href="">Next</a>
-
-<p>settings</p>
-<form>
-<label><input type="radio" name="search" checked> Image</label>
-<label><input type="radio" name="search"> <input type="text" value="意味" size="8"></label>
-<select>
-<option>ja</option>
-</select>
-</form>
-
-
-</article>
-<script type="text/javascript">
-function speak() {
-  var speech = new SpeechSynthesisUtterance();
-  speech.lang = 'en-US';
-  speech.voiceURI = 'native';
-  speech.volume = 1;
-  speech.rate = 1;
-  speech.pitch = 1;
-  speech.text = "reprehensible representative repressive reprieve, reprise reprobate reproductive reprove";
-  speechSynthesis.speak(speech);
-}
-</script>
-
+<script type="text/javascript" src="/CircleApp.bundle.js"></script>
 </body>
 </html>
