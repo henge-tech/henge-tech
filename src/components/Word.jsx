@@ -17,7 +17,6 @@ export default class Word extends React.Component {
 
     let styles = {
       word: {
-        color: '#ccc',
         listStyleType: 'none',
         position: 'absolute',
         top: this.props.y + 'px',
@@ -27,6 +26,10 @@ export default class Word extends React.Component {
     };
     let word = this.props.word;
     let astyle = {color: '#ccc'};
+    let onClickWord = (event) => {
+      this.props.onClickWord(word);
+      event.preventDefault();
+    };
 
     return (
       <Measure
@@ -35,7 +38,7 @@ export default class Word extends React.Component {
         }}
       >
         <li className="word" style={styles.word}>
-          {word.prefix}<span style={{color: '#000'}}>{word.core}</span>{word.suffix}
+          <a href="#" onClick={onClickWord} style={{color: '#ccc'}}>{word.prefix}<span style={{color: '#000'}}>{word.core}</span>{word.suffix}</a>
         </li>
       </Measure>
     );

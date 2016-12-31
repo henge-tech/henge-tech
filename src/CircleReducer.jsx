@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import * as types from './ActionTypes.jsx';
 import Speaker from './Speaker.jsx';
+import WordActions from './WordActions.jsx';
 
 const window = (state = {}, action) => {
   switch (action.type) {
@@ -20,6 +21,18 @@ const circle =  (state = {}, action) => {
     let speaker = new Speaker();
     speaker.speak(action.words, action.part);
     return state;
+  case types.ACTION_WORD:
+    let actions = new WordActions();
+    actions.exec(action.word, state.wordAction, state.wordActionKeyword);
+    return state;
+  case types.SWITCH_WORD_ACTION:
+    return Object.assign({}, state, {
+      wordAction: action.name
+    });
+  case types.UPDATE_WORD_ACTION_KEYWORD:
+    return Object.assign({}, state, {
+      wordActionKeyword: action.keyword
+    });
   default:
     return state;
   }

@@ -40,4 +40,9 @@ export default class Speaker {
     this.speech.text = text;
     speechSynthesis.speak(this.speech);
   }
+
+  speakWord(word) {
+    this.speech.text = word;
+    speechSynthesis.speak(this.speech);
+  }
 }

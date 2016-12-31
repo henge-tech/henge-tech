@@ -5,9 +5,15 @@ import CirclePageNavBar from './CirclePageNavBar.jsx';
 import Word from './Word.jsx';
 
 export default class Circle extends React.Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
   render() {
+    // console.log('render');
     let unit = Math.PI * 2.0 / this.props.words.length;
-    let center = { x: this.props.width / 2, y: 300 };
+    let center = { x: this.props.width / 2, y: 310 };
     let r = center.x * 0.8;
     if (r > 240) {
       r = 240;
@@ -15,7 +21,7 @@ export default class Circle extends React.Component {
       r = 120;
     }
     let styles = {
-      container: {position: 'relative', height: '200px'},
+      container: {position: 'relative', height: '100px', width: '100%'},
       speakButton: {
         position: 'absolute',
         left: center.x - 15 + 'px',
@@ -31,7 +37,6 @@ export default class Circle extends React.Component {
         position: 'absolute',
         left: center.x + r * diff[i][0] + 'px',
         top:  center.y + r * diff[i][1] + 'px',
-
       }
     }
 
@@ -53,41 +58,82 @@ export default class Circle extends React.Component {
           x={x}
           y={y}
           fontSize={fontSize}
+          onClickWord={this.props.onClickWord}
           />
       );
     }
+    let dummy = () => {
+      alert(123);
+    };
+
+    let onClickWordAction = (name) => {
+      this.props.onClickWordAction(name);
+      // console.log(this.props.wordAction);
+      // this.forceUpdate();
+    }
+
+    let onChangeWordActionKeyword = (event) => {
+      this.props.onChangeWordActionKeyword(event.target.value);
+    }
 
     return (
-      <div style={styles.container}>
+      <div style={styles.container} className="container">
         <Button
-            onClick={() => this.props.onSpeakButtonClick(this.props.words, -1)}
+            onClick={() => this.props.onClickSpeakButton(this.props.words, -1)}
             style={styles.speakButton}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
-            onClick={() => this.props.onSpeakButtonClick(this.props.words, 0)}
+            onClick={() => this.props.onClickSpeakButton(this.props.words, 0)}
             style={styles.partialSpeakButtons[0]}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
-            onClick={() => this.props.onSpeakButtonClick(this.props.words, 1)}
+            onClick={() => this.props.onClickSpeakButton(this.props.words, 1)}
             style={styles.partialSpeakButtons[1]}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
-            onClick={() => this.props.onSpeakButtonClick(this.props.words, 2)}
+            onClick={() => this.props.onClickSpeakButton(this.props.words, 2)}
             style={styles.partialSpeakButtons[2]}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
-            onClick={() => this.props.onSpeakButtonClick(this.props.words, 3)}
+            onClick={() => this.props.onClickSpeakButton(this.props.words, 3)}
             style={styles.partialSpeakButtons[3]}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
-
-        <ul>
+        <ul style={{ margin: 0, height: '640px' }}>
           {wordList}
-        </ul>
+      </ul>
+        <div className="word-actions">
+          <label><input name="actionType" type="radio"
+            onChange={() => onClickWordAction('image')}
+            checked={this.props.wordAction === 'image'}
+            /> Image</label>
+          <label><input name="actionType" type="radio"
+            onChange={() => onClickWordAction('speech')}
+            checked={this.props.wordAction === 'speech'}
+            /> Speech</label>
+          <label><input name="actionType" type="radio"
+            onClick={() => onClickWordAction('keyword')}
+            checked={this.props.wordAction === 'keyword'}
+            /> + <input type="text" size="10"
+            value={this.props.wordActionKeyword}
+            onChange={onChangeWordActionKeyword}/></label>
+          <label><input name="actionType" type="radio"
+            onClick={() => onClickWordAction('wikipedia')}
+            checked={this.props.wordAction === 'wikipedia'}
+            /> Wikipedia</label>
+          <label><input name="actionType" type="radio"
+            onClick={() => onClickWordAction('twitter')}
+            checked={this.props.wordAction === 'twitter'}
+            /> Twitter</label>
+          <label><input name="actionType" type="radio"
+            onClick={() => onClickWordAction('tumblr')}
+            checked={this.props.wordAction === 'tumblr'}
+            /> Tumblr</label>
+        </div>
         <CirclePageNavBar />
       </div>
     );
@@ -102,5 +148,10 @@ Circle.propTypes = {
     word: PropTypes.string.isRequired
   })).isRequired,
   pattern: PropTypes.string.isRequired,
-  onSpeakButtonClick: PropTypes.func.isRequired
+  wordAction: PropTypes.string.isRequired,
+  wordActionKeyword: PropTypes.string.isRequired,
+  onClickSpeakButton: PropTypes.func.isRequired,
+  onClickWord: PropTypes.func.isRequired,
+  onClickWordAction: PropTypes.func.isRequired,
+  onChangeWordActionKeyword: PropTypes.func.isRequired,
 };

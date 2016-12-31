@@ -15,7 +15,9 @@ let initialState = {
     height: document.body.clientHeight,
   },
   circle: {
-    words: []
+    words: [],
+    wordAction: 'image',
+    wordActionKeyword: '意味'
   },
 };
 
