@@ -8,8 +8,6 @@ const mapStateToProps = (state) => {
     height: state.window.height,
     words: state.circle.words,
     pattern: state.circle.pattern,
-    wordAction: state.circle.wordAction,
-    wordActionKeyword: state.circle.wordActionKeyword,
   }
 }
 
@@ -21,12 +19,6 @@ const mapDispatchToProps = (dispatch) => {
     onClickWord: (word) => {
       dispatch(actionWord(word))
     },
-    onClickWordAction: (name) => {
-      dispatch(switchWordAction(name))
-    },
-    onChangeWordActionKeyword: (name) => {
-      dispatch(updateWordActionKeyword(name))
-    }
   }
 }
 
