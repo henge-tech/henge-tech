@@ -1,8 +1,9 @@
-import React, { PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import SpeakButtons from './SpeakButtons.jsx';
 import WordCircle from './WordCircle.jsx';
 import WordActionsListContainer from './WordActionsListContainer.jsx';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
+import StoryModeContainer from './StoryModeContainer.jsx';
 
 export default class Circle extends React.Component {
   constructor() {
@@ -11,6 +12,16 @@ export default class Circle extends React.Component {
   }
 
   render() {
+    if (this.props.mode == 'circle') {
+      return this.renderCircle();
+    } else {
+      return (
+        <StoryModeContainer />
+      );
+    }
+  }
+
+  renderCircle() {
     // console.log('render');
     let center = { x: this.props.width / 2, y: 310 };
     let r = center.x * 0.8;

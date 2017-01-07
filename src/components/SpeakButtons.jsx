@@ -1,6 +1,5 @@
 import React, { PropTypes} from 'react';
-import { Button } from 'react-bootstrap';
-import { Glyphicon } from 'react-bootstrap';
+import { Button, Glyphicon } from 'react-bootstrap';
 
 export default class SpeakButtons extends React.Component {
   render() {

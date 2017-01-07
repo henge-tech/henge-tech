@@ -30,6 +30,7 @@ export default class Word extends React.Component {
       this.props.onClickWord(word);
       event.preventDefault();
     };
+    let coreClass = 'word-core-' + this.props.coreFirstGroup;
 
     return (
       <Measure
@@ -38,7 +39,7 @@ export default class Word extends React.Component {
         }}
       >
         <li className="word" style={styles.word}>
-          <a href="#" onClick={onClickWord} style={{color: '#ccc'}}>{word.prefix}<span style={{color: '#000'}}>{word.core}</span>{word.suffix}</a>
+          <a href="#" className="word" onClick={onClickWord}><span className="word-prefix">{word.prefix}</span><span className={coreClass}>{word.core}</span><span className="word-suffix">{word.suffix}</span></a>
         </li>
       </Measure>
     );

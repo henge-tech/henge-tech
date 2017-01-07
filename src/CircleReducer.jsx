@@ -33,6 +33,19 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       wordActionKeyword: action.keyword
     });
+  case types.STORY_MODE:
+    return Object.assign({}, state, {
+      mode: 'story'
+    });
+  case types.CIRCLE_MODE:
+    return Object.assign({}, state, {
+      mode: 'circle'
+    });
+  case types.STORY_FETCH_SUCCEEDED:
+    console.debug('CircleReducer: story fetched');
+    return Object.assign({}, state, {
+      story: action.story
+    });
   default:
     return state;
   }

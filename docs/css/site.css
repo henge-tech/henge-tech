@@ -8,14 +8,36 @@
   border-radius: 15px;
 }
 
-.word-actions {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 400px;
-}
-
 .word-actions label {
   margin-left: 15px;
   font-weight: normal;
+}
+
+.word {
+  color: #000;
+}
+
+.word-prefix {
+  color: #000;
+}
+.word-suffix {
+  color: #000;
+}
+
+.word-core-a {
+  color: #b99;
+}
+
+.word-core-b {
+  /* color: #b77; */
+  color: #b99;
+}
+
+.word-core-a:first-letter {
+    font-weight: bold;
+}
+
+
+.word:hover {
+  color: #000;
 }

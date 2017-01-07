@@ -1,11 +1,14 @@
+import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import createSagaMiddleware from 'redux-saga'
 
 import circleReducer from './CircleReducer.jsx';
 import CircleContainer from './components/CircleContainer.jsx';
 import { windowResize } from './Actions.jsx';
+import mySaga from './CircleSagas.jsx'
 
 document.getElementById('staticBody').style.display = 'none';
 
@@ -15,9 +18,11 @@ let initialState = {
     height: document.body.clientHeight,
   },
   circle: {
+    mode: 'circle',
     words: [],
     wordAction: 'image',
-    wordActionKeyword: '意味'
+    wordActionKeyword: '意味',
+    story: false,
   },
 };
 
@@ -47,15 +52,20 @@ for (let i = 0; i < wordList.length; i++) {
   }
 }
 
-let store = createStore(circleReducer, initialState);
+const sagaMiddleware = createSagaMiddleware()
+
+const store = createStore(circleReducer, initialState, applyMiddleware(sagaMiddleware));
+sagaMiddleware.run(mySaga);
 
 render(
-    <Provider store={store}>
-      <CircleContainer />
-    </Provider>,
-    circleApp
+  <Provider store={store}>
+    <CircleContainer />
+  </Provider>,
+  circleApp
 );
 
 window.addEventListener('resize', () => {
   store.dispatch(windowResize(document.body.clientWidth, document.body.clientHeight));
 });
+
+store.dispatch({type: 'STORY_FETCH_REQUESTED', pattern: initialState.circle.pattern});

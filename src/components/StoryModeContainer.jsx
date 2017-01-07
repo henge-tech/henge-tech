@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import Circle from './Circle.jsx';
-import { speakWords, actionWord, switchWordAction, updateWordActionKeyword } from '../Actions.jsx'
+import StoryMode from './StoryMode.jsx';
+import { circleMode, speakWords, actionWords } from '../Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {
@@ -9,6 +9,7 @@ const mapStateToProps = (state) => {
     height: state.window.height,
     words: state.circle.words,
     pattern: state.circle.pattern,
+    story: state.circle.story,
   }
 }
 
@@ -23,5 +24,5 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const CircleContainer = connect(mapStateToProps, mapDispatchToProps)(Circle);
-export default CircleContainer;
+const StoryModeContainer = connect(mapStateToProps, mapDispatchToProps)(StoryMode);
+export default StoryModeContainer;
