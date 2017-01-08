@@ -13,13 +13,23 @@ export default class StoryMode extends React.Component {
     let lines = [];
     let rex = /([^\[]*)\[([^\]]+)\]([^\[]*)/g;
     let keynum = 0;
+    let p = this.props;
+
     storyTexts.forEach(function(txt) {
       let line = [];
       let match = null;
+      let ocw = p.onClickWord;
+
       while((match = rex.exec(txt)) !== null) {
+        let word = p.words[keynum];
+        let onClickWord = (event) => {
+          ocw(word);
+          event.preventDefault();
+        };
+
         line.push(match[1] + ' ');
         line.push(
-          <a href='#' key={'storyWord' + keynum}>{match[2]}</a>
+          <a href='#' key={'story-word-' + keynum} onClick={onClickWord}>{match[2]}</a>
         );
         line.push(' ' + match[3]);
         keynum += 1;
