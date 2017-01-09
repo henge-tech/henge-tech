@@ -42,7 +42,6 @@ const circle =  (state = {}, action) => {
       mode: 'circle'
     });
   case types.STORY_FETCH_SUCCEEDED:
-    console.debug('CircleReducer: story fetched');
     return Object.assign({}, state, {
       story: action.story
     });
@@ -51,9 +50,21 @@ const circle =  (state = {}, action) => {
   }
 }
 
+const index = (state = {}, action) => {
+  switch (action.type) {
+  case types.STORY_INDEX_FETCH_SUCCEEDED:
+    return Object.assign({}, state, {
+      stories: action.stories
+    });
+  default:
+    return state;
+  }
+}
+
 const circleReducer = combineReducers({
   window,
-  circle
+  circle,
+  index
 })
 
 export default circleReducer;

@@ -17,4 +17,19 @@ export default class CircleAPI {
         console.log(error);
       });
   }
+
+  static fetchStoryIndex(lang) {
+    return fetch('/stories/' + lang + '/index.json')
+      .then(function(response) {
+        if(response.ok) {
+          return response.json();
+        } else {
+          console.log('Response is not ok');
+          return null;
+        }
+      }).catch(function(error) {
+        console.log("ERROR");
+        console.log(error);
+      });
+  }
 }

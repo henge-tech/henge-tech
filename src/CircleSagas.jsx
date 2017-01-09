@@ -13,8 +13,18 @@ function* fetchStory(action) {
   }
 }
 
+function* fetchStoryIndex(action) {
+  try {
+    const stories = yield call(CircleAPI.fetchStoryIndex, action.lang);
+    yield put({type: "STORY_INDEX_FETCH_SUCCEEDED", stories: stories});
+  } catch (e) {
+    yield put({type: "STORY_INDEX_FETCH_FAILED", message: e.message});
+  }
+}
+
 function* mySaga() {
-  yield takeLatest("STORY_FETCH_REQUESTED", fetchStory);
+  yield takeLatest('STORY_FETCH_REQUESTED', fetchStory);
+  yield takeLatest('STORY_INDEX_FETCH_REQUESTED', fetchStoryIndex);
 }
 
 export default mySaga;

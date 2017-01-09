@@ -4,6 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   entry: {
     CircleApp: './src/CircleApp.jsx',
+    CircleIndexApp: './src/CircleIndexApp.jsx',
   },
 
   output: {
