@@ -33645,6 +33645,7 @@
 	        var unitWords = [];
 	        for (var j = 0; j < unit; j++) {
 	          unitWords.push(words[i * unit + j].word);
+	          // unitWords.push(words[i * unit + j].word.toUpperCase().replace(/(.)/g, '$1 '));
 	        }
 
 	        speechTexts.push(unitWords.join(' '));
@@ -33658,6 +33659,7 @@
 	  }, {
 	    key: 'speakWord',
 	    value: function speakWord(word) {
+	      word = word + ",\n" + word.toUpperCase().replace(/(.)/g, '$1 ');
 	      this.speech.text = word;
 	      speechSynthesis.speak(this.speech);
 	    }

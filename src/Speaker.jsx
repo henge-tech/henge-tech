@@ -30,6 +30,7 @@ export default class Speaker {
       let unitWords = [];
       for (let j = 0; j < unit; j++) {
         unitWords.push(words[i * unit + j].word);
+        // unitWords.push(words[i * unit + j].word.toUpperCase().replace(/(.)/g, '$1 '));
       }
 
       speechTexts.push(unitWords.join(' '));
@@ -42,6 +43,7 @@ export default class Speaker {
   }
 
   speakWord(word) {
+    word = word + ",\n" + word.toUpperCase().replace(/(.)/g, '$1 ');
     this.speech.text = word;
     speechSynthesis.speak(this.speech);
   }
