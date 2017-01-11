@@ -22,14 +22,24 @@ export default class WordActionsList extends React.Component {
         marginTop: '3px'
       }
     }
+
+    let cols = [
+      {xsHidden: false, xs: 4, md: 3},
+      {xsHidden: false, xs: 8, md: 6},
+      {xsHidden: false, xs: 4, md: 3}
+    ];
     if (!this.props.story) {
       styles.storyModeButton.display = 'none';
       styles.circleModeButton.display = 'none';
     } else {
       if (this.props.mode == 'circle') {
         styles.circleModeButton.display = 'none';
+        cols[0].xsHidden = true;
+        cols[0].xs = 0;
       } else {
         styles.storyModeButton.display = 'none';
+        cols[2].xsHidden = true;
+        cols[2].xs = 0;
       }
     }
 
@@ -42,12 +52,12 @@ export default class WordActionsList extends React.Component {
       <Well className="word-actions">
         <Grid>
         <Row>
-        <Col xs={4} md={3}>
+        <Col xsHidden={cols[0].xsHidden} xs={cols[0].xs} md={cols[0].md}>
           <div style={styles.circleModeButton}>
             <a href="#" onClick={onClickCircleModeButton}>&#x25C2; Circle</a>
           </div>
         </Col>
-        <Col xs={8} md={6}>
+        <Col xsHidden={cols[1].xsHidden} xs={cols[1].xs} md={cols[1].md}>
           <label><input name="actionType" type="radio"
             onChange={() => onClick('image')}
             checked={this.props.wordAction === 'image'}
@@ -75,7 +85,7 @@ export default class WordActionsList extends React.Component {
             checked={this.props.wordAction === 'tumblr'}
             /> Tumblr</label>
         </Col>
-        <Col xs={4} md={3}>
+        <Col xsHidden={cols[2].xsHidden} xs={cols[2].xs} md={cols[2].md}>
         <div style={styles.storyModeButton} className='text-right'>
         <a href="#" onClick={onClickStory}>Story &#x25B8;</a>
         </div>

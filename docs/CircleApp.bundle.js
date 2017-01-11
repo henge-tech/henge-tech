@@ -33646,6 +33646,7 @@
 	        for (var j = 0; j < unit; j++) {
 	          unitWords.push(words[i * unit + j].word);
 	          // unitWords.push(words[i * unit + j].word.toUpperCase().replace(/(.)/g, '$1 '));
+	          // unitWords.push(', ')
 	        }
 
 	        speechTexts.push(unitWords.join(' '));
@@ -33837,23 +33838,25 @@
 	  _createClass(Circle, [{
 	    key: 'render',
 	    value: function render() {
-	      if (this.props.mode == 'circle') {
-	        return this.renderCircle();
-	      } else {
-	        return _react2.default.createElement(_StoryModeContainer2.default, null);
-	      }
-	    }
-	  }, {
-	    key: 'renderCircle',
-	    value: function renderCircle() {
-	      // console.log('render');
-	      var center = { x: this.props.width / 2, y: 310 };
+	      var center = { x: this.props.width / 2 };
 	      var r = center.x * 0.8;
 	      if (r > 240) {
 	        r = 240;
 	      } else if (r < 120) {
 	        r = 120;
 	      }
+	      center.y = r + 90;
+
+	      if (this.props.mode == 'circle') {
+	        return this.renderCircle(center, r);
+	      } else {
+	        return _react2.default.createElement(_StoryModeContainer2.default, { center: center, r: r });
+	      }
+	    }
+	  }, {
+	    key: 'renderCircle',
+	    value: function renderCircle(center, r) {
+	      // console.log('render');
 	      var styles = {
 	        container: { position: 'relative', height: '100px', width: '100%' }
 	      };
@@ -52884,7 +52887,7 @@
 
 	      return _react2.default.createElement(
 	        'ul',
-	        { style: { margin: 0, height: '640px' } },
+	        { style: { margin: 0, height: oy + r + 80 + 'px' } },
 	        wordList
 	      );
 	    }
@@ -54705,14 +54708,20 @@
 	          marginTop: '3px'
 	        }
 	      };
+
+	      var cols = [{ xsHidden: false, xs: 4, md: 3 }, { xsHidden: false, xs: 8, md: 6 }, { xsHidden: false, xs: 4, md: 3 }];
 	      if (!this.props.story) {
 	        styles.storyModeButton.display = 'none';
 	        styles.circleModeButton.display = 'none';
 	      } else {
 	        if (this.props.mode == 'circle') {
 	          styles.circleModeButton.display = 'none';
+	          cols[0].xsHidden = true;
+	          cols[0].xs = 0;
 	        } else {
 	          styles.storyModeButton.display = 'none';
+	          cols[2].xsHidden = true;
+	          cols[2].xs = 0;
 	        }
 	      }
 
@@ -54732,7 +54741,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactBootstrap.Col,
-	              { xs: 4, md: 3 },
+	              { xsHidden: cols[0].xsHidden, xs: cols[0].xs, md: cols[0].md },
 	              _react2.default.createElement(
 	                'div',
 	                { style: styles.circleModeButton },
@@ -54745,7 +54754,7 @@
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.Col,
-	              { xs: 8, md: 6 },
+	              { xsHidden: cols[1].xsHidden, xs: cols[1].xs, md: cols[1].md },
 	              _react2.default.createElement(
 	                'label',
 	                null,
@@ -54820,7 +54829,7 @@
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.Col,
-	              { xs: 4, md: 3 },
+	              { xsHidden: cols[2].xsHidden, xs: cols[2].xs, md: cols[2].md },
 	              _react2.default.createElement(
 	                'div',
 	                { style: styles.storyModeButton, className: 'text-right' },
@@ -55108,21 +55117,26 @@
 	        lines.push(line);
 	      });
 
+	      var margin = 200;
+	      if (this.props.width < 768) {
+	        margin = 80;
+	      }
+
 	      return _react2.default.createElement(
 	        'div',
 	        { style: styles.container, className: 'container' },
 	        _react2.default.createElement(
 	          _reactBootstrap.Grid,
-	          { style: { marginTop: '200px', marginBottom: '140px' } },
+	          { style: { marginTop: margin + 'px', marginBottom: margin + 'px' } },
 	          _react2.default.createElement(
 	            _reactBootstrap.Row,
 	            null,
 	            _react2.default.createElement(
 	              _reactBootstrap.Col,
-	              { md: 1 },
+	              { md: 1, sm: 1 },
 	              _react2.default.createElement(
 	                'p',
-	                { style: { marginTop: '60px', marginLeft: '10px' } },
+	                { style: { marginTop: '60px' } },
 	                _react2.default.createElement(
 	                  _reactBootstrap.Button,
 	                  {
@@ -55137,7 +55151,7 @@
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.Col,
-	              { md: 11 },
+	              { md: 11, sm: 11 },
 	              _react2.default.createElement(
 	                'p',
 	                null,

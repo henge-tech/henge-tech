@@ -44,7 +44,7 @@ export default class WordCircle extends React.Component {
     }
 
     return (
-        <ul style={{ margin: 0, height: '640px' }}>
+        <ul style={{ margin: 0, height: (oy + r + 80) + 'px' }}>
           {wordList}
         </ul>
     );

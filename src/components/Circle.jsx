@@ -12,24 +12,26 @@ export default class Circle extends React.Component {
   }
 
   render() {
-    if (this.props.mode == 'circle') {
-      return this.renderCircle();
-    } else {
-      return (
-        <StoryModeContainer />
-      );
-    }
-  }
-
-  renderCircle() {
-    // console.log('render');
-    let center = { x: this.props.width / 2, y: 310 };
+    let center = { x: this.props.width / 2 };
     let r = center.x * 0.8;
     if (r > 240) {
       r = 240;
     } else if (r < 120) {
       r = 120;
     }
+    center.y = r + 90;
+
+    if (this.props.mode == 'circle') {
+      return this.renderCircle(center, r);
+    } else {
+      return (
+        <StoryModeContainer center={center} r={r} />
+      );
+    }
+  }
+
+  renderCircle(center, r) {
+    // console.log('render');
     let styles = {
       container: {position: 'relative', height: '100px', width: '100%'},
     };

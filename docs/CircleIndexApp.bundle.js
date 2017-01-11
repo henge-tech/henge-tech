@@ -33616,6 +33616,7 @@
 	        for (var j = 0; j < unit; j++) {
 	          unitWords.push(words[i * unit + j].word);
 	          // unitWords.push(words[i * unit + j].word.toUpperCase().replace(/(.)/g, '$1 '));
+	          // unitWords.push(', ')
 	        }
 
 	        speechTexts.push(unitWords.join(' '));

@@ -37,19 +37,24 @@ export default class StoryMode extends React.Component {
       lines.push(line);
     });
 
+    let margin = 200;
+    if (this.props.width < 768) {
+      margin = 80;
+    }
+
     return (
       <div style={styles.container} className="container">
-        <Grid style={{marginTop: '200px', marginBottom: '140px' }}>
+        <Grid style={{marginTop: margin + 'px', marginBottom: margin + 'px' }}>
           <Row>
-            <Col md={1}>
-              <p style={{marginTop: '60px', marginLeft: '10px'}}>
+            <Col md={1} sm={1}>
+              <p style={{marginTop: '60px'}}>
                 <Button
                   onClick={() => this.props.onClickSpeakButton(this.props.words, -1)}
                   className="btn-circle"
                 ><Glyphicon glyph="volume-up" /></Button>
               </p>
             </Col>
-            <Col md={11}>
+            <Col md={11} sm={11}>
               <p>
                 <Button
                     onClick={() => this.props.onClickSpeakButton(this.props.words, 0)}
