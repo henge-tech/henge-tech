@@ -28,5 +28,5 @@ end
 file = File.expand_path("../docs/stories/ja/index.json", File.dirname(__FILE__))
 
 File.open(file, 'w') do |io|
-  io << JSON.pretty_generate(data.keys)
+  io << JSON.pretty_generate(data.keys.sort)
 end
