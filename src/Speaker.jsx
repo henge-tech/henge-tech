@@ -13,13 +13,8 @@ export default class Speaker {
   speak(words, part = -1) {
     let unit, repeat;
 
-    if (words.length == 8) {
-      unit = 4;
-      repeat = 2;
-    } else {
-      unit = words.length / 4;
-      repeat = 4;
-    }
+    unit = words.length / 4;
+    repeat = 4;
 
     let speechTexts = [];
     for (let i = 0; i < repeat; i++) {
