@@ -33628,13 +33628,8 @@
 	      var unit = void 0,
 	          repeat = void 0;
 
-	      if (words.length == 8) {
-	        unit = 4;
-	        repeat = 2;
-	      } else {
-	        unit = words.length / 4;
-	        repeat = 4;
-	      }
+	      unit = words.length / 4;
+	      repeat = 4;
 
 	      var speechTexts = [];
 	      for (var i = 0; i < repeat; i++) {

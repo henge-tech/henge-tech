@@ -33598,13 +33598,8 @@
 	      var unit = void 0,
 	          repeat = void 0;
 
-	      if (words.length == 8) {
-	        unit = 4;
-	        repeat = 2;
-	      } else {
-	        unit = words.length / 4;
-	        repeat = 4;
-	      }
+	      unit = words.length / 4;
+	      repeat = 4;
 
 	      var speechTexts = [];
 	      for (var i = 0; i < repeat; i++) {
@@ -53309,6 +53304,8 @@
 
 	var _CirclePageNavBar2 = _interopRequireDefault(_CirclePageNavBar);
 
+	var _reactBootstrap = __webpack_require__(517);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53338,11 +53335,15 @@
 	            'li',
 	            { key: 'pattern-' + i },
 	            _react2.default.createElement(
-	              'a',
-	              { href: pattern + '.html' },
-	              pattern
+	              'span',
+	              { style: { width: '100px', display: 'inline-block' } },
+	              _react2.default.createElement(
+	                'a',
+	                { href: pattern + '.html' },
+	                pattern
+	              )
 	            ),
-	            ' (s)'
+	            's'
 	          ));
 	        } else {
 	          patternsList.push(_react2.default.createElement(
@@ -53360,11 +53361,58 @@
 
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { style: { marginTop: '100px' } },
 	        _react2.default.createElement(
-	          'ol',
-	          { style: { marginTop: '100px' } },
-	          patternsList
+	          _reactBootstrap.Grid,
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            null,
+	            _react2.default.createElement(_reactBootstrap.Col, { xs: 1 }),
+	            _react2.default.createElement(
+	              _reactBootstrap.Col,
+	              { xs: 10 },
+	              _react2.default.createElement(
+	                _reactBootstrap.FormGroup,
+	                { controlId: 'formControlsText', bsClass: 'index-search-group' },
+	                _react2.default.createElement(
+	                  _reactBootstrap.InputGroup,
+	                  null,
+	                  _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Search' }),
+	                  _react2.default.createElement(
+	                    _reactBootstrap.InputGroup.Addon,
+	                    null,
+	                    _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'search' })
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                { style: { marginTop: '10px', marginBottom: '20px' } },
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: '#' },
+	                  'Pickup'
+	                ),
+	                ' | ',
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: '#' },
+	                  'Story'
+	                ),
+	                ' | 8 | 12 | 16 | 20 | ',
+	                _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'random' }),
+	                ' | ',
+	                _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'star' })
+	              ),
+	              _react2.default.createElement(
+	                'ol',
+	                { style: { fontSize: '1.25em' } },
+	                patternsList
+	              )
+	            ),
+	            _react2.default.createElement(_reactBootstrap.Col, { xs: 1 })
+	          )
 	        ),
 	        _react2.default.createElement(_CirclePageNavBar2.default, null)
 	      );
