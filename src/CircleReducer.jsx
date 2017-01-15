@@ -58,7 +58,13 @@ const index = (state = {}, action) => {
     });
   case types.UPDATE_SEARCH_QUERY:
     return Object.assign({}, state, {
-      q: action.q
+      q: action.q,
+      filter: 'all'
+    });
+  case types.CHANGE_INDEX_FILTER:
+    return Object.assign({}, state, {
+      q: '',
+      filter: action.filter
     });
   default:
     return state;

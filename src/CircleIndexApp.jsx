@@ -18,7 +18,9 @@ let circleIndexApp = document.getElementById('circle-index-app');
 let initialState = {
   index: {
     patterns: [],
-    stories: []
+    stories: [],
+    q: '',
+    filter: 'all',
   }
 };
 

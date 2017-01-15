@@ -9,3 +9,4 @@ export const storyMode = () => ({ type: types.STORY_MODE });
 export const circleMode = () => ({ type: types.CIRCLE_MODE });
 
 export const updateSearchQuery = (q) => ({ type: types.UPDATE_SEARCH_QUERY, q});
+export const changeIndexFilter = (filter) => ({ type: types.CHANGE_INDEX_FILTER, filter});
