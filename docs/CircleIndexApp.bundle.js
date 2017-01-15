@@ -88,13 +88,19 @@
 	  }
 	};
 
-	var patternsList = document.getElementById('patterns').childNodes;
-	patternsList.forEach(function (pattern) {
-	  pattern = pattern.textContent;
-	  if (pattern != "\n") {
-	    initialState.index.patterns.push(pattern);
-	  }
-	});
+	var pattern = void 0,
+	    pstr = void 0;
+	var patternsList = document.getElementsByClassName('pattern');
+
+	for (var i = 0; i < patternsList.length; i++) {
+	  pattern = {};
+	  pattern.id = i + 1;
+	  pattern.pattern = patternsList[i].textContent;
+	  pattern.count = patternsList[i].getAttribute('data-count');
+	  pattern.pickup = patternsList[i].getAttribute('data-pickup') == 'true';
+	  pattern.allWords = allWords[i].join("\t");
+	  initialState.index.patterns.push(pattern);
+	}
 
 	var sagaMiddleware = (0, _reduxSaga2.default)();
 	var store = (0, _redux.createStore)(_CircleReducer2.default, initialState, (0, _redux.applyMiddleware)(sagaMiddleware));
@@ -33532,6 +33538,10 @@
 	      return Object.assign({}, state, {
 	        stories: action.stories
 	      });
+	    case types.UPDATE_SEARCH_QUERY:
+	      return Object.assign({}, state, {
+	        q: action.q
+	      });
 	    default:
 	      return state;
 	  }
@@ -33563,6 +33573,7 @@
 	var CIRCLE_MODE = exports.CIRCLE_MODE = 'CIRCLE_MODE';
 	var STORY_FETCH_SUCCEEDED = exports.STORY_FETCH_SUCCEEDED = 'STORY_FETCH_SUCCEEDED';
 	var STORY_INDEX_FETCH_SUCCEEDED = exports.STORY_INDEX_FETCH_SUCCEEDED = 'STORY_INDEX_FETCH_SUCCEEDED';
+	var UPDATE_SEARCH_QUERY = exports.UPDATE_SEARCH_QUERY = 'UPDATE_SEARCH_QUERY';
 
 /***/ },
 /* 512 */
@@ -52489,7 +52500,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.circleMode = exports.storyMode = exports.updateWordActionKeyword = exports.switchWordAction = exports.actionWord = exports.speakWords = exports.windowResize = undefined;
+	exports.updateSearchQuery = exports.circleMode = exports.storyMode = exports.updateWordActionKeyword = exports.switchWordAction = exports.actionWord = exports.speakWords = exports.windowResize = undefined;
 
 	var _ActionTypes = __webpack_require__(511);
 
@@ -52517,6 +52528,10 @@
 	};
 	var circleMode = exports.circleMode = function circleMode() {
 	  return { type: types.CIRCLE_MODE };
+	};
+
+	var updateSearchQuery = exports.updateSearchQuery = function updateSearchQuery(q) {
+	  return { type: types.UPDATE_SEARCH_QUERY, q: q };
 	};
 
 /***/ },
@@ -53273,12 +53288,17 @@
 	var mapStateToProps = function mapStateToProps(state) {
 	  return {
 	    patterns: state.index.patterns,
-	    stories: state.index.stories
+	    stories: state.index.stories,
+	    q: state.index.q
 	  };
 	};
 
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-	  return {};
+	  return {
+	    onChangeSearchQuery: function onChangeSearchQuery(q) {
+	      dispatch((0, _Actions.updateSearchQuery)(q));
+	    }
+	  };
 	};
 
 	var CircleIndexContainer = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_CircleIndex2.default);
@@ -53306,6 +53326,10 @@
 
 	var _reactBootstrap = __webpack_require__(517);
 
+	var _escapeStringRegexp = __webpack_require__(788);
+
+	var _escapeStringRegexp2 = _interopRequireDefault(_escapeStringRegexp);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53324,40 +53348,63 @@
 	  }
 
 	  _createClass(CircleIndex, [{
+	    key: 'onChangeSearchQuery',
+	    value: function onChangeSearchQuery(e) {
+	      this.props.onChangeSearchQuery(e.target.value);
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
 	      var patternsList = [];
 	      var i = 0;
 	      var stories = this.props.stories;
+	      var strRex = void 0,
+	          rex = void 0;
+	      if (!this.props.q) {
+	        rex = null;
+	      } else {
+	        strRex = (0, _escapeStringRegexp2.default)(this.props.q);
+	        strRex = strRex.replace(/\t/g, '');
+	        strRex = '(?:^|\t)([^\t]*' + strRex + '[^\t]*)';
+	        rex = new RegExp(strRex);
+	      }
+
+	      var match = void 0;
+
 	      this.props.patterns.forEach(function (pattern) {
-	        if (stories.indexOf(pattern) >= 0) {
-	          patternsList.push(_react2.default.createElement(
-	            'li',
-	            { key: 'pattern-' + i },
-	            _react2.default.createElement(
-	              'span',
-	              { style: { width: '100px', display: 'inline-block' } },
-	              _react2.default.createElement(
-	                'a',
-	                { href: pattern + '.html' },
-	                pattern
-	              )
-	            ),
-	            's'
-	          ));
-	        } else {
-	          patternsList.push(_react2.default.createElement(
-	            'li',
-	            { key: 'pattern-' + i },
+	        if (rex !== null) {
+	          match = rex.exec(pattern.allWords);
+	          if (match === null) return;
+	        }
+
+	        var patternAttr = [];
+	        patternAttr.push(pattern.count);
+	        if (pattern.pickup) {
+	          patternAttr.push('p');
+	        }
+	        if (stories.indexOf(pattern.pattern) >= 0) {
+	          patternAttr.push('s');
+	        }
+
+	        patternsList.push(_react2.default.createElement(
+	          'li',
+	          { value: pattern.id, key: 'pattern-' + i },
+	          _react2.default.createElement(
+	            'span',
+	            { style: { width: '100px', display: 'inline-block' } },
 	            _react2.default.createElement(
 	              'a',
-	              { href: pattern + '.html' },
-	              pattern
+	              { href: pattern.pattern + '.html' },
+	              pattern.pattern
 	            )
-	          ));
-	        }
+	          ),
+	          patternAttr.join(',')
+	        ));
 	        i += 1;
 	      });
+	      var searchQuery = '';
 
 	      return _react2.default.createElement(
 	        'div',
@@ -53378,7 +53425,9 @@
 	                _react2.default.createElement(
 	                  _reactBootstrap.InputGroup,
 	                  null,
-	                  _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Search' }),
+	                  _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Search', onChange: function onChange(e) {
+	                      _this2.onChangeSearchQuery(e);
+	                    } }),
 	                  _react2.default.createElement(
 	                    _reactBootstrap.InputGroup.Addon,
 	                    null,
@@ -53423,6 +53472,23 @@
 	}(_react2.default.Component);
 
 	exports.default = CircleIndex;
+
+/***/ },
+/* 788 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	var matchOperatorsRe = /[|\\{}()[\]^$+*?.]/g;
+
+	module.exports = function (str) {
+		if (typeof str !== 'string') {
+			throw new TypeError('Expected a string');
+		}
+
+		return str.replace(matchOperatorsRe, '\\$&');
+	};
+
 
 /***/ }
 /******/ ]);

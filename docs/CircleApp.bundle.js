@@ -33562,6 +33562,10 @@
 	      return Object.assign({}, state, {
 	        stories: action.stories
 	      });
+	    case types.UPDATE_SEARCH_QUERY:
+	      return Object.assign({}, state, {
+	        q: action.q
+	      });
 	    default:
 	      return state;
 	  }
@@ -33593,6 +33597,7 @@
 	var CIRCLE_MODE = exports.CIRCLE_MODE = 'CIRCLE_MODE';
 	var STORY_FETCH_SUCCEEDED = exports.STORY_FETCH_SUCCEEDED = 'STORY_FETCH_SUCCEEDED';
 	var STORY_INDEX_FETCH_SUCCEEDED = exports.STORY_INDEX_FETCH_SUCCEEDED = 'STORY_INDEX_FETCH_SUCCEEDED';
+	var UPDATE_SEARCH_QUERY = exports.UPDATE_SEARCH_QUERY = 'UPDATE_SEARCH_QUERY';
 
 /***/ },
 /* 512 */
@@ -54864,7 +54869,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.circleMode = exports.storyMode = exports.updateWordActionKeyword = exports.switchWordAction = exports.actionWord = exports.speakWords = exports.windowResize = undefined;
+	exports.updateSearchQuery = exports.circleMode = exports.storyMode = exports.updateWordActionKeyword = exports.switchWordAction = exports.actionWord = exports.speakWords = exports.windowResize = undefined;
 
 	var _ActionTypes = __webpack_require__(511);
 
@@ -54892,6 +54897,10 @@
 	};
 	var circleMode = exports.circleMode = function circleMode() {
 	  return { type: types.CIRCLE_MODE };
+	};
+
+	var updateSearchQuery = exports.updateSearchQuery = function updateSearchQuery(q) {
+	  return { type: types.UPDATE_SEARCH_QUERY, q: q };
 	};
 
 /***/ },
