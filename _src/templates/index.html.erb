@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <title>Henge</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
+
+<div id="static-body">
+
 <header>
-<h1 style="margin:0"><img src="/imgs/logo.svg" alt="Henge" style="margin:20px;width:360px"></h1>
+<h1><img src="/imgs/logo.svg" alt="Henge"></h1>
 </header>
 
 <article>
-<ol>
+<ol id="patterns">
 <%- circles.each do |circle| -%>
-<li><a href="<%= circle[:pattern] %>.html"><%= circle[:pattern] %></a></li>
+<li><a class="pattern" href="<%= circle[:pattern] %>.html" data-pickup="<%= circle[:pickup] %>" data-count="<%= circle[:count] %>"><%= circle[:pattern] %></a></li>
 <%- end -%>
 </ol>
+
+</div>
+
+<div id="circle-index-app">...</div>
+
+<script type="text/javascript">
+  var allWords = <%= all_words_json %>;
+</script>
+
+<script type="text/javascript" src="/CircleIndexApp.bundle.js"></script>
 </body>
 </html>

@@ -7,3 +7,5 @@ export const switchWordAction = (name) => ({ type: types.SWITCH_WORD_ACTION, nam
 export const updateWordActionKeyword = (keyword) => ({ type: types.UPDATE_WORD_ACTION_KEYWORD, keyword });
 export const storyMode = () => ({ type: types.STORY_MODE });
 export const circleMode = () => ({ type: types.CIRCLE_MODE });
+
+export const updateSearchQuery = (q) => ({ type: types.UPDATE_SEARCH_QUERY, q});

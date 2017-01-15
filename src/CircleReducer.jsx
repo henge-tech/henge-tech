@@ -56,6 +56,10 @@ const index = (state = {}, action) => {
     return Object.assign({}, state, {
       stories: action.stories
     });
+  case types.UPDATE_SEARCH_QUERY:
+    return Object.assign({}, state, {
+      q: action.q
+    });
   default:
     return state;
   }

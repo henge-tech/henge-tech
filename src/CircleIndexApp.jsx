@@ -22,13 +22,18 @@ let initialState = {
   }
 };
 
-let patternsList = document.getElementById('patterns').childNodes;
-patternsList.forEach(function(pattern) {
-  pattern = pattern.textContent;
-  if (pattern != "\n") {
-    initialState.index.patterns.push(pattern);
-  }
-});
+let pattern, pstr;
+let patternsList = document.getElementsByClassName('pattern');
+
+for (let i = 0; i < patternsList.length; i++) {
+  pattern = {};
+  pattern.id = i + 1;
+  pattern.pattern = patternsList[i].textContent;
+  pattern.count = patternsList[i].getAttribute('data-count');
+  pattern.pickup = patternsList[i].getAttribute('data-pickup') == 'true';
+  pattern.allWords = allWords[i].join("\t");
+  initialState.index.patterns.push(pattern);
+}
 
 const sagaMiddleware = createSagaMiddleware()
 const store = createStore(circleReducer, initialState, applyMiddleware(sagaMiddleware));

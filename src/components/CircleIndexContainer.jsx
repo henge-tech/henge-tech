@@ -1,16 +1,20 @@
 import { connect } from 'react-redux'
 import CircleIndex from './CircleIndex.jsx';
-import { speakWords, actionWord, switchWordAction, updateWordActionKeyword } from '../Actions.jsx'
+import { updateSearchQuery } from '../Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {
     patterns: state.index.patterns,
-    stories: state.index.stories
+    stories: state.index.stories,
+    q: state.index.q
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    onChangeSearchQuery: (q) => {
+      dispatch(updateSearchQuery(q));
+    }
   }
 }
 
