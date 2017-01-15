@@ -84,7 +84,9 @@
 	var initialState = {
 	  index: {
 	    patterns: [],
-	    stories: []
+	    stories: [],
+	    q: '',
+	    filter: 'all'
 	  }
 	};
 
@@ -33540,7 +33542,13 @@
 	      });
 	    case types.UPDATE_SEARCH_QUERY:
 	      return Object.assign({}, state, {
-	        q: action.q
+	        q: action.q,
+	        filter: 'all'
+	      });
+	    case types.CHANGE_INDEX_FILTER:
+	      return Object.assign({}, state, {
+	        q: '',
+	        filter: action.filter
 	      });
 	    default:
 	      return state;
@@ -33573,7 +33581,9 @@
 	var CIRCLE_MODE = exports.CIRCLE_MODE = 'CIRCLE_MODE';
 	var STORY_FETCH_SUCCEEDED = exports.STORY_FETCH_SUCCEEDED = 'STORY_FETCH_SUCCEEDED';
 	var STORY_INDEX_FETCH_SUCCEEDED = exports.STORY_INDEX_FETCH_SUCCEEDED = 'STORY_INDEX_FETCH_SUCCEEDED';
+
 	var UPDATE_SEARCH_QUERY = exports.UPDATE_SEARCH_QUERY = 'UPDATE_SEARCH_QUERY';
+	var CHANGE_INDEX_FILTER = exports.CHANGE_INDEX_FILTER = 'CHANGE_INDEX_FILTER';
 
 /***/ },
 /* 512 */
@@ -52500,7 +52510,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.updateSearchQuery = exports.circleMode = exports.storyMode = exports.updateWordActionKeyword = exports.switchWordAction = exports.actionWord = exports.speakWords = exports.windowResize = undefined;
+	exports.changeIndexFilter = exports.updateSearchQuery = exports.circleMode = exports.storyMode = exports.updateWordActionKeyword = exports.switchWordAction = exports.actionWord = exports.speakWords = exports.windowResize = undefined;
 
 	var _ActionTypes = __webpack_require__(511);
 
@@ -52532,6 +52542,9 @@
 
 	var updateSearchQuery = exports.updateSearchQuery = function updateSearchQuery(q) {
 	  return { type: types.UPDATE_SEARCH_QUERY, q: q };
+	};
+	var changeIndexFilter = exports.changeIndexFilter = function changeIndexFilter(filter) {
+	  return { type: types.CHANGE_INDEX_FILTER, filter: filter };
 	};
 
 /***/ },
@@ -53289,7 +53302,8 @@
 	  return {
 	    patterns: state.index.patterns,
 	    stories: state.index.stories,
-	    q: state.index.q
+	    q: state.index.q,
+	    filter: state.index.filter
 	  };
 	};
 
@@ -53297,6 +53311,9 @@
 	  return {
 	    onChangeSearchQuery: function onChangeSearchQuery(q) {
 	      dispatch((0, _Actions.updateSearchQuery)(q));
+	    },
+	    onClickFilter: function onClickFilter(filter) {
+	      dispatch((0, _Actions.changeIndexFilter)(filter));
 	    }
 	  };
 	};
@@ -53353,6 +53370,12 @@
 	      this.props.onChangeSearchQuery(e.target.value);
 	    }
 	  }, {
+	    key: 'onClickFilter',
+	    value: function onClickFilter(e, filter) {
+	      this.props.onClickFilter(filter);
+	      e.preventDefault();
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var _this2 = this;
@@ -53377,6 +53400,18 @@
 	        if (rex !== null) {
 	          match = rex.exec(pattern.allWords);
 	          if (match === null) return;
+	        } else if (_this2.props.filter == 'pickup') {
+	          if (!pattern.pickup) return;
+	        } else if (_this2.props.filter == 'story') {
+	          if (stories.indexOf(pattern.pattern) < 0) return;
+	        } else if (_this2.props.filter == '8') {
+	          if (pattern.count != 8) return;
+	        } else if (_this2.props.filter == '12') {
+	          if (pattern.count != 12) return;
+	        } else if (_this2.props.filter == '16') {
+	          if (pattern.count != 16) return;
+	        } else if (_this2.props.filter == '20') {
+	          if (pattern.count != 20) return;
 	        }
 
 	        var patternAttr = [];
@@ -53405,6 +53440,13 @@
 	        i += 1;
 	      });
 	      var searchQuery = '';
+	      var filterItemClass = function filterItemClass(filter) {
+	        if (_this2.props.filter == filter) {
+	          return 'index-filter-item index-filter-item-current';
+	        } else {
+	          return 'index-filter-item';
+	        }
+	      };
 
 	      return _react2.default.createElement(
 	        'div',
@@ -53425,7 +53467,7 @@
 	                _react2.default.createElement(
 	                  _reactBootstrap.InputGroup,
 	                  null,
-	                  _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Search', onChange: function onChange(e) {
+	                  _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', value: this.props.q, placeholder: 'Search', onChange: function onChange(e) {
 	                      _this2.onChangeSearchQuery(e);
 	                    } }),
 	                  _react2.default.createElement(
@@ -53436,23 +53478,96 @@
 	                )
 	              ),
 	              _react2.default.createElement(
-	                'p',
-	                { style: { marginTop: '10px', marginBottom: '20px' } },
+	                'ul',
+	                { className: 'index-filters-list' },
 	                _react2.default.createElement(
-	                  'a',
-	                  { href: '#' },
-	                  'Pickup'
+	                  'li',
+	                  { className: filterItemClass('all') },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { onClick: function onClick(e) {
+	                        _this2.onClickFilter(e, 'all');
+	                      }, href: '#' },
+	                    'All'
+	                  )
 	                ),
-	                ' | ',
 	                _react2.default.createElement(
-	                  'a',
-	                  { href: '#' },
-	                  'Story'
+	                  'li',
+	                  { className: filterItemClass('pickup') },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { onClick: function onClick(e) {
+	                        _this2.onClickFilter(e, 'pickup');
+	                      }, href: '#' },
+	                    'Pickup'
+	                  )
 	                ),
-	                ' | 8 | 12 | 16 | 20 | ',
-	                _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'random' }),
-	                ' | ',
-	                _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'star' })
+	                _react2.default.createElement(
+	                  'li',
+	                  { className: filterItemClass('story') },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { onClick: function onClick(e) {
+	                        _this2.onClickFilter(e, 'story');
+	                      }, href: '#' },
+	                    'Story'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  { className: filterItemClass('8') },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { onClick: function onClick(e) {
+	                        _this2.onClickFilter(e, '8');
+	                      }, href: '#' },
+	                    '8'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  { className: filterItemClass('12') },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { onClick: function onClick(e) {
+	                        _this2.onClickFilter(e, '12');
+	                      }, href: '#' },
+	                    '12'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  { className: filterItemClass('16') },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { onClick: function onClick(e) {
+	                        _this2.onClickFilter(e, '16');
+	                      }, href: '#' },
+	                    '16'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  { className: filterItemClass('20') },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { onClick: function onClick(e) {
+	                        _this2.onClickFilter(e, '20');
+	                      }, href: '#' },
+	                    '20'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'li',
+	                  { className: filterItemClass('star') },
+	                  _react2.default.createElement(
+	                    'a',
+	                    { onClick: function onClick(e) {
+	                        _this2.onClickFilter(e, 'star');
+	                      }, href: '#' },
+	                    _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'star' })
+	                  )
+	                )
 	              ),
 	              _react2.default.createElement(
 	                'ol',
