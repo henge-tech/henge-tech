@@ -88,7 +88,7 @@
 	  circle: {
 	    mode: 'circle',
 	    words: [],
-	    wordAction: 'image',
+	    wordAction: 'speech',
 	    wordActionKeyword: '意味',
 	    story: false
 	  }
@@ -33725,6 +33725,9 @@
 	          keyword = encodeURIComponent(keyword);
 	          window.open('https://www.google.com/search?safe=off&q=' + q + '+' + keyword);
 	          break;
+	        case 'webster':
+	          window.open('https://www.merriam-webster.com/dictionary/' + q);
+	          break;
 	        case 'wikipedia':
 	          window.open('https://en.wikipedia.org/wiki/' + q);
 	          break;
@@ -54768,22 +54771,22 @@
 	                null,
 	                _react2.default.createElement('input', { name: 'actionType', type: 'radio',
 	                  onChange: function onChange() {
-	                    return _onClick('image');
+	                    return _onClick('speech');
 	                  },
-	                  checked: this.props.wordAction === 'image'
+	                  checked: this.props.wordAction === 'speech'
 	                }),
-	                ' Image'
+	                ' Speech'
 	              ),
 	              _react2.default.createElement(
 	                'label',
 	                null,
 	                _react2.default.createElement('input', { name: 'actionType', type: 'radio',
 	                  onChange: function onChange() {
-	                    return _onClick('speech');
+	                    return _onClick('image');
 	                  },
-	                  checked: this.props.wordAction === 'speech'
+	                  checked: this.props.wordAction === 'image'
 	                }),
-	                ' Speech'
+	                ' Image'
 	              ),
 	              _react2.default.createElement(
 	                'label',
@@ -54800,6 +54803,17 @@
 	                  onChange: function onChange(event) {
 	                    return _onChange(event.target.value);
 	                  } })
+	              ),
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                _react2.default.createElement('input', { name: 'actionType', type: 'radio',
+	                  onChange: function onChange() {
+	                    return _onClick('webster');
+	                  },
+	                  checked: this.props.wordAction === 'webster'
+	                }),
+	                ' Webster'
 	              ),
 	              _react2.default.createElement(
 	                'label',
@@ -54984,11 +54998,6 @@
 	              _reactBootstrap.NavItem,
 	              { href: '/circles/', onClick: this.openPage },
 	              'Circles'
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { href: '/circles/pickup.html', onClick: this.openPage },
-	              'Pickup'
 	            )
 	          )
 	        )

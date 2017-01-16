@@ -33703,6 +33703,9 @@
 	          keyword = encodeURIComponent(keyword);
 	          window.open('https://www.google.com/search?safe=off&q=' + q + '+' + keyword);
 	          break;
+	        case 'webster':
+	          window.open('https://www.merriam-webster.com/dictionary/' + q);
+	          break;
 	        case 'wikipedia':
 	          window.open('https://en.wikipedia.org/wiki/' + q);
 	          break;
@@ -52617,11 +52620,6 @@
 	              _reactBootstrap.NavItem,
 	              { href: '/circles/', onClick: this.openPage },
 	              'Circles'
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { href: '/circles/pickup.html', onClick: this.openPage },
-	              'Pickup'
 	            )
 	          )
 	        )
@@ -53563,7 +53561,7 @@
 	                  _react2.default.createElement(
 	                    'a',
 	                    { onClick: function onClick(e) {
-	                        _this2.onClickFilter(e, 'star');
+	                        _this2.onClickFilter(e, 'all');
 	                      }, href: '#' },
 	                    _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'star' })
 	                  )
