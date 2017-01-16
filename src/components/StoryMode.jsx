@@ -14,6 +14,7 @@ export default class StoryMode extends React.Component {
     let rex = /([^\[]*)\[([^\]]+)\]([^\[]*)/g;
     let keynum = 0;
     let p = this.props;
+    let label;
 
     storyTexts.forEach(function(txt) {
       let line = [];
@@ -28,9 +29,15 @@ export default class StoryMode extends React.Component {
         };
 
         line.push(match[1] + ' ');
+        if (p.storyWords == 'translated') {
+          label = match[2];
+        } else {
+          label = word.word;
+        }
         line.push(
-          <a href='#' key={'story-word-' + keynum} onClick={onClickWord}>{match[2]}</a>
+            <a href='#' key={'story-word-' + keynum} onClick={onClickWord}>{label}</a>
         );
+
         line.push(' ' + match[3]);
         keynum += 1;
       }
@@ -51,7 +58,7 @@ export default class StoryMode extends React.Component {
                 <Button
                   onClick={() => this.props.onClickSpeakButton(this.props.words, -1)}
                   className="btn-circle"
-                ><Glyphicon glyph="volume-up" /></Button>
+        ><Glyphicon glyph="volume-up" /></Button>
               </p>
             </Col>
             <Col md={11} sm={11}>
@@ -88,9 +95,15 @@ export default class StoryMode extends React.Component {
 
                 <span style={{marginLeft: '20px'}}>{lines[3]}</span>
               </p>
-
+              <p>
+                <Button
+                    onClick={() => this.props.onClickToggleWordsButton()}
+                    className="btn-circle"
+                  ><Glyphicon glyph="refresh" /></Button>
+              </p>
             </Col>
           </Row>
+
         </Grid>
         <WordActionsListContainer />
         <CirclePageNavBar />

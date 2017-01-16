@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import StoryMode from './StoryMode.jsx';
-import { circleMode, speakWords, actionWord } from '../Actions.jsx'
+import { circleMode, speakWords, actionWord, toggleStoryWords } from '../Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {
@@ -10,6 +10,7 @@ const mapStateToProps = (state) => {
     words: state.circle.words,
     pattern: state.circle.pattern,
     story: state.circle.story,
+    storyWords: state.circle.storyWords
   }
 }
 
@@ -20,6 +21,9 @@ const mapDispatchToProps = (dispatch) => {
     },
     onClickWord: (word) => {
       dispatch(actionWord(word))
+    },
+    onClickToggleWordsButton: () => {
+      dispatch(toggleStoryWords())
     },
   }
 }

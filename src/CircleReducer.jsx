@@ -45,6 +45,14 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       story: action.story
     });
+  case types.TOGGLE_STORY_WORDS:
+    let storyWords = 'translated';
+    if (state.storyWords == 'translated') {
+      storyWords = 'english';
+    }
+    return Object.assign({}, state, {
+      storyWords: storyWords
+    });
   default:
     return state;
   }
