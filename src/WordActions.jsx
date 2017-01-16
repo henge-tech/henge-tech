@@ -18,6 +18,9 @@ export default class WordActions {
       keyword = encodeURIComponent(keyword);
       window.open('https://www.google.com/search?safe=off&q=' + q + '+' + keyword);
       break;
+    case 'webster':
+      window.open('https://www.merriam-webster.com/dictionary/' + q);
+      break;
     case 'wikipedia':
       window.open('https://en.wikipedia.org/wiki/' + q);
       break;

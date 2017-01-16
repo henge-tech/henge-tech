@@ -92,7 +92,7 @@ export default class CircleIndex extends React.Component {
           <li className={filterItemClass('12')}><a onClick={(e) => { this.onClickFilter(e, '12') }} href="#">12</a></li>
           <li className={filterItemClass('16')}><a onClick={(e) => { this.onClickFilter(e, '16') }} href="#">16</a></li>
           <li className={filterItemClass('20')}><a onClick={(e) => { this.onClickFilter(e, '20') }} href="#">20</a></li>
-          <li className={filterItemClass('star')}><a onClick={(e) => { this.onClickFilter(e, 'star') }} href="#"><Glyphicon glyph="star" /></a></li>
+          <li className={filterItemClass('star')}><a onClick={(e) => { this.onClickFilter(e, 'all') }} href="#"><Glyphicon glyph="star" /></a></li>
         </ul>
         <ol style={{fontSize: '1.25em'}}>
         {patternsList}

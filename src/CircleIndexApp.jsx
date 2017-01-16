@@ -49,4 +49,3 @@ render(
 );
 
 store.dispatch({type: 'STORY_INDEX_FETCH_REQUESTED', lang: 'ja'});
-

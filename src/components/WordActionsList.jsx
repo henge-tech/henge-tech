@@ -59,19 +59,23 @@ export default class WordActionsList extends React.Component {
         </Col>
         <Col xsHidden={cols[1].xsHidden} xs={cols[1].xs} md={cols[1].md}>
           <label><input name="actionType" type="radio"
-            onChange={() => onClick('image')}
-            checked={this.props.wordAction === 'image'}
-            /> Image</label>
-          <label><input name="actionType" type="radio"
             onChange={() => onClick('speech')}
             checked={this.props.wordAction === 'speech'}
             /> Speech</label>
+          <label><input name="actionType" type="radio"
+            onChange={() => onClick('image')}
+            checked={this.props.wordAction === 'image'}
+            /> Image</label>
           <label><input name="actionType" type="radio"
             onClick={() => onClick('keyword')}
             checked={this.props.wordAction === 'keyword'}
             /> + <input type="text" size="10"
             value={this.props.wordActionKeyword}
             onChange={(event) => onChange(event.target.value)}/></label>
+          <label><input name="actionType" type="radio"
+            onChange={() => onClick('webster')}
+            checked={this.props.wordAction === 'webster'}
+            /> Webster</label>
           <label><input name="actionType" type="radio"
             onClick={() => onClick('wikipedia')}
             checked={this.props.wordAction === 'wikipedia'}

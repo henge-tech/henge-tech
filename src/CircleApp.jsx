@@ -20,7 +20,7 @@ let initialState = {
   circle: {
     mode: 'circle',
     words: [],
-    wordAction: 'image',
+    wordAction: 'speech',
     wordActionKeyword: '意味',
     story: false,
   },
