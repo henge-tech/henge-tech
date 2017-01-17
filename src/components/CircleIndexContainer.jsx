@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import CircleIndex from './CircleIndex.jsx';
-import { updateSearchQuery, changeIndexFilter } from '../Actions.jsx'
+import { updateSearchQuery, changeIndexFilter, speakIndexWords } from '../Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {
@@ -18,6 +18,9 @@ const mapDispatchToProps = (dispatch) => {
     },
     onClickFilter: (filter) => {
       dispatch(changeIndexFilter(filter));
+    },
+    onClickSpeakButton: (id) => {
+      dispatch(speakIndexWords(id));
     }
   }
 }

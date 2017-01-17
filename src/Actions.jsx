@@ -11,3 +11,4 @@ export const toggleStoryWords = () => ({ type: types.TOGGLE_STORY_WORDS});
 
 export const updateSearchQuery = (q) => ({ type: types.UPDATE_SEARCH_QUERY, q});
 export const changeIndexFilter = (filter) => ({ type: types.CHANGE_INDEX_FILTER, filter});
+export const speakIndexWords = id => ({ type: types.SPEAK_INDEX_WORDS, id});

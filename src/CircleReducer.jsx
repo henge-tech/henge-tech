@@ -74,6 +74,10 @@ const index = (state = {}, action) => {
       q: '',
       filter: action.filter
     });
+  case types.SPEAK_INDEX_WORDS:
+    let speaker = new Speaker();
+    speaker.speak(state.allWords[action.id - 1]);
+    return state;
   default:
     return state;
   }

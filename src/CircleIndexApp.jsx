@@ -21,6 +21,7 @@ let initialState = {
     stories: [],
     q: '',
     filter: 'all',
+    allWords: allWords
   }
 };
 
@@ -33,7 +34,7 @@ for (let i = 0; i < patternsList.length; i++) {
   pattern.pattern = patternsList[i].textContent;
   pattern.count = patternsList[i].getAttribute('data-count');
   pattern.pickup = patternsList[i].getAttribute('data-pickup') == 'true';
-  pattern.allWords = allWords[i].join("\t");
+  pattern.allWordsText = allWords[i].join("\t");
   initialState.index.patterns.push(pattern);
 }
 

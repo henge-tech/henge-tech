@@ -24,7 +24,11 @@ export default class Speaker {
 
       let unitWords = [];
       for (let j = 0; j < unit; j++) {
-        unitWords.push(words[i * unit + j].word);
+        let w = words[i * unit + j];
+        if (w.word) {
+          w = w.word;
+        }
+        unitWords.push(w);
         // unitWords.push(words[i * unit + j].word.toUpperCase().replace(/(.)/g, '$1 '));
         // unitWords.push(', ')
       }

@@ -31,7 +31,7 @@ export default class CircleIndex extends React.Component {
 
     this.props.patterns.forEach((pattern) => {
       if (rex !== null) {
-        match = rex.exec(pattern.allWords);
+        match = rex.exec(pattern.allWordsText);
         if (match === null) return;
       } else if (this.props.filter == 'pickup') {
         if (!pattern.pickup) return;
@@ -55,9 +55,15 @@ export default class CircleIndex extends React.Component {
       if (stories.indexOf(pattern.pattern) >= 0) {
         patternAttr.push('s');
       }
+      let onClickSpeakButton = (e) => {
+        this.props.onClickSpeakButton(pattern.id);
+        e.preventDefault();
+      }
 
       patternsList.push(
-        <li value={pattern.id} key={'pattern-' + i}><span style={{width: '100px', display: 'inline-block'}}><a href={pattern.pattern + '.html'}>{pattern.pattern}</a></span>{patternAttr.join(',')}</li>
+        <li value={pattern.id} key={'pattern-' + i}><span style={{width: '100px', display: 'inline-block'}}><a href={pattern.pattern + '.html'}>{pattern.pattern}</a></span>
+          <a href="#" onClick={e => onClickSpeakButton(e)}><Glyphicon glyph="volume-up" style={{marginRight: '5px'}}/></a>
+          {patternAttr.join(',')}</li>
       );
       i += 1;
     });
