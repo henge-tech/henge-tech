@@ -90,7 +90,8 @@
 	    words: [],
 	    wordAction: 'speech',
 	    wordActionKeyword: '意味',
-	    story: false
+	    story: false,
+	    storyWords: 'translated'
 	  }
 	};
 
@@ -33548,6 +33549,14 @@
 	      return Object.assign({}, state, {
 	        story: action.story
 	      });
+	    case types.TOGGLE_STORY_WORDS:
+	      var storyWords = 'translated';
+	      if (state.storyWords == 'translated') {
+	        storyWords = 'english';
+	      }
+	      return Object.assign({}, state, {
+	        storyWords: storyWords
+	      });
 	    default:
 	      return state;
 	  }
@@ -33572,6 +33581,10 @@
 	        q: '',
 	        filter: action.filter
 	      });
+	    case types.SPEAK_INDEX_WORDS:
+	      var speaker = new _Speaker2.default();
+	      speaker.speak(state.allWords[action.id - 1]);
+	      return state;
 	    default:
 	      return state;
 	  }
@@ -33603,9 +33616,11 @@
 	var CIRCLE_MODE = exports.CIRCLE_MODE = 'CIRCLE_MODE';
 	var STORY_FETCH_SUCCEEDED = exports.STORY_FETCH_SUCCEEDED = 'STORY_FETCH_SUCCEEDED';
 	var STORY_INDEX_FETCH_SUCCEEDED = exports.STORY_INDEX_FETCH_SUCCEEDED = 'STORY_INDEX_FETCH_SUCCEEDED';
+	var TOGGLE_STORY_WORDS = exports.TOGGLE_STORY_WORDS = 'TOGGLE_STORY_WORDS';
 
 	var UPDATE_SEARCH_QUERY = exports.UPDATE_SEARCH_QUERY = 'UPDATE_SEARCH_QUERY';
 	var CHANGE_INDEX_FILTER = exports.CHANGE_INDEX_FILTER = 'CHANGE_INDEX_FILTER';
+	var SPEAK_INDEX_WORDS = exports.SPEAK_INDEX_WORDS = 'SPEAK_INDEX_WORDS';
 
 /***/ },
 /* 512 */
@@ -33652,7 +33667,11 @@
 
 	        var unitWords = [];
 	        for (var j = 0; j < unit; j++) {
-	          unitWords.push(words[i * unit + j].word);
+	          var w = words[i * unit + j];
+	          if (w.word) {
+	            w = w.word;
+	          }
+	          unitWords.push(w);
 	          // unitWords.push(words[i * unit + j].word.toUpperCase().replace(/(.)/g, '$1 '));
 	          // unitWords.push(', ')
 	        }
@@ -54891,7 +54910,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.changeIndexFilter = exports.updateSearchQuery = exports.circleMode = exports.storyMode = exports.updateWordActionKeyword = exports.switchWordAction = exports.actionWord = exports.speakWords = exports.windowResize = undefined;
+	exports.speakIndexWords = exports.changeIndexFilter = exports.updateSearchQuery = exports.toggleStoryWords = exports.circleMode = exports.storyMode = exports.updateWordActionKeyword = exports.switchWordAction = exports.actionWord = exports.speakWords = exports.windowResize = undefined;
 
 	var _ActionTypes = __webpack_require__(511);
 
@@ -54920,12 +54939,18 @@
 	var circleMode = exports.circleMode = function circleMode() {
 	  return { type: types.CIRCLE_MODE };
 	};
+	var toggleStoryWords = exports.toggleStoryWords = function toggleStoryWords() {
+	  return { type: types.TOGGLE_STORY_WORDS };
+	};
 
 	var updateSearchQuery = exports.updateSearchQuery = function updateSearchQuery(q) {
 	  return { type: types.UPDATE_SEARCH_QUERY, q: q };
 	};
 	var changeIndexFilter = exports.changeIndexFilter = function changeIndexFilter(filter) {
 	  return { type: types.CHANGE_INDEX_FILTER, filter: filter };
+	};
+	var speakIndexWords = exports.speakIndexWords = function speakIndexWords(id) {
+	  return { type: types.SPEAK_INDEX_WORDS, id: id };
 	};
 
 /***/ },
@@ -55037,7 +55062,8 @@
 	    height: state.window.height,
 	    words: state.circle.words,
 	    pattern: state.circle.pattern,
-	    story: state.circle.story
+	    story: state.circle.story,
+	    storyWords: state.circle.storyWords
 	  };
 	};
 
@@ -55048,6 +55074,9 @@
 	    },
 	    onClickWord: function onClickWord(word) {
 	      dispatch((0, _Actions.actionWord)(word));
+	    },
+	    onClickToggleWordsButton: function onClickToggleWordsButton() {
+	      dispatch((0, _Actions.toggleStoryWords)());
 	    }
 	  };
 	};
@@ -55112,6 +55141,7 @@
 	      var rex = /([^\[]*)\[([^\]]+)\]([^\[]*)/g;
 	      var keynum = 0;
 	      var p = this.props;
+	      var label = void 0;
 
 	      storyTexts.forEach(function (txt) {
 	        var line = [];
@@ -55126,11 +55156,17 @@
 	          };
 
 	          line.push(match[1] + ' ');
+	          if (p.storyWords == 'translated') {
+	            label = match[2];
+	          } else {
+	            label = word.word;
+	          }
 	          line.push(_react2.default.createElement(
 	            'a',
 	            { href: '#', key: 'story-word-' + keynum, onClick: onClickWord },
-	            match[2]
+	            label
 	          ));
+
 	          line.push(' ' + match[3]);
 	          keynum += 1;
 	        };
@@ -55250,6 +55286,20 @@
 	                  'span',
 	                  { style: { marginLeft: '20px' } },
 	                  lines[3]
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                _react2.default.createElement(
+	                  _reactBootstrap.Button,
+	                  {
+	                    onClick: function onClick() {
+	                      return _this2.props.onClickToggleWordsButton();
+	                    },
+	                    className: 'btn-circle'
+	                  },
+	                  _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'refresh' })
 	                )
 	              )
 	            )

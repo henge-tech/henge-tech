@@ -86,7 +86,8 @@
 	    patterns: [],
 	    stories: [],
 	    q: '',
-	    filter: 'all'
+	    filter: 'all',
+	    allWords: allWords
 	  }
 	};
 
@@ -100,7 +101,7 @@
 	  pattern.pattern = patternsList[i].textContent;
 	  pattern.count = patternsList[i].getAttribute('data-count');
 	  pattern.pickup = patternsList[i].getAttribute('data-pickup') == 'true';
-	  pattern.allWords = allWords[i].join("\t");
+	  pattern.allWordsText = allWords[i].join("\t");
 	  initialState.index.patterns.push(pattern);
 	}
 
@@ -33526,6 +33527,14 @@
 	      return Object.assign({}, state, {
 	        story: action.story
 	      });
+	    case types.TOGGLE_STORY_WORDS:
+	      var storyWords = 'translated';
+	      if (state.storyWords == 'translated') {
+	        storyWords = 'english';
+	      }
+	      return Object.assign({}, state, {
+	        storyWords: storyWords
+	      });
 	    default:
 	      return state;
 	  }
@@ -33550,6 +33559,10 @@
 	        q: '',
 	        filter: action.filter
 	      });
+	    case types.SPEAK_INDEX_WORDS:
+	      var speaker = new _Speaker2.default();
+	      speaker.speak(state.allWords[action.id - 1]);
+	      return state;
 	    default:
 	      return state;
 	  }
@@ -33581,9 +33594,11 @@
 	var CIRCLE_MODE = exports.CIRCLE_MODE = 'CIRCLE_MODE';
 	var STORY_FETCH_SUCCEEDED = exports.STORY_FETCH_SUCCEEDED = 'STORY_FETCH_SUCCEEDED';
 	var STORY_INDEX_FETCH_SUCCEEDED = exports.STORY_INDEX_FETCH_SUCCEEDED = 'STORY_INDEX_FETCH_SUCCEEDED';
+	var TOGGLE_STORY_WORDS = exports.TOGGLE_STORY_WORDS = 'TOGGLE_STORY_WORDS';
 
 	var UPDATE_SEARCH_QUERY = exports.UPDATE_SEARCH_QUERY = 'UPDATE_SEARCH_QUERY';
 	var CHANGE_INDEX_FILTER = exports.CHANGE_INDEX_FILTER = 'CHANGE_INDEX_FILTER';
+	var SPEAK_INDEX_WORDS = exports.SPEAK_INDEX_WORDS = 'SPEAK_INDEX_WORDS';
 
 /***/ },
 /* 512 */
@@ -33630,7 +33645,11 @@
 
 	        var unitWords = [];
 	        for (var j = 0; j < unit; j++) {
-	          unitWords.push(words[i * unit + j].word);
+	          var w = words[i * unit + j];
+	          if (w.word) {
+	            w = w.word;
+	          }
+	          unitWords.push(w);
 	          // unitWords.push(words[i * unit + j].word.toUpperCase().replace(/(.)/g, '$1 '));
 	          // unitWords.push(', ')
 	        }
@@ -52513,7 +52532,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.changeIndexFilter = exports.updateSearchQuery = exports.circleMode = exports.storyMode = exports.updateWordActionKeyword = exports.switchWordAction = exports.actionWord = exports.speakWords = exports.windowResize = undefined;
+	exports.speakIndexWords = exports.changeIndexFilter = exports.updateSearchQuery = exports.toggleStoryWords = exports.circleMode = exports.storyMode = exports.updateWordActionKeyword = exports.switchWordAction = exports.actionWord = exports.speakWords = exports.windowResize = undefined;
 
 	var _ActionTypes = __webpack_require__(511);
 
@@ -52542,12 +52561,18 @@
 	var circleMode = exports.circleMode = function circleMode() {
 	  return { type: types.CIRCLE_MODE };
 	};
+	var toggleStoryWords = exports.toggleStoryWords = function toggleStoryWords() {
+	  return { type: types.TOGGLE_STORY_WORDS };
+	};
 
 	var updateSearchQuery = exports.updateSearchQuery = function updateSearchQuery(q) {
 	  return { type: types.UPDATE_SEARCH_QUERY, q: q };
 	};
 	var changeIndexFilter = exports.changeIndexFilter = function changeIndexFilter(filter) {
 	  return { type: types.CHANGE_INDEX_FILTER, filter: filter };
+	};
+	var speakIndexWords = exports.speakIndexWords = function speakIndexWords(id) {
+	  return { type: types.SPEAK_INDEX_WORDS, id: id };
 	};
 
 /***/ },
@@ -53312,6 +53337,9 @@
 	    },
 	    onClickFilter: function onClickFilter(filter) {
 	      dispatch((0, _Actions.changeIndexFilter)(filter));
+	    },
+	    onClickSpeakButton: function onClickSpeakButton(id) {
+	      dispatch((0, _Actions.speakIndexWords)(id));
 	    }
 	  };
 	};
@@ -53396,7 +53424,7 @@
 
 	      this.props.patterns.forEach(function (pattern) {
 	        if (rex !== null) {
-	          match = rex.exec(pattern.allWords);
+	          match = rex.exec(pattern.allWordsText);
 	          if (match === null) return;
 	        } else if (_this2.props.filter == 'pickup') {
 	          if (!pattern.pickup) return;
@@ -53420,6 +53448,10 @@
 	        if (stories.indexOf(pattern.pattern) >= 0) {
 	          patternAttr.push('s');
 	        }
+	        var onClickSpeakButton = function onClickSpeakButton(e) {
+	          _this2.props.onClickSpeakButton(pattern.id);
+	          e.preventDefault();
+	        };
 
 	        patternsList.push(_react2.default.createElement(
 	          'li',
@@ -53432,6 +53464,13 @@
 	              { href: pattern.pattern + '.html' },
 	              pattern.pattern
 	            )
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: '#', onClick: function onClick(e) {
+	                return onClickSpeakButton(e);
+	              } },
+	            _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'volume-up', style: { marginRight: '5px' } })
 	          ),
 	          patternAttr.join(',')
 	        ));
