@@ -10,7 +10,7 @@ data = {}
 source.each do |line|
   line.strip!
   next if line.empty?
-  if line =~ /^# ([a-z_]+)/
+  if line =~ /^# [\d\.\s]*([a-z_]+)/
     pattern = $1
   else
     data[pattern] ||= []
