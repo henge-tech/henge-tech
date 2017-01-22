@@ -33756,6 +33756,9 @@
 	        case 'tumblr':
 	          window.open('https://www.tumblr.com/search/' + q);
 	          break;
+	        case 'ebay':
+	          window.open('http://www.ebay.com/sch/?_nkw=' + q);
+	          break;
 	      }
 	    }
 	  }]);
@@ -54850,6 +54853,17 @@
 	                null,
 	                _react2.default.createElement('input', { name: 'actionType', type: 'radio',
 	                  onClick: function onClick() {
+	                    return _onClick('ebay');
+	                  },
+	                  checked: this.props.wordAction === 'ebay'
+	                }),
+	                ' eBay'
+	              ),
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                _react2.default.createElement('input', { name: 'actionType', type: 'radio',
+	                  onClick: function onClick() {
 	                    return _onClick('twitter');
 	                  },
 	                  checked: this.props.wordAction === 'twitter'
@@ -55023,6 +55037,11 @@
 	              _reactBootstrap.NavItem,
 	              { href: '/circles/', onClick: this.openPage },
 	              'Circles'
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.NavItem,
+	              { href: '/stories/ja/', onClick: this.openPage },
+	              'Stories'
 	            )
 	          )
 	        )
