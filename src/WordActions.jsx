@@ -30,6 +30,9 @@ export default class WordActions {
     case 'tumblr':
       window.open('https://www.tumblr.com/search/' + q);
       break;
+    case 'ebay':
+      window.open('http://www.ebay.com/sch/?_nkw=' + q);
+      break;
     }
   }
 }

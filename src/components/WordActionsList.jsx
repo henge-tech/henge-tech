@@ -81,6 +81,10 @@ export default class WordActionsList extends React.Component {
             checked={this.props.wordAction === 'wikipedia'}
             /> Wikipedia</label>
           <label><input name="actionType" type="radio"
+            onClick={() => onClick('ebay')}
+            checked={this.props.wordAction === 'ebay'}
+            /> eBay</label>
+          <label><input name="actionType" type="radio"
             onClick={() => onClick('twitter')}
             checked={this.props.wordAction === 'twitter'}
             /> Twitter</label>
