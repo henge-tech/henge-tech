@@ -18,7 +18,7 @@
 <article>
 <ol id="patterns">
 <%- circles.each do |circle| -%>
-<li><a class="pattern" href="<%= circle[:pattern] %>.html" data-pickup="<%= circle[:pickup] %>" data-count="<%= circle[:count] %>"><%= circle[:pattern] %></a></li>
+<li><a class="pattern" href="<%= circle[:pattern] %>.html" data-pickup="<%= circle[:pickup] %>" data-count="<%= circle[:words].count %>"><%= circle[:pattern] %></a></li>
 <%- end -%>
 </ol>
 

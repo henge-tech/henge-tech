@@ -2,30 +2,141 @@
 
 require 'yaml'
 require 'erb'
+require 'optparse'
+require 'json'
 
 class Generator
   PROJECT_ROOT = File.expand_path('../..', __FILE__)
-  CIRCLES_DIR = File.expand_path(ARGV[0])
-  HTML_DIR = 'docs/circles'
+
+  def initialize
+    @command = ARGV.shift
+    @data_root = File.expand_path(ARGV.shift)
+  end
 
   def execute
-    Dir.chdir(PROJECT_ROOT)
+    if @command == 'index'
+      generate_index
+    elsif @command == 'circles'
+      generate_circles
+    elsif @command == 'stories'
+      generate_stories
+    end
+  end
 
-    src_files = []
+  def all_circles
+    return @all_circles if @all_circles
 
-    erb_src = File.read(File.join('_src/templates/circle.html.erb'))
-    erb = ERB.new(erb_src, nil, '-')
+    circles = []
+    pickup_file = File.join(@data_root, 'data/pickup.yml');
+    pickups = YAML.load(File.read(pickup_file))
 
-    idx = 0
-    Dir.glob(File.join(CIRCLES_DIR, '*.yml')) do |file|
-      idx += 1
+    glob_pattern = File.join(@data_root, 'data/circles/*.yml')
+
+    Dir.glob(glob_pattern).each_with_index do |file, i|
       words = YAML.load(File.read(file))
       pattern = File.basename(file, '.yml')
-      html_file = File.join(HTML_DIR, "#{pattern}.html")
+      circles << {
+        id: i + 1,
+        pattern: pattern,
+        words: words,
+        pickup: pickups.include?(pattern)
+      }
+    end
+    @all_circles = circles
+  end
+
+  def generate_circles
+    circle_erb = File.expand_path('_src/templates/circle.html.erb', PROJECT_ROOT)
+    html_dir = File.expand_path('docs/circles', PROJECT_ROOT);
+
+    erb = ERB.new(File.read(circle_erb), nil, '-')
+
+    idx = 0
+    circles = all_circles
+    circles.each do |circle|
+      idx = circle[:id]
+      pattern = circle[:pattern]
+      words = circle[:words]
+
+      html_file = File.join(html_dir, "#{pattern}.html")
       File.open(html_file, 'w') do |out|
         out << erb.result(binding)
       end
     end
+  end
+
+  def generate_index
+    index_erb = File.expand_path('_src/templates/index.html.erb', PROJECT_ROOT)
+    erb = ERB.new(File.read(index_erb), nil, '-')
+
+    circles = all_circles
+    all_words = circles.inject([]) do |arr, circle|
+      arr << circle[:words]
+    end
+
+    html_file = File.join(PROJECT_ROOT, 'docs/circles/index.html')
+    all_words_json = JSON.dump(all_words)
+    File.open(html_file, 'w') do |out|
+      out << erb.result(binding)
+    end
+  end
+
+  def all_stories(lang)
+    file = File.join(@data_root, "data/stories/#{lang}.txt")
+
+    source = File.readlines(file);
+
+    data = {}
+    pattern = nil
+
+    source.each do |line|
+      line.strip!
+      next if line.empty?
+      if line =~ /^# [\d\.\s]*([a-z_]+)/
+        pattern = $1
+      else
+        data[pattern] ||= []
+        data[pattern] << line
+      end
+    end
+
+    data.each do |pattern, lines|
+      puts "WARN: #{pattern} #{lines.length}" if lines.length != 4
+    end
+
+    data
+  end
+
+  def generate_stories
+    lang = ARGV.shift
+    stories = all_stories(lang)
+
+    stories.each do |pattern, lines|
+      file = File.join(PROJECT_ROOT, "docs/stories/ja/#{pattern}.json");
+      File.open(file, 'w') do |io|
+        io << JSON.pretty_generate(lines)
+      end
+    end
+
+    file = File.join(PROJECT_ROOT, 'docs/stories/ja/index.json')
+    File.open(file, 'w') do |io|
+      io << JSON.dump(stories.keys.sort)
+    end
+
+    circles = all_circles
+    all_words = circles.inject([]) do |arr, circle|
+      arr << circle[:words]
+    end
+    all_words_json = JSON.dump(all_words)
+
+    file = File.join(PROJECT_ROOT, 'docs/stories/ja/index.html')
+    erb_src = File.join(PROJECT_ROOT, '_src/templates/stories.html.erb')
+    erb = ERB.new(File.read(erb_src), nil, '-')
+
+    File.open(file, 'w') do |io|
+      io << erb.result(binding)
+    end
+
   end
 end
 
