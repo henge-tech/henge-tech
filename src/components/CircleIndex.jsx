@@ -48,13 +48,38 @@ export default class CircleIndex extends React.Component {
       }
 
       let patternAttr = [];
-      patternAttr.push(pattern.count);
-      if (pattern.pickup) {
-        patternAttr.push('p');
-      }
+
+      let iconFill = '#337ab7';
+      iconFill = '#ccc';
+      let iconStyle = {
+        width: '18px',
+        height: '18px',
+        marginTop: '2px',
+        marginRight:'5px',
+        fill: iconFill
+      };
+
+      patternAttr.push(
+        <svg role="img" style={iconStyle}>
+          <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref={'/imgs/svg/sprite.svg#d' + (pattern.count / 4)}></use>
+        </svg>
+      );
+
       if (stories.indexOf(pattern.pattern) >= 0) {
-        patternAttr.push('s');
+        patternAttr.push(
+          <svg role="img" style={iconStyle}>
+            <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/imgs/svg/sprite.svg#s"></use>
+          </svg>
+);
       }
+      if (pattern.pickup) {
+        patternAttr.push(
+          <svg role="img" style={iconStyle}>
+            <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/imgs/svg/sprite.svg#p"></use>
+          </svg>
+        );
+      }
+
       let onClickSpeakButton = (e) => {
         this.props.onClickSpeakButton(pattern.id);
         e.preventDefault();
@@ -63,7 +88,7 @@ export default class CircleIndex extends React.Component {
       patternsList.push(
         <li value={pattern.id} key={'pattern-' + i}><span style={{width: '100px', display: 'inline-block'}}><a href={pattern.pattern + '.html'}>{pattern.pattern}</a></span>
           <a href="#" onClick={e => onClickSpeakButton(e)}><Glyphicon glyph="volume-up" style={{marginRight: '5px'}}/></a>
-          {patternAttr.join(',')}</li>
+          {patternAttr}</li>
       );
       i += 1;
     });

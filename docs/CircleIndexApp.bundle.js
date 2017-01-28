@@ -53458,13 +53458,38 @@
 	        }
 
 	        var patternAttr = [];
-	        patternAttr.push(pattern.count);
-	        if (pattern.pickup) {
-	          patternAttr.push('p');
-	        }
+
+	        var iconFill = '#337ab7';
+	        iconFill = '#ccc';
+	        var iconStyle = {
+	          width: '18px',
+	          height: '18px',
+	          marginTop: '2px',
+	          marginRight: '5px',
+	          fill: iconFill
+	        };
+
+	        patternAttr.push(_react2.default.createElement(
+	          'svg',
+	          { role: 'img', style: iconStyle },
+	          _react2.default.createElement('use', { xmlnsXlink: 'http://www.w3.org/1999/xlink', xlinkHref: '/imgs/svg/sprite.svg#d' + pattern.count / 4 })
+	        ));
+
 	        if (stories.indexOf(pattern.pattern) >= 0) {
-	          patternAttr.push('s');
+	          patternAttr.push(_react2.default.createElement(
+	            'svg',
+	            { role: 'img', style: iconStyle },
+	            _react2.default.createElement('use', { xmlnsXlink: 'http://www.w3.org/1999/xlink', xlinkHref: '/imgs/svg/sprite.svg#s' })
+	          ));
 	        }
+	        if (pattern.pickup) {
+	          patternAttr.push(_react2.default.createElement(
+	            'svg',
+	            { role: 'img', style: iconStyle },
+	            _react2.default.createElement('use', { xmlnsXlink: 'http://www.w3.org/1999/xlink', xlinkHref: '/imgs/svg/sprite.svg#p' })
+	          ));
+	        }
+
 	        var onClickSpeakButton = function onClickSpeakButton(e) {
 	          _this2.props.onClickSpeakButton(pattern.id);
 	          e.preventDefault();
@@ -53489,7 +53514,7 @@
 	              } },
 	            _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'volume-up', style: { marginRight: '5px' } })
 	          ),
-	          patternAttr.join(',')
+	          patternAttr
 	        ));
 	        i += 1;
 	      });
