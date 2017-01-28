@@ -38,12 +38,21 @@ export default class Speaker {
 
     let text = speechTexts.join(', ');
 
+    if (speechSynthesis.speaking) {
+      speechSynthesis.cancel();
+      this.speech.rate = 0.6;
+    }
+
     this.speech.text = text;
     speechSynthesis.speak(this.speech);
   }
 
   speakWord(word) {
     word = word + ",\n" + word.toUpperCase().replace(/(.)/g, '$1 ');
+    if (speechSynthesis.speaking) {
+      speechSynthesis.cancel();
+      this.speech.rate = 0.6;
+    }
     this.speech.text = word;
     speechSynthesis.speak(this.speech);
   }
