@@ -88,20 +88,24 @@ class Generator
 
     data = {}
     pattern = nil
+    pattern_id = nil
 
     source.each do |line|
       line.strip!
       next if line.empty?
-      if line =~ /^# [\d\.\s]*([a-z_]+)/
-        pattern = $1
+      if line =~ /^# (\d+)\.\s*([a-z_]+)/
+        pattern = $2
+        data[pattern] = {
+          id: $1.to_i,
+          lines: [],
+        }
       else
-        data[pattern] ||= []
-        data[pattern] << line
+        data[pattern][:lines] << line
       end
     end
 
-    data.each do |pattern, lines|
-      puts "WARN: #{pattern} #{lines.length}" if lines.length != 4
+    data.each do |pattern, data|
+      puts "WARN: #{pattern} #{data[:lines].length}" if data[:lines].length != 4
     end
 
     data
@@ -111,10 +115,10 @@ class Generator
     lang = ARGV.shift
     stories = all_stories(lang)
 
-    stories.each do |pattern, lines|
+    stories.each do |pattern, data|
       file = File.join(PROJECT_ROOT, "docs/stories/ja/#{pattern}.json");
       File.open(file, 'w') do |io|
-        io << JSON.pretty_generate(lines)
+        io << JSON.pretty_generate(data[:lines])
       end
     end
 
@@ -124,9 +128,7 @@ class Generator
     end
 
     circles = all_circles
-    all_words = circles.inject([]) do |arr, circle|
-      arr << circle[:words]
-    end
+    all_words = circles.inject([]) { |a, circle| a << circle[:words] }
     all_words_json = JSON.dump(all_words)
 
     file = File.join(PROJECT_ROOT, 'docs/stories/ja/index.html')
