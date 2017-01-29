@@ -49,8 +49,11 @@ export default class CircleIndex extends React.Component {
 
       let patternAttr = [];
 
-      let iconFill = '#337ab7';
-      iconFill = '#ccc';
+      // let iconFill = '#337ab7';
+      // iconFill = ['#cc9', '#9cc', '#c9c', '#c99'][pattern.count/4 - 2];
+      // iconFill = ['#e5c1a2', '#a2c6e5', '#a2e5c1', '#e5a2c6'][pattern.count/4 - 2];
+      let iconFill = '#ccc';
+
       let iconStyle = {
         width: '18px',
         height: '18px',
@@ -60,21 +63,21 @@ export default class CircleIndex extends React.Component {
       };
 
       patternAttr.push(
-        <svg role="img" style={iconStyle}>
+        <svg role="img" style={iconStyle} key={'index-icon-size-' + i}>
           <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref={'/imgs/svg/sprite.svg#d' + (pattern.count / 4)}></use>
         </svg>
       );
 
       if (stories.indexOf(pattern.pattern) >= 0) {
         patternAttr.push(
-          <svg role="img" style={iconStyle}>
+          <svg role="img" style={iconStyle} key={'index-icon-story-' + i}>
             <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/imgs/svg/sprite.svg#s"></use>
           </svg>
 );
       }
       if (pattern.pickup) {
         patternAttr.push(
-          <svg role="img" style={iconStyle}>
+          <svg role="img" style={iconStyle} key={'index-icon-pickup-' + i}>
             <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/imgs/svg/sprite.svg#p"></use>
           </svg>
         );
