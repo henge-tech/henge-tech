@@ -25,7 +25,6 @@ export default class Word extends React.Component {
       }
     };
     let word = this.props.word;
-    let astyle = {color: '#ccc'};
     let onClickWord = (event) => {
       this.props.onClickWord(word);
       event.preventDefault();

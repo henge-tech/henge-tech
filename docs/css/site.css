@@ -29,14 +29,12 @@
 }
 
 .word-core-b {
-  /* color: #b77; */
   color: #b99;
 }
 
 .word-core-a:first-letter {
-    font-weight: bold;
+  font-weight: bold;
 }
-
 
 .word:hover {
   color: #000;
@@ -44,31 +42,35 @@
 
 .index-search-group {
 }
+
 .index-search-group .input-group-addon {
-    background: white !important;
+  background: white !important;
 }
+
 .index-search-group .form-control {
 	border-right: 0;
 	box-shadow: 0 0 0;
 	border-color: #ccc;
 }
+
 .index-search-group button {
-    border: 0;
-    background: transparent;
+  border: 0;
+  background: transparent;
 }
 
 .index-filters-list {
-    text-indent: 0;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 0;
+  text-indent: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 .index-filter-item {
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
 }
+
 .index-filter-item-current a {
-    color: #999;
+  color: #999;
 }
