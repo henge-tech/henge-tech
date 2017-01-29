@@ -9,38 +9,36 @@ export default class StoryMode extends React.Component {
       container: {position: 'relative', height: '100px', width: '100%'},
     };
 
-    let storyTexts = this.props.story;
+    let storyLines = this.props.storyLines;
     let lines = [];
-    let rex = /([^\[]*)\[([^\]]+)\]([^\[]*)/g;
     let keynum = 0;
     let p = this.props;
-    let label;
+    let label, word, onClickWord;
 
-    storyTexts.forEach(function(txt) {
+    storyLines.forEach(function(storyLine) {
       let line = [];
-      let match = null;
       let ocw = p.onClickWord;
 
-      while((match = rex.exec(txt)) !== null) {
-        let word = p.words[keynum];
-        let onClickWord = (event) => {
+      storyLine.tokens.forEach((token, i) => {
+        if (token.type == 'text') {
+          line.push(token.text + ' ');
+          return;
+        }
+        word = token.word;
+        onClickWord = (event) => {
           ocw(word);
           event.preventDefault();
         };
-
-        line.push(match[1] + ' ');
         if (p.storyWords == 'translated') {
-          label = match[2];
+          label = token.text;
         } else {
-          label = word.word;
+          label = token.word.word;
         }
         line.push(
-            <a href='#' key={'story-word-' + keynum} onClick={onClickWord}>{label}</a>
+          <a href='#' key={'story-word-' + i} onClick={onClickWord}>{label}</a>
         );
-
-        line.push(' ' + match[3]);
-        keynum += 1;
-      }
+        line.push(' ');
+      });
       lines.push(line);
     });
 

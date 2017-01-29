@@ -6,7 +6,7 @@ const mapStateToProps = (state) => {
   return {
     wordAction: state.circle.wordAction,
     wordActionKeyword: state.circle.wordActionKeyword,
-    story: state.circle.story,
+    storyLines: state.circle.storyLines,
     mode: state.circle.mode,
   }
 }

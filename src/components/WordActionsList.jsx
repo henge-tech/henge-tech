@@ -28,7 +28,7 @@ export default class WordActionsList extends React.Component {
       {xsHidden: false, xs: 8, md: 6},
       {xsHidden: false, xs: 4, md: 3}
     ];
-    if (!this.props.story) {
+    if (!this.props.storyLines) {
       styles.storyModeButton.display = 'none';
       styles.circleModeButton.display = 'none';
     } else {

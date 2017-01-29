@@ -2,6 +2,7 @@ import { combineReducers } from 'redux';
 import * as types from './ActionTypes.jsx';
 import Speaker from './Speaker.jsx';
 import WordActions from './WordActions.jsx';
+import StoryLine from './StoryLine.jsx';
 
 const window = (state = {}, action) => {
   switch (action.type) {
@@ -41,8 +42,15 @@ const circle =  (state = {}, action) => {
       mode: 'circle'
     });
   case types.STORY_FETCH_SUCCEEDED:
+    let storyLines =[];
+    let unit = state.words.length / 4;
+    let words;
+    action.story.forEach((line, i) => {
+      words = state.words.slice(i * unit, (i + 1) * unit);
+      storyLines.push(new StoryLine(line, words));
+    });
     return Object.assign({}, state, {
-      story: action.story
+      storyLines: storyLines
     });
   case types.TOGGLE_STORY_WORDS:
     let storyWords = 'translated';

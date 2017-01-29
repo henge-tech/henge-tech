@@ -1,5 +1,3 @@
-import Speaker from './Speaker.jsx';
-
 export default class WordActions {
   constructor(speaker) {
     this.speaker = speaker;

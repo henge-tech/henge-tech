@@ -23,7 +23,7 @@ let initialState = {
     words: [],
     wordAction: 'speech',
     wordActionKeyword: '意味',
-    story: false,
+    storyLines: false,
     storyWords: 'translated',
     speaker: new Speaker()
   },

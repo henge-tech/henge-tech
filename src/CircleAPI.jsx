@@ -3,7 +3,6 @@ import 'whatwg-fetch'
 
 export default class CircleAPI {
   static fetchStory(pattern) {
-    // console.debug('fetchStory');
     return fetch('/stories/ja/' + pattern + '.json')
       .then(function(response) {
         if(response.ok) {

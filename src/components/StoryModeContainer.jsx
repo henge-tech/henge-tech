@@ -9,7 +9,7 @@ const mapStateToProps = (state) => {
     height: state.window.height,
     words: state.circle.words,
     pattern: state.circle.pattern,
-    story: state.circle.story,
+    storyLines: state.circle.storyLines,
     storyWords: state.circle.storyWords
   }
 }

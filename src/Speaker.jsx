@@ -49,7 +49,7 @@ export default class Speaker {
     Object.assign(speech, this.speechDefault);
 
     if (this.synth.speaking) {
-      speechSynthesis.cancel();
+      this.synth.cancel();
 
       if (this.lastText == text) {
         if (this.lastSpeed == this.defaultSpeeds.slow) {
