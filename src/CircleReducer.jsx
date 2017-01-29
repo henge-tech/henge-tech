@@ -53,16 +53,32 @@ const circle =  (state = {}, action) => {
       storyLines: storyLines
     });
   case types.TOGGLE_STORY_WORDS:
-    let storyWords = 'translated';
-    if (state.storyWords == 'translated') {
-      storyWords = 'english';
-    }
+    let toggle = toggleStoryWords(state, action);
     return Object.assign({}, state, {
-      storyWords: storyWords
+      storyWordsToggle: toggle
     });
   default:
     return state;
   }
+}
+
+const toggleStoryWords = (state, action) => {
+  let index = action.index;
+  let toggle = state.storyWordsToggle;
+  if (index == -1) {
+    if (toggle == [false, false, false, false]) {
+      toggle = [true, true, true, true];
+    } else if (toggle == [true, true, true, true]) {
+      toggle = [false, false, false, false];
+    } else {
+      let b = !toggle[0];
+      toggle = [b, b, b, b];
+    }
+  } else {
+    toggle = [].concat(toggle);
+    toggle[index] = !toggle[index];
+  }
+  return toggle;
 }
 
 const index = (state = {}, action) => {

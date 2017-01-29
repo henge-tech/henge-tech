@@ -11,11 +11,10 @@ export default class StoryMode extends React.Component {
 
     let storyLines = this.props.storyLines;
     let lines = [];
-    let keynum = 0;
     let p = this.props;
     let label, word, onClickWord;
 
-    storyLines.forEach(function(storyLine) {
+    storyLines.forEach(function(storyLine, lineNum) {
       let line = [];
       let ocw = p.onClickWord;
 
@@ -29,10 +28,10 @@ export default class StoryMode extends React.Component {
           ocw(word);
           event.preventDefault();
         };
-        if (p.storyWords == 'translated') {
-          label = token.text;
-        } else {
+        if (p.storyWordsToggle[lineNum]) {
           label = token.word.word;
+        } else {
+          label = token.text;
         }
         line.push(
           <a href='#' key={'story-word-' + i} onClick={onClickWord}>{label}</a>
@@ -51,21 +50,19 @@ export default class StoryMode extends React.Component {
       <div style={styles.container} className="container">
         <Grid style={{marginTop: margin + 'px', marginBottom: margin + 'px' }}>
           <Row>
-            <Col md={1} sm={1}>
-              <p style={{marginTop: '60px'}}>
-                <Button
-                  onClick={() => this.props.onClickSpeakButton(this.props.words, -1)}
-                  className="btn-circle"
-        ><Glyphicon glyph="volume-up" /></Button>
-              </p>
+            <Col md={2} sm={2}>
             </Col>
-            <Col md={11} sm={11}>
+            <Col md={10} sm={10}>
               <p>
                 <Button
                     onClick={() => this.props.onClickSpeakButton(this.props.words, 0)}
                     className="btn-circle"
                   ><Glyphicon glyph="volume-up" /></Button>
-        <span style={{marginLeft: '20px'}}>{lines[0]}</span>
+                <Button
+                    onClick={() => this.props.onClickToggleWordsButton(0)}
+                    className="btn-circle" style={{marginLeft: '10px'}}
+                  ><Glyphicon glyph="refresh" /></Button>
+                <span className="story-line">{lines[0]}</span>
               </p>
 
               <p>
@@ -73,7 +70,11 @@ export default class StoryMode extends React.Component {
                     onClick={() => this.props.onClickSpeakButton(this.props.words, 1)}
                     className="btn-circle"
                   ><Glyphicon glyph="volume-up" /></Button>
-                <span style={{marginLeft: '20px'}}>{lines[1]}</span>
+                <Button
+                    onClick={() => this.props.onClickToggleWordsButton(1)}
+                    className="btn-circle" style={{marginLeft: '10px'}}
+                  ><Glyphicon glyph="refresh" /></Button>
+                <span className="story-line">{lines[1]}</span>
               </p>
 
               <p>
@@ -81,8 +82,11 @@ export default class StoryMode extends React.Component {
                     onClick={() => this.props.onClickSpeakButton(this.props.words, 2)}
                     className="btn-circle"
                   ><Glyphicon glyph="volume-up" /></Button>
-
-                <span style={{marginLeft: '20px'}}>{lines[2]}</span>
+                <Button
+                    onClick={() => this.props.onClickToggleWordsButton(2)}
+                    className="btn-circle" style={{marginLeft: '10px'}}
+                  ><Glyphicon glyph="refresh" /></Button>
+                <span className="story-line">{lines[2]}</span>
               </p>
 
               <p>
@@ -90,13 +94,20 @@ export default class StoryMode extends React.Component {
                     onClick={() => this.props.onClickSpeakButton(this.props.words, 3)}
                     className="btn-circle"
                   ><Glyphicon glyph="volume-up" /></Button>
-
-                <span style={{marginLeft: '20px'}}>{lines[3]}</span>
+                <Button
+                    onClick={() => this.props.onClickToggleWordsButton(3)}
+                    className="btn-circle" style={{marginLeft: '10px'}}
+                  ><Glyphicon glyph="refresh" /></Button>
+                <span className="story-line">{lines[3]}</span>
               </p>
               <p>
                 <Button
-                    onClick={() => this.props.onClickToggleWordsButton()}
+                    onClick={() => this.props.onClickSpeakButton(this.props.words, -1)}
                     className="btn-circle"
+                  ><Glyphicon glyph="volume-up" /></Button>
+                <Button
+                    onClick={() => this.props.onClickToggleWordsButton()}
+                    className="btn-circle" style={{marginLeft: '10px'}}
                   ><Glyphicon glyph="refresh" /></Button>
               </p>
             </Col>

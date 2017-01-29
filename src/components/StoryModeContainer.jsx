@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
     words: state.circle.words,
     pattern: state.circle.pattern,
     storyLines: state.circle.storyLines,
-    storyWords: state.circle.storyWords
+    storyWordsToggle: state.circle.storyWordsToggle
   }
 }
 
@@ -22,8 +22,8 @@ const mapDispatchToProps = (dispatch) => {
     onClickWord: (word) => {
       dispatch(actionWord(word))
     },
-    onClickToggleWordsButton: () => {
-      dispatch(toggleStoryWords())
+    onClickToggleWordsButton: (index = -1) => {
+      dispatch(toggleStoryWords(index))
     },
   }
 }

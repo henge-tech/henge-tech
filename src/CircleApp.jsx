@@ -24,7 +24,7 @@ let initialState = {
     wordAction: 'speech',
     wordActionKeyword: '意味',
     storyLines: false,
-    storyWords: 'translated',
+    storyWordsToggle: [false, false, false, false],
     speaker: new Speaker()
   },
 };
