@@ -7,6 +7,7 @@ import createSagaMiddleware from 'redux-saga'
 
 import circleReducer from './CircleReducer.jsx';
 import CircleContainer from './components/CircleContainer.jsx';
+import Speaker from './Speaker.jsx'
 import { windowResize } from './Actions.jsx';
 import mySaga from './CircleSagas.jsx'
 
@@ -23,7 +24,8 @@ let initialState = {
     wordAction: 'speech',
     wordActionKeyword: '意味',
     story: false,
-    storyWords: 'translated'
+    storyWords: 'translated',
+    speaker: new Speaker()
   },
 };
 

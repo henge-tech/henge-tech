@@ -3,6 +3,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
+import Speaker from './Speaker.jsx'
 import createSagaMiddleware from 'redux-saga'
 import mySaga from './CircleSagas.jsx'
 
@@ -21,7 +22,8 @@ let initialState = {
     stories: [],
     q: '',
     filter: 'all',
-    allWords: allWords
+    allWords: allWords,
+    speaker: new Speaker()
   }
 };
 

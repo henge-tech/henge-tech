@@ -1,6 +1,10 @@
 import Speaker from './Speaker.jsx';
 
 export default class WordActions {
+  constructor(speaker) {
+    this.speaker = speaker;
+  }
+
   exec(word, action, keyword = '') {
     // console.log(word);
     // console.log(action);
@@ -11,8 +15,7 @@ export default class WordActions {
       window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=' + q);
       break;
     case 'speech':
-      let speaker = new Speaker();
-      speaker.speakWord(word.word);
+      this.speaker.speakWord(word.word);
       break;
     case 'keyword':
       keyword = encodeURIComponent(keyword);

@@ -18,11 +18,10 @@ const window = (state = {}, action) => {
 const circle =  (state = {}, action) => {
   switch (action.type) {
   case types.SPEAK_WORDS:
-    let speaker = new Speaker();
-    speaker.speak(action.words, action.part);
+    state.speaker.speak(action.words, action.part);
     return state;
   case types.ACTION_WORD:
-    let actions = new WordActions();
+    let actions = new WordActions(state.speaker);
     actions.exec(action.word, state.wordAction, state.wordActionKeyword);
     return state;
   case types.SWITCH_WORD_ACTION:
@@ -75,8 +74,7 @@ const index = (state = {}, action) => {
       filter: action.filter
     });
   case types.SPEAK_INDEX_WORDS:
-    let speaker = new Speaker();
-    speaker.speak(state.allWords[action.id - 1]);
+    state.speaker.speak(state.allWords[action.id - 1]);
     return state;
   default:
     return state;
