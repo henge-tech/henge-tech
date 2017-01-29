@@ -81,10 +81,19 @@ const index = (state = {}, action) => {
   }
 }
 
+const storyIndex = (state = {}, action) => {
+  switch (action.type) {
+  default:
+    return state;
+  }
+}
+
+
 const circleReducer = combineReducers({
   window,
   circle,
-  index
+  index,
+  storyIndex
 })
 
 export default circleReducer;
