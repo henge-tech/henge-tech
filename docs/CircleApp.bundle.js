@@ -70,6 +70,10 @@
 
 	var _CircleContainer2 = _interopRequireDefault(_CircleContainer);
 
+	var _Speaker = __webpack_require__(512);
+
+	var _Speaker2 = _interopRequireDefault(_Speaker);
+
 	var _Actions = __webpack_require__(778);
 
 	var _CircleSagas = __webpack_require__(782);
@@ -91,7 +95,8 @@
 	    wordAction: 'speech',
 	    wordActionKeyword: '意味',
 	    story: false,
-	    storyWords: 'translated'
+	    storyWords: 'translated',
+	    speaker: new _Speaker2.default()
 	  }
 	};
 
@@ -33522,11 +33527,10 @@
 
 	  switch (action.type) {
 	    case types.SPEAK_WORDS:
-	      var speaker = new _Speaker2.default();
-	      speaker.speak(action.words, action.part);
+	      state.speaker.speak(action.words, action.part);
 	      return state;
 	    case types.ACTION_WORD:
-	      var actions = new _WordActions2.default();
+	      var actions = new _WordActions2.default(state.speaker);
 	      actions.exec(action.word, state.wordAction, state.wordActionKeyword);
 	      return state;
 	    case types.SWITCH_WORD_ACTION:
@@ -33582,9 +33586,18 @@
 	        filter: action.filter
 	      });
 	    case types.SPEAK_INDEX_WORDS:
-	      var speaker = new _Speaker2.default();
-	      speaker.speak(state.allWords[action.id - 1]);
+	      state.speaker.speak(state.allWords[action.id - 1]);
 	      return state;
+	    default:
+	      return state;
+	  }
+	};
+
+	var storyIndex = function storyIndex() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+	  var action = arguments[1];
+
+	  switch (action.type) {
 	    default:
 	      return state;
 	  }
@@ -33593,7 +33606,8 @@
 	var circleReducer = (0, _redux.combineReducers)({
 	  window: window,
 	  circle: circle,
-	  index: index
+	  index: index,
+	  storyIndex: storyIndex
 	});
 
 	exports.default = circleReducer;
@@ -33640,12 +33654,16 @@
 	  function Speaker() {
 	    _classCallCheck(this, Speaker);
 
-	    this.speech = new SpeechSynthesisUtterance();
-	    this.speech.lang = 'en-US';
-	    this.speech.voiceURI = 'native';
-	    this.speech.volume = 1;
-	    this.speech.rate = 1;
-	    this.speech.pitch = 1;
+	    this.speechDefault = {};
+	    this.speechDefault.lang = 'en-US';
+	    this.speechDefault.voiceURI = 'native';
+	    this.speechDefault.volume = 1;
+	    this.speechDefault.rate = 1;
+	    this.speechDefault.pitch = 1;
+	    this.synth = window.speechSynthesis;
+	    this.lastText = null;
+	    this.lastSpeed = null;
+	    this.defaultSpeeds = { slow: 0.6, normal: 1, fast: 1.8 };
 	  }
 
 	  _createClass(Speaker, [{
@@ -33680,25 +33698,43 @@
 	      }
 
 	      var text = speechTexts.join(', ');
+	      this.speakText(text);
+	    }
+	  }, {
+	    key: 'speakText',
+	    value: function speakText(text) {
+	      var speech = new SpeechSynthesisUtterance();
+	      Object.assign(speech, this.speechDefault);
 
-	      if (speechSynthesis.speaking) {
+	      if (this.synth.speaking) {
 	        speechSynthesis.cancel();
-	        this.speech.rate = 0.6;
+
+	        if (this.lastText == text) {
+	          if (this.lastSpeed == this.defaultSpeeds.slow) {
+	            this.lastSpeed = this.defaultSpeeds.fast;
+	          } else if (this.lastSpeed == this.defaultSpeeds.fast) {
+	            this.lastSpeed = null;
+	            return;
+	          } else {
+	            this.lastSpeed = this.defaultSpeeds.slow;
+	          }
+	          speech.rate = this.lastSpeed;
+	        } else {
+	          this.lastSpeed = null;
+	        }
+	      } else {
+	        this.lastSpeed = null;
 	      }
 
-	      this.speech.text = text;
-	      speechSynthesis.speak(this.speech);
+	      speech.text = text;
+	      this.lastText = text;
+	      this.synth.speak(speech);
 	    }
 	  }, {
 	    key: 'speakWord',
 	    value: function speakWord(word) {
-	      word = word + ",\n" + word.toUpperCase().replace(/(.)/g, '$1 ');
-	      if (speechSynthesis.speaking) {
-	        speechSynthesis.cancel();
-	        this.speech.rate = 0.6;
-	      }
-	      this.speech.text = word;
-	      speechSynthesis.speak(this.speech);
+	      var text = word + ",\n" + word.toUpperCase().replace(/(.)/g, '$1 ');
+	      this.speakText(text);
 	    }
 	  }]);
 
@@ -33728,8 +33764,10 @@
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var WordActions = function () {
-	  function WordActions() {
+	  function WordActions(speaker) {
 	    _classCallCheck(this, WordActions);
+
+	    this.speaker = speaker;
 	  }
 
 	  _createClass(WordActions, [{
@@ -33746,8 +33784,7 @@
 	          window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=' + q);
 	          break;
 	        case 'speech':
-	          var speaker = new _Speaker2.default();
-	          speaker.speakWord(word.word);
+	          this.speaker.speakWord(word.word);
 	          break;
 	        case 'keyword':
 	          keyword = encodeURIComponent(keyword);
@@ -53020,7 +53057,6 @@
 	        }
 	      };
 	      var word = this.props.word;
-	      var astyle = { color: '#ccc' };
 	      var onClickWord = function onClickWord(event) {
 	        _this2.props.onClickWord(word);
 	        event.preventDefault();
