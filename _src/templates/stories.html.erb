@@ -9,24 +9,22 @@
 </head>
 <body>
 
-<div id="static-body">
+<article id="static-body">
   <header>
     <h1><img src="/imgs/logo.svg" alt="Henge"></h1>
   </header>
 
-  <article>
-    <%- stories.each do |pattern, data| -%>
-    <div class="story-source">
-      <h2 data-pattern-id="<%= data[:id] %>"><a href="/circles/<%= pattern %>.html" target="_blank"><%= pattern %></a></h2>
-      <ol class="story-line">
-      <%- data[:lines].each do |line| -%>
-      <ul><%= line %></ul>
-      <%- end -%>
-      </ol>
-    </div>
+  <%- stories.each do |pattern, data| -%>
+  <div class="story-source" data-pattern-id="<%= data[:id] %>">
+    <h2><a class="pattern-link" href="/circles/<%= pattern %>.html" target="_blank"><%= pattern %></a></h2>
+    <ol class="story-line">
+    <%- data[:lines].each do |line| -%>
+    <li><%= line %></li>
     <%- end -%>
-  </article>
-</div>
+    </ol>
+  </div>
+  <%- end -%>
+</article>
 
 <div id="story-index-app">...</div>
 

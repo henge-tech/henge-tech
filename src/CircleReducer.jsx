@@ -107,6 +107,9 @@ const index = (state = {}, action) => {
 
 const storyIndex = (state = {}, action) => {
   switch (action.type) {
+  case types.SPEAK_STORY_WORDS:
+    state.speaker.speak(action.words, action.part);
+    return state;
   default:
     return state;
   }

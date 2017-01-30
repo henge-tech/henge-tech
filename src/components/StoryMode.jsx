@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
-import { Well, Grid, Row, Col, Button, Glyphicon } from 'react-bootstrap';
+import { Grid, Row, Col, Button, Glyphicon } from 'react-bootstrap';
 import WordActionsListContainer from './WordActionsListContainer.jsx';
 
 export default class StoryMode extends React.Component {
