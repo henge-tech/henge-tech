@@ -13,6 +13,7 @@ import mySaga from './CircleSagas.jsx'
 
 document.getElementById('staticBody').style.display = 'none';
 
+let speaker = new Speaker();
 let initialState = {
   window: {
     width: document.body.clientWidth,
@@ -25,8 +26,8 @@ let initialState = {
     wordActionKeyword: '意味',
     storyLines: false,
     storyWordsToggle: [false, false, false, false],
-    speaker: new Speaker()
-  },
+    speaker: speaker
+  }
 };
 
 let wordList = document.getElementById('words').childNodes;

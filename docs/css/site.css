@@ -75,6 +75,15 @@
   color: #999;
 }
 
+.story-lines {
+  padding-left: 0;
+  list-style-type: none;
+}
+
 .story-line {
+  margin-top: 5px;
+}
+
+.story-line-text {
   margin-left: 10px;
 }

@@ -52,8 +52,11 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       storyLines: storyLines
     });
+  case types.SPEAK_STORY_WORDS:
+    state.speaker.speak(action.words, action.part);
+    return state;
   case types.TOGGLE_STORY_WORDS:
-    let toggle = toggleStoryWords(state, action);
+    let toggle = toggleStoryWords(state.storyWordsToggle, action.index);
     return Object.assign({}, state, {
       storyWordsToggle: toggle
     });
@@ -62,9 +65,7 @@ const circle =  (state = {}, action) => {
   }
 }
 
-const toggleStoryWords = (state, action) => {
-  let index = action.index;
-  let toggle = state.storyWordsToggle;
+const toggleStoryWords = (toggle, index) => {
   if (index == -1) {
     if (toggle == [false, false, false, false]) {
       toggle = [true, true, true, true];
@@ -107,9 +108,14 @@ const index = (state = {}, action) => {
 
 const storyIndex = (state = {}, action) => {
   switch (action.type) {
-  case types.SPEAK_STORY_WORDS:
-    state.speaker.speak(action.words, action.part);
-    return state;
+  case types.TOGGLE_STORY_INDEX_WORDS:
+    let toggle = toggleStoryWords(state.toggles[action.id], action.index);
+    let toggles = Object.assign({}, state.toggles, {
+      [action.id]: toggle
+    });
+    return  Object.assign({}, state, {
+      toggles
+    });
   default:
     return state;
   }

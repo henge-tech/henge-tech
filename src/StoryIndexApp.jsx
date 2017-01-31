@@ -14,14 +14,19 @@ staticBody.style.display = 'none';
 
 let storyIndexApp = document.getElementById('story-index-app');
 
+let speaker = new Speaker();
 let initialState = {
+  circle: {
+    speaker: speaker
+  },
   storyIndex: {
+    stories: [],
+    speaker: speaker,
     allWords: allWords,
-    speaker: new Speaker()
+    toggles: {}
   }
 };
 
-let stories = [];
 let storySources = document.getElementsByClassName('story-source');
 for (let i = 0; i < storySources.length; i++) {
   let source = storySources[i];
@@ -31,7 +36,6 @@ for (let i = 0; i < storySources.length; i++) {
   story.href = patternLink.getAttribute('href');
   story.id = source.getAttribute('data-pattern-id');
   let words = allWords[story.id - 1];
-
   let lines = source.getElementsByTagName('li');
   let unit = words.length / 4;
   for (let j = 0; j < lines.length; j++) {
@@ -39,9 +43,9 @@ for (let i = 0; i < storySources.length; i++) {
     story.lines.push(storyLine);
   }
 
-  stories.push(story);
+  initialState.storyIndex.stories.push(story);
+  initialState.storyIndex.toggles[story.id] = [false, false, false, false];
 }
-initialState.storyIndex.stories = stories;
 
 const store = createStore(circleReducer, initialState);
 
