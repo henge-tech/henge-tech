@@ -17,13 +17,14 @@ let storyIndexApp = document.getElementById('story-index-app');
 let speaker = new Speaker();
 let initialState = {
   circle: {
-    speaker: speaker
+    speaker: speaker,
+    wordAction: 'speech',
   },
   storyIndex: {
     stories: [],
     speaker: speaker,
     allWords: allWords,
-    toggles: {}
+    toggles: {},
   }
 };
 

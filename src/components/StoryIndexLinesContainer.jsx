@@ -4,8 +4,6 @@ import { speakStoryWords, actionWord, toggleStoryIndexWords } from '../Actions.j
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    lines: ownProps.story.lines,
-    toggle: state.storyIndex.toggles[ownProps.story.id]
   }
 }
 
@@ -14,11 +12,11 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     onClickSpeakButton: (words, part) => {
       dispatch(speakStoryWords(words, part))
     },
+    onClickToggleWordsButton: (index = -1) => {
+      dispatch(toggleStoryIndexWords(ownProps.storyID, index))
+    },
     onClickWord: (word) => {
       dispatch(actionWord(word))
-    },
-    onClickToggleWordsButton: (index = -1) => {
-      dispatch(toggleStoryIndexWords(ownProps.story.id, index))
     },
   }
 }

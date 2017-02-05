@@ -15,6 +15,7 @@ document.getElementById('staticBody').style.display = 'none';
 
 let speaker = new Speaker();
 let initialState = {
+  // Do not use innerWidth
   window: {
     width: document.body.clientWidth,
     height: document.body.clientHeight,

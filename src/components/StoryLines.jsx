@@ -5,27 +5,26 @@ export default class StoryLines extends React.Component {
   buildStoryLines() {
     let lines = [];
     let words = [];
+
     this.props.lines.forEach((lineObj, lineNum) => {
       let line = [];
+
+      // 4 lines
       lineObj.tokens.forEach((token, i) => {
         if (token.type == 'text') {
           line.push(token.text + ' ');
           return;
         }
         words.push(token.word);
-        let label;
-        if (this.props.toggle[lineNum]) {
-          if (token.word.word) {
-            label = token.word.word;
-          } else {
-            label = token.word;
-          }
-        } else {
-          label = token.text;
+        let word = token.word.word ? token.word.word : token.word;
+        let label = this.props.toggle[lineNum] ? word : token.text;
+        let onClickWord = e => {
+          this.props.onClickWord(word);
+          e.preventDefault();
         }
 
         line.push(
-          <a href='#' key={'story-word-' + i}>{label}</a>
+          <a href='#' key={'story-word-' + i} onClick={onClickWord}>{label}</a>
         );
         line.push(' ');
       });
@@ -43,6 +42,8 @@ export default class StoryLines extends React.Component {
         </li>
       );
     });
+
+    // Last line
     lines.push(
       <li key={'story-lines-all'} className="story-line">
         <Button

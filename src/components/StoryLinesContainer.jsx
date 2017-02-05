@@ -4,20 +4,19 @@ import { speakStoryWords, actionWord, toggleStoryWords } from '../Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {
-    toggle: state.circle.storyWordsToggle
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
     onClickSpeakButton: (words, part) => {
-      dispatch(speakStoryWords(words, part))
-    },
-    onClickWord: (word) => {
-      dispatch(actionWord(word))
+      dispatch(speakStoryWords(words, part));
     },
     onClickToggleWordsButton: (index = -1) => {
-      dispatch(toggleStoryWords(index))
+      dispatch(toggleStoryWords(index));
+    },
+    onClickWord: (word) => {
+      dispatch(actionWord(word));
     },
   }
 }

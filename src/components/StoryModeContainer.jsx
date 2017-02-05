@@ -4,11 +4,8 @@ import { circleMode, speakWords, actionWord, toggleStoryWords } from '../Actions
 
 const mapStateToProps = (state) => {
   return {
-    mode: state.circle.mode,
     width: state.window.width,
     height: state.window.height,
-    words: state.circle.words,
-    pattern: state.circle.pattern,
     storyLines: state.circle.storyLines,
     storyWordsToggle: state.circle.storyWordsToggle
   }
@@ -16,15 +13,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onClickSpeakButton: (words, part) => {
-      dispatch(speakWords(words, part))
-    },
-    onClickWord: (word) => {
-      dispatch(actionWord(word))
-    },
-    onClickToggleWordsButton: (index = -1) => {
-      dispatch(toggleStoryWords(index))
-    },
   }
 }
 

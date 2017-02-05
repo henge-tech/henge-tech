@@ -12,7 +12,7 @@ export default class StoryIndex extends React.Component {
       stories.push(
         <div key={'story-' + story.id}>
           <h2 style={{fontSize: '1.8em', marginTop: '50px', marginBottom: '30px' }}>{story.id}. <a href={story.href}>{story.pattern}</a></h2>
-          <StoryIndexLinesContainer story={story} />
+          <StoryIndexLinesContainer storyID={story.id} lines={story.lines} toggle={this.props.toggles[story.id]} />
         </div>
       );
     });
