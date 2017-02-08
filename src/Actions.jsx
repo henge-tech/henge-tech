@@ -9,6 +9,10 @@ export const storyMode = () => ({ type: types.STORY_MODE });
 export const circleMode = () => ({ type: types.CIRCLE_MODE });
 export const toggleStoryWords = index => ({ type: types.TOGGLE_STORY_WORDS, index: index });
 
+export const start3DMode = () => ({ type: types.START_3D_MODE });
+export const prepare3DCanvas = () => ({ type: types.PREPARE_3D_CANVAS });
+export const render3D = () => ({ type: types.RENDER_3D });
+
 export const updateSearchQuery = (q) => ({ type: types.UPDATE_SEARCH_QUERY, q});
 export const changeIndexFilter = (filter) => ({ type: types.CHANGE_INDEX_FILTER, filter});
 export const speakIndexWords = id => ({ type: types.SPEAK_INDEX_WORDS, id});

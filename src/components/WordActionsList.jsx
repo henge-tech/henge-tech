@@ -7,9 +7,13 @@ export default class WordActionsList extends React.Component {
     // console.log('render2');
     let onClick = this.props.onClickWordAction;
     let onChange = this.props.onChangeWordActionKeyword;
-    let onClickStory = (event) => {
+    let onClickStory = (e) => {
       this.props.onClickStory();
-      event.preventDefault();
+      e.preventDefault();
+    };
+    let onClick3D = (e) => {
+      this.props.onClick3D();
+      e.preventDefault();
     };
 
     let styles = {
@@ -95,7 +99,8 @@ export default class WordActionsList extends React.Component {
         </Col>
         <Col xsHidden={cols[2].xsHidden} xs={cols[2].xs} md={cols[2].md}>
         <div style={styles.storyModeButton} className='text-right'>
-        <a href="#" onClick={onClickStory}>Story &#x25B8;</a>
+        <a href="#" onClick={onClickStory}>Story &#x25B8;</a><br/>
+        <a href="#" onClick={onClick3D}>3D &#x25B8;</a>
         </div>
         </Col>
         </Row>

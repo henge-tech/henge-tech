@@ -4,8 +4,11 @@ import WordCircle from './WordCircle.jsx';
 import WordActionsListContainer from './WordActionsListContainer.jsx';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
 import StoryModeContainer from './StoryModeContainer.jsx';
+import ThreeDModeContainer from './ThreeDModeContainer.jsx';
+import Circle3DRenderer from '../Circle3DRenderer.jsx';
 
 export default class Circle extends React.Component {
+
   constructor() {
     super();
     this.state = {};
@@ -23,11 +26,42 @@ export default class Circle extends React.Component {
 
     if (this.props.mode == 'circle') {
       return this.renderCircle(center, r);
-    } else {
+    } else if (this.props.mode == 'story') {
       return (
         <StoryModeContainer center={center} r={r} />
       );
+    } else if (this.props.mode == '3d') {
+      return this.render3D(center, r);
     }
+  }
+
+  render3D(center, r) {
+    let w = this.props.width;
+    let h = this.props.height;
+
+    let x = () => {
+      console.log("render " + w + " " + h);
+      let stage = document.getElementById('stage');
+      while (stage.firstChild) {
+        stage.removeChild(stage.firstChild);
+      }
+      Circle3DRenderer.execute(stage, this.props);
+    }
+    if (this.render3DTimer) {
+      clearTimeout(this.render3DTimer);
+    }
+    this.render3DTimer = setTimeout(x, 200);
+
+    let styles = {
+      container: {position: 'relative', height: h + 'px', width: '100%', padding: 0 },
+      canvas: { width: '100%', height: h + 'px' }
+    };
+    return (
+      <div style={styles.container} className="container">
+        <div id="stage" style={styles.canvas}></div>
+        <CirclePageNavBar />
+      </div>
+    );
   }
 
   renderCircle(center, r) {

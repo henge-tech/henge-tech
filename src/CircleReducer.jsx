@@ -37,6 +37,12 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       mode: 'story'
     });
+  case types.PREPARE_3D_CANVAS:
+    return Object.assign({}, state, {
+      mode: '3d'
+    });
+  case types.RENDER_3D:
+    return state;
   case types.CIRCLE_MODE:
     return Object.assign({}, state, {
       mode: 'circle'

@@ -17,8 +17,8 @@ let speaker = new Speaker();
 let initialState = {
   // Do not use innerWidth
   window: {
-    width: document.body.clientWidth,
-    height: document.body.clientHeight,
+    width: document.documentElement.clientWidth,
+    height: document.documentElement.clientHeight,
   },
   circle: {
     mode: 'circle',
@@ -70,7 +70,7 @@ render(
 );
 
 window.addEventListener('resize', () => {
-  store.dispatch(windowResize(document.body.clientWidth, document.body.clientHeight));
+  store.dispatch(windowResize(document.documentElement.clientWidth, document.documentElement.clientHeight));
 });
 
 store.dispatch({type: 'STORY_FETCH_REQUESTED', pattern: initialState.circle.pattern});

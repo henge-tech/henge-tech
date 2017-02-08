@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import WordActionsList from './WordActionsList.jsx';
-import { switchWordAction, updateWordActionKeyword, storyMode, circleMode } from '../Actions.jsx'
+import * as actions from '../Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {
@@ -14,16 +14,20 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onClickWordAction: (name) => {
-      dispatch(switchWordAction(name))
+      dispatch(actions.switchWordAction(name));
     },
     onChangeWordActionKeyword: (name) => {
-      dispatch(updateWordActionKeyword(name))
+      dispatch(actions.updateWordActionKeyword(name));
     },
     onClickStory: () => {
-      dispatch(storyMode())
+      dispatch(actions.storyMode());
+    },
+    onClick3D: () => {
+      dispatch(actions.prepare3DCanvas());
+      dispatch(actions.render3D());
     },
     onClickCircleModeButton: () => {
-      dispatch(circleMode())
+      dispatch(actions.circleMode());
     }
   }
 }
