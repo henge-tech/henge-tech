@@ -21,7 +21,7 @@ let initialState = {
     height: document.documentElement.clientHeight,
   },
   circle: {
-    mode: 'circle',
+    mode: '3d',
     words: [],
     wordAction: 'speech',
     wordActionKeyword: '意味',

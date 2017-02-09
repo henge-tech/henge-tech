@@ -5,7 +5,6 @@ import WordActionsListContainer from './WordActionsListContainer.jsx';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
 import StoryModeContainer from './StoryModeContainer.jsx';
 import ThreeDModeContainer from './ThreeDModeContainer.jsx';
-import Circle3DRenderer from '../Circle3DRenderer.jsx';
 
 export default class Circle extends React.Component {
 
@@ -31,21 +30,16 @@ export default class Circle extends React.Component {
         <StoryModeContainer center={center} r={r} />
       );
     } else if (this.props.mode == '3d') {
-      return this.render3D(center, r);
+      return this.render3D();
     }
   }
 
-  render3D(center, r) {
+  render3D() {
     let w = this.props.width;
     let h = this.props.height;
 
     let x = () => {
-      console.log("render " + w + " " + h);
-      let stage = document.getElementById('stage');
-      while (stage.firstChild) {
-        stage.removeChild(stage.firstChild);
-      }
-      Circle3DRenderer.execute(stage, this.props);
+      this.props.render3D(this.props.words, w, h);
     }
     if (this.render3DTimer) {
       clearTimeout(this.render3DTimer);

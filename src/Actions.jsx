@@ -11,7 +11,7 @@ export const toggleStoryWords = index => ({ type: types.TOGGLE_STORY_WORDS, inde
 
 export const start3DMode = () => ({ type: types.START_3D_MODE });
 export const prepare3DCanvas = () => ({ type: types.PREPARE_3D_CANVAS });
-export const render3D = () => ({ type: types.RENDER_3D });
+export const render3D = (words, w, h) => ({ type: types.RENDER_3D, words, w, h });
 
 export const updateSearchQuery = (q) => ({ type: types.UPDATE_SEARCH_QUERY, q});
 export const changeIndexFilter = (filter) => ({ type: types.CHANGE_INDEX_FILTER, filter});

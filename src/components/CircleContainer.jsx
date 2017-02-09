@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Circle from './Circle.jsx';
-import { speakWords, actionWord, switchWordAction, updateWordActionKeyword } from '../Actions.jsx'
+import * as actions from '../Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {
@@ -15,11 +15,14 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onClickSpeakButton: (words, part) => {
-      dispatch(speakWords(words, part))
+      dispatch(actions.speakWords(words, part))
     },
     onClickWord: (word) => {
-      dispatch(actionWord(word))
+      dispatch(actions.actionWord(word))
     },
+    render3D: (words, w, h) => {
+      dispatch(actions.render3D(words, w, h));
+    }
   }
 }
 

@@ -24,7 +24,6 @@ const mapDispatchToProps = (dispatch) => {
     },
     onClick3D: () => {
       dispatch(actions.prepare3DCanvas());
-      dispatch(actions.render3D());
     },
     onClickCircleModeButton: () => {
       dispatch(actions.circleMode());

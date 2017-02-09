@@ -1,46 +1,42 @@
 import * as THREE from 'three';
-import OBC from 'three-orbit-controls';
+import OrbitControls from 'three-orbit-controls';
 
 export default class Circle3DRenderer {
+  constructor(words, w, h) {
+    this.words = words;
+    this.w = w;
+    this.h = h;
+    this.stage = document.getElementById('stage');
+  }
 
-  static execute(root, props) {
-    const OrbitControls = OBC(THREE);
-
-    this.w = props.width;
-    this.h = props.height;
-    this.words = props.words;
-
-    var renderer = new THREE.WebGLRenderer({antialias: true});
-
+  createRenderer() {
+    const renderer = new THREE.WebGLRenderer({antialias: true});
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.BasicShadowMap;
     renderer.setSize(this.w, this.h);
+    return renderer;
+  }
 
-    root.appendChild(renderer.domElement);
+  createCamera() {
+    const viewAngle = 80;
+    const near   = 1;
+    const far    = 1000;
+    const aspect = this.w / this.h;
 
-    var scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(0xa000000, 0.15, 1500);
-
-    var viewAngle = 80;
-    var near   = 1;
-    var far    = 1000;
-    var aspect = this.w / this.h;
-
-    var camera = new THREE.PerspectiveCamera(viewAngle, aspect, near, far);
-    // camera.position.x = 150;
+    const camera = new THREE.PerspectiveCamera(viewAngle, aspect, near, far);
+    camera.position.x = 0;
     camera.position.y = 60;
-    camera.position.z = 0;
-    scene.add(camera);
+    camera.position.z = 60;
+    // camera.rotation.x = - Math.PI / 2;
 
-    let controls = new OrbitControls(camera);
-    controls.minDistance = 1;
-    controls.maxDistance = 250;
-    controls.target.set( 0, 60, 0 );
+    return camera;
+  }
 
-    var ambientLight = new THREE.AmbientLight(0x333333);
+  addLights(scene) {
+    const ambientLight = new THREE.AmbientLight(0x333333);
     scene.add(ambientLight);
 
-    var light = new THREE.SpotLight( 0x999999, 1, 0, Math.PI / 2 );
+    const light = new THREE.SpotLight( 0x999999, 1, 0, Math.PI / 2 );
     light.position.set( 0, 400, 0 );
     light.target.position.set( 0, 0, 0 );
     light.castShadow = true;
@@ -49,21 +45,35 @@ export default class Circle3DRenderer {
     light.shadow.bias = 0.01;
     scene.add(light);
 
-    var lights = [];
-    lights[ 0 ] = new THREE.PointLight( 0x222222, 1, 0 );
-    lights[ 1 ] = new THREE.PointLight( 0x555555, 1, 0 );
-    // lights[ 2 ] = new THREE.PointLight( 0x666666, 1, 0 );
+    const lights = [];
+    lights[0] = new THREE.PointLight(0x222222, 1, 0);
+    lights[1] = new THREE.PointLight(0x555555, 1, 0);
 
-    lights[ 0 ].position.set( 0, 125, 0 );
-    lights[ 1 ].position.set( 0, 60, 0);
-    // lights[ 2 ].position.set(-300, 10, -300);
+    lights[0].position.set(0, 125, 0);
+    lights[1].position.set(0, 60, 0);
 
     lights[0].castShadow = true;
-    // lights[2].castShadow = true;
 
-    scene.add( lights[ 0 ] );
-    scene.add( lights[ 1 ] );
-    // scene.add( lights[ 2 ] );
+    scene.add(lights[0]);
+    scene.add(lights[1]);
+  }
+
+  addBoards(scene) {
+    /*
+    const xGeometry  = new THREE.CubeGeometry(1, 1, 1);
+    const xMaterial  = new THREE.MeshPhongMaterial({
+        color: 0xffffff,
+        shininess: 60,
+        wireframe: true,
+        side: THREE.FrontSide,
+        // side: THREE.DoubleSide,
+        // map: boardTexture,
+        // transparent: true
+    });
+    const xMesh = new THREE.Mesh(xGeometry, xMaterial);
+    xMesh.position.set(0, 60, 0);
+    scene.add(xMesh);
+    */
 
     let boardSize = [
       [60, 45],
@@ -72,111 +82,93 @@ export default class Circle3DRenderer {
       [42, 31.5],
     ][this.words.length / 4 - 2];
 
-    var boardGeometry  = new THREE.CubeGeometry(...boardSize, 1);
-    var labelGeometry  = new THREE.PlaneBufferGeometry(80, 20);
+    const boardGeometry  = new THREE.CubeGeometry(...boardSize, 1);
+    const labelGeometry  = new THREE.PlaneBufferGeometry(80, 20);
+    const boardMeshes = [];
 
-    var boardMeshes = [];
+    const unit = 360 / this.words.length;
+    const r = 150;
+    const rad = Math.PI * 2 / 360.0
 
-    var unit = 360 / this.words.length;
-    var r = 150;
-    var rad = Math.PI * 2 / 360.0
+    const labelGeometry2  = new THREE.PlaneBufferGeometry(800, 80);
 
-    /*
-    var images = [
-      'burp.jpg',
-      'carp.jpg',
-      'chirp.jpg',
-      'corp.jpg',
-      'gorp.jpg',
-      'harp.jpg',
-      'scarp.jpg',
-      'sharp.jpg',
-      'slurp.jpg',
-      'tarp.jpg',
-      'usurp.jpg',
-      'warp.jpg',
-    ];
-    var textureLoader = new THREE.TextureLoader();
-    */
-
-    var labelGeometry2  = new THREE.PlaneBufferGeometry(800, 80);
-
-    var canvas = document.createElement('canvas');
+    const canvas = document.createElement('canvas');
     canvas.width = 1024; canvas.height = 128;
 
-    var ctx = canvas.getContext('2d');
-    // var txt = 'abcdefghijklmnopqrstuvwxyz';
-    var txt = 'pattern';
+    const ctx = canvas.getContext('2d');
+    // const txt = 'abcdefghijklmnopqrstuvwxyz';
+    const txt = 'pattern';
     // ctx.fillStyle = '#333333';
     ctx.fillStyle = '#3F4444';
     ctx.font = "60px sans-serif";
     ctx.textAlign = 'center';
     // ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillText(txt, 400, 65);
-    var texture = new THREE.Texture(canvas);
+    const texture = new THREE.Texture(canvas);
     texture.needsUpdate = true;
 
-    var labelMaterial  = new THREE.MeshPhongMaterial({
+    const labelMaterial  = new THREE.MeshPhongMaterial({
       side: THREE.FrontSide,
       map: texture,
       transparent: true,
     });
 
-    var label = new THREE.Mesh(labelGeometry2, labelMaterial);
+    const label = new THREE.Mesh(labelGeometry2, labelMaterial);
     label.position.set(0, 200, 0);
     // label.scale.set(2,1,1)
     // label.rotation.x = - Math.PI / 2;
 
     scene.add(label);
 
-
     for (var i = 0; i < this.words.length; i++) {
-      var color;
-      if (i % 3 == 0) {
-        color = 0x999999;
-      } else {
-        color = 0x000000;
-      }
-      color = 0xffffff;
+      let color = 0xffffff;
 
       // テクスチャを描画
-      var canvas = document.createElement('canvas');
+      const canvas = document.createElement('canvas');
       canvas.width = 512; canvas.height = 128;
 
-      var ctx = canvas.getContext('2d');
+      const ctx = canvas.getContext('2d');
       ctx.fillStyle = 'black';
       ctx.font = "40px sans-serif";
       ctx.textAlign = 'center';
       // ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.fillText(this.words[i].word, 256, 64);
-      var texture = new THREE.Texture(canvas);
+      const texture = new THREE.Texture(canvas);
       texture.needsUpdate = true;
 
-      // var boardTexture = textureLoader.load('img/' + images[i]);
+      const textureLoader = new THREE.TextureLoader();
+      textureLoader.crossOrigin = '*';
 
-      var boardMaterial  = new THREE.MeshPhongMaterial({
+      const boardMaterial  = new THREE.MeshPhongMaterial({
         color: color,
         shininess: 60,
         wireframe: false,
         side: THREE.FrontSide,
         // side: THREE.DoubleSide,
-        // map: boardTexture,
         // transparent: true
       });
 
-      var labelMaterial  = new THREE.MeshPhongMaterial({
+      // let turl = 'https://farm1.staticflickr.com/426/32170591370_277d52267d_m_d.jpg';
+      let turl = null;
+      if (turl !== null) {
+        const boardTexture = textureLoader.load(turl, (texture) => {
+          boardMaterial.map = boardTexture;
+          boardMaterial.needsUpdate = true;
+        });
+      }
+
+      const labelMaterial  = new THREE.MeshPhongMaterial({
         side: THREE.FrontSide,
         map: texture,
         transparent: true
       });
 
-      var board = new THREE.Mesh(boardGeometry, boardMaterial);
-      var label = new THREE.Mesh(labelGeometry, labelMaterial);
+      const board = new THREE.Mesh(boardGeometry, boardMaterial);
+      const label = new THREE.Mesh(labelGeometry, labelMaterial);
 
-      var x = r * Math.cos((unit * i - 90) * rad);
-      var z = r * Math.sin((unit * i - 90) * rad);
+      const x = r * Math.cos((unit * i - 90) * rad);
+      const z = r * Math.sin((unit * i - 90) * rad);
 
-      // 30 + (6 - Math.abs(6 - i)) * 10
       board.position.set(x, 60, z);
       board.rotation.y = (360 - unit * i) * rad;
       board.castShadow = true;
@@ -189,23 +181,25 @@ export default class Circle3DRenderer {
 
       scene.add(board);
       scene.add(label);
-      boardMeshes.push(board)
-
-      // axes = new THREE.AxisHelper(5);
-      // axes.position.y = 50;
-      // board.add(axes);
+      boardMeshes.push(board);
     }
+  }
 
+  addRoom(scene) {
+    // const wallColor = 0xcddbdd; // blue
+    // const wallColor = 0xffffff; // white
+    // const wallColor = 0xcccccc; // gray
+    // const wallColor = 0x666666; // gray2
+    const wallColor = 0x333333; // black
 
-    var floorColor = 0xa0adaf;
-    var wallColor = 0xCDDBDD;
-    // var floorColor = 0x662E12;
-    // var floorColor = 0xffffff;
-    // var floorColor = 0xeeeeee;
-    var floorGeometry = new THREE.PlaneBufferGeometry(900, 900);
-    var floorMaterial  = new THREE.MeshPhongMaterial( { color: floorColor, shininess: 80, wireframe: false,  } );
-    // var floorMaterial = new THREE.MeshBasicMaterial({ color : 0x333333 });
-    var floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+    // const floorColor = 0xa0adaf;
+    // const floorColor = 0xffffff;
+    const floorColor = 0xfceec7; // wood
+
+    const floorGeometry = new THREE.PlaneBufferGeometry(900, 900);
+    const floorMaterial  = new THREE.MeshPhongMaterial( { color: floorColor, shininess: 80, wireframe: false,  } );
+    // const floorMaterial = new THREE.MeshBasicMaterial({ color : 0x333333 });
+    const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
 
     floorMesh.rotation.x = - Math.PI / 2;
     floorMesh.position.set(0, 0, 0);
@@ -216,8 +210,7 @@ export default class Circle3DRenderer {
 
     scene.add(floorMesh);
 
-
-    var ceilMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+    const ceilMesh = new THREE.Mesh(floorGeometry, floorMaterial);
 
     ceilMesh.rotation.x = Math.PI / 2;
     ceilMesh.position.set(0, 300, 0);
@@ -225,15 +218,15 @@ export default class Circle3DRenderer {
     scene.add(ceilMesh);
 
 
-    var group = new THREE.Group();
+    const group = new THREE.Group();
 
-    var s = new THREE.Shape();
+    const s = new THREE.Shape();
     s.moveTo(  0,   0)
     s.lineTo(  0, 300)
     s.lineTo(900, 300)
     s.lineTo(900,   0)
 
-    var doorSize = [100, 180];
+    const doorSize = [100, 180];
 
     s.lineTo(900 / 2 + doorSize[0] / 2,   0)
     s.lineTo(900 / 2 + doorSize[0] / 2,   doorSize[1])
@@ -242,17 +235,17 @@ export default class Circle3DRenderer {
 
     s.lineTo(0,0);
 
-    var wallMaterial  = new THREE.MeshPhongMaterial( { color: wallColor, shininess: 0, wireframe: false,  } );
+    const wallMaterial  = new THREE.MeshPhongMaterial( { color: wallColor, shininess: 0, wireframe: false,  } );
 
-    var wall = new THREE.ShapeGeometry(s);
-    var wallMesh = new THREE.Mesh(wall, wallMaterial);
+    const wall = new THREE.ShapeGeometry(s);
+    const wallMesh = new THREE.Mesh(wall, wallMaterial);
     wallMesh.position.set(-450,0,-450);
 
     // scene.add(wallMesh);
     group.add(wallMesh);
 
-    var corridorGeometry = new THREE.PlaneBufferGeometry(doorSize[0], 900);
-    var corridorMesh = new THREE.Mesh(corridorGeometry, floorMaterial);
+    let corridorGeometry = new THREE.PlaneBufferGeometry(doorSize[0], 900);
+    let corridorMesh = new THREE.Mesh(corridorGeometry, floorMaterial);
     corridorMesh.position.set(0,0,-900);
     corridorMesh.rotation.x = - Math.PI / 2;
     group.add(corridorMesh);
@@ -277,7 +270,7 @@ export default class Circle3DRenderer {
 
     scene.add(group);
 
-    var g2 = group.clone();
+    let g2 = group.clone();
     g2.position.set(0,0,0);
     g2.rotation.y = Math.PI / 2;
     scene.add(g2);
@@ -291,35 +284,37 @@ export default class Circle3DRenderer {
     g2.position.set(0,0,0);
     g2.rotation.y = - Math.PI / 2;
     scene.add(g2);
+  }
 
-    var controlsEnabled = true;
-    var moveForward = false;
-    var moveBackward = false;
-    var moveLeft = false;
-    var moveRight = false;
-    var canJump = false;
-    var prevTime = performance.now();
-    var velocity = new THREE.Vector3();
+  draw(renderer, scene, camera) {
+    let controlsEnabled = true;
+    let moveForward = false;
+    let moveBackward = false;
+    let moveLeft = false;
+    let moveRight = false;
+    let canJump = false;
+    let prevTime = performance.now();
+    let velocity = new THREE.Vector3();
 
-      var clock = new THREE.Clock();
+    let clock = new THREE.Clock();
 
-    var animate = () => {
+    const animate = () => {
       requestAnimationFrame(animate);
       render();
     };
 
-    var render = () => {
-      // var delta = clock.getDelta();
+    const render = () => {
+      // const delta = clock.getDelta();
       // controls.update( delta );
 
-      var time = performance.now();
-      var delta = ( time - prevTime ) / 150;
+      const time = performance.now();
+      const delta = ( time - prevTime ) / 150;
 
-      var breakBase = 3.0;
+      const breakBase = 3.0;
       velocity.x -= velocity.x * breakBase * delta;
       velocity.z -= velocity.z * breakBase * delta;
       velocity.y -= 9.8 * 5.0 * delta; // 100.0 = mass
-      var speedBase = 180.0
+      const speedBase = 180.0
 
       if ( moveForward )  velocity.z  -= speedBase * delta;
       if ( moveBackward ) velocity.z  += speedBase * delta;
@@ -356,9 +351,51 @@ export default class Circle3DRenderer {
       */
       prevTime = time;
 
-      renderer.render( scene, camera );
+      renderer.render(scene, camera);
     };
 
     animate();
+  }
+
+  drawOrbit(renderer, scene, camera) {
+    const controls = new (OrbitControls(THREE))(camera);
+    controls.minDistance = 1;
+    controls.maxDistance = 250;
+    controls.target.set(0, 60, 0);
+
+    const render = () => {
+      renderer.render(scene, camera);
+    }
+
+    const animate = () => {
+      requestAnimationFrame(animate);
+      controls.update();
+      render();
+    }
+
+    controls.addEventListener('change', render);
+    animate();
+  }
+
+  execute() {
+    while (this.stage.firstChild) {
+      this.stage.removeChild(this.stage.firstChild);
+    }
+
+    const renderer = this.createRenderer();
+    this.stage.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0xa000000, 0.15, 1500);
+
+    const camera = this.createCamera();
+    scene.add(camera);
+
+    this.addLights(scene);
+    this.addBoards(scene);
+    this.addRoom(scene);
+
+    // this.draw(renderer, scene, camera);
+    this.drawOrbit(renderer, scene, camera);
   }
 }

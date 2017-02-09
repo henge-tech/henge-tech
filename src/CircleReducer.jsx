@@ -3,6 +3,7 @@ import * as types from './ActionTypes.jsx';
 import Speaker from './Speaker.jsx';
 import WordActions from './WordActions.jsx';
 import StoryLine from './StoryLine.jsx';
+import Circle3DRenderer from './Circle3DRenderer.jsx';
 
 const window = (state = {}, action) => {
   switch (action.type) {
@@ -42,6 +43,7 @@ const circle =  (state = {}, action) => {
       mode: '3d'
     });
   case types.RENDER_3D:
+    new Circle3DRenderer(action.words, action.w, action.h).execute();
     return state;
   case types.CIRCLE_MODE:
     return Object.assign({}, state, {
