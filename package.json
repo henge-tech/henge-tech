@@ -30,7 +30,6 @@
     "react-redux": "^4.4.6",
     "redux-saga": "^0.14.1",
     "three": "^0.84.0",
-    "three-orbit-controls": "^82.1.0",
     "whatwg-fetch": "^2.0.1"
   },
   "devDependencies": {

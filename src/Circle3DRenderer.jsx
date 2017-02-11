@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import OrbitControls from 'three-orbit-controls';
+import OrbitControls from './ModifiedOrbitControls.jsx';
 
 export default class Circle3DRenderer {
   constructor(words, w, h) {
