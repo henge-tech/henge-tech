@@ -21,7 +21,7 @@ let initialState = {
     height: document.documentElement.clientHeight,
   },
   circle: {
-    mode: '3d',
+    mode: 'circle',
     words: [],
     wordAction: 'speech',
     wordActionKeyword: '意味',
@@ -44,7 +44,8 @@ let match, wobj;
 for (let i = 0; i < wordList.length; i++) {
   word = wordList[i].textContent;
   if (word != "\n") {
-    wobj = { word: word, index: idx, prefix: '', core: '', suffix: '' };
+    let imgExt = wordList[i].getAttribute('data-img-ext');
+    wobj = { word: word, index: idx, prefix: '', core: '', suffix: '', imgExt: imgExt };
     if ((match = patternsRex.exec(word)) !== null) {
       wobj.prefix = match[1];
       wobj.core = match[2]

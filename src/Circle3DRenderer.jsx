@@ -122,6 +122,7 @@ export default class Circle3DRenderer {
 
     for (var i = 0; i < this.words.length; i++) {
       let color = 0xffffff;
+      const word = this.words[i].word;
 
       // テクスチャを描画
       const canvas = document.createElement('canvas');
@@ -132,7 +133,7 @@ export default class Circle3DRenderer {
       ctx.font = "40px sans-serif";
       ctx.textAlign = 'center';
       // ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillText(this.words[i].word, 256, 64);
+      ctx.fillText(word, 256, 64);
       const texture = new THREE.Texture(canvas);
       texture.needsUpdate = true;
 
@@ -149,8 +150,9 @@ export default class Circle3DRenderer {
       });
 
       // let turl = 'https://farm1.staticflickr.com/426/32170591370_277d52267d_m_d.jpg';
-      let turl = null;
-      if (turl !== null) {
+      // let turl = null;
+      if (this.words[i].imgExt !== null) {
+        let turl = 'https://s3-ap-northeast-1.amazonaws.com/henge/words/' + word + '.' + this.words[i].imgExt;
         const boardTexture = textureLoader.load(turl, (texture) => {
           boardMaterial.map = boardTexture;
           boardMaterial.needsUpdate = true;
