@@ -58,6 +58,7 @@ module.exports = function( THREE ) {
     // Set to false to disable rotating
     this.enableRotate = true;
     this.rotateSpeed = 0.2;
+    this.rotateSpeedV = 0.08;
 
     // Set to false to disable panning
     this.enablePan = true;
@@ -449,7 +450,7 @@ module.exports = function( THREE ) {
       rotateLeft( 2 * Math.PI * rotateDelta.x / element.clientWidth * scope.rotateSpeed );
 
       // rotating up and down along whole screen attempts to go 360, but limited to 180
-      rotateUp( 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeed );
+      rotateUp( 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeedV );
 
       rotateStart.copy( rotateEnd );
 
@@ -593,7 +594,7 @@ module.exports = function( THREE ) {
       rotateLeft( 2 * Math.PI * rotateDelta.x / element.clientWidth * scope.rotateSpeed );
 
       // rotating up and down along whole screen attempts to go 360, but limited to 180
-      rotateUp( 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeed );
+      rotateUp( 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeedV );
 
       rotateStart.copy( rotateEnd );
 
