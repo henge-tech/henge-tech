@@ -59,6 +59,8 @@ module.exports = function( THREE ) {
     this.enableRotate = true;
     this.rotateSpeed = 0.2;
     this.rotateSpeedV = 0.08;
+    this.rotateSpeedTouch = 0.1;
+    this.rotateSpeedTouchV = 0.08;
 
     // Set to false to disable panning
     this.enablePan = true;
@@ -447,10 +449,13 @@ module.exports = function( THREE ) {
       var element = scope.domElement === document ? scope.domElement.body : scope.domElement;
 
       // rotating across whole screen goes 360 degrees around
-      rotateLeft( 2 * Math.PI * rotateDelta.x / element.clientWidth * scope.rotateSpeed );
+      // var w = Math.max(element.clientWidth, 1500);
+      var w = 1500;
+      rotateLeft(2 * Math.PI * rotateDelta.x / w * scope.rotateSpeed);
 
       // rotating up and down along whole screen attempts to go 360, but limited to 180
-      rotateUp( 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeedV );
+      var h = 1000;
+      rotateUp( 2 * Math.PI * rotateDelta.y / h * scope.rotateSpeedV );
 
       rotateStart.copy( rotateEnd );
 
@@ -591,10 +596,13 @@ module.exports = function( THREE ) {
       var element = scope.domElement === document ? scope.domElement.body : scope.domElement;
 
       // rotating across whole screen goes 360 degrees around
-      rotateLeft( 2 * Math.PI * rotateDelta.x / element.clientWidth * scope.rotateSpeed );
+      // var w = Math.max(element.clientWidth, 1200);
+      var w = 1000;
+      rotateLeft( 2 * Math.PI * rotateDelta.x / w * scope.rotateSpeedTouch * -1);
 
       // rotating up and down along whole screen attempts to go 360, but limited to 180
-      rotateUp( 2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeedV );
+      var h = 1000;
+      rotateUp( 2 * Math.PI * rotateDelta.y / h * scope.rotateSpeedTouchV * -1);
 
       rotateStart.copy( rotateEnd );
 
