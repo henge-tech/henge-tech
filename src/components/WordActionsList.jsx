@@ -17,9 +17,11 @@ export default class WordActionsList extends React.Component {
     };
 
     let styles = {
-      storyModeButton: {
+      modeLinks: {
         width:'100%',
         marginTop: '3px'
+      },
+      storyModeButton: {
       },
       circleModeButton: {
         width:'100%',
@@ -32,19 +34,18 @@ export default class WordActionsList extends React.Component {
       {xsHidden: false, xs: 8, md: 6},
       {xsHidden: false, xs: 4, md: 3}
     ];
-    if (!this.props.storyLines) {
-      styles.storyModeButton.display = 'none';
+    if (this.props.mode == 'circle') {
       styles.circleModeButton.display = 'none';
-    } else {
-      if (this.props.mode == 'circle') {
-        styles.circleModeButton.display = 'none';
-        cols[0].xsHidden = true;
-        cols[0].xs = 0;
-      } else {
+      cols[0].xsHidden = true;
+      cols[0].xs = 0;
+      if (!this.props.storyLines) {
         styles.storyModeButton.display = 'none';
-        cols[2].xsHidden = true;
-        cols[2].xs = 0;
+        styles.circleModeButton.display = 'none';
       }
+    } else {
+      styles.storyModeButton.display = 'none';
+      cols[2].xsHidden = true;
+      cols[2].xs = 0;
     }
 
     let onClickCircleModeButton = (event) => {
@@ -98,8 +99,8 @@ export default class WordActionsList extends React.Component {
             /> Tumblr</label>
         </Col>
         <Col xsHidden={cols[2].xsHidden} xs={cols[2].xs} md={cols[2].md}>
-        <div style={styles.storyModeButton} className='text-right'>
-        <a href="#" onClick={onClickStory}>Story &#x25B8;</a><br/>
+        <div style={styles.modeLinks} className='text-right'>
+        <a href="#" style={styles.storyModeButton} onClick={onClickStory}>Story &#x25B8;</a><br/>
         <a href="#" onClick={onClick3D}>3D &#x25B8;</a>
         </div>
         </Col>
