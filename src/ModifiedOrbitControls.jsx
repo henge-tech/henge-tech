@@ -46,8 +46,9 @@ module.exports = function( THREE ) {
 
     // Set to true to enable damping (inertia)
     // If damping is enabled, you must call controls.update() in your animation loop
-    this.enableDamping = false;
-    this.dampingFactor = 0.25;
+    this.enableDamping = true;
+    this.dampingFactor    = 0.09;
+    this.dampingFactorPhi = 0.1;
 
     // This option actually enables dollying in and out; left as "zoom" for backwards compatibility.
     // Set to false to disable zooming
@@ -56,7 +57,7 @@ module.exports = function( THREE ) {
 
     // Set to false to disable rotating
     this.enableRotate = true;
-    this.rotateSpeed = 1.0;
+    this.rotateSpeed = 0.2;
 
     // Set to false to disable panning
     this.enablePan = true;
@@ -180,7 +181,7 @@ module.exports = function( THREE ) {
         if ( scope.enableDamping === true ) {
 
           sphericalDelta.theta *= ( 1 - scope.dampingFactor );
-          sphericalDelta.phi *= ( 1 - scope.dampingFactor );
+          sphericalDelta.phi *= ( 1 - scope.dampingFactorPhi );
 
         } else {
 
