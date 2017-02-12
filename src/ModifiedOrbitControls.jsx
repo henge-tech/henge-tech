@@ -153,7 +153,14 @@ module.exports = function( THREE ) {
 
         spherical.makeSafe();
 
-        spherical.radius *= scale;
+        var ss = 0;
+        if (scale < 1) {
+          ss = -5;
+        } else if (scale > 1) {
+          ss = 5;
+        }
+        // spherical.radius *= scale;
+        spherical.radius += ss;
 
         // restrict radius to be between desired limits
         spherical.radius = Math.max( scope.minDistance, Math.min( scope.maxDistance, spherical.radius ) );
