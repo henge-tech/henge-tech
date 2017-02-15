@@ -2,7 +2,8 @@ import * as THREE from 'three';
 import OrbitControls from './ModifiedOrbitControls.jsx';
 
 export default class Circle3DRenderer {
-  constructor(words, w, h) {
+  constructor(pattern, words, w, h) {
+    this.pattern = pattern;
     this.words = words;
     this.w = w;
     this.h = h;
@@ -58,7 +59,48 @@ export default class Circle3DRenderer {
     scene.add(lights[1]);
   }
 
+  createPatternLabel() {
+    const geometry = new THREE.PlaneBufferGeometry(800, 80);
+
+    const canvas = document.createElement('canvas');
+    canvas.width = 1024; canvas.height = 128;
+
+    const ctx = canvas.getContext('2d');
+    // const txt = 'inte_tion';
+    // const txt = 'abcdefghijklmnopqrstuvwxyz';
+    const txt = this.pattern;
+    // ctx.fillStyle = '#333333';
+    ctx.fillStyle = '#ffffff';
+    ctx.font = "60px sans-serif";
+    ctx.textAlign = 'center';
+    // ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillText(txt, 512, 65);
+    const texture = new THREE.Texture(canvas);
+    texture.needsUpdate = true;
+
+    const material  = new THREE.MeshPhongMaterial({
+      side: THREE.FrontSide,
+      map: texture,
+      transparent: true,
+    });
+
+    const label = new THREE.Mesh(geometry, material);
+    const pos = 'wall';
+    if (pos == 'floor') {
+      label.position.set(0, 2, 20);
+      label.rotation.x = - Math.PI / 2;
+    } else if (pos == 'air') {
+      label.position.set(0, 180, 0);
+    } else if (pos == 'wall') {
+      label.position.set(0, 220, -445);
+    }
+
+    return label;
+  }
+
   addBoards(scene) {
+    scene.add(this.createPatternLabel());
+
     /*
     const xGeometry  = new THREE.CubeGeometry(1, 1, 1);
     const xMaterial  = new THREE.MeshPhongMaterial({
@@ -89,36 +131,6 @@ export default class Circle3DRenderer {
     const unit = 360 / this.words.length;
     const r = 150;
     const rad = Math.PI * 2 / 360.0
-
-    const labelGeometry2  = new THREE.PlaneBufferGeometry(800, 80);
-
-    const canvas = document.createElement('canvas');
-    canvas.width = 1024; canvas.height = 128;
-
-    const ctx = canvas.getContext('2d');
-    // const txt = 'abcdefghijklmnopqrstuvwxyz';
-    const txt = 'pattern';
-    // ctx.fillStyle = '#333333';
-    ctx.fillStyle = '#3F4444';
-    ctx.font = "60px sans-serif";
-    ctx.textAlign = 'center';
-    // ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillText(txt, 400, 65);
-    const texture = new THREE.Texture(canvas);
-    texture.needsUpdate = true;
-
-    const labelMaterial  = new THREE.MeshPhongMaterial({
-      side: THREE.FrontSide,
-      map: texture,
-      transparent: true,
-    });
-
-    const label = new THREE.Mesh(labelGeometry2, labelMaterial);
-    label.position.set(0, 200, 0);
-    // label.scale.set(2,1,1)
-    // label.rotation.x = - Math.PI / 2;
-
-    scene.add(label);
 
     for (var i = 0; i < this.words.length; i++) {
       let color = 0xffffff;
