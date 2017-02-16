@@ -15,7 +15,6 @@ export default class Circle3DRenderer {
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.BasicShadowMap;
     renderer.setSize(this.w, this.h);
-    renderer.autoClear = false;
     return renderer;
   }
 
@@ -372,17 +371,14 @@ export default class Circle3DRenderer {
     animate();
   }
 
-  drawOrbit(renderer, scene, camera, hud) {
+  drawOrbit(renderer, scene, camera) {
     const controls = new (OrbitControls(THREE))(camera);
     controls.minDistance = 1;
     controls.maxDistance = 250;
     controls.target.set(0, 60, 0);
 
     const render = () => {
-      hud.texture.needsUpdate = true;
       renderer.render(scene, camera);
-      // console.log(hud);
-      renderer.render(hud.scene, hud.camera);
     }
 
     const animate = () => {
@@ -393,42 +389,6 @@ export default class Circle3DRenderer {
 
     controls.addEventListener('change', render);
     animate();
-  }
-
-  createHUD() {
-    const scene = new THREE.Scene();
-
-    var hudCanvas = document.createElement('canvas');
-
-    const w = 1024;
-    const h = 512;
-    hudCanvas.width = w;
-    hudCanvas.height = h;
-
-    var ctx = hudCanvas.getContext('2d');
-    ctx.font = "40px sans-serif";
-    ctx.textAlign = 'center';
-    ctx.fillStyle = '#ffffff';
-    // ctx.fillStyle = 'rgba(245, 245, 245, 0.75)';
-    ctx.fillText('HUD', w / 2, h / 2);
-
-    var texture = new THREE.Texture(hudCanvas)
-    texture.needsUpdate = true;
-    var material = new THREE.MeshBasicMaterial({map: texture });
-    material.transparent = true;
-
-    var planeGeometry = new THREE.PlaneGeometry(w, h);
-    var plane = new THREE.Mesh(planeGeometry, material);
-    scene.add(plane);
-
-    var camera = new THREE.OrthographicCamera(
-      -w / 2, w / 2,
-      h / 2, -h / 2,
-      0, 30
-    );
-    scene.add(camera);
-
-    return { scene, camera, texture };
   }
 
   execute() {
@@ -450,8 +410,6 @@ export default class Circle3DRenderer {
     this.addRoom(scene);
 
     // this.draw(renderer, scene, camera);
-
-    const hud = this.createHUD();
-    this.drawOrbit(renderer, scene, camera, hud);
+    this.drawOrbit(renderer, scene, camera);
   }
 }
