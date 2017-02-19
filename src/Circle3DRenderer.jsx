@@ -57,6 +57,8 @@ export default class Circle3DRenderer {
 
     scene.add(lights[0]);
     scene.add(lights[1]);
+
+    return [ambientLight, light, ...lights];
   }
 
   createPatternLabel() {
@@ -371,13 +373,14 @@ export default class Circle3DRenderer {
     animate();
   }
 
-  drawOrbit(renderer, scene, camera) {
-    const controls = new (OrbitControls(THREE))(camera);
+  drawOrbit(renderer, scene, camera, light) {
+    const target = new THREE.Vector3(0, 60, 0)
+    const controls = new (OrbitControls(THREE))(camera, document, target, light);
     controls.minDistance = 1;
     controls.maxDistance = 250;
-    controls.target.set(0, 60, 0);
 
     const render = () => {
+      light.position.copy(camera.position);
       renderer.render(scene, camera);
     }
 
@@ -405,11 +408,11 @@ export default class Circle3DRenderer {
     const camera = this.createCamera();
     scene.add(camera);
 
-    this.addLights(scene);
+    const lights = this.addLights(scene);
     this.addBoards(scene);
     this.addRoom(scene);
 
     // this.draw(renderer, scene, camera);
-    this.drawOrbit(renderer, scene, camera);
+    this.drawOrbit(renderer, scene, camera, lights[3]);
   }
 }
