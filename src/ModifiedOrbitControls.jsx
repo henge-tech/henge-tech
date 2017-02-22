@@ -35,7 +35,7 @@ module.exports = function( THREE ) {
 
     // How far you can orbit vertically, upper and lower limits.
     // Range is 0 to Math.PI radians.
-    this.minPolarAngle = 0; // radians
+    this.minPolarAngle = Math.PI / 2; // radians
     this.maxPolarAngle = Math.PI / 2; // radians
 
     // How far you can orbit horizontally, upper and lower limits.
@@ -140,10 +140,25 @@ module.exports = function( THREE ) {
         spherical.setFromVector3( offset );
 
         if ( scope.autoRotate && state === STATE.NONE ) {
-
           rotateLeft( getAutoRotationAngle() );
-
         }
+
+
+        var rad = 0;
+        if (scale < 1.0) {
+          rad = -3;
+        } else if (scale > 1.0) {
+          rad = 3;
+        }
+        // spherical.radius *= scale;
+        spherical.radius += rad;
+
+        // restrict radius to be between desired limits
+        spherical.radius = Math.max( scope.minDistance, Math.min( scope.maxDistance, spherical.radius ) );
+
+        var rh = 90;
+        var mpr = ((rh - spherical.radius) / rh) * (Math.PI / 2);
+        scope.minPolarAngle = Math.max(0, mpr);
 
         spherical.theta += sphericalDelta.theta;
         spherical.phi += sphericalDelta.phi;
@@ -156,17 +171,6 @@ module.exports = function( THREE ) {
 
         spherical.makeSafe();
 
-        var ss = 0;
-        if (scale < 1) {
-          ss = -5;
-        } else if (scale > 1) {
-          ss = 5;
-        }
-        // spherical.radius *= scale;
-        spherical.radius += ss;
-
-        // restrict radius to be between desired limits
-        spherical.radius = Math.max( scope.minDistance, Math.min( scope.maxDistance, spherical.radius ) );
 
         // move target to panned location
         scope.target.add( panOffset );
@@ -179,6 +183,7 @@ module.exports = function( THREE ) {
         position.copy( scope.target ).add( offset );
 
         scope.object.lookAt( scope.target );
+        // scope.object.rotation.y += Math.PI;
 
         if ( scope.enableDamping === true ) {
 
