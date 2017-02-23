@@ -52,7 +52,7 @@ module.exports = function( THREE ) {
     // This option actually enables dollying in and out; left as "zoom" for backwards compatibility.
     // Set to false to disable zooming
     this.enableZoom = true;
-    this.zoomSpeed = 1.0;
+    this.zoomSpeed = 1.1;
 
     // Set to false to disable rotating
     this.enableRotate = true;
@@ -146,13 +146,7 @@ module.exports = function( THREE ) {
           rotateLeft( getAutoRotationAngle() );
         }
 
-
-        var rad = 0;
-        if (scale < 1.0) {
-          rad = -3;
-        } else if (scale > 1.0) {
-          rad = 3;
-        }
+        var rad = (scale - 1.0) * 60;
         if (this.directionMode == 'out') {
           rad *= -1;
         }
@@ -312,7 +306,7 @@ module.exports = function( THREE ) {
 
     function getZoomScale() {
 
-      return Math.pow( 1.05, scope.zoomSpeed );
+      return scope.zoomSpeed;
 
     }
 
@@ -654,13 +648,9 @@ module.exports = function( THREE ) {
       dollyDelta.subVectors( dollyEnd, dollyStart );
 
       if ( dollyDelta.y < 0 ) {
-
-        dollyOut( getZoomScale() );
-
+        dollyOut(getZoomScale() * 1.05);
       } else if ( dollyDelta.y > 0 ) {
-
-        dollyIn( getZoomScale() );
-
+        dollyIn(getZoomScale() * 1.05);
       }
 
       dollyStart.copy( dollyEnd );
