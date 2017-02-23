@@ -286,7 +286,7 @@ module.exports = function( THREE ) {
 
     function getZoomScale() {
 
-      return Math.pow( 0.95, scope.zoomSpeed );
+      return Math.pow( 1.05, scope.zoomSpeed );
 
     }
 
@@ -475,11 +475,11 @@ module.exports = function( THREE ) {
 
       dollyDelta.subVectors( dollyEnd, dollyStart );
 
-      if ( dollyDelta.y > 0 ) {
+      if ( dollyDelta.y < 0 ) {
 
         dollyIn( getZoomScale() );
 
-      } else if ( dollyDelta.y < 0 ) {
+      } else if ( dollyDelta.y > 0 ) {
 
         dollyOut( getZoomScale() );
 
@@ -519,11 +519,11 @@ module.exports = function( THREE ) {
 
       if ( event.deltaY < 0 ) {
 
-        dollyOut( getZoomScale() );
+        dollyIn( getZoomScale() );
 
       } else if ( event.deltaY > 0 ) {
 
-        dollyIn( getZoomScale() );
+        dollyOut( getZoomScale() );
 
       }
 
@@ -627,11 +627,11 @@ module.exports = function( THREE ) {
 
       dollyDelta.subVectors( dollyEnd, dollyStart );
 
-      if ( dollyDelta.y > 0 ) {
+      if ( dollyDelta.y < 0 ) {
 
         dollyOut( getZoomScale() );
 
-      } else if ( dollyDelta.y < 0 ) {
+      } else if ( dollyDelta.y > 0 ) {
 
         dollyIn( getZoomScale() );
 
