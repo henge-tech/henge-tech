@@ -26,8 +26,8 @@ module.exports = function( THREE ) {
     this.target = target;
 
     // How far you can dolly in and out ( PerspectiveCamera only )
-    this.minDistance = 0;
-    this.maxDistance = Infinity;
+    this.minDistance = 1;
+    this.maxDistance = 250;
 
     // How far you can zoom in and out ( OrthographicCamera only )
     this.minZoom = 0;
@@ -83,6 +83,9 @@ module.exports = function( THREE ) {
     this.target0 = this.target.clone();
     this.position0 = this.object.position.clone();
     this.zoom0 = this.object.zoom;
+
+    // Camera lookAt() direction
+    this.directionMode = 'in';
 
     //
     // public methods
@@ -150,18 +153,39 @@ module.exports = function( THREE ) {
         } else if (scale > 1.0) {
           rad = 3;
         }
+        if (this.directionMode == 'out') {
+          rad *= -1;
+        }
         // spherical.radius *= scale;
         spherical.radius += rad;
 
         // restrict radius to be between desired limits
         spherical.radius = Math.max( scope.minDistance, Math.min( scope.maxDistance, spherical.radius ) );
 
-        var rh = 90;
-        var mpr = ((rh - spherical.radius) / rh) * (Math.PI / 2);
-        scope.minPolarAngle = Math.max(0, mpr);
+        if (spherical.radius <= 2) {
+          if (scale < 1.0 && scope.directionMode == 'in') {
+            scope.directionMode = 'out';
+            scope.maxDistance = 120;
+            spherical.theta += Math.PI;
+          } else if (scale > 1.0 && scope.directionMode == 'out') {
+            scope.directionMode = 'in';
+            scope.maxDistance = 250;
+            spherical.theta -= Math.PI;
+          }
+        }
+
+        if (scope.directionMode == 'in') {
+          var rh = 90;
+          var mpr = ((rh - spherical.radius) / rh) * (Math.PI / 2);
+          scope.minPolarAngle = Math.max(0, mpr);
+        } else {
+          scope.minPolarAngle = Math.PI / 2;
+        }
 
         spherical.theta += sphericalDelta.theta;
         spherical.phi += sphericalDelta.phi;
+        if (scope.directionMode == 'out') {
+        }
 
         // restrict theta to be between desired limits
         spherical.theta = Math.max( scope.minAzimuthAngle, Math.min( scope.maxAzimuthAngle, spherical.theta ) );
@@ -183,7 +207,9 @@ module.exports = function( THREE ) {
         position.copy( scope.target ).add( offset );
 
         scope.object.lookAt( scope.target );
-        // scope.object.rotation.y += Math.PI;
+        if (scope.directionMode == 'out') {
+          scope.object.rotation.y += Math.PI;
+        }
 
         if ( scope.enableDamping === true ) {
 
