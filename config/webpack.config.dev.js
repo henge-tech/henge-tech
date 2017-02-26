@@ -1,5 +1,9 @@
 var path = require('path');
 var webpack = require('webpack');
+var loadenv = require("node-env-file");
+
+var dotenv = loadenv(__dirname + '/../.env.development', {raise: false});
+dotenv.NODE_ENV = 'development';
 
 module.exports = {
   entry: {
@@ -12,6 +16,12 @@ module.exports = {
     path: path.join(__dirname, '../docs'),
     filename: '[name].bundle.js'
   },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(dotenv)
+    })
+  ],
 
   module: {
     loaders: [

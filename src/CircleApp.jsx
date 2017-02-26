@@ -22,7 +22,6 @@ let initialState = {
   },
   circle: {
     mode: 'circle',
-    // mode: '3d',
     words: [],
     wordAction: 'speech',
     wordActionKeyword: '意味',
@@ -31,6 +30,10 @@ let initialState = {
     speaker: speaker
   }
 };
+
+if (process.env.NODE_ENV == 'development' && process.env.INITIAL_MODE) {
+  initialState.circle.mode = process.env.INITIAL_MODE;
+}
 
 let wordList = document.getElementById('words').childNodes;
 let word = '';
