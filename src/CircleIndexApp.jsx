@@ -34,8 +34,22 @@ for (let i = 0; i < patternsList.length; i++) {
   pattern = {};
   pattern.id = i + 1;
   pattern.pattern = patternsList[i].textContent;
+  const tokens = pattern.pattern.split(/_/);
+  pattern.prefix = tokens[0];
+  pattern.suffix = tokens[1];
+
   pattern.count = patternsList[i].getAttribute('data-count');
   pattern.pickup = patternsList[i].getAttribute('data-pickup') == 'true';
+
+  const firstWord = allWords[i][0];
+
+  const prefix = firstWord.substr(0, pattern.prefix.length);
+  const core = firstWord.substr(pattern.prefix.length, firstWord.length - pattern.prefix.length - pattern.suffix.length);
+  const suffix = firstWord.substr(firstWord.length - pattern.suffix.length);
+
+  pattern.firstWord = (
+      <span className="word-list-base"><span className="word-prefix">{prefix}</span><span>{core}</span><span className="word-suffix">{suffix}</span></span>
+  );
   pattern.allWordsText = allWords[i].join("\t");
   initialState.index.patterns.push(pattern);
 }

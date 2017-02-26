@@ -18,7 +18,7 @@ export default class CircleIndex extends React.Component {
     let i = 0;
     let stories = this.props.stories;
     let strRex, rex;
-    if (!this.props.q) {
+    if (!this.props.q || this.props.q.length < 2) {
       rex = null;
     } else {
       strRex = escapeStringRegexp(this.props.q);
@@ -28,11 +28,22 @@ export default class CircleIndex extends React.Component {
     }
 
     let match;
+    let label;
 
     this.props.patterns.forEach((pattern) => {
+      label = pattern.firstWord;
       if (rex !== null) {
         match = rex.exec(pattern.allWordsText);
         if (match === null) return;
+
+        const w = match[1];
+        const prefix = w.substr(0, pattern.prefix.length);
+        const core   = w.substr(pattern.prefix.length, w.length - pattern.prefix.length - pattern.suffix.length);
+        const suffix = w.substr(w.length - pattern.suffix.length);
+
+        label = (
+            <span className="word-list-base"><span className="word-prefix">{prefix}</span><span>{core}</span><span className="word-suffix">{suffix}</span></span>
+        );
       } else if (this.props.filter == 'pickup') {
         if (!pattern.pickup) return;
       } else if (this.props.filter == 'story') {
@@ -89,7 +100,7 @@ export default class CircleIndex extends React.Component {
       }
 
       patternsList.push(
-        <li value={pattern.id} key={'pattern-' + i}><span style={{width: '100px', display: 'inline-block'}}><a href={pattern.pattern + '.html'}>{pattern.pattern}</a></span>
+        <li value={pattern.id} key={'pattern-' + i}><span style={{width: '150px', display: 'inline-block'}}><a href={pattern.pattern + '.html'}>{label}</a></span>
           <a href="#" onClick={e => onClickSpeakButton(e)}><Glyphicon glyph="volume-up" style={{marginRight: '5px'}}/></a>
           {patternAttr}</li>
       );

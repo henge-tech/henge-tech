@@ -32,6 +32,13 @@
   color: #b99;
 }
 
+.word-list-base {
+  color: #ccc;
+}
+.word-list-base:hover {
+  color: #ccc;
+}
+
 .word-core-a:first-letter {
   font-weight: bold;
 }
