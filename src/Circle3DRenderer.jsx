@@ -376,6 +376,7 @@ export default class Circle3DRenderer {
   drawOrbit(renderer, scene, camera, light) {
     const target = new THREE.Vector3(0, 60, 0)
     const controls = new (OrbitControls(THREE))(camera, document, target, light);
+    this.controls = controls;
     controls.minDistance = 1;
     controls.maxDistance = 250;
 
@@ -385,6 +386,7 @@ export default class Circle3DRenderer {
     }
 
     const animate = () => {
+      if (!this.animating) return;
       requestAnimationFrame(animate);
       controls.update();
       render();
@@ -392,6 +394,11 @@ export default class Circle3DRenderer {
 
     controls.addEventListener('change', render);
     animate();
+  }
+
+  stop() {
+    this.animating = false;
+    this.controls.dispose();
   }
 
   execute() {
@@ -413,6 +420,7 @@ export default class Circle3DRenderer {
     this.addRoom(scene);
 
     // this.draw(renderer, scene, camera);
+    this.animating = true;
     this.drawOrbit(renderer, scene, camera, lights[3]);
   }
 }

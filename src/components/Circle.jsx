@@ -4,7 +4,7 @@ import WordCircle from './WordCircle.jsx';
 import WordActionsListContainer from './WordActionsListContainer.jsx';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
 import StoryModeContainer from './StoryModeContainer.jsx';
-import ThreeDModeContainer from './ThreeDModeContainer.jsx';
+import { Button, Glyphicon } from 'react-bootstrap';
 
 export default class Circle extends React.Component {
 
@@ -48,11 +48,28 @@ export default class Circle extends React.Component {
 
     let styles = {
       container: {position: 'relative', height: h + 'px', width: '100%', padding: 0 },
-      canvas: { width: '100%', height: h + 'px' }
+      canvas: { width: '100%', height: h + 'px' },
+      buttons0: { left: '50px', bottom: '50px', position: 'absolute' },
+      buttons1: { left: '90px', bottom: '50px', position: 'absolute' },
+      buttons2: { left: '130px', bottom: '50px', position: 'absolute' }
     };
     return (
       <div style={styles.container} className="container">
         <div id="stage" style={styles.canvas}></div>
+        <Button
+            onClick={() => this.props.onClick3DBackButton()}
+            style={styles.buttons0}
+            className="btn-circle"
+          ><Glyphicon glyph="chevron-left" /></Button>
+        <Button
+            onClick={() => this.props.onClickSpeakButton(this.props.words, -1)}
+            style={styles.buttons1}
+            className="btn-circle"
+          ><Glyphicon glyph="volume-up" /></Button>
+        <Button
+            style={styles.buttons2}
+            className="btn-circle"
+          ><Glyphicon glyph="question-sign" /></Button>
         <CirclePageNavBar />
       </div>
     );

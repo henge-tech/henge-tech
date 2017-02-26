@@ -8,7 +8,7 @@ const mapStateToProps = (state) => {
     width: state.window.width,
     height: state.window.height,
     words: state.circle.words,
-    pattern: state.circle.pattern,
+    pattern: state.circle.pattern
   }
 }
 
@@ -22,6 +22,9 @@ const mapDispatchToProps = (dispatch) => {
     },
     render3D: (words, w, h) => {
       dispatch(actions.render3D(words, w, h));
+    },
+    onClick3DBackButton: () => {
+      dispatch(actions.circleMode());
     }
   }
 }
