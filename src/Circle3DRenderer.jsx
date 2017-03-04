@@ -2,12 +2,14 @@ import * as THREE from 'three';
 import OrbitControls from './ModifiedOrbitControls.jsx';
 
 export default class Circle3DRenderer {
-  constructor(pattern, words, w, h) {
+  constructor(pattern, words, w, h, speaker) {
     this.pattern = pattern;
     this.words = words;
     this.w = w;
     this.h = h;
     this.stage = document.getElementById('stage');
+    this.speaker = speaker;
+    this.removeEventListeners = null;
   }
 
   createRenderer() {
@@ -87,6 +89,7 @@ export default class Circle3DRenderer {
     });
 
     const label = new THREE.Mesh(geometry, material);
+    label.name = 'centerlabel';
     const pos = 'wall';
     if (pos == 'floor') {
       label.position.set(0, 2, 20);
@@ -180,7 +183,10 @@ export default class Circle3DRenderer {
       });
 
       const board = new THREE.Mesh(boardGeometry, boardMaterial);
+      board.name = 'board';
+      board.userData.word = this.words[i];
       const label = new THREE.Mesh(labelGeometry, labelMaterial);
+      label.name = 'label';
 
       const x = r * Math.cos((unit * i - 90) * rad);
       const z = r * Math.sin((unit * i - 90) * rad);
@@ -216,6 +222,7 @@ export default class Circle3DRenderer {
     const floorMaterial  = new THREE.MeshPhongMaterial( { color: floorColor, shininess: 80, wireframe: false,  } );
     // const floorMaterial = new THREE.MeshBasicMaterial({ color : 0x333333 });
     const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+    floorMesh.name = 'floor';
 
     floorMesh.rotation.x = - Math.PI / 2;
     floorMesh.position.set(0, 0, 0);
@@ -227,6 +234,7 @@ export default class Circle3DRenderer {
     scene.add(floorMesh);
 
     const ceilMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+    ceilMesh.name = 'ceil';
 
     ceilMesh.rotation.x = Math.PI / 2;
     ceilMesh.position.set(0, 300, 0);
@@ -255,6 +263,7 @@ export default class Circle3DRenderer {
 
     const wall = new THREE.ShapeGeometry(s);
     const wallMesh = new THREE.Mesh(wall, wallMaterial);
+    wallMesh.name = 'wall';
     wallMesh.position.set(-450,0,-450);
 
     // scene.add(wallMesh);
@@ -262,23 +271,27 @@ export default class Circle3DRenderer {
 
     let corridorGeometry = new THREE.PlaneBufferGeometry(doorSize[0], 900);
     let corridorMesh = new THREE.Mesh(corridorGeometry, floorMaterial);
+    corridorMesh.name = 'corridorfloor';
     corridorMesh.position.set(0,0,-900);
     corridorMesh.rotation.x = - Math.PI / 2;
     group.add(corridorMesh);
 
     corridorMesh = new THREE.Mesh(corridorGeometry, floorMaterial);
+    corridorMesh.name = 'corridorceil';
     corridorMesh.position.set(0,doorSize[1],-900);
     corridorMesh.rotation.x = Math.PI / 2;
     group.add(corridorMesh);
 
     corridorGeometry = new THREE.PlaneBufferGeometry(doorSize[1], 900);
     corridorMesh = new THREE.Mesh(corridorGeometry, wallMaterial);
+    corridorMesh.name = 'corridorwall1';
     corridorMesh.position.set(-doorSize[0] / 2, doorSize[1] / 2,-900);
     corridorMesh.rotation.x = Math.PI / 2;
     corridorMesh.rotation.y = Math.PI / 2;
     group.add(corridorMesh);
 
     corridorMesh = new THREE.Mesh(corridorGeometry, wallMaterial);
+    corridorMesh.name = 'corridorwall2';
     corridorMesh.position.set(doorSize[0] / 2, doorSize[1] / 2,-900);
     corridorMesh.rotation.x = Math.PI / 2;
     corridorMesh.rotation.y = -Math.PI / 2;
@@ -377,8 +390,6 @@ export default class Circle3DRenderer {
     const target = new THREE.Vector3(0, 60, 0)
     const controls = new (OrbitControls(THREE))(camera, document, target, light);
     this.controls = controls;
-    controls.minDistance = 1;
-    controls.maxDistance = 250;
 
     const render = () => {
       light.position.copy(camera.position);
@@ -396,9 +407,71 @@ export default class Circle3DRenderer {
     animate();
   }
 
+  handleMouseEvent(scene, camera) {
+    const onMouseClick = (e) => {
+      if (new Date().getTime() - this.mouseDownTime > 300) {
+        return;
+      }
+
+      const rect = e.target.getBoundingClientRect();
+      let mouseX = e.clientX - rect.left;
+      let mouseY = e.clientY - rect.top;
+
+      mouseX =  (mouseX / window.innerWidth)  * 2 - 1;
+      mouseY = -(mouseY / window.innerHeight) * 2 + 1;
+
+      const pos = new THREE.Vector3(mouseX, mouseY, 1);
+      pos.unproject(camera);
+
+      const ray = new THREE.Raycaster(camera.position, pos.sub(camera.position).normalize());
+      const objs = ray.intersectObjects(scene.children, true); // TODO: limit targets
+
+      if (objs.length <= 0) {
+        return;
+      }
+
+      for (let i = 0; i < objs.length; i++) {
+        // console.log(objs[i].object.name);
+        if (objs[i].object.name == 'board') {
+          const w = objs[i].object.userData.word;
+          if (objs[i].distance < 120) {
+            this.speaker.speakWord(w.word);
+          } else {
+            const unit = this.words.length / 4;
+            this.speaker.speak(this.words, Math.floor(w.index / unit));
+          }
+          break;
+        } else if (objs[i].object.name == 'centerlabel') {
+          this.speaker.speak(this.words, -1);
+        }
+      }
+    };
+
+    const onMouseDown = (e) => {
+      this.mouseDownTime = new Date().getTime();
+    };
+
+    document.addEventListener('mousedown', onMouseDown, false);
+    document.addEventListener('mouseup', onMouseClick, false);
+    document.addEventListener('touchstart', onMouseDown, false);
+    document.addEventListener('touchend', onMouseClick, false);
+
+    this.removeEventListeners = () => {
+      document.removeEventListener('mousedown', onMouseDown, false);
+      document.removeEventListener('mouseup', onMouseClick, false);
+      document.removeEventListener('touchstart', onMouseDown, false);
+      document.removeEventListener('touchend', onMouseClick, false);
+      this.removeEventListeners = null;
+    }
+  }
+
   stop() {
     this.animating = false;
     this.controls.dispose();
+
+    if (this.removeEventListeners) {
+      this.removeEventListeners();
+    }
   }
 
   execute() {
@@ -418,6 +491,8 @@ export default class Circle3DRenderer {
     const lights = this.addLights(scene);
     this.addBoards(scene);
     this.addRoom(scene);
+
+    this.handleMouseEvent(scene, camera);
 
     // this.draw(renderer, scene, camera);
     this.animating = true;
