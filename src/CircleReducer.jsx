@@ -54,8 +54,11 @@ const circle =  (state = {}, action) => {
       circle3dRenderer: renderer
     });
   case types.CIRCLE_MODE:
-    state.circle3dRenderer.stop();
-    state.circle3dRenderer = null;
+    if (state.circle3dRenderer) {
+      state.circle3dRenderer.stop();
+      state.circle3dRenderer = null;
+    }
+
     return Object.assign({}, state, {
       mode: 'circle'
     });
