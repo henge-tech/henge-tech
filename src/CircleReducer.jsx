@@ -110,18 +110,38 @@ const index = (state = {}, action) => {
       stories: action.stories
     });
   case types.UPDATE_SEARCH_QUERY:
+    state.speaker.reset();
     return Object.assign({}, state, {
       q: action.q,
-      filter: 'all'
+      filter: 'all',
+      speakingAll: false
     });
   case types.CHANGE_INDEX_FILTER:
+    state.speaker.reset();
     return Object.assign({}, state, {
       q: '',
-      filter: action.filter
+      filter: action.filter,
+      speakingAll: false
     });
   case types.SPEAK_INDEX_WORDS:
+    state.speaker.reset();
     state.speaker.speak(state.allWords[action.id - 1]);
-    return state;
+    return Object.assign({}, state, {
+      speakingAll: false
+    });
+  case types.TOGGLE_SPEAK_ALL_CIRCLES:
+    const sequence = [];
+    if (state.speakingAll) {
+      state.speaker.pause();
+    } else {
+      action.patterns.forEach((pattern) => {
+        sequence.push(state.allWords[pattern.id - 1]);
+      });
+      state.speaker.speakSequence(sequence);
+    }
+    return Object.assign({}, state, {
+      speakingAll: !state.speakingAll
+    });
   default:
     return state;
   }

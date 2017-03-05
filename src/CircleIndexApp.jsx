@@ -23,7 +23,8 @@ let initialState = {
     q: '',
     filter: 'all',
     allWords: allWords,
-    speaker: new Speaker()
+    speaker: new Speaker(),
+    speakingAll: false
   }
 };
 

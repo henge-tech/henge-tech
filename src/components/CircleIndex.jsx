@@ -13,6 +13,11 @@ export default class CircleIndex extends React.Component {
     e.preventDefault();
   }
 
+  onClickToggleSpeakAll(e) {
+    this.props.toggleSpeakAll(this.filteredPatterns);
+    e.preventDefault();
+  }
+
   render() {
     let patternsList = [];
     let i = 0;
@@ -30,6 +35,7 @@ export default class CircleIndex extends React.Component {
     let match;
     let label;
 
+    this.filteredPatterns = [];
     this.props.patterns.forEach((pattern) => {
       label = pattern.firstWord;
       if (rex !== null) {
@@ -58,14 +64,15 @@ export default class CircleIndex extends React.Component {
         if (pattern.count != 20) return;
       }
 
-      let patternAttr = [];
+      this.filteredPatterns.push(pattern);
+      const patternAttr = [];
 
       // let iconFill = '#337ab7';
       // iconFill = ['#cc9', '#9cc', '#c9c', '#c99'][pattern.count/4 - 2];
       // iconFill = ['#e5c1a2', '#a2c6e5', '#a2e5c1', '#e5a2c6'][pattern.count/4 - 2];
       let iconFill = '#ccc';
 
-      let iconStyle = {
+      const iconStyle = {
         width: '18px',
         height: '18px',
         marginTop: '2px',
@@ -94,7 +101,7 @@ export default class CircleIndex extends React.Component {
         );
       }
 
-      let onClickSpeakButton = (e) => {
+      const onClickSpeakButton = (e) => {
         this.props.onClickSpeakButton(pattern.id);
         e.preventDefault();
       }
@@ -106,14 +113,14 @@ export default class CircleIndex extends React.Component {
       );
       i += 1;
     });
-    let searchQuery = '';
-    let filterItemClass = (filter) => {
+    const filterItemClass = (filter) => {
       if (this.props.filter == filter) {
         return 'index-filter-item index-filter-item-current';
       } else {
         return 'index-filter-item';
       }
     };
+    const speakAllGlyph = (this.props.speakingAll) ? 'pause' : 'play';
 
     return (
       <div  style={{marginTop: '100px'}}>
@@ -138,6 +145,7 @@ export default class CircleIndex extends React.Component {
           <li className={filterItemClass('16')}><a onClick={(e) => { this.onClickFilter(e, '16') }} href="#">16</a></li>
           <li className={filterItemClass('20')}><a onClick={(e) => { this.onClickFilter(e, '20') }} href="#">20</a></li>
           <li className={filterItemClass('star')}><a onClick={(e) => { this.onClickFilter(e, 'all') }} href="#"><Glyphicon glyph="star" /></a></li>
+          <li className={filterItemClass('paly')}><a onClick={(e) => { this.onClickToggleSpeakAll(e) }} href="#"><Glyphicon glyph={speakAllGlyph} /></a></li>
         </ul>
         <ol style={{fontSize: '1.25em'}}>
         {patternsList}
