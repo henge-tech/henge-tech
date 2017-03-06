@@ -17,6 +17,12 @@ export default class Circle3DRenderer {
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.BasicShadowMap;
     renderer.setSize(this.w, this.h);
+
+    // Hide Firefox warnings.
+    // https://github.com/mrdoob/three.js/issues/9716#issuecomment-271910097
+    const ctx = renderer.context;
+    ctx.getShaderInfoLog = function () { return '' };
+
     return renderer;
   }
 
@@ -171,6 +177,12 @@ export default class Circle3DRenderer {
       if (this.words[i].imgExt !== null) {
         let turl = 'https://s3-ap-northeast-1.amazonaws.com/henge/words/' + word + '.' + this.words[i].imgExt;
         const boardTexture = textureLoader.load(turl, (texture) => {
+
+          // Hide warnings:
+          // THREE.WebGLRenderer: image is not power of two (...). Resized to 512x512
+          // https://threejs.org/docs/api/textures/Texture.html
+          texture.minFilter = THREE.LinearFilter;
+
           boardMaterial.map = boardTexture;
           boardMaterial.needsUpdate = true;
         });
