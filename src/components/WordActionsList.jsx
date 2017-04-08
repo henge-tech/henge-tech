@@ -5,8 +5,8 @@ export default class WordActionsList extends React.Component {
 
   render() {
     // console.log('render2');
-    let onClick = this.props.onClickWordAction;
-    let onChange = this.props.onChangeWordActionKeyword;
+    let onChangeAction = this.props.onClickWordAction;
+    let onChangeKeyword = this.props.onChangeWordActionKeyword;
     let onClickStory = (e) => {
       this.props.onClickStory();
       e.preventDefault();
@@ -64,37 +64,37 @@ export default class WordActionsList extends React.Component {
         </Col>
         <Col xsHidden={cols[1].xsHidden} xs={cols[1].xs} md={cols[1].md}>
           <label><input name="actionType" type="radio"
-            onChange={() => onClick('speech')}
+            onChange={() => onChangeAction('speech')}
             checked={this.props.wordAction === 'speech'}
             /> Speech</label>
           <label><input name="actionType" type="radio"
-            onChange={() => onClick('image')}
+            onChange={() => onChangeAction('image')}
             checked={this.props.wordAction === 'image'}
             /> Image</label>
           <label><input name="actionType" type="radio"
-            onClick={() => onClick('keyword')}
+            onChange={() => onChangeAction('keyword')}
             checked={this.props.wordAction === 'keyword'}
             /> + <input type="text" size="10"
             value={this.props.wordActionKeyword}
-            onChange={(event) => onChange(event.target.value)}/></label>
+            onChange={(event) => onChangeKeyword(event.target.value)}/></label>
           <label><input name="actionType" type="radio"
-            onChange={() => onClick('webster')}
+            onChange={() => onChangeAction('webster')}
             checked={this.props.wordAction === 'webster'}
             /> Webster</label>
           <label><input name="actionType" type="radio"
-            onClick={() => onClick('wikipedia')}
+            onChange={() => onChangeAction('wikipedia')}
             checked={this.props.wordAction === 'wikipedia'}
             /> Wikipedia</label>
           <label><input name="actionType" type="radio"
-            onClick={() => onClick('ebay')}
+            onChange={() => onChangeAction('ebay')}
             checked={this.props.wordAction === 'ebay'}
             /> eBay</label>
           <label><input name="actionType" type="radio"
-            onClick={() => onClick('twitter')}
+            onChange={() => onChangeAction('twitter')}
             checked={this.props.wordAction === 'twitter'}
             /> Twitter</label>
           <label><input name="actionType" type="radio"
-            onClick={() => onClick('tumblr')}
+            onChange={() => onChangeAction('tumblr')}
             checked={this.props.wordAction === 'tumblr'}
             /> Tumblr</label>
         </Col>
@@ -110,11 +110,3 @@ export default class WordActionsList extends React.Component {
     )
   }
 }
-
-WordActionsList.propTypes = {
-  wordAction: PropTypes.string.isRequired,
-  wordActionKeyword: PropTypes.string.isRequired,
-  onClickWordAction: PropTypes.func.isRequired,
-  onChangeWordActionKeyword: PropTypes.func.isRequired,
-  onClickStory: PropTypes.func.isRequired,
-};

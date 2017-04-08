@@ -1,70 +1,37 @@
 import React, { PropTypes } from 'react';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
 import { FormGroup, ControlLabel, FormControl, Grid, Row, Col, InputGroup, Glyphicon} from 'react-bootstrap';
-import escapeStringRegexp from 'escape-string-regexp';
 
 export default class CircleIndex extends React.Component {
   onChangeSearchQuery(e) {
-    this.props.onChangeSearchQuery(e.target.value);
+    const q = e.target.value;
+    const newFilter = this.props.filter.set('q', q);
+    this.props.onChangeFilter(this.props.speaker, newFilter, this.props.index, this.props.allWords);
   }
 
   onClickFilter(e, filter) {
-    this.props.onClickFilter(filter);
+    const newFilter = this.props.filter.set('filter', filter);
+    this.props.onChangeFilter(this.props.speaker, newFilter, this.props.index, this.props.allWords);
     e.preventDefault();
   }
 
   onClickToggleSpeakAll(e) {
-    this.props.toggleSpeakAll(this.filteredPatterns);
+    this.props.toggleSpeakAll(this.props.speaker, this.props.selected, this.props.allWords);
     e.preventDefault();
   }
 
   render() {
-    let patternsList = [];
-    let i = 0;
-    let stories = this.props.stories;
-    let strRex, rex;
-    if (!this.props.q || this.props.q.length < 2) {
-      rex = null;
-    } else {
-      strRex = escapeStringRegexp(this.props.q);
-      strRex = strRex.replace(/\t/g, '');
-      strRex = '(?:^|\t)([^\t]*' + strRex + '[^\t]*)';
-      rex = new RegExp(strRex);
-    }
+    // sel [allWordsIndex, wordsIndex]
+    const selected = this.props.selected.map((sel, idx) => {
+      const circleID = sel.get(0);
+      const words = this.props.allWords.get(circleID);
+      const indexEntry = this.props.index.get(circleID);
+      const word = words.get(sel.get(1));
 
-    let match;
-    let label;
+      const label = (
+          <span className="word-list-base"><span className="word-prefix">{word.prefix}</span><span>{word.core}</span><span className="word-suffix">{word.suffix}</span></span>
+      );
 
-    this.filteredPatterns = [];
-    this.props.patterns.forEach((pattern) => {
-      label = pattern.firstWord;
-      if (rex !== null) {
-        match = rex.exec(pattern.allWordsText);
-        if (match === null) return;
-
-        const w = match[1];
-        const prefix = w.substr(0, pattern.prefix.length);
-        const core   = w.substr(pattern.prefix.length, w.length - pattern.prefix.length - pattern.suffix.length);
-        const suffix = w.substr(w.length - pattern.suffix.length);
-
-        label = (
-            <span className="word-list-base"><span className="word-prefix">{prefix}</span><span>{core}</span><span className="word-suffix">{suffix}</span></span>
-        );
-      } else if (this.props.filter == 'pickup') {
-        if (!pattern.pickup) return;
-      } else if (this.props.filter == 'story') {
-        if (stories.indexOf(pattern.pattern) < 0) return;
-      } else if (this.props.filter == '8') {
-        if (pattern.count != 8) return;
-      } else if (this.props.filter == '12') {
-        if (pattern.count != 12) return;
-      } else if (this.props.filter == '16') {
-        if (pattern.count != 16) return;
-      } else if (this.props.filter == '20') {
-        if (pattern.count != 20) return;
-      }
-
-      this.filteredPatterns.push(pattern);
       const patternAttr = [];
 
       // let iconFill = '#337ab7';
@@ -81,40 +48,41 @@ export default class CircleIndex extends React.Component {
       };
 
       patternAttr.push(
-        <svg role="img" style={iconStyle} key={'index-icon-size-' + i}>
-          <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref={'/imgs/svg/sprite.svg#d' + (pattern.count / 4)}></use>
-        </svg>
+          <svg role="img" style={iconStyle} key={'index-icon-size-' + circleID}>
+          <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref={'/imgs/svg/sprite.svg#d' + (words.size / 4)}></use>
+          </svg>
       );
 
-      if (stories.indexOf(pattern.pattern) >= 0) {
+      if (indexEntry.hasStory) {
         patternAttr.push(
-          <svg role="img" style={iconStyle} key={'index-icon-story-' + i}>
+          <svg role="img" style={iconStyle} key={'index-icon-story-' + circleID}>
             <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/imgs/svg/sprite.svg#s"></use>
           </svg>
 );
       }
-      if (pattern.pickup) {
+      if (indexEntry.pickup) {
         patternAttr.push(
-          <svg role="img" style={iconStyle} key={'index-icon-pickup-' + i}>
+          <svg role="img" style={iconStyle} key={'index-icon-pickup-' + circleID}>
             <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/imgs/svg/sprite.svg#p"></use>
           </svg>
         );
       }
 
       const onClickSpeakButton = (e) => {
-        this.props.onClickSpeakButton(pattern.id);
+        // indexEntry.index
+        this.props.onClickSpeakButton(this.props.speaker, words);
         e.preventDefault();
       }
 
-      patternsList.push(
-        <li value={pattern.id} key={'pattern-' + i}><span style={{width: '150px', display: 'inline-block'}}><a href={pattern.pattern + '.html'}>{label}</a></span>
+      return (
+          <li value={circleID + 1} key={'pattern-' + circleID}><span style={{width: '150px', display: 'inline-block'}}><a href={word.pattern + '.html'}>{label}</a></span>
           <a href="#" onClick={e => onClickSpeakButton(e)}><Glyphicon glyph="volume-up" style={{marginRight: '5px'}}/></a>
           {patternAttr}</li>
       );
-      i += 1;
     });
+
     const filterItemClass = (filter) => {
-      if (this.props.filter == filter) {
+      if (this.props.filter.filter == filter) {
         return 'index-filter-item index-filter-item-current';
       } else {
         return 'index-filter-item';
@@ -130,7 +98,7 @@ export default class CircleIndex extends React.Component {
         <Col xs={10}>
         <FormGroup controlId="formControlsText" bsClass="index-search-group">
         <InputGroup>
-        <FormControl type="text" value={this.props.q} placeholder="Search" onChange={e => { this.onChangeSearchQuery(e) }}/>
+        <FormControl type="text" value={this.props.filter.q} placeholder="Search" onChange={e => { this.onChangeSearchQuery(e) }}/>
         <InputGroup.Addon>
           <Glyphicon glyph="search" />
         </InputGroup.Addon>
@@ -148,7 +116,7 @@ export default class CircleIndex extends React.Component {
           <li className={filterItemClass('paly')}><a onClick={(e) => { this.onClickToggleSpeakAll(e) }} href="#"><Glyphicon glyph={speakAllGlyph} /></a></li>
         </ul>
         <ol style={{fontSize: '1.25em'}}>
-        {patternsList}
+        {selected}
         </ol>
         </Col>
         <Col xs={1}></Col>

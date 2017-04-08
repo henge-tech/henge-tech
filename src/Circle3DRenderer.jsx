@@ -133,19 +133,20 @@ export default class Circle3DRenderer {
       [60, 45],
       [50, 37.5],
       [42, 31.5],
-    ][this.words.length / 4 - 2];
+    ][this.words.size / 4 - 2];
 
     const boardGeometry  = new THREE.CubeGeometry(...boardSize, 1);
     const labelGeometry  = new THREE.PlaneBufferGeometry(80, 20);
     const boardMeshes = [];
 
-    const unit = 360 / this.words.length;
+    const unit = 360 / this.words.size;
     const r = 150;
     const rad = Math.PI * 2 / 360.0
 
-    for (var i = 0; i < this.words.length; i++) {
+    for (var i = 0; i < this.words.size; i++) {
       let color = 0xffffff;
-      const word = this.words[i].word;
+      const word = this.words.get(i);
+      const wordText = word.text;
 
       // テクスチャを描画
       const canvas = document.createElement('canvas');
@@ -156,7 +157,7 @@ export default class Circle3DRenderer {
       ctx.font = "40px sans-serif";
       ctx.textAlign = 'center';
       // ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillText(word, 256, 64);
+      ctx.fillText(wordText, 256, 64);
       const texture = new THREE.Texture(canvas);
       texture.needsUpdate = true;
 
@@ -174,8 +175,8 @@ export default class Circle3DRenderer {
 
       // let turl = 'https://farm1.staticflickr.com/426/32170591370_277d52267d_m_d.jpg';
       // let turl = null;
-      if (this.words[i].imgExt !== null) {
-        let turl = 'https://s3-ap-northeast-1.amazonaws.com/henge/words/' + word + '.' + this.words[i].imgExt;
+      if (word.imageExts !== null) {
+        let turl = 'https://s3-ap-northeast-1.amazonaws.com/henge/words/' + wordText + '.' + word.imageExts.get(0);
         const boardTexture = textureLoader.load(turl, (texture) => {
 
           // Hide warnings:
@@ -196,7 +197,7 @@ export default class Circle3DRenderer {
 
       const board = new THREE.Mesh(boardGeometry, boardMaterial);
       board.name = 'board';
-      board.userData.word = this.words[i];
+      board.userData.word = word;
       const label = new THREE.Mesh(labelGeometry, labelMaterial);
       label.name = 'label';
 
@@ -456,9 +457,9 @@ export default class Circle3DRenderer {
         if (objs[i].object.name == 'board') {
           const w = objs[i].object.userData.word;
           if (objs[i].distance < 120) {
-            this.speaker.speakWord(w.word);
+            this.speaker.speakWord(w.text);
           } else {
-            const unit = this.words.length / 4;
+            const unit = this.words.size / 4;
             this.speaker.speak(this.words, Math.floor(w.index / unit));
           }
           break;

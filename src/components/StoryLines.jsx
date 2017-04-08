@@ -3,23 +3,21 @@ import { Grid, Row, Col, Button, Glyphicon } from 'react-bootstrap';
 
 export default class StoryLines extends React.Component {
   buildStoryLines() {
-    let lines = [];
-    let words = [];
+    const lines = [];
 
     this.props.lines.forEach((lineObj, lineNum) => {
       let line = [];
-
       // 4 lines
       lineObj.tokens.forEach((token, i) => {
-        if (token.type == 'text') {
-          line.push(token.text + ' ');
+        if (token.get('type') == 'text') {
+          line.push(token.get('text') + ' ');
           return;
         }
-        words.push(token.word);
-        let word = token.word.word ? token.word.word : token.word;
-        let label = this.props.toggle[lineNum] ? word : token.text;
+        const word = this.props.words.get(token.get('wordIndex'));
+
+        let label = this.props.toggle.get(lineNum) ? word.text : token.get('text');
         let onClickWord = e => {
-          this.props.onClickWord(word);
+          this.props.onClickWord(word.text);
           e.preventDefault();
         }
 
@@ -31,7 +29,7 @@ export default class StoryLines extends React.Component {
       lines.push(
         <li key={'story-lines-' + lineNum} className="story-line">
           <Button
-            onClick={() => this.props.onClickSpeakButton(words, lineNum)}
+            onClick={() => this.props.onClickSpeakButton(this.props.words, lineNum)}
             className="btn-circle"
             ><Glyphicon glyph="volume-up" /></Button>
           <Button
@@ -47,7 +45,7 @@ export default class StoryLines extends React.Component {
     lines.push(
       <li key={'story-lines-all'} className="story-line">
         <Button
-          onClick={() => this.props.onClickSpeakButton(words, -1)}
+          onClick={() => this.props.onClickSpeakButton(this.props.words, -1)}
           className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
@@ -60,7 +58,7 @@ export default class StoryLines extends React.Component {
   }
 
   render() {
-    let lines = this.buildStoryLines(this.props.story);
+    let lines = this.buildStoryLines();
     return (
       <ul className="story-lines">
         {lines}

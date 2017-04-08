@@ -1,8 +1,9 @@
+import I from 'immutable';
 import { combineReducers } from 'redux';
 import * as types from './ActionTypes.jsx';
-import Speaker from './Speaker.jsx';
-import WordActions from './WordActions.jsx';
-import StoryLine from './StoryLine.jsx';
+import Speaker from './models/Speaker.jsx';
+import WordActions from './models/WordActions.jsx';
+import StoryLine from './models/StoryLine.jsx';
 import Circle3DRenderer from './Circle3DRenderer.jsx';
 
 const window = (state = {}, action) => {
@@ -48,7 +49,7 @@ const circle =  (state = {}, action) => {
       state.circle3dRenderer = null;
     }
 
-    const renderer = new Circle3DRenderer(state.pattern, action.words, action.w, action.h, state.speaker);
+    const renderer = new Circle3DRenderer(state.pattern, state.words, action.w, action.h, state.speaker);
     renderer.execute();
     return Object.assign({}, state, {
       circle3dRenderer: renderer
@@ -64,11 +65,10 @@ const circle =  (state = {}, action) => {
     });
   case types.STORY_FETCH_SUCCEEDED:
     let storyLines =[];
-    let unit = state.words.length / 4;
-    let words;
+    let unit = state.words.size / 4;
+
     action.story.forEach((line, i) => {
-      words = state.words.slice(i * unit, (i + 1) * unit);
-      storyLines.push(new StoryLine(line, words));
+      storyLines.push(new StoryLine(line, i, unit));
     });
     return Object.assign({}, state, {
       storyLines: storyLines
@@ -87,6 +87,7 @@ const circle =  (state = {}, action) => {
 }
 
 const toggleStoryWords = (toggle, index) => {
+  toggle = toggle.toJS();
   if (index == -1) {
     if (toggle == [false, false, false, false]) {
       toggle = [true, true, true, true];
@@ -100,47 +101,34 @@ const toggleStoryWords = (toggle, index) => {
     toggle = [].concat(toggle);
     toggle[index] = !toggle[index];
   }
-  return toggle;
+  return new I.List(toggle);
 }
 
 const index = (state = {}, action) => {
   switch (action.type) {
   case types.STORY_INDEX_FETCH_SUCCEEDED:
-    return Object.assign({}, state, {
-      stories: action.stories
+    const newIndex = state.index.map((index) => {
+      if (action.stories.indexOf(index.pattern) >= 0) {
+        return index.set('hasStory', true);
+      }
+      return index;
     });
-  case types.UPDATE_SEARCH_QUERY:
-    state.speaker.reset();
     return Object.assign({}, state, {
-      q: action.q,
-      filter: 'all',
-      speakingAll: false
+      index: newIndex
     });
-  case types.CHANGE_INDEX_FILTER:
-    state.speaker.reset();
+  case types.CHANGE_INDEX_SELECTION:
     return Object.assign({}, state, {
-      q: '',
       filter: action.filter,
+      selected: action.selected,
       speakingAll: false
     });
   case types.SPEAK_INDEX_WORDS:
-    state.speaker.reset();
-    state.speaker.speak(state.allWords[action.id - 1]);
     return Object.assign({}, state, {
       speakingAll: false
     });
   case types.TOGGLE_SPEAK_ALL_CIRCLES:
-    const sequence = [];
-    if (state.speakingAll) {
-      state.speaker.pause();
-    } else {
-      action.patterns.forEach((pattern) => {
-        sequence.push(state.allWords[pattern.id - 1]);
-      });
-      state.speaker.speakSequence(sequence);
-    }
     return Object.assign({}, state, {
-      speakingAll: !state.speakingAll
+      speakingAll: state.speaker.speakingSequence
     });
   default:
     return state;
@@ -150,10 +138,8 @@ const index = (state = {}, action) => {
 const storyIndex = (state = {}, action) => {
   switch (action.type) {
   case types.TOGGLE_STORY_INDEX_WORDS:
-    let toggle = toggleStoryWords(state.toggles[action.id], action.index);
-    let toggles = Object.assign({}, state.toggles, {
-      [action.id]: toggle
-    });
+    let toggle = toggleStoryWords(state.toggles.get(action.id), action.index);
+    let toggles = state.toggles.set(action.id, toggle);
     return  Object.assign({}, state, {
       toggles
     });

@@ -6,8 +6,6 @@ const mapStateToProps = (state) => {
   return {
     width: state.window.width,
     height: state.window.height,
-    storyLines: state.circle.storyLines,
-    storyWordsToggle: state.circle.storyWordsToggle
   }
 }
 

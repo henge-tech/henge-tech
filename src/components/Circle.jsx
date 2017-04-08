@@ -27,7 +27,7 @@ export default class Circle extends React.Component {
       return this.renderCircle(center, r);
     } else if (this.props.mode == 'story') {
       return (
-        <StoryModeContainer center={center} r={r} />
+        <StoryModeContainer />
       );
     } else if (this.props.mode == '3d') {
       return this.render3D();
@@ -102,15 +102,3 @@ export default class Circle extends React.Component {
     );
   }
 }
-
-Circle.propTypes = {
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired,
-  words: PropTypes.arrayOf(PropTypes.shape({
-    index: PropTypes.number.isRequired,
-    word: PropTypes.string.isRequired
-  })).isRequired,
-  pattern: PropTypes.string.isRequired,
-  onClickSpeakButton: PropTypes.func.isRequired,
-  onClickWord: PropTypes.func.isRequired,
-};

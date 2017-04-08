@@ -13,12 +13,13 @@ export default class Speaker {
     this.lastSpeed = null;
     this.defaultSpeeds = { slow: 0.6, normal: 1, fast: 1.8 };
     this.onEnd = null;
+    this.speakingSequence = false;
   }
 
   speak(words, part = -1, onEnd = null) {
     this.onEnd = onEnd;
 
-    const unit = words.length / 4;
+    const unit = words.size / 4;
     const repeat = 4;
 
     const speechTexts = [];
@@ -29,13 +30,8 @@ export default class Speaker {
 
       const unitWords = [];
       for (let j = 0; j < unit; j++) {
-        let w = words[i * unit + j];
-        if (w.word) {
-          w = w.word;
-        }
-        unitWords.push(w);
-        // unitWords.push(words[i * unit + j].word.toUpperCase().replace(/(.)/g, '$1 '));
-        // unitWords.push(', ')
+        let w = words.get(i * unit + j);
+        unitWords.push(w.text);
       }
 
       speechTexts.push(unitWords.join(' '));
@@ -95,20 +91,24 @@ export default class Speaker {
       this.cursor = cursor;
     }
     const onEnd = (e) => {
-      if (wordsSequence.length > this.cursor + 1) {
+      if (wordsSequence.size > this.cursor + 1) {
         this.speakSequence(wordsSequence, this.cursor + 1);
+      } else {
+        this.speakingSequence = false;
       }
     };
-    this.speak(wordsSequence[this.cursor], -1, onEnd);
+    this.speak(wordsSequence.get(this.cursor), -1, onEnd);
+    this.speakingSequence = true;
   }
 
-  pause() {
+  stop() {
+    this.speakingSequence = false;
     this.onEnd = null;
     this.synth.cancel();
   }
 
   reset() {
     this.cursor = 0;
-    this.pause();
+    this.stop();
   }
 }

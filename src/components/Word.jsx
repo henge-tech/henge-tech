@@ -26,7 +26,7 @@ export default class Word extends React.Component {
     };
     let word = this.props.word;
     let onClickWord = (event) => {
-      this.props.onClickWord(word.word);
+      this.props.onClickWord(word.text);
       event.preventDefault();
     };
     let coreClass = 'word-core-' + this.props.coreFirstGroup;

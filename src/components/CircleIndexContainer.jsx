@@ -1,30 +1,29 @@
 import { connect } from 'react-redux'
 import CircleIndex from './CircleIndex.jsx';
-import * as actions from '../Actions.jsx'
+import * as actions from '../actions/CircleIndexActions.jsx'
 
 const mapStateToProps = (state) => {
   return {
-    patterns: state.index.patterns,
     stories: state.index.stories,
-    q: state.index.q,
     filter: state.index.filter,
-    speakingAll: state.index.speakingAll
+    allWords: state.index.allWords,
+    speaker: state.index.speaker,
+    speakingAll: state.index.speakingAll,
+    index: state.index.index,
+    selected: state.index.selected
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onChangeSearchQuery: (q) => {
-      dispatch(actions.updateSearchQuery(q));
+    onChangeFilter: (speaker, filter, index, allWords) => {
+      dispatch(actions.changeIndexFilter(speaker, filter, index, allWords));
     },
-    onClickFilter: (filter) => {
-      dispatch(actions.changeIndexFilter(filter));
+    onClickSpeakButton: (speaker, words) => {
+      dispatch(actions.speakIndexWords(speaker, words));
     },
-    onClickSpeakButton: (id) => {
-      dispatch(actions.speakIndexWords(id));
-    },
-    toggleSpeakAll: (patterns, flag) => {
-      dispatch(actions.toggleSpeakAllCircles(patterns, flag));
+    toggleSpeakAll: (speaker, selected, allWords) => {
+      dispatch(actions.toggleSpeakAllCircles(speaker, selected, allWords));
     }
   }
 }

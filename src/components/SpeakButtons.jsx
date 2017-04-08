@@ -53,16 +53,3 @@ export default class SpeakButtons extends React.Component {
     );
   }
 }
-
-SpeakButtons.propTypes = {
-  center: PropTypes.shape({
-    x: PropTypes.number.isRequired,
-    y: PropTypes.number.isRequired,
-  }).isRequired,
-  r: PropTypes.number.isRequired,
-  words: PropTypes.arrayOf(PropTypes.shape({
-    index: PropTypes.number.isRequired,
-    word: PropTypes.string.isRequired
-  })).isRequired,
-  onClickSpeakButton: PropTypes.func.isRequired
-};

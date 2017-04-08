@@ -1,5 +1,6 @@
 import 'babel-polyfill';
 import 'whatwg-fetch'
+import I from 'immutable';
 
 export default class CircleAPI {
   static fetchStory(pattern) {
@@ -21,7 +22,7 @@ export default class CircleAPI {
     return fetch('/stories/' + lang + '/index.json')
       .then(function(response) {
         if(response.ok) {
-          return response.json();
+          return I.fromJS(response.json());
         } else {
           console.log('Response is not ok');
           return null;

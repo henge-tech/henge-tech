@@ -4,6 +4,9 @@ import { speakStoryWords, actionWord, toggleStoryWords } from '../Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {
+    words: state.circle.words,
+    lines: state.circle.storyLines,
+    toggle: state.circle.storyWordsToggle,
   }
 }
 

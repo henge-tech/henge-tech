@@ -8,11 +8,18 @@ export default class StoryIndex extends React.Component {
 
   render() {
     let stories = [];
-    this.props.stories.forEach(story => {
+    const style = {fontSize: '1.8em', marginTop: '50px', marginBottom: '30px' };
+
+    this.props.stories.forEach((lines, index) => {
+      const storyID = this.props.storyIDs.get(index);
+      const words = this.props.storyWords.get(index);
+      const toggle = this.props.toggles.get(index);
+
+      const pattern = words.get(0).pattern;
       stories.push(
-        <div key={'story-' + story.id}>
-          <h2 style={{fontSize: '1.8em', marginTop: '50px', marginBottom: '30px' }}>{story.id}. <a href={story.href}>{story.pattern}</a></h2>
-          <StoryIndexLinesContainer storyID={story.id} lines={story.lines} toggle={this.props.toggles[story.id]} />
+        <div key={'story-' + storyID}>
+          <h2 style={style}>{storyID}. <a href={'/circles/' + pattern + '.html'}>{pattern}</a></h2>
+          <StoryIndexLinesContainer index={index} storyID={storyID} lines={lines} words={words} toggle={toggle} />
         </div>
       );
     });

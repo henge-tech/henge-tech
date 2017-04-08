@@ -5,6 +5,11 @@ var loadenv = require("node-env-file");
 var dotenv = loadenv(__dirname + '/../.env.development', {raise: false});
 dotenv.NODE_ENV = 'development';
 
+var devPort = dotenv.DEVSERVER_PORT;
+if (!devPort) {
+  devPort = 8080;
+}
+
 module.exports = {
   entry: {
     CircleApp: './src/CircleApp.jsx',
@@ -38,6 +43,7 @@ module.exports = {
 
   devServer: {
     host: '0.0.0.0',
+    port: devPort,
     contentBase: 'docs',
   },
 }

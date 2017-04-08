@@ -22,7 +22,7 @@ export default class StoryMode extends React.Component {
           <Row>
             <Col md={2} sm={2}></Col>
             <Col md={10} sm={10}>
-              <StoryLinesContainer lines={this.props.storyLines} toggle={this.props.storyWordsToggle} />
+              <StoryLinesContainer />
             </Col>
           </Row>
         </Grid>
