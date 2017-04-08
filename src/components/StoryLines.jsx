@@ -15,7 +15,7 @@ export default class StoryLines extends React.Component {
         }
         const word = this.props.words.get(token.get('wordIndex'));
 
-        let label = this.props.toggle.get(lineNum) ? word.text : token.get('text');
+        let label = this.props.toggles.values.get(lineNum) ? word.text : token.get('text');
         let onClickWord = e => {
           this.props.onClickWord(word.text);
           e.preventDefault();
@@ -33,7 +33,7 @@ export default class StoryLines extends React.Component {
             className="btn-circle"
             ><Glyphicon glyph="volume-up" /></Button>
           <Button
-            onClick={() => this.props.onClickToggleWordsButton(lineNum)}
+            onClick={() => this.props.onClickToggleWordsButton(this.props.toggles, lineNum)}
             className="btn-circle" style={{marginLeft: '10px'}}
             ><Glyphicon glyph="refresh" /></Button>
           <span className="story-line-text">{line}</span>
@@ -49,7 +49,7 @@ export default class StoryLines extends React.Component {
           className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
-          onClick={() => this.props.onClickToggleWordsButton()}
+          onClick={() => this.props.onClickToggleWordsButton(this.props.toggles)}
           className="btn-circle" style={{marginLeft: '10px'}}
         ><Glyphicon glyph="refresh" /></Button>
       </li>

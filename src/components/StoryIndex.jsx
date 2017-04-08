@@ -13,13 +13,13 @@ export default class StoryIndex extends React.Component {
     this.props.stories.forEach((lines, index) => {
       const storyID = this.props.storyIDs.get(index);
       const words = this.props.storyWords.get(index);
-      const toggle = this.props.toggles.get(index);
+      const toggles = this.props.toggles.get(index);
 
       const pattern = words.get(0).pattern;
       stories.push(
         <div key={'story-' + storyID}>
           <h2 style={style}>{storyID}. <a href={'/circles/' + pattern + '.html'}>{pattern}</a></h2>
-          <StoryIndexLinesContainer index={index} storyID={storyID} lines={lines} words={words} toggle={toggle} />
+          <StoryIndexLinesContainer index={index} storyID={storyID} lines={lines} words={words} toggles={toggles} />
         </div>
       );
     });

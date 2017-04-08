@@ -9,6 +9,7 @@ import circleReducer from './CircleReducer.jsx';
 import StoryIndexContainer from './components/StoryIndexContainer.jsx';
 import Speaker from './models/Speaker.jsx'
 import StoryLine from './models/StoryLine.jsx'
+import StoryWordToggles from './models/StoryWordToggles.jsx'
 import Word from './models/Word.jsx'
 
 const staticBody = document.getElementById('static-body');
@@ -39,7 +40,7 @@ for (let i = 0; i < storySources.length; i++) {
   }
 
   stories = stories.push(storyLines);
-  toggles = toggles.push(new I.List([false, false, false, false]));
+  toggles = toggles.push(new StoryWordToggles());
 }
 
 const speaker = new Speaker();

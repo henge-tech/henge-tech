@@ -6,17 +6,17 @@ const mapStateToProps = (state) => {
   return {
     words: state.circle.words,
     lines: state.circle.storyLines,
-    toggle: state.circle.storyWordsToggle,
+    toggles: state.circle.storyWordToggles,
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClickSpeakButton: (words, part) => {
       dispatch(actions.speakStoryWords(words, part));
     },
-    onClickToggleWordsButton: (index = -1) => {
-      dispatch(actions.toggleStoryWords(index));
+    onClickToggleWordsButton: (toggles, index = -1) => {
+      dispatch(actions.toggleStoryWords(toggles, index));
     },
     onClickWord: (word) => {
       dispatch(actions.actionWord(word));

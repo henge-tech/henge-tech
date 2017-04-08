@@ -9,6 +9,7 @@ import createSagaMiddleware from 'redux-saga';
 import circleReducer from './CircleReducer.jsx';
 import CircleContainer from './components/CircleContainer.jsx';
 import Speaker from './models/Speaker.jsx'
+import StoryWordToggles from './models/StoryWordToggles.jsx'
 import { windowResize } from './actions/Actions.jsx';
 import mySaga from './CircleSagas.jsx';
 import Word from './models/Word.jsx';
@@ -33,7 +34,7 @@ const initialState = {
     speaker: speaker,
     words: Word.createListFromHTML(pattern, document.getElementById('words')),
     storyLines: null,
-    storyWordsToggle: new I.List([false, false, false, false]),
+    storyWordToggles: new StoryWordToggles(),
   }
 };
 

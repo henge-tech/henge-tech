@@ -77,31 +77,12 @@ const circle =  (state = {}, action) => {
     state.speaker.speak(action.words, action.part);
     return state;
   case types.TOGGLE_STORY_WORDS:
-    let toggle = toggleStoryWords(state.storyWordsToggle, action.index);
     return Object.assign({}, state, {
-      storyWordsToggle: toggle
+      storyWordToggles: action.toggles
     });
   default:
     return state;
   }
-}
-
-const toggleStoryWords = (toggle, index) => {
-  toggle = toggle.toJS();
-  if (index == -1) {
-    if (toggle == [false, false, false, false]) {
-      toggle = [true, true, true, true];
-    } else if (toggle == [true, true, true, true]) {
-      toggle = [false, false, false, false];
-    } else {
-      let b = !toggle[0];
-      toggle = [b, b, b, b];
-    }
-  } else {
-    toggle = [].concat(toggle);
-    toggle[index] = !toggle[index];
-  }
-  return new I.List(toggle);
 }
 
 const index = (state = {}, action) => {
@@ -138,16 +119,13 @@ const index = (state = {}, action) => {
 const storyIndex = (state = {}, action) => {
   switch (action.type) {
   case types.TOGGLE_STORY_INDEX_WORDS:
-    let toggle = toggleStoryWords(state.toggles.get(action.id), action.index);
-    let toggles = state.toggles.set(action.id, toggle);
     return  Object.assign({}, state, {
-      toggles
+      toggles: state.toggles.set(action.id, action.toggles)
     });
   default:
     return state;
   }
 }
-
 
 const circleReducer = combineReducers({
   window,
