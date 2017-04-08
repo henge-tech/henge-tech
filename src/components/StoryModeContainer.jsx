@@ -1,6 +1,5 @@
 import { connect } from 'react-redux'
 import StoryMode from './StoryMode.jsx';
-import { circleMode, speakWords, actionWord, toggleStoryWords } from '../Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {

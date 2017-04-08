@@ -9,7 +9,7 @@ import createSagaMiddleware from 'redux-saga';
 import circleReducer from './CircleReducer.jsx';
 import CircleContainer from './components/CircleContainer.jsx';
 import Speaker from './models/Speaker.jsx'
-import { windowResize } from './Actions.jsx';
+import { windowResize } from './actions/Actions.jsx';
 import mySaga from './CircleSagas.jsx';
 import Word from './models/Word.jsx';
 

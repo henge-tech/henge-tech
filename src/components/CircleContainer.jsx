@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Circle from './Circle.jsx';
-import * as actions from '../Actions.jsx'
+import * as actions from '../actions/Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {

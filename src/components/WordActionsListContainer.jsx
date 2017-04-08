@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import WordActionsList from './WordActionsList.jsx';
-import * as actions from '../Actions.jsx'
+import * as actions from '../actions/Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {

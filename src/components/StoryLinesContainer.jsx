@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import StoryLines from './StoryLines.jsx';
-import { speakStoryWords, actionWord, toggleStoryWords } from '../Actions.jsx'
+import * as actions from '../actions/Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {
@@ -13,13 +13,13 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onClickSpeakButton: (words, part) => {
-      dispatch(speakStoryWords(words, part));
+      dispatch(actions.speakStoryWords(words, part));
     },
     onClickToggleWordsButton: (index = -1) => {
-      dispatch(toggleStoryWords(index));
+      dispatch(actions.toggleStoryWords(index));
     },
     onClickWord: (word) => {
-      dispatch(actionWord(word));
+      dispatch(actions.actionWord(word));
     },
   }
 }
