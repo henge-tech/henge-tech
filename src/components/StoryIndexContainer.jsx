@@ -4,7 +4,7 @@ import StoryIndex from './StoryIndex.jsx';
 const mapStateToProps = (state) => {
   return {
     stories: state.storyIndex.stories,
-    storyIDs: state.storyIndex.storyIDs,
+    patternIDs: state.storyIndex.patternIDs,
     storyWords: state.storyIndex.storyWords,
     toggles: state.storyIndex.toggles
   }

@@ -120,7 +120,7 @@ const storyIndex = (state = {}, action) => {
   switch (action.type) {
   case types.TOGGLE_STORY_INDEX_WORDS:
     return  Object.assign({}, state, {
-      toggles: state.toggles.set(action.id, action.toggles)
+      toggles: state.toggles.set(action.storyPos, action.toggles)
     });
   default:
     return state;

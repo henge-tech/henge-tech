@@ -12,8 +12,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     onClickSpeakButton: (words, part) => {
       dispatch(actions.speakStoryWords(words, part))
     },
-    onClickToggleWordsButton: (toggles, index = -1) => {
-      dispatch(actions.toggleStoryIndexWords(ownProps.index, toggles, index))
+    onClickToggleWordsButton: (toggles, wordPos = -1) => {
+      dispatch(actions.toggleStoryIndexWords(ownProps.storyPos, toggles, wordPos))
     },
     onClickWord: (word) => {
       dispatch(actions.actionWord(word))

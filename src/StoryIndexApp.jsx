@@ -16,7 +16,7 @@ const staticBody = document.getElementById('static-body');
 staticBody.style.display = 'none';
 
 let stories = new I.List();
-let storyIDs = new I.List();
+let patternIDs = new I.List();
 let toggles = new I.List();
 let storyWords = new I.List();
 
@@ -26,9 +26,9 @@ for (let i = 0; i < storySources.length; i++) {
   const patternLink = source.getElementsByClassName('pattern-link')[0];
 
   const pattern = patternLink.textContent;
-  const storyID = source.getAttribute('data-pattern-id');
-  storyIDs = storyIDs.push(storyID);
-  const words = Word.createListFromArray(pattern, allWords[storyID - 1], true);
+  const patternID = source.getAttribute('data-pattern-id');
+  patternIDs = patternIDs.push(patternID);
+  const words = Word.createListFromArray(pattern, allWords[patternID - 1], true);
   storyWords = storyWords.push(words);
 
   const lines = source.getElementsByTagName('li');
@@ -51,7 +51,7 @@ const initialState = {
   },
   storyIndex: {
     stories: stories,
-    storyIDs: storyIDs,
+    patternIDs: patternIDs,
     storyWords: storyWords,
     toggles: toggles,
   }

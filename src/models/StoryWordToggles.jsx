@@ -1,11 +1,12 @@
 import I from 'immutable';
 
 const StoryWordTogglesRecord = I.Record({
+  id: -1,
   values: null
 });
 
 export default class StoryWordToggles extends StoryWordTogglesRecord {
-  constructor(values = null) {
+  constructor(id, values = null) {
     if (values == null) {
       values = new I.List([false, false, false, false]);
     }
@@ -26,6 +27,6 @@ export default class StoryWordToggles extends StoryWordTogglesRecord {
     } else {
       toggle[index] = !toggle[index];
     }
-    return new StoryWordToggles(new I.List(toggle));
+    return new StoryWordToggles(this.id, new I.List(toggle));
   }
 }
