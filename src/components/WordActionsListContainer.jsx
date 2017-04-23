@@ -1,6 +1,6 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import WordActionsList from './WordActionsList.jsx';
-import * as actions from '../actions/Actions.jsx'
+import * as actions from '../actions/Actions.jsx';
 
 const mapStateToProps = (state) => {
   return {
@@ -23,7 +23,7 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(actions.storyMode());
     },
     onClick3D: () => {
-      dispatch(actions.prepare3DCanvas());
+      dispatch(actions.threeDMode());
     },
     onClickCircleModeButton: () => {
       dispatch(actions.circleMode());

@@ -5,6 +5,7 @@ import WordActionsListContainer from './WordActionsListContainer.jsx';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
 import StoryModeContainer from './StoryModeContainer.jsx';
 import { Button, Glyphicon } from 'react-bootstrap';
+import Circle3DRenderer from './Circle3DRenderer.jsx';
 
 export default class Circle extends React.Component {
 
@@ -14,6 +15,8 @@ export default class Circle extends React.Component {
   }
 
   render() {
+    this.reset3DRenderer();
+
     let center = { x: this.props.width / 2 };
     let r = center.x * 0.8;
     if (r > 240) {
@@ -34,17 +37,19 @@ export default class Circle extends React.Component {
     }
   }
 
-  render3D() {
-    let w = this.props.width;
-    let h = this.props.height;
-
-    let x = () => {
-      this.props.render3D(this.props.words, w, h);
-    }
+  reset3DRenderer() {
     if (this.render3DTimer) {
       clearTimeout(this.render3DTimer);
     }
-    this.render3DTimer = setTimeout(x, 200);
+    if (this.circle3dRenderer) {
+      this.circle3dRenderer.stop();
+      this.circle3dRenderer = null;
+    }
+  }
+
+  render3D() {
+    let w = this.props.width;
+    let h = this.props.height;
 
     let styles = {
       container: {position: 'relative', height: h + 'px', width: '100%', padding: 0 },
@@ -53,6 +58,12 @@ export default class Circle extends React.Component {
       buttons1: { left: '90px', bottom: '50px', position: 'absolute' },
       buttons2: { left: '130px', bottom: '50px', position: 'absolute' }
     };
+
+    this.render3DTimer = setTimeout(() => {
+      this.circle3dRenderer = new Circle3DRenderer(this.props.pattern, this.props.words, w, h, this.props.speaker);
+      this.circle3dRenderer.execute();
+    }, 200);
+
     return (
       <div style={styles.container} className="container">
         <div id="stage" style={styles.canvas}></div>

@@ -4,7 +4,6 @@ import * as types from './ActionTypes.jsx';
 import Speaker from './models/Speaker.jsx';
 import WordActions from './models/WordActions.jsx';
 import StoryLine from './models/StoryLine.jsx';
-import Circle3DRenderer from './Circle3DRenderer.jsx';
 
 const window = (state = {}, action) => {
   switch (action.type) {
@@ -39,27 +38,11 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       mode: 'story'
     });
-  case types.PREPARE_3D_CANVAS:
+  case types.START_3D_MODE:
     return Object.assign({}, state, {
       mode: '3d'
     });
-  case types.RENDER_3D:
-    if (state.circle3dRenderer) {
-      state.circle3dRenderer.stop();
-      state.circle3dRenderer = null;
-    }
-
-    const renderer = new Circle3DRenderer(state.pattern, state.words, action.w, action.h, state.speaker);
-    renderer.execute();
-    return Object.assign({}, state, {
-      circle3dRenderer: renderer
-    });
   case types.CIRCLE_MODE:
-    if (state.circle3dRenderer) {
-      state.circle3dRenderer.stop();
-      state.circle3dRenderer = null;
-    }
-
     return Object.assign({}, state, {
       mode: 'circle'
     });
