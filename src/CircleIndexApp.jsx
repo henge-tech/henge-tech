@@ -4,7 +4,6 @@ import I from 'immutable';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import Speaker from './models/Speaker.jsx';
 import Word from './models/Word.jsx';
 import CircleIndexEntry from './models/CircleIndexEntry.jsx';
 import CircleIndexFilter from './models/CircleIndexFilter.jsx';
@@ -45,7 +44,6 @@ const initialState = {
     allWords: allWordsList,
     index: indexEntries,
     selected: selected,
-    speaker: new Speaker(),
     speakingAll: false
   }
 };

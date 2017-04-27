@@ -60,7 +60,7 @@ export default class Circle extends React.Component {
     };
 
     this.render3DTimer = setTimeout(() => {
-      this.circle3dRenderer = new Circle3DRenderer(this.props.pattern, this.props.words, w, h, this.props.speaker);
+      this.circle3dRenderer = new Circle3DRenderer(this.props.pattern, this.props.words, w, h);
       this.circle3dRenderer.execute();
     }, 200);
 

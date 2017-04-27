@@ -1,6 +1,8 @@
 import * as types from '../ActionTypes.jsx';
+import speechSynth from '../models/SpeechSynth.jsx';
 
 export const speakStoryWords = (words, part) => {
+  speechSynth.speak(words, part);
   return { type: types.SPEAK_STORY_WORDS, words, part };
 };
 

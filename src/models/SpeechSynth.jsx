@@ -1,5 +1,5 @@
 
-export default class Speaker {
+class SpeechSynth {
 
   constructor() {
     this.speechDefault = {}
@@ -112,3 +112,6 @@ export default class Speaker {
     this.stop();
   }
 }
+
+const speechSynth = new SpeechSynth();
+export default speechSynth;

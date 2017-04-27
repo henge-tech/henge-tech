@@ -6,17 +6,17 @@ export default class CircleIndex extends React.Component {
   onChangeSearchQuery(e) {
     const q = e.target.value;
     const newFilter = this.props.filter.set('q', q);
-    this.props.onChangeFilter(this.props.speaker, newFilter, this.props.index, this.props.allWords);
+    this.props.onChangeFilter(newFilter, this.props.index, this.props.allWords);
   }
 
   onClickFilter(e, filter) {
     const newFilter = this.props.filter.set('filter', filter);
-    this.props.onChangeFilter(this.props.speaker, newFilter, this.props.index, this.props.allWords);
+    this.props.onChangeFilter(newFilter, this.props.index, this.props.allWords);
     e.preventDefault();
   }
 
   onClickToggleSpeakAll(e) {
-    this.props.toggleSpeakAll(this.props.speaker, this.props.selected, this.props.allWords);
+    this.props.toggleSpeakAll(this.props.selected, this.props.allWords);
     e.preventDefault();
   }
 
@@ -70,7 +70,7 @@ export default class CircleIndex extends React.Component {
 
       const onClickSpeakButton = (e) => {
         // indexEntry.index
-        this.props.onClickSpeakButton(this.props.speaker, words);
+        this.props.onClickSpeakButton(words);
         e.preventDefault();
       }
 

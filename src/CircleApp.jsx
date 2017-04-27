@@ -8,8 +8,7 @@ import createSagaMiddleware from 'redux-saga';
 
 import circleReducer from './CircleReducer.jsx';
 import CircleContainer from './components/CircleContainer.jsx';
-import Speaker from './models/Speaker.jsx'
-import StoryWordToggles from './models/StoryWordToggles.jsx'
+import StoryWordToggles from './models/StoryWordToggles.jsx';
 import { windowResize } from './actions/Actions.jsx';
 import mySaga from './CircleSagas.jsx';
 import Word from './models/Word.jsx';
@@ -18,7 +17,6 @@ document.getElementById('staticBody').style.display = 'none';
 
 const circleAppElement = document.getElementById('CircleApp');
 const pattern = circleAppElement.getAttribute('data-circle-pattern');
-const speaker = new Speaker();
 
 const initialState = {
   window: {
@@ -31,7 +29,6 @@ const initialState = {
     mode: 'circle',
     wordAction: 'speech',
     wordActionKeyword: '意味',
-    speaker: speaker,
     words: Word.createListFromHTML(pattern, document.getElementById('words')),
     storyLines: null,
     storyWordToggles: new StoryWordToggles(),

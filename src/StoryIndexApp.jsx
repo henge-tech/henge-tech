@@ -7,7 +7,6 @@ import I from 'immutable';
 
 import circleReducer from './CircleReducer.jsx';
 import StoryIndexContainer from './components/StoryIndexContainer.jsx';
-import Speaker from './models/Speaker.jsx'
 import StoryLine from './models/StoryLine.jsx'
 import StoryWordToggles from './models/StoryWordToggles.jsx'
 import Word from './models/Word.jsx'
@@ -43,10 +42,8 @@ for (let i = 0; i < storySources.length; i++) {
   toggles = toggles.push(new StoryWordToggles());
 }
 
-const speaker = new Speaker();
 const initialState = {
   circle: {
-    speaker: speaker,
     wordAction: 'speech',
   },
   storyIndex: {

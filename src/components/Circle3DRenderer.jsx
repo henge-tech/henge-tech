@@ -1,14 +1,14 @@
 import * as THREE from 'three';
 import OrbitControls from './ModifiedOrbitControls.jsx';
+import speechSynth from '../models/SpeechSynth.jsx';
 
 export default class Circle3DRenderer {
-  constructor(pattern, words, w, h, speaker) {
+  constructor(pattern, words, w, h) {
     this.pattern = pattern;
     this.words = words;
     this.w = w;
     this.h = h;
     this.stage = document.getElementById('stage');
-    this.speaker = speaker;
     this.removeEventListeners = null;
   }
 
@@ -457,14 +457,14 @@ export default class Circle3DRenderer {
         if (objs[i].object.name == 'board') {
           const w = objs[i].object.userData.word;
           if (objs[i].distance < 120) {
-            this.speaker.speakWord(w.text);
+            speechSynth.speakWord(w.text);
           } else {
             const unit = this.words.size / 4;
-            this.speaker.speak(this.words, Math.floor(w.index / unit));
+            speechSynth.speak(this.words, Math.floor(w.index / unit));
           }
           break;
         } else if (objs[i].object.name == 'centerlabel') {
-          this.speaker.speak(this.words, -1);
+          speechSynth.speak(this.words, -1);
         }
       }
     };

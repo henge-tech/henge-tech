@@ -1,4 +1,4 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import StoryIndex from './StoryIndex.jsx';
 
 const mapStateToProps = (state) => {

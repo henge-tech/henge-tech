@@ -1,6 +1,7 @@
+import speechSynth from '../models/SpeechSynth.jsx';
+
 export default class WordActions {
-  constructor(speaker) {
-    this.speaker = speaker;
+  constructor() {
   }
 
   exec(word, action, keyword = '') {
@@ -13,7 +14,7 @@ export default class WordActions {
       window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=' + q);
       break;
     case 'speech':
-      this.speaker.speakWord(word);
+      speechSynth.speakWord(word);
       break;
     case 'keyword':
       keyword = encodeURIComponent(keyword);

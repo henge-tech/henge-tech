@@ -7,7 +7,6 @@ const mapStateToProps = (state) => {
     stories: state.index.stories,
     filter: state.index.filter,
     allWords: state.index.allWords,
-    speaker: state.index.speaker,
     speakingAll: state.index.speakingAll,
     index: state.index.index,
     selected: state.index.selected
@@ -16,14 +15,14 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onChangeFilter: (speaker, filter, index, allWords) => {
-      dispatch(actions.changeIndexFilter(speaker, filter, index, allWords));
+    onChangeFilter: (filter, index, allWords) => {
+      dispatch(actions.changeIndexFilter(filter, index, allWords));
     },
-    onClickSpeakButton: (speaker, words) => {
-      dispatch(actions.speakIndexWords(speaker, words));
+    onClickSpeakButton: (words) => {
+      dispatch(actions.speakIndexWords(words));
     },
-    toggleSpeakAll: (speaker, selected, allWords) => {
-      dispatch(actions.toggleSpeakAllCircles(speaker, selected, allWords));
+    toggleSpeakAll: (selected, allWords) => {
+      dispatch(actions.toggleSpeakAllCircles(selected, allWords));
     }
   }
 }

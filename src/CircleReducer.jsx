@@ -1,7 +1,6 @@
 import I from 'immutable';
 import { combineReducers } from 'redux';
 import * as types from './ActionTypes.jsx';
-import Speaker from './models/Speaker.jsx';
 import WordActions from './models/WordActions.jsx';
 import StoryLine from './models/StoryLine.jsx';
 
@@ -20,10 +19,10 @@ const window = (state = {}, action) => {
 const circle =  (state = {}, action) => {
   switch (action.type) {
   case types.SPEAK_WORDS:
-    state.speaker.speak(action.words, action.part);
     return state;
   case types.ACTION_WORD:
-    let actions = new WordActions(state.speaker);
+    // FIXME
+    const actions = new WordActions();
     actions.exec(action.word, state.wordAction, state.wordActionKeyword);
     return state;
   case types.SWITCH_WORD_ACTION:
@@ -57,7 +56,6 @@ const circle =  (state = {}, action) => {
       storyLines: storyLines
     });
   case types.SPEAK_STORY_WORDS:
-    state.speaker.speak(action.words, action.part);
     return state;
   case types.TOGGLE_STORY_WORDS:
     return Object.assign({}, state, {
@@ -92,7 +90,7 @@ const index = (state = {}, action) => {
     });
   case types.TOGGLE_SPEAK_ALL_CIRCLES:
     return Object.assign({}, state, {
-      speakingAll: state.speaker.speakingSequence
+      speakingAll: !state.speakingAll
     });
   default:
     return state;
