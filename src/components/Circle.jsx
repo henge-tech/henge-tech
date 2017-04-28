@@ -14,6 +14,16 @@ export default class Circle extends React.Component {
     this.state = {};
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    const keys = ['width', 'height', 'mode'];
+    for (let i = 0; i < keys.length; i++) {
+      if (this.props[keys[i]] != nextProps[keys[i]]) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   render() {
     this.reset3DRenderer();
 
@@ -91,6 +101,9 @@ export default class Circle extends React.Component {
     let styles = {
       container: {position: 'relative', height: '100px', width: '100%'},
     };
+    const onClickWord = (word) => {
+      this.props.onClickWord(word, this.props.wordAction, this.props.wordActionKeyword);
+    }
 
     return (
       <div style={styles.container} className="container">
@@ -105,7 +118,7 @@ export default class Circle extends React.Component {
           r={r}
           words={this.props.words}
           pattern={this.props.pattern}
-          onClickWord={this.props.onClickWord}
+          onClickWord={onClickWord}
           />
         <WordActionsListContainer />
         <CirclePageNavBar />

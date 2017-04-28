@@ -7,8 +7,10 @@ export const speakWords = (words, part) => {
   return { type: types.SPEAK_WORDS };
 };
 
-export const actionWord = (word) => {
-  return { type: types.ACTION_WORD, word };
+export const actionWord = (word, wordAction, wordActionKeyword) => {
+  const actions = new WordActions();
+  actions.exec(word, wordAction, wordActionKeyword);
+  return { type: types.ACTION_WORD };
 };
 
 export const switchWordAction = (name) => ({ type: types.SWITCH_WORD_ACTION, name });

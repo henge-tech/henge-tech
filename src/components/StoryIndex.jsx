@@ -19,7 +19,7 @@ export default class StoryIndex extends React.Component {
       stories.push(
         <div key={'story-' + patternID}>
           <h2 style={style}>{patternID}. <a href={'/circles/' + pattern + '.html'}>{pattern}</a></h2>
-          <StoryIndexLinesContainer storyPos={storyPos} lines={lines} words={words} toggles={toggles} />
+          <StoryIndexLinesContainer storyPos={storyPos} lines={lines} words={words} toggles={toggles} wordAction='speech' wordActionKeyword='' />
         </div>
       );
     });

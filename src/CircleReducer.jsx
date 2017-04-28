@@ -1,7 +1,6 @@
 import I from 'immutable';
 import { combineReducers } from 'redux';
 import * as types from './ActionTypes.jsx';
-import WordActions from './models/WordActions.jsx';
 import StoryLine from './models/StoryLine.jsx';
 
 const window = (state = {}, action) => {
@@ -21,9 +20,6 @@ const circle =  (state = {}, action) => {
   case types.SPEAK_WORDS:
     return state;
   case types.ACTION_WORD:
-    // FIXME
-    const actions = new WordActions();
-    actions.exec(action.word, state.wordAction, state.wordActionKeyword);
     return state;
   case types.SWITCH_WORD_ACTION:
     return Object.assign({}, state, {

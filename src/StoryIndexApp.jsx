@@ -45,6 +45,7 @@ for (let i = 0; i < storySources.length; i++) {
 const initialState = {
   circle: {
     wordAction: 'speech',
+    wordActionKeyword: '',
   },
   storyIndex: {
     stories: stories,

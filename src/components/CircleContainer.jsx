@@ -9,6 +9,8 @@ const mapStateToProps = (state) => {
     height: state.window.height,
     words: state.circle.words,
     pattern: state.circle.pattern,
+    wordAction: state.circle.wordAction,
+    wordActionKeyword: state.circle.wordActionKeyword,
   }
 }
 
@@ -17,8 +19,8 @@ const mapDispatchToProps = (dispatch) => {
     onClickSpeakButton: (words, part) => {
       dispatch(actions.speakWords(words, part))
     },
-    onClickWord: (word) => {
-      dispatch(actions.actionWord(word))
+    onClickWord: (word, wordAction, wordActionKeyword) => {
+      dispatch(actions.actionWord(word, wordAction, wordActionKeyword))
     },
     render3D: (words, w, h) => {
       dispatch(actions.render3D(words, w, h));

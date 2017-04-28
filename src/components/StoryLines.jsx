@@ -2,6 +2,17 @@ import React, { PropTypes } from 'react';
 import { Grid, Row, Col, Button, Glyphicon } from 'react-bootstrap';
 
 export default class StoryLines extends React.Component {
+
+  shouldComponentUpdate(nextProps, nextState) {
+    const keys = ['toggles'];
+    for (let i = 0; i < keys.length; i++) {
+      if (!this.props[keys[i]].equals(nextProps[keys[i]])) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   buildStoryLines() {
     const lines = [];
 
@@ -17,7 +28,7 @@ export default class StoryLines extends React.Component {
 
         let label = this.props.toggles.values.get(lineNum) ? word.text : token.get('text');
         let onClickWord = e => {
-          this.props.onClickWord(word.text);
+          this.props.onClickWord(word.text, this.props.wordAction, this.props.wordActionKeyword);
           e.preventDefault();
         }
 
