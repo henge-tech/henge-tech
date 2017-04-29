@@ -4,6 +4,7 @@ import * as actions from '../actions/Actions.jsx';
 
 const mapStateToProps = (state, ownProps) => {
   return {
+    toggles: state.storyIndex.toggles.get(ownProps.storyPos)
   }
 }
 
@@ -16,7 +17,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       dispatch(actions.toggleStoryIndexWords(ownProps.storyPos, toggles, wordPos))
     },
     onClickWord: (word, wordBehaviorType, wordSearchKeyword) => {
-      dispatch(actions.actionWord(word, wordBehaviorType, wordSearchKeyword))
+      dispatch(actions.execWordBehavior(word, wordBehaviorType, wordSearchKeyword))
     },
   }
 }

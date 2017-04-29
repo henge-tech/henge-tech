@@ -69,7 +69,7 @@ export default class StoryLines extends React.Component {
   }
 
   render() {
-    let lines = this.buildStoryLines();
+    const lines = this.buildStoryLines();
     return (
       <ul className="story-lines">
         {lines}

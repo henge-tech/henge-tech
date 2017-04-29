@@ -6,7 +6,6 @@ const mapStateToProps = (state) => {
     stories: state.storyIndex.stories,
     patternIDs: state.storyIndex.patternIDs,
     storyWords: state.storyIndex.storyWords,
-    toggles: state.storyIndex.toggles
   }
 }
 
