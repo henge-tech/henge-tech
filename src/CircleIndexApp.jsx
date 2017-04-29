@@ -9,9 +9,9 @@ import CircleIndexEntry from './models/CircleIndexEntry.jsx';
 import CircleIndexFilter from './models/CircleIndexFilter.jsx';
 
 import createSagaMiddleware from 'redux-saga';
-import mySaga from './CircleSagas.jsx';
+import saga from './Saga.jsx';
 
-import circleReducer from './CircleReducer.jsx';
+import reducer from './Reducer.jsx';
 import CircleIndexContainer from './components/CircleIndexContainer.jsx';
 
 const staticBody = document.getElementById('static-body');
@@ -49,8 +49,8 @@ const initialState = {
 };
 
 const sagaMiddleware = createSagaMiddleware()
-const store = createStore(circleReducer, initialState, applyMiddleware(sagaMiddleware));
-sagaMiddleware.run(mySaga);
+const store = createStore(reducer, initialState, applyMiddleware(sagaMiddleware));
+sagaMiddleware.run(saga);
 
 render(
   <Provider store={store}>

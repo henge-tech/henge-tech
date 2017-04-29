@@ -6,11 +6,11 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 
-import circleReducer from './CircleReducer.jsx';
+import reducer from './Reducer.jsx';
 import CircleContainer from './components/CircleContainer.jsx';
 import StoryWordToggles from './models/StoryWordToggles.jsx';
 import { windowResize } from './actions/Actions.jsx';
-import mySaga from './CircleSagas.jsx';
+import saga from './Saga.jsx';
 import Word from './models/Word.jsx';
 
 document.getElementById('staticBody').style.display = 'none';
@@ -40,8 +40,8 @@ if (process.env.NODE_ENV == 'development' && process.env.INITIAL_MODE) {
 }
 
 const sagaMiddleware = createSagaMiddleware()
-const store = createStore(circleReducer, initialState, applyMiddleware(sagaMiddleware));
-sagaMiddleware.run(mySaga);
+const store = createStore(reducer, initialState, applyMiddleware(sagaMiddleware));
+sagaMiddleware.run(saga);
 
 render(
   <Provider store={store}>

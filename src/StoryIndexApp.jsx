@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import I from 'immutable';
 
-import circleReducer from './CircleReducer.jsx';
+import reducer from './Reducer.jsx';
 import StoryIndexContainer from './components/StoryIndexContainer.jsx';
 import StoryLine from './models/StoryLine.jsx'
 import StoryWordToggles from './models/StoryWordToggles.jsx'
@@ -55,7 +55,7 @@ const initialState = {
   }
 };
 
-const store = createStore(circleReducer, initialState);
+const store = createStore(reducer, initialState);
 
 const storyIndexApp = document.getElementById('story-index-app');
 render(

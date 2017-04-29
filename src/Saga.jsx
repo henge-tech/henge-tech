@@ -1,5 +1,5 @@
 import { call, put, takeEvery, takeLatest } from 'redux-saga/effects'
-import CircleAPI from './CircleAPI.jsx'
+import CircleAPI from './models/CircleAPI.jsx'
 
 // https://github.com/redux-saga/redux-saga
 
@@ -22,9 +22,9 @@ function* fetchStoryIndex(action) {
   }
 }
 
-function* mySaga() {
+function* saga() {
   yield takeLatest('STORY_FETCH_REQUESTED', fetchStory);
   yield takeLatest('STORY_INDEX_FETCH_REQUESTED', fetchStoryIndex);
 }
 
-export default mySaga;
+export default saga;

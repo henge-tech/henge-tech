@@ -104,11 +104,11 @@ const storyIndex = (state = {}, action) => {
   }
 }
 
-const circleReducer = combineReducers({
+const reducer = combineReducers({
   window,
   circle,
   index,
   storyIndex
 })
 
-export default circleReducer;
+export default reducer;
