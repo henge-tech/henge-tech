@@ -21,13 +21,13 @@ const circle =  (state = {}, action) => {
     return state;
   case types.ACTION_WORD:
     return state;
-  case types.SWITCH_WORD_ACTION:
+  case types.SWITCH_WORD_BEHAVIOR:
     return Object.assign({}, state, {
-      wordAction: action.name
+      wordBehaviorType: action.name
     });
-  case types.UPDATE_WORD_ACTION_KEYWORD:
+  case types.UPDATE_WORD_SEARCH_KEYWORD:
     return Object.assign({}, state, {
-      wordActionKeyword: action.keyword
+      wordSearchKeyword: action.keyword
     });
   case types.STORY_MODE:
     return Object.assign({}, state, {

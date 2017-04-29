@@ -27,8 +27,8 @@ const initialState = {
   circle: {
     pattern: pattern,
     mode: 'circle',
-    wordAction: 'speech',
-    wordActionKeyword: '意味',
+    wordBehaviorType: 'speech',
+    wordSearchKeyword: '意味',
     words: Word.createListFromHTML(pattern, document.getElementById('words')),
     storyLines: null,
     storyWordToggles: new StoryWordToggles(),

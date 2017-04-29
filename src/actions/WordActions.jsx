@@ -1,17 +1,17 @@
 import * as types from '../ActionTypes.jsx';
 import speechSynth from '../models/SpeechSynth.jsx';
-import WordActions from '../models/WordActions.jsx';
+import WordBehavior from '../models/WordBehavior.jsx';
 
 export const speakWords = (words, part) => {
   speechSynth.speak(words, part);
   return { type: types.SPEAK_WORDS };
 };
 
-export const actionWord = (word, wordAction, wordActionKeyword) => {
-  const actions = new WordActions();
-  actions.exec(word, wordAction, wordActionKeyword);
-  return { type: types.ACTION_WORD };
+export const execWordBehavior = (word, wordBehaviorType, wordSearchKeyword) => {
+  const behavior = new WordBehavior();
+  behavior.exec(word, wordBehaviorType, wordSearchKeyword);
+  return { type: types.EXEC_WORD_BEHAVIOR };
 };
 
-export const switchWordAction = (name) => ({ type: types.SWITCH_WORD_ACTION, name });
-export const updateWordActionKeyword = (keyword) => ({ type: types.UPDATE_WORD_ACTION_KEYWORD, keyword });
+export const switchWordBehavior = (name) => ({ type: types.SWITCH_WORD_BEHAVIOR, name });
+export const updateWordSearchKeyword = (keyword) => ({ type: types.UPDATE_WORD_SEARCH_KEYWORD, keyword });

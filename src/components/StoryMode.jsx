@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
 import { Grid, Row, Col, Button, Glyphicon } from 'react-bootstrap';
 
-import WordActionsListContainer from './WordActionsListContainer.jsx';
+import WordBehaviorListContainer from './WordBehaviorListContainer.jsx';
 import StoryLinesContainer from './StoryLinesContainer.jsx';
 
 export default class StoryMode extends React.Component {
@@ -26,7 +26,7 @@ export default class StoryMode extends React.Component {
             </Col>
           </Row>
         </Grid>
-        <WordActionsListContainer />
+        <WordBehaviorListContainer />
         <CirclePageNavBar />
       </div>
     );

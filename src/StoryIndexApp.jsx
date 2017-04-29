@@ -44,8 +44,8 @@ for (let i = 0; i < storySources.length; i++) {
 
 const initialState = {
   circle: {
-    wordAction: 'speech',
-    wordActionKeyword: '',
+    wordBehaviorType: 'speech',
+    wordSearchKeyword: '',
   },
   storyIndex: {
     stories: stories,
@@ -64,3 +64,4 @@ render(
   </Provider>,
   storyIndexApp
 );
+

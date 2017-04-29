@@ -28,7 +28,7 @@ export default class StoryLines extends React.Component {
 
         let label = this.props.toggles.values.get(lineNum) ? word.text : token.get('text');
         let onClickWord = e => {
-          this.props.onClickWord(word.text, this.props.wordAction, this.props.wordActionKeyword);
+          this.props.onClickWord(word.text, this.props.wordBehaviorType, this.props.wordSearchKeyword);
           e.preventDefault();
         }
 

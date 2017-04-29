@@ -1,6 +1,6 @@
 import speechSynth from '../models/SpeechSynth.jsx';
 
-export default class WordActions {
+export default class WordBehavior {
   constructor() {
   }
 

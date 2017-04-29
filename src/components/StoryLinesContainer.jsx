@@ -7,8 +7,8 @@ const mapStateToProps = (state) => {
     words: state.circle.words,
     lines: state.circle.storyLines,
     toggles: state.circle.storyWordToggles,
-    wordAction: state.circle.wordAction,
-    wordActionKeyword: state.circle.wordActionKeyword,
+    wordBehaviorType: state.circle.wordBehaviorType,
+    wordSearchKeyword: state.circle.wordSearchKeyword,
   }
 }
 
@@ -20,8 +20,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     onClickToggleWordsButton: (toggles, index = -1) => {
       dispatch(actions.toggleStoryWords(toggles, index));
     },
-    onClickWord: (word, wordAction, wordActionKeyword) => {
-      dispatch(actions.actionWord(word, wordAction, wordActionKeyword));
+    onClickWord: (word, wordBehaviorType, wordSearchKeyword) => {
+      dispatch(actions.execWordBehavior(word, wordBehaviorType, wordSearchKeyword));
     },
   }
 }

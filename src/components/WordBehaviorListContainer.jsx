@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
-import WordActionsList from './WordActionsList.jsx';
+import WordBehaviorList from './WordBehaviorList.jsx';
 import * as actions from '../actions/Actions.jsx';
 
 const mapStateToProps = (state) => {
   return {
-    wordAction: state.circle.wordAction,
-    wordActionKeyword: state.circle.wordActionKeyword,
+    wordBehaviorType: state.circle.wordBehaviorType,
+    wordSearchKeyword: state.circle.wordSearchKeyword,
     storyLines: state.circle.storyLines,
     mode: state.circle.mode,
   }
@@ -13,11 +13,11 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onClickWordAction: (name) => {
-      dispatch(actions.switchWordAction(name));
+    onChangeBehavior: (name) => {
+      dispatch(actions.switchWordBehavior(name));
     },
-    onChangeWordActionKeyword: (name) => {
-      dispatch(actions.updateWordActionKeyword(name));
+    onChangeKeyword: (keyword) => {
+      dispatch(actions.updateWordSearchKeyword(keyword));
     },
     onClickStory: () => {
       dispatch(actions.storyMode());
@@ -31,5 +31,5 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const WordActionsListContainer = connect(mapStateToProps, mapDispatchToProps)(WordActionsList);
-export default WordActionsListContainer;
+const WordBehaviorListContainer = connect(mapStateToProps, mapDispatchToProps)(WordBehaviorList);
+export default WordBehaviorListContainer;

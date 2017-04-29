@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import SpeakButtons from './SpeakButtons.jsx';
 import WordCircle from './WordCircle.jsx';
-import WordActionsListContainer from './WordActionsListContainer.jsx';
+import WordBehaviorListContainer from './WordBehaviorListContainer.jsx';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
 import StoryModeContainer from './StoryModeContainer.jsx';
 import { Button, Glyphicon } from 'react-bootstrap';
@@ -102,7 +102,7 @@ export default class Circle extends React.Component {
       container: {position: 'relative', height: '100px', width: '100%'},
     };
     const onClickWord = (word) => {
-      this.props.onClickWord(word, this.props.wordAction, this.props.wordActionKeyword);
+      this.props.onClickWord(word, this.props.wordBehaviorType, this.props.wordSearchKeyword);
     }
 
     return (
@@ -120,7 +120,7 @@ export default class Circle extends React.Component {
           pattern={this.props.pattern}
           onClickWord={onClickWord}
           />
-        <WordActionsListContainer />
+        <WordBehaviorListContainer />
         <CirclePageNavBar />
       </div>
     );
