@@ -27,7 +27,7 @@ class Generator
     return @all_circles if @all_circles
 
     circles = []
-    pickup_file = File.join(@data_root, 'data/pickup.yml');
+    pickup_file = File.join(@data_root, 'data/pickup.yml')
     pickups = YAML.load(File.read(pickup_file))
 
     glob_pattern = File.join(@data_root, 'data/circles/*.yml')
@@ -47,7 +47,15 @@ class Generator
 
   def generate_circles
     circle_erb = File.expand_path('_src/templates/circle.html.erb', PROJECT_ROOT)
-    html_dir = File.expand_path('docs/circles', PROJECT_ROOT);
+    html_dir = File.expand_path('docs/circles', PROJECT_ROOT)
+    image_data = YAML.load(File.read(File.expand_path('data/images.yml', @data_root)))
+    image_exts = {}
+    image_data.each do |word, entries|
+      entries.each do |entry|
+        image_exts[word] ||= []
+        image_exts[word] << entry['ext']
+      end
+    end
 
     erb = ERB.new(File.read(circle_erb), nil, '-')
 
@@ -84,7 +92,7 @@ class Generator
   def all_stories(lang)
     file = File.join(@data_root, "data/stories/#{lang}.txt")
 
-    source = File.readlines(file);
+    source = File.readlines(file)
 
     data = {}
     pattern = nil
@@ -116,7 +124,7 @@ class Generator
     stories = all_stories(lang)
 
     stories.each do |pattern, data|
-      file = File.join(PROJECT_ROOT, "docs/stories/ja/#{pattern}.json");
+      file = File.join(PROJECT_ROOT, "docs/stories/ja/#{pattern}.json")
       File.open(file, 'w') do |io|
         io << JSON.pretty_generate(data[:lines])
       end

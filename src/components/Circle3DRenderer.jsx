@@ -170,13 +170,15 @@ export default class Circle3DRenderer {
         wireframe: false,
         side: THREE.FrontSide,
         // side: THREE.DoubleSide,
-        // transparent: true
+        // blending: 0,
+        transparent: true,
+        // opacity: 0.5
       });
 
       // let turl = 'https://farm1.staticflickr.com/426/32170591370_277d52267d_m_d.jpg';
       // let turl = null;
       if (word.imageExts !== null) {
-        let turl = 'https://s3-ap-northeast-1.amazonaws.com/henge/words/' + wordText + '.' + word.imageExts.get(0);
+        let turl = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/words/' + wordText + '.' + word.imageExts.get(0);
         const boardTexture = textureLoader.load(turl, (texture) => {
 
           // Hide warnings:

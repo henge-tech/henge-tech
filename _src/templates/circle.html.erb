@@ -17,8 +17,14 @@
 <h2>#<%= idx %> <%= pattern %></h2>
 
 <ul id="words">
-<%- words.each do |word| -%>
+<%-
+words.each do |word|
+  if image_exts[word]
+-%>
+<li data-img-ext="<%= image_exts[word].join(',') %>"><%= word %></li>
+<%- else -%>
 <li><%= word %></li>
+<%- end -%>
 <%- end -%>
 </ul>
 </div>

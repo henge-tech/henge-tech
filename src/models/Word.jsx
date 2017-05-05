@@ -65,7 +65,12 @@ export default class Word extends WordRecord {
       const text = wordList[i].textContent;
       if (text != "\n") {
         let imgExt = wordList[i].getAttribute('data-img-ext');
-        let params = { text: text, pattern: pattern, index: idx, imageExts: [imgExt] };
+        if (imgExt) {
+          imgExt = imgExt.split(/,/);
+        } else {
+          imgExt = [];
+        }
+        let params = { text: text, pattern: pattern, index: idx, imageExts: imgExt };
         let wobj = new Word(params, true);
         words.push(wobj);
         idx += 1;
