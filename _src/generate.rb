@@ -20,6 +20,8 @@ class Generator
       generate_circles
     elsif @command == 'stories'
       generate_stories
+    elsif @command == 'floors'
+      generate_floors
     end
   end
 
@@ -43,6 +45,37 @@ class Generator
       }
     end
     @all_circles = circles
+  end
+
+  def generate_floors
+    circles = all_circles
+    image_data = YAML.load(File.read(File.expand_path('data/images.yml', @data_root)))
+
+    # 12 * 82 + 16 = 1,000
+    floor_circles = [12] * 82 + [16]
+    floor_circles.each.with_index do |circle_num, i|
+      data = circles.shift(circle_num)
+
+      data.each do |entry|
+        entry[:image_exts] = []
+        entry[:words].each do |word|
+          if image_data[word]
+            entry[:image_exts] << image_data[word].map { |a| a['ext'] }
+          else
+            entry[:image_exts] << nil
+          end
+        end
+      end
+
+      json = {
+        'floor' => i + 1,
+        'circles' => data
+      }
+      floor_file = File.expand_path("../../docs/floors/#{i + 1}.js", __FILE__)
+      File.open(floor_file, 'w') do |out|
+        out << 'var floorData = ' + JSON.dump(json) + ';'
+      end
+    end
   end
 
   def generate_circles
