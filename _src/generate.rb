@@ -57,12 +57,12 @@ class Generator
       data = circles.shift(circle_num)
 
       data.each do |entry|
-        entry[:image_exts] = []
+        entry[:imageExts] = []
         entry[:words].each do |word|
           if image_data[word]
-            entry[:image_exts] << image_data[word].map { |a| a['ext'] }
+            entry[:imageExts] << image_data[word].map { |a| a['ext'] }
           else
-            entry[:image_exts] << nil
+            entry[:imageExts] << nil
           end
         end
       end
@@ -81,21 +81,23 @@ class Generator
   def generate_circles
     circle_erb = File.expand_path('_src/templates/circle.html.erb', PROJECT_ROOT)
     html_dir = File.expand_path('docs/circles', PROJECT_ROOT)
-    image_data = YAML.load(File.read(File.expand_path('data/images.yml', @data_root)))
-    image_exts = {}
-    image_data.each do |word, entries|
-      entries.each do |entry|
-        image_exts[word] ||= []
-        image_exts[word] << entry['ext']
-      end
-    end
 
     erb = ERB.new(File.read(circle_erb), nil, '-')
 
     idx = 0
     circles = all_circles
     circles.each do |circle|
-      idx = circle[:id]
+      circle_num = circle[:id]
+      idx = circle_num - 1
+
+      if idx > 983
+        floor = 83
+        floor_pos = idx - 984
+      else
+        floor = idx / 12 + 1
+        floor_pos = idx % 12
+      end
+
       pattern = circle[:pattern]
       words = circle[:words]
 
