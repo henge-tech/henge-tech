@@ -11,6 +11,7 @@ const mapStateToProps = (state) => {
     pattern: state.circle.pattern,
     wordBehaviorType: state.circle.wordBehaviorType,
     wordSearchKeyword: state.circle.wordSearchKeyword,
+    floorPos: state.circle.floorPos
   }
 }
 
@@ -27,6 +28,9 @@ const mapDispatchToProps = (dispatch) => {
     },
     onClick3DBackButton: () => {
       dispatch(actions.exit3DMode());
+    },
+    goNextRoom: (floorPos, direction) => {
+      dispatch(actions.goNextRoom(floorPos, direction));
     }
   }
 }

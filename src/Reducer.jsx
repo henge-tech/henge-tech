@@ -57,6 +57,13 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       storyWordToggles: action.toggles
     });
+  case types.GO_NEXT_ROOM:
+    return Object.assign({}, state, {
+      pattern: action.pattern,
+      words: action.words,
+      floorPos: action.floorPos,
+      storyLines: null,
+    });
   default:
     return state;
   }

@@ -16,7 +16,7 @@ import Word from './models/Word.jsx';
 document.getElementById('staticBody').style.display = 'none';
 
 const circleAppElement = document.getElementById('CircleApp');
-const floorPos = circleAppElement.getAttribute('data-floor-pos');
+const floorPos = + circleAppElement.getAttribute('data-floor-pos');
 const circleData = floorData['circles'][floorPos];
 const pattern = circleData.pattern;
 
@@ -34,6 +34,7 @@ const initialState = {
     words: Word.createListFromArray(pattern, circleData.words, circleData.imageExts, true),
     storyLines: null,
     storyWordToggles: new StoryWordToggles(),
+    floorPos: floorPos,
   }
 };
 

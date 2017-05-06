@@ -15,7 +15,7 @@ export default class Circle extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    const keys = ['width', 'height', 'mode'];
+    const keys = ['width', 'height', 'mode', 'floorPos'];
     for (let i = 0; i < keys.length; i++) {
       if (this.props[keys[i]] != nextProps[keys[i]]) {
         return true;
@@ -70,7 +70,7 @@ export default class Circle extends React.Component {
     };
 
     this.render3DTimer = setTimeout(() => {
-      this.circle3dRenderer = new Circle3DRenderer(this.props.pattern, this.props.words, w, h);
+      this.circle3dRenderer = new Circle3DRenderer(this.props.pattern, this.props.words, w, h, this.props.floorPos, this.props.goNextRoom);
       this.circle3dRenderer.execute();
     }, 200);
 

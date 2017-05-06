@@ -3,13 +3,15 @@ import OrbitControls from './ModifiedOrbitControls.jsx';
 import speechSynth from '../models/SpeechSynth.jsx';
 
 export default class Circle3DRenderer {
-  constructor(pattern, words, w, h) {
+  constructor(pattern, words, w, h, floorPos, goNextRoom) {
     this.pattern = pattern;
     this.words = words;
     this.w = w;
     this.h = h;
     this.stage = document.getElementById('stage');
     this.removeEventListeners = null;
+    this.floorPos = floorPos;
+    this.goNextRoom = goNextRoom;
   }
 
   createRenderer() {
@@ -244,7 +246,21 @@ export default class Circle3DRenderer {
     const wallMesh = new THREE.Mesh(wallGeom, wallMaterial);
     wallMesh.name = 'wall';
     wallMesh.position.set(-450,0,-450);
+
     return wallMesh;
+  }
+
+  doorMesh(doorSize) {
+    const doorGeom = new THREE.PlaneBufferGeometry(doorSize[0], doorSize[1]);
+
+    const materialOpts = { color: '#ffccdd', shininess: 0, wireframe: false, visible: false };
+    const material  = new THREE.MeshPhongMaterial(materialOpts);
+
+    const doorMesh = new THREE.Mesh(doorGeom, material);
+    doorMesh.name = 'door';
+    doorMesh.position.set(0,90,-448);
+
+    return doorMesh;
   }
 
   wallWithCorridorGroup(floorMaterial, wallMaterial) {
@@ -253,19 +269,25 @@ export default class Circle3DRenderer {
 
     group.add(this.doorWallMesh(doorSize, wallMaterial));
 
+    group.add(this.doorMesh(doorSize, floorMaterial));
+
     let corridorGeometry = new THREE.PlaneBufferGeometry(doorSize[0], 900);
+
+    // Corridor Floor
     let corridorMesh = new THREE.Mesh(corridorGeometry, floorMaterial);
     corridorMesh.name = 'corridorfloor';
     corridorMesh.position.set(0,0,-900);
     corridorMesh.rotation.x = - Math.PI / 2;
     group.add(corridorMesh);
 
+    // Corridor Ceil
     corridorMesh = new THREE.Mesh(corridorGeometry, floorMaterial);
     corridorMesh.name = 'corridorceil';
     corridorMesh.position.set(0,doorSize[1],-900);
     corridorMesh.rotation.x = Math.PI / 2;
     group.add(corridorMesh);
 
+    // Corridor Wall L
     corridorGeometry = new THREE.PlaneBufferGeometry(doorSize[1], 900);
     corridorMesh = new THREE.Mesh(corridorGeometry, wallMaterial);
     corridorMesh.name = 'corridorwall1';
@@ -274,6 +296,7 @@ export default class Circle3DRenderer {
     corridorMesh.rotation.y = Math.PI / 2;
     group.add(corridorMesh);
 
+    // Corridor Wall R
     corridorMesh = new THREE.Mesh(corridorGeometry, wallMaterial);
     corridorMesh.name = 'corridorwall2';
     corridorMesh.position.set(doorSize[0] / 2, doorSize[1] / 2,-900);
@@ -323,17 +346,23 @@ export default class Circle3DRenderer {
 
     const group = this.wallWithCorridorGroup(floorMaterial, wallMaterial);
 
+    // Left
     let g2 = group.clone();
+    g2.getObjectByName('door').userData.direction = 'left';
     g2.position.set(0,0,0);
     g2.rotation.y = Math.PI / 2;
     scene.add(g2);
 
+    // Back
     g2 = group.clone();
+    g2.getObjectByName('door').userData.direction = 'back';
     g2.position.set(0,0,0);
     g2.rotation.y = Math.PI;
     scene.add(g2);
 
+    // Right
     g2 = group.clone();
+    g2.getObjectByName('door').userData.direction = 'right';
     g2.position.set(0,0,0);
     g2.rotation.y = - Math.PI / 2;
     scene.add(g2);
@@ -410,6 +439,11 @@ export default class Circle3DRenderer {
     animate();
   }
 
+  moveRoom(direction) {
+    // this.stop();
+    this.goNextRoom(this.floorPos, direction);
+  }
+
   drawOrbit(renderer, scene, camera, light) {
     const target = new THREE.Vector3(0, 60, 0)
     const controls = new (OrbitControls(THREE))(camera, document, target, light);
@@ -467,6 +501,9 @@ export default class Circle3DRenderer {
           break;
         } else if (objs[i].object.name == 'centerlabel') {
           speechSynth.speak(this.words, -1);
+          break;
+        } else if (objs[i].object.name == 'door') {
+          this.moveRoom(objs[i].object.userData.direction);
         }
       }
     };
