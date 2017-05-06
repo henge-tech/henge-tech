@@ -57,35 +57,13 @@ export default class Word extends WordRecord {
     }
   }
 
-  static createListFromHTML(pattern, element) {
-    const wordList = element.childNodes;
-    const words = [];
-    let idx = 0;
-    for (let i = 0; i < wordList.length; i++) {
-      const text = wordList[i].textContent;
-      if (text != "\n") {
-        let imgExt = wordList[i].getAttribute('data-img-ext');
-        if (imgExt) {
-          imgExt = imgExt.split(/,/);
-        } else {
-          imgExt = [];
-        }
-        let params = { text: text, pattern: pattern, index: idx, imageExts: imgExt };
-        let wobj = new Word(params, true);
-        words.push(wobj);
-        idx += 1;
-      }
-    }
-    return new I.List(words);
-  }
-
-  static createListFromArray(pattern, array, setAffix = false) {
+  static createListFromArray(pattern, array, imgExts, setAffix = false) {
     return new I.List(array.map((word, i) => {
       return new Word({
         pattern: pattern,
         index: i,
         text: word,
-        imageExts: []
+        imageExts: imgExts[i],
       }, setAffix);
     }));
   }

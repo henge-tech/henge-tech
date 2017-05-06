@@ -27,7 +27,7 @@ for (let i = 0; i < storySources.length; i++) {
   const pattern = patternLink.textContent;
   const patternID = source.getAttribute('data-pattern-id');
   patternIDs = patternIDs.push(patternID);
-  const words = Word.createListFromArray(pattern, allWords[patternID - 1], true);
+  const words = Word.createListFromArray(pattern, allWords[patternID - 1], [], true);
   storyWords = storyWords.push(words);
 
   const lines = source.getElementsByTagName('li');

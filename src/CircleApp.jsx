@@ -16,7 +16,9 @@ import Word from './models/Word.jsx';
 document.getElementById('staticBody').style.display = 'none';
 
 const circleAppElement = document.getElementById('CircleApp');
-const pattern = circleAppElement.getAttribute('data-circle-pattern');
+const floorPos = circleAppElement.getAttribute('data-floor-pos');
+const circleData = floorData['circles'][floorPos];
+const pattern = circleData.pattern;
 
 const initialState = {
   window: {
@@ -29,7 +31,7 @@ const initialState = {
     mode: 'circle',
     wordBehaviorType: 'speech',
     wordSearchKeyword: '意味',
-    words: Word.createListFromHTML(pattern, document.getElementById('words')),
+    words: Word.createListFromArray(pattern, circleData.words, circleData.imageExts, true),
     storyLines: null,
     storyWordToggles: new StoryWordToggles(),
   }

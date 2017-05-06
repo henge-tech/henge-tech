@@ -30,7 +30,7 @@ let selected = new I.List();
 const len = patterns.length;
 for (let i = 0; i < len; i++) {
   const pattern = patterns[i].textContent;
-  const list = Word.createListFromArray(pattern, allWords[i], true);
+  const list = Word.createListFromArray(pattern, allWords[i], [], true);
   const pickup = patterns[i].getAttribute('data-pickup') == '1';
 
   allWordsList = allWordsList.push(list);
