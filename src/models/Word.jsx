@@ -67,6 +67,26 @@ export default class Word extends WordRecord {
       }, setAffix);
     }));
   }
+
+  static createFloorIndex() {
+    const words = [];
+    const patterns = [];
+    const imgExts = [];
+    floorData.circles.map((entry, i) => {
+      words[i] = entry.words[0];
+      patterns[i] = entry.pattern;
+      imgExts[i] = entry.imageExts[0];
+    });
+
+    return new I.List(words.map((word, i) => {
+      return new Word({
+        pattern: patterns[i],
+        index: i,
+        text: word,
+        imageExts: imgExts[i],
+      }, true);
+    }));
+  }
 }
 
 Word.patternRex = {}

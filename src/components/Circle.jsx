@@ -43,7 +43,9 @@ export default class Circle extends React.Component {
         <StoryModeContainer />
       );
     } else if (this.props.mode == '3d') {
-      return this.render3D();
+      return this.render3D('normal');
+    } else if (this.props.mode == '3dIndex') {
+      return this.render3D('index');
     }
   }
 
@@ -57,7 +59,7 @@ export default class Circle extends React.Component {
     }
   }
 
-  render3D() {
+  render3D(roomType) {
     let w = this.props.width;
     let h = this.props.height;
 
@@ -70,7 +72,7 @@ export default class Circle extends React.Component {
     };
 
     this.render3DTimer = setTimeout(() => {
-      this.circle3dRenderer = new Circle3DRenderer(this.props.pattern, this.props.words, w, h, this.props.floorPos, this.props.goNextRoom);
+      this.circle3dRenderer = new Circle3DRenderer(roomType, this.props.pattern, this.props.words, w, h, this.props.floorPos, this.props.goNextRoom);
       this.circle3dRenderer.execute();
     }, 200);
 

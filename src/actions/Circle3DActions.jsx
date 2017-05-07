@@ -1,5 +1,5 @@
 import * as types from '../ActionTypes.jsx';
-import Word from '../models/Word.jsx'
+import Word from '../models/Word.jsx';
 
 // 3D Button clicked
 export const threeDMode = () => {
@@ -11,6 +11,12 @@ export const exit3DMode = () => {
 }
 
 export const goNextRoom = (floorPos, direction) => {
+  if (direction == 'back') {
+    const floorNum = floorData.floor;
+    const words = Word.createFloorIndex();
+    return { type: types.GO_INDEX_ROOM, floorNum, words };
+  }
+
   if (direction == 'left') {
     floorPos -= 1;
     if (floorPos < 0) {
@@ -21,6 +27,8 @@ export const goNextRoom = (floorPos, direction) => {
     if (floorData.circles.length <= floorPos) {
       floorPos = 0;
     }
+  } else {
+    floorPos = direction;
   }
 
   const circleData = floorData.circles[floorPos];

@@ -59,9 +59,18 @@ const circle =  (state = {}, action) => {
     });
   case types.GO_NEXT_ROOM:
     return Object.assign({}, state, {
+      mode: '3d',
       pattern: action.pattern,
       words: action.words,
       floorPos: action.floorPos,
+      storyLines: null,
+    });
+  case types.GO_INDEX_ROOM:
+    return Object.assign({}, state, {
+      mode: '3dIndex',
+      pattern: 'floor ' + action.floorNum,
+      words: action.words,
+      floorPos: 0,
       storyLines: null,
     });
   default:

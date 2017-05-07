@@ -3,7 +3,8 @@ import OrbitControls from './ModifiedOrbitControls.jsx';
 import speechSynth from '../models/SpeechSynth.jsx';
 
 export default class Circle3DRenderer {
-  constructor(pattern, words, w, h, floorPos, goNextRoom) {
+  constructor(roomType, pattern, words, w, h, floorPos, goNextRoom) {
+    this.roomType = roomType;
     this.pattern = pattern;
     this.words = words;
     this.w = w;
@@ -224,33 +225,33 @@ export default class Circle3DRenderer {
     }
   }
 
-  doorWallShape(doorSize) {
+  doorWallShape(wallSize, doorSize) {
     const doorWallShape = new THREE.Shape();
     doorWallShape.moveTo(  0,   0)
-    doorWallShape.lineTo(  0, 300)
-    doorWallShape.lineTo(900, 300)
-    doorWallShape.lineTo(900,   0)
+    doorWallShape.lineTo(  0, wallSize[1])
+    doorWallShape.lineTo(wallSize[0], wallSize[1])
+    doorWallShape.lineTo(wallSize[0],   0)
 
-    doorWallShape.lineTo(900 / 2 + doorSize[0] / 2,   0)
-    doorWallShape.lineTo(900 / 2 + doorSize[0] / 2,   doorSize[1])
-    doorWallShape.lineTo(900 / 2 - doorSize[0] / 2,   doorSize[1])
-    doorWallShape.lineTo(900 / 2 - doorSize[0] / 2,   0)
+    doorWallShape.lineTo(wallSize[0] / 2 + doorSize[0] / 2,   0)
+    doorWallShape.lineTo(wallSize[0] / 2 + doorSize[0] / 2,   doorSize[1])
+    doorWallShape.lineTo(wallSize[0] / 2 - doorSize[0] / 2,   doorSize[1])
+    doorWallShape.lineTo(wallSize[0] / 2 - doorSize[0] / 2,   0)
     doorWallShape.lineTo(0,0);
 
     return doorWallShape;
   }
 
-  doorWallMesh(doorSize, wallMaterial) {
-    const wallGeom = new THREE.ShapeGeometry(this.doorWallShape(doorSize));
+  doorWallMesh(wallSize, doorSize, floorSize, wallMaterial) {
+    const wallGeom = new THREE.ShapeGeometry(this.doorWallShape(wallSize, doorSize));
 
     const wallMesh = new THREE.Mesh(wallGeom, wallMaterial);
     wallMesh.name = 'wall';
-    wallMesh.position.set(-450,0,-450);
+    wallMesh.position.set(- wallSize[0] / 2, 0, - floorSize / 2);
 
     return wallMesh;
   }
 
-  doorMesh(doorSize) {
+  doorMesh(doorSize, floorSize) {
     const doorGeom = new THREE.PlaneBufferGeometry(doorSize[0], doorSize[1]);
 
     const materialOpts = { color: '#ffccdd', shininess: 0, wireframe: false, visible: false };
@@ -258,18 +259,16 @@ export default class Circle3DRenderer {
 
     const doorMesh = new THREE.Mesh(doorGeom, material);
     doorMesh.name = 'door';
-    doorMesh.position.set(0,90,-448);
+    doorMesh.position.set(0, doorSize[1] / 2, - floorSize / 2 + 2);
 
     return doorMesh;
   }
 
-  wallWithCorridorGroup(floorMaterial, wallMaterial) {
+  wallWithCorridorGroup(floorMaterial, wallMaterial, wallSize, doorSize, floorSize) {
     const group = new THREE.Group();
-    const doorSize = [100, 180];
 
-    group.add(this.doorWallMesh(doorSize, wallMaterial));
-
-    group.add(this.doorMesh(doorSize, floorMaterial));
+    group.add(this.doorWallMesh(wallSize, doorSize, floorSize, wallMaterial));
+    group.add(this.doorMesh(doorSize, floorSize));
 
     let corridorGeometry = new THREE.PlaneBufferGeometry(doorSize[0], 900);
 
@@ -307,15 +306,67 @@ export default class Circle3DRenderer {
     return group;
   }
 
+  addIndexRoom(scene) {
+    const floorColor = 0xa0adaf;
+    const wallColor = 0x999999;
+
+    const floorMaterialOpts = { color: floorColor, shininess: 80, wireframe: false };
+    const floorMaterial  = new THREE.MeshPhongMaterial(floorMaterialOpts);
+    const floorGeometry = new THREE.PlaneBufferGeometry(1000, 1000);
+
+    const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+    floorMesh.name = 'floor';
+    floorMesh.rotation.x = - Math.PI / 2;
+    floorMesh.position.set(0, 0, 0);
+    floorMesh.receiveShadow = true;
+    scene.add(floorMesh);
+
+    const ceilMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+    ceilMesh.name = 'ceil';
+    ceilMesh.rotation.x = Math.PI / 2;
+    ceilMesh.position.set(0, 300, 0);
+    scene.add(ceilMesh);
+
+    const wallMaterialOpts = { color: wallColor, shininess: 0, wireframe: false };
+    const wallMaterial  = new THREE.MeshPhongMaterial(wallMaterialOpts);
+
+    const wallSize = [280, 300];
+    const doorSize = [100, 180];
+    const floorSize = 900;
+    const group = this.wallWithCorridorGroup(floorMaterial, wallMaterial, wallSize, doorSize, floorSize);
+
+    let g2;
+
+    const unit = 360 / this.words.size;
+    const r = 50;
+    const rad = Math.PI * 2 / 360.0
+
+    for (var i = 0; i < this.words.size; i++) {
+      g2 = group.clone();
+      g2.getObjectByName('door').userData.direction = i;
+
+      const x = r * Math.cos((unit * i - 90) * rad);
+      const z = r * Math.sin((unit * i - 90) * rad);
+
+      g2.position.set(x, 0, z);
+      g2.rotation.y = (360 - unit * i) * rad;
+
+      // g2.position.set(0,0,0);
+      // g2.rotation.y = Math.PI / 2;
+      scene.add(g2);
+    }
+  }
+
   addRoom(scene) {
     // const floorColor = 0xa0adaf;
     // const floorColor = 0xffffff;
-    const floorColor = 0xfceec7; // wood
 
     // const wallColor = 0xcddbdd; // blue
     // const wallColor = 0xffffff; // white
     // const wallColor = 0xcccccc; // gray
     // const wallColor = 0x666666; // gray2
+
+    const floorColor = 0xfceec7; // wood
     const wallColor = 0x333333; // black
 
     const floorMaterialOpts = { color: floorColor, shininess: 80, wireframe: false };
@@ -344,7 +395,10 @@ export default class Circle3DRenderer {
     wallMesh.position.set(0, 0, -450);
     scene.add(wallMesh);
 
-    const group = this.wallWithCorridorGroup(floorMaterial, wallMaterial);
+    const wallSize = [900, 300];
+    const doorSize = [100, 180];
+    const floorSize = 900;
+    const group = this.wallWithCorridorGroup(floorMaterial, wallMaterial, wallSize, doorSize, floorSize);
 
     // Left
     let g2 = group.clone();
@@ -551,7 +605,11 @@ export default class Circle3DRenderer {
 
     const lights = this.addLights(scene);
     this.addBoards(scene);
-    this.addRoom(scene);
+    if (this.roomType == 'index') {
+      this.addIndexRoom(scene);
+    } else {
+      this.addRoom(scene);
+    }
 
     this.handleMouseEvent(scene, camera);
 
