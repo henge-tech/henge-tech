@@ -524,10 +524,18 @@ export default class Circle3DRenderer {
       if (new Date().getTime() - this.mouseDownTime > 300) {
         return;
       }
+      // console.log(e);
 
       const rect = e.target.getBoundingClientRect();
-      let mouseX = e.clientX - rect.left;
-      let mouseY = e.clientY - rect.top;
+      let mouseX = 0;
+      let mouseY = 0;
+      if (e.clientX) {
+        mouseX = e.clientX - rect.left;
+        mouseY = e.clientY - rect.top;
+      } else if (e.pageX) {
+        mouseX = e.pageX - rect.left;
+        mouseY = e.pageY - rect.top;
+      }
 
       mouseX =  (mouseX / window.innerWidth)  * 2 - 1;
       mouseY = -(mouseY / window.innerHeight) * 2 + 1;
@@ -537,6 +545,15 @@ export default class Circle3DRenderer {
 
       const ray = new THREE.Raycaster(camera.position, pos.sub(camera.position).normalize());
       const objs = ray.intersectObjects(scene.children, true); // TODO: limit targets
+
+      if (false) {
+        if (this.arrow) {
+          scene.remove(this.arrow);
+        }
+        // this.arrow = new THREE.ArrowHelper(camera.getWorldDirection(), camera.getWorldPosition(), 100, 0x0000ff);
+        this.arrow = new THREE.ArrowHelper(ray.ray.direction, ray.ray.origin, 300, 0xff0000);
+        scene.add(this.arrow);
+      }
 
       if (objs.length <= 0) {
         return;
