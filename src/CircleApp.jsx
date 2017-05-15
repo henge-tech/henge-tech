@@ -17,7 +17,7 @@ document.getElementById('staticBody').style.display = 'none';
 
 const circleAppElement = document.getElementById('CircleApp');
 const floorPos = + circleAppElement.getAttribute('data-floor-pos');
-const circleData = floorData['circles'][floorPos];
+const circleData = floorData.circles[floorPos];
 const pattern = circleData.pattern;
 
 const initialState = {

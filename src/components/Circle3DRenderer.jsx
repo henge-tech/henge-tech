@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import OrbitControls from './ModifiedOrbitControls.jsx';
 import speechSynth from '../models/SpeechSynth.jsx';
+import I from 'immutable';
 
 export default class Circle3DRenderer {
   constructor(roomType, pattern, words, w, h, floorPos, goNextRoom) {
@@ -563,7 +564,9 @@ export default class Circle3DRenderer {
         // console.log(objs[i].object.name);
         if (objs[i].object.name == 'board') {
           const w = objs[i].object.userData.word;
-          if (objs[i].distance < 120) {
+          if (this.roomType == 'index') {
+            speechSynth.speak(new I.List(floorData.circles[w.index].words), -1);
+          } else if (objs[i].distance < 120) {
             speechSynth.speakWord(w.text);
           } else {
             const unit = this.words.size / 4;

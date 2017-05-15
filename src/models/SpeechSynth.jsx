@@ -31,7 +31,11 @@ class SpeechSynth {
       const unitWords = [];
       for (let j = 0; j < unit; j++) {
         let w = words.get(i * unit + j);
-        unitWords.push(w.text);
+        if (w.text) {
+          unitWords.push(w.text);
+        } else {
+          unitWords.push(w);
+        }
       }
 
       speechTexts.push(unitWords.join(' '));
