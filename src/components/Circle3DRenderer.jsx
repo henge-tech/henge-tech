@@ -73,7 +73,7 @@ export default class Circle3DRenderer {
     return [ambientLight, light, ...lights];
   }
 
-  createPatternLabel() {
+  createRoomLabel(txt, name, fontSize, v = 0) {
     const geometry = new THREE.PlaneBufferGeometry(800, 80);
 
     const canvas = document.createElement('canvas');
@@ -82,10 +82,10 @@ export default class Circle3DRenderer {
     const ctx = canvas.getContext('2d');
     // const txt = 'inte_tion';
     // const txt = 'abcdefghijklmnopqrstuvwxyz';
-    const txt = this.pattern;
+
     // ctx.fillStyle = '#333333';
     ctx.fillStyle = '#ffffff';
-    ctx.font = "60px sans-serif";
+    ctx.font = fontSize + "px sans-serif";
     ctx.textAlign = 'center';
     // ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillText(txt, 512, 65);
@@ -99,7 +99,7 @@ export default class Circle3DRenderer {
     });
 
     const label = new THREE.Mesh(geometry, material);
-    label.name = 'centerlabel';
+    label.name = name;
     const pos = 'wall';
     if (pos == 'floor') {
       label.position.set(0, 2, 20);
@@ -107,14 +107,14 @@ export default class Circle3DRenderer {
     } else if (pos == 'air') {
       label.position.set(0, 180, 0);
     } else if (pos == 'wall') {
-      label.position.set(0, 220, -445);
+      label.position.set(0, 220 + v, -445);
     }
 
     return label;
   }
 
   addBoards(scene) {
-    scene.add(this.createPatternLabel());
+    scene.add(this.createRoomLabel(this.pattern, 'centerlabel', 60));
 
     /*
     const xGeometry  = new THREE.CubeGeometry(1, 1, 1);
@@ -344,6 +344,8 @@ export default class Circle3DRenderer {
 
     for (var i = 0; i < this.words.size; i++) {
       g2 = group.clone();
+      g2.add(this.createRoomLabel(floorData.circles[i].pattern, 'corridorLabel', 30, -30));
+
       g2.getObjectByName('door').userData.direction = i;
 
       const x = r * Math.cos((unit * i - 90) * rad);
@@ -399,17 +401,25 @@ export default class Circle3DRenderer {
     const wallSize = [900, 300];
     const doorSize = [100, 180];
     const floorSize = 900;
-    const group = this.wallWithCorridorGroup(floorMaterial, wallMaterial, wallSize, doorSize, floorSize);
+    const group = this.wallWithCorridorGroup(floorMaterial, wallMaterial, wallSize, doorSize, floorSize, 'x');
 
     // Left
     let g2 = group.clone();
     g2.getObjectByName('door').userData.direction = 'left';
+
+    let prevIndex = this.floorPos - 1;
+    if (prevIndex < 0) {
+      prevIndex = floorData.circles.length - 1;
+    }
+    g2.add(this.createRoomLabel(floorData.circles[prevIndex].pattern, 'corridorLabel', 30, -30));
+
     g2.position.set(0,0,0);
     g2.rotation.y = Math.PI / 2;
     scene.add(g2);
 
     // Back
     g2 = group.clone();
+    g2.add(this.createRoomLabel(floorData.floor, 'corridorLabel', 30, -30));
     g2.getObjectByName('door').userData.direction = 'back';
     g2.position.set(0,0,0);
     g2.rotation.y = Math.PI;
@@ -417,6 +427,12 @@ export default class Circle3DRenderer {
 
     // Right
     g2 = group.clone();
+    let nextIndex = this.floorPos + 1;
+    if (nextIndex >= floorData.circles.length) {
+      nextIndex = 0;
+    }
+    g2.add(this.createRoomLabel(floorData.circles[nextIndex].pattern, 'corridorLabel', 30, -30));
+
     g2.getObjectByName('door').userData.direction = 'right';
     g2.position.set(0,0,0);
     g2.rotation.y = - Math.PI / 2;
