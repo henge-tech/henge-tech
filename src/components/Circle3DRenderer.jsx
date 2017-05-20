@@ -309,8 +309,6 @@ export default class Circle3DRenderer {
 
   addIndexRoom(scene) {
     const floorColor = 0xa0adaf;
-    const wallColor = 0x999999;
-
     const floorMaterialOpts = { color: floorColor, shininess: 80, wireframe: false };
     const floorMaterial  = new THREE.MeshPhongMaterial(floorMaterialOpts);
     const floorGeometry = new THREE.PlaneBufferGeometry(1000, 1000);
@@ -328,8 +326,12 @@ export default class Circle3DRenderer {
     ceilMesh.position.set(0, 300, 0);
     scene.add(ceilMesh);
 
+    const wallColor  = 0x999999;
+    const wallColor2 = 0x666666;
     const wallMaterialOpts = { color: wallColor, shininess: 0, wireframe: false };
     const wallMaterial  = new THREE.MeshPhongMaterial(wallMaterialOpts);
+    const wallMaterialOpts2 = { color: wallColor2, shininess: 0, wireframe: false };
+    const wallMaterial2  = new THREE.MeshPhongMaterial(wallMaterialOpts2);
 
     const wallSize = [280, 300];
     const doorSize = [100, 180];
@@ -344,6 +346,9 @@ export default class Circle3DRenderer {
 
     for (var i = 0; i < this.words.size; i++) {
       g2 = group.clone();
+      if (i % (this.words.size / 4) == 0) {
+        g2.getObjectByName('wall').material = wallMaterial2;
+      }
       g2.add(this.createRoomLabel(floorData.circles[i].pattern, 'corridorLabel', 30, -30));
 
       g2.getObjectByName('door').userData.direction = i;
