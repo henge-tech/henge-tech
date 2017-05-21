@@ -113,6 +113,12 @@ export default class Circle3DRenderer {
     return label;
   }
 
+  encodeS3Key(str) {
+    return str.replace(/[^-a-zA-Z0-9]/g, (c) => {
+      return '_' + c.charCodeAt(0).toString(16).toUpperCase();
+    });
+  }
+
   addBoards(scene) {
     scene.add(this.createRoomLabel(this.pattern, 'centerlabel', 60));
 
@@ -182,7 +188,8 @@ export default class Circle3DRenderer {
       // let turl = 'https://farm1.staticflickr.com/426/32170591370_277d52267d_m_d.jpg';
       // let turl = null;
       if (word.imageExts !== null) {
-        let turl = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/words/' + wordText + '.' + word.imageExts.get(0);
+        const imageBaseName = this.encodeS3Key(wordText);
+        const turl = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/words/' + imageBaseName + '.' + word.imageExts.get(0);
         const boardTexture = textureLoader.load(turl, (texture) => {
 
           // Hide warnings:
