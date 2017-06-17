@@ -22,6 +22,7 @@ export default class CircleIndex extends React.Component {
 
   render() {
     // sel [allWordsIndex, wordsIndex]
+    const selectedSize = this.props.selected.size;
     const selected = this.props.selected.map((sel, idx) => {
       const circleID = sel.get(0);
       const words = this.props.allWords.get(circleID);
@@ -74,8 +75,14 @@ export default class CircleIndex extends React.Component {
         e.preventDefault();
       }
 
+      const spanStyle = {width: '150px', display: 'inline-block', fontWeight:'normal'};
+      const liStyle = {};
+      if (circleID % 12 == 0 && circleID != 996 && selectedSize == 1000) {
+        liStyle.marginTop = '15px';
+      }
+
       return (
-          <li value={circleID + 1} key={'pattern-' + circleID}><span style={{width: '150px', display: 'inline-block'}}><a href={word.pattern + '.html'}>{label}</a></span>
+          <li value={circleID + 1} key={'pattern-' + circleID} style={liStyle}><span style={spanStyle}><a href={word.pattern + '.html'}>{label}</a></span>
           <a href="#" onClick={e => onClickSpeakButton(e)}><Glyphicon glyph="volume-up" style={{marginRight: '5px'}}/></a>
           {patternAttr}</li>
       );
