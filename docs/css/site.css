@@ -1,3 +1,54 @@
+#top-header {
+  background-image: url(/imgs/mainvisual.jpg);
+  background-size: cover;
+}
+
+#top-header h1 {
+  margin: 0;
+  height: 200px
+}
+
+#top-logo {
+  position: absolute;
+  fill: white;
+  top: 75px;
+  left: 62px;
+  width: 210px;
+  height: 60px;
+}
+
+.top-item-thumb {
+  width: 280px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  #top-header h1 {
+    margin: 0;
+    height:400px
+  }
+
+  #top-logo {
+    position: absolute;
+    fill: white;
+    top: 150px;
+    left: 125px;
+    width: 420px;
+    height: 120px;
+  }
+
+  .top-item-thumb {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .top-item-thumb {
+    width: 280px;
+  }
+}
+
 .btn-circle {
   width: 30px;
   height: 30px;

@@ -17,7 +17,7 @@ export default class CirclePageNavBar extends React.Component {
       <Navbar inverse collapseOnSelect fixedTop>
         <Navbar.Header>
         <Navbar.Brand>
-        <a href="/">
+        <a href="/circles/">
           <svg role="img" style={iconStyle}>
             <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/imgs/svg/sprite.svg#icon"></use>
           </svg>

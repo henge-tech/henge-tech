@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,40 +10,48 @@
   </head>
 
   <body>
-    <header style="height:400px; width: 100%; overflow: hidden;">
-      <img src="/imgs/mainvisual.jpg" style="height:400px; margin: 0;">
-      <h1 style="margin:0;">
-        <svg style="top: 150px; left: 125px; width:420px; height: 120px;position: absolute; fill: white">
+    <header id="top-header">
+      <h1>
+        <svg id="top-logo">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/imgs/svg/sprite.svg#logo"></use>
         </svg>
       </h1>
     </header>
 
-<div style="margin-left:125px;margin-top: 40px; font-size: 1.2em;">
+    <div class="container">
+      <p style="margin-top:30px;">Henge is an English vocabulary lerning system using 3D space and rhyme grouping.</p>
 
-  <p>Henge is an English vocabulary lerning system using 3D space and rhyme grouping.</
-                                                                                       p>
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <a href="/circles/">
+            <img src="/imgs/item-web.jpg" class="top-item-thumb">
+            <br>
+            Web
+        </a></div>
+        <div class="col-sm-4 text-center">
+          <a href="https://github.com/henge-tech/henge-minecraft/releases">
+            <img src="/imgs/item-minecraft.jpg" class="top-item-thumb">
+            <br>
+            Minecraft
+        </a></div>
+        <div class="col-sm-4 text-center">
+            <img src="/imgs/item-download.png" class="top-item-thumb">
+            <br>
+            <span style="color:#999">PDF・MP3</span>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
 
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<ul style="margin-top: 40px">
-<li><a href="/circles/"><img src="/imgs/item-web.jpg" style="width:280px"></li>
-<li><a href="/stories/">Stories</a></li>
-<li><a href="https://rubygems.org/gems/henge">Command Line</a></li>
-<li><a href="https://github.com/henge-tech/henge-minecraft/releases">Minecraft</a></li>
-<li><a href="https://github.com/henge-tech/">GitHub</a></li>
-</ul>
-
-
-</div>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-631498-5', 'auto');
-  ga('send', 'pageview');
-</script>
-</body>
+ga('create', 'UA-631498-5', 'auto');
+ga('send', 'pageview');
+    </script>
+  </body>
 </html>
