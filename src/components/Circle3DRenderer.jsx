@@ -113,12 +113,6 @@ export default class Circle3DRenderer {
     return label;
   }
 
-  encodeS3Key(str) {
-    return str.replace(/[^-a-zA-Z0-9]/g, (c) => {
-      return '_' + c.charCodeAt(0).toString(16).toUpperCase();
-    });
-  }
-
   addBoards(scene) {
     scene.add(this.createRoomLabel(this.pattern, 'centerlabel', 60));
 
@@ -185,11 +179,8 @@ export default class Circle3DRenderer {
         // opacity: 0.5
       });
 
-      // let turl = 'https://farm1.staticflickr.com/426/32170591370_277d52267d_m_d.jpg';
-      // let turl = null;
       if (word.imageExts !== null) {
-        const imageBaseName = this.encodeS3Key(wordText);
-        const turl = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/words/' + imageBaseName + '.' + word.imageExts.get(0);
+        const turl = word.imageURL(0);
         const boardTexture = textureLoader.load(turl, (texture) => {
 
           // Hide warnings:
@@ -524,7 +515,7 @@ export default class Circle3DRenderer {
 
   moveRoom(direction) {
     // this.stop();
-    this.goNextRoom(this.floorPos, direction);
+    this.goNextRoom(this.floorPos, direction, true);
   }
 
   drawOrbit(renderer, scene, camera, light) {

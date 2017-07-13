@@ -15,7 +15,7 @@ export default class Word extends React.Component {
   render() {
     const { width, height } = this.state.dimensions;
 
-    let styles = {
+    const styles = {
       word: {
         listStyleType: 'none',
         position: 'absolute',
@@ -24,12 +24,30 @@ export default class Word extends React.Component {
         fontSize: this.props.fontSize + 'px',
       }
     };
-    let word = this.props.word;
-    let onClickWord = (event) => {
+    const word = this.props.word;
+    const onClickWord = (event) => {
       this.props.onClickWord(word.text);
       event.preventDefault();
     };
+
+    let imgSize = 64;
+    if (this.props.fontSize < 16) {
+      imgSize = 40;
+    }
+
     let coreClass = 'word-core-' + this.props.coreFirstGroup;
+    let imgRoot = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/words/';
+
+    let wordContent;
+    if (this.props.showImage && word.imageExts.size > 0) {
+      wordContent = (
+        <a href="#" className="word" onClick={onClickWord}><img src={word.imageURL(0)} style={{width: imgSize, height: imgSize, position: 'relative', top: -20}} /></a>
+      );
+    } else {
+      wordContent = (
+          <a href="#" className="word" onClick={onClickWord}><span className="word-prefix">{word.prefix}</span><span className={coreClass}>{word.core}</span><span className="word-suffix">{word.suffix}</span></a>
+      );
+    }
 
     return (
       <Measure
@@ -37,9 +55,7 @@ export default class Word extends React.Component {
           this.setState({dimensions})
         }}
       >
-        <li className="word" style={styles.word}>
-          <a href="#" className="word" onClick={onClickWord}><span className="word-prefix">{word.prefix}</span><span className={coreClass}>{word.core}</span><span className="word-suffix">{word.suffix}</span></a>
-        </li>
+        <li className="word" style={styles.word}>{wordContent}</li>
       </Measure>
     );
   }

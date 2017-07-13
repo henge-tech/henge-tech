@@ -13,5 +13,9 @@ export const execWordBehavior = (word, wordBehaviorType, wordSearchKeyword) => {
   return { type: types.EXEC_WORD_BEHAVIOR };
 };
 
+export const toggleCircleImages = () => {
+  return { type: types.TOGGLE_CIRCLE_IMAGES };
+}
+
 export const switchWordBehavior = (name) => ({ type: types.SWITCH_WORD_BEHAVIOR, name });
 export const updateWordSearchKeyword = (keyword) => ({ type: types.UPDATE_WORD_SEARCH_KEYWORD, keyword });

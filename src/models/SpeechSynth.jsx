@@ -98,7 +98,7 @@ class SpeechSynth {
       if (wordsSequence.size > this.cursor + 1) {
         this.speakSequence(wordsSequence, this.cursor + 1);
       } else {
-        this.speakingSequence = false;
+        this.speakSequence(wordsSequence, 0);
       }
     };
     this.speak(wordsSequence.get(this.cursor), -1, onEnd);

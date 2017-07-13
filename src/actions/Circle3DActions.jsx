@@ -10,7 +10,7 @@ export const exit3DMode = () => {
   return { type: types.CIRCLE_MODE };
 }
 
-export const goNextRoom = (floorPos, direction) => {
+export const goNextRoom = (floorPos, direction, threeD) => {
   if (direction == 'back') {
     const floorNum = floorData.floor;
     const words = Word.createFloorIndex();
@@ -34,5 +34,5 @@ export const goNextRoom = (floorPos, direction) => {
   const circleData = floorData.circles[floorPos];
   const pattern = circleData.pattern;
   const words = Word.createListFromArray(pattern, circleData.words, circleData.imageExts, true);
-  return { type: types.GO_NEXT_ROOM, floorPos, pattern, words };
+  return { type: types.GO_NEXT_ROOM, floorPos, pattern, words, threeD };
 }

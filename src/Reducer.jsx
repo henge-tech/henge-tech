@@ -58,8 +58,12 @@ const circle =  (state = {}, action) => {
       storyWordToggles: action.toggles
     });
   case types.GO_NEXT_ROOM:
+    let mode = 'circle';
+    if (action.threeD) {
+      mode = '3d';
+    }
     return Object.assign({}, state, {
-      mode: '3d',
+      mode: mode,
       pattern: action.pattern,
       words: action.words,
       floorPos: action.floorPos,
@@ -72,6 +76,10 @@ const circle =  (state = {}, action) => {
       words: action.words,
       floorPos: 0,
       storyLines: null,
+    });
+  case types.TOGGLE_CIRCLE_IMAGES:
+    return Object.assign({}, state, {
+      showImage: !state.showImage
     });
   default:
     return state;

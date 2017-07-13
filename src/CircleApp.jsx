@@ -35,6 +35,7 @@ const initialState = {
     storyLines: null,
     storyWordToggles: new StoryWordToggles(),
     floorPos: floorPos,
+    showImage: true,
   }
 };
 

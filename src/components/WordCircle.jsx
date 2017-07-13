@@ -40,6 +40,7 @@ export default class WordCircle extends React.Component {
           fontSize={fontSize}
           onClickWord={this.props.onClickWord}
           coreFirstGroup={coreFirstGroup}
+          showImage={this.props.showImage}
           />
       );
     }

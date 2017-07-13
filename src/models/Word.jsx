@@ -39,6 +39,18 @@ export default class Word extends WordRecord {
     return new Word(params, true);
   }
 
+  encodeS3Key(str) {
+    return str.replace(/[^-a-zA-Z0-9]/g, (c) => {
+      return '_' + c.charCodeAt(0).toString(16).toUpperCase();
+    });
+  }
+
+  imageURL(index) {
+    const imageBaseName = this.encodeS3Key(this.text);
+    const baseURL = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/words/';
+    return baseURL + imageBaseName + '.' + this.imageExts.get(index);
+  }
+
   static splitAffix(pattern, text) {
     let rex;
     if (Word.patternRex[pattern]) {

@@ -11,7 +11,8 @@ const mapStateToProps = (state) => {
     pattern: state.circle.pattern,
     wordBehaviorType: state.circle.wordBehaviorType,
     wordSearchKeyword: state.circle.wordSearchKeyword,
-    floorPos: state.circle.floorPos
+    floorPos: state.circle.floorPos,
+    showImage: state.circle.showImage,
   }
 }
 
@@ -19,6 +20,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onClickSpeakButton: (words, part) => {
       dispatch(actions.speakWords(words, part))
+    },
+    onClickImageButton: () => {
+      dispatch(actions.toggleCircleImages())
     },
     onClickWord: (word, wordBehaviorType, wordSearchKeyword) => {
       dispatch(actions.execWordBehavior(word, wordBehaviorType, wordSearchKeyword))
@@ -29,8 +33,8 @@ const mapDispatchToProps = (dispatch) => {
     onClick3DBackButton: () => {
       dispatch(actions.exit3DMode());
     },
-    goNextRoom: (floorPos, direction) => {
-      dispatch(actions.goNextRoom(floorPos, direction));
+    goNextRoom: (floorPos, direction, threeD) => {
+      dispatch(actions.goNextRoom(floorPos, direction, threeD));
     }
   }
 }

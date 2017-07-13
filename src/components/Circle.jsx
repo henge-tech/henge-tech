@@ -15,7 +15,7 @@ export default class Circle extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    const keys = ['width', 'height', 'mode', 'floorPos'];
+    const keys = ['width', 'height', 'mode', 'floorPos', 'showImage'];
     for (let i = 0; i < keys.length; i++) {
       if (this.props[keys[i]] != nextProps[keys[i]]) {
         return true;
@@ -107,6 +107,10 @@ export default class Circle extends React.Component {
       this.props.onClickWord(word, this.props.wordBehaviorType, this.props.wordSearchKeyword);
     }
 
+    const onClickMoveButton = (direction) => {
+      this.props.goNextRoom(this.props.floorPos, direction, false);
+    }
+
     return (
       <div style={styles.container} className="container">
         <SpeakButtons
@@ -114,6 +118,8 @@ export default class Circle extends React.Component {
           r={r}
           words={this.props.words}
           onClickSpeakButton={this.props.onClickSpeakButton}
+          onClickImageButton={this.props.onClickImageButton}
+          onClickMoveButton={onClickMoveButton}
           />
         <WordCircle
           center={center}
@@ -121,6 +127,7 @@ export default class Circle extends React.Component {
           words={this.props.words}
           pattern={this.props.pattern}
           onClickWord={onClickWord}
+          showImage={this.props.showImage}
           />
         <WordBehaviorListContainer />
         <CirclePageNavBar />
