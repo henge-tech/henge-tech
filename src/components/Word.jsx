@@ -30,10 +30,7 @@ export default class Word extends React.Component {
       event.preventDefault();
     };
 
-    let imgSize = 64;
-    if (this.props.fontSize < 16) {
-      imgSize = 40;
-    }
+    let imageSize = this.props.imageSize;
 
     let coreClass = 'word-core-' + this.props.coreFirstGroup;
     let imgRoot = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/words/';
@@ -41,7 +38,7 @@ export default class Word extends React.Component {
     let wordContent;
     if (this.props.showImage && word.imageExts.size > 0) {
       wordContent = (
-        <a href="#" className="word" onClick={onClickWord}><img src={word.imageURL(0)} style={{width: imgSize, height: imgSize, position: 'relative', top: -20}} /></a>
+        <a href="#" className="word" onClick={onClickWord}><img src={word.imageURL(0)} style={{width: imageSize, height: imageSize, position: 'relative', top: -20}} /></a>
       );
     } else {
       wordContent = (
