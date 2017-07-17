@@ -51,6 +51,13 @@ export default class Word extends WordRecord {
     return baseURL + imageBaseName + '.' + this.imageExts.get(index);
   }
 
+  thumbURL(index) {
+    const imageBaseName = this.encodeS3Key(this.text);
+    const baseURL = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/';
+    // const baseURL = '/thumbs/';
+    return baseURL + imageBaseName + '.' + this.imageExts.get(index);
+  }
+
   static splitAffix(pattern, text) {
     let rex;
     if (Word.patternRex[pattern]) {
