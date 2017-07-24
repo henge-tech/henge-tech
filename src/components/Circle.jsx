@@ -29,12 +29,12 @@ export default class Circle extends React.Component {
 
     let center = { x: this.props.width / 2 };
     let r = center.x * 0.8;
-    if (r > 240) {
-      r = 240;
-    } else if (r < 120) {
-      r = 120;
+    if (r > 256) {
+      r = 256;
+    } else if (r < 128) {
+      r = 128;
     }
-    center.y = r + 90;
+    center.y = r + 120;
 
     if (this.props.mode == 'circle') {
       return this.renderCircle(center, r);

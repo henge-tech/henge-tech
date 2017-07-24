@@ -15,33 +15,46 @@ export default class Word extends React.Component {
   render() {
     const { width, height } = this.state.dimensions;
 
-    const styles = {
-      word: {
-        listStyleType: 'none',
-        position: 'absolute',
-        top: this.props.y + 'px',
-        left: this.props.x - width / 2.0 + 'px',
-        fontSize: this.props.fontSize + 'px',
-      }
-    };
     const word = this.props.word;
     const onClickWord = (event) => {
-      this.props.onClickWord(word.text);
-      event.preventDefault();
+      if (this.props.mode == 'circleIndex') {
+        this.props.onClickMoveButton(this.props.word.index);
+      } else {
+        this.props.onClickWord(word.text);
+        event.preventDefault();
+      }
     };
-
-    let imageSize = this.props.imageSize;
-
-    let coreClass = 'word-core-' + this.props.coreFirstGroup;
 
     let wordContent;
     if (this.props.showImage && word.imageExts.size > 0) {
+      let imageSize = this.props.imageSize;
+      let imageStyle = {
+        listStyleType: 'none',
+        position: 'absolute',
+        top: this.props.y - imageSize / 2.0 + 'px',
+        left: this.props.x - imageSize / 2.0 + 'px',
+        fontSize: this.props.fontSize + 'px',
+      };
+
       wordContent = (
-        <a href="#" className="word" onClick={onClickWord}><img src={word.thumbURL(0)} style={{width: imageSize, height: imageSize, position: 'relative', top: -20}} /></a>
+        <li className="word" style={imageStyle}>
+          <a href="#" className="word" onClick={onClickWord}><img src={word.thumbURL(0)} style={{width: imageSize, height: imageSize}} /></a>
+        </li>
       );
     } else {
+      let coreClass = 'word-core-' + this.props.coreFirstGroup;
+      let wordStyle = {
+        listStyleType: 'none',
+        position: 'absolute',
+        top: this.props.y - height / 2.0 + 'px',
+        left: this.props.x - width / 2.0 + 'px',
+        fontSize: this.props.fontSize + 'px',
+      };
+
       wordContent = (
+        <li className="word" style={wordStyle}>
           <a href="#" className="word" onClick={onClickWord}><span className="word-prefix">{word.prefix}</span><span className={coreClass}>{word.core}</span><span className="word-suffix">{word.suffix}</span></a>
+        </li>
       );
     }
 
@@ -51,7 +64,7 @@ export default class Word extends React.Component {
           this.setState({dimensions})
         }}
       >
-        <li className="word" style={styles.word}>{wordContent}</li>
+        {wordContent}
       </Measure>
     );
   }

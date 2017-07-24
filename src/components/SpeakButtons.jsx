@@ -3,29 +3,36 @@ import { Button, Glyphicon } from 'react-bootstrap';
 
 export default class SpeakButtons extends React.Component {
   render() {
-    let centerButtonMargin = 60;
+    const centerButtonMargin = 60;
+    const buttonSize = 30;
+    const d = buttonSize / 2.0;
 
     let styles = {
       speakButton: {
         position: 'absolute',
-        left: this.props.center.x - 15 + 'px',
-        top: this.props.center.y + 'px',
+        left: this.props.center.x - d + 'px',
+        top: this.props.center.y -d + 'px',
       },
       imageTextSwitchButton: {
         position: 'absolute',
-        left: this.props.center.x - 15 + 'px',
-        top: this.props.center.y - 60 + 'px',
+        left: this.props.center.x - d + 'px',
+        top: this.props.center.y - d - centerButtonMargin + 'px',
       },
       navArrowButton: [
         {
           position: 'absolute',
-          left: this.props.center.x - 15 - centerButtonMargin + 'px',
-          top: this.props.center.y + 'px',
+          left: this.props.center.x - d - centerButtonMargin + 'px',
+          top: this.props.center.y - d + 'px',
         },
         {
           position: 'absolute',
-          left: this.props.center.x - 15 + centerButtonMargin + 'px',
-          top: this.props.center.y + 'px',
+          left: this.props.center.x - d + centerButtonMargin + 'px',
+          top: this.props.center.y - d + 'px',
+        },
+        {
+          position: 'absolute',
+          left: this.props.center.x - d + 'px',
+          top: this.props.center.y - d + centerButtonMargin + 'px',
         },
       ],
 
@@ -33,13 +40,57 @@ export default class SpeakButtons extends React.Component {
     };
 
     let diff = [[1, -1], [1, 1], [-1, 1], [-1, -1]];
+
     for (let i = 0; i < 4; i++) {
-      let d = 250;
+      let left = this.props.center.x + this.props.r * diff[i][0] - d;
+      let top  = this.props.center.y + this.props.r * diff[i][1] - d;
       styles.partialSpeakButtons[i] = {
         position: 'absolute',
-        left: this.props.center.x + this.props.r * diff[i][0] + 'px',
-        top:  this.props.center.y + this.props.r * diff[i][1] + 'px',
+        left: left + 'px',
+        top:  top + 'px',
       }
+    }
+
+    let buttonDown;
+    let buttonLeft;
+    let buttonRight;
+    if (this.props.mode == 'circle') {
+      buttonLeft = (
+        <Button
+            onClick={() => this.props.onClickMoveButton('left')}
+            style={styles.navArrowButton[0]}
+            className="btn-circle"
+          ><Glyphicon glyph="triangle-left" /></Button>
+      );
+      buttonRight = (
+        <Button
+            onClick={() => this.props.onClickMoveButton('right')}
+            style={styles.navArrowButton[1]}
+            className="btn-circle"
+          ><Glyphicon glyph="triangle-right" /></Button>
+      );
+      buttonDown = (
+        <Button
+          onClick={() => this.props.onClickMoveButton('back')}
+            style={styles.navArrowButton[2]}
+            className="btn-circle"
+          ><Glyphicon glyph="triangle-bottom" /></Button>
+      );
+    } else {
+      buttonLeft = (
+        <Button
+            onClick={() => this.props.onClickMoveButton('left')}
+            style={styles.navArrowButton[0]}
+            className="btn-circle"
+          ><Glyphicon glyph="triangle-top" /></Button>
+      );
+      buttonRight = (
+        <Button
+            onClick={() => this.props.onClickMoveButton('right')}
+            style={styles.navArrowButton[1]}
+            className="btn-circle"
+          ><Glyphicon glyph="triangle-bottom" /></Button>
+      );
     }
 
     return (
@@ -54,16 +105,10 @@ export default class SpeakButtons extends React.Component {
             style={styles.imageTextSwitchButton}
             className="btn-circle"
           ><Glyphicon glyph="picture" /></Button>
-        <Button
-            onClick={() => this.props.onClickMoveButton('left')}
-            style={styles.navArrowButton[0]}
-            className="btn-circle"
-          ><Glyphicon glyph="triangle-left" /></Button>
-        <Button
-            onClick={() => this.props.onClickMoveButton('right')}
-            style={styles.navArrowButton[1]}
-            className="btn-circle"
-          ><Glyphicon glyph="triangle-right" /></Button>
+
+        {buttonLeft}
+        {buttonRight}
+        {buttonDown}
 
         <Button
             onClick={() => this.props.onClickSpeakButton(this.props.words, 0)}
@@ -84,8 +129,9 @@ export default class SpeakButtons extends React.Component {
             onClick={() => this.props.onClickSpeakButton(this.props.words, 3)}
             style={styles.partialSpeakButtons[3]}
             className="btn-circle"
-          ><Glyphicon glyph="volume-up" /></Button>
+        ><Glyphicon glyph="volume-up" /></Button>
       </div>
     );
+    // <div style={{background:'red', width:'1px', height:'1px',position:'absolute', top:this.props.center.y, left:this.props.center.x}}><img src="" width="1" height="1"/></div>
   }
 }

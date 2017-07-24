@@ -21,7 +21,7 @@ export default class WordCircle extends React.Component {
     } else if (fontSize < 12) {
       fontSize = 12;
     }
-    imageSize *= fontSize / 24;
+    imageSize *= r / 256;
 
     for (let i = 0; i < wordsCount; i++) {
       let word = this.props.words.get(i);
@@ -42,6 +42,7 @@ export default class WordCircle extends React.Component {
           word={word}
           x={x}
           y={y}
+          r={r}
           fontSize={fontSize}
           onClickWord={this.props.onClickWord}
           coreFirstGroup={coreFirstGroup}
