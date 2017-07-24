@@ -70,8 +70,12 @@ const circle =  (state = {}, action) => {
       storyLines: null,
     });
   case types.GO_INDEX_ROOM:
+    let indexMode = 'circleIndex';
+    if (action.threeD) {
+      indexMode = '3dIndex';
+    }
     return Object.assign({}, state, {
-      mode: '3dIndex',
+      mode: indexMode,
       pattern: 'floor ' + action.floorNum,
       words: action.words,
       floorPos: 0,

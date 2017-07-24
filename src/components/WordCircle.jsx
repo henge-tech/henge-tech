@@ -38,6 +38,7 @@ export default class WordCircle extends React.Component {
 
       wordList[i] = (
         <Word
+          mode={this.props.mode}
           key={'word-' + i}
           word={word}
           x={x}
@@ -45,6 +46,7 @@ export default class WordCircle extends React.Component {
           r={r}
           fontSize={fontSize}
           onClickWord={this.props.onClickWord}
+          onClickMoveButton={this.props.onClickMoveButton}
           coreFirstGroup={coreFirstGroup}
           showImage={this.props.showImage}
           imageSize={imageSize}

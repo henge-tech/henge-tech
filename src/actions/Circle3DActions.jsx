@@ -14,7 +14,7 @@ export const goNextRoom = (floorPos, direction, threeD) => {
   if (direction == 'back') {
     const floorNum = floorData.floor;
     const words = Word.createFloorIndex();
-    return { type: types.GO_INDEX_ROOM, floorNum, words };
+    return { type: types.GO_INDEX_ROOM, floorNum, words, threeD };
   }
 
   if (direction == 'left') {

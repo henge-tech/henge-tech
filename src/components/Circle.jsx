@@ -38,14 +38,16 @@ export default class Circle extends React.Component {
 
     if (this.props.mode == 'circle') {
       return this.renderCircle(center, r);
-    } else if (this.props.mode == 'story') {
-      return (
-        <StoryModeContainer />
-      );
+    } else if (this.props.mode == 'circleIndex') {
+      return this.renderCircle(center, r);
     } else if (this.props.mode == '3d') {
       return this.render3D('normal');
     } else if (this.props.mode == '3dIndex') {
       return this.render3D('index');
+    } else if (this.props.mode == 'story') {
+      return (
+        <StoryModeContainer />
+      );
     }
   }
 
@@ -114,6 +116,7 @@ export default class Circle extends React.Component {
     return (
       <div style={styles.container} className="container">
         <SpeakButtons
+          mode={this.props.mode}
           center={center}
           r={r}
           words={this.props.words}
@@ -122,11 +125,13 @@ export default class Circle extends React.Component {
           onClickMoveButton={onClickMoveButton}
           />
         <WordCircle
+          mode={this.props.mode}
           center={center}
           r={r}
           words={this.props.words}
           pattern={this.props.pattern}
           onClickWord={onClickWord}
+          onClickMoveButton={onClickMoveButton}
           showImage={this.props.showImage}
           />
         <WordBehaviorListContainer />
