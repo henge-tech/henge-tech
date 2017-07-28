@@ -76,7 +76,7 @@ export default class SpeakButtons extends React.Component {
             className="btn-circle"
           ><Glyphicon glyph="triangle-bottom" /></Button>
       );
-    } else {
+    } else if(false) {
       buttonLeft = (
         <Button
             onClick={() => this.props.onClickMoveButton('left')}
