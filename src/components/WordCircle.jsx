@@ -9,8 +9,6 @@ export default class WordCircle extends React.Component {
     let r = this.props.r;
     let ox = this.props.center.x;
     let oy = this.props.center.y;
-    let coreFirst = '';
-    let coreFirstGroup = 'b';
 
     let wordsCount = this.props.words.size;
     let fontSize = r * 0.1;
@@ -27,29 +25,22 @@ export default class WordCircle extends React.Component {
       let word = this.props.words.get(i);
       let x = Math.cos(unit * i - Math.PI / 2.0) * r + ox;
       let y = Math.sin(unit * i - Math.PI / 2.0) * r + oy;
-      if (word.core[0] !== coreFirst) {
-        coreFirst = word.core[0];
-        if (coreFirstGroup === 'a') {
-          coreFirstGroup = 'b';
-        } else {
-          coreFirstGroup = 'a';
-        }
-      }
 
       wordList[i] = (
         <Word
           mode={this.props.mode}
+
           key={'word-' + i}
+
           word={word}
           x={x}
           y={y}
           r={r}
           fontSize={fontSize}
+          imageSize={imageSize}
           onClickWord={this.props.onClickWord}
           onClickMoveButton={this.props.onClickMoveButton}
-          coreFirstGroup={coreFirstGroup}
           showImage={this.props.showImage}
-          imageSize={imageSize}
           />
       );
     }

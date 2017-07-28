@@ -45,7 +45,7 @@ export default class Word extends React.Component {
         </li>
       );
     } else {
-      let coreClass = 'word-core-' + this.props.coreFirstGroup;
+      let coreClass = 'word-core-a';
       let wordStyle = {
         listStyleType: 'none',
         position: 'absolute',
