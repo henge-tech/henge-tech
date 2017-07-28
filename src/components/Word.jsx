@@ -35,10 +35,13 @@ export default class Word extends React.Component {
         left: this.props.x - imageSize / 2.0 + 'px',
         fontSize: this.props.fontSize + 'px',
       };
-
+      let src = word.thumbURL(0);
+      if (false && this.props.mode != 'circleIndex' && Math.random() * 2 < 1) {
+        src = '/imgs/q.png';
+      }
       wordContent = (
         <li className="word" style={imageStyle}>
-          <a href="#" className="word" onClick={onClickWord}><img src={word.thumbURL(0)} style={{width: imageSize, height: imageSize}} /></a>
+          <a href="#" className="word" onClick={onClickWord}><img src={src} style={{width: imageSize, height: imageSize}} /></a>
         </li>
       );
     } else {
