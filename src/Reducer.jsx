@@ -1,7 +1,6 @@
 import I from 'immutable';
 import { combineReducers } from 'redux';
 import * as types from './ActionTypes.jsx';
-import StoryLine from './models/StoryLine.jsx';
 
 const window = (state = {}, action) => {
   switch (action.type) {
@@ -29,10 +28,6 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       wordSearchKeyword: action.keyword
     });
-  case types.STORY_MODE:
-    return Object.assign({}, state, {
-      mode: 'story'
-    });
   case types.START_3D_MODE:
     return Object.assign({}, state, {
       mode: '3d'
@@ -40,22 +35,6 @@ const circle =  (state = {}, action) => {
   case types.CIRCLE_MODE:
     return Object.assign({}, state, {
       mode: 'circle'
-    });
-  case types.STORY_FETCH_SUCCEEDED:
-    let storyLines =[];
-    let unit = state.words.size / 4;
-
-    action.story.forEach((line, i) => {
-      storyLines.push(new StoryLine(line, i, unit));
-    });
-    return Object.assign({}, state, {
-      storyLines: storyLines
-    });
-  case types.SPEAK_STORY_WORDS:
-    return state;
-  case types.TOGGLE_STORY_WORDS:
-    return Object.assign({}, state, {
-      storyWordToggles: action.toggles
     });
   case types.GO_NEXT_ROOM:
     let mode = 'circle';
@@ -67,7 +46,6 @@ const circle =  (state = {}, action) => {
       pattern: action.pattern,
       words: action.words,
       floorPos: action.floorPos,
-      storyLines: null,
     });
   case types.GO_INDEX_ROOM:
     let indexMode = 'circleIndex';
@@ -79,7 +57,6 @@ const circle =  (state = {}, action) => {
       pattern: 'floor ' + action.floorNum,
       words: action.words,
       floorPos: 0,
-      storyLines: null,
     });
   case types.TOGGLE_CIRCLE_IMAGES:
     return Object.assign({}, state, {
@@ -92,16 +69,6 @@ const circle =  (state = {}, action) => {
 
 const index = (state = {}, action) => {
   switch (action.type) {
-  case types.STORY_INDEX_FETCH_SUCCEEDED:
-    const newIndex = state.index.map((index) => {
-      if (action.stories.indexOf(index.pattern) >= 0) {
-        return index.set('hasStory', true);
-      }
-      return index;
-    });
-    return Object.assign({}, state, {
-      index: newIndex
-    });
   case types.CHANGE_INDEX_SELECTION:
     return Object.assign({}, state, {
       filter: action.filter,
@@ -121,22 +88,10 @@ const index = (state = {}, action) => {
   }
 }
 
-const storyIndex = (state = {}, action) => {
-  switch (action.type) {
-  case types.TOGGLE_STORY_INDEX_WORDS:
-    return  Object.assign({}, state, {
-      toggles: state.toggles.set(action.storyPos, action.toggles)
-    });
-  default:
-    return state;
-  }
-}
-
 const reducer = combineReducers({
   window,
   circle,
-  index,
-  storyIndex
+  index
 })
 
 export default reducer;

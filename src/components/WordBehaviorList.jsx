@@ -7,10 +7,6 @@ export default class WordBehaviorList extends React.Component {
     // console.log('render2');
     const onChangeBehavior = this.props.onChangeBehavior;
     const onChangeKeyword = this.props.onChangeKeyword;
-    const onClickStory = (e) => {
-      this.props.onClickStory();
-      e.preventDefault();
-    };
     let onClick3D = (e) => {
       this.props.onClick3D();
       e.preventDefault();
@@ -20,8 +16,6 @@ export default class WordBehaviorList extends React.Component {
       modeLinks: {
         width:'100%',
         marginTop: '3px'
-      },
-      storyModeButton: {
       },
       circleModeButton: {
         width:'100%',
@@ -34,24 +28,8 @@ export default class WordBehaviorList extends React.Component {
       {xsHidden: false, xs: 8, md: 6},
       {xsHidden: false, xs: 4, md: 3}
     ];
-    if (this.props.mode == 'circle') {
-      styles.circleModeButton.display = 'none';
-      cols[0].xsHidden = true;
-      cols[0].xs = 0;
-      if (!this.props.storyLines) {
-        styles.storyModeButton.display = 'none';
-        styles.circleModeButton.display = 'none';
-      }
-    } else {
-      styles.storyModeButton.display = 'none';
-      cols[2].xsHidden = true;
-      cols[2].xs = 0;
-    }
-
-    let onClickCircleModeButton = (event) => {
-      this.props.onClickCircleModeButton();
-      event.preventDefault();
-    };
+    cols[0].xsHidden = true;
+    cols[0].xs = 0;
 
     const type = this.props.wordBehaviorType;
     return (
@@ -59,9 +37,6 @@ export default class WordBehaviorList extends React.Component {
         <Grid>
         <Row>
         <Col xsHidden={cols[0].xsHidden} xs={cols[0].xs} md={cols[0].md}>
-          <div style={styles.circleModeButton}>
-            <a href="#" onClick={onClickCircleModeButton}>&#x25C2; Circle</a>
-          </div>
         </Col>
         <Col xsHidden={cols[1].xsHidden} xs={cols[1].xs} md={cols[1].md}>
           <label><input name="behaviorType" type="radio"
@@ -101,7 +76,6 @@ export default class WordBehaviorList extends React.Component {
         </Col>
         <Col xsHidden={cols[2].xsHidden} xs={cols[2].xs} md={cols[2].md}>
         <div style={styles.modeLinks} className='text-right'>
-        <a href="#" style={styles.storyModeButton} onClick={onClickStory}>Story &#x25B8;</a><br/>
         <a href="#" onClick={onClick3D}>3D &#x25B8;</a>
         </div>
         </Col>

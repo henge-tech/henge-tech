@@ -8,9 +8,6 @@ import Word from './models/Word.jsx';
 import CircleIndexEntry from './models/CircleIndexEntry.jsx';
 import CircleIndexFilter from './models/CircleIndexFilter.jsx';
 
-import createSagaMiddleware from 'redux-saga';
-import saga from './Saga.jsx';
-
 import reducer from './Reducer.jsx';
 import CircleIndexContainer from './components/CircleIndexContainer.jsx';
 
@@ -31,10 +28,9 @@ const len = patterns.length;
 for (let i = 0; i < len; i++) {
   const pattern = patterns[i].textContent;
   const list = Word.createListFromArray(pattern, allWords[i], [], true);
-  const pickup = patterns[i].getAttribute('data-pickup') == '1';
 
   allWordsList = allWordsList.push(list);
-  indexEntries = indexEntries.push(new CircleIndexEntry(pattern, i, allWords[i], pickup));
+  indexEntries = indexEntries.push(new CircleIndexEntry(pattern, i, allWords[i]));
   selected = selected.push(new I.List([i, 0]));
 }
 
@@ -48,9 +44,7 @@ const initialState = {
   }
 };
 
-const sagaMiddleware = createSagaMiddleware()
-const store = createStore(reducer, initialState, applyMiddleware(sagaMiddleware));
-sagaMiddleware.run(saga);
+const store = createStore(reducer, initialState);
 
 render(
   <Provider store={store}>
@@ -59,5 +53,4 @@ render(
   circleIndexApp
 );
 
-store.dispatch({type: 'STORY_INDEX_FETCH_REQUESTED', lang: 'ja'});
 console.log(new Date() - d1);

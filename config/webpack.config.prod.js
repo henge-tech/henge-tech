@@ -5,7 +5,6 @@ module.exports = {
   entry: {
     CircleApp: './src/CircleApp.jsx',
     CircleIndexApp: './src/CircleIndexApp.jsx',
-    StoryIndexApp: './src/StoryIndexApp.jsx',
   },
 
   output: {

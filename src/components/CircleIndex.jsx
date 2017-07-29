@@ -54,21 +54,6 @@ export default class CircleIndex extends React.Component {
           </svg>
       );
 
-      if (indexEntry.hasStory) {
-        patternAttr.push(
-          <svg role="img" style={iconStyle} key={'index-icon-story-' + circleID}>
-            <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/imgs/svg/sprite.svg#s"></use>
-          </svg>
-);
-      }
-      if (indexEntry.pickup) {
-        patternAttr.push(
-          <svg role="img" style={iconStyle} key={'index-icon-pickup-' + circleID}>
-            <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/imgs/svg/sprite.svg#p"></use>
-          </svg>
-        );
-      }
-
       const onClickSpeakButton = (e) => {
         // indexEntry.index
         this.props.onClickSpeakButton(words);
@@ -113,13 +98,10 @@ export default class CircleIndex extends React.Component {
         </FormGroup>
         <ul className="index-filters-list">
           <li className={filterItemClass('all')}><a onClick={(e) => { this.onClickFilter(e, 'all') }} href="#">All</a></li>
-          <li className={filterItemClass('pickup')}><a onClick={(e) => { this.onClickFilter(e, 'pickup') }} href="#">Pickup</a></li>
-          <li className={filterItemClass('story')}><a onClick={(e) => { this.onClickFilter(e, 'story') }} href="#">Story</a></li>
           <li className={filterItemClass('8')}><a onClick={(e) => { this.onClickFilter(e, '8') }} href="#">8</a></li>
           <li className={filterItemClass('12')}><a onClick={(e) => { this.onClickFilter(e, '12') }} href="#">12</a></li>
           <li className={filterItemClass('16')}><a onClick={(e) => { this.onClickFilter(e, '16') }} href="#">16</a></li>
           <li className={filterItemClass('20')}><a onClick={(e) => { this.onClickFilter(e, '20') }} href="#">20</a></li>
-          <li className={filterItemClass('star')}><a onClick={(e) => { this.onClickFilter(e, 'all') }} href="#"><Glyphicon glyph="star" /></a></li>
           <li className={filterItemClass('paly')}><a onClick={(e) => { this.onClickToggleSpeakAll(e) }} href="#"><Glyphicon glyph={speakAllGlyph} /></a></li>
         </ul>
         <ol style={{fontSize: '1.25em'}}>

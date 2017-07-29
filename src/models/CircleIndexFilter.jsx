@@ -45,8 +45,6 @@ export default class CircleIndexFilter extends CircleIndexFilterRecord {
       const words = allWords.get(indexEntry.index);
       if (this.filter == 'pickup') {
         if (!indexEntry.pickup) return a;
-      } else if (this.filter == 'story') {
-        if (!indexEntry.hasStory) return a;
       } else if (this.filter == '8') {
         if (words.size != 8) return a;
       } else if (this.filter == '12') {

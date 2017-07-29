@@ -28,7 +28,6 @@ export default class CirclePageNavBar extends React.Component {
         <Navbar.Collapse>
           <Nav>
             <NavItem href="/circles/" onClick={this.openPage}>Circles</NavItem>
-            <NavItem href="/stories/ja/" onClick={this.openPage}>Stories</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -3,7 +3,6 @@ import SpeakButtons from './SpeakButtons.jsx';
 import WordCircle from './WordCircle.jsx';
 import WordBehaviorListContainer from './WordBehaviorListContainer.jsx';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
-import StoryModeContainer from './StoryModeContainer.jsx';
 import { Button, Glyphicon } from 'react-bootstrap';
 import Circle3DRenderer from './Circle3DRenderer.jsx';
 
@@ -44,10 +43,6 @@ export default class Circle extends React.Component {
       return this.render3D('normal');
     } else if (this.props.mode == '3dIndex') {
       return this.render3D('index');
-    } else if (this.props.mode == 'story') {
-      return (
-        <StoryModeContainer />
-      );
     }
   }
 
