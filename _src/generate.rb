@@ -69,9 +69,9 @@ class Generator
         'floor' => i + 1,
         'circles' => data
       }
-      floor_file = File.expand_path("../../docs/floors/#{i + 1}.js", __FILE__)
+      floor_file = File.expand_path("../../docs/floors/#{i + 1}.json", __FILE__)
       File.open(floor_file, 'w') do |out|
-        out << 'var floorData = ' + JSON.dump(json) + ';'
+        out << JSON.dump(json)
       end
     end
   end
