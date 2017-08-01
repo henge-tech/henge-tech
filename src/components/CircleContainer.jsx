@@ -4,15 +4,10 @@ import * as actions from '../actions/Actions.jsx'
 
 const mapStateToProps = (state) => {
   return {
-    mode: state.circle.mode,
     width: state.window.width,
     height: state.window.height,
-    words: state.circle.words,
-    pattern: state.circle.pattern,
-    wordBehaviorType: state.circle.wordBehaviorType,
-    wordSearchKeyword: state.circle.wordSearchKeyword,
-    floorPos: state.circle.floorPos,
-    showImage: state.circle.showImage,
+
+    floorStatus: state.circle.floorStatus,
   }
 }
 
@@ -33,8 +28,8 @@ const mapDispatchToProps = (dispatch) => {
     onClick3DBackButton: () => {
       dispatch(actions.exit3DMode());
     },
-    goNextRoom: (floorPos, direction, threeD) => {
-      dispatch(actions.goNextRoom(floorPos, direction, threeD));
+    goNextRoom: (floorStatus, direction, threeD) => {
+      dispatch(actions.goNextRoom(floorStatus, direction, threeD));
     }
   }
 }

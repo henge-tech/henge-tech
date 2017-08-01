@@ -87,7 +87,7 @@ export default class Word extends WordRecord {
     }));
   }
 
-  static createFloorIndex() {
+  static createFloorIndex(floorData) {
     const words = [];
     const patterns = [];
     const imgExts = [];

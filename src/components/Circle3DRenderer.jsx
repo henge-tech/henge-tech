@@ -4,16 +4,18 @@ import speechSynth from '../models/SpeechSynth.jsx';
 import I from 'immutable';
 
 export default class Circle3DRenderer {
-  constructor(roomType, pattern, words, w, h, floorPos, goNextRoom) {
-    this.roomType = roomType;
-    this.pattern = pattern;
-    this.words = words;
+  constructor(w, h, floorStatus, goNextRoom) {
     this.w = w;
     this.h = h;
+    this.floorStatus = floorStatus;
+    this.goNextRoom = goNextRoom;
+
+    this.floorData = floorStatus.get('floorData');
+    this.words = floorStatus.get('words');
+    this.floorPos = floorStatus.get('floorPos');
+
     this.stage = document.getElementById('stage');
     this.removeEventListeners = null;
-    this.floorPos = floorPos;
-    this.goNextRoom = goNextRoom;
   }
 
   createRenderer() {
@@ -114,7 +116,7 @@ export default class Circle3DRenderer {
   }
 
   addBoards(scene) {
-    scene.add(this.createRoomLabel(this.pattern, 'centerlabel', 60));
+    scene.add(this.createRoomLabel(this.floorStatus.get('pattern'), 'centerlabel', 60));
 
     /*
     const xGeometry  = new THREE.CubeGeometry(1, 1, 1);
@@ -347,7 +349,7 @@ export default class Circle3DRenderer {
       if (i % (this.words.size / 4) == 0) {
         g2.getObjectByName('wall').material = wallMaterial2;
       }
-      g2.add(this.createRoomLabel(floorData.circles[i].pattern, 'corridorLabel', 30, -30));
+      g2.add(this.createRoomLabel(this.floorData.circles[i].pattern, 'corridorLabel', 30, -30));
 
       g2.getObjectByName('door').userData.direction = i;
 
@@ -412,9 +414,9 @@ export default class Circle3DRenderer {
 
     let prevIndex = this.floorPos - 1;
     if (prevIndex < 0) {
-      prevIndex = floorData.circles.length - 1;
+      prevIndex = this.floorData.circles.length - 1;
     }
-    g2.add(this.createRoomLabel(floorData.circles[prevIndex].pattern, 'corridorLabel', 30, -30));
+    g2.add(this.createRoomLabel(this.floorData.circles[prevIndex].pattern, 'corridorLabel', 30, -30));
 
     g2.position.set(0,0,0);
     g2.rotation.y = Math.PI / 2;
@@ -422,7 +424,7 @@ export default class Circle3DRenderer {
 
     // Back
     g2 = group.clone();
-    g2.add(this.createRoomLabel(floorData.floor, 'corridorLabel', 30, -30));
+    g2.add(this.createRoomLabel(this.floorData.floor, 'corridorLabel', 30, -30));
     g2.getObjectByName('door').userData.direction = 'back';
     g2.position.set(0,0,0);
     g2.rotation.y = Math.PI;
@@ -431,10 +433,10 @@ export default class Circle3DRenderer {
     // Right
     g2 = group.clone();
     let nextIndex = this.floorPos + 1;
-    if (nextIndex >= floorData.circles.length) {
+    if (nextIndex >= this.floorData.circles.length) {
       nextIndex = 0;
     }
-    g2.add(this.createRoomLabel(floorData.circles[nextIndex].pattern, 'corridorLabel', 30, -30));
+    g2.add(this.createRoomLabel(this.floorData.circles[nextIndex].pattern, 'corridorLabel', 30, -30));
 
     g2.getObjectByName('door').userData.direction = 'right';
     g2.position.set(0,0,0);
@@ -583,8 +585,8 @@ export default class Circle3DRenderer {
         // console.log(objs[i].object.name);
         if (objs[i].object.name == 'board') {
           const w = objs[i].object.userData.word;
-          if (this.roomType == 'index') {
-            speechSynth.speak(new I.List(floorData.circles[w.index].words), -1);
+          if (this.floorStatus.roomType() == 'index') {
+            speechSynth.speak(new I.List(this.floorData.circles[w.index].words), -1);
           } else if (objs[i].distance < 120) {
             speechSynth.speakWord(w.text);
           } else {
@@ -644,7 +646,7 @@ export default class Circle3DRenderer {
 
     const lights = this.addLights(scene);
     this.addBoards(scene);
-    if (this.roomType == 'index') {
+    if (this.floorStatus.roomType() == 'index') {
       this.addIndexRoom(scene);
     } else {
       this.addRoom(scene);

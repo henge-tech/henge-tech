@@ -4,12 +4,13 @@ import Word from './Word.jsx';
 export default class WordCircle extends React.Component {
 
   render() {
-    let unit = Math.PI * 2.0 / this.props.words.size;
-    let r = this.props.r;
-    let ox = this.props.center.x;
-    let oy = this.props.center.y;
+    const r = this.props.r;
+    const ox = this.props.center.x;
+    const oy = this.props.center.y;
 
-    let wordsCount = this.props.words.size;
+    const words = this.props.floorStatus.get('words');
+    const wordsCount = words.size;
+    const unit = Math.PI * 2.0 / wordsCount;
 
     let fontSize = r * 0.1;
     if (fontSize > 24) {
@@ -23,14 +24,14 @@ export default class WordCircle extends React.Component {
 
     let items = [];
     for (let i = 0; i < wordsCount; i++) {
-      let word = this.props.words.get(i);
+      let word = words.get(i);
       let x = Math.cos(unit * i - Math.PI / 2.0) * r + ox;
       let y = Math.sin(unit * i - Math.PI / 2.0) * r + oy;
 
       items[i] = (
         <Word
-          mode={this.props.mode}
-          showImage={this.props.showImage}
+          mode={this.props.floorStatus.get('mode')}
+          showImage={this.props.floorStatus.get('showImage')}
 
           key={'word-' + i}
 

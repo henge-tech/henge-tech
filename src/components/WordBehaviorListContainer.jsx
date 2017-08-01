@@ -4,8 +4,7 @@ import * as actions from '../actions/Actions.jsx';
 
 const mapStateToProps = (state) => {
   return {
-    wordBehaviorType: state.circle.wordBehaviorType,
-    wordSearchKeyword: state.circle.wordSearchKeyword,
+    floorStatus: state.circle.floorStatus,
     mode: state.circle.mode,
   }
 }

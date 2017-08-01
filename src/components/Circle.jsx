@@ -14,7 +14,7 @@ export default class Circle extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    const keys = ['width', 'height', 'mode', 'floorPos', 'showImage'];
+    const keys = ['width', 'height', 'floorStatus'];
     for (let i = 0; i < keys.length; i++) {
       if (this.props[keys[i]] != nextProps[keys[i]]) {
         return true;
@@ -34,15 +34,14 @@ export default class Circle extends React.Component {
       r = 128;
     }
     center.y = r + 120;
+    const mode = this.props.floorStatus.get('mode');
 
-    if (this.props.mode == 'circle') {
+    if (mode == 'circle') {
       return this.renderCircle(center, r);
-    } else if (this.props.mode == 'circleIndex') {
+    } else if (mode == 'circleIndex') {
       return this.renderCircle(center, r);
-    } else if (this.props.mode == '3d') {
-      return this.render3D('normal');
-    } else if (this.props.mode == '3dIndex') {
-      return this.render3D('index');
+    } else if (mode == '3d' || mode == '3dIndex') {
+      return this.render3D();
     }
   }
 
@@ -56,7 +55,7 @@ export default class Circle extends React.Component {
     }
   }
 
-  render3D(roomType) {
+  render3D() {
     let w = this.props.width;
     let h = this.props.height;
 
@@ -69,7 +68,8 @@ export default class Circle extends React.Component {
     };
 
     this.render3DTimer = setTimeout(() => {
-      this.circle3dRenderer = new Circle3DRenderer(roomType, this.props.pattern, this.props.words, w, h, this.props.floorPos, this.props.goNextRoom);
+      this.circle3dRenderer =
+        new Circle3DRenderer(w, h, this.props.floorStatus, this.props.goNextRoom);
       this.circle3dRenderer.execute();
     }, 200);
 
@@ -82,7 +82,7 @@ export default class Circle extends React.Component {
             className="btn-circle"
           ><Glyphicon glyph="chevron-left" /></Button>
         <Button
-            onClick={() => this.props.onClickSpeakButton(this.props.words, -1)}
+            onClick={() => this.props.onClickSpeakButton(this.props.floorStatus.get('words'), -1)}
             style={styles.buttons1}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
@@ -100,34 +100,33 @@ export default class Circle extends React.Component {
     let styles = {
       container: {position: 'relative', height: '100px', width: '100%'},
     };
+
     const onClickWord = (word) => {
-      this.props.onClickWord(word, this.props.wordBehaviorType, this.props.wordSearchKeyword);
+      const type = this.props.floorStatus.get('wordBehaviorType');
+      const keyword = this.props.floorStatus.get('wordSearchKeyword');
+      this.props.onClickWord(word, type, keyword);
     }
 
     const onClickMoveButton = (direction) => {
-      this.props.goNextRoom(this.props.floorPos, direction, false);
+      this.props.goNextRoom(this.props.floorStatus, direction, false);
     }
 
     return (
       <div style={styles.container} className="container">
         <SpeakButtons
-          mode={this.props.mode}
           center={center}
           r={r}
-          words={this.props.words}
+          floorStatus={this.props.floorStatus}
           onClickSpeakButton={this.props.onClickSpeakButton}
           onClickImageButton={this.props.onClickImageButton}
-          onClickMoveButton={onClickMoveButton}
+          goNextRoom={this.props.goNextRoom}
           />
         <WordCircle
-          mode={this.props.mode}
           center={center}
           r={r}
-          words={this.props.words}
-          pattern={this.props.pattern}
+          floorStatus={this.props.floorStatus}
           onClickWord={onClickWord}
           onClickMoveButton={onClickMoveButton}
-          showImage={this.props.showImage}
           />
         <WordBehaviorListContainer />
         <CirclePageNavBar />

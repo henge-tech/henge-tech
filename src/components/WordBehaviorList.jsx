@@ -31,7 +31,7 @@ export default class WordBehaviorList extends React.Component {
     cols[0].xsHidden = true;
     cols[0].xs = 0;
 
-    const type = this.props.wordBehaviorType;
+    const type = this.props.floorStatus.get('wordBehaviorType');
     return (
       <Well className="word-behaviors">
         <Grid>
@@ -51,7 +51,8 @@ export default class WordBehaviorList extends React.Component {
             onChange={() => onChangeBehavior('keyword')}
             checked={type === 'keyword'}
             /> + <input type="text" size="10"
-            value={this.props.wordSearchKeyword}
+            value={this.props.floorStatus.get('wordSearchKeyword')}
+            onFocus={(event) => onChangeBehavior('keyword')}
             onChange={(event) => onChangeKeyword(event.target.value)}/></label>
           <label><input name="behaviorType" type="radio"
             onChange={() => onChangeBehavior('webster')}

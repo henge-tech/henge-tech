@@ -39,11 +39,11 @@ export default class SpeakButtons extends React.Component {
       partialSpeakButtons: []
     };
 
-    let diff = [[1, -1], [1, 1], [-1, 1], [-1, -1]];
+    const diff = [[1, -1], [1, 1], [-1, 1], [-1, -1]];
 
     for (let i = 0; i < 4; i++) {
-      let left = this.props.center.x + this.props.r * diff[i][0] - d;
-      let top  = this.props.center.y + this.props.r * diff[i][1] - d;
+      const left = this.props.center.x + this.props.r * diff[i][0] - d;
+      const top  = this.props.center.y + this.props.r * diff[i][1] - d;
       styles.partialSpeakButtons[i] = {
         position: 'absolute',
         left: left + 'px',
@@ -54,24 +54,29 @@ export default class SpeakButtons extends React.Component {
     let buttonDown;
     let buttonLeft;
     let buttonRight;
-    if (this.props.mode == 'circle') {
+    const mode = this.props.floorStatus.get('mode');
+    const goNextRoom = (direction) => {
+      this.props.goNextRoom(this.props.floorStatus, direction, false);
+    };
+
+    if (mode == 'circle') {
       buttonLeft = (
         <Button
-            onClick={() => this.props.onClickMoveButton('left')}
+        onClick={() => goNextRoom('left')}
             style={styles.navArrowButton[0]}
             className="btn-circle"
           ><Glyphicon glyph="triangle-left" /></Button>
       );
       buttonRight = (
         <Button
-            onClick={() => this.props.onClickMoveButton('right')}
+            onClick={() => goNextRoom('right')}
             style={styles.navArrowButton[1]}
             className="btn-circle"
           ><Glyphicon glyph="triangle-right" /></Button>
       );
       buttonDown = (
         <Button
-          onClick={() => this.props.onClickMoveButton('back')}
+          onClick={() => goNextRoom('back')}
             style={styles.navArrowButton[2]}
             className="btn-circle"
           ><Glyphicon glyph="triangle-bottom" /></Button>
@@ -79,24 +84,25 @@ export default class SpeakButtons extends React.Component {
     } else if(false) {
       buttonLeft = (
         <Button
-            onClick={() => this.props.onClickMoveButton('left')}
+            onClick={() => goNextRoom('left')}
             style={styles.navArrowButton[0]}
             className="btn-circle"
           ><Glyphicon glyph="triangle-top" /></Button>
       );
       buttonRight = (
         <Button
-            onClick={() => this.props.onClickMoveButton('right')}
+            onClick={() => goNextRoom('right')}
             style={styles.navArrowButton[1]}
             className="btn-circle"
           ><Glyphicon glyph="triangle-bottom" /></Button>
       );
     }
 
+    const words = this.props.floorStatus.get('words');
     return (
       <div className="speak-buttons">
         <Button
-            onClick={() => this.props.onClickSpeakButton(this.props.words, -1)}
+            onClick={() => this.props.onClickSpeakButton(words, -1)}
             style={styles.speakButton}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
@@ -111,22 +117,22 @@ export default class SpeakButtons extends React.Component {
         {buttonDown}
 
         <Button
-            onClick={() => this.props.onClickSpeakButton(this.props.words, 0)}
+            onClick={() => this.props.onClickSpeakButton(words, 0)}
             style={styles.partialSpeakButtons[0]}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
-            onClick={() => this.props.onClickSpeakButton(this.props.words, 1)}
+            onClick={() => this.props.onClickSpeakButton(words, 1)}
             style={styles.partialSpeakButtons[1]}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
-            onClick={() => this.props.onClickSpeakButton(this.props.words, 2)}
+            onClick={() => this.props.onClickSpeakButton(words, 2)}
             style={styles.partialSpeakButtons[2]}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
-            onClick={() => this.props.onClickSpeakButton(this.props.words, 3)}
+            onClick={() => this.props.onClickSpeakButton(words, 3)}
             style={styles.partialSpeakButtons[3]}
             className="btn-circle"
         ><Glyphicon glyph="volume-up" /></Button>
