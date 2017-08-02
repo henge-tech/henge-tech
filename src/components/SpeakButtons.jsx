@@ -54,12 +54,12 @@ export default class SpeakButtons extends React.Component {
     let buttonDown;
     let buttonLeft;
     let buttonRight;
-    const mode = this.props.floorStatus.get('mode');
+    const roomType = this.props.floorStatus.roomType();
     const goNextRoom = (direction) => {
       this.props.goNextRoom(this.props.floorStatus, direction, false);
     };
 
-    if (mode == 'circle') {
+    if (roomType == 'circle') {
       buttonLeft = (
         <Button
         onClick={() => goNextRoom('left')}
@@ -81,17 +81,17 @@ export default class SpeakButtons extends React.Component {
             className="btn-circle"
           ><Glyphicon glyph="triangle-bottom" /></Button>
       );
-    } else if(false) {
+    } else {
       buttonLeft = (
         <Button
-            onClick={() => goNextRoom('left')}
+            onClick={() => goNextRoom('up')}
             style={styles.navArrowButton[0]}
             className="btn-circle"
           ><Glyphicon glyph="triangle-top" /></Button>
       );
       buttonRight = (
         <Button
-            onClick={() => goNextRoom('right')}
+            onClick={() => goNextRoom('down')}
             style={styles.navArrowButton[1]}
             className="btn-circle"
           ><Glyphicon glyph="triangle-bottom" /></Button>

@@ -9,7 +9,3 @@ export const threeDMode = () => {
 export const exit3DMode = () => {
   return { type: types.CIRCLE_MODE };
 }
-
-export const goNextRoom = (floorStatus, direction) => {
-  return { type: types.GO_NEXT_ROOM, direction };
-}

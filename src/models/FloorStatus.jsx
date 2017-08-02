@@ -114,9 +114,30 @@ export default class FloorStatus extends FloorStatusRecord {
   }
 
   roomType() {
-    if (this.mode == 'index' || this.mode == '3dIndex') {
+    if (this.mode == 'circleIndex' || this.mode == '3dIndex') {
       return 'index';
     }
     return 'circle';
+  }
+
+  goNextFloor(direction, cb) {
+    const that = this;
+    let floor = this.floor;
+    if (direction == 'up') {
+      floor -= 1;
+      if (floor < 1) {
+        return;
+      }
+    } else {
+      floor += 1;
+      if (floor > 83) {
+        return;
+      }
+    }
+    fetch('/floors/' + floor + '.json').then((response) => {
+      return response.json();
+    }).then((floorData) => {
+      cb(this.setFloorData(floorData, 0, 'circleIndex').goNextRoom('back'));
+    });
   }
 }

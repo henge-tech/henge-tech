@@ -43,6 +43,10 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.goNextRoom(action.direction)
     });
+  case types.UPDATE_FLOOR_STATUS:
+    return Object.assign({}, state, {
+      floorStatus: action.floorStatus
+    });
   case types.TOGGLE_CIRCLE_IMAGES:
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.toggleShowImage()
