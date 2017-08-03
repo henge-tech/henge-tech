@@ -33,11 +33,11 @@ const circle =  (state = {}, action) => {
     });
   case types.START_3D_MODE:
     return Object.assign({}, state, {
-      floorStatus: state.floorStatus.update({mode: '3d'})
+      floorStatus: state.floorStatus.switchMode('3d')
     });
   case types.CIRCLE_MODE:
     return Object.assign({}, state, {
-      floorStatus: state.floorStatus.update({mode: 'circle'})
+      floorStatus: state.floorStatus.switchMode('circle')
     });
   case types.GO_NEXT_ROOM:
     return Object.assign({}, state, {

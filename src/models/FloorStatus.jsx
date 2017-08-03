@@ -83,10 +83,10 @@ export default class FloorStatus extends FloorStatusRecord {
         props.floorPos = 0;
       }
     } else {
-      if (props.mode = 'circleIndex') {
-        props.mode = 'circle';
-      } else if (props.mode = '3dIndex') {
+      if (props.mode == '3dIndex') {
         props.mode = '3d';
+      } else {
+        props.mode = 'circle';
       }
       props.floorPos = direction;
     }
@@ -104,6 +104,25 @@ export default class FloorStatus extends FloorStatusRecord {
 
   switchWordBehavior(name) {
     return this.update({ wordBehaviorType: name });
+  }
+
+  switchMode(mode) {
+    let type = this.roomType();
+    let newMode;
+    if (type == 'index') {
+      if (mode == 'circle') {
+        newMode = 'circleIndex';
+      } else {
+        newMode = '3dIndex';
+      }
+    } else {
+      if (mode == 'circle') {
+        newMode = 'circle';
+      } else {
+        newMode = '3d';
+      }
+    }
+    return this.update({mode: newMode});
   }
 
   dimension() {

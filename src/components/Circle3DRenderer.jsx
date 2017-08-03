@@ -517,7 +517,7 @@ export default class Circle3DRenderer {
 
   moveRoom(direction) {
     // this.stop();
-    this.goNextRoom(this.floorPos, direction, true);
+    this.goNextRoom(this.floorPos, direction);
   }
 
   drawOrbit(renderer, scene, camera, light) {
