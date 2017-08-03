@@ -101,10 +101,9 @@ export default class Circle extends React.Component {
       container: {position: 'relative', height: '100px', width: '100%'},
     };
 
+    const floorStatus = this.props.floorStatus;
     const onClickWord = (word) => {
-      const type = this.props.floorStatus.get('wordBehaviorType');
-      const keyword = this.props.floorStatus.get('wordSearchKeyword');
-      this.props.onClickWord(word, type, keyword);
+      this.props.onClickWord(floorStatus, word);
     }
 
     const onClickMoveButton = (direction) => {
@@ -124,9 +123,8 @@ export default class Circle extends React.Component {
         <WordCircle
           center={center}
           r={r}
-          floorStatus={this.props.floorStatus}
+          floorStatus={floorStatus}
           onClickWord={onClickWord}
-          onClickMoveButton={onClickMoveButton}
           />
         <WordBehaviorListContainer />
         <CirclePageNavBar />

@@ -7,10 +7,23 @@ export const speakWords = (words, part) => {
   return { type: types.SPEAK_WORDS };
 };
 
-export const execWordBehavior = (word, wordBehaviorType, wordSearchKeyword) => {
+export const execWordBehavior = (floorStatus, word) => {
   const behavior = new WordBehavior();
-  behavior.exec(word, wordBehaviorType, wordSearchKeyword);
-  return { type: types.EXEC_WORD_BEHAVIOR };
+  let name;
+  if (floorStatus.roomType() == 'index') {
+    name = floorStatus.get('indexBehaviorName');
+    if (name == 'move') {
+      return { type: types.GO_NEXT_ROOM, direction: word.index };
+    } else if (name == 'speech') {
+      let words = floorStatus.createWordList(word.index);
+      speechSynth.speak(words, -1);
+      return { type: types.SPEAK_WORDS };
+    }
+  } else {
+    name = floorStatus.get('behaviorName');
+    behavior.exec(word.text, name, floorStatus.get('wordSearchKeyword'));
+    return { type: types.EXEC_WORD_BEHAVIOR };
+  }
 };
 
 export const toggleCircleImages = () => {

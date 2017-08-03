@@ -17,12 +17,8 @@ export default class Word extends React.Component {
 
     const word = this.props.word;
     const onClickWord = (event) => {
-      if (this.props.mode == 'circleIndex') {
-        this.props.onClickMoveButton(this.props.word.index);
-      } else {
-        this.props.onClickWord(word.text);
-        event.preventDefault();
-      }
+      this.props.onClickWord(word);
+      event.preventDefault();
     };
 
     let wordContent;

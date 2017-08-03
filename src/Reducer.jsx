@@ -27,7 +27,7 @@ const circle =  (state = {}, action) => {
   case types.UPDATE_WORD_SEARCH_KEYWORD:
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.update({
-        wordBehaviorType: 'keyword',
+        behaviorName: 'keyword',
         wordSearchKeyword: action.keyword
       })
     });

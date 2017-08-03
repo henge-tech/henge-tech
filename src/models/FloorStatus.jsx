@@ -7,7 +7,8 @@ const floorStatusDefault = {
   mode: 'loading',
   words: null,
   pattern: null,
-  wordBehaviorType: 'speech',
+  behaviorName: 'speech',
+  indexBehaviorName: 'move',
   wordSearchKeyword: '意味',
   floorPos: 0,
   showImage: true,
@@ -33,7 +34,8 @@ export default class FloorStatus extends FloorStatusRecord {
       mode: this.mode,
       words: this.words,
       pattern: this.pattern,
-      wordBehaviorType: this.wordBehaviorType,
+      behaviorName: this.behaviorName,
+      indexBehaviorName: this.indexBehaviorName,
       wordSearchKeyword: this.wordSearchKeyword,
       showImage: this.showImage,
     };
@@ -52,8 +54,16 @@ export default class FloorStatus extends FloorStatusRecord {
     props.floor = floorData.floor;
     const circleData = floorData.circles[floorPos];
     props.pattern = circleData.pattern;
-    props.words = Word.createListFromArray(props.pattern, circleData.words, circleData.imageExts, true);
+    props.words = this.createWordList(floorPos, props);
     return new FloorStatus(props);
+  }
+
+  createWordList(floorPos, props = null) {
+    if (props === null) {
+      props = this.props();
+    }
+    const circleData = props.floorData.circles[floorPos];
+    return Word.createListFromArray(props.pattern, circleData.words, circleData.imageExts, true);
   }
 
   goNextRoom(direction) {
@@ -103,7 +113,11 @@ export default class FloorStatus extends FloorStatusRecord {
   }
 
   switchWordBehavior(name) {
-    return this.update({ wordBehaviorType: name });
+    if (this.roomType() == 'index') {
+      return this.update({ indexBehaviorName: name });
+    } else {
+      return this.update({ behaviorName: name });
+    }
   }
 
   switchMode(mode) {

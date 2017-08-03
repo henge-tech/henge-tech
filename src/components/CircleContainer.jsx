@@ -21,8 +21,8 @@ const mapDispatchToProps = (dispatch) => {
     onClickImageButton: () => {
       dispatch(actions.toggleCircleImages());
     },
-    onClickWord: (word, wordBehaviorType, wordSearchKeyword) => {
-      dispatch(actions.execWordBehavior(word, wordBehaviorType, wordSearchKeyword));
+    onClickWord: (floorStatus, word) => {
+      dispatch(actions.execWordBehavior(floorStatus, word));
     },
     render3D: (words, w, h) => {
       dispatch(actions.render3D(words, w, h));
