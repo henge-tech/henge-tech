@@ -8,6 +8,7 @@ const floorStatusDefault = {
   words: null,
   pattern: null,
   behaviorName: 'speech',
+  behaviorServiceName: 'Wikipedia',
   indexBehaviorName: 'move',
   wordSearchKeyword: '意味',
   floorPos: 0,
@@ -35,6 +36,7 @@ export default class FloorStatus extends FloorStatusRecord {
       words: this.words,
       pattern: this.pattern,
       behaviorName: this.behaviorName,
+      behaviorServiceName: this.behaviorServiceName,
       indexBehaviorName: this.indexBehaviorName,
       wordSearchKeyword: this.wordSearchKeyword,
       showImage: this.showImage,
@@ -118,6 +120,13 @@ export default class FloorStatus extends FloorStatusRecord {
     } else {
       return this.update({ behaviorName: name });
     }
+  }
+
+  switchWordBehaviorService(name) {
+    return this.update({
+      behaviorName: 'services',
+      behaviorServiceName: name,
+    });
   }
 
   switchMode(mode) {

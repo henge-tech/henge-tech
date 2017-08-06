@@ -20,17 +20,26 @@ export default class WordBehavior {
     case 'webster':
       window.open('https://www.merriam-webster.com/dictionary/' + q);
       break;
-    case 'wikipedia':
+    case 'Wikipedia':
       window.open('https://en.wikipedia.org/wiki/' + q);
       break;
-    case 'twitter':
+    case 'Twitter':
       window.open('https://twitter.com/search?q=' + q);
       break;
-    case 'tumblr':
+    case 'Tumblr':
       window.open('https://www.tumblr.com/search/' + q);
       break;
-    case 'ebay':
+    case 'eBay':
       window.open('http://www.ebay.com/sch/?_nkw=' + q);
+      break;
+    case 'Instagram':
+      window.open('https://www.instagram.com/explore/tags/' + q + '/');
+      break;
+    case 'YouTube':
+      window.open('https://www.youtube.com/results?search_query=' + q);
+      break;
+    case 'Pixabay':
+      window.open('https://pixabay.com/en/photos/?q=' + q);
       break;
     }
   }

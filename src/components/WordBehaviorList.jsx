@@ -35,6 +35,10 @@ export default class WordBehaviorList extends React.Component {
     const onChangeBehavior = this.props.onChangeBehavior;
     const onChangeKeyword = this.props.onChangeKeyword;
     const name = this.props.floorStatus.get('behaviorName');
+    const onChangeService = (e) => {
+      const serviceName = e.target.options[e.target.selectedIndex].text;
+      this.props.onChangeService(serviceName);
+    }
     return (
       <Well className="word-behaviors">
         <Grid>
@@ -53,7 +57,7 @@ export default class WordBehaviorList extends React.Component {
           <label><input name="behaviorType" type="radio"
             onChange={() => onChangeBehavior('keyword')}
             checked={name === 'keyword'}
-            /> + <input type="text" size="10"
+            /> <input type="text" size="10"
             value={this.props.floorStatus.get('wordSearchKeyword')}
             onFocus={(event) => onChangeBehavior('keyword')}
             onChange={(event) => onChangeKeyword(event.target.value)}/></label>
@@ -62,21 +66,17 @@ export default class WordBehaviorList extends React.Component {
             checked={name === 'webster'}
             /> Webster</label>
           <label><input name="behaviorType" type="radio"
-            onChange={() => onChangeBehavior('wikipedia')}
-            checked={name === 'wikipedia'}
-            /> Wikipedia</label>
-          <label><input name="behaviorType" type="radio"
-            onChange={() => onChangeBehavior('ebay')}
-            checked={name === 'ebay'}
-            /> eBay</label>
-          <label><input name="behaviorType" type="radio"
-            onChange={() => onChangeBehavior('twitter')}
-            checked={name === 'twitter'}
-            /> Twitter</label>
-          <label><input name="behaviorType" type="radio"
-            onChange={() => onChangeBehavior('tumblr')}
-            checked={name === 'tumblr'}
-            /> Tumblr</label>
+            onChange={() => onChangeBehavior('services')}
+            checked={name === 'services'}
+        /> <select onChange={(e) => onChangeService(e)}>
+              <option>Wikipedia</option>
+              <option>eBay</option>
+              <option>Twitter</option>
+              <option>Tumblr</option>
+              <option>Instagram</option>
+              <option>YouTube</option>
+              <option>Pixabay</option>
+           </select></label>
         </Col>
         <Col xsHidden={cols[2].xsHidden} xs={cols[2].xs} md={cols[2].md}>
         <div style={styles.modeLinks} className='text-right'>

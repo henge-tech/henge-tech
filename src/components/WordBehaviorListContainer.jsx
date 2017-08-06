@@ -14,6 +14,9 @@ const mapDispatchToProps = (dispatch) => {
     onChangeBehavior: (name) => {
       dispatch(actions.switchWordBehavior(name));
     },
+    onChangeService: (name) => {
+      dispatch(actions.switchWordBehaviorService(name));
+    },
     onChangeKeyword: (keyword) => {
       dispatch(actions.updateWordSearchKeyword(keyword));
     },

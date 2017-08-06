@@ -21,7 +21,11 @@ export const execWordBehavior = (floorStatus, word) => {
     }
   } else {
     name = floorStatus.get('behaviorName');
-    behavior.exec(word.text, name, floorStatus.get('wordSearchKeyword'));
+    if (name == 'services') {
+      name = floorStatus.get('behaviorServiceName');
+    }
+    const keyword = floorStatus.get('wordSearchKeyword');
+    behavior.exec(word.text, name, keyword);
     return { type: types.EXEC_WORD_BEHAVIOR };
   }
 };
@@ -31,4 +35,6 @@ export const toggleCircleImages = () => {
 }
 
 export const switchWordBehavior = (name) => ({ type: types.SWITCH_WORD_BEHAVIOR, name });
+export const switchWordBehaviorService = (name) => ({ type: types.SWITCH_WORD_BEHAVIOR_SERVICE, name });
+
 export const updateWordSearchKeyword = (keyword) => ({ type: types.UPDATE_WORD_SEARCH_KEYWORD, keyword });

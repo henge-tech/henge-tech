@@ -24,6 +24,10 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.switchWordBehavior(action.name)
     });
+  case types.SWITCH_WORD_BEHAVIOR_SERVICE:
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.switchWordBehaviorService(action.name)
+    });
   case types.UPDATE_WORD_SEARCH_KEYWORD:
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.update({
