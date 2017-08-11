@@ -35,9 +35,15 @@ export default class WordBehaviorList extends React.Component {
     const onChangeBehavior = this.props.onChangeBehavior;
     const onChangeKeyword = this.props.onChangeKeyword;
     const name = this.props.floorStatus.get('behaviorName');
+    const serviceName = this.props.floorStatus.get('behaviorServiceName');
+    const speechSpeed = this.props.floorStatus.get('speechSpeed');
     const onChangeService = (e) => {
       const serviceName = e.target.options[e.target.selectedIndex].text;
       this.props.onChangeService(serviceName);
+    }
+    const onChangeSpeed = (e) => {
+      const speed = + e.target.options[e.target.selectedIndex].value;
+      this.props.onChangeSpeechSpeed(speed);
     }
     return (
       <Well className="word-behaviors">
@@ -47,9 +53,16 @@ export default class WordBehaviorList extends React.Component {
         </Col>
         <Col xsHidden={cols[1].xsHidden} xs={cols[1].xs} md={cols[1].md}>
           <label><input name="behaviorType" type="radio"
-            onChange={() => onChangeBehavior('speech')}
-            checked={name === 'speech'}
-            /> Speech</label>
+            onChange={() => onChangeBehavior('speak')}
+            checked={name === 'speak'}
+            /> <select onChange={(e) => onChangeSpeed(e)}
+            defaultValue={speechSpeed}>
+              <option value={2}>Speak &raquo;&raquo;</option>
+              <option value={1}>Speak &raquo;</option>
+              <option value={0}>Speak</option>
+              <option value={-1}>Speak &laquo;</option>
+              <option value={-2}>Speak &laquo;&laquo;</option>
+           </select></label>
           <label><input name="behaviorType" type="radio"
             onChange={() => onChangeBehavior('image')}
             checked={name === 'image'}
@@ -68,7 +81,9 @@ export default class WordBehaviorList extends React.Component {
           <label><input name="behaviorType" type="radio"
             onChange={() => onChangeBehavior('services')}
             checked={name === 'services'}
-        /> <select onChange={(e) => onChangeService(e)}>
+        /> <select onChange={(e) => onChangeService(e)}
+             defaultValue={serviceName}
+        >
               <option>Wikipedia</option>
               <option>eBay</option>
               <option>Twitter</option>
@@ -92,6 +107,11 @@ export default class WordBehaviorList extends React.Component {
   renderWellForIndex(onClick3D, cols, styles) {
     const onChangeBehavior = this.props.onChangeBehavior;
     const name = this.props.floorStatus.get('indexBehaviorName');
+    const speechSpeed = this.props.floorStatus.get('speechSpeed');
+    const onChangeSpeed = (e) => {
+      const speed = + e.target.options[e.target.selectedIndex].value;
+      this.props.onChangeSpeechSpeed(speed);
+    }
     return (
       <Well className="word-behaviors">
         <Grid>
@@ -100,13 +120,20 @@ export default class WordBehaviorList extends React.Component {
         </Col>
         <Col xsHidden={cols[1].xsHidden} xs={cols[1].xs} md={cols[1].md}>
           <label><input name="behaviorType" type="radio"
+            onChange={() => onChangeBehavior('speak')}
+            checked={name === 'speak'}
+            /> <select onChange={(e) => onChangeSpeed(e)}
+            defaultValue={speechSpeed}>
+              <option value={2}>Speak &raquo;&raquo;</option>
+              <option value={1}>Speak &raquo;</option>
+              <option value={0}>Speak</option>
+              <option value={-1}>Speak &laquo;</option>
+              <option value={-2}>Speak &laquo;&laquo;</option>
+           </select></label>
+          <label><input name="behaviorType" type="radio"
             onChange={() => onChangeBehavior('move')}
             checked={name === 'move'}
             /> Move</label>
-          <label><input name="behaviorType" type="radio"
-            onChange={() => onChangeBehavior('speech')}
-            checked={name === 'speech'}
-            /> Speech</label>
         </Col>
         <Col xsHidden={cols[2].xsHidden} xs={cols[2].xs} md={cols[2].md}>
         <div style={styles.modeLinks} className='text-right'>

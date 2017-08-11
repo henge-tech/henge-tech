@@ -35,6 +35,10 @@ const circle =  (state = {}, action) => {
         wordSearchKeyword: action.keyword
       })
     });
+  case types.SET_SPEECH_SPEED:
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.setSpeechSpeed(action.speed)
+    });
   case types.START_3D_MODE:
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.switchMode('3d')

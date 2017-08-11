@@ -98,11 +98,10 @@ export default class SpeakButtons extends React.Component {
       );
     }
 
-    const words = this.props.floorStatus.get('words');
     return (
       <div className="speak-buttons">
         <Button
-            onClick={() => this.props.onClickSpeakButton(words, -1)}
+            onClick={() => this.props.onClickSpeakButton(this.props.floorStatus, -1)}
             style={styles.speakButton}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
@@ -117,22 +116,22 @@ export default class SpeakButtons extends React.Component {
         {buttonDown}
 
         <Button
-            onClick={() => this.props.onClickSpeakButton(words, 0)}
+            onClick={() => this.props.onClickSpeakButton(this.props.floorStatus, 0)}
             style={styles.partialSpeakButtons[0]}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
-            onClick={() => this.props.onClickSpeakButton(words, 1)}
+            onClick={() => this.props.onClickSpeakButton(this.props.floorStatus, 1)}
             style={styles.partialSpeakButtons[1]}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
-            onClick={() => this.props.onClickSpeakButton(words, 2)}
+            onClick={() => this.props.onClickSpeakButton(this.props.floorStatus, 2)}
             style={styles.partialSpeakButtons[2]}
             className="btn-circle"
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
-            onClick={() => this.props.onClickSpeakButton(words, 3)}
+            onClick={() => this.props.onClickSpeakButton(this.props.floorStatus, 3)}
             style={styles.partialSpeakButtons[3]}
             className="btn-circle"
         ><Glyphicon glyph="volume-up" /></Button>

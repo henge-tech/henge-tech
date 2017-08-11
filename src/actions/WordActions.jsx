@@ -2,8 +2,13 @@ import * as types from '../ActionTypes.jsx';
 import speechSynth from '../models/SpeechSynth.jsx';
 import WordBehavior from '../models/WordBehavior.jsx';
 
-export const speakWords = (words, part) => {
-  speechSynth.speak(words, part);
+export const speakWords = (floorStatus, part) => {
+  if (floorStatus.roomType() == 'index') {
+    const sequence = floorStatus.wordSequenceForSpeaking(part);
+    speechSynth.speakSequence(sequence);
+  } else {
+    speechSynth.speakWords(floorStatus.get('words'), part);
+  }
   return { type: types.SPEAK_WORDS };
 };
 
@@ -14,9 +19,9 @@ export const execWordBehavior = (floorStatus, word) => {
     name = floorStatus.get('indexBehaviorName');
     if (name == 'move') {
       return { type: types.GO_NEXT_ROOM, direction: word.index };
-    } else if (name == 'speech') {
+    } else if (name == 'speak') {
       let words = floorStatus.createWordList(word.index);
-      speechSynth.speak(words, -1);
+      speechSynth.speakWords(words, -1);
       return { type: types.SPEAK_WORDS };
     }
   } else {
@@ -38,3 +43,11 @@ export const switchWordBehavior = (name) => ({ type: types.SWITCH_WORD_BEHAVIOR,
 export const switchWordBehaviorService = (name) => ({ type: types.SWITCH_WORD_BEHAVIOR_SERVICE, name });
 
 export const updateWordSearchKeyword = (keyword) => ({ type: types.UPDATE_WORD_SEARCH_KEYWORD, keyword });
+
+export const setSpeechSpeed = (speed) => {
+  speechSynth.setSpeed(speed);
+  return {
+    type: types.SET_SPEECH_SPEED,
+    speed
+  };
+};

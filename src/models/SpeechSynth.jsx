@@ -1,119 +1,146 @@
+import I from 'immutable';
 
 class SpeechSynth {
 
   constructor() {
+    this.baseSpeed = 1.0;
+
     this.speechDefault = {}
     this.speechDefault.lang = 'en-US';
     this.speechDefault.voiceURI = 'native';
     this.speechDefault.volume = 1;
-    this.speechDefault.rate = 1;
+    this.speechDefault.rate = this.baseSpeed;
     this.speechDefault.pitch = 1;
+
     this.synth = window.speechSynthesis;
     this.lastText = null;
-    this.lastSpeed = null;
-    this.defaultSpeeds = { slow: 0.6, normal: 1, fast: 1.8 };
-    this.onEnd = null;
+    this.queue = [];
+
     this.speakingSequence = false;
   }
 
-  speak(words, part = -1, onEnd = null) {
-    this.onEnd = onEnd;
+  setSpeed(speed) {
+    const defaultSpeed = [
+      0.5,
+      0.7,
+      1.0,
+      1.4,
+      1.8,
+    ];
+    this.baseSpeed = defaultSpeed[2 + speed];
+    this.speechDefault.rate = this.baseSpeed;
+  }
 
+  /**
+   * words: List(Word, Word, Word, ...)
+   */
+  speakWords(words, part = -1) {
     const unit = words.size / 4;
     const repeat = 4;
 
-    const speechTexts = [];
-    for (let i = 0; i < repeat; i++) {
-      if (part >= 0 && part != i) {
-        continue;
-      }
-
-      const unitWords = [];
-      for (let j = 0; j < unit; j++) {
-        let w = words.get(i * unit + j);
-        if (w.text) {
-          unitWords.push(w.text);
-        } else {
-          unitWords.push(w);
-        }
-      }
-
-      speechTexts.push(unitWords.join(' '));
+    if (part < 0) {
+      this.queue = [words];
+    } else {
+      this.queue = [words.slice(part * unit, (part + 1) * unit)];
     }
 
-    const text = speechTexts.join(', ');
-    this.speakText(text);
+    this.speakNext();
   }
 
-  speakText(text) {
-    const speech = new SpeechSynthesisUtterance();
-    speech.onend = (e) => {
-      if (this.onEnd) {
-        this.onEnd(e);
-      }
-    }
-    Object.assign(speech, this.speechDefault);
-
-    if (this.synth.speaking) {
-      this.synth.cancel();
-
-      if (this.lastText == text) {
-        if (this.lastSpeed == this.defaultSpeeds.slow) {
-          this.lastSpeed = this.defaultSpeeds.fast;
-        } else if (this.lastSpeed == this.defaultSpeeds.fast) {
-          this.lastSpeed = null;
-          return;
-        } else {
-          this.lastSpeed = this.defaultSpeeds.slow;
-        }
-        speech.rate = this.lastSpeed;
-      } else {
-        this.lastSpeed = null;
-      }
-    } else {
-      this.lastSpeed = null;
-    }
-
-    speech.text = text;
-    this.lastText = text;
-    this.synth.speak(speech);
+  speakSequence(wordsSequence) {
+    this.queue = wordsSequence.toArray();
+    this.speakingSequence = true;
+    this.speakNext();
   }
 
   speakWord(word) {
-    this.onEnd = null;
+    // word and S P E L L
     let text = word + ",\n" + word.toUpperCase().replace(/(.)/g, '$1 ');
-    this.speakText(text)
+    this.queue = [text];
+    this.speakNext();
   }
 
-  speakSequence(wordsSequence, cursor = -1) {
-    if (cursor == -1) {
-      if (this.cursor > 0) {
-      } else {
-        this.cursor = 0;
-      }
-    } else {
-      this.cursor = cursor;
+  speakText(text) {
+    this.queue = [text];
+    this.speakNext();
+  }
+
+  speakNext() {
+    if (this.queue.length <= 0) {
+      this.speechDefault.rate = this.baseSpeed;
+      this.speakingSequence = false;
+      return;
     }
-    const onEnd = (e) => {
-      if (wordsSequence.size > this.cursor + 1) {
-        this.speakSequence(wordsSequence, this.cursor + 1);
-      } else {
-        this.speakSequence(wordsSequence, 0);
+
+    if (this.synth.speaking) {
+      if (this.queue.length > 0) {
+        let nextText = this.generateText(this.queue[0]);
+        if (nextText == this.lastText) {
+          if (this.speechDefault.rate == this.baseSpeed) {
+            this.speechDefault.rate = this.baseSpeed * 0.6;
+          } else {
+            this.stop();
+            return;
+          }
+        }
+        this.queue[0] = nextText;
       }
-    };
-    this.speak(wordsSequence.get(this.cursor), -1, onEnd);
-    this.speakingSequence = true;
+
+      this.synth.cancel(); // => onend()
+      return;
+    }
+
+    const speech = new SpeechSynthesisUtterance();
+    speech.onend = (e) => {
+      this.speakNext();
+    }
+    let text = this.generateText(this.queue.shift());
+    Object.assign(speech, this.speechDefault);
+
+    this.lastText = text;
+    speech.text = text;
+
+    this.synth.speak(speech);
   }
 
   stop() {
+    this.speechDefault.rate = this.baseSpeed;
     this.speakingSequence = false;
-    this.onEnd = null;
+    this.queue = [];
     this.synth.cancel();
   }
 
-  reset() {
-    this.cursor = 0;
-    this.stop();
+  generateText(data) {
+    if (Object.prototype.toString.call(data) == '[object String]') {
+      return data;
+    }
+    if (I.List.isList(data)) {
+      data = data.toArray();
+    }
+
+    const items = [];
+    for(let i = 0; i < data.length; i++) {
+      if (data[i].text) {
+        items.push(data[i].text);
+      } else {
+        items.push(data[i]);
+      }
+    }
+
+    if (items.length % 4 == 0 && items.length >= 8) {
+      const group = ['', '', '', ''];
+      const unit = items.length / 4;
+      for (let i = 0; i < items.length; i += 1) {
+        const j = Math.floor(i / unit);
+        if (i % unit != 0) {
+          group[j] += ' ';
+        }
+        group[j] += items[i];
+      }
+      return group.join(', ');
+    } else {
+      return items.join(' ');
+    }
   }
 }
 

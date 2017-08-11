@@ -2,7 +2,7 @@ import * as types from '../ActionTypes.jsx';
 import speechSynth from '../models/SpeechSynth.jsx';
 
 export const changeIndexFilter = (filter, index, allWords) => {
-  speechSynth.reset();
+  speechSynth.stop();
   const selected = filter.execute(index, allWords);
   return {
     type: types.CHANGE_INDEX_SELECTION,
@@ -12,17 +12,15 @@ export const changeIndexFilter = (filter, index, allWords) => {
 };
 
 export const speakIndexWords = (words) => {
-  speechSynth.reset();
-  speechSynth.speak(words);
+  speechSynth.speakWords(words);
 
   return { type: types.SPEAK_INDEX_WORDS };
 };
 
 export const toggleSpeakAllCircles = (selected, allWords) => {
   if (speechSynth.speakingSequence) {
-    speechSynth.reset();
+    speechSynth.stop();
   } else {
-    speechSynth.reset();
     const sequence = selected.map((index) => {
       return allWords.get(index.get(0));
     });

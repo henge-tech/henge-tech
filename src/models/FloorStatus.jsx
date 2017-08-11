@@ -7,11 +7,12 @@ const floorStatusDefault = {
   mode: 'loading',
   words: null,
   pattern: null,
-  behaviorName: 'speech',
+  behaviorName: 'speak',
   behaviorServiceName: 'Wikipedia',
   indexBehaviorName: 'move',
   wordSearchKeyword: '意味',
   floorPos: 0,
+  speechSpeed: 0,
   showImage: true,
 };
 
@@ -40,6 +41,7 @@ export default class FloorStatus extends FloorStatusRecord {
       indexBehaviorName: this.indexBehaviorName,
       wordSearchKeyword: this.wordSearchKeyword,
       showImage: this.showImage,
+      speechSpeed: this.speechSpeed,
     };
   }
 
@@ -67,6 +69,26 @@ export default class FloorStatus extends FloorStatusRecord {
     const circleData = props.floorData.circles[floorPos];
     return Word.createListFromArray(props.pattern, circleData.words, circleData.imageExts, true);
   }
+
+
+  wordSequenceForSpeaking(part) {
+    let result = I.List();
+    const size = this.words.size;
+
+    const unit = size / 4;
+    if (part == -1) {
+      for (let i = 0; i < size; i++) {
+        result = result.push(this.createWordList(i));
+      }
+    } else {
+      for (let i = unit * part; i < unit * (part + 1); i++) {
+        result = result.push(this.createWordList(i));
+      }
+    }
+
+    return result;
+  }
+
 
   goNextRoom(direction) {
     let props = this.props();
@@ -127,6 +149,20 @@ export default class FloorStatus extends FloorStatusRecord {
       behaviorName: 'services',
       behaviorServiceName: name,
     });
+  }
+
+  setSpeechSpeed(speed) {
+    if (this.roomType() == 'index') {
+      return this.update({
+        indexBehaviorName: 'speak',
+        speechSpeed: speed
+      })
+    } else {
+      return this.update({
+        behaviorName: 'speak',
+        speechSpeed: speed
+      })
+    }
   }
 
   switchMode(mode) {

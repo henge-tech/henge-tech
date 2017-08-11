@@ -17,6 +17,9 @@ const mapDispatchToProps = (dispatch) => {
     onChangeService: (name) => {
       dispatch(actions.switchWordBehaviorService(name));
     },
+    onChangeSpeechSpeed: (speed) => {
+      dispatch(actions.setSpeechSpeed(speed));
+    },
     onChangeKeyword: (keyword) => {
       dispatch(actions.updateWordSearchKeyword(keyword));
     },

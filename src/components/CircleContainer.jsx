@@ -15,8 +15,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onClickSpeakButton: (words, part) => {
-      dispatch(actions.speakWords(words, part));
+    onClickSpeakButton: (floorStatus, part) => {
+      dispatch(actions.speakWords(floorStatus, part));
     },
     onClickImageButton: () => {
       dispatch(actions.toggleCircleImages());

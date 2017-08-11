@@ -10,7 +10,7 @@ export default class WordBehavior {
     case 'image':
       window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=' + q);
       break;
-    case 'speech':
+    case 'speak':
       speechSynth.speakWord(word);
       break;
     case 'keyword':
