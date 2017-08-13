@@ -36,12 +36,12 @@ export default class Word extends React.Component {
         src = '/imgs/q.png';
       }
       wordContent = (
-        <li className="word" style={imageStyle}>
-          <a href="#" className="word" onClick={onClickWord}><img src={src} style={{width: imageSize, height: imageSize}} /></a>
+        <li style={imageStyle}>
+          <a href="#" onClick={onClickWord}><img src={src} style={{width: imageSize, height: imageSize}} /></a>
         </li>
       );
     } else {
-      let coreClass = 'word-core-a';
+      let coreClass = this.props.coreClass;
       let wordStyle = {
         listStyleType: 'none',
         position: 'absolute',
@@ -50,9 +50,14 @@ export default class Word extends React.Component {
         fontSize: this.props.fontSize + 'px',
       };
 
+      let suffixClass = 'word-suffix';
+      if (word.core == '' && coreClass != 'word-core') {
+        suffixClass = coreClass;
+      }
+
       wordContent = (
-        <li className="word" style={wordStyle}>
-          <a href="#" className="word" onClick={onClickWord}><span className="word-prefix">{word.prefix}</span><span className={coreClass}>{word.core}</span><span className="word-suffix">{word.suffix}</span></a>
+        <li style={wordStyle}>
+          <a className={this.props.wordClass} href="#" onClick={onClickWord}><span className="word-prefix">{word.prefix}</span><span className={coreClass}>{word.core}</span><span className={suffixClass}>{word.suffix}</span></a>
         </li>
       );
     }

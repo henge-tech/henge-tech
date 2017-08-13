@@ -58,6 +58,15 @@ export default class Word extends WordRecord {
     return baseURL + imageBaseName + '.' + this.imageExts.get(index);
   }
 
+  coreInitial() {
+    if (this.core != '') {
+      return this.core[0].toLowerCase();
+    } else if (this.suffix != '') {
+      return this.suffix[0].toLowerCase();
+    }
+    return '';
+  }
+
   static splitAffix(pattern, text) {
     let rex;
     if (Word.patternRex[pattern]) {

@@ -68,6 +68,11 @@
   color: #000;
 }
 
+.word-square {
+  color: #000;
+  font-weight: bold;
+}
+
 .word-prefix {
   color: #000;
 }
@@ -75,12 +80,34 @@
   color: #000;
 }
 
-.word-core-a {
+.word-core {
+  color: #999;
+}
+
+/*
+.word-core-0 {
   color: #b99;
 }
 
-.word-core-b {
+.word-core-1 {
   color: #b99;
+}
+
+.word-core-2 {
+  color: #b99;
+}
+*/
+
+.word-core-0 {
+  color: #4caf50;
+}
+
+.word-core-1 {
+  color: #ff9800;
+}
+
+.word-core-2 {
+  color: #c2185b;
 }
 
 .word-list-base {
