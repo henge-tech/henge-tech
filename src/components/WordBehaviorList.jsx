@@ -91,6 +91,8 @@ export default class WordBehaviorList extends React.Component {
               <option>Instagram</option>
               <option>YouTube</option>
               <option>Pixabay</option>
+              <option>Wikipedia Image</option>
+              <option>Shutterstock</option>
            </select></label>
         </Col>
         <Col xsHidden={cols[2].xsHidden} xs={cols[2].xs} md={cols[2].md}>

@@ -41,6 +41,12 @@ export default class WordBehavior {
     case 'Pixabay':
       window.open('https://pixabay.com/en/photos/?q=' + q);
       break;
+    case 'Wikipedia Image':
+      window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=site:wikipedia.org%20' + q);
+      break;
+    case 'Shutterstock':
+      window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=site:shutterstock.com%20' + q);
+      break;
     }
   }
 }
