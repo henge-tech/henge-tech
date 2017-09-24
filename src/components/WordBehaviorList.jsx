@@ -85,14 +85,15 @@ export default class WordBehaviorList extends React.Component {
              defaultValue={serviceName}
         >
               <option>Wikipedia</option>
+              <option>Wikipedia Image</option>
+              <option>Shutterstock</option>
+              <option>Pixabay</option>
+              <option>Flickr</option>
               <option>eBay</option>
               <option>Twitter</option>
               <option>Tumblr</option>
               <option>Instagram</option>
               <option>YouTube</option>
-              <option>Pixabay</option>
-              <option>Wikipedia Image</option>
-              <option>Shutterstock</option>
            </select></label>
         </Col>
         <Col xsHidden={cols[2].xsHidden} xs={cols[2].xs} md={cols[2].md}>

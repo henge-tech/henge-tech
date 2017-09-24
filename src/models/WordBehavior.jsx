@@ -26,20 +26,23 @@ export default class WordBehavior {
     case 'Twitter':
       window.open('https://twitter.com/search?q=' + q);
       break;
-    case 'Tumblr':
-      window.open('https://www.tumblr.com/search/' + q);
-      break;
     case 'eBay':
       window.open('http://www.ebay.com/sch/?_nkw=' + q);
-      break;
-    case 'Instagram':
-      window.open('https://www.instagram.com/explore/tags/' + q + '/');
       break;
     case 'YouTube':
       window.open('https://www.youtube.com/results?search_query=' + q);
       break;
+    case 'Instagram':
+      // window.open('https://www.instagram.com/explore/tags/' + q + '/');
+      window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=site:instagram.com%20' + q);
+      break;
+    case 'Tumblr':
+      // window.open('https://www.tumblr.com/search/' + q);
+      window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=site:tumblr.com%20' + q);
+      break;
     case 'Pixabay':
-      window.open('https://pixabay.com/en/photos/?q=' + q);
+      // window.open('https://pixabay.com/en/photos/?q=' + q);
+      window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=site:pixabay.com%20' + q);
       break;
     case 'Wikipedia Image':
       window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=site:wikipedia.org%20' + q);
@@ -47,7 +50,9 @@ export default class WordBehavior {
     case 'Shutterstock':
       window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=site:shutterstock.com%20' + q);
       break;
+    case 'Flickr':
+      window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=site:flickr.com%20' + q);
+      break;
     }
   }
 }
-
