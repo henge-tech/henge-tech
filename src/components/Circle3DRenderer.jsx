@@ -586,16 +586,16 @@ export default class Circle3DRenderer {
         if (objs[i].object.name == 'board') {
           const w = objs[i].object.userData.word;
           if (this.floorStatus.roomType() == 'index') {
-            speechSynth.speak(new I.List(this.floorData.circles[w.index].words), -1);
+            speechSynth.speakWords(new I.List(this.floorData.circles[w.index].words), -1);
           } else if (objs[i].distance < 120) {
             speechSynth.speakWord(w.text);
           } else {
             const unit = this.words.size / 4;
-            speechSynth.speak(this.words, Math.floor(w.index / unit));
+            speechSynth.speakWords(this.words, Math.floor(w.index / unit));
           }
           break;
         } else if (objs[i].object.name == 'centerlabel') {
-          speechSynth.speak(this.words, -1);
+          speechSynth.speakWords(this.words, -1);
           break;
         } else if (objs[i].object.name == 'door') {
           this.moveRoom(objs[i].object.userData.direction);
