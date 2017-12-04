@@ -39,6 +39,14 @@ export const toggleCircleImages = () => {
   return { type: types.TOGGLE_CIRCLE_IMAGES };
 }
 
+export const changeCircleImagesResolution = () => {
+  return { type: types.CHANGE_CIRCLE_IMAGES_RESOLUTION };
+}
+
+export const toggleCircleImagesResolution = () => {
+  return { type: types.TOGGLE_CIRCLE_IMAGES_RESOLUTION };
+}
+
 export const switchWordBehavior = (name) => ({ type: types.SWITCH_WORD_BEHAVIOR, name });
 export const switchWordBehaviorService = (name) => ({ type: types.SWITCH_WORD_BEHAVIOR_SERVICE, name });
 

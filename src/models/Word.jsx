@@ -51,9 +51,12 @@ export default class Word extends WordRecord {
     return baseURL + imageBaseName + '.' + this.imageExts.get(index);
   }
 
-  thumbURL(index) {
+  thumbURL(index, thumbType = false) {
+    if (!thumbType) {
+      thumbType = 'thumbs';
+    }
     const imageBaseName = this.encodeS3Key(this.text);
-    const baseURL = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/';
+    const baseURL = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/' + thumbType + '/';
     // const baseURL = '/thumbs/';
     return baseURL + imageBaseName + '.' + this.imageExts.get(index);
   }

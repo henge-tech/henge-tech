@@ -14,6 +14,8 @@ const floorStatusDefault = {
   floorPos: 0,
   speechSpeed: 0,
   showImage: true,
+  showLowResImage: false,
+  lowResLevel: 3,
 };
 
 const FloorStatusRecord = I.Record(floorStatusDefault);
@@ -41,6 +43,8 @@ export default class FloorStatus extends FloorStatusRecord {
       indexBehaviorName: this.indexBehaviorName,
       wordSearchKeyword: this.wordSearchKeyword,
       showImage: this.showImage,
+      showLowResImage: this.showLowResImage,
+      lowResLevel: this.lowResLevel,
       speechSpeed: this.speechSpeed,
     };
   }
@@ -134,6 +138,18 @@ export default class FloorStatus extends FloorStatusRecord {
 
   toggleShowImage() {
     return this.update({ showImage: !this.showImage });
+  }
+
+  toggleCircleImagesResolution() {
+    return this.update({ showLowResImage: !this.showLowResImage });
+  }
+
+  changeCircleImagesResolution() {
+    let level = this.lowResLevel - 1;
+    if (level <= 0) {
+      level = 3;
+    }
+    return this.update({ showLowResImage: true, lowResLevel: level });
   }
 
   switchWordBehavior(name) {

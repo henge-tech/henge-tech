@@ -18,6 +18,16 @@ export default class SpeakButtons extends React.Component {
         left: this.props.center.x - d + 'px',
         top: this.props.center.y - d - centerButtonMargin + 'px',
       },
+      changeResolutionButton: {
+        position: 'absolute',
+        left: this.props.center.x - d - centerButtonMargin + 'px',
+        top: this.props.center.y - d - centerButtonMargin + 'px',
+      },
+      toggleResolutionButton: {
+        position: 'absolute',
+        left: this.props.center.x - d + centerButtonMargin + 'px',
+        top: this.props.center.y - d - centerButtonMargin + 'px',
+      },
       navArrowButton: [
         {
           position: 'absolute',
@@ -108,6 +118,16 @@ export default class SpeakButtons extends React.Component {
         <Button
             onClick={() => this.props.onClickImageButton()}
             style={styles.imageTextSwitchButton}
+            className="btn-circle"
+          ><Glyphicon glyph="picture" /></Button>
+        <Button
+            onClick={() => this.props.onClickToggleResolutionButton()}
+            style={styles.toggleResolutionButton}
+            className="btn-circle"
+          ><Glyphicon glyph="picture" /></Button>
+        <Button
+            onClick={() => this.props.onClickChangeResolutionButton()}
+            style={styles.changeResolutionButton}
             className="btn-circle"
           ><Glyphicon glyph="picture" /></Button>
 

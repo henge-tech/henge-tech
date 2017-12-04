@@ -59,6 +59,14 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.toggleShowImage()
     });
+  case types.TOGGLE_CIRCLE_IMAGES_RESOLUTION:
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.toggleCircleImagesResolution()
+    });
+  case types.CHANGE_CIRCLE_IMAGES_RESOLUTION:
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.changeCircleImagesResolution()
+    });
   default:
     return state;
   }

@@ -21,6 +21,12 @@ const mapDispatchToProps = (dispatch) => {
     onClickImageButton: () => {
       dispatch(actions.toggleCircleImages());
     },
+    onClickToggleResolutionButton: () => {
+      dispatch(actions.toggleCircleImagesResolution());
+    },
+    onClickChangeResolutionButton: () => {
+      dispatch(actions.changeCircleImagesResolution());
+    },
     onClickWord: (floorStatus, word) => {
       dispatch(actions.execWordBehavior(floorStatus, word));
     },

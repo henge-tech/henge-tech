@@ -31,7 +31,13 @@ export default class Word extends React.Component {
         left: this.props.x - imageSize / 2.0 + 'px',
         fontSize: this.props.fontSize + 'px',
       };
-      let src = word.thumbURL(0);
+
+      let lowres = false;
+      if (this.props.showLowResImage) {
+        lowres = 'thumbs-low' + this.props.lowResLevel;
+      }
+
+      let src = word.thumbURL(0, lowres);
       if (false && this.props.mode != 'circleIndex' && Math.random() * 2 < 1) {
         src = '/imgs/q.png';
       }
