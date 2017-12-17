@@ -33,11 +33,13 @@ export default class WordCircle extends React.Component {
       let x = Math.cos(unit * i - Math.PI / 2.0) * r + ox;
       let y = Math.sin(unit * i - Math.PI / 2.0) * r + oy;
 
+      let isLowRes = this.props.floorStatus.get('lowResImages').get(i);
+
       items[i] = (
         <Word
           mode={this.props.floorStatus.get('mode')}
           showImage={this.props.floorStatus.get('showImage')}
-          showLowResImage={this.props.floorStatus.get('showLowResImage')}
+          showLowResImage={isLowRes}
           lowResLevel={this.props.floorStatus.get('lowResLevel')}
           coreClass={classes[i]}
           wordClass={wordClass}

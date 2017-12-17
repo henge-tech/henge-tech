@@ -6,10 +6,15 @@ export const speakWords = (floorStatus, part) => {
   if (floorStatus.roomType() == 'index') {
     const sequence = floorStatus.wordSequenceForSpeaking(part);
     speechSynth.speakSequence(sequence);
-  } else {
-    speechSynth.speakWords(floorStatus.get('words'), part);
+    return { type: types.SPEAK_WORDS };
   }
-  return { type: types.SPEAK_WORDS };
+
+  speechSynth.speakWords(floorStatus.get('words'), part);
+  if (part < 0) {
+    return { type: types.SPEAK_WORDS };
+  } else {
+    return { type: types.SPEAK_QUATER_WORDS, part: part };
+  }
 };
 
 export const execWordBehavior = (floorStatus, word) => {
@@ -31,7 +36,11 @@ export const execWordBehavior = (floorStatus, word) => {
     }
     const keyword = floorStatus.get('wordSearchKeyword');
     behavior.exec(word.text, name, keyword);
-    return { type: types.EXEC_WORD_BEHAVIOR };
+    if (name == 'speak') {
+      return { type: types.SPEAK_WORD, word: word };
+    } else {
+      return { type: types.EXEC_WORD_BEHAVIOR };
+    }
   }
 };
 

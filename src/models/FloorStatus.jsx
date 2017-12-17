@@ -14,7 +14,7 @@ const floorStatusDefault = {
   floorPos: 0,
   speechSpeed: 0,
   showImage: true,
-  showLowResImage: false,
+  lowResImages: null,
   lowResLevel: 3,
 };
 
@@ -43,8 +43,8 @@ export default class FloorStatus extends FloorStatusRecord {
       indexBehaviorName: this.indexBehaviorName,
       wordSearchKeyword: this.wordSearchKeyword,
       showImage: this.showImage,
-      showLowResImage: this.showLowResImage,
       lowResLevel: this.lowResLevel,
+      lowResImages: this.lowResImages,
       speechSpeed: this.speechSpeed,
     };
   }
@@ -63,6 +63,11 @@ export default class FloorStatus extends FloorStatusRecord {
     const circleData = floorData.circles[floorPos];
     props.pattern = circleData.pattern;
     props.words = this.createWordList(floorPos, props);
+    let lowResImages = [];
+    for (let i = 0; i < props.words.size; i++) {
+      lowResImages[i] = false;
+    }
+    props.lowResImages = new I.List(lowResImages);
     return new FloorStatus(props);
   }
 
@@ -133,6 +138,9 @@ export default class FloorStatus extends FloorStatusRecord {
     props.pattern = circleData.pattern;
     props.words = Word.createListFromArray(props.pattern, circleData.words, circleData.imageExts, true);
 
+    let isLowRes = this.lowResImages.includes(true);
+    props.lowResImages = this.createLowResImageList(isLowRes, props.words.size);
+
     return new FloorStatus(props);
   }
 
@@ -141,7 +149,22 @@ export default class FloorStatus extends FloorStatusRecord {
   }
 
   toggleCircleImagesResolution() {
-    return this.update({ showLowResImage: !this.showLowResImage });
+    let isLowRes = this.lowResImages.includes(false);
+    return this.update({
+      showImage: true,
+      lowResImages: this.createLowResImageList(isLowRes)
+    });
+  }
+
+  createLowResImageList(isLowRes, size = null) {
+    if (size === null) {
+      size = this.words.size;
+    }
+    let lowResImages = [];
+    for (let i = 0; i < size; i++) {
+      lowResImages[i] = isLowRes;
+    }
+    return new I.List(lowResImages);
   }
 
   changeCircleImagesResolution() {
@@ -149,7 +172,34 @@ export default class FloorStatus extends FloorStatusRecord {
     if (level <= 0) {
       level = 3;
     }
-    return this.update({ showLowResImage: true, lowResLevel: level });
+    let props = {
+      showImage: true,
+      lowResLevel: level
+    }
+    // if (!this.lowResImages.includes(true)) {
+    props.lowResImages = this.createLowResImageList(true);
+    // }
+    return this.update(props);
+  }
+
+  switchSingleImageResolution(index, isLowRes) {
+    let lowResImages = this.lowResImages.set(index, isLowRes);
+    return this.update({
+      showImage: true,
+      lowResImages: lowResImages
+    });
+  }
+
+  switchQuaterImagesResolution(part, isLowRes) {
+    let unit = this.words.size / 4;
+    let lowResImages = this.lowResImages;
+    for (let i = unit * part; i < unit * (part + 1); i++) {
+      lowResImages = lowResImages.set(i, isLowRes);
+    }
+    return this.update({
+      showImage: true,
+      lowResImages: lowResImages
+    });
   }
 
   switchWordBehavior(name) {

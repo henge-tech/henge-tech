@@ -117,19 +117,19 @@ export default class SpeakButtons extends React.Component {
           ><Glyphicon glyph="volume-up" /></Button>
         <Button
             onClick={() => this.props.onClickImageButton()}
-            style={styles.imageTextSwitchButton}
+            style={styles.toggleResolutionButton}
             className="btn-circle"
-          ><Glyphicon glyph="picture" /></Button>
+          ><Glyphicon glyph="font" /></Button>
         <Button
             onClick={() => this.props.onClickToggleResolutionButton()}
-            style={styles.toggleResolutionButton}
+            style={styles.imageTextSwitchButton}
             className="btn-circle"
           ><Glyphicon glyph="picture" /></Button>
         <Button
             onClick={() => this.props.onClickChangeResolutionButton()}
             style={styles.changeResolutionButton}
             className="btn-circle"
-          ><Glyphicon glyph="picture" /></Button>
+          ><Glyphicon glyph="tint" /></Button>
 
         {buttonLeft}
         {buttonRight}

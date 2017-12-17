@@ -18,7 +18,16 @@ const circle =  (state = {}, action) => {
   switch (action.type) {
   case types.SPEAK_WORDS:
     return state;
-  case types.ACTION_WORD:
+  case types.SPEAK_WORD:
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.switchSingleImageResolution(action.word.index, false)
+    });
+  case types.SPEAK_QUATER_WORDS:
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.switchQuaterImagesResolution(action.part, false)
+    });
+  case types.EXEC_WORD_BEHAVIOR:
+    console.log(action)
     return state;
   case types.SWITCH_WORD_BEHAVIOR:
     return Object.assign({}, state, {
