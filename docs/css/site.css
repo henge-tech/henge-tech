@@ -23,6 +23,21 @@
   margin-bottom: 20px;
 }
 
+#floors-list img {
+  width:100%;
+  margin:1px;
+}
+
+#floors-list div {
+  width:40px;
+  margin-right:10px;
+  float: left;
+}
+
+#floors-list .unit-bottom {
+  margin-bottom:10px;
+}
+
 @media screen and (min-width: 767px) {
   #top-header h1 {
     margin: 0;
@@ -40,6 +55,11 @@
 
   .top-item-thumb {
     width: 200px;
+  }
+
+  #floors-list div {
+    width:80px;
+    float: left;
   }
 }
 
