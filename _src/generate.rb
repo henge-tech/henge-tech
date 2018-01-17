@@ -4,6 +4,7 @@ require 'yaml'
 require 'erb'
 require 'optparse'
 require 'json'
+require 'awesome_print'
 
 class Generator
   PROJECT_ROOT = File.expand_path('../..', __FILE__)
@@ -50,29 +51,59 @@ class Generator
     image_data = YAML.load(File.read(File.expand_path('data/images.yml', @data_root)))
 
     # 12 * 82 + 16 = 1,000
-    floor_circles = [12] * 82 + [16]
-    floor_circles.each.with_index do |circle_num, i|
-      data = circles.shift(circle_num)
+    floor_circles_num = [12] * 82 + [16]
+    first_circles = []
 
-      data.each do |entry|
-        entry[:imageExts] = []
-        entry[:words].each do |word|
+    floor_circles_num.each.with_index do |circle_num, floor_idx|
+      floor_circles = circles.shift(circle_num)
+      image_completed = true
+      image_exists = false
+
+      floor_circles.each do |circle|
+        circle[:imageExts] = []
+        circle[:words].each do |word|
           if image_data[word]
-            entry[:imageExts] << image_data[word].map { |a| a['ext'] }
+            circle[:imageExts] << image_data[word].map { |a| a['ext'] }
+            image_exists = true
           else
-            entry[:imageExts] << nil
+            circle[:imageExts] << nil
+            image_completed = false
           end
         end
       end
 
+      first_circle_data = {}
+      if image_completed
+        first_circle_data[:imageCompleted] = true
+      elsif image_exists
+        first_circle_data[:imageCompleted] = false
+      else
+        first_circle_data[:imageCompleted] = nil
+      end
+
       json = {
-        'floor' => i + 1,
-        'circles' => data
+        'floor' => floor_idx + 1,
+        'circles' => floor_circles
       }
-      floor_file = File.expand_path("../../docs/floors/#{i + 1}.json", __FILE__)
+      floor_file = File.expand_path("docs/floors/#{floor_idx + 1}.json", PROJECT_ROOT)
       File.open(floor_file, 'w') do |out|
         out << JSON.dump(json)
       end
+
+      first_circle = floor_circles[0]
+      first_word = first_circle[:words][0]
+      first_exts = first_circle[:imageExts][0]
+      first_circle_data[:pattern] = first_circle[:pattern]
+      first_circle_data[:image] = "#{first_word}.#{first_exts[0]}" if first_exts
+      first_circles << first_circle_data
+    end
+
+    floors_erb = File.expand_path('_src/templates/floors.html.erb', PROJECT_ROOT)
+    erb = ERB.new(File.read(floors_erb), nil, '-')
+    html_file = File.expand_path('docs/floors/index.html', PROJECT_ROOT)
+
+    File.open(html_file, 'w') do |out|
+      out << erb.result(binding)
     end
   end
 
