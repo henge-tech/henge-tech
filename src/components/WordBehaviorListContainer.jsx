@@ -26,6 +26,9 @@ const mapDispatchToProps = (dispatch) => {
     onClick3D: () => {
       dispatch(actions.threeDMode());
     },
+    onChangeIndexPickupImage: (quater) => {
+      dispatch(actions.switchIndexPickupImage(quater));
+    },
   }
 }
 

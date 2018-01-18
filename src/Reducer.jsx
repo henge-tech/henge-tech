@@ -48,6 +48,10 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.setSpeechSpeed(action.speed)
     });
+  case types.SWITCH_INDEX_PICKUP_IMAGE:
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.setIndexPickupImage(action.quater)
+    });
   case types.START_3D_MODE:
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.switchMode('3d')

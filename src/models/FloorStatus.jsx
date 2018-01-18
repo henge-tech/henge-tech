@@ -16,6 +16,7 @@ const floorStatusDefault = {
   showImage: true,
   lowResImages: null,
   lowResLevel: 3,
+  indexPickupImage: 1,
 };
 
 const FloorStatusRecord = I.Record(floorStatusDefault);
@@ -46,6 +47,7 @@ export default class FloorStatus extends FloorStatusRecord {
       lowResLevel: this.lowResLevel,
       lowResImages: this.lowResImages,
       speechSpeed: this.speechSpeed,
+      indexPickupImage: this.indexPickupImage,
     };
   }
 
@@ -108,7 +110,7 @@ export default class FloorStatus extends FloorStatusRecord {
         props.mode = 'circleIndex';
       }
 
-      props.words = Word.createFloorIndex(this.floorData);
+      props.words = Word.createFloorIndex(this.floorData, this.indexPickupImage);
       props.pattern = 'floor ' + props.floor;
       props.floorPos = 0;
 
@@ -137,7 +139,6 @@ export default class FloorStatus extends FloorStatusRecord {
     const circleData = props.floorData.circles[props.floorPos];
     props.pattern = circleData.pattern;
     props.words = Word.createListFromArray(props.pattern, circleData.words, circleData.imageExts, true);
-
     let isLowRes = this.lowResImages.includes(true);
     props.lowResImages = this.createLowResImageList(isLowRes, props.words.size);
 
@@ -282,6 +283,14 @@ export default class FloorStatus extends FloorStatusRecord {
       return response.json();
     }).then((floorData) => {
       cb(this.setFloorData(floorData, 0, 'circleIndex').goNextRoom('back'));
+    });
+  }
+
+  setIndexPickupImage(quater) {
+    let words = Word.createFloorIndex(this.floorData, quater);
+    return this.update({
+      words: words,
+      indexPickupImage: quater
     });
   }
 }

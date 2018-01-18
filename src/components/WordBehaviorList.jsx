@@ -111,9 +111,14 @@ export default class WordBehaviorList extends React.Component {
     const onChangeBehavior = this.props.onChangeBehavior;
     const name = this.props.floorStatus.get('indexBehaviorName');
     const speechSpeed = this.props.floorStatus.get('speechSpeed');
+    const indexPickupImage = this.props.floorStatus.get('indexPickupImage');
     const onChangeSpeed = (e) => {
       const speed = + e.target.options[e.target.selectedIndex].value;
       this.props.onChangeSpeechSpeed(speed);
+    }
+    const onChangeIndexPickupImage = (e) => {
+      const quater = e.target.options[e.target.selectedIndex].value;
+      this.props.onChangeIndexPickupImage(quater);
     }
     return (
       <Well className="word-behaviors">
@@ -137,6 +142,14 @@ export default class WordBehaviorList extends React.Component {
             onChange={() => onChangeBehavior('move')}
             checked={name === 'move'}
             /> Move</label>
+          <label><select onChange={(e) => onChangeIndexPickupImage(e)}
+            defaultValue={indexPickupImage}>
+            <option value={0}>Random</option>
+            <option value={1}>1Q</option>
+            <option value={2}>2Q</option>
+            <option value={3}>3Q</option>
+            <option value={4}>4Q</option>
+          </select></label>
         </Col>
         <Col xsHidden={cols[2].xsHidden} xs={cols[2].xs} md={cols[2].md}>
         <div style={styles.modeLinks} className='text-right'>

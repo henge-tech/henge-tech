@@ -99,14 +99,21 @@ export default class Word extends WordRecord {
     }));
   }
 
-  static createFloorIndex(floorData) {
+  static createFloorIndex(floorData, quater) {
     const words = [];
     const patterns = [];
     const imgExts = [];
     floorData.circles.map((entry, i) => {
-      words[i] = entry.words[0];
+      let n = quater - 1;
+      if (n < 0) {
+        n = Math.floor(Math.random() * entry.words.length);
+      } else {
+        const unit = entry.words.length / 4;
+        n = unit * n;
+      }
+      words[i] = entry.words[n];
       patterns[i] = entry.pattern;
-      imgExts[i] = entry.imageExts[0];
+      imgExts[i] = entry.imageExts[n];
     });
 
     return new I.List(words.map((word, i) => {
