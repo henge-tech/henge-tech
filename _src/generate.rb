@@ -54,6 +54,9 @@ class Generator
     floor_circles_num = [12] * 82 + [16]
     first_circles = []
 
+    floor_erb_file = File.expand_path('_src/templates/floor.html.erb', PROJECT_ROOT)
+    floor_erb = ERB.new(File.read(floor_erb_file), nil, '-')
+
     floor_circles_num.each.with_index do |circle_num, floor_idx|
       floor_circles = circles.shift(circle_num)
       image_completed = true
@@ -81,13 +84,19 @@ class Generator
         first_circle_data[:imageCompleted] = nil
       end
 
+      floor_num = floor_idx + 1
       json = {
-        'floor' => floor_idx + 1,
+        'floor' => floor_num,
         'circles' => floor_circles
       }
-      floor_file = File.expand_path("docs/floors/#{floor_idx + 1}.json", PROJECT_ROOT)
+      floor_file = File.expand_path("docs/floors/#{floor_num}.json", PROJECT_ROOT)
       File.open(floor_file, 'w') do |out|
         out << JSON.dump(json)
+      end
+
+      floor_file = File.expand_path("docs/floors/#{floor_num}.html", PROJECT_ROOT)
+      File.open(floor_file, 'w') do |out|
+        out << floor_erb.result(binding)
       end
 
       first_circle = floor_circles[0]

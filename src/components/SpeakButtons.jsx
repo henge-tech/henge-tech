@@ -69,6 +69,10 @@ export default class SpeakButtons extends React.Component {
       this.props.goNextRoom(this.props.floorStatus, direction, false);
     };
 
+    const goFloorIndex = () => {
+      window.location.href = '/floors/';
+    }
+
     if (roomType == 'circle') {
       buttonLeft = (
         <Button
@@ -103,6 +107,13 @@ export default class SpeakButtons extends React.Component {
         <Button
             onClick={() => goNextRoom('down')}
             style={styles.navArrowButton[1]}
+            className="btn-circle"
+          ><Glyphicon glyph="triangle-bottom" /></Button>
+      );
+      buttonDown = (
+        <Button
+            onClick={() => goFloorIndex()}
+            style={styles.navArrowButton[2]}
             className="btn-circle"
           ><Glyphicon glyph="triangle-bottom" /></Button>
       );

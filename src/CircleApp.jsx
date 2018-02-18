@@ -16,7 +16,11 @@ document.getElementById('staticBody').style.display = 'none';
 
 const circleAppElement = document.getElementById('CircleApp');
 const floor = + circleAppElement.getAttribute('data-floor');
-const floorPos = + circleAppElement.getAttribute('data-floor-pos');
+let floorPos = circleAppElement.getAttribute('data-floor-pos');
+
+if (floorPos != 'index') {
+  floorPos = + floorPos;
+}
 
 const initialState = {
   window: {
@@ -36,7 +40,12 @@ fetch('/floors/' + floor + '.json').then((response) => {
   return response.json();
 }).then((floorData) => {
   let floorStatus = new FloorStatus();
-  floorStatus = floorStatus.setFloorData(floorData, floorPos, 'circle');
+  if (floorPos == 'index') {
+    floorPos = 0;
+    floorStatus = floorStatus.setFloorData(floorData, floorPos, 'circle').goNextRoom('back');
+  } else {
+    floorStatus = floorStatus.setFloorData(floorData, floorPos, 'circle');
+  }
   initialState.circle.floorStatus = floorStatus;
 
   const store = createStore(reducer, initialState);
