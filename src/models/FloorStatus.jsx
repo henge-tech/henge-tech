@@ -82,7 +82,7 @@ export default class FloorStatus extends FloorStatusRecord {
   }
 
 
-  wordSequenceForSpeaking(part) {
+  wordIndexSequenceForSpeaking(part) {
     let result = I.List();
     const size = this.words.size;
 
