@@ -35,7 +35,7 @@ export const execWordBehavior = (floorStatus, word) => {
       name = floorStatus.get('behaviorServiceName');
     }
     const keyword = floorStatus.get('wordSearchKeyword');
-    behavior.exec(word.text, name, keyword);
+    behavior.exec(word.text, name, floorStatus, keyword);
     if (name == 'speak') {
       return { type: types.SPEAK_WORD, word: word };
     } else {

@@ -4,7 +4,7 @@ export default class WordBehavior {
   constructor() {
   }
 
-  exec(word, name, keyword = '') {
+  exec(word, name, floorStatus, keyword = '') {
     let q = encodeURIComponent(word);
     switch(name) {
     case 'image':
@@ -25,6 +25,20 @@ export default class WordBehavior {
       break;
     case 'Twitter':
       window.open('https://twitter.com/search?q=' + q);
+      break;
+    case 'Twitter (multiple)':
+      let words = floorStatus.words.map((w) => { return w.text; });
+
+      let isLowRes = floorStatus.lowResImages.includes(false);
+      let isHiRes = floorStatus.lowResImages.includes(true);
+      if (isLowRes && isHiRes) {
+        words = words.filter((v, i) => {
+          return (floorStatus.lowResImages.get(i));
+        });
+      }
+
+      let multiQ = encodeURIComponent(words.join(' OR '));
+      window.open('https://twitter.com/search?q=' + multiQ);
       break;
     case 'eBay':
       window.open('http://www.ebay.com/sch/?_nkw=' + q);

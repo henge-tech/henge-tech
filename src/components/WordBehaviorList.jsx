@@ -91,6 +91,7 @@ export default class WordBehaviorList extends React.Component {
               <option>Flickr</option>
               <option>eBay</option>
               <option>Twitter</option>
+              <option>Twitter (multiple)</option>
               <option>Tumblr</option>
               <option>Instagram</option>
               <option>YouTube</option>

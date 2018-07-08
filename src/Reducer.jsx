@@ -27,7 +27,7 @@ const circle =  (state = {}, action) => {
       floorStatus: state.floorStatus.switchQuaterImagesResolution(action.part, false)
     });
   case types.EXEC_WORD_BEHAVIOR:
-    console.log(action)
+    // console.log(action)
     return state;
   case types.SWITCH_WORD_BEHAVIOR:
     return Object.assign({}, state, {
