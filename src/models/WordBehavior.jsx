@@ -24,9 +24,12 @@ export default class WordBehavior {
       window.open('https://en.wikipedia.org/wiki/' + q);
       break;
     case 'Twitter':
+      let dummyUserName = '@dummy_' + Math.random().toString(36).slice(-10);
+      q = encodeURIComponent('lang:en ' + word + ' OR ' + dummyUserName);
       window.open('https://twitter.com/search?q=' + q);
       break;
     case 'Twitter (multiple)':
+      dummyUserName = '@dummy_' + Math.random().toString(36).slice(-10);
       let words = floorStatus.words.map((w) => { return w.text; });
 
       let isLowRes = floorStatus.lowResImages.includes(false);
@@ -37,7 +40,7 @@ export default class WordBehavior {
         });
       }
 
-      let multiQ = encodeURIComponent(words.join(' OR '));
+      let multiQ = encodeURIComponent('lang:en ' + words.join(' OR ') + ' OR ' + dummyUserName);
       window.open('https://twitter.com/search?q=' + multiQ);
       break;
     case 'eBay':
