@@ -120,6 +120,7 @@ export default class Circle extends React.Component {
           onClickImageButton={this.props.onClickImageButton}
           onClickChangeResolutionButton={this.props.onClickChangeResolutionButton}
           onClickToggleResolutionButton={this.props.onClickToggleResolutionButton}
+          onClickOpenServiceButton={this.props.onClickOpenServiceButton}
           goNextRoom={this.props.goNextRoom}
           />
         <WordCircle

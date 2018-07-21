@@ -8,7 +8,7 @@ const floorStatusDefault = {
   words: null,
   pattern: null,
   behaviorName: 'speak',
-  behaviorServiceName: 'Wikipedia',
+  behaviorServiceName: 'Twitter (multiple)',
   indexBehaviorName: 'move',
   wordSearchKeyword: '意味',
   floorPos: 0,
@@ -65,12 +65,16 @@ export default class FloorStatus extends FloorStatusRecord {
     const circleData = floorData.circles[floorPos];
     props.pattern = circleData.pattern;
     props.words = this.createWordList(floorPos, props);
+    this.resetLowResImages(props);
+    return new FloorStatus(props);
+  }
+
+  resetLowResImages(props) {
     let lowResImages = [];
     for (let i = 0; i < props.words.size; i++) {
       lowResImages[i] = false;
     }
     props.lowResImages = new I.List(lowResImages);
-    return new FloorStatus(props);
   }
 
   createWordList(floorPos, props = null) {
@@ -108,6 +112,7 @@ export default class FloorStatus extends FloorStatusRecord {
         props.mode = '3dIndex';
       } else {
         props.mode = 'circleIndex';
+        this.resetLowResImages(props);
       }
 
       props.words = Word.createFloorIndex(this.floorData, this.indexPickupImage);
@@ -191,6 +196,14 @@ export default class FloorStatus extends FloorStatusRecord {
     });
   }
 
+  toggleWordSelection(index) {
+    let currentRes = this.lowResImages.get(index);
+    let lowResImages = this.lowResImages.set(index, !currentRes);
+    return this.update({
+      lowResImages: lowResImages
+    });
+  }
+
   switchQuaterImagesResolution(part, isLowRes) {
     let unit = this.words.size / 4;
     let lowResImages = this.lowResImages;
@@ -209,6 +222,10 @@ export default class FloorStatus extends FloorStatusRecord {
     } else {
       return this.update({ behaviorName: name });
     }
+  }
+
+  isWordSelectMode() {
+    return (this.behaviorName == 'services' && this.behaviorServiceName == 'Twitter (multiple)' && this.roomType() != 'index');
   }
 
   switchWordBehaviorService(name) {

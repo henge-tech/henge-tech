@@ -45,11 +45,12 @@ export default class SpeakButtons extends React.Component {
     }
 
     let buttons = [];
+    this.buttonCount = 0;
     if (roomType == 'circle' &&
         this.props.floorStatus.behaviorName == 'services' &&
         this.props.floorStatus.behaviorServiceName == 'Twitter (multiple)') {
-      buttons.push(this.circleButton(positions[0], 'check',     () => this.props.onClickImageButton()));
-      buttons.push(this.circleButton(positions[1], 'share-alt', () => this.props.onClickToggleResolutionButton()));
+      buttons.push(this.circleButton(positions[0], 'check',     () => this.props.onClickToggleResolutionButton()));
+      buttons.push(this.circleButton(positions[1], 'share-alt', () => this.props.onClickOpenServiceButton(this.props.floorStatus)));
     } else {
       buttons.push(this.circleButton(positions[0], 'tint',    () => this.props.onClickChangeResolutionButton()));
       buttons.push(this.circleButton(positions[1], 'picture', () => this.props.onClickToggleResolutionButton()));
@@ -81,11 +82,14 @@ export default class SpeakButtons extends React.Component {
   }
 
   circleButton(style, glyph, onClick) {
+    this.buttonCount += 1;
+    const buttonKey = 'circleButton-' + this.buttonCount;
     return (
         <Button
             onClick={onClick}
             style={style}
             className="btn-circle"
+            key={buttonKey}
           ><Glyphicon glyph={glyph} /></Button>
     );
   }

@@ -84,14 +84,14 @@ export default class WordBehaviorList extends React.Component {
         /> <select onChange={(e) => onChangeService(e)}
              defaultValue={serviceName}
         >
+              <option>Twitter (multiple)</option>
+              <option>Twitter</option>
               <option>Wikipedia</option>
               <option>Wikipedia Image</option>
               <option>Shutterstock</option>
               <option>Pixabay</option>
               <option>Flickr</option>
               <option>eBay</option>
-              <option>Twitter</option>
-              <option>Twitter (multiple)</option>
               <option>Tumblr</option>
               <option>Instagram</option>
               <option>YouTube</option>

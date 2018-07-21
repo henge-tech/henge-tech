@@ -35,14 +35,25 @@ export const execWordBehavior = (floorStatus, word) => {
       name = floorStatus.get('behaviorServiceName');
     }
     const keyword = floorStatus.get('wordSearchKeyword');
-    behavior.exec(word.text, name, floorStatus, keyword);
     if (name == 'speak') {
+      behavior.exec(word.text, name, floorStatus, keyword);
       return { type: types.SPEAK_WORD, word: word };
+    } else if (name == 'Twitter (multiple)') {
+      behavior.exec(word.text, 'speak', floorStatus, keyword);
+      return { type: types.TOGGLE_WORD_SELECTION, word: word };
     } else {
+      behavior.exec(word.text, name, floorStatus, keyword);
       return { type: types.EXEC_WORD_BEHAVIOR };
     }
   }
 };
+
+export const openService = (floorStatus) => {
+  const behavior = new WordBehavior();
+  const name = floorStatus.get('behaviorServiceName');
+  behavior.openService(name, floorStatus);
+  return { type: types.OPEN_EXTERNAL_SERVICE };
+}
 
 export const toggleCircleImages = () => {
   return { type: types.TOGGLE_CIRCLE_IMAGES };

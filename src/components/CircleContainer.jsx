@@ -27,6 +27,9 @@ const mapDispatchToProps = (dispatch) => {
     onClickChangeResolutionButton: () => {
       dispatch(actions.changeCircleImagesResolution());
     },
+    onClickOpenServiceButton: (floorStatus) => {
+      dispatch(actions.openService(floorStatus));
+    },
     onClickWord: (floorStatus, word) => {
       dispatch(actions.execWordBehavior(floorStatus, word));
     },

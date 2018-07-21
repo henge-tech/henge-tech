@@ -24,7 +24,7 @@ export default class Word extends React.Component {
     let wordContent;
     if (this.props.showImage && word.imageExts.size > 0) {
       let imageSize = this.props.imageSize;
-      let imageStyle = {
+      let liStyle = {
         listStyleType: 'none',
         position: 'absolute',
         top: this.props.y - imageSize / 2.0 + 'px',
@@ -32,18 +32,25 @@ export default class Word extends React.Component {
         fontSize: this.props.fontSize + 'px',
       };
 
+      let imageStyle = {
+        width: imageSize,
+        height: imageSize
+      };
+      if (this.props.mode == 'selected') {
+        imageStyle.border = '5px solid #f46842';
+      } else if (this.props.mode == 'notselected') {
+        imageStyle.webkitFilter = 'grayscale(100%)';
+      }
+
       let lowres = false;
-      if (this.props.showLowResImage) {
+      if (this.props.mode == 'lowres') {
         lowres = 'thumbs-low' + this.props.lowResLevel;
       }
 
       let src = word.thumbURL(0, lowres);
-      if (false && this.props.mode != 'circleIndex' && Math.random() * 2 < 1) {
-        src = '/imgs/q.png';
-      }
       wordContent = (
-        <li style={imageStyle}>
-          <a href="#" onClick={onClickWord}><img src={src} style={{width: imageSize, height: imageSize}} /></a>
+        <li style={liStyle}>
+          <a href="#" onClick={onClickWord}><img src={src} style={imageStyle} /></a>
         </li>
       );
     } else {
@@ -59,6 +66,14 @@ export default class Word extends React.Component {
       let suffixClass = 'word-suffix';
       if (word.core == '' && coreClass != 'word-core') {
         suffixClass = coreClass;
+      }
+
+      if (this.props.mode == 'selected') {
+        wordStyle.padding = '0 2px 0 2px';
+        wordStyle.border = '3px solid #f46842';
+      } else if (this.props.mode == 'notselected') {
+        coreClass = '';
+        suffixClass = '';
       }
 
       wordContent = (

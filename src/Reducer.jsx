@@ -29,6 +29,12 @@ const circle =  (state = {}, action) => {
   case types.EXEC_WORD_BEHAVIOR:
     // console.log(action)
     return state;
+  case types.OPEN_EXTERNAL_SERVICE:
+    return state;
+  case types.TOGGLE_WORD_SELECTION:
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.toggleWordSelection(action.word.index)
+    });
   case types.SWITCH_WORD_BEHAVIOR:
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.switchWordBehavior(action.name)

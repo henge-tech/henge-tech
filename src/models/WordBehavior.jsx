@@ -28,21 +28,6 @@ export default class WordBehavior {
       q = encodeURIComponent('lang:en ' + word + ' OR ' + dummyUserName);
       window.open('https://twitter.com/search?q=' + q);
       break;
-    case 'Twitter (multiple)':
-      dummyUserName = '@dummy_' + Math.random().toString(36).slice(-10);
-      let words = floorStatus.words.map((w) => { return w.text; });
-
-      let isLowRes = floorStatus.lowResImages.includes(false);
-      let isHiRes = floorStatus.lowResImages.includes(true);
-      if (isLowRes && isHiRes) {
-        words = words.filter((v, i) => {
-          return (floorStatus.lowResImages.get(i));
-        });
-      }
-
-      let multiQ = encodeURIComponent('lang:en ' + words.join(' OR ') + ' OR ' + dummyUserName);
-      window.open('https://twitter.com/search?q=' + multiQ);
-      break;
     case 'eBay':
       window.open('http://www.ebay.com/sch/?_nkw=' + q);
       break;
@@ -69,6 +54,27 @@ export default class WordBehavior {
       break;
     case 'Flickr':
       window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=site:flickr.com%20' + q);
+      break;
+    }
+  }
+
+  openService(name, floorStatus) {
+    switch(name) {
+    case 'Twitter (multiple)':
+      let dummyUserName = '@dummy_' + Math.random().toString(36).slice(-10);
+      let words = floorStatus.words.map((w) => { return w.text; });
+      console.log(floorStatus.lowResImages.toJS());
+
+      let isLowRes = floorStatus.lowResImages.includes(false);
+      let isHiRes = floorStatus.lowResImages.includes(true);
+      if (isLowRes && isHiRes) {
+        words = words.filter((v, i) => {
+          return floorStatus.lowResImages.get(i);
+        });
+      }
+
+      let multiQ = encodeURIComponent('lang:en ' + words.join(' OR ') + ' OR ' + dummyUserName);
+      window.open('https://twitter.com/search?q=' + multiQ);
       break;
     }
   }
