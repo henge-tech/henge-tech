@@ -191,7 +191,7 @@ export default class FloorStatus extends FloorStatusRecord {
   switchSingleImageResolution(index, isLowRes) {
     let lowResImages = this.lowResImages.set(index, isLowRes);
     return this.update({
-      showImage: true,
+      // showImage: true,
       lowResImages: lowResImages
     });
   }
@@ -211,7 +211,7 @@ export default class FloorStatus extends FloorStatusRecord {
       lowResImages = lowResImages.set(i, isLowRes);
     }
     return this.update({
-      showImage: true,
+      // showImage: true,
       lowResImages: lowResImages
     });
   }
