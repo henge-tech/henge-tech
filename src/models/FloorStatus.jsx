@@ -8,7 +8,7 @@ const floorStatusDefault = {
   words: null,
   pattern: null,
   behaviorName: 'speak',
-  behaviorServiceName: 'Twitter (multiple)',
+  behaviorServiceName: 'Twitter*',
   indexBehaviorName: 'move',
   wordSearchKeyword: '意味',
   floorPos: 0,
@@ -225,7 +225,7 @@ export default class FloorStatus extends FloorStatusRecord {
   }
 
   isWordSelectMode() {
-    return (this.behaviorName == 'services' && this.behaviorServiceName == 'Twitter (multiple)' && this.roomType() != 'index');
+    return (this.behaviorName == 'services' && this.behaviorServiceName.match(/\*$/) && this.roomType() != 'index');
   }
 
   switchWordBehaviorService(name) {

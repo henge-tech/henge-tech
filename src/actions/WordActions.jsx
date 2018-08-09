@@ -38,7 +38,7 @@ export const execWordBehavior = (floorStatus, word) => {
     if (name == 'speak') {
       behavior.exec(word.text, name, floorStatus, keyword);
       return { type: types.SPEAK_WORD, word: word };
-    } else if (name == 'Twitter (multiple)') {
+    } else if (name.match(/\*$/)) {
       behavior.exec(word.text, 'speak', floorStatus, keyword);
       return { type: types.TOGGLE_WORD_SELECTION, word: word };
     } else {

@@ -55,26 +55,33 @@ export default class WordBehavior {
     case 'Flickr':
       window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=site:flickr.com%20' + q);
       break;
+    case 'BrainyQuote':
+      window.open('https://www.brainyquote.com/search_results?q=' + q);
+      break;
     }
   }
 
   openService(name, floorStatus) {
-    switch(name) {
-    case 'Twitter (multiple)':
-      let dummyUserName = '@dummy_' + Math.random().toString(36).slice(-10);
-      let words = floorStatus.words.map((w) => { return w.text; });
-      console.log(floorStatus.lowResImages.toJS());
+    let words = floorStatus.words.map((w) => { return w.text; });
 
-      let isLowRes = floorStatus.lowResImages.includes(false);
-      let isHiRes = floorStatus.lowResImages.includes(true);
-      if (isLowRes && isHiRes) {
-        words = words.filter((v, i) => {
-          return floorStatus.lowResImages.get(i);
-        });
-      }
+    let isLowRes = floorStatus.lowResImages.includes(false);
+    let isHiRes = floorStatus.lowResImages.includes(true);
+    if (isLowRes && isHiRes) {
+      words = words.filter((v, i) => {
+        return floorStatus.lowResImages.get(i);
+      });
+    }
+
+    switch(name) {
+    case 'Twitter*':
+      let dummyUserName = '@dummy_' + Math.random().toString(36).slice(-10);
 
       let multiQ = encodeURIComponent('lang:en ' + words.join(' OR ') + ' OR ' + dummyUserName);
       window.open('https://twitter.com/search?q=' + multiQ);
+      break;
+    case 'Google News*':
+      multiQ = encodeURIComponent(words.join(' OR '));
+      window.open('https://news.google.com/search?hl=en-US&gl=US&ceid=US%3Aen&q=' + multiQ);
       break;
     }
   }
