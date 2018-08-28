@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<title>Henge: Floor <%= floor_num %></title>
+<title>Henge: Floor <%= floor_data[:floor_num] %></title>
 <link rel="stylesheet" href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -14,10 +14,10 @@
 <h1><img src="/imgs/logo.svg" alt="henge"></h1>
 </header>
 
-<h2>Floor <%= floor_num %></h2>
+<h2>Floor <%= floor_data[:floor_num] %></h2>
 </div>
 
-<div id="CircleApp" data-floor="<%= floor_num %>" data-floor-pos="index"></div>
+<div id="CircleApp" data-floor="<%= floor_data[:floor_num] %>" data-floor-pos="index"></div>
 
 <script type="text/javascript" src="/CircleApp.bundle.js"></script>
 <script>

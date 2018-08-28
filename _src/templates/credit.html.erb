@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Henge</title>
+<link rel="stylesheet" href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/site.css">
+<style type="text/css">
+  header {
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+  article {
+    margin-left: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div>
+
+<header>
+<h1><img src="/imgs/logo.svg" alt="Henge"></h1>
+</header>
+
+<article>
+  <h2><a href="/floors/<%= floor_data[:floor_num] %>.html" style="color: black">Floor <%= floor_data[:floor_num] %> Image Credits</a></h2>
+  <nav style="margin:20px">
+    <%-
+    floor_links.each do |tower|
+      tower.each do |floor_data|
+        if floor_data[:image_completed].nil?
+    -%>
+      <span style="margin-left:10px; color: #ccc"><%= '%02d' % floor_data[:floor_num] %></span>
+    <%- elsif floor_data[:image_completed] -%>
+      <strong><a href="/credits/<%= floor_data[:floor_num] %>.html" style="margin-left:10px"><%= '%02d' % floor_data[:floor_num] %></a></strong>
+    <%- else -%>
+      <a href="/credits/<%= floor_data[:floor_num] %>.html" style="margin-left:10px"><%= '%02d' % floor_data[:floor_num] %></a>
+    <%-
+        end
+      end
+    -%>
+    <br>
+    <%- end -%>
+  </nav>
+
+
+  <%-
+  floor_data[:circles].each do |circle|
+    next if circle[:imageExts].find {|v| !v.nil? }.nil?
+  -%>
+  <h3 id="circle<%= circle[:id] %>"><a href="/circles/<%= circle[:pattern] %>.html" style="color: black">Circle #<%= circle[:id] %> <%= circle[:pattern] %></a></h3>
+  <%-
+  circle[:words].each.with_index do |word, i|
+    next unless circle[:imageExts][i]
+      image = image_data[word][0]
+  -%>
+  <div style="float: left;margin:10px;">
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/<%= image['image'] %>" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/<%= image['image'] %>"></a>
+    </div>
+  <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
+    <li><span style="font-size:1.5em"><%= word %></span></li>
+    <li>
+    <%- if image['site'] == 'pixabay' -%>
+      <a href="<%= image['url'] %>" target="_blank">By <%= image['credit']['name'] %> / CC0 / Pixabay</a>
+      <%- elsif image['site'] == 'wikipedia' -%>
+      <a href="<%= image['url'] %>" target="_blank"><%= image['license']['name'] %> / Wikipedia</a>
+      <%- elsif image['site'] == 'irasutoya' -%>
+      <a href="<%= image['url'] %>" target="_blank">By Irasutoya</a> / <a href="https://www.irasutoya.com/p/faq.html" target="_blank">License</a>
+      <%- end %>
+    </li>
+  </ul>
+  <br style="clear:both;">
+  <%- end -%>
+  <%- end -%>
+</article>
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-631498-5', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

@@ -46,75 +46,152 @@ class Generator
     @all_circles = circles
   end
 
+  def encode_s3_key(str)
+    str.gsub(/[^-a-zA-Z0-9]/) {|c| '_' + c.ord.to_s(16).upcase }
+  end
+
+  def load_images_yaml
+    image_data = YAML.load(File.read(File.expand_path('data/images.yml', @data_root)))
+    image_data.each do |word, entries|
+      image_base = encode_s3_key(word)
+
+      entries.each.with_index do |entry, i|
+        file = "#{ image_base }."
+        file += "#{ i }." if i > 0
+        file += entry['ext']
+        entry['image'] = file
+      end
+    end
+    image_data
+  end
+
+  def load_template(file_name)
+    erb_file = File.expand_path("_src/templates/#{file_name}", PROJECT_ROOT)
+    ERB.new(File.read(erb_file), nil, '-')
+  end
+
   def generate_floors
     circles = all_circles
-    image_data = YAML.load(File.read(File.expand_path('data/images.yml', @data_root)))
+    image_data = load_images_yaml
 
+    # How many circles in the floor
     # 12 * 82 + 16 = 1,000
     floor_circles_num = [12] * 82 + [16]
-    first_circles = []
 
-    floor_erb_file = File.expand_path('_src/templates/floor.html.erb', PROJECT_ROOT)
-    floor_erb = ERB.new(File.read(floor_erb_file), nil, '-')
+    floor_erb = load_template('floor.html.erb')
+    credit_erb = load_template('credit.html.erb')
+    floors_index_erb = load_template('floors.html.erb')
 
-    floor_circles_num.each.with_index do |circle_num, floor_idx|
-      floor_circles = circles.shift(circle_num)
-      image_completed = true
-      image_exists = false
+    all_floors_data = []
+    floor_circles_num.each.with_index do |circle_num, i|
+      fd = create_floor_data(circles.shift(circle_num), image_data, i + 1)
+      all_floors_data << fd
+    end
+    floor_links = credit_floor_links(all_floors_data)
 
-      floor_circles.each do |circle|
-        circle[:imageExts] = []
-        circle[:words].each do |word|
-          if image_data[word]
-            circle[:imageExts] << image_data[word].map { |a| a['ext'] }
-            image_exists = true
-          else
-            circle[:imageExts] << nil
-            image_completed = false
-          end
-        end
-      end
-
-      first_circle_data = {}
-      if image_completed
-        first_circle_data[:imageCompleted] = true
-      elsif image_exists
-        first_circle_data[:imageCompleted] = false
-      else
-        first_circle_data[:imageCompleted] = nil
-      end
-
-      floor_num = floor_idx + 1
-      json = {
-        'floor' => floor_num,
-        'circles' => floor_circles
-      }
-      floor_file = File.expand_path("docs/floors/#{floor_num}.json", PROJECT_ROOT)
-      File.open(floor_file, 'w') do |out|
-        out << JSON.dump(json)
-      end
-
-      floor_file = File.expand_path("docs/floors/#{floor_num}.html", PROJECT_ROOT)
-      File.open(floor_file, 'w') do |out|
-        out << floor_erb.result(binding)
-      end
-
-      first_circle = floor_circles[0]
-      first_word = first_circle[:words][0]
-      first_exts = first_circle[:imageExts][0]
-      first_circle_data[:pattern] = first_circle[:pattern]
-      first_circle_data[:image] = "#{first_word}.#{first_exts[0]}" if first_exts
-      first_circles << first_circle_data
+    all_floors_data.each do |floor_data|
+      save_floor_json(floor_data)
+      save_floor_html(floor_erb, floor_data)
+      save_credit_html(credit_erb, floor_data, image_data, floor_links)
     end
 
-    floors_erb = File.expand_path('_src/templates/floors.html.erb', PROJECT_ROOT)
-    erb = ERB.new(File.read(floors_erb), nil, '-')
-    html_file = File.expand_path('docs/floors/index.html', PROJECT_ROOT)
+    first_circles = all_floors_data.map {|fd| fd[:first_circle]}
+    save_floors_index_html(floors_index_erb, first_circles)
+  end
 
-    File.open(html_file, 'w') do |out|
+  def save_floor_json(floor_data)
+    floor_num = floor_data[:floor_num]
+    json = {
+      'floor' => floor_num,
+      'circles' => floor_data[:circles]
+    }
+    file = File.expand_path("docs/floors/#{floor_num}.json", PROJECT_ROOT)
+    File.open(file, 'w') do |out|
+      out << JSON.dump(json)
+    end
+  end
+
+  def save_floor_html(erb, floor_data)
+    file = File.expand_path("docs/floors/#{floor_data[:floor_num]}.html", PROJECT_ROOT)
+    File.open(file, 'w') do |out|
       out << erb.result(binding)
     end
   end
+
+  def save_credit_html(erb, floor_data, image_data, floor_links)
+
+    file = File.expand_path("docs/credits/#{floor_data[:floor_num]}.html", PROJECT_ROOT)
+    File.open(file, 'w') do |out|
+      out << erb.result(binding)
+    end
+  end
+
+  def credit_floor_links(all_floors_data)
+    result = []
+    7.times do |tower|
+      links = []
+      result << links
+
+      12.times do |tf|
+        f = tower * 12 + tf + 1
+        break if f > 83
+
+        image_completed = all_floors_data[f - 1][:first_circle][:image_completed]
+
+        data = {:floor_num => f, :image_completed => image_completed}
+        links << data
+      end
+    end
+    result
+  end
+
+  def save_floors_index_html(erb, first_circles)
+    file = File.expand_path('docs/floors/index.html', PROJECT_ROOT)
+    File.open(file, 'w') do |out|
+      out << erb.result(binding)
+    end
+  end
+
+  def create_floor_data(floor_circles, image_data, floor_num)
+    image_completed = true
+    image_exists = false
+
+    # the camel case is for JSON key
+    floor_circles.each do |circle|
+      circle[:imageExts] = []
+      circle[:words].each do |word|
+        if image_data[word]
+          circle[:imageExts] << image_data[word].map { |a| a['ext'] }
+          image_exists = true
+        else
+          circle[:imageExts] << nil
+          image_completed = false
+        end
+      end
+    end
+
+    first_circle_data = {}
+    if image_completed
+      first_circle_data[:image_completed] = true
+    elsif image_exists
+      first_circle_data[:image_completed] = false
+    else
+      first_circle_data[:image_completed] = nil
+    end
+
+    first_circle = floor_circles[0]
+    first_word = first_circle[:words][0]
+    first_exts = first_circle[:imageExts][0]
+    first_circle_data[:pattern] = first_circle[:pattern]
+    first_circle_data[:image] = encode_s3_key(first_word) + '.' + first_exts[0] if first_exts
+
+    {
+      :floor_num => floor_num,
+      :circles => floor_circles,
+      :first_circle => first_circle_data,
+    }
+  end
+
 
   def generate_circles
     circle_erb = File.expand_path('_src/templates/circle.html.erb', PROJECT_ROOT)
