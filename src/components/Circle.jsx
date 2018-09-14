@@ -90,7 +90,7 @@ export default class Circle extends React.Component {
             style={styles.buttons2}
             className="btn-circle"
           ><Glyphicon glyph="question-sign" /></Button>
-        <CirclePageNavBar />
+        <CirclePageNavBar floor={this.props.floorStatus.get('floor')} patteern={this.props.floorStatus.get('pattern')} />
       </div>
     );
   }
@@ -108,6 +108,11 @@ export default class Circle extends React.Component {
 
     const onClickMoveButton = (direction) => {
       this.props.goNextRoom(this.props.floorStatus, direction, false);
+    }
+
+    let creditURL = '/credits/' + this.props.floorStatus.get('floor') + '.html';
+    if (this.props.floorStatus.get('mode') == 'circle') {
+      creditURL += '#' + this.props.floorStatus.get('pattern');
     }
 
     return (
@@ -130,7 +135,7 @@ export default class Circle extends React.Component {
           onClickWord={onClickWord}
           />
         <WordBehaviorListContainer />
-        <CirclePageNavBar floor={this.props.floorStatus.get('floor')} />
+        <CirclePageNavBar credit={creditURL} />
       </div>
     );
   }

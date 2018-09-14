@@ -7,9 +7,9 @@ export default class CirclePageNavBar extends React.Component {
   }
 
   render() {
-    var floorNum = this.props.floor;
+    var creditURL = this.props.credit;
     var openCreditPage = function(e) {
-      location.href = '/credits/' + floorNum + '.html';
+      location.href = creditURL;
     }
 
     const iconStyle = {

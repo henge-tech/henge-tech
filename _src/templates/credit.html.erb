@@ -50,7 +50,7 @@
   floor_data[:circles].each do |circle|
     next if circle[:imageExts].find {|v| !v.nil? }.nil?
   -%>
-  <h3 id="circle<%= circle[:id] %>"><a href="/circles/<%= circle[:pattern] %>.html" style="color: black">Circle #<%= circle[:id] %> <%= circle[:pattern] %></a></h3>
+  <h3 id="<%= circle[:pattern] %>"><a href="/circles/<%= circle[:pattern] %>.html" style="color: black">Circle #<%= circle[:id] %> <%= circle[:pattern] %></a></h3>
   <%-
   circle[:words].each.with_index do |word, i|
     next unless circle[:imageExts][i]
