@@ -7,6 +7,11 @@ export default class CirclePageNavBar extends React.Component {
   }
 
   render() {
+    var floorNum = this.props.floor;
+    var openCreditPage = function(e) {
+      location.href = '/credits/' + floorNum + '.html';
+    }
+
     const iconStyle = {
       fill: '#9d9d9d',
       width: '18px',
@@ -28,6 +33,7 @@ export default class CirclePageNavBar extends React.Component {
         <Navbar.Collapse>
           <Nav>
             <NavItem href="/circles/" onClick={this.openPage}>Circles</NavItem>
+            <NavItem onClick={openCreditPage}>Credits</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

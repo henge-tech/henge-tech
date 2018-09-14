@@ -130,7 +130,7 @@ export default class Circle extends React.Component {
           onClickWord={onClickWord}
           />
         <WordBehaviorListContainer />
-        <CirclePageNavBar />
+        <CirclePageNavBar floor={this.props.floorStatus.get('floor')} />
       </div>
     );
   }
