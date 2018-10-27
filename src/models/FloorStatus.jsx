@@ -15,7 +15,7 @@ const floorStatusDefault = {
   speechSpeed: 0,
   showImage: true,
   lowResImages: null,
-  lowResLevel: 3,
+  lowResLevel: 0,
   indexPickupImage: 1,
 };
 
@@ -155,10 +155,17 @@ export default class FloorStatus extends FloorStatusRecord {
   }
 
   toggleCircleImagesResolution() {
-    let isLowRes = this.lowResImages.includes(false);
+    let allLowRes = !this.lowResImages.includes(false);
+    let switchToLowRes = !allLowRes;
+
+    let lowResLevel = this.lowResLevel;
+    if (switchToLowRes && lowResLevel == 0) {
+      lowResLevel = 1;
+    }
     return this.update({
       showImage: true,
-      lowResImages: this.createLowResImageList(isLowRes)
+      lowResImages: this.createLowResImageList(switchToLowRes),
+      lowResLevel: lowResLevel
     });
   }
 
@@ -174,17 +181,23 @@ export default class FloorStatus extends FloorStatusRecord {
   }
 
   changeCircleImagesResolution() {
-    let level = this.lowResLevel - 1;
-    if (level <= 0) {
-      level = 3;
+    let allHighRes = !this.lowResImages.includes(true);
+
+    let lowResLevel;
+    if (allHighRes) {
+      lowResLevel = 1;
+    } else {
+      lowResLevel = this.lowResLevel + 1;
+      if (lowResLevel > 3) {
+        lowResLevel = 0;
+      }
     }
+
     let props = {
       showImage: true,
-      lowResLevel: level
+      lowResImages: this.createLowResImageList(lowResLevel > 0),
+      lowResLevel: lowResLevel,
     }
-    // if (!this.lowResImages.includes(true)) {
-    props.lowResImages = this.createLowResImageList(true);
-    // }
     return this.update(props);
   }
 
