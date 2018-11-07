@@ -34,23 +34,12 @@ export default class WordCircle extends React.Component {
       const x = Math.cos(unit * i - Math.PI / 2.0) * r + ox;
       const y = Math.sin(unit * i - Math.PI / 2.0) * r + oy;
 
-      const lowRes = this.props.floorStatus.get('lowResImages').get(i)
-
       let mode;
-      if (lowRes) {
-        if (wordSelectMode) {
-          mode = 'selected';
-        } else {
-          mode = 'lowres';
-        }
+      if (wordSelectMode) {
+        mode = this.props.floorStatus.get('selectedImages').get(i) ? 'selected' : 'notselected';
       } else {
-        if (this.props.floorStatus.isWordSelectMode()) {
-          mode = 'notselected';
-        } else {
-          mode = 'normal';
-        }
+        mode = this.props.floorStatus.get('lowResImages').get(i) ? 'lowres' : 'normal';
       }
-
 
       items[i] = (
         <Word

@@ -67,6 +67,10 @@ export const toggleCircleImagesResolution = () => {
   return { type: types.TOGGLE_CIRCLE_IMAGES_RESOLUTION };
 }
 
+export const toggleAllWordsSelection = () => {
+  return { type: types.TOGGLE_ALL_WORDS_SELECTION };
+}
+
 export const switchWordBehavior = (name) => ({ type: types.SWITCH_WORD_BEHAVIOR, name });
 export const switchWordBehaviorService = (name) => ({ type: types.SWITCH_WORD_BEHAVIOR_SERVICE, name });
 

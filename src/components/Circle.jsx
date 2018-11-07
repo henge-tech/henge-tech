@@ -124,6 +124,7 @@ export default class Circle extends React.Component {
           onClickSpeakButton={this.props.onClickSpeakButton}
           onClickImageButton={this.props.onClickImageButton}
           onClickChangeResolutionButton={this.props.onClickChangeResolutionButton}
+          onClickToggleSelectionButton={this.props.onClickToggleSelectionButton}
           onClickToggleResolutionButton={this.props.onClickToggleResolutionButton}
           onClickOpenServiceButton={this.props.onClickOpenServiceButton}
           goNextRoom={this.props.goNextRoom}

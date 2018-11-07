@@ -49,7 +49,7 @@ export default class SpeakButtons extends React.Component {
     if (roomType == 'circle' &&
         this.props.floorStatus.behaviorName == 'services' &&
         this.props.floorStatus.behaviorServiceName.match(/\*$/)) {
-      buttons.push(this.circleButton(positions[0], 'check',     () => this.props.onClickToggleResolutionButton()));
+      buttons.push(this.circleButton(positions[0], 'check',     () => this.props.onClickToggleSelectionButton()));
       buttons.push(this.circleButton(positions[1], 'share-alt', () => this.props.onClickOpenServiceButton(this.props.floorStatus)));
     } else {
       buttons.push(this.circleButton(positions[0], 'tint',    () => this.props.onClickChangeResolutionButton()));

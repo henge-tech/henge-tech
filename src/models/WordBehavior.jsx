@@ -62,15 +62,7 @@ export default class WordBehavior {
   }
 
   openService(name, floorStatus) {
-    let words = floorStatus.words.map((w) => { return w.text; });
-
-    let isLowRes = floorStatus.lowResImages.includes(false);
-    let isHiRes = floorStatus.lowResImages.includes(true);
-    if (isLowRes && isHiRes) {
-      words = words.filter((v, i) => {
-        return floorStatus.lowResImages.get(i);
-      });
-    }
+    const words = floorStatus.selectedWords();
 
     switch(name) {
     case 'Twitter*':

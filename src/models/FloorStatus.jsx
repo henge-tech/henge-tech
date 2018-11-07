@@ -14,6 +14,7 @@ const floorStatusDefault = {
   floorPos: 0,
   speechSpeed: 0,
   showImage: true,
+  selectedImages: null,
   lowResImages: null,
   lowResLevel: 0,
   indexPickupImage: 1,
@@ -44,8 +45,9 @@ export default class FloorStatus extends FloorStatusRecord {
       indexBehaviorName: this.indexBehaviorName,
       wordSearchKeyword: this.wordSearchKeyword,
       showImage: this.showImage,
-      lowResLevel: this.lowResLevel,
+      selectedImages: this.selectedImages,
       lowResImages: this.lowResImages,
+      lowResLevel: this.lowResLevel,
       speechSpeed: this.speechSpeed,
       indexPickupImage: this.indexPickupImage,
     };
@@ -65,16 +67,9 @@ export default class FloorStatus extends FloorStatusRecord {
     const circleData = floorData.circles[floorPos];
     props.pattern = circleData.pattern;
     props.words = this.createWordList(floorPos, props);
-    this.resetLowResImages(props);
+    props.lowResImages = this.createImageFlagList(false, props.words.size);
+    props.selectedImages = this.createImageFlagList(false, props.words.size);
     return new FloorStatus(props);
-  }
-
-  resetLowResImages(props) {
-    let lowResImages = [];
-    for (let i = 0; i < props.words.size; i++) {
-      lowResImages[i] = false;
-    }
-    props.lowResImages = new I.List(lowResImages);
   }
 
   createWordList(floorPos, props = null) {
@@ -108,16 +103,18 @@ export default class FloorStatus extends FloorStatusRecord {
   goNextRoom(direction) {
     let props = this.props();
     if (direction == 'back') {
+      props.words = Word.createFloorIndex(this.floorData, this.indexPickupImage);
+      props.pattern = 'floor ' + props.floor;
+      props.floorPos = 0;
+
       if (props.mode == '3d') {
         props.mode = '3dIndex';
       } else {
         props.mode = 'circleIndex';
-        this.resetLowResImages(props);
+        let includesLowRes = props.lowResImages.includes(true);
+        props.lowResImages = this.createImageFlagList(includesLowRes, props.words.size);
+        props.selectedImages = this.createImageFlagList(false, props.words.size);
       }
-
-      props.words = Word.createFloorIndex(this.floorData, this.indexPickupImage);
-      props.pattern = 'floor ' + props.floor;
-      props.floorPos = 0;
 
       return new FloorStatus(props);
     }
@@ -144,8 +141,9 @@ export default class FloorStatus extends FloorStatusRecord {
     const circleData = props.floorData.circles[props.floorPos];
     props.pattern = circleData.pattern;
     props.words = Word.createListFromArray(props.pattern, circleData.words, circleData.imageExts, true);
-    let isLowRes = this.lowResImages.includes(true);
-    props.lowResImages = this.createLowResImageList(isLowRes, props.words.size);
+    let includesLowRes = this.lowResImages.includes(true);
+    props.lowResImages = this.createImageFlagList(includesLowRes, props.words.size);
+    props.selectedImages = this.createImageFlagList(false, props.words.size);
 
     return new FloorStatus(props);
   }
@@ -164,20 +162,20 @@ export default class FloorStatus extends FloorStatusRecord {
     }
     return this.update({
       showImage: true,
-      lowResImages: this.createLowResImageList(switchToLowRes),
+      lowResImages: this.createImageFlagList(switchToLowRes),
       lowResLevel: lowResLevel
     });
   }
 
-  createLowResImageList(isLowRes, size = null) {
+  createImageFlagList(flag, size = null) {
     if (size === null) {
       size = this.words.size;
     }
-    let lowResImages = [];
+    let flags = [];
     for (let i = 0; i < size; i++) {
-      lowResImages[i] = isLowRes;
+      flags[i] = flag;
     }
-    return new I.List(lowResImages);
+    return new I.List(flags);
   }
 
   changeCircleImagesResolution() {
@@ -195,10 +193,23 @@ export default class FloorStatus extends FloorStatusRecord {
 
     let props = {
       showImage: true,
-      lowResImages: this.createLowResImageList(lowResLevel > 0),
+      lowResImages: this.createImageFlagList(lowResLevel > 0),
       lowResLevel: lowResLevel,
     }
     return this.update(props);
+  }
+
+  selectedWords() {
+    let words = this.words.map((w) => { return w.text; });
+
+    const isNotSelected = this.selectedImages.includes(false);
+    const isSelected = this.selectedImages.includes(true);
+    if (isNotSelected && isSelected) {
+      words = words.filter((v, i) => {
+        return this.selectedImages.get(i);
+      });
+    }
+    return words;
   }
 
   switchSingleImageResolution(index, isLowRes) {
@@ -210,10 +221,18 @@ export default class FloorStatus extends FloorStatusRecord {
   }
 
   toggleWordSelection(index) {
-    let currentRes = this.lowResImages.get(index);
-    let lowResImages = this.lowResImages.set(index, !currentRes);
+    let selected = this.selectedImages.get(index);
+    let selectedImages = this.selectedImages.set(index, !selected);
     return this.update({
-      lowResImages: lowResImages
+      selectedImages: selectedImages
+    });
+  }
+
+  toggleAllWordsSelection() {
+    const includesNotSelectedImage = this.selectedImages.includes(false);
+    let selectedImages = this.createImageFlagList(includesNotSelectedImage);
+    return this.update({
+      selectedImages: selectedImages
     });
   }
 
@@ -232,6 +251,11 @@ export default class FloorStatus extends FloorStatusRecord {
   switchWordBehavior(name) {
     if (this.roomType() == 'index') {
       return this.update({ indexBehaviorName: name });
+    } else if (name == 'services') {
+      return this.update({
+        lowResImages: this.createImageFlagList(false),
+        behaviorName: name
+      });
     } else {
       return this.update({ behaviorName: name });
     }

@@ -39,7 +39,7 @@ export default class Word extends React.Component {
       if (this.props.mode == 'selected') {
         imageStyle.border = '5px solid #f46842';
       } else if (this.props.mode == 'notselected') {
-        imageStyle.webkitFilter = 'grayscale(100%)';
+        imageStyle.WebkitFilter = 'grayscale(100%)';
       }
 
       let lowres = false;

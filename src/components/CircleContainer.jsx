@@ -24,6 +24,9 @@ const mapDispatchToProps = (dispatch) => {
     onClickToggleResolutionButton: () => {
       dispatch(actions.toggleCircleImagesResolution());
     },
+    onClickToggleSelectionButton: () => {
+      dispatch(actions.toggleAllWordsSelection());
+    },
     onClickChangeResolutionButton: () => {
       dispatch(actions.changeCircleImagesResolution());
     },
