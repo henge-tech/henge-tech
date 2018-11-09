@@ -1,6 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
-var loadenv = require("node-env-file");
+var loadenv = require('node-env-file');
 
 var dotenv = loadenv(__dirname + '/../.env.development', {raise: false});
 dotenv.NODE_ENV = 'development';
@@ -11,6 +11,7 @@ if (!devPort) {
 }
 
 module.exports = {
+  mode: 'development',
   entry: {
     CircleApp: './src/CircleApp.jsx',
     CircleIndexApp: './src/CircleIndexApp.jsx',
@@ -28,14 +29,18 @@ module.exports = {
   ],
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /.jsx?$/,
-        loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'react']
-        }
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['es2015', 'react']
+            }
+          }
+        ]
       }
     ]
   },
