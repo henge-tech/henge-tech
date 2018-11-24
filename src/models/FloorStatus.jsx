@@ -135,7 +135,11 @@ export default class FloorStatus extends FloorStatusRecord {
 
   gotoRoom(pattern) {
     let props = this.props();
-    props.mode = 'circle';
+    if (props.mode == '3d' || props.mode == '3dIndex') {
+      props.mode = '3d';
+    } else {
+      props.mode = 'circle';
+    }
     props.floorPos = this.patternToPos(pattern);
     const circleData = props.floorData.circles[props.floorPos];
     props.pattern = pattern;
@@ -149,7 +153,11 @@ export default class FloorStatus extends FloorStatusRecord {
     console.debug('gotoFloor');
     let props = this.props();
     props.words = Word.createFloorIndex(this.floorData, this.indexPickupImage);
-    props.mode = 'circleIndex';
+    if (props.mode == '3d' || props.mode == '3dIndex') {
+      props.mode = '3dIndex';
+    } else {
+      props.mode = 'circleIndex';
+    }
     props.pattern = 'floor ' + floor;
     props.floorPos = 0;
     this.resetImageFlags(props);
@@ -387,28 +395,6 @@ export default class FloorStatus extends FloorStatusRecord {
     }
     return 'circle';
   }
-
-  /*
-  goNextFloor(direction, cb) {
-    let floor = this.floor;
-    if (direction == 'up') {
-      floor -= 1;
-      if (floor < 1) {
-        return;
-      }
-    } else {
-      floor += 1;
-      if (floor > 83) {
-        return;
-      }
-    }
-    fetch('/floors/' + floor + '.json').then((response) => {
-      return response.json();
-    }).then((floorData) => {
-      cb(this.setFloorData(floorData, 0, 'circleIndex').goNextRoom('back'));
-    });
-  }
-  */
 
   setIndexPickupImage(quater) {
     let words = Word.createFloorIndex(this.floorData, quater);

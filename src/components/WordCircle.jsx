@@ -41,26 +41,33 @@ export default class WordCircle extends React.Component {
         mode = this.props.floorStatus.get('lowResImages').get(i) ? 'lowres' : 'normal';
       }
 
-      items[i] = (
-        <Word
-          mode={mode}
-          showImage={this.props.floorStatus.get('showImage')}
-          lowResLevel={this.props.floorStatus.get('lowResLevel')}
-          coreClass={classes[i]}
-          wordClass={wordClass}
+      let href = null;
+      if (this.props.floorStatus.get('mode') == 'circleIndex') {
+        const pattern = this.props.floorStatus.get('floorData').circles[i].pattern;
+        href = '/circles/' + pattern + '.html';
+      }
 
-          key={'word-' + i}
+        items[i] = (
+          <Word
+            mode={mode}
+            showImage={this.props.floorStatus.get('showImage')}
+            lowResLevel={this.props.floorStatus.get('lowResLevel')}
+            coreClass={classes[i]}
+            wordClass={wordClass}
 
-          word={word}
-          x={x}
-          y={y}
-          r={r}
-          fontSize={fontSize}
-          imageSize={imageSize}
-          onClickWord={this.props.onClickWord}
-          />
-      );
-    }
+            key={'word-' + i}
+
+            word={word}
+            x={x}
+            y={y}
+            r={r}
+            fontSize={fontSize}
+            imageSize={imageSize}
+            href={href}
+            onClickWord={this.props.onClickWord}
+            />
+        );
+      }
 
     return (
         <ul style={{ margin: 0, height: (oy + r + 80) + 'px' }}>

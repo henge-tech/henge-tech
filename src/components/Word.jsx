@@ -1,5 +1,6 @@
 import React from 'react';
 import Measure from 'react-measure';
+import { Link } from "react-router-dom";
 
 export default class Word extends React.Component {
   constructor(props) {
@@ -48,11 +49,19 @@ export default class Word extends React.Component {
       }
 
       let src = word.thumbURL(0, lowres);
-      wordContent = (
-        <li style={liStyle}>
-          <a href="#" onClick={onClickWord}><img src={src} style={imageStyle} /></a>
-        </li>
-      );
+      if (this.props.href) {
+        wordContent = (
+          <li style={liStyle}>
+            <Link to={this.props.href}><img src={src} style={imageStyle} /></Link>
+          </li>
+        );
+      } else {
+        wordContent = (
+          <li style={liStyle}>
+            <a href="#" onClick={onClickWord}><img src={src} style={imageStyle} /></a>
+          </li>
+        );
+      }
     } else {
       let coreClass = this.props.coreClass;
       let wordStyle = {
@@ -76,11 +85,20 @@ export default class Word extends React.Component {
         suffixClass = '';
       }
 
-      wordContent = (
-        <li style={wordStyle}>
-          <a className={this.props.wordClass} href="#" onClick={onClickWord}><span className="word-prefix">{word.prefix}</span><span className={coreClass}>{word.core}</span><span className={suffixClass}>{word.suffix}</span></a>
-        </li>
-      );
+      if (this.props.href) {
+        wordContent = (
+          <li style={wordStyle}>
+            <Link to={this.props.href}><span className="word-prefix">{word.prefix}</span><span className={coreClass}>{word.core}</span><span className={suffixClass}>{word.suffix}</span></Link>
+          </li>
+        );
+      } else {
+        wordContent = (
+          <li style={wordStyle}>
+            <a className={this.props.wordClass} href="#" onClick={onClickWord}><span className="word-prefix">{word.prefix}</span><span className={coreClass}>{word.core}</span><span className={suffixClass}>{word.suffix}</span></a>
+          </li>
+        );
+
+      }
     }
 
     return (

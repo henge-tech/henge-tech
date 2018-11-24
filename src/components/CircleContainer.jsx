@@ -13,6 +13,7 @@ const mapStateToProps = (state, ownProps) => {
     floorStatus: state.circle.floorStatus,
     urlFloor: ownProps.match.params.floor,
     urlPattern: ownProps.match.params.pattern,
+    redirectURL: state.circle.redirectURL
   }
 }
 
@@ -62,6 +63,9 @@ const mapDispatchToProps = (dispatch) => {
           dispatch(actions.gotoFloor(newFloorStatus, floor));
         });
       }
+    },
+    redirect: (href) => {
+      dispatch({ type: 'REDIRECT', href })
     }
   }
 }

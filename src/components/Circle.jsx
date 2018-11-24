@@ -5,6 +5,7 @@ import WordBehaviorListContainer from './WordBehaviorListContainer.jsx';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
 import { Button, Glyphicon } from 'react-bootstrap';
 import Circle3DRenderer from './Circle3DRenderer.jsx';
+import { Redirect } from 'react-router';
 
 export default class Circle extends React.Component {
 
@@ -39,6 +40,12 @@ export default class Circle extends React.Component {
   render() {
     console.debug('render');
     if (this.props.floorStatus.mode == 'loading') return null;
+
+    if (this.props.redirectURL && this.props.match.url != this.props.redirectURL) {
+      return (
+        <Redirect to={this.props.redirectURL} />
+      );
+    }
 
     this.reset3DRenderer();
 
@@ -84,8 +91,13 @@ export default class Circle extends React.Component {
     };
 
     this.render3DTimer = setTimeout(() => {
+      const handlers = {
+        gotoRoom: this.props.gotoRoom,
+        gotoFloor: this.props.gotoFloor,
+        redirect: this.props.redirect
+      };
       this.circle3dRenderer =
-        new Circle3DRenderer(w, h, this.props.floorStatus, this.props.goNextRoom);
+        new Circle3DRenderer(w, h, this.props.floorStatus, handlers);
       this.circle3dRenderer.execute();
     }, 200);
 
@@ -139,7 +151,6 @@ export default class Circle extends React.Component {
           onClickToggleSelectionButton={this.props.onClickToggleSelectionButton}
           onClickToggleResolutionButton={this.props.onClickToggleResolutionButton}
           onClickOpenServiceButton={this.props.onClickOpenServiceButton}
-          goNextRoom={this.props.goNextRoom}
           />
         <WordCircle
           center={center}

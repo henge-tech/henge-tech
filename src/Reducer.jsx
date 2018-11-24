@@ -72,11 +72,17 @@ const circle =  (state = {}, action) => {
     });
   case types.GO_TO_ROOM:
     return Object.assign({}, state, {
+      redirectURL: null,
       floorStatus: action.floorStatus.gotoRoom(action.pattern)
     });
   case types.GO_TO_FLOOR:
     return Object.assign({}, state, {
+      redirectURL: null,
       floorStatus: action.floorStatus.gotoFloor(action.floor)
+    });
+  case 'REDIRECT':
+    return Object.assign({}, state, {
+      redirectURL: action.href
     });
   case types.TOGGLE_CIRCLE_IMAGES:
     return Object.assign({}, state, {

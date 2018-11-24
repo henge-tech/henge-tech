@@ -37,9 +37,6 @@ export default class SpeakButtons extends React.Component {
     }
 
     const roomType = this.props.floorStatus.roomType();
-    const goNextRoom = (direction) => {
-      this.props.goNextRoom(this.props.floorStatus, direction);
-    };
 
     const goFloorIndex = () => {
       window.location.href = '/floors/';

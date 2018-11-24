@@ -4,11 +4,11 @@ import speechSynth from '../models/SpeechSynth.jsx';
 import I from 'immutable';
 
 export default class Circle3DRenderer {
-  constructor(w, h, floorStatus, goNextRoom) {
+  constructor(w, h, floorStatus, handlers) {
     this.w = w;
     this.h = h;
     this.floorStatus = floorStatus;
-    this.goNextRoom = goNextRoom;
+    this.handlers = handlers;
 
     this.floorData = floorStatus.get('floorData');
     this.words = floorStatus.get('words');
@@ -349,9 +349,10 @@ export default class Circle3DRenderer {
       if (i % (this.words.size / 4) == 0) {
         g2.getObjectByName('wall').material = wallMaterial2;
       }
-      g2.add(this.createRoomLabel(this.floorData.circles[i].pattern, 'corridorLabel', 30, -30));
+      const pattern = this.floorData.circles[i].pattern;
+      g2.add(this.createRoomLabel(pattern, 'corridorLabel', 30, -30));
 
-      g2.getObjectByName('door').userData.direction = i;
+      g2.getObjectByName('door').userData.pattern = pattern;
 
       const x = r * Math.cos((unit * i - 90) * rad);
       const z = r * Math.sin((unit * i - 90) * rad);
@@ -410,13 +411,14 @@ export default class Circle3DRenderer {
 
     // Left
     let g2 = group.clone();
-    g2.getObjectByName('door').userData.direction = 'left';
 
     let prevIndex = this.floorPos - 1;
     if (prevIndex < 0) {
       prevIndex = this.floorData.circles.length - 1;
     }
-    g2.add(this.createRoomLabel(this.floorData.circles[prevIndex].pattern, 'corridorLabel', 30, -30));
+    const leftRoomPattern = this.floorData.circles[prevIndex].pattern;
+    g2.add(this.createRoomLabel(leftRoomPattern, 'corridorLabel', 30, -30));
+    g2.getObjectByName('door').userData.pattern = leftRoomPattern;
 
     g2.position.set(0,0,0);
     g2.rotation.y = Math.PI / 2;
@@ -425,7 +427,7 @@ export default class Circle3DRenderer {
     // Back
     g2 = group.clone();
     g2.add(this.createRoomLabel(this.floorData.floor, 'corridorLabel', 30, -30));
-    g2.getObjectByName('door').userData.direction = 'back';
+    g2.getObjectByName('door').userData.floor = this.floorData.floor;
     g2.position.set(0,0,0);
     g2.rotation.y = Math.PI;
     scene.add(g2);
@@ -436,9 +438,10 @@ export default class Circle3DRenderer {
     if (nextIndex >= this.floorData.circles.length) {
       nextIndex = 0;
     }
-    g2.add(this.createRoomLabel(this.floorData.circles[nextIndex].pattern, 'corridorLabel', 30, -30));
+    const rightRoomPattern = this.floorData.circles[nextIndex].pattern;
+    g2.add(this.createRoomLabel(rightRoomPattern, 'corridorLabel', 30, -30));
 
-    g2.getObjectByName('door').userData.direction = 'right';
+    g2.getObjectByName('door').userData.pattern = rightRoomPattern;
     g2.position.set(0,0,0);
     g2.rotation.y = - Math.PI / 2;
     scene.add(g2);
@@ -515,9 +518,15 @@ export default class Circle3DRenderer {
     animate();
   }
 
-  moveRoom(direction) {
+  gotoRoom(pattern) {
     // this.stop();
-    this.goNextRoom(this.floorPos, direction);
+    // this.handlers.gotoRoom(this.floorStatus, pattern);
+    this.handlers.redirect('/circles/' + pattern + '.html');
+  }
+
+  gotoFloor(floor) {
+    // this.stop();
+    this.handlers.redirect('/floors/' + floor + '.html');
   }
 
   drawOrbit(renderer, scene, camera, light) {
@@ -598,7 +607,11 @@ export default class Circle3DRenderer {
           speechSynth.speakWords(this.words, -1);
           break;
         } else if (objs[i].object.name == 'door') {
-          this.moveRoom(objs[i].object.userData.direction);
+          if (objs[i].object.userData.pattern) {
+            this.gotoRoom(objs[i].object.userData.pattern);
+          } else {
+            this.gotoFloor(objs[i].object.userData.floor);
+          }
         }
       }
     };
