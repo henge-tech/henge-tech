@@ -2,6 +2,8 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
+  mode: 'production',
+
   entry: {
     CircleApp: './src/CircleApp.jsx',
     CircleIndexApp: './src/CircleIndexApp.jsx',
@@ -18,18 +20,25 @@ module.exports = {
         NODE_ENV: JSON.stringify('production')
       }
     }),
-    new webpack.optimize.UglifyJsPlugin()
   ],
 
+  optimization: {
+    minimize: true
+  },
+
   module: {
-    loaders: [
+    rules: [
       {
         test: /.jsx?$/,
-        loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'react']
-        }
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['es2015', 'react']
+            }
+          }
+        ]
       }
     ]
   }
