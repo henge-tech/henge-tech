@@ -14,3 +14,4 @@ Desktop.ini
 .env.*
 node_modules
 npm-debug.log
+report.html
