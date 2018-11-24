@@ -3,13 +3,16 @@ import 'whatwg-fetch';
 import { connect } from 'react-redux'
 import Circle from './Circle.jsx';
 import * as actions from '../actions/Actions.jsx'
+import { withRouter } from "react-router";
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
   return {
     width: state.window.width,
     height: state.window.height,
 
     floorStatus: state.circle.floorStatus,
+    urlFloor: ownProps.match.params.floor,
+    urlPattern: ownProps.match.params.pattern,
   }
 }
 
@@ -42,17 +45,26 @@ const mapDispatchToProps = (dispatch) => {
     onClick3DBackButton: () => {
       dispatch(actions.exit3DMode());
     },
-    goNextRoom: (floorStatus, direction) => {
-      if (direction == 'up' || direction == 'down') {
-        floorStatus.goNextFloor(direction, (newStatus) => {
-          dispatch(actions.updateFloorStatus(newStatus));
-        });
+    gotoRoom: (floorStatus, pattern) => {
+      if (floorStatus.floorData) {
+        dispatch(actions.gotoRoom(floorStatus, pattern));
       } else {
-        dispatch(actions.goNextRoom(floorStatus, direction));
+        floorStatus.loadFloorData(floorStatus.floor, (newFloorStatus) => {
+          dispatch(actions.gotoRoom(newFloorStatus, pattern));
+        });
+      }
+    },
+    gotoFloor: (floorStatus, floor) => {
+      if (floorStatus.floorData && floorStatus.floor == floor) {
+        dispatch(actions.gotoFloor(floorStatus, floor));
+      } else {
+        floorStatus.loadFloorData(floor, (newFloorStatus) => {
+          dispatch(actions.gotoFloor(newFloorStatus, floor));
+        });
       }
     }
   }
 }
 
-const CircleContainer = connect(mapStateToProps, mapDispatchToProps)(Circle);
+const CircleContainer = withRouter(connect(mapStateToProps, mapDispatchToProps)(Circle));
 export default CircleContainer;

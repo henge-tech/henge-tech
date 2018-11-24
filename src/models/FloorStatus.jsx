@@ -58,17 +58,11 @@ export default class FloorStatus extends FloorStatusRecord {
     return new FloorStatus(props);
   }
 
-  setFloorData(floorData, floorPos, mode) {
+  setFloorData(floorData) {
     let props = this.props();
-    props.mode = mode;
+    props.mode = 'loading';
     props.floorData = floorData;
-    props.floorPos = floorPos;
     props.floor = floorData.floor;
-    const circleData = floorData.circles[floorPos];
-    props.pattern = circleData.pattern;
-    props.words = this.createWordList(floorPos, props);
-    props.lowResImages = this.createImageFlagList(false, props.words.size);
-    props.selectedImages = this.createImageFlagList(false, props.words.size);
     return new FloorStatus(props);
   }
 
@@ -99,7 +93,81 @@ export default class FloorStatus extends FloorStatusRecord {
     return result;
   }
 
+  patternToPos(pattern) {
+    return this.floorData.circles.findIndex((circleData) => {
+      return circleData.pattern == pattern;
+    });
+  }
 
+  nextRoomPath(direction) {
+    const length = this.floorData.circles.length;
+    let floorPos = this.floorPos;
+    if (direction == 'left') {
+      floorPos -= 1;
+      if (floorPos < 0) floorPos = length - 1;
+      return '/circles/' + this.floorData.circles[floorPos].pattern + '.html';
+    } else if (direction == 'right') {
+      floorPos += 1;
+      if (length <= floorPos) floorPos = 0;
+      return '/circles/' + this.floorData.circles[floorPos].pattern + '.html';
+    } else if (direction == 'back') {
+      return '/floors/' + this.floor + '.html';
+    } else if (direction == 'up') {
+      let floor = this.floor - 1;
+      if (floor <= 0) floor = 1;
+      return '/floors/' + floor + '.html';
+    } else if (direction == 'down') {
+      let floor = this.floor + 1;
+      if (floor >= 83) floor = 83;
+      return '/floors/' + floor + '.html';
+    }
+  }
+
+  loadFloorData(floor, cb) {
+    console.debug('loadFloorData ' + floor);
+    fetch('/floors/' + floor + '.json').then((response) => {
+      return response.json();
+    }).then((floorData) => {
+      console.debug('loadFloorData (loaded)' + floor);
+      cb(this.setFloorData(floorData));
+    });
+  }
+
+  gotoRoom(pattern) {
+    let props = this.props();
+    props.mode = 'circle';
+    props.floorPos = this.patternToPos(pattern);
+    const circleData = props.floorData.circles[props.floorPos];
+    props.pattern = pattern;
+    props.words = Word.createListFromArray(props.pattern, circleData.words, circleData.imageExts, true);
+    this.resetImageFlags(props);
+
+    return new FloorStatus(props);
+  }
+
+  gotoFloor(floor) {
+    console.debug('gotoFloor');
+    let props = this.props();
+    props.words = Word.createFloorIndex(this.floorData, this.indexPickupImage);
+    props.mode = 'circleIndex';
+    props.pattern = 'floor ' + floor;
+    props.floorPos = 0;
+    this.resetImageFlags(props);
+
+    return new FloorStatus(props);
+  }
+
+  resetImageFlags(props) {
+    if (this.lowResImages) {
+      const includesLowRes = this.lowResImages.includes(true);
+      props.lowResImages = this.createImageFlagList(includesLowRes, props.words.size);
+    } else {
+      props.lowResImages = this.createImageFlagList(false, props.words.size);
+    }
+    props.selectedImages = this.createImageFlagList(false, props.words.size);
+  }
+
+  /*
   goNextRoom(direction) {
     let props = this.props();
     if (direction == 'back') {
@@ -147,6 +215,7 @@ export default class FloorStatus extends FloorStatusRecord {
 
     return new FloorStatus(props);
   }
+  */
 
   toggleShowImage() {
     return this.update({ showImage: !this.showImage });
@@ -319,8 +388,8 @@ export default class FloorStatus extends FloorStatusRecord {
     return 'circle';
   }
 
+  /*
   goNextFloor(direction, cb) {
-    const that = this;
     let floor = this.floor;
     if (direction == 'up') {
       floor -= 1;
@@ -339,6 +408,7 @@ export default class FloorStatus extends FloorStatusRecord {
       cb(this.setFloorData(floorData, 0, 'circleIndex').goNextRoom('back'));
     });
   }
+  */
 
   setIndexPickupImage(quater) {
     let words = Word.createFloorIndex(this.floorData, quater);

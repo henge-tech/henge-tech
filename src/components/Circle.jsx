@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import SpeakButtons from './SpeakButtons.jsx';
 import WordCircle from './WordCircle.jsx';
 import WordBehaviorListContainer from './WordBehaviorListContainer.jsx';
@@ -13,17 +13,33 @@ export default class Circle extends React.Component {
     this.state = {};
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    const keys = ['width', 'height', 'floorStatus'];
-    for (let i = 0; i < keys.length; i++) {
-      if (this.props[keys[i]] != nextProps[keys[i]]) {
-        return true;
-      }
+  componentDidMount() {
+    console.debug('componentDidMount');
+    this.urlChanged();
+  }
+
+  componentDidUpdate(prevProps) {
+    console.debug('componentDidUpdate');
+    // console.debug(this.props);
+
+    if (prevProps.match.url == this.props.match.url) {
+      return;
     }
-    return false;
+    this.urlChanged();
+  }
+
+  urlChanged() {
+    if (this.props.urlPattern) {
+      this.props.gotoRoom(this.props.floorStatus, this.props.urlPattern);
+    } else if (this.props.urlFloor) {
+      this.props.gotoFloor(this.props.floorStatus, this.props.urlFloor);
+    }
   }
 
   render() {
+    console.debug('render');
+    if (this.props.floorStatus.mode == 'loading') return null;
+
     this.reset3DRenderer();
 
     let center = { x: this.props.width / 2 };
@@ -90,7 +106,7 @@ export default class Circle extends React.Component {
             style={styles.buttons2}
             className="btn-circle"
           ><Glyphicon glyph="question-sign" /></Button>
-        <CirclePageNavBar floor={this.props.floorStatus.get('floor')} patteern={this.props.floorStatus.get('pattern')} />
+        <CirclePageNavBar floor={this.props.floorStatus.get('floor')} pattern={this.props.floorStatus.get('pattern')} />
       </div>
     );
   }
@@ -104,10 +120,6 @@ export default class Circle extends React.Component {
     const floorStatus = this.props.floorStatus;
     const onClickWord = (word) => {
       this.props.onClickWord(floorStatus, word);
-    }
-
-    const onClickMoveButton = (direction) => {
-      this.props.goNextRoom(this.props.floorStatus, direction, false);
     }
 
     let creditURL = '/credits/' + this.props.floorStatus.get('floor') + '.html';

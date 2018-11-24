@@ -1,5 +1,6 @@
 import React, { PropTypes} from 'react';
 import { Button, Glyphicon } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 export default class SpeakButtons extends React.Component {
   render() {
@@ -37,7 +38,7 @@ export default class SpeakButtons extends React.Component {
 
     const roomType = this.props.floorStatus.roomType();
     const goNextRoom = (direction) => {
-      this.props.goNextRoom(this.props.floorStatus, direction, false);
+      this.props.goNextRoom(this.props.floorStatus, direction);
     };
 
     const goFloorIndex = () => {
@@ -58,12 +59,12 @@ export default class SpeakButtons extends React.Component {
     buttons.push(this.circleButton(positions[2], 'font', () => this.props.onClickImageButton()));
 
     if (roomType == 'circle') {
-      buttons.push(this.circleButton(positions[3], 'triangle-left',   () => goNextRoom('left')));
-      buttons.push(this.circleButton(positions[5], 'triangle-right',  () => goNextRoom('right')));
-      buttons.push(this.circleButton(positions[7], 'triangle-bottom', () => goNextRoom('back')));
+      buttons.push(this.circleLinkButton(positions[3], 'triangle-left', this.props.floorStatus.nextRoomPath('left')));
+      buttons.push(this.circleLinkButton(positions[5], 'triangle-right', this.props.floorStatus.nextRoomPath('right')));
+      buttons.push(this.circleLinkButton(positions[7], 'triangle-bottom', this.props.floorStatus.nextRoomPath('back')));
     } else {
-      buttons.push(this.circleButton(positions[3], 'triangle-top',    () => goNextRoom('up')));
-      buttons.push(this.circleButton(positions[5], 'triangle-bottom', () => goNextRoom('down')));
+      buttons.push(this.circleLinkButton(positions[3], 'triangle-top',    this.props.floorStatus.nextRoomPath('up')));
+      buttons.push(this.circleLinkButton(positions[5], 'triangle-bottom', this.props.floorStatus.nextRoomPath('down')));
       buttons.push(this.circleButton(positions[7], 'triangle-bottom', () => goFloorIndex()));
     }
 
@@ -75,7 +76,7 @@ export default class SpeakButtons extends React.Component {
 
     return (
       <div className="speak-buttons">
-        {buttons}
+      {buttons}
       </div>
     );
     // <div style={{background:'red', width:'1px', height:'1px',position:'absolute', top:this.props.center.y, left:this.props.center.x}}><img src="" width="1" height="1"/></div>
@@ -91,6 +92,16 @@ export default class SpeakButtons extends React.Component {
             className="btn-circle"
             key={buttonKey}
           ><Glyphicon glyph={glyph} /></Button>
+    );
+  }
+
+  circleLinkButton(style, glyph, href) {
+    this.buttonCount += 1;
+    const buttonKey = 'circleButton-' + this.buttonCount;
+    return (
+      <Link to={href} key={buttonKey}>
+        <Button style={style} className="btn-circle"><Glyphicon glyph={glyph} /></Button>
+      </Link>
     );
   }
 }

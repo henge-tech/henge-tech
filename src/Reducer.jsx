@@ -70,13 +70,13 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.switchMode('circle')
     });
-  case types.GO_NEXT_ROOM:
+  case types.GO_TO_ROOM:
     return Object.assign({}, state, {
-      floorStatus: state.floorStatus.goNextRoom(action.direction)
+      floorStatus: action.floorStatus.gotoRoom(action.pattern)
     });
-  case types.UPDATE_FLOOR_STATUS:
+  case types.GO_TO_FLOOR:
     return Object.assign({}, state, {
-      floorStatus: action.floorStatus
+      floorStatus: action.floorStatus.gotoFloor(action.floor)
     });
   case types.TOGGLE_CIRCLE_IMAGES:
     return Object.assign({}, state, {
