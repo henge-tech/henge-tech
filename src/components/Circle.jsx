@@ -139,8 +139,24 @@ export default class Circle extends React.Component {
       creditURL += '#' + this.props.floorStatus.get('pattern');
     }
 
+    const centerIconSize = 50;
+    const centerStyle = {
+      position: 'absolute',
+      top: center.y - centerIconSize / 2,
+      left: center.x - centerIconSize / 2,
+      width: centerIconSize,
+      height: centerIconSize
+    };
+    let centerIconImg;
+    if (this.props.floorStatus.mode == 'circleIndex') {
+      centerIconImg = '/imgs/center/12-' + ((this.props.floorStatus.floor - 1) % 12) + '.png';
+    } else {
+      centerIconImg = '/imgs/center/12-' + this.props.floorStatus.floorPos + '.png';
+    }
+
     return (
       <div style={styles.container} className="container">
+          <img src={centerIconImg} style={centerStyle} />
         <SpeakButtons
           center={center}
           r={r}
