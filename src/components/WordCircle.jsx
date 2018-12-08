@@ -7,8 +7,9 @@ export default class WordCircle extends React.Component {
     const r = this.props.r;
     const ox = this.props.center.x;
     const oy = this.props.center.y;
+    const floorStatus = this.props.floorStatus;
 
-    const words = this.props.floorStatus.get('words');
+    const words = floorStatus.words;
     const wordsCount = words.size;
     const unit = Math.PI * 2.0 / wordsCount;
 
@@ -24,7 +25,7 @@ export default class WordCircle extends React.Component {
 
     let items = [];
     let classes = this.coreClasses(words);
-    const wordSelectMode = this.props.floorStatus.isWordSelectMode();
+    const wordSelectMode = floorStatus.isWordSelectMode();
     for (let i = 0; i < wordsCount; i++) {
       const word = words.get(i);
       let wordClass = 'word';
@@ -36,38 +37,38 @@ export default class WordCircle extends React.Component {
 
       let mode;
       if (wordSelectMode) {
-        mode = this.props.floorStatus.get('selectedImages').get(i) ? 'selected' : 'notselected';
+        mode = floorStatus.selectedImages.get(i) ? 'selected' : 'notselected';
       } else {
-        mode = this.props.floorStatus.get('lowResImages').get(i) ? 'lowres' : 'normal';
+        mode = floorStatus.lowResImages.get(i) ? 'lowres' : 'normal';
       }
 
       let href = null;
-      if (this.props.floorStatus.get('mode') == 'circleIndex') {
-        const pattern = this.props.floorStatus.get('floorData').circles[i].pattern;
+      if (floorStatus.mode == 'circleIndex' && floorStatus.indexBehaviorName == 'move') {
+        const pattern = floorStatus.floorData.circles[i].pattern;
         href = '/circles/' + pattern + '.html';
       }
 
-        items[i] = (
-          <Word
-            mode={mode}
-            showImage={this.props.floorStatus.get('showImage')}
-            lowResLevel={this.props.floorStatus.get('lowResLevel')}
-            coreClass={classes[i]}
-            wordClass={wordClass}
+      items[i] = (
+        <Word
+          mode={mode}
+          showImage={floorStatus.showImage}
+          lowResLevel={floorStatus.lowResLevel}
+          coreClass={classes[i]}
+          wordClass={wordClass}
 
-            key={'word-' + i}
+          key={'word-' + i}
 
-            word={word}
-            x={x}
-            y={y}
-            r={r}
-            fontSize={fontSize}
-            imageSize={imageSize}
-            href={href}
-            onClickWord={this.props.onClickWord}
-            />
-        );
-      }
+          word={word}
+          x={x}
+          y={y}
+          r={r}
+          fontSize={fontSize}
+          imageSize={imageSize}
+          href={href}
+          onClickWord={this.props.onClickWord}
+          />
+      );
+    }
 
     return (
         <ul style={{ margin: 0, height: (oy + r + 80) + 'px' }}>
