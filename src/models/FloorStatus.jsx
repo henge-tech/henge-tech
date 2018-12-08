@@ -18,6 +18,7 @@ const floorStatusDefault = {
   lowResImages: null,
   lowResLevel: 0,
   indexPickupImage: 1,
+  pickupImages: null,
 };
 
 const FloorStatusRecord = I.Record(floorStatusDefault);
@@ -50,6 +51,7 @@ export default class FloorStatus extends FloorStatusRecord {
       lowResLevel: this.lowResLevel,
       speechSpeed: this.speechSpeed,
       indexPickupImage: this.indexPickupImage,
+      pickupImages: this.pickupImages,
     };
   }
 
@@ -59,10 +61,12 @@ export default class FloorStatus extends FloorStatusRecord {
   }
 
   setFloorData(floorData) {
+    console.debug('setFloorData');
     let props = this.props();
     props.mode = 'loading';
     props.floorData = floorData;
     props.floor = floorData.floor;
+    props.pickupImages = null;
     return new FloorStatus(props);
   }
 
@@ -152,7 +156,10 @@ export default class FloorStatus extends FloorStatusRecord {
   gotoFloor(floor) {
     console.debug('gotoFloor');
     let props = this.props();
-    props.words = Word.createFloorIndex(this.floorData, this.indexPickupImage);
+    if (props.pickupImages == null) {
+      props.pickupImages = this.initPickupImages(props.indexPickupImage);
+    }
+    props.words = Word.createFloorIndex(this.floorData, props.pickupImages);
     if (props.mode == '3d' || props.mode == '3dIndex') {
       props.mode = '3dIndex';
     } else {
@@ -174,56 +181,6 @@ export default class FloorStatus extends FloorStatusRecord {
     }
     props.selectedImages = this.createImageFlagList(false, props.words.size);
   }
-
-  /*
-  goNextRoom(direction) {
-    let props = this.props();
-    if (direction == 'back') {
-      props.words = Word.createFloorIndex(this.floorData, this.indexPickupImage);
-      props.pattern = 'floor ' + props.floor;
-      props.floorPos = 0;
-
-      if (props.mode == '3d') {
-        props.mode = '3dIndex';
-      } else {
-        props.mode = 'circleIndex';
-        let includesLowRes = props.lowResImages.includes(true);
-        props.lowResImages = this.createImageFlagList(includesLowRes, props.words.size);
-        props.selectedImages = this.createImageFlagList(false, props.words.size);
-      }
-
-      return new FloorStatus(props);
-    }
-
-    if (direction == 'left') {
-      props.floorPos -= 1;
-      if (props.floorPos < 0) {
-        props.floorPos = props.floorData.circles.length - 1;
-      }
-    } else if (direction == 'right') {
-      props.floorPos += 1;
-      if (props.floorData.circles.length <= props.floorPos) {
-        props.floorPos = 0;
-      }
-    } else {
-      if (props.mode == '3dIndex') {
-        props.mode = '3d';
-      } else {
-        props.mode = 'circle';
-      }
-      props.floorPos = direction;
-    }
-
-    const circleData = props.floorData.circles[props.floorPos];
-    props.pattern = circleData.pattern;
-    props.words = Word.createListFromArray(props.pattern, circleData.words, circleData.imageExts, true);
-    let includesLowRes = this.lowResImages.includes(true);
-    props.lowResImages = this.createImageFlagList(includesLowRes, props.words.size);
-    props.selectedImages = this.createImageFlagList(false, props.words.size);
-
-    return new FloorStatus(props);
-  }
-  */
 
   toggleShowImage() {
     return this.update({ showImage: !this.showImage });
@@ -396,11 +353,29 @@ export default class FloorStatus extends FloorStatusRecord {
     return 'circle';
   }
 
+  initPickupImages(quater) {
+    const pickupImages = [];
+    const n = quater - 1;
+    this.floorData.circles.map((entry, i) => {
+      let pickup;
+      if (n < 0) {
+        pickup = Math.floor(Math.random() * entry.words.length);
+      } else {
+        const unit = entry.words.length / 4;
+        pickup = unit * n;
+      }
+      pickupImages[i] = pickup;
+    });
+    return pickupImages;
+  }
+
   setIndexPickupImage(quater) {
-    let words = Word.createFloorIndex(this.floorData, quater);
+    const pickupImages = this.initPickupImages(quater);
+    let words = Word.createFloorIndex(this.floorData, pickupImages);
     return this.update({
       words: words,
-      indexPickupImage: quater
+      indexPickupImage: quater,
+      pickupImages: pickupImages
     });
   }
 }
