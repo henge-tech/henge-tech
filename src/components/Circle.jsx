@@ -134,9 +134,9 @@ export default class Circle extends React.Component {
       this.props.onClickWord(floorStatus, word);
     }
 
-    let creditURL = '/credits/' + this.props.floorStatus.get('floor') + '.html';
-    if (this.props.floorStatus.get('mode') == 'circle') {
-      creditURL += '#' + this.props.floorStatus.get('pattern');
+    let creditURL = '/credits/' + floorStatus.floor + '.html';
+    if (floorStatus.mode == 'circle') {
+      creditURL += '#' + floorStatus.pattern;
     }
 
     const centerIconSize = 45;
@@ -157,14 +157,14 @@ export default class Circle extends React.Component {
     };
     let centerIconImgs = [];
     let centerIconImgSrc;
-    if (this.props.floorStatus.mode == 'circleIndex') {
-      centerIconImgSrc = '/imgs/center/12-' + ((this.props.floorStatus.floor - 1) % 12) + '.svg';
+    if (floorStatus.mode == 'circleIndex') {
+      centerIconImgSrc = '/imgs/center/12-' + ((floorStatus.floor - 1) % 12) + '.svg';
       centerIconImgs.push(<img src={centerIconImgSrc} style={centerStyle} key="centerIconImg0" />);
     } else {
-      centerIconImgSrc = '/imgs/center/12-' + this.props.floorStatus.floorPos + '.svg';
+      centerIconImgSrc = '/imgs/center/' + floorStatus.floorData.circles.length + '-' + floorStatus.floorPos + '.svg';
       centerIconImgs.push(<img src={centerIconImgSrc} style={centerStyle} key="centerIconImg0" />);
 
-      centerIconImgSrc = '/imgs/center/floor-' + ((this.props.floorStatus.floor - 1) % 12) + '.svg';
+      centerIconImgSrc = '/imgs/center/floor-' + ((floorStatus.floor - 1) % 12) + '.svg';
       centerIconImgs.push(<img src={centerIconImgSrc} style={centerStyle2} key="centerIconImg1" />);
     }
 
@@ -174,7 +174,7 @@ export default class Circle extends React.Component {
         <SpeakButtons
           center={center}
           r={r}
-          floorStatus={this.props.floorStatus}
+          floorStatus={floorStatus}
           onClickSpeakButton={this.props.onClickSpeakButton}
           onClickImageButton={this.props.onClickImageButton}
           onClickChangeResolutionButton={this.props.onClickChangeResolutionButton}

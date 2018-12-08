@@ -5,18 +5,20 @@ class CenterIconGenerator
   def execute
     root = File.expand_path('../docs/imgs/center', __dir__)
 
-    12.times do |i|
-      file = File.join(root, "12-#{i}.svg")
-      File.open(file, 'w') do |io|
-        # io << svg(12, 360 / 12.0, 50.0, 23.5, 1.6, i)
-        io << svg(12, 360 / 12.0, 45.0, 20, 1.8, i, false)
+    [12, 16].each do |amount|
+      amount.times do |i|
+        file = File.join(root, "#{amount}-#{i}.svg")
+        File.open(file, 'w') do |io|
+          # io << svg(12, 360 / 12.0, 50.0, 23.5, 1.6, i)
+          io << svg(amount, 360.0 / amount, 45.0, 20, 1.8, i, false)
+        end
       end
     end
     12.times do |i|
       file = File.join(root, "floor-#{i}.svg")
       File.open(file, 'w') do |io|
         # io << svg(12, 360 / 12.0, 50.0, 23.5, 1.6, i)
-        io << svg(12, 360 / 12.0, 56.0, 26, 1.8, i, true)
+        io << svg(12, 360 / 12, 56.0, 26, 1.8, i, true)
       end
     end
 
