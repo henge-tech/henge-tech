@@ -155,19 +155,22 @@ export default class Circle extends React.Component {
       width: centerIconSize2,
       height: centerIconSize2,
     };
-    let centerIconImg;
-    let centerIconImg2;
+    let centerIconImgs = [];
+    let centerIconImgSrc;
     if (this.props.floorStatus.mode == 'circleIndex') {
-      centerIconImg = '/imgs/center/12-' + ((this.props.floorStatus.floor - 1) % 12) + '.svg';
+      centerIconImgSrc = '/imgs/center/12-' + ((this.props.floorStatus.floor - 1) % 12) + '.svg';
+      centerIconImgs.push(<img src={centerIconImgSrc} style={centerStyle} key="centerIconImg0" />);
     } else {
-      centerIconImg = '/imgs/center/12-' + this.props.floorStatus.floorPos + '.svg';
-      centerIconImg2 = '/imgs/center/floor-' + ((this.props.floorStatus.floor - 1) % 12) + '.svg';
+      centerIconImgSrc = '/imgs/center/12-' + this.props.floorStatus.floorPos + '.svg';
+      centerIconImgs.push(<img src={centerIconImgSrc} style={centerStyle} key="centerIconImg0" />);
+
+      centerIconImgSrc = '/imgs/center/floor-' + ((this.props.floorStatus.floor - 1) % 12) + '.svg';
+      centerIconImgs.push(<img src={centerIconImgSrc} style={centerStyle2} key="centerIconImg1" />);
     }
 
     return (
       <div style={styles.container} className="container">
-          <img src={centerIconImg} style={centerStyle} />
-          <img src={centerIconImg2} style={centerStyle2} />
+        {centerIconImgs}
         <SpeakButtons
           center={center}
           r={r}
