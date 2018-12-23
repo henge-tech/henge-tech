@@ -17,12 +17,12 @@ export default class WordBehaviorList extends React.Component {
     }
 
     const cols = [
-      {xsHidden: false, xs: 4, md: 3},
-      {xsHidden: false, xs: 8, md: 6},
-      {xsHidden: false, xs: 4, md: 3}
+      {xsHidden: true, xs: 0, md: 2},
+      {xsHidden: false, xs: 10, md: 8},
+      {xsHidden: false, xs: 2, md: 2}
     ];
-    cols[0].xsHidden = true;
-    cols[0].xs = 0;
+    // cols[0].xsHidden = true;
+    // cols[0].xs = 0;
 
     if (this.props.floorStatus.roomType() == 'circle') {
       return this.renderWell(onClick3D, cols, styles);
@@ -45,13 +45,18 @@ export default class WordBehaviorList extends React.Component {
       const speed = + e.target.options[e.target.selectedIndex].value;
       this.props.onChangeSpeechSpeed(speed);
     }
+    let align = 'text-center';
+    if (this.props.width <= 768) {
+      align = 'text-left';
+    }
+
     return (
       <Well className="word-behaviors">
         <Grid>
         <Row>
         <Col xsHidden={cols[0].xsHidden} xs={cols[0].xs} md={cols[0].md}>
         </Col>
-        <Col xsHidden={cols[1].xsHidden} xs={cols[1].xs} md={cols[1].md}>
+        <Col xsHidden={cols[1].xsHidden} xs={cols[1].xs} md={cols[1].md} className={align}>
           <label><input name="behaviorType" type="radio"
             onChange={() => onChangeBehavior('speak')}
             checked={name === 'speak'}
@@ -99,7 +104,7 @@ export default class WordBehaviorList extends React.Component {
            </select></label>
         </Col>
         <Col xsHidden={cols[2].xsHidden} xs={cols[2].xs} md={cols[2].md}>
-        <div style={styles.modeLinks} className='text-right'>
+        <div style={styles.modeLinks} className="text-right">
         <a href="#" onClick={onClick3D}>3D &#x25B8;</a>
         </div>
         </Col>

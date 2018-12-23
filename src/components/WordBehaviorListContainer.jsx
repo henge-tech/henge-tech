@@ -4,6 +4,7 @@ import * as actions from '../actions/Actions.jsx';
 
 const mapStateToProps = (state) => {
   return {
+    width: state.window.width,
     floorStatus: state.circle.floorStatus,
     mode: state.circle.mode,
   }
