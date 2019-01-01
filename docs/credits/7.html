@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<title>Henge</title>
-<link rel="stylesheet" href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/site.css">
-<style type="text/css">
-  header {
-    margin-left: 20px;
-    margin-bottom: 40px;
-  }
-  article {
-    margin-left: 20px;
-  }
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Henge</title>
+  <link rel="stylesheet" href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <style type="text/css">
+    header {
+      margin-left: 20px;
+      margin-bottom: 40px;
+    }
+    article {
+      margin-left: 20px;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var buttons = document.getElementsByClassName('enlarge-button');
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].largeSize = false;
+        buttons[i].onclick = function() {
+          var imgs = this.parentElement.parentElement.getElementsByClassName('word-image');
+          for (var j = 0; j < imgs.length; j++) {
+            if (this.largeSize) {
+              imgs[j].src = imgs[j].src.replace(/\/words\//, '/thumbs/');
+            } else {
+              imgs[j].src = imgs[j].src.replace(/\/thumbs\//, '/words/');
+            }
+          }
+          this.text = this.largeSize ? '+' : '-';
+          this.largeSize = !this.largeSize;
+          return false;
+        };
+      }
+      var imgs = document.getElementsByClassName('word-image');
+      for (var i = 0; i < imgs.length; i++) {
+        imgs[i].onclick = function() {
+          if (this.src.match(/\/words\//)) {
+            this.src = this.src.replace(/\/words\//, '/thumbs/');
+          } else {
+            this.src = this.src.replace(/\/thumbs\//, '/words/');
+          }
+          return false;
+        }
+      }
+    });
+  </script>
 </head>
 <body>
 
@@ -120,9 +153,10 @@
   </nav>
 
 
-  <h3 id="_don"><a href="/circles/_don.html" style="color: black">Circle #73 _don</a></h3>
+  <div>
+  <h3 id="_don"><a href="/circles/_don.html" style="color: black">Circle #73 _don</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/abandon.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/abandon.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/abandon.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/abandon.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">abandon</span></li>
@@ -133,7 +167,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/cordon.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/cordon.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/cordon.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/cordon.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">cordon</span></li>
@@ -144,7 +178,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/cotyledon.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/cotyledon.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/cotyledon.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/cotyledon.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">cotyledon</span></li>
@@ -155,7 +189,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/don.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/don.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/don.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/don.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">don</span></li>
@@ -166,7 +200,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/mastodon.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/mastodon.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/mastodon.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/mastodon.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">mastodon</span></li>
@@ -177,7 +211,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/Myrmidon.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/Myrmidon.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/Myrmidon.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/Myrmidon.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">Myrmidon</span></li>
@@ -188,7 +222,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/radon.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/radon.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/radon.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/radon.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">radon</span></li>
@@ -199,7 +233,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/tendon.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/tendon.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/tendon.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/tendon.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">tendon</span></li>
@@ -209,9 +243,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="_dor"><a href="/circles/_dor.html" style="color: black">Circle #74 _dor</a></h3>
+  </div>
+  <div>
+  <h3 id="_dor"><a href="/circles/_dor.html" style="color: black">Circle #74 _dor</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/ambassador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/ambassador.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/ambassador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/ambassador.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">ambassador</span></li>
@@ -222,7 +258,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/ardor.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/ardor.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/ardor.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/ardor.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">ardor</span></li>
@@ -233,7 +269,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/candor.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/candor.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/candor.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/candor.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">candor</span></li>
@@ -244,7 +280,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/chador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/chador.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/chador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/chador.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">chador</span></li>
@@ -255,7 +291,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/condor.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/condor.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/condor.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/condor.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">condor</span></li>
@@ -266,7 +302,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/conquistador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/conquistador.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/conquistador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/conquistador.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">conquistador</span></li>
@@ -277,7 +313,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/corridor.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/corridor.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/corridor.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/corridor.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">corridor</span></li>
@@ -288,7 +324,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/matador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/matador.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/matador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/matador.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">matador</span></li>
@@ -299,7 +335,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/odor.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/odor.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/odor.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/odor.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">odor</span></li>
@@ -310,7 +346,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/picador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/picador.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/picador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/picador.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">picador</span></li>
@@ -321,7 +357,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/splendor.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/splendor.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/splendor.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/splendor.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">splendor</span></li>
@@ -332,7 +368,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/toreador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/toreador.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/toreador.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/toreador.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">toreador</span></li>
@@ -342,9 +378,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="_down"><a href="/circles/_down.html" style="color: black">Circle #75 _down</a></h3>
+  </div>
+  <div>
+  <h3 id="_down"><a href="/circles/_down.html" style="color: black">Circle #75 _down</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/breakdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/breakdown.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/breakdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/breakdown.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">breakdown</span></li>
@@ -355,7 +393,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/clampdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/clampdown.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/clampdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/clampdown.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">clampdown</span></li>
@@ -366,7 +404,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/crackdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/crackdown.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/crackdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/crackdown.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">crackdown</span></li>
@@ -377,7 +415,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/knockdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/knockdown.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/knockdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/knockdown.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">knockdown</span></li>
@@ -388,7 +426,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/letdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/letdown.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/letdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/letdown.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">letdown</span></li>
@@ -399,7 +437,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/lowdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/lowdown.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/lowdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/lowdown.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">lowdown</span></li>
@@ -410,7 +448,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/markdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/markdown.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/markdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/markdown.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">markdown</span></li>
@@ -421,7 +459,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/shakedown.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/shakedown.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/shakedown.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/shakedown.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">shakedown</span></li>
@@ -432,7 +470,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/showdown.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/showdown.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/showdown.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/showdown.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">showdown</span></li>
@@ -443,7 +481,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sundown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sundown.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sundown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sundown.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">sundown</span></li>
@@ -454,7 +492,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/touchdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/touchdown.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/touchdown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/touchdown.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">touchdown</span></li>
@@ -465,7 +503,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/turndown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/turndown.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/turndown.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/turndown.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">turndown</span></li>
@@ -475,9 +513,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="_duct"><a href="/circles/_duct.html" style="color: black">Circle #76 _duct</a></h3>
+  </div>
+  <div>
+  <h3 id="_duct"><a href="/circles/_duct.html" style="color: black">Circle #76 _duct</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/abduct.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/abduct.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/abduct.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/abduct.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">abduct</span></li>
@@ -488,7 +528,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/adduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/adduct.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/adduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/adduct.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">adduct</span></li>
@@ -499,7 +539,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/aqueduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/aqueduct.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/aqueduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/aqueduct.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">aqueduct</span></li>
@@ -510,7 +550,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/conduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/conduct.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/conduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/conduct.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">conduct</span></li>
@@ -521,7 +561,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/deduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/deduct.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/deduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/deduct.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">deduct</span></li>
@@ -532,7 +572,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/duct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/duct.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/duct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/duct.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">duct</span></li>
@@ -543,7 +583,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/induct.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/induct.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/induct.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/induct.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">induct</span></li>
@@ -554,7 +594,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/misconduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/misconduct.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/misconduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/misconduct.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">misconduct</span></li>
@@ -565,7 +605,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/oviduct.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/oviduct.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/oviduct.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/oviduct.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">oviduct</span></li>
@@ -576,7 +616,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/product.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/product.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/product.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/product.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">product</span></li>
@@ -587,7 +627,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/subduct.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/subduct.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/subduct.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/subduct.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">subduct</span></li>
@@ -598,7 +638,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/viaduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/viaduct.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/viaduct.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/viaduct.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">viaduct</span></li>
@@ -608,9 +648,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="_eak"><a href="/circles/_eak.html" style="color: black">Circle #77 _eak</a></h3>
+  </div>
+  <div>
+  <h3 id="_eak"><a href="/circles/_eak.html" style="color: black">Circle #77 _eak</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/beak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/beak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/beak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/beak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">beak</span></li>
@@ -621,7 +663,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/bleak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/bleak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/bleak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/bleak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">bleak</span></li>
@@ -632,7 +674,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/creak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/creak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/creak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/creak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">creak</span></li>
@@ -643,7 +685,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/daybreak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/daybreak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/daybreak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/daybreak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">daybreak</span></li>
@@ -654,7 +696,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/freak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/freak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/freak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/freak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">freak</span></li>
@@ -665,7 +707,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/outbreak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/outbreak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/outbreak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/outbreak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">outbreak</span></li>
@@ -676,7 +718,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sneak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sneak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sneak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sneak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">sneak</span></li>
@@ -687,7 +729,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/squeak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/squeak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/squeak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/squeak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">squeak</span></li>
@@ -698,7 +740,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/streak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/streak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/streak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/streak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">streak</span></li>
@@ -709,7 +751,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/teak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/teak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/teak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/teak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">teak</span></li>
@@ -720,7 +762,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/tweak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/tweak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/tweak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/tweak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">tweak</span></li>
@@ -731,7 +773,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/wreak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/wreak.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/wreak.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/wreak.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">wreak</span></li>
@@ -741,9 +783,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="_eate"><a href="/circles/_eate.html" style="color: black">Circle #78 _eate</a></h3>
+  </div>
+  <div>
+  <h3 id="_eate"><a href="/circles/_eate.html" style="color: black">Circle #78 _eate</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/aureate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/aureate.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/aureate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/aureate.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">aureate</span></li>
@@ -754,7 +798,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/baccalaureate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/baccalaureate.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/baccalaureate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/baccalaureate.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">baccalaureate</span></li>
@@ -765,7 +809,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/chalybeate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/chalybeate.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/chalybeate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/chalybeate.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">chalybeate</span></li>
@@ -776,7 +820,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/create.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/create.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/create.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/create.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">create</span></li>
@@ -787,7 +831,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/delineate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/delineate.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/delineate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/delineate.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">delineate</span></li>
@@ -798,7 +842,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/ideate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/ideate.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/ideate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/ideate.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">ideate</span></li>
@@ -809,7 +853,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/laureate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/laureate.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/laureate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/laureate.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">laureate</span></li>
@@ -820,7 +864,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/nauseate.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/nauseate.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/nauseate.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/nauseate.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">nauseate</span></li>
@@ -831,7 +875,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/permeate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/permeate.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/permeate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/permeate.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">permeate</span></li>
@@ -842,7 +886,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/procreate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/procreate.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/procreate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/procreate.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">procreate</span></li>
@@ -853,7 +897,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/recreate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/recreate.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/recreate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/recreate.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">recreate</span></li>
@@ -864,7 +908,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/roseate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/roseate.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/roseate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/roseate.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">roseate</span></li>
@@ -874,9 +918,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="_eau"><a href="/circles/_eau.html" style="color: black">Circle #79 _eau</a></h3>
+  </div>
+  <div>
+  <h3 id="_eau"><a href="/circles/_eau.html" style="color: black">Circle #79 _eau</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/bandeau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/bandeau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/bandeau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/bandeau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">bandeau</span></li>
@@ -887,7 +933,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/bateau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/bateau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/bateau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/bateau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">bateau</span></li>
@@ -898,7 +944,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/beau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/beau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/beau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/beau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">beau</span></li>
@@ -909,7 +955,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/bureau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/bureau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/bureau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/bureau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">bureau</span></li>
@@ -920,7 +966,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/chapeau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/chapeau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/chapeau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/chapeau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">chapeau</span></li>
@@ -931,7 +977,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/chateau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/chateau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/chateau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/chateau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">chateau</span></li>
@@ -942,7 +988,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/gateau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/gateau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/gateau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/gateau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">gateau</span></li>
@@ -953,7 +999,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/plateau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/plateau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/plateau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/plateau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">plateau</span></li>
@@ -964,7 +1010,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/portmanteau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/portmanteau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/portmanteau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/portmanteau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">portmanteau</span></li>
@@ -975,7 +1021,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/rondeau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/rondeau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/rondeau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/rondeau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">rondeau</span></li>
@@ -986,7 +1032,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/tableau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/tableau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/tableau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/tableau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">tableau</span></li>
@@ -997,7 +1043,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/trousseau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/trousseau.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/trousseau.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/trousseau.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">trousseau</span></li>
@@ -1007,9 +1053,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="_eave"><a href="/circles/_eave.html" style="color: black">Circle #80 _eave</a></h3>
+  </div>
+  <div>
+  <h3 id="_eave"><a href="/circles/_eave.html" style="color: black">Circle #80 _eave</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/bereave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/bereave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/bereave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/bereave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">bereave</span></li>
@@ -1020,7 +1068,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/cleave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/cleave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/cleave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/cleave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">cleave</span></li>
@@ -1031,7 +1079,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/eave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/eave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/eave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/eave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">eave</span></li>
@@ -1042,7 +1090,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/greave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/greave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/greave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/greave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">greave</span></li>
@@ -1053,7 +1101,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/heave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/heave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/heave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/heave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">heave</span></li>
@@ -1064,7 +1112,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/interleave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/interleave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/interleave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/interleave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">interleave</span></li>
@@ -1075,7 +1123,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/interweave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/interweave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/interweave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/interweave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">interweave</span></li>
@@ -1086,7 +1134,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/leave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/leave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/leave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/leave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">leave</span></li>
@@ -1097,7 +1145,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/reave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/reave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/reave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/reave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">reave</span></li>
@@ -1108,7 +1156,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sheave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sheave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sheave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sheave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">sheave</span></li>
@@ -1119,7 +1167,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sleave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sleave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sleave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sleave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">sleave</span></li>
@@ -1130,7 +1178,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/weave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/weave.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/weave.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/weave.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">weave</span></li>
@@ -1140,9 +1188,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="_ece"><a href="/circles/_ece.html" style="color: black">Circle #81 _ece</a></h3>
+  </div>
+  <div>
+  <h3 id="_ece"><a href="/circles/_ece.html" style="color: black">Circle #81 _ece</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/apiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/apiece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/apiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/apiece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">apiece</span></li>
@@ -1153,7 +1203,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/centerpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/centerpiece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/centerpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/centerpiece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">centerpiece</span></li>
@@ -1164,7 +1214,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/earpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/earpiece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/earpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/earpiece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">earpiece</span></li>
@@ -1175,7 +1225,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/eyepiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/eyepiece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/eyepiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/eyepiece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">eyepiece</span></li>
@@ -1186,7 +1236,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/fleece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/fleece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/fleece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/fleece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">fleece</span></li>
@@ -1197,7 +1247,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/frontispiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/frontispiece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/frontispiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/frontispiece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">frontispiece</span></li>
@@ -1208,7 +1258,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/headpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/headpiece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/headpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/headpiece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">headpiece</span></li>
@@ -1219,7 +1269,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/mantelpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/mantelpiece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/mantelpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/mantelpiece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">mantelpiece</span></li>
@@ -1230,7 +1280,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/niece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/niece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/niece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/niece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">niece</span></li>
@@ -1241,7 +1291,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/showpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/showpiece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/showpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/showpiece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">showpiece</span></li>
@@ -1252,7 +1302,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/timepiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/timepiece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/timepiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/timepiece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">timepiece</span></li>
@@ -1263,7 +1313,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/workpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/workpiece.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/workpiece.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/workpiece.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">workpiece</span></li>
@@ -1273,9 +1323,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="_ede"><a href="/circles/_ede.html" style="color: black">Circle #82 _ede</a></h3>
+  </div>
+  <div>
+  <h3 id="_ede"><a href="/circles/_ede.html" style="color: black">Circle #82 _ede</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/accede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/accede.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/accede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/accede.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">accede</span></li>
@@ -1286,7 +1338,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/cede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/cede.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/cede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/cede.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">cede</span></li>
@@ -1297,7 +1349,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/centipede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/centipede.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/centipede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/centipede.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">centipede</span></li>
@@ -1308,7 +1360,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/concede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/concede.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/concede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/concede.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">concede</span></li>
@@ -1319,7 +1371,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/impede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/impede.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/impede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/impede.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">impede</span></li>
@@ -1330,7 +1382,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/intercede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/intercede.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/intercede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/intercede.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">intercede</span></li>
@@ -1341,7 +1393,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/millipede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/millipede.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/millipede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/millipede.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">millipede</span></li>
@@ -1352,7 +1404,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/precede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/precede.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/precede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/precede.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">precede</span></li>
@@ -1363,7 +1415,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/recede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/recede.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/recede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/recede.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">recede</span></li>
@@ -1374,7 +1426,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/rede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/rede.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/rede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/rede.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">rede</span></li>
@@ -1385,7 +1437,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/secede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/secede.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/secede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/secede.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">secede</span></li>
@@ -1396,7 +1448,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/stampede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/stampede.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/stampede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/stampede.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">stampede</span></li>
@@ -1407,7 +1459,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/suede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/suede.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/suede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/suede.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">suede</span></li>
@@ -1418,7 +1470,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/supersede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/supersede.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/supersede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/supersede.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">supersede</span></li>
@@ -1429,7 +1481,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/Swede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/Swede.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/Swede.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/Swede.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">Swede</span></li>
@@ -1440,7 +1492,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/velocipede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/velocipede.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/velocipede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/velocipede.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">velocipede</span></li>
@@ -1450,9 +1502,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="_edge"><a href="/circles/_edge.html" style="color: black">Circle #83 _edge</a></h3>
+  </div>
+  <div>
+  <h3 id="_edge"><a href="/circles/_edge.html" style="color: black">Circle #83 _edge</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/acknowledge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/acknowledge.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/acknowledge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/acknowledge.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">acknowledge</span></li>
@@ -1463,7 +1517,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/dredge.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/dredge.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/dredge.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/dredge.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">dredge</span></li>
@@ -1474,7 +1528,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/edge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/edge.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/edge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/edge.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">edge</span></li>
@@ -1485,7 +1539,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/foreknowledge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/foreknowledge.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/foreknowledge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/foreknowledge.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">foreknowledge</span></li>
@@ -1496,7 +1550,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/hedge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/hedge.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/hedge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/hedge.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">hedge</span></li>
@@ -1507,7 +1561,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/ledge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/ledge.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/ledge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/ledge.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">ledge</span></li>
@@ -1518,7 +1572,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/pledge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/pledge.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/pledge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/pledge.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">pledge</span></li>
@@ -1529,7 +1583,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sedge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sedge.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sedge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sedge.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">sedge</span></li>
@@ -1540,7 +1594,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/selvedge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/selvedge.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/selvedge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/selvedge.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">selvedge</span></li>
@@ -1551,7 +1605,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sledge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sledge.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sledge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sledge.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">sledge</span></li>
@@ -1562,7 +1616,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/straightedge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/straightedge.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/straightedge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/straightedge.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">straightedge</span></li>
@@ -1573,7 +1627,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/wedge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/wedge.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/wedge.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/wedge.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">wedge</span></li>
@@ -1583,9 +1637,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="_eek"><a href="/circles/_eek.html" style="color: black">Circle #84 _eek</a></h3>
+  </div>
+  <div>
+  <h3 id="_eek"><a href="/circles/_eek.html" style="color: black">Circle #84 _eek</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/cheek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/cheek.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/cheek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/cheek.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">cheek</span></li>
@@ -1596,7 +1652,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/creek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/creek.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/creek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/creek.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">creek</span></li>
@@ -1607,7 +1663,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/eek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/eek.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/eek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/eek.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">eek</span></li>
@@ -1618,7 +1674,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/fenugreek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/fenugreek.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/fenugreek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/fenugreek.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">fenugreek</span></li>
@@ -1629,7 +1685,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/geek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/geek.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/geek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/geek.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">geek</span></li>
@@ -1640,7 +1696,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/leek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/leek.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/leek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/leek.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">leek</span></li>
@@ -1651,7 +1707,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/meek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/meek.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/meek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/meek.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">meek</span></li>
@@ -1662,7 +1718,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/peek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/peek.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/peek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/peek.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">peek</span></li>
@@ -1673,7 +1729,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/reek.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/reek.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/reek.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/reek.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">reek</span></li>
@@ -1684,7 +1740,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/seek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/seek.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/seek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/seek.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">seek</span></li>
@@ -1695,7 +1751,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sleek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sleek.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/sleek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/sleek.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">sleek</span></li>
@@ -1706,7 +1762,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/workweek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/workweek.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/workweek.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/workweek.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">workweek</span></li>
@@ -1716,6 +1772,7 @@
     </li>
   </ul>
   <br style="clear:both;">
+  </div>
 </article>
 
 </div>

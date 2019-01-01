@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<title>Henge</title>
-<link rel="stylesheet" href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/site.css">
-<style type="text/css">
-  header {
-    margin-left: 20px;
-    margin-bottom: 40px;
-  }
-  article {
-    margin-left: 20px;
-  }
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Henge</title>
+  <link rel="stylesheet" href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <style type="text/css">
+    header {
+      margin-left: 20px;
+      margin-bottom: 40px;
+    }
+    article {
+      margin-left: 20px;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var buttons = document.getElementsByClassName('enlarge-button');
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].largeSize = false;
+        buttons[i].onclick = function() {
+          var imgs = this.parentElement.parentElement.getElementsByClassName('word-image');
+          for (var j = 0; j < imgs.length; j++) {
+            if (this.largeSize) {
+              imgs[j].src = imgs[j].src.replace(/\/words\//, '/thumbs/');
+            } else {
+              imgs[j].src = imgs[j].src.replace(/\/thumbs\//, '/words/');
+            }
+          }
+          this.text = this.largeSize ? '+' : '-';
+          this.largeSize = !this.largeSize;
+          return false;
+        };
+      }
+      var imgs = document.getElementsByClassName('word-image');
+      for (var i = 0; i < imgs.length; i++) {
+        imgs[i].onclick = function() {
+          if (this.src.match(/\/words\//)) {
+            this.src = this.src.replace(/\/words\//, '/thumbs/');
+          } else {
+            this.src = this.src.replace(/\/thumbs\//, '/words/');
+          }
+          return false;
+        }
+      }
+    });
+  </script>
 </head>
 <body>
 
@@ -120,9 +153,10 @@
   </nav>
 
 
-  <h3 id="pro_te"><a href="/circles/pro_te.html" style="color: black">Circle #856 pro_te</a></h3>
+  <div>
+  <h3 id="pro_te"><a href="/circles/pro_te.html" style="color: black">Circle #856 pro_te</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/procreate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/procreate.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/procreate.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/procreate.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">procreate</span></li>
@@ -132,9 +166,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="qua_y"><a href="/circles/qua_y.html" style="color: black">Circle #860 qua_y</a></h3>
+  </div>
+  <div>
+  <h3 id="qua_y"><a href="/circles/qua_y.html" style="color: black">Circle #860 qua_y</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/quarry.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/quarry.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/quarry.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/quarry.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">quarry</span></li>
@@ -144,9 +180,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="r_de"><a href="/circles/r_de.html" style="color: black">Circle #861 r_de</a></h3>
+  </div>
+  <div>
+  <h3 id="r_de"><a href="/circles/r_de.html" style="color: black">Circle #861 r_de</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/recede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/recede.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/recede.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/recede.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">recede</span></li>
@@ -156,9 +194,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="r_der"><a href="/circles/r_der.html" style="color: black">Circle #862 r_der</a></h3>
+  </div>
+  <div>
+  <h3 id="r_der"><a href="/circles/r_der.html" style="color: black">Circle #862 r_der</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/ringleader.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/ringleader.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/ringleader.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/ringleader.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">ringleader</span></li>
@@ -168,9 +208,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="r_el"><a href="/circles/r_el.html" style="color: black">Circle #863 r_el</a></h3>
+  </div>
+  <div>
+  <h3 id="r_el"><a href="/circles/r_el.html" style="color: black">Circle #863 r_el</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/rebel.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/rebel.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/rebel.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/rebel.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">rebel</span></li>
@@ -181,7 +223,7 @@
   </ul>
   <br style="clear:both;">
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/reel.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/reel.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/reel.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/reel.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">reel</span></li>
@@ -191,9 +233,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="r_ge"><a href="/circles/r_ge.html" style="color: black">Circle #864 r_ge</a></h3>
+  </div>
+  <div>
+  <h3 id="r_ge"><a href="/circles/r_ge.html" style="color: black">Circle #864 r_ge</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/renege.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/renege.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/renege.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/renege.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">renege</span></li>
@@ -203,6 +247,7 @@
     </li>
   </ul>
   <br style="clear:both;">
+  </div>
 </article>
 
 </div>

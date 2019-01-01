@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<title>Henge</title>
-<link rel="stylesheet" href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/site.css">
-<style type="text/css">
-  header {
-    margin-left: 20px;
-    margin-bottom: 40px;
-  }
-  article {
-    margin-left: 20px;
-  }
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Henge</title>
+  <link rel="stylesheet" href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <style type="text/css">
+    header {
+      margin-left: 20px;
+      margin-bottom: 40px;
+    }
+    article {
+      margin-left: 20px;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var buttons = document.getElementsByClassName('enlarge-button');
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].largeSize = false;
+        buttons[i].onclick = function() {
+          var imgs = this.parentElement.parentElement.getElementsByClassName('word-image');
+          for (var j = 0; j < imgs.length; j++) {
+            if (this.largeSize) {
+              imgs[j].src = imgs[j].src.replace(/\/words\//, '/thumbs/');
+            } else {
+              imgs[j].src = imgs[j].src.replace(/\/thumbs\//, '/words/');
+            }
+          }
+          this.text = this.largeSize ? '+' : '-';
+          this.largeSize = !this.largeSize;
+          return false;
+        };
+      }
+      var imgs = document.getElementsByClassName('word-image');
+      for (var i = 0; i < imgs.length; i++) {
+        imgs[i].onclick = function() {
+          if (this.src.match(/\/words\//)) {
+            this.src = this.src.replace(/\/words\//, '/thumbs/');
+          } else {
+            this.src = this.src.replace(/\/thumbs\//, '/words/');
+          }
+          return false;
+        }
+      }
+    });
+  </script>
 </head>
 <body>
 
@@ -120,9 +153,10 @@
   </nav>
 
 
-  <h3 id="i_ant"><a href="/circles/i_ant.html" style="color: black">Circle #699 i_ant</a></h3>
+  <div>
+  <h3 id="i_ant"><a href="/circles/i_ant.html" style="color: black">Circle #699 i_ant</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/insignificant.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/insignificant.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/insignificant.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/insignificant.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">insignificant</span></li>
@@ -132,9 +166,61 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="impa_"><a href="/circles/impa_.html" style="color: black">Circle #706 impa_</a></h3>
+  </div>
+  <div>
+  <h3 id="i_se"><a href="/circles/i_se.html" style="color: black">Circle #703 i_se</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/impair.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/impair.jpg"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/immense.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/immense.jpg" class="word-image"></a>
+    </div>
+  <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
+    <li><span style="font-size:1.5em">immense</span></li>
+    <li>
+      <a href="https://pixabay.com/en/galaxy-star-tarantula-nebula-74005/" target="_blank">By WikiImages / CC0 / Pixabay</a>
+
+    </li>
+  </ul>
+  <br style="clear:both;">
+  <div style="float: left;margin:10px;">
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/incense.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/incense.jpg" class="word-image"></a>
+    </div>
+  <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
+    <li><span style="font-size:1.5em">incense</span></li>
+    <li>
+      <a href="https://pixabay.com/en/incense-traditional-smoke-china-525016/" target="_blank">By skyhp009 / CC0 / Pixabay</a>
+
+    </li>
+  </ul>
+  <br style="clear:both;">
+  <div style="float: left;margin:10px;">
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/intense.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/intense.jpg" class="word-image"></a>
+    </div>
+  <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
+    <li><span style="font-size:1.5em">intense</span></li>
+    <li>
+      <a href="https://pixabay.com/en/eyes-animal-nature-dog-blue-712125/" target="_blank">By staffordgreen0 / CC0 / Pixabay</a>
+
+    </li>
+  </ul>
+  <br style="clear:both;">
+  </div>
+  <div>
+  <h3 id="imm_e"><a href="/circles/imm_e.html" style="color: black">Circle #705 imm_e</a> <a href="" class="enlarge-button">+</a></h3>
+  <div style="float: left;margin:10px;">
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/immense.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/immense.jpg" class="word-image"></a>
+    </div>
+  <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
+    <li><span style="font-size:1.5em">immense</span></li>
+    <li>
+      <a href="https://pixabay.com/en/galaxy-star-tarantula-nebula-74005/" target="_blank">By WikiImages / CC0 / Pixabay</a>
+
+    </li>
+  </ul>
+  <br style="clear:both;">
+  </div>
+  <div>
+  <h3 id="impa_"><a href="/circles/impa_.html" style="color: black">Circle #706 impa_</a> <a href="" class="enlarge-button">+</a></h3>
+  <div style="float: left;margin:10px;">
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/impair.jpg" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/impair.jpg" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">impair</span></li>
@@ -144,9 +230,11 @@
     </li>
   </ul>
   <br style="clear:both;">
-  <h3 id="in_ct"><a href="/circles/in_ct.html" style="color: black">Circle #707 in_ct</a></h3>
+  </div>
+  <div>
+  <h3 id="in_ct"><a href="/circles/in_ct.html" style="color: black">Circle #707 in_ct</a> <a href="" class="enlarge-button">+</a></h3>
   <div style="float: left;margin:10px;">
-    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/induct.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/induct.png"></a>
+    <a href="http://henge.s3-website-ap-northeast-1.amazonaws.com/words/induct.png" target="_blank"><img src="http://henge.s3-website-ap-northeast-1.amazonaws.com/thumbs/induct.png" class="word-image"></a>
     </div>
   <ul style="margin-top:50px;margin-left:120px;list-style-type: none;">
     <li><span style="font-size:1.5em">induct</span></li>
@@ -156,6 +244,7 @@
     </li>
   </ul>
   <br style="clear:both;">
+  </div>
 </article>
 
 </div>
