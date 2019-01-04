@@ -392,4 +392,17 @@ export default class FloorStatus extends FloorStatusRecord {
       modalImage: nextModalImage
     })
   }
+
+  prevModalImage() {
+    let nextModalImage = 0;
+    if (this.modalImage !== null) {
+      nextModalImage = this.modalImage - 1;
+      if (nextModalImage < 0) {
+        nextModalImage = this.words.size - 1;
+      }
+    }
+    return this.update({
+      modalImage: nextModalImage
+    })
+  }
 }

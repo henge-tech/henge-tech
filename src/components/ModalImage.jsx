@@ -15,23 +15,33 @@ export default class ModalImage extends React.Component {
     }
 
     const imageContainerStyle = {
-        position: 'absolute',
-        top: center.y - imageHeight / 2.0,
-        left: center.x - imageWidth / 2.0,
-        width: imageWidth,
-        height: imageHeight,
-        zIndex: 1000,
-    }
+      position: 'absolute',
+      top: center.y - imageHeight / 2.0,
+      left: center.x - imageWidth / 2.0,
+      width: imageWidth,
+      height: imageHeight,
+      zIndex: 1000
+    };
+
+    const backButtonStyle = {
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '20%',
+      height: '100%',
+      // border: 'solid 1px red',
+    };
 
     const imageURL = this.props.word.imageURL(0);
 
     return (
       <div>
-      <div id="modal" onClick={this.props.hideModalImage}></div>
-      <div style={imageContainerStyle} onClick={this.props.nextModalImage}>
-      <img src={imageURL} className="modal-image"></img>
-      <p style={{textAlign: 'center', fontSize: 80, color: 'white'}}>{this.props.word.text}</p>
-      </div>
+        <div id="modal" onClick={this.props.hideModalImage}></div>
+        <div style={imageContainerStyle}>
+          <img src={imageURL} className="modal-image"  onClick={this.props.nextModalImage} />
+          <p style={{textAlign: 'center', fontSize: 80, color: 'white'}}>{this.props.word.text}</p>
+          <div style={backButtonStyle} onClick={this.props.prevModalImage}></div>
+        </div>
       </div>
     );
   }

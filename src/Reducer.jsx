@@ -38,6 +38,10 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.nextModalImage()
     });
+  case 'PREV_MODAL_IMAGE':
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.prevModalImage()
+    });
   case types.EXEC_WORD_BEHAVIOR:
     // console.log(action)
     return state;

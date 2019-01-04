@@ -14,6 +14,9 @@ const mapDispatchToProps = (dispatch) => {
     },
     nextModalImage: () => {
       dispatch({ type: 'NEXT_MODAL_IMAGE' });
+    },
+    prevModalImage: () => {
+      dispatch({ type: 'PREV_MODAL_IMAGE' });
     }
   }
 }
