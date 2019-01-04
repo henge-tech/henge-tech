@@ -7,9 +7,6 @@ export default class WordBehavior {
   exec(word, name, floorStatus, keyword = '') {
     let q = encodeURIComponent(word);
     switch(name) {
-    case 'image':
-      window.open('https://www.google.com/search?safe=off&source=lnms&tbm=isch&q=' + q);
-      break;
     case 'speak':
       speechSynth.speakWord(word);
       break;

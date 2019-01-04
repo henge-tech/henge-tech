@@ -3,6 +3,8 @@ import SpeakButtons from './SpeakButtons.jsx';
 import WordCircle from './WordCircle.jsx';
 import WordBehaviorListContainer from './WordBehaviorListContainer.jsx';
 import CirclePageNavBar from './CirclePageNavBar.jsx';
+import ModalImageContainer from './ModalImageContainer.jsx';
+
 import { Button, Glyphicon } from 'react-bootstrap';
 import Circle3DRenderer from './Circle3DRenderer.jsx';
 import { Redirect } from 'react-router';
@@ -168,9 +170,15 @@ export default class Circle extends React.Component {
       centerIconImgs.push(<img src={centerIconImgSrc} style={centerStyle2} key="centerIconImg1" />);
     }
 
+    let modalImageWord = null;
+    if (floorStatus.modalImage !== null) {
+      modalImageWord = floorStatus.words.get(floorStatus.modalImage);
+    }
+
     return (
       <div style={styles.container} className="container">
         {centerIconImgs}
+        <ModalImageContainer center={center} word={modalImageWord} />
         <SpeakButtons
           center={center}
           r={r}

@@ -31,6 +31,9 @@ export const execWordBehavior = (floorStatus, word) => {
     }
   } else {
     name = floorStatus.get('behaviorName');
+    if (name == 'image') {
+      return { type: 'SHOW_MODAL_IMAGE', word: word };
+    }
     if (name == 'services') {
       name = floorStatus.get('behaviorServiceName');
     }

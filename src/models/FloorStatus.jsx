@@ -19,6 +19,7 @@ const floorStatusDefault = {
   lowResLevel: 0,
   indexPickupImage: 1,
   pickupImages: null,
+  modalImage: null
 };
 
 const FloorStatusRecord = I.Record(floorStatusDefault);
@@ -377,5 +378,18 @@ export default class FloorStatus extends FloorStatusRecord {
       indexPickupImage: quater,
       pickupImages: pickupImages
     });
+  }
+
+  nextModalImage() {
+    let nextModalImage = 0;
+    if (this.modalImage !== null) {
+      nextModalImage = this.modalImage + 1;
+      if (nextModalImage >= this.words.size) {
+        nextModalImage = 0;
+      }
+    }
+    return this.update({
+      modalImage: nextModalImage
+    })
   }
 }

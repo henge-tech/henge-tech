@@ -26,6 +26,18 @@ const circle =  (state = {}, action) => {
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.switchQuaterImagesResolution(action.part, false)
     });
+  case 'SHOW_MODAL_IMAGE':
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.update({modalImage: action.word.index})
+    });
+  case 'HIDE_MODAL_IMAGE':
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.update({modalImage: null})
+    });
+  case 'NEXT_MODAL_IMAGE':
+    return Object.assign({}, state, {
+      floorStatus: state.floorStatus.nextModalImage()
+    });
   case types.EXEC_WORD_BEHAVIOR:
     // console.log(action)
     return state;
