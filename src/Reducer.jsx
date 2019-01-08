@@ -1,4 +1,3 @@
-import I from 'immutable';
 import { combineReducers } from 'redux';
 import * as types from './ActionTypes.jsx';
 
@@ -33,14 +32,6 @@ const circle =  (state = {}, action) => {
   case 'HIDE_MODAL_IMAGE':
     return Object.assign({}, state, {
       floorStatus: state.floorStatus.update({modalImage: null})
-    });
-  case 'NEXT_MODAL_IMAGE':
-    return Object.assign({}, state, {
-      floorStatus: state.floorStatus.nextModalImage()
-    });
-  case 'PREV_MODAL_IMAGE':
-    return Object.assign({}, state, {
-      floorStatus: state.floorStatus.prevModalImage()
     });
   case types.EXEC_WORD_BEHAVIOR:
     // console.log(action)

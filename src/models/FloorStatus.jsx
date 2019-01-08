@@ -380,29 +380,21 @@ export default class FloorStatus extends FloorStatusRecord {
     });
   }
 
-  nextModalImage() {
-    let nextModalImage = 0;
+  nextModalImage(direction) {
+    let index = 0;
     if (this.modalImage !== null) {
-      nextModalImage = this.modalImage + 1;
-      if (nextModalImage >= this.words.size) {
-        nextModalImage = 0;
+      if (direction > 0) {
+        index = this.modalImage + 1;
+        if (index >= this.words.size) {
+          index = 0;
+        }
+      } else {
+        index = this.modalImage - 1;
+        if (index < 0) {
+          index = this.words.size - 1;
+        }
       }
     }
-    return this.update({
-      modalImage: nextModalImage
-    })
-  }
-
-  prevModalImage() {
-    let nextModalImage = 0;
-    if (this.modalImage !== null) {
-      nextModalImage = this.modalImage - 1;
-      if (nextModalImage < 0) {
-        nextModalImage = this.words.size - 1;
-      }
-    }
-    return this.update({
-      modalImage: nextModalImage
-    })
+    return this.words.get(index);
   }
 }

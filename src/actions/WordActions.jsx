@@ -31,18 +31,20 @@ export const execWordBehavior = (floorStatus, word) => {
     }
   } else {
     name = floorStatus.get('behaviorName');
+    const keyword = floorStatus.get('wordSearchKeyword');
+
     if (name == 'image') {
+      speechSynth.speakText(word.text);
       return { type: 'SHOW_MODAL_IMAGE', word: word };
     }
     if (name == 'services') {
       name = floorStatus.get('behaviorServiceName');
     }
-    const keyword = floorStatus.get('wordSearchKeyword');
     if (name == 'speak') {
       behavior.exec(word.text, name, floorStatus, keyword);
       return { type: types.SPEAK_WORD, word: word };
     } else if (name.match(/\*$/)) {
-      behavior.exec(word.text, 'speak', floorStatus, keyword);
+      speechSynth.speakText(word.text);
       return { type: types.TOGGLE_WORD_SELECTION, word: word };
     } else {
       behavior.exec(word.text, name, floorStatus, keyword);
@@ -50,6 +52,13 @@ export const execWordBehavior = (floorStatus, word) => {
     }
   }
 };
+
+export const nextModalImage = (floorStatus, direction) => {
+  const word = floorStatus.nextModalImage(direction);
+
+  speechSynth.speakText(word.text);
+  return {type: 'SHOW_MODAL_IMAGE', word: word};
+}
 
 export const openService = (floorStatus) => {
   const behavior = new WordBehavior();
