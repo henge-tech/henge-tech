@@ -47,7 +47,7 @@ export default class Word extends WordRecord {
 
   imageURL(index) {
     const imageBaseName = this.encodeS3Key(this.text);
-    const baseURL = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/words/';
+    const baseURL = 'https://henge.s3-ap-northeast-1.amazonaws.com/words/';
     return baseURL + imageBaseName + '.' + this.imageExts.get(index);
   }
 
@@ -56,7 +56,7 @@ export default class Word extends WordRecord {
       thumbType = 'thumbs';
     }
     const imageBaseName = this.encodeS3Key(this.text);
-    const baseURL = 'http://henge.s3-website-ap-northeast-1.amazonaws.com/' + thumbType + '/';
+    const baseURL = 'https://henge.s3-ap-northeast-1.amazonaws.com/' + thumbType + '/';
     // const baseURL = '/thumbs/';
     return baseURL + imageBaseName + '.' + this.imageExts.get(index);
   }
