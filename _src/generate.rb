@@ -33,7 +33,7 @@ class Generator
 
     glob_pattern = File.join(@data_root, 'data/circles/*.yml')
 
-    Dir.glob(glob_pattern).each_with_index do |file, i|
+    Dir.glob(glob_pattern).sort.each_with_index do |file, i|
       words = YAML.load(File.read(file))
       pattern = File.basename(file, '.yml')
       circles << {
