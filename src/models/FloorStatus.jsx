@@ -17,7 +17,7 @@ const floorStatusDefault = {
   selectedImages: null,
   lowResImages: null,
   lowResLevel: 0,
-  indexPickupImage: 1,
+  indexPickupImage: 'circle',
   pickupImages: null,
   modalImage: null
 };
@@ -354,28 +354,30 @@ export default class FloorStatus extends FloorStatusRecord {
     return 'circle';
   }
 
-  initPickupImages(quater) {
+  initPickupImages(imageType) {
     const pickupImages = [];
-    const n = quater - 1;
+
     this.floorData.circles.map((entry, i) => {
       let pickup;
-      if (n < 0) {
+      if (imageType == 'circle') {
+        pickup = 0;
+      } else if (imageType == 'random') {
         pickup = Math.floor(Math.random() * entry.words.length);
       } else {
         const unit = entry.words.length / 4;
-        pickup = unit * n;
+        pickup = unit * (imageType - 1);
       }
       pickupImages[i] = pickup;
     });
     return pickupImages;
   }
 
-  setIndexPickupImage(quater) {
-    const pickupImages = this.initPickupImages(quater);
+  setIndexPickupImage(imageType) {
+    const pickupImages = this.initPickupImages(imageType);
     let words = Word.createFloorIndex(this.floorData, pickupImages);
     return this.update({
       words: words,
-      indexPickupImage: quater,
+      indexPickupImage: imageType,
       pickupImages: pickupImages
     });
   }

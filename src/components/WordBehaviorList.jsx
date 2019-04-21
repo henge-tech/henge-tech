@@ -151,11 +151,12 @@ export default class WordBehaviorList extends React.Component {
             /> Move</label>
           <label><select onChange={(e) => onChangeIndexPickupImage(e)}
             defaultValue={indexPickupImage}>
-            <option value={0}>Random</option>
-            <option value={1}>1Q</option>
-            <option value={2}>2Q</option>
-            <option value={3}>3Q</option>
-            <option value={4}>4Q</option>
+            <option value="circle">All</option>
+            <option value="1">1Q</option>
+            <option value="2">2Q</option>
+            <option value="3">3Q</option>
+            <option value="4">4Q</option>
+            <option value="random">Random</option>
           </select></label>
         </Col>
         <Col xsHidden={cols[2].xsHidden} xs={cols[2].xs} md={cols[2].md}>

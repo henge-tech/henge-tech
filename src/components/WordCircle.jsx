@@ -20,14 +20,15 @@ export default class WordCircle extends React.Component {
       fontSize = 12;
     }
 
-    let imageSize = [96, 96, 72, 64][wordsCount / 4 - 2];
-    imageSize *= r / 256;
+    let imageSizeBase = [96, 96, 72, 64][wordsCount / 4 - 2];
+    imageSizeBase *= r / 256;
 
     let items = [];
     let classes = this.coreClasses(words);
     const wordSelectMode = floorStatus.isWordSelectMode();
     for (let i = 0; i < wordsCount; i++) {
       const word = words.get(i);
+      let imageSize = imageSizeBase;
       let wordClass = 'word';
       if (i % (wordsCount / 4) == 0) {
         wordClass = 'word-square';
@@ -38,6 +39,9 @@ export default class WordCircle extends React.Component {
       let mode;
       if (wordSelectMode) {
         mode = floorStatus.selectedImages.get(i) ? 'selected' : 'notselected';
+      } else if (floorStatus.mode == 'circleIndex' && floorStatus.indexPickupImage == 'circle') {
+        mode = 'circle';
+        imageSize *= 1.2;
       } else {
         mode = floorStatus.lowResImages.get(i) ? 'lowres' : 'normal';
       }

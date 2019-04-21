@@ -57,12 +57,14 @@ export default class Word extends React.Component {
       imageStyle.WebkitFilter = 'grayscale(100%)';
     }
 
-    let lowres = false;
+    let thumbType = false;
     if (this.props.mode == 'lowres') {
-      lowres = 'thumbs-low' + this.props.lowResLevel;
+      thumbType = 'thumbs-low' + this.props.lowResLevel;
+    } else if (this.props.mode == 'circle') {
+      thumbType = 'circle';
     }
 
-    let src = this.props.word.thumbURL(0, lowres);
+    let src = this.props.word.thumbURL(0, thumbType);
     if (this.props.href) {
       return (
         <li style={liStyle}>

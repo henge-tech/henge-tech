@@ -88,9 +88,6 @@ export const switchWordBehaviorService = (name) => ({ type: types.SWITCH_WORD_BE
 
 export const updateWordSearchKeyword = (keyword) => ({ type: types.UPDATE_WORD_SEARCH_KEYWORD, keyword });
 
-export const switchIndexPickupImage = (quater) => ({ type: types.SWITCH_INDEX_PICKUP_IMAGE, quater });
-
-
 export const setSpeechSpeed = (speed) => {
   speechSynth.setSpeed(speed);
   return {

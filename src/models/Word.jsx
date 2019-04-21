@@ -55,9 +55,13 @@ export default class Word extends WordRecord {
     if (!thumbType) {
       thumbType = 'thumbs';
     }
+
+    if (thumbType == 'circle') {
+      return 'https://henge.s3-ap-northeast-1.amazonaws.com/circles/' + this.pattern + '.png';
+    }
+
     const imageBaseName = this.encodeS3Key(this.text);
     const baseURL = 'https://henge.s3-ap-northeast-1.amazonaws.com/' + thumbType + '/';
-    // const baseURL = '/thumbs/';
     return baseURL + imageBaseName + '.' + this.imageExts.get(index);
   }
 
