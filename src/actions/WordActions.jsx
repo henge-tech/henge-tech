@@ -3,7 +3,7 @@ import speechSynth from '../models/SpeechSynth.jsx';
 import WordBehavior from '../models/WordBehavior.jsx';
 
 export const speakWords = (floorStatus, part) => {
-  if (floorStatus.roomType() == 'index') {
+  if (floorStatus.roomType() == 'index' && floorStatus.indexPickupImage == 'circle') {
     const sequence = floorStatus.wordIndexSequenceForSpeaking(part);
     speechSynth.speakSequence(sequence);
     return { type: types.SPEAK_WORDS };

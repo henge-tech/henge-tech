@@ -17,7 +17,7 @@ const floorStatusDefault = {
   selectedImages: null,
   lowResImages: null,
   lowResLevel: 0,
-  indexPickupImage: 'circle',
+  indexPickupImage: 1,
   pickupImages: null,
   modalImage: null
 };
