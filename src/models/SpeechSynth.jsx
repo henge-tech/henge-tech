@@ -65,6 +65,35 @@ class SpeechSynth {
     this.speakNext();
   }
 
+  initVoice() {
+    if (this.speechDefault.voice) {
+      return;
+    }
+    let voices = speechSynthesis.getVoices();
+    let selectedVoice = null;
+
+    // later is high priority.
+    const preferredVoice = ['Alex', 'Tom', 'Samantha'];
+
+    let preferredVoiceIndex = -1;
+    for (let v of voices) {
+      if (v.lang.match(/^en.US/)) {
+        if (!selectedVoice) {
+          selectedVoice = v;
+        }
+        let currentVoiceIndex = preferredVoice.indexOf(v.name);
+        if (currentVoiceIndex > preferredVoiceIndex) {
+          preferredVoiceIndex = currentVoiceIndex;
+          selectedVoice = v;
+        }
+      }
+    }
+    if (selectedVoice) {
+      console.log('Voice:', selectedVoice.name);
+      this.speechDefault.voice = selectedVoice;
+    }
+  }
+
   speakNext() {
     if (this.queue.length <= 0) {
       this.speechDefault.rate = this.baseSpeed;
@@ -90,6 +119,7 @@ class SpeechSynth {
       return;
     }
 
+    this.initVoice();
     const speech = new SpeechSynthesisUtterance();
     speech.onend = (e) => {
       this.speakNext();
