@@ -44,7 +44,7 @@
     "babel-preset-react": "^6.24.1",
     "node-env-file": "^0.1.8",
     "redux-devtools": "^3.4.1",
-    "svg-sprite": "^1.5.0",
+    "svg-sprite": "^1.5.4",
     "webpack": "^4.25.1",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.1.2",
