@@ -22,7 +22,7 @@ export default class CirclePageNavBar extends React.Component {
       <Navbar inverse collapseOnSelect fixedTop>
         <Navbar.Header>
         <Navbar.Brand>
-        <a href="/circles/">
+        <a href="/">
           <svg role="img" style={iconStyle}>
             <use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/imgs/svg/sprite.svg#icon"></use>
           </svg>
@@ -33,7 +33,7 @@ export default class CirclePageNavBar extends React.Component {
         <Navbar.Collapse>
           <Nav>
             <NavItem href="/floors/" onClick={this.openPage}>Floors</NavItem>
-            <NavItem href="/circles/" onClick={this.openPage}>Circles</NavItem>
+            <NavItem href="/" onClick={this.openPage}>Circles</NavItem>
             <NavItem onClick={openCreditPage}>Credits</NavItem>
           </Nav>
         </Navbar.Collapse>

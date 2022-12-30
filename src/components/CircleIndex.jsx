@@ -67,7 +67,7 @@ export default class CircleIndex extends React.Component {
       }
 
       return (
-          <li value={circleID + 1} key={'pattern-' + circleID} style={liStyle}><span style={spanStyle}><a href={word.pattern + '.html'}>{label}</a></span>
+          <li value={circleID + 1} key={'pattern-' + circleID} style={liStyle}><span style={spanStyle}><a href={'/circles/' + word.pattern + '.html'}>{label}</a></span>
           <a href="#" onClick={e => onClickSpeakButton(e)}><Glyphicon glyph="volume-up" style={{marginRight: '5px'}}/></a>
           {patternAttr}</li>
       );
