@@ -42,6 +42,10 @@ export default class SpeakButtons extends React.Component {
       window.location.href = '/floors/';
     }
 
+    const goSentences = () => {
+      window.location.href = '/sentences/' + this.props.floorStatus.pattern + '.html';
+    }
+
     let buttons = [];
     this.buttonCount = 0;
     if (roomType == 'circle' &&
@@ -51,9 +55,9 @@ export default class SpeakButtons extends React.Component {
       buttons.push(this.circleButton(positions[1], 'share-alt', () => this.props.onClickOpenServiceButton(this.props.floorStatus)));
     } else {
       buttons.push(this.circleButton(positions[0], 'tint',    () => this.props.onClickChangeResolutionButton()));
-      buttons.push(this.circleButton(positions[1], 'picture', () => this.props.onClickToggleResolutionButton()));
+      buttons.push(this.circleButton(positions[2], 'list', () => goSentences()));
     }
-    buttons.push(this.circleButton(positions[2], 'font', () => this.props.onClickImageButton()));
+    buttons.push(this.circleButton(positions[1], 'font', () => this.props.onClickImageButton()));
 
     if (roomType == 'circle') {
       buttons.push(this.circleLinkButton(positions[3], 'triangle-left', this.props.floorStatus.nextRoomPath('left')));
