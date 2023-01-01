@@ -221,7 +221,7 @@ export default class FloorStatus extends FloorStatusRecord {
       lowResLevel = 1;
     } else {
       lowResLevel = this.lowResLevel + 1;
-      if (lowResLevel > 3) {
+      if (lowResLevel > 2) {
         lowResLevel = 0;
       }
     }
