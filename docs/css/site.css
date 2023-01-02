@@ -139,8 +139,18 @@
   margin-bottom: 30px;
   font-size: 1.2em;
 }
-.sentences img {
+.sentences article img {
   width: 45%;
+}
+.sentences h2 {
+  margin-bottom: 30px;
+}
+.sentences em {
+  font-weight: bold;
+  font-style: normal;
+}
+.sentences .navi-button {
+  margin: 10px;
 }
 
 
@@ -150,7 +160,7 @@
     float: left;
   }
 
-  .sentences img {
+  .sentences article img {
     width: 20%;
   }
 }

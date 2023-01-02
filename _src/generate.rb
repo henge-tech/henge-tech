@@ -251,9 +251,11 @@ class Generator
 
     sentences = []
 
-    sentence_files = File.join(@data_root, 'data/sentences/*.yml')
+    floornums = load_pattern_to_floor_map
+    glob_pattern = File.join(@data_root, 'data/sentences/*.yml')
+    floors = {}
 
-    Dir.glob(sentence_files).sort.each_with_index do |file, i|
+    Dir.glob(glob_pattern).sort.each_with_index do |file, i|
       pattern = File.basename(file, '.yml')
       lines = File.read(file).split(/^--- \|$/, 3)[2].split(/\n+/).select { |line| line != '' && line != '@@@' }
       next if lines.size != 4
@@ -264,19 +266,71 @@ class Generator
         number = image_file.split('-')[1].to_i
         images[number - 1] = image_file
       end
+      na = 0
       for i in 0..3
-        images[i] ||= 'na.png'
+        unless images[i]
+          na += 1
+          images[i] = 'na.png'
+        end
+      end
+      images = nil if na == 4
+
+      allwords = YAML.load(File.read(File.join(@data_root, "data/circles/#{pattern}.yml")))
+      unit = allwords.size / 4
+      for i in 0..3
+        n = i * unit
+        words = allwords[n..n + unit - 1]
+        lines[i] = emphasize_words(words, lines[i])
       end
 
-      sentences << {
+      entry = {
         :pattern => pattern,
         :lines => lines,
-        :images => images
+        :images => images,
+        :floornum => floornums[pattern],
       }
+      sentences << entry
+      floors[floornums[pattern]] ||= []
+      floors[floornums[pattern]] << entry
+    end
+    floors.each do |floornum, entries|
+      entries.each do |entry|
+        entry[:next] = entries[(entries.index(entry) + 1) % entries.size]
+        entry[:prev] = entries[(entries.index(entry) - 1) % entries.size]
+      end
     end
     @all_sentences = sentences
   end
 
+  def emphasize_words(words, line)
+    if line =~ /\*/
+      line = line.gsub(/\*(.+?)\*/, '<em>\1</em>')
+      return line
+    end
+
+    patterns = []
+    words.each do |word|
+      patterns << Regexp.escape(word)
+    end
+    pattern = patterns.sort_by(&:length).reverse.join('|')
+    line = line.gsub(/\b(#{pattern})/i, '<em>\1</em>')
+    return line
+  end
+
+  def load_pattern_to_floor_map
+    glob_pattern = File.join(@data_root, 'data/circles/*.yml')
+    basenames = Dir.glob(glob_pattern).sort.map { |f| File.basename(f, '.yml') }
+    floors = {}
+    basenames.each_with_index do |basename, i|
+      if i > 983
+        floor = 83
+      else
+        floor = i / 12 + 1
+      end
+      floors[basename] = floor
+    end
+    floors
+  end
 
   def generate_sentences
     erbfile = File.expand_path('_src/templates/sentences.html.erb', PROJECT_ROOT)
@@ -286,6 +340,8 @@ class Generator
       pattern = sentence[:pattern]
       lines = sentence[:lines]
       images = sentence[:images]
+      next_entry = sentence[:next]
+      prev_entry = sentence[:prev]
 
       html_file = File.join(PROJECT_ROOT, "docs/sentences/#{pattern}.html")
       File.open(html_file, 'w') do |out|
