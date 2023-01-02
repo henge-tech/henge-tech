@@ -16,11 +16,17 @@ class Generator
 
   def execute
     if @command == 'index'
+      # Generate /index.html
       generate_index
     elsif @command == 'circles'
+      # Generate /circles/*.html
       generate_circles
     elsif @command == 'floors'
+      # Generate /floors/*.{html,json} and /credits/*.html
       generate_floors
+    elsif @command == 'sentences'
+      # Generate /sentences/*.html
+      generate_sentences
     end
   end
 
@@ -223,6 +229,7 @@ class Generator
     end
   end
 
+  # Generate /index.html
   def generate_index
     index_erb = File.expand_path('_src/templates/index.html.erb', PROJECT_ROOT)
     erb = ERB.new(File.read(index_erb), nil, '-')
@@ -232,10 +239,58 @@ class Generator
       arr << circle[:words]
     end
 
-    html_file = File.join(PROJECT_ROOT, 'docs/circles/index.html')
+    html_file = File.join(PROJECT_ROOT, 'docs/index.html')
     all_words_json = JSON.dump(all_words)
     File.open(html_file, 'w') do |out|
       out << erb.result(binding)
+    end
+  end
+
+  def all_sentences
+    return @all_sentences if @all_sentences
+
+    sentences = []
+
+    sentence_files = File.join(@data_root, 'data/sentences/*.yml')
+
+    Dir.glob(sentence_files).sort.each_with_index do |file, i|
+      pattern = File.basename(file, '.yml')
+      lines = File.read(file).split(/^--- \|$/, 3)[2].split(/\n+/).select { |line| line != '' && line != '@@@' }
+      next if lines.size != 4
+
+      image_files = Dir.glob(File.join(@data_root, "src/images/sentences/#{pattern}-*")).map { |f| File.basename(f) }.sort
+      images = []
+      image_files.each do |image_file|
+        number = image_file.split('-')[1].to_i
+        images[number - 1] = image_file
+      end
+      for i in 0..3
+        images[i] ||= 'na.png'
+      end
+
+      sentences << {
+        :pattern => pattern,
+        :lines => lines,
+        :images => images
+      }
+    end
+    @all_sentences = sentences
+  end
+
+
+  def generate_sentences
+    erbfile = File.expand_path('_src/templates/sentences.html.erb', PROJECT_ROOT)
+    erb = ERB.new(File.read(erbfile), nil, '-')
+    sentences = all_sentences
+    sentences.each do |sentence|
+      pattern = sentence[:pattern]
+      lines = sentence[:lines]
+      images = sentence[:images]
+
+      html_file = File.join(PROJECT_ROOT, "docs/sentences/#{pattern}.html")
+      File.open(html_file, 'w') do |out|
+        out << erb.result(binding)
+      end
     end
   end
 end
