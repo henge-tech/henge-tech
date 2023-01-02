@@ -18,13 +18,6 @@
   margin-bottom:10px;
 }
 
-@media screen and (min-width: 767px) {
-  #floors-list div {
-    width:80px;
-    float: left;
-  }
-}
-
 .btn-circle {
   width: 30px;
   height: 30px;
@@ -146,3 +139,19 @@
   margin-bottom: 30px;
   font-size: 1.2em;
 }
+.sentences img {
+  width: 45%;
+}
+
+
+@media screen and (min-width: 767px) {
+  #floors-list div {
+    width:80px;
+    float: left;
+  }
+
+  .sentences img {
+    width: 20%;
+  }
+}
+
