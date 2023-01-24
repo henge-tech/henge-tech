@@ -257,7 +257,7 @@ class Generator
 
     Dir.glob(glob_pattern).sort.each_with_index do |file, i|
       pattern = File.basename(file, '.yml')
-      lines = File.read(file).split(/^--- \|$/, 3)[2].split(/\n+/).select { |line| line != '' && line != '@@@' }
+      lines = File.read(file).split(/^--- \|$/, 3).last.split(/\n+/).select { |line| line != '' && line != '@@@' }
       next if lines.size != 4
 
       image_files = Dir.glob(File.join(@data_root, "src/images/sentences/#{pattern}-*")).map { |f| File.basename(f) }.sort
