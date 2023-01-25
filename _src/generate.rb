@@ -5,6 +5,7 @@ require 'erb'
 require 'optparse'
 require 'json'
 require 'awesome_print'
+require 'uri'
 
 class Generator
   PROJECT_ROOT = File.expand_path('../..', __FILE__)
@@ -277,15 +278,20 @@ class Generator
 
       allwords = YAML.load(File.read(File.join(@data_root, "data/circles/#{pattern}.yml")))
       unit = allwords.size / 4
+      emphasized = []
+      urlencoded = []
       for i in 0..3
         n = i * unit
         words = allwords[n..n + unit - 1]
-        lines[i] = emphasize_words(words, lines[i])
+        emphasized[i] = emphasize_words(words, lines[i])
+        # urlencoded[i] = URI.encode_www_form_component(lines[i])
+        urlencoded[i] = ERB::Util.url_encode(lines[i])
       end
 
       entry = {
         :pattern => pattern,
-        :lines => lines,
+        :lines => emphasized,
+        :encoded => urlencoded,
         :images => images,
         :floornum => floornums[pattern],
       }
@@ -339,6 +345,7 @@ class Generator
     sentences.each do |sentence|
       pattern = sentence[:pattern]
       lines = sentence[:lines]
+      encoded = sentence[:encoded]
       images = sentence[:images]
       next_entry = sentence[:next]
       prev_entry = sentence[:prev]
