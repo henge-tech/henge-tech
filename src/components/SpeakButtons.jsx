@@ -46,6 +46,10 @@ export default class SpeakButtons extends React.Component {
       window.location.href = '/sentences/' + this.props.floorStatus.pattern + '.html';
     }
 
+    const goFloorSentences = () => {
+      window.location.href = '/sentences/floors/' + this.props.floorStatus.floor + '.html';
+    }
+
     let buttons = [];
     this.buttonCount = 0;
     if (roomType == 'circle' &&
@@ -55,15 +59,16 @@ export default class SpeakButtons extends React.Component {
       buttons.push(this.circleButton(positions[1], 'share-alt', () => this.props.onClickOpenServiceButton(this.props.floorStatus)));
     } else {
       buttons.push(this.circleButton(positions[0], 'tint',    () => this.props.onClickChangeResolutionButton()));
-      buttons.push(this.circleButton(positions[2], 'list', () => goSentences()));
     }
     buttons.push(this.circleButton(positions[1], 'font', () => this.props.onClickImageButton()));
 
     if (roomType == 'circle') {
+      buttons.push(this.circleButton(positions[2], 'list', () => goSentences()));
       buttons.push(this.circleLinkButton(positions[3], 'triangle-left', this.props.floorStatus.nextRoomPath('left')));
       buttons.push(this.circleLinkButton(positions[5], 'triangle-right', this.props.floorStatus.nextRoomPath('right')));
       buttons.push(this.circleLinkButton(positions[7], 'triangle-bottom', this.props.floorStatus.nextRoomPath('back')));
     } else {
+      buttons.push(this.circleButton(positions[2], 'list', () => goFloorSentences()));
       buttons.push(this.circleLinkButton(positions[3], 'triangle-top',    this.props.floorStatus.nextRoomPath('up')));
       buttons.push(this.circleLinkButton(positions[5], 'triangle-bottom', this.props.floorStatus.nextRoomPath('down')));
       buttons.push(this.circleButton(positions[7], 'triangle-bottom', () => goFloorIndex()));

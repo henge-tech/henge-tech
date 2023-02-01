@@ -17,9 +17,13 @@
 
 <article>
 <p>
+<%- if type == :circle -%>
  <a class="navi-button" href="./<%= prev_entry[:pattern] %>.html">◀</a>
  <a class="navi-button" href="/circles/<%= pattern %>.html">▼</a>
  <a class="navi-button" href="./<%= next_entry[:pattern] %>.html">▶</a>
+<%- else -%>
+ <a class="navi-button" href="/floors/<%= floornum %>.html">▼</a>
+<%- end -%>
 </p>
 <%- if images -%>
 <div>
@@ -29,7 +33,12 @@
 <br><br>
 <%- end -%>
 
+<%- if type == :circle -%>
 <h2><%= pattern %></h2>
+<%- else -%>
+<h2>Floor <%= floornum %></h2>
+<%- end -%>
+
 <p><%= lines[0] %><br><span class="translate-links">[<a href="https://translate.google.com/?sl=en&tl=ja&text=<%= encoded[0] %>" target="_blank">G</a>|<a href="https://www.deepl.com/translator#en/ja/<%= encoded[0] %>" target="_blank">D</a>]</span></p>
 <p><%= lines[1] %><br><span class="translate-links">[<a href="https://translate.google.com/?sl=en&tl=ja&text=<%= encoded[1] %>" target="_blank">G</a>|<a href="https://www.deepl.com/translator#en/ja/<%= encoded[1] %>" target="_blank">D</a>]</span></p>
 <p><%= lines[2] %><br><span class="translate-links">[<a href="https://translate.google.com/?sl=en&tl=ja&text=<%= encoded[2] %>" target="_blank">G</a>|<a href="https://www.deepl.com/translator#en/ja/<%= encoded[2] %>" target="_blank">D</a>]</span></p>

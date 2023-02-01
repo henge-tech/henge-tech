@@ -257,44 +257,18 @@ class Generator
     floors = {}
 
     Dir.glob(glob_pattern).sort.each_with_index do |file, i|
-      pattern = File.basename(file, '.yml')
-      lines = File.read(file).split(/^--- \|$/, 3).last.split(/\n+/).select { |line| line != '' && line != '@@@' }
-      next if lines.size != 4
+      lines = load_sentence_file(file)
+      next unless lines
 
-      image_files = Dir.glob(File.join(@data_root, "src/images/sentences/#{pattern}-*")).map { |f| File.basename(f) }.sort
-      images = []
-      image_files.each do |image_file|
-        number = image_file.split('-')[1].to_i
-        images[number - 1] = image_file
-      end
-      na = 0
-      for i in 0..3
-        unless images[i]
-          na += 1
-          images[i] = 'na.png'
-        end
-      end
-      images = nil if na == 4
+      pattern = File.basename(file, '.yml')
+      images = glob_sentence_images(pattern)
 
       allwords = YAML.load(File.read(File.join(@data_root, "data/circles/#{pattern}.yml")))
-      unit = allwords.size / 4
-      emphasized = []
-      urlencoded = []
-      for i in 0..3
-        n = i * unit
-        words = allwords[n..n + unit - 1]
-        emphasized[i] = emphasize_words(words, lines[i])
-        # urlencoded[i] = URI.encode_www_form_component(lines[i])
-        urlencoded[i] = ERB::Util.url_encode(lines[i])
-      end
+      entry = build_sentence_entry(lines, allwords, images)
+      entry[:type] = :circle
+      entry[:pattern] = pattern
+      entry[:floornum] = floornums[pattern],
 
-      entry = {
-        :pattern => pattern,
-        :lines => emphasized,
-        :encoded => urlencoded,
-        :images => images,
-        :floornum => floornums[pattern],
-      }
       sentences << entry
       floors[floornums[pattern]] ||= []
       floors[floornums[pattern]] << entry
@@ -306,6 +280,82 @@ class Generator
       end
     end
     @all_sentences = sentences
+  end
+
+  def all_floor_sentences
+    return @all_floor_sentences if @all_floor_sentences
+    sentences = []
+    glob_pattern = File.join(@data_root, 'data/sentences/floors/*.yml')
+    Dir.glob(glob_pattern).sort { |a, b| File.basename(a).to_i <=> File.basename(b).to_i }.each_with_index do |file, i|
+      lines = load_sentence_file(file)
+      next unless lines
+
+      floornum = File.basename(file, '.yml').to_i
+      images = glob_sentence_images("#{floornum}")
+
+      allwords = all_floor_words[floornum - 1]
+      entry = build_sentence_entry(lines, allwords, images)
+      entry[:type] = :floor
+      entry[:floornum] = floornum
+      sentences << entry
+    end
+    @all_floor_sentences = sentences
+  end
+
+  def all_floor_words
+    return @all_floor_words if @all_floor_words
+    circles = all_circles
+    floors = []
+    for i in 0..82
+      circlenum = i == 82 ? 16 : 12
+      floors << circles[i * 12, circlenum].map { |circle| circle[:words][0] }
+    end
+    @all_floor_words = floors
+  end
+
+  def load_sentence_file(file)
+    lines = File.read(file).split(/^--- \|$/, 3).last.split(/\n+/).select { |line| line != '' && line != '@@@' }
+    lines.size == 4 ? lines : nil
+  end
+
+  def glob_sentence_images(pattern)
+    if pattern =~ /\A\d+\z/
+      image_files = Dir.glob(File.join(@data_root, "src/images/sentences/floors/#{pattern}-*"))
+    else
+      image_files = Dir.glob(File.join(@data_root, "src/images/sentences/#{pattern}-*"))
+    end
+    image_files = image_files.map { |f| File.basename(f) }.sort
+    images = []
+    image_files.each do |image_file|
+      number = image_file.split('-')[1].to_i
+      images[number - 1] = image_file
+    end
+    na = 0
+    for i in 0..3
+      unless images[i]
+        na += 1
+        images[i] = 'na.png'
+      end
+    end
+    na == 4 ? nil : images
+  end
+
+  def build_sentence_entry(lines, allwords, images)
+    unit = allwords.size / 4
+    emphasized = []
+    urlencoded = []
+    for i in 0..3
+      n = i * unit
+      words = allwords[n..n + unit - 1]
+      emphasized[i] = emphasize_words(words, lines[i])
+      urlencoded[i] = ERB::Util.url_encode(lines[i])
+    end
+
+    return {
+      :lines => emphasized,
+      :encoded => urlencoded,
+      :images => images,
+    }
   end
 
   def emphasize_words(words, line)
@@ -343,6 +393,7 @@ class Generator
     erb = ERB.new(File.read(erbfile), nil, '-')
     sentences = all_sentences
     sentences.each do |sentence|
+      type = :circle
       pattern = sentence[:pattern]
       lines = sentence[:lines]
       encoded = sentence[:encoded]
@@ -355,6 +406,21 @@ class Generator
         out << erb.result(binding)
       end
     end
+
+    sentences = all_floor_sentences
+    sentences.each do |sentence|
+      type = :floor
+      lines = sentence[:lines]
+      encoded = sentence[:encoded]
+      images = sentence[:images]
+      floornum = sentence[:floornum]
+
+      html_file = File.join(PROJECT_ROOT, "docs/sentences/floors/#{floornum}.html")
+      File.open(html_file, 'w') do |out|
+        out << erb.result(binding)
+      end
+    end
+
   end
 end
 
