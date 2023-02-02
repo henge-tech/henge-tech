@@ -128,47 +128,24 @@
   object-fit: scale-down;
 }
 
-.sentences header {
-  margin-left: 20px;
-  margin-bottom: 40px;
-}
-.sentences article {
-  margin-left: 20px;
-}
 .sentences p {
-  margin-bottom: 30px;
   font-size: 1.2em;
 }
-.sentences article img {
-  width: 45%;
-}
+
 .sentences h2 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
+
 .sentences em {
   font-weight: bold;
   font-style: normal;
 }
-.sentences .navi-button {
-  margin: 10px;
-}
+
 .sentences .translate-links {
   color: #ccc;
 }
 
 .sentences .translate-links a {
   color: #ccc;
-}
-
-
-@media screen and (min-width: 767px) {
-  #floors-list div {
-    width:80px;
-    float: left;
-  }
-
-  .sentences article img {
-    width: 20%;
-  }
 }
 

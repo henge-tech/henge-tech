@@ -7,31 +7,26 @@
   <link rel="stylesheet" href="/vendor/bootstrap-3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/site.css">
 </head>
-<body>
+<body class="sentences">
 
-<div class="sentences">
+<div class="container">
+  <header class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <a href="/" class="navbar-brand"><svg role="img" style="fill: #9d9d9d; width: 18px; height: 18px; margin-right: 6px;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/imgs/svg/sprite.svg#icon"></use></svg>Henge</a>
+    </div>
+  </header>
 
-<header>
-  <h1><a href="/"><img src="/imgs/logo.svg" alt="Henge" width="100"></a></h1>
-</header>
+<article style="margin-top: 100px">
 
-<article>
 <p>
 <%- if type == :circle -%>
- <a class="navi-button" href="./<%= prev_entry[:pattern] %>.html">◀</a>
- <a class="navi-button" href="/circles/<%= pattern %>.html">▼</a>
- <a class="navi-button" href="./<%= next_entry[:pattern] %>.html">▶</a>
+ <a class="btn-circle btn btn-default" href="./<%= prev_entry[:pattern] %>.html" role="button"><span class="glyphicon glyphicon-triangle-left" style="margin-top:4px"></span></a>
+ <a class="navi-button" href="/circles/<%= pattern %>.html"><img src="https://henge.s3-ap-northeast-1.amazonaws.com/circles/<%= pattern %>.png"></a>
+ <a class="btn-circle btn btn-default" href="./<%= next_entry[:pattern] %>.html" role="button"><span class="glyphicon glyphicon-triangle-right" style="margin-top:4px"></span></a>
 <%- else -%>
  <a class="navi-button" href="/floors/<%= floornum %>.html">▼</a>
 <%- end -%>
 </p>
-<%- if images -%>
-<div>
-<img src="https://henge.s3-ap-northeast-1.amazonaws.com/sentences/<%= images[3] %>" width="200"><img src="https://henge.s3-ap-northeast-1.amazonaws.com/sentences/<%= images[0] %>" width="200"><br>
-<img src="https://henge.s3-ap-northeast-1.amazonaws.com/sentences/<%= images[2] %>" width="200"><img src="https://henge.s3-ap-northeast-1.amazonaws.com/sentences/<%= images[1] %>" width="200">
-</div>
-<br><br>
-<%- end -%>
 
 <%- if type == :circle -%>
 <h2><%= pattern %></h2>
@@ -39,10 +34,30 @@
 <h2>Floor <%= floornum %></h2>
 <%- end -%>
 
-<p><%= lines[0] %><br><span class="translate-links">[<a href="https://translate.google.com/?sl=en&tl=ja&text=<%= encoded[0] %>" target="_blank">G</a>|<a href="https://www.deepl.com/translator#en/ja/<%= encoded[0] %>" target="_blank">D</a>]</span></p>
-<p><%= lines[1] %><br><span class="translate-links">[<a href="https://translate.google.com/?sl=en&tl=ja&text=<%= encoded[1] %>" target="_blank">G</a>|<a href="https://www.deepl.com/translator#en/ja/<%= encoded[1] %>" target="_blank">D</a>]</span></p>
-<p><%= lines[2] %><br><span class="translate-links">[<a href="https://translate.google.com/?sl=en&tl=ja&text=<%= encoded[2] %>" target="_blank">G</a>|<a href="https://www.deepl.com/translator#en/ja/<%= encoded[2] %>" target="_blank">D</a>]</span></p>
-<p><%= lines[3] %><br><span class="translate-links">[<a href="https://translate.google.com/?sl=en&tl=ja&text=<%= encoded[3] %>" target="_blank">G</a>|<a href="https://www.deepl.com/translator#en/ja/<%= encoded[3] %>" target="_blank">D</a>]</span></p>
+
+<div class="container">
+  <%- if images -%>
+  <%- 4.times do |i| -%>
+  <div class="row">
+    <div class="col-md-1">
+      <img src="https://henge.s3-ap-northeast-1.amazonaws.com/sentences/<%= images[i] %>" width="80">
+    </div>
+    <div class="col-md-11">
+      <p><%= lines[i] %><br><span class="translate-links">[<a href="https://translate.google.com/?sl=en&tl=ja&text=<%= encoded[i] %>" target="_blank">G</a>|<a href="https://www.deepl.com/translator#en/ja/<%= encoded[i] %>" target="_blank">D</a>]</span></p>
+    </div>
+  </div>
+  <%- end -%>
+  <%- else -%>
+  <%- 4.times do |i| -%>
+  <div class="row">
+    <div class="col-md-12">
+      <p><%= lines[i] %><br><span class="translate-links">[<a href="https://translate.google.com/?sl=en&tl=ja&text=<%= encoded[i] %>" target="_blank">G</a>|<a href="https://www.deepl.com/translator#en/ja/<%= encoded[i] %>" target="_blank">D</a>]</span></p>
+    </div>
+  </div>
+  <%- end -%>
+  <%- end -%>
+</div>
+
 </article>
 
 </div>
